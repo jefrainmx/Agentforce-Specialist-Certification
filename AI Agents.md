@@ -462,6 +462,7 @@ Actions can be reviewed in the Agentforce Asset Library and assigned or configur
 
 ### Managing Agent Actions
 Actions assigned to a subagent can be managed in Agentforce Builder. Available standard, managed, and custom actions can be reviewed in the Agentforce Asset Library.
+![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121105.png)
 
 ### Creating Custom Actions
 Custom actions can be created from the Asset Library for reuse or from inside an agent for a single agent version. 
@@ -612,6 +613,6 @@ The diagram below illustrates how an Agentforce Service agent can be connected t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjA1NDQ2NCwyMDIxMzYxMDAxLDgzNz
-E3NjI0NCwtMjc0NzU3MTk0XX0=
+eyJoaXN0b3J5IjpbLTUzODUzNTA2OCwxMDA2MDU0NDY0LDIwMj
+EzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
