@@ -759,7 +759,7 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 [Best Practices for Building Secure Agentforce Service Agents](https://admin.salesforce.com/blog/2025/best-practices-for-building-secure-agentforce-service-agents?utm_source=chatgpt.com)
 [Agentforce Security and the Shared Responsibility Model](https://help.salesforce.com/s/articleView?id=005315874&type=1)
 
-# # Given a scenario, identify when to use an Employee or Service agent.
+# Given a scenario, identify when to use an Employee or Service agent.
 ## Introduction
 Agentforce offers different types of agents for specific clouds and common use cases. The Agentforce EmployeeAgentsupports employees and includes various topics and actions that help sales reps perform tasks related to sales. The Agentforce Service Agent supports customers by processing incoming cases, autonomously resolving common inquiries, and escalating complex or sensitive support requests.
 
@@ -817,12 +817,19 @@ The Salesforce admin should deploy an Agentforce Employee agent. Unlike customer
 [Get Started with Agentforce for Employees](https://trailhead.salesforce.com/content/learn/modules/agentforce-for-employees-quick-look/get-started-with-agentforce-for-employees)
 [Create an Agent from an Agentforce Employee Agent Template](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_setup.htm&type=5)
 
+# Given a scenario, identify when it’s appropriate to use Agent API.
+## 
+
+## Agent API
+
+## Scenarios &Solutions
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNj
-g4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1
-NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMy
-wzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3
-MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1Nj
-QsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMzkw
-MDMyMjk0XX0=
+eyJoaXN0b3J5IjpbMTc1NjYyNjE1OCwtMTQ4MzQxMTkzNSwtND
+E3NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0NTg3MjYsMTU3NTE2
+ODk2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNS
+wxODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0
+NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1OD
+gyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOTAz
+Njg4Njg4XX0=
 -->
