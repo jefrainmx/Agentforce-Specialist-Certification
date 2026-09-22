@@ -868,24 +868,23 @@ The Agentforce Specialist should recommend using the Agent API. It would allow t
 ### Scenario 2
 Cosmic Logistics needs an automated agent to summarize delivery exceptions each night and notify regional managers of late shipments. The process should run automatically without user interaction.
 ### Solution 2
-Cosmic Bank wants its existing tools, including Slack and a customer service app, to trigger Agentforce agents that analyze customer messages and suggest actions within ongoing workflows.
+The Agentforce Specialist should use the Agent API to deploy a headless agent. This API enables agents to operate behind the scenes, generate summaries, and post insights on other systems without requiring a chat interface. It’s best suited for back-end automations that don’t involve a conversational UI.
 
 ### Scenario 3
 Cosmic Bank wants its existing tools, including Slack and a customer service app, to trigger Agentforce agents that analyze customer messages and suggest actions within ongoing workflows.
-The Agentforce Specialist should choose the Agent API to integrate Agentforce agents into those workflows. This API allows other systems and platforms to send context, receive agent-generated responses, and continue the process seamlessly. It’s appropriate when agents must extend existing business workflows across applications.
 ### Solution 3
-
+The Agentforce Specialist should choose the Agent API to integrate Agentforce agents into those workflows. This API allows other systems and platforms to send context, receive agent-generated responses, and continue the process seamlessly. It’s appropriate when agents must extend existing business workflows across applications.
 
 ### Scenario 4
-
+Cosmic Retail wants a coordinator agent to prepare customer refund responses by gathering pricing guidance from a CPQ agent and policy language from a legal agent.
 ### Solution 4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5MzkwODAwLC0xMTM1ODAyMTE3LC0yMD
-g3NjQ1NjksLTE0MzYwNzIzNTAsLTE0ODM0MTE5MzUsLTQxNzcw
-NzEzOCwtNjg4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5Nj
-UsLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1
-MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5Nj
-cxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4Miwx
-NDcxMDY1NjRdfQ==
+eyJoaXN0b3J5IjpbLTEzODcyNDY0MCwtMTEzNTgwMjExNywtMj
+A4NzY0NTY5LC0xNDM2MDcyMzUwLC0xNDgzNDExOTM1LC00MTc3
+MDcxMzgsLTY4ODU0NTIxNiwtMTAzOTQ1ODcyNiwxNTc1MTY4OT
+Y1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4
+NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OT
+Y3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIs
+MTQ3MTA2NTY0XX0=
 -->
