@@ -617,11 +617,20 @@ A telephony connection connects voice conversations to the Service Agent and def
 #### VOICE MODE SETTINGS
 Voice mode settings control the voice interaction experience, including how the agent listens, responds, and handles the call flow.
 
+### Voice Routing and Escalation
+Voice setup must route calls to the Service Agent and define what happens when the agent needs to transfer the call.
+#### VOICE ROUTING
+Voice routing determines how incoming calls are sent to the Service Agent and what fallback destination is used when needed.
+#### HUMAN TRANSFER
+Escalation or transfer behavior should be configured so the agent can hand off complex or sensitive calls to a queue or service rep.
+
+
+
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNjYwMDE3NiwxMDg2NjUwMzgxLDY5Nz
+eyJoaXN0b3J5IjpbMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5Nz
 A1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0
 LC0yNzQ3NTcxOTRdfQ==
 -->
