@@ -859,10 +859,21 @@ Context variables and custom variables can be passed when starting a session or 
 ### API TIMEOUT
 The API has a timeout value of 120 seconds. When an API call times out, an HTTP 500 response (Internal Server Error) is received.
 
-## Scenarios &Solutions
+## Scenarios & Solutions
+### Scenario 1
 
+### Solution 1
+
+### Scenario 2
+### Solution 2
+
+### Scenario 3
+### Solution 3
+
+### Scenario 4
+### Solution 4
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Mjk1MzExLC0yMDg3NjQ1NjksLTE0Mz
+eyJoaXN0b3J5IjpbNDM1OTczMjU1LC0yMDg3NjQ1NjksLTE0Mz
 YwNzIzNTAsLTE0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNjg4NTQ1
 MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OS
 wtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMz
