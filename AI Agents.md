@@ -850,15 +850,23 @@ An access token is required for all calls to the Agent API. It can be created by
 Calling the API requires the agent ID, access token, a random UUID, and the My Domain URL. The agent ID can be found in the URL of the Agent Overview Page. The random UUID value represents the session key and can be used to trace the conversation in the agent’s event logs.
 ### SESSION LIFECYCLE
 Creating a session is required to communicate with an agent. Messagescan be sent to the agent by using the ID associated with that session. The agent keeps track of the context throughout the session. The session can be ended when working with the agent is no longer required.
+### ENDPOINTS
+The API provides endpoints for each stage in the session lifecycle. There’s also an endpoint to submit feedback on a response.
+### MESSAGING
+Messages can be sent and received synchronously, which is best for simple use cases where the entire response is required in one shot. The streaming endpoint can be used if the response must be displayed as the chunksof content arrive, like in a real-time chat conversation.
+### AGENT VARIABLES
+Context variables and custom variables can be passed when starting a session or sending messages to the agent. The agent uses these variables during subsequent turns in the conversation. 
+### API TIMEOUT
+The API has a timeout value of 120 seconds. When an API call times out, an HTTP 500 response (Internal Server Error) is received.
 
 ## Scenarios &Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODc2NDU2OSwtMTQzNjA3MjM1MCwtMT
-Q4MzQxMTkzNSwtNDE3NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0
-NTg3MjYsMTU3NTE2ODk2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MT
-MsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4
-NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNT
-A4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3
-MzM0NjAzMjldfQ==
+eyJoaXN0b3J5IjpbMTE3Mjk1MzExLC0yMDg3NjQ1NjksLTE0Mz
+YwNzIzNTAsLTE0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNjg4NTQ1
+MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OS
+wtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMz
+NDg3MTksMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MT
+Y0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAw
+NDA4NjUxM119
 -->
