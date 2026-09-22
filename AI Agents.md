@@ -878,13 +878,13 @@ The Agentforce Specialist should choose the Agent API to integrate Agentforce ag
 ### Scenario 4
 Cosmic Retail wants a coordinator agent to prepare customer refund responses by gathering pricing guidance from a CPQ agent and policy language from a legal agent.
 ### Solution 4
-
+The Agentforce Specialist should recommend using the Agent API to enable programmatic communication between the coordinator agent and the specialized CPQ and legal agents. This approach is ideal when one agent must invoke and combine results from other agents to deliver a unified response.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODcyNDY0MCwtMTEzNTgwMjExNywtMj
-A4NzY0NTY5LC0xNDM2MDcyMzUwLC0xNDgzNDExOTM1LC00MTc3
-MDcxMzgsLTY4ODU0NTIxNiwtMTAzOTQ1ODcyNiwxNTc1MTY4OT
-Y1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4
-NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OT
-Y3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIs
-MTQ3MTA2NTY0XX0=
+eyJoaXN0b3J5IjpbLTEyMzg4NzU3OTMsLTExMzU4MDIxMTcsLT
+IwODc2NDU2OSwtMTQzNjA3MjM1MCwtMTQ4MzQxMTkzNSwtNDE3
+NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0NTg3MjYsMTU3NTE2OD
+k2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNSwx
+ODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NT
+k2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgy
+LDE0NzEwNjU2NF19
 -->
