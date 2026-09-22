@@ -754,14 +754,15 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 [Maintain Trust with Agentforce Actions in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions.htm&type=5)
 [Create an Agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create.htm&type=5)
 [Agent Types and Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&type=5)
-
+[Create an Agent from an Agentforce Service Agent Template](https://help.salesforce.com/s/articleView?id=ai.service_agent_setup.htm&type=5&utm_source=chatgpt.com)
+[Engagement Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDMwNDgxMywtMjI4NDg1NzE1LDE4NT
-M0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OTY3
-MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIsMT
-Q3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOSw5MDM2ODg2
-ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkxNDQ3ODY3LD
-EwMzU0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1
-NDQ2NF19
+eyJoaXN0b3J5IjpbODA1NzQ0MjM1LC0yMjg0ODU3MTUsMTg1Mz
+Q3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5Njcx
+LC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxND
+cxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4
+OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMT
+AzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0
+NDY0XX0=
 -->
