@@ -770,14 +770,18 @@ Agentforce Employee Agent supports employees by helping them find information, c
 Agentforce Service Agent supports customers by processing incoming cases and autonomously resolving common inquiries. It can also escalate complex or sensitive support requests.
 
 ## Agentforce Employee Agent
-AgentforceEmployee Agent supports employees by helping them find information, complete tasks, and access personalized support across channels.
+Agentforce Employee Agent supports employees by helping them find information, complete tasks, and access personalized support across channels.
+### EMPLOYEE AGENT
+Agentforce Employee Agent comes pre-configured with topics and actions for many use cases. It can handle a variety of routine and complex tasks like creating account summaries before a client meeting, writing a batch of sales emails, retrieving the benefits information of an employee, provisioning a laptop for a new hire, etc.
+### SALESFORCE & SLACK
+Employees can access the employee agent in Salesforce by clicking the Agentforce icon. It can also be deployed in Slack, where it can be summoned with a simple @mention from any channel.
 
 ## Agentforce Service Agent
 
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NjM2Mjc0NiwtMjg4NDU3Njk5LC0yND
+eyJoaXN0b3J5IjpbMTU3NTE2ODk2NSwtMjg4NDU3Njk5LC0yND
 A3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMzM0ODcx
 OSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLT
 E0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2
