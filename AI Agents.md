@@ -658,9 +658,11 @@ Progress indicators can be used to alert customers to agent activity during a me
 #### TESTING
 To preserve message formatting during testing, Salesforce recommends chatting with the agent in a test channel.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzQ2MDMyOSw5MDM2ODg2ODgsLTM5MD
-AzMjI5NCwxMzcwOTAzNTcyLC0xOTkxNDQ3ODY3LDEwMzU0MDcy
-MDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1NDQ2NCwyMD
-IxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0XX0=
+eyJoaXN0b3J5IjpbMTQ0MTY1MTAzMSwxNzMzNDYwMzI5LDkwMz
+Y4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4
+NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMD
+A2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcx
+OTRdfQ==
 -->
