@@ -775,18 +775,23 @@ Agentforce Employee Agent supports employees by helping them find information, c
 Agentforce Employee Agent comes pre-configured with topics and actions for many use cases. It can handle a variety of routine and complex tasks like creating account summaries before a client meeting, writing a batch of sales emails, retrieving the benefits information of an employee, provisioning a laptop for a new hire, etc.
 ### SALESFORCE & SLACK
 Employees can access the employee agent in Salesforce by clicking the Agentforce icon. It can also be deployed in Slack, where it can be summoned with a simple @mention from any channel.
-### TEMPLATEThe Agentforce Employee Agent template can be used to build employee agents that serve specific departmental needs, support role-based access, and scale securely across the organization.❖CONTEXTEmployee agents run in the logged-in user context, and can be created as multiple agents that can be assigned to specific profiles or users.
+### TEMPLATE
+The Agentforce Employee Agent template can be used to build employee agents that serve specific departmental needs, support role-based access, and scale securely across the organization.
+### CONTEXT
+Employee agents run in the logged-in user context, and can be created as multiple agents that can be assigned to specific profiles or users.
+### USE CASES
+Employee agents can be deployed to simplify and automate work across various departments, such as HR, IT, service, sales, marketing, legal, engineering, supply chain management, etc.
 
 ## Agentforce Service Agent
 
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4Njc5NzM0NCwxNTc1MTY4OTY1LC0yOD
-g0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4NTM0NzIx
-MDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OTY3MSwtMT
-ExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIsMTQ3MTA2
-NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOSw5MDM2ODg2ODgsLT
-M5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkxNDQ3ODY3LDEwMzU0
-MDcyMDNdfQ==
+eyJoaXN0b3J5IjpbLTEwMzk0NTg3MjYsMTU3NTE2ODk2NSwtMj
+g4NDU3Njk5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcy
+MTAzLDMwMzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLT
+ExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEw
+NjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC
+0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1
+NDA3MjAzXX0=
 -->
