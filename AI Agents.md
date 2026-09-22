@@ -684,12 +684,16 @@ The Embedded Messaging component can be added to a page of an Experience Cloud s
 [Connect a Service Agent to Partner Telephony](https://help.salesforce.com/s/articleView?id=ai.agent_connect_telephony_parent.htm&type=5)
 
 # Explain the security context in which the agent is actually running, and how it impacts agent action execution.
+## Introduction
+Agentforce agents execute actions in a specific security context. In employee-facing experiences, an agent often runs in the context of the logged-in user, so the user’s license, permissions, field-level security, and sharing determine what data and actions are available. In unauthenticatedor customer-facing channels, the agent often runs as an agent user, which is a Salesforce integration user with the permissions the agent needs to complete its work.This runtime context directly affects action execution. Even if an action is assigned to the agent, the action can succeed only when the running context has access to the required records, objects, fields, flows, Apex classes, prompt templates, Knowledge, Data 360 assets, or external services. Following the principle of least privilege, admins should grant only the minimum required access and use filters, variables, and authentication to control sensitive actions.
+
+## Agent Runtime Security Context
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU0MjY4MjIyLC03ODI1NTg4MiwxNDcxMD
-Y1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4OCwt
-MzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMTAzNT
-QwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0
-LDIwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0Nz
+EwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4
+LC0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMD
+M1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0
+NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3NDc1NzE5NF19
 -->
