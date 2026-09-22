@@ -722,13 +722,16 @@ Creating a new agent user gives the agent a secure baseline with the Einstein Ag
 #### ADDITIONAL ACCESS
 Additional permissions should be granted through targeted permission sets for the specific objects, fields, flows, Apex classes, prompt templates, Knowledge, or Data 360 assets the agent uses.
 
-### Agent 
+### Agent User
+When creating an agent that needs an agent user, the specialist can create a new agent user or select an existing one. The agent user should be reviewed after creation to ensure it has only the permissions required for the agent’s assigned actions.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyODQwMjc0MSwzNTM4NzIyNjEsLTE3MD
-c0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1
-ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOT
-AzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMTk5MTQ0
-Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUxMzY3LD
-EwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3NDc1
-NzE5NF19
+eyJoaXN0b3J5IjpbMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNz
+Q1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4
+ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOSw5MD
+M2ODg2ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkxNDQ3
+ODY3LDEwMzU0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMT
+AwNjA1NDQ2NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3
+MTk0XX0=
 -->
