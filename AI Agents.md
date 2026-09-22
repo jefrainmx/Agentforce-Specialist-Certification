@@ -498,6 +498,7 @@ Outputs marked to show in conversation can be used in the agent’s response to 
 
 ### Custom Action Instructions
 Custom action instructions define the action’s purpose, when it should run, how the agent should collect inputs, and how outputs should be used in the conversation.
+![Custom Action Instructions](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121221.png)
 
 ### Testing Agent Actions
 Agentforce Builder can be used to test whether the agent selects the correct subagent and action. 
@@ -614,6 +615,6 @@ The diagram below illustrates how an Agentforce Service agent can be connected t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzA2MjQyNSwxMDA2MDU0NDY0LDIwMj
-EzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMT
+M2MTAwMSw4MzcxNzYyNDQsLTI3NDc1NzE5NF19
 -->
