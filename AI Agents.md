@@ -626,14 +626,16 @@ Escalation or transfer behavior should be configured so the agent can hand off c
 
 ### Connections in Agentforce Builder
 The Connections section in Agentforce Builder is used to add and manage channel connections such as Messaging, Email, Voice, and Slack.
+![Connection in Agentforce Builder](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20124118.png)
 
-
+### Connection Settings
+Connection settings define channel-specific behavior, such as adaptive response formats, routing flows, and other settings required for the selected channel.
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTE0NDc4NjcsMTAzNTQwNzIwMywxMD
-g2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEw
-MDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbMjk4MTM2NTY1LC0xOTkxNDQ3ODY3LDEwMz
+U0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1NDQ2
+NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0XX0=
 -->
