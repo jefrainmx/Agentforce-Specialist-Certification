@@ -660,11 +660,13 @@ To preserve message formatting during testing, Salesforce recommends chatting wi
 
 ### Connecting a Service Agent to Experience Cloud
 The diagram below illustrates how a Service Agent can be connected to a Messaging Channel on an Experience Cloud site.
-![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130355.png)
+![Connecting a Service Agent to Experience Cloud](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130355.png)
 #### Inbound Omni-Channel Flow
 An Inbound Omni-Channel Flow can be created to route messaging requests to a Service Agent.
+![Inbound](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130436.png)
 #### Outbound Omni-Channel Flow
 An Outbound Omni-Channel Flow can be created to enable routing conversations to a queue.
+
 #### Messaging Channel
 A Messaging Channel must be created for a digital customer channel in Setup.
 #### Embedded Service Deployment
@@ -679,7 +681,7 @@ The Embedded Messaging component can be added to a page of an Experience Cloud s
 [Connect a Service Agent to Partner Telephony](https://help.salesforce.com/s/articleView?id=ai.agent_connect_telephony_parent.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNTUzMDU3NywxNDcxMDY1NjQsMjAwND
+eyJoaXN0b3J5IjpbMTMwMjc5NjIwNCwxNDcxMDY1NjQsMjAwND
 A4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0
 LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMTAzNTQwNzIwMywxMD
 g2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEw
