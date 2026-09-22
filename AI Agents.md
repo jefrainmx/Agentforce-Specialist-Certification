@@ -391,6 +391,7 @@ Filters can be created to control when a subagent or action is available based o
 
 ### Using Conditionals
 Conditionals are used to deterministically control agent behavior based on variable values.
+![Using conditionals](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121009.png)
 
 ## Scenarios & Solutions
 ### Scenario 1
@@ -611,6 +612,6 @@ The diagram below illustrates how an Agentforce Service agent can be connected t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc2Njc4Njg3LDIwMjEzNjEwMDEsODM3MT
-c2MjQ0LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbMTAwNjA1NDQ2NCwyMDIxMzYxMDAxLDgzNz
+E3NjI0NCwtMjc0NzU3MTk0XX0=
 -->
