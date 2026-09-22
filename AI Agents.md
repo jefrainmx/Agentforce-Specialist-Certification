@@ -760,6 +760,8 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 [Agentforce Security and the Shared Responsibility Model](https://help.salesforce.com/s/articleView?id=005315874&type=1)
 
 # # Given a scenario, identify when to use an Employee or Service agent.
+## Introduction
+Agentforce offers different types of agents for specific clouds and common use cases. The Agentforce EmployeeAgentsupports employees and includes various topics and actions that help sales reps perform tasks related to sales. The Agentforce Service Agent supports customers by processing incoming cases, autonomously resolving common inquiries, and escalating complex or sensitive support requests.
 
 ## Agentforce Employee Agent
 
@@ -768,11 +770,11 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3OTA4MzgwLC0yMjg0ODU3MTUsMTg1Mz
-Q3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5Njcx
-LC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxND
-cxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4
-OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMT
-AzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0
-NDY0XX0=
+eyJoaXN0b3J5IjpbLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4NT
+M0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OTY3
+MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIsMT
+Q3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOSw5MDM2ODg2
+ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkxNDQ3ODY3LD
+EwMzU0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1
+NDQ2NF19
 -->
