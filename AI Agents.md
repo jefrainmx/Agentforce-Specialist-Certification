@@ -805,15 +805,17 @@ Custom actions and topics can be created for use cases specific to the business 
 ### Scenario 1
 Cosmic Appliances uses an Agentforce Employee agent to assist internal staff with HR and IT requests and an SDR agent that supports sales reps. Now, customers are contacting support through the website chat asking, “How do I file a warranty claim?” and “My package shows delivered but is missing.” The company’s Agentforce Specialist must decide which agent type to deploy for these public-facing service interactions.
 ### Solution 1
-
+An Agentforce Service agent should be deployed for the requirement because the requests come from external customers seeking assistance with orders, warranties, and delivery issues. Service agents use standard topics such as Case Management and Order Inquiries/Delivery Issues and standard actions such as Create Case, Get Order by Order Number, and Get Delivery Time Slots. Employee agents are for internal users (e.g., HR, IT), and Sales agents like SDR support the sales process.
 ### Scenario 2
+Cosmic Health employs thousands of staff across HR, IT, and clinical operations. Employees frequently contact HR about benefits or onboarding and message IT in Slack for password resets and laptop issues. Managers and staff use different Salesforce apps but require quick, secure help without escalating to multiple teams. The Salesforce admin wants to deploy a digital AI assistant to help employees perform these internal tasks while respecting org security and permissions.
 ### Solution 2
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNzcwNzEzOCwtNjg4NTQ1MjE2LC0xMD
-M5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2
-NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMz
-UzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0
-MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMy
-wxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5
-MDM1NzJdfQ==
+eyJoaXN0b3J5IjpbMTIyNjY1MDYwMywtNDE3NzA3MTM4LC02OD
+g1NDUyMTYsLTEwMzk0NTg3MjYsMTU3NTE2ODk2NSwtMjg4NDU3
+Njk5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcyMTAzLD
+MwMzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcw
+OTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NC
+wyMDA0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAw
+MzIyOTRdfQ==
 -->
