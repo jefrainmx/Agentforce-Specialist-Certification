@@ -624,13 +624,16 @@ Voice routing determines how incoming calls are sent to the Service Agent and wh
 #### HUMAN TRANSFER
 Escalation or transfer behavior should be configured so the agent can hand off complex or sensitive calls to a queue or service rep.
 
+### Connections in Agentforce Builder
+The Connections section in Agentforce Builder is used to add and manage channel connections such as Messaging, Email, Voice, and Slack.
+
 
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5Nz
-A1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0
-LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbLTE5OTE0NDc4NjcsMTAzNTQwNzIwMywxMD
+g2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEw
+MDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
