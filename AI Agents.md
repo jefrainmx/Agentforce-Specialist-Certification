@@ -758,8 +758,17 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 [Engagement Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&type=5)
 [Best Practices for Building Secure Agentforce Service Agents](https://admin.salesforce.com/blog/2025/best-practices-for-building-secure-agentforce-service-agents?utm_source=chatgpt.com)
 [Agentforce Security and the Shared Responsibility Model](https://help.salesforce.com/s/articleView?id=005315874&type=1)
+
+# # Given a scenario, identify when to use an Employee or Service agent.
+
+## Agentforce Employee Agent
+
+## Agentforce Service Agent
+
+## Scenarios & Solutions
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2MzU5Mjk0LC0yMjg0ODU3MTUsMTg1Mz
+eyJoaXN0b3J5IjpbOTA3OTA4MzgwLC0yMjg0ODU3MTUsMTg1Mz
 Q3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5Njcx
 LC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxND
 cxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4
