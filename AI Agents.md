@@ -821,16 +821,24 @@ The Salesforce admin should deploy an Agentforce Employee agent. Unlike customer
 ## Introduction
 The Agent API is a REST API interface that enables external systems, such as web apps, mobile apps, or other agents, to invoke Agentforce agents programmatically. It is best suited for use cases where interaction with agents needs to occur outside traditional Salesforce interfaces. With Agent API, organizations can extend Agentforce across websites, workflows, or custom platforms while maintaining consistent agent intelligence and context. It supports external UIs, headless automation, and agentic ecosystems where agents can collaborate through programmatic calls. Using Agent API involves setting up a connected app, generating an access token, and managing sessions that exchange messages with agents. The API also provides structured endpoints for session lifecycle, streaming responses, and context variables. Overall, it empowers businesses to embed, automate, and interconnect Agentforce agents across diverse digital environments.
 
+### Use Cases\
+Agent API is a REST API interface that can be used to connect Agentforce agents to external UI (e.g., websites, platforms, workflows, etc.), create and deploy headless agents, and invoke other agents. 
+### Considerations
+Messages can be sent and received synchronously or using the streaming endpoint. Context variables and custom variables can be passed. The API has a 120-second timeout.
+### Setup
+Using the Agent API requires setting up a connected app that supports the client credentials flow. However, any flow that provides a JWT-based access token can be utilized. The connected app must also be added to the agent before calling the API.
+UsageAgent API allows starting a session, sending messages (synchronous or streaming), receiving agent responses, and ending sessions. API requests can be made from an app after generating an access token.
+
 ## Agent API
 
 ## Scenarios &Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzYwNzIzNTAsLTE0ODM0MTE5MzUsLT
-QxNzcwNzEzOCwtNjg4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUx
-Njg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MT
-UsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3
-NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NT
-g4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkw
-MzY4ODY4OF19
+eyJoaXN0b3J5IjpbLTYyMjA3MDgzLC0xNDM2MDcyMzUwLC0xND
+gzNDExOTM1LC00MTc3MDcxMzgsLTY4ODU0NTIxNiwtMTAzOTQ1
+ODcyNiwxNTc1MTY4OTY1LC0yODg0NTc2OTksLTI0MDc0NjYxMy
+wtMjI4NDg1NzE1LDE4NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3
+MjI2MSwtMTcwNzQ1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MD
+g5MCwtNzgyNTU4ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTcz
+MzQ2MDMyOV19
 -->
