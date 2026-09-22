@@ -866,9 +866,9 @@ The Agentforce Specialist should recommend using the Agent API. It would allow t
 Cosmic Logistics needs an automated agent to summarize delivery exceptions each night and notify regional managers of late shipments. The process should run automatically without user interaction.
 
 ### Scenario 2
-
+The Agentforce Specialist should use the Agent API to deploy a headless agent. This API enables agents to operate behind the scenes, generate summaries, and post insights on other systems without requiring a chat interface. It’s best suited for back-end automations that don’t involve a conversational UI.
 ### Solution 2
-
+Cosmic Bank wants its existing tools, including Slack and a customer service app, to trigger Agentforce agents that analyze customer messages and suggest actions within ongoing workflows.
 
 ### Scenario 3
 
@@ -880,11 +880,11 @@ Cosmic Logistics needs an automated agent to summarize delivery exceptions each 
 ### Solution 4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5MjU2ODU1NywtMjA4NzY0NTY5LC0xND
-M2MDcyMzUwLC0xNDgzNDExOTM1LC00MTc3MDcxMzgsLTY4ODU0
-NTIxNiwtMTAzOTQ1ODcyNiwxNTc1MTY4OTY1LC0yODg0NTc2OT
-ksLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4NTM0NzIxMDMsMzAz
-MzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OTY3MSwtMTExNzA5Nj
-E2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIsMTQ3MTA2NTY0LDIw
-MDQwODY1MTNdfQ==
+eyJoaXN0b3J5IjpbLTExMzU4MDIxMTcsLTIwODc2NDU2OSwtMT
+QzNjA3MjM1MCwtMTQ4MzQxMTkzNSwtNDE3NzA3MTM4LC02ODg1
+NDUyMTYsLTEwMzk0NTg3MjYsMTU3NTE2ODk2NSwtMjg4NDU3Nj
+k5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMw
+MzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOT
+YxNjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwy
+MDA0MDg2NTEzXX0=
 -->
