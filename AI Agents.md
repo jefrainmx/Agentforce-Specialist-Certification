@@ -818,18 +818,19 @@ The Salesforce admin should deploy an Agentforce Employee agent. Unlike customer
 [Create an Agent from an Agentforce Employee Agent Template](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_setup.htm&type=5)
 
 # Given a scenario, identify when it’s appropriate to use Agent API.
-## 
+## Introduction
+The Agent API is a REST API interface that enables external systems, such as web apps, mobile apps, or other agents, to invoke Agentforce agents programmatically. It is best suited for use cases where interaction with agents needs to occur outside traditional Salesforce interfaces. With Agent API, organizations can extend Agentforce across websites, workflows, or custom platforms while maintaining consistent agent intelligence and context. It supports external UIs, headless automation, and agentic ecosystems where agents can collaborate through programmatic calls. Using Agent API involves setting up a connected app, generating an access token, and managing sessions that exchange messages with agents. The API also provides structured endpoints for session lifecycle, streaming responses, and context variables. Overall, it empowers businesses to embed, automate, and interconnect Agentforce agents across diverse digital environments.
 
 ## Agent API
 
 ## Scenarios &Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NjYyNjE1OCwtMTQ4MzQxMTkzNSwtND
-E3NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0NTg3MjYsMTU3NTE2
-ODk2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNS
-wxODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0
-NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1OD
-gyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOTAz
-Njg4Njg4XX0=
+eyJoaXN0b3J5IjpbLTE0MzYwNzIzNTAsLTE0ODM0MTE5MzUsLT
+QxNzcwNzEzOCwtNjg4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUx
+Njg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MT
+UsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3
+NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NT
+g4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkw
+MzY4ODY4OF19
 -->
