@@ -687,16 +687,27 @@ The Embedded Messaging component can be added to a page of an Experience Cloud s
 ## Introduction
 Agentforce agents execute actions in a specific security context. In employee-facing experiences, an agent often runs in the context of the logged-in user, so the user’s license, permissions, field-level security, and sharing determine what data and actions are available. In unauthenticatedor customer-facing channels, the agent often runs as an agent user, which is a Salesforce integration user with the permissions the agent needs to complete its work.This runtime context directly affects action execution. Even if an action is assigned to the agent, the action can succeed only when the running context has access to the required records, objects, fields, flows, Apex classes, prompt templates, Knowledge, Data 360 assets, or external services. Following the principle of least privilege, admins should grant only the minimum required access and use filters, variables, and authentication to control sensitive actions.
 
-Logged-In User ContextSome employee or authenticated experiences run in the context of the logged-in user, so the user’s Salesforce access controls determine what the agent can access.Agent User ContextCustomer-facing or unauthenticated experiences often run as an agent user, which is assigned the permissions the agent needs to perform its work. Action AssignmentAn agent can execute only actions that are assigned to the relevant subagent or agent configuration.Resource AccessThe running context must have access to the underlying resources used by the action, such as Flow, Apex, prompt templates, objects, fields, Knowledge, and Data 360.Record AccessOrganization-wide defaults, sharing, roles, and field-level security determine which records and fields the running context can view or update. Least PrivilegeAgent users and human users should receive only the minimum access required for the agent’s intended tasks.
+### Logged-In User Context
+Some employee or authenticated experiences run in the context of the logged-in user, so the user’s Salesforce access controls determine what the agent can access.
+### Agent User Context
+Customer-facing or unauthenticated experiences often run as an agent user, which is assigned the permissions the agent needs to perform its work. 
+### Action Assignment
+An agent can execute only actions that are assigned to the relevant subagent or agent configuration.
+### Resource Access
+The running context must have access to the underlying resources used by the action, such as Flow, Apex, prompt templates, objects, fields, Knowledge, and Data 360.
+### Record Access
+Organization-wide defaults, sharing, roles, and field-level security determine which records and fields the running context can view or update. 
+### Least Privilege
+Agent users and human users should receive only the minimum access required for the agent’s intended tasks.
 
 ## Agent Runtime Security Context
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMjQ4NjI4LC0xNDc0MjUwODkwLC03OD
-I1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5
-LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OT
-E0NDc4NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2
-NywxMDA2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNz
-Q3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLT
+c4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAz
+MjksOTAzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMT
+k5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUx
+MzY3LDEwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLT
+I3NDc1NzE5NF19
 -->
