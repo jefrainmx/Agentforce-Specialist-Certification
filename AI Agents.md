@@ -599,12 +599,15 @@ The diagram below illustrates how an Agentforce Employee agent can be connected 
 
 ![Connecting an Agent to Slack](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/98091e55c3501e05fab28c960f30ce521b03c12e/images/Screenshot%202026-09-22%20113402.png)
 
-### Connecting an Agent to EmailThe diagram below illustrates how an Agentforce Service agent can be connected to Email, allowing it to autonomously respond to customer email inquiries.
+### Connecting an Agent to Email
+The diagram below illustrates how an Agentforce Service agent can be connected to Email, allowing it to autonomously respond to customer email inquiries.
+
+
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE3ODgzMDk1LDgzNzE3NjI0NCwtMjc0Nz
-U3MTk0XX0=
+eyJoaXN0b3J5IjpbMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3ND
+c1NzE5NF19
 -->
