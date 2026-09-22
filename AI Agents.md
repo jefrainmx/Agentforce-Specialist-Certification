@@ -651,11 +651,16 @@ An outbound Omni-Channel Flow must be created to enable the agent to transfer co
 An Embedded Service Deployment must be configured in Setup to add the agent to the messaging interface of the channel.
 #### EXPERIENCE CLOUD
 The agent can be deployed to a customer-facing Experience Cloud site by adding the Embedded Messaging component to a site page.
-
+#### CONTEXT VARIABLES 
+In Agentforce Builder, context variables can be used to map Messaging Session object fields to a customer channel to save the agent from having to ask for common information conversationally.
+#### PROGRESS INDICATORS
+Progress indicators can be used to alert customers to agent activity during a messaging session. They can be enabled and customized by editing the Embedded Service Deployment Settings.
+#### TESTING
+To preserve message formatting during testing, Salesforce recommends chatting with the agent in a test channel.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MD
-kwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAz
-ODEsNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4Mz
-cxNzYyNDQsLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbMTczMzQ2MDMyOSw5MDM2ODg2ODgsLTM5MD
+AzMjI5NCwxMzcwOTAzNTcyLC0xOTkxNDQ3ODY3LDEwMzU0MDcy
+MDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1NDQ2NCwyMD
+IxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0XX0=
 -->
