@@ -608,13 +608,14 @@ The diagram below illustrates how an Agentforce Employee agent can be connected 
 
 ### Connecting an Agent to Email
 The diagram below illustrates how an Agentforce Service agent can be connected to Email, allowing it to autonomously respond to customer email inquiries.
-
+![Connecting an Agent to Email](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20122821.png)
 
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMT
-M2MTAwMSw4MzcxNzYyNDQsLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNj
+A1NDQ2NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0
+XX0=
 -->
