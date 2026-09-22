@@ -770,17 +770,18 @@ Agentforce Employee Agent supports employees by helping them find information, c
 Agentforce Service Agent supports customers by processing incoming cases and autonomously resolving common inquiries. It can also escalate complex or sensitive support requests.
 
 ## Agentforce Employee Agent
+AgentforceEmployee Agent supports employees by helping them find information, complete tasks, and access personalized support across channels.
 
 ## Agentforce Service Agent
 
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMj
-g0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYx
-LC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC
-03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYw
-MzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLT
-E5OTE0NDc4NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1
-MTM2N119
+eyJoaXN0b3J5IjpbMTE2NjM2Mjc0NiwtMjg4NDU3Njk5LC0yND
+A3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMzM0ODcx
+OSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLT
+E0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2
+NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIyOTQsMT
+M3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2
+NTAzODFdfQ==
 -->
