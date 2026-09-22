@@ -715,11 +715,15 @@ An agent user is a Salesforce integration user that provides the runtime access 
 ### ACCESS IMPACT
 The agent user’s role, permission sets, object access, field access, sharing access, and feature permissions determine which actions can run successfully.
 
+### Agent User
+The agent user should start with minimal access and then receive only the additional permissions required for the agent’s assigned actions.
+NEW AGENT USERCreating a new agent user gives the agent a secure baseline with the Einstein Agent license, Einstein Agent User profile, and default permission set assignments.❖ADDITIONAL ACCESSAdditional permissions should be granted through targeted permission sets for the specific objects, fields, flows, Apex classes, prompt templates, Knowledge, or Data 360 assets the agent uses.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMT
-E3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1
-NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMz
-kwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMTAzNTQw
-NzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0LD
-IwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbMTkxMDc5NTE0MywzNTM4NzIyNjEsLTE3MD
+c0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1
+ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOT
+AzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMTk5MTQ0
+Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUxMzY3LD
+EwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3NDc1
+NzE5NF19
 -->
