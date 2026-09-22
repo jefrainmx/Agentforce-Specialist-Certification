@@ -812,9 +812,13 @@ Cosmic Health employs thousands of staff across HR, IT, and clinical operations.
 The Salesforce admin should deploy an Agentforce Employee agent. Unlike customer-facing agents, it operates with user-specific context and can be assigned to specific profiles or users. Each employee sees only what their role allows. In Salesforce or Slack, the agent can answer HR questions, guide onboarding, or resolve IT issues. Furthermore, it leverages theEinstein Trust Layer to ensure that the data and employee information are never shared, ensuring privacy and compliance.
 
 ## References:
+[Agentforce Service for Slack](https://trailhead.salesforce.com/content/learn/trails/service-cloud-for-slack)
+[Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=service.service_agent_overview.htm&type=5)
+[Get Started with Agentforce for Employees](https://trailhead.salesforce.com/content/learn/modules/agentforce-for-employees-quick-look/get-started-with-agentforce-for-employees)
+[Create an Agent from an Agentforce Employee Agent Template](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_setup.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDYzODcxNTcsLTQxNzcwNzEzOCwtNj
+eyJoaXN0b3J5IjpbLTE0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNj
 g4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1
 NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMy
 wzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3
