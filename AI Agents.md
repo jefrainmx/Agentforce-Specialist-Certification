@@ -861,23 +861,30 @@ The API has a timeout value of 120 seconds. When an API call times out, an HTTP 
 
 ## Scenarios & Solutions
 ### Scenario 1
-
+The Agentforce Specialist should recommend using the Agent API. It would allow the company’s web development team to connect the site directly to an Agentforce agent and display responses in a fully customized web interface. This approach is appropriate when users interact with an agent outside Salesforce, and the experience must align with the company’s branding and layout.
 ### Solution 1
+Cosmic Logistics needs an automated agent to summarize delivery exceptions each night and notify regional managers of late shipments. The process should run automatically without user interaction.
 
 ### Scenario 2
+
 ### Solution 2
 
+
 ### Scenario 3
+
 ### Solution 3
 
+
 ### Scenario 4
+
 ### Solution 4
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM1OTczMjU1LC0yMDg3NjQ1NjksLTE0Mz
-YwNzIzNTAsLTE0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNjg4NTQ1
-MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OS
-wtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMz
-NDg3MTksMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MT
-Y0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAw
-NDA4NjUxM119
+eyJoaXN0b3J5IjpbLTk5MjU2ODU1NywtMjA4NzY0NTY5LC0xND
+M2MDcyMzUwLC0xNDgzNDExOTM1LC00MTc3MDcxMzgsLTY4ODU0
+NTIxNiwtMTAzOTQ1ODcyNiwxNTc1MTY4OTY1LC0yODg0NTc2OT
+ksLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4NTM0NzIxMDMsMzAz
+MzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OTY3MSwtMTExNzA5Nj
+E2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIsMTQ3MTA2NTY0LDIw
+MDQwODY1MTNdfQ==
 -->
