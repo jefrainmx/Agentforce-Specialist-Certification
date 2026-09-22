@@ -666,11 +666,13 @@ An Inbound Omni-Channel Flow can be created to route messaging requests to a Ser
 ![Inbound](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130436.png)
 #### Outbound Omni-Channel Flow
 An Outbound Omni-Channel Flow can be created to enable routing conversations to a queue.
-
+![Outbound](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130503.png)
 #### Messaging Channel
 A Messaging Channel must be created for a digital customer channel in Setup.
+![Messaging Channel](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130530.png)
 #### Embedded Service Deployment
 An Embedded Service Deployment must be configured and published to deploy a Service Agent.
+![Embedded Service](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130550.png)
 #### Embedded Messaging Component
 The Embedded Messaging component can be added to a page of an Experience Cloud site.
 
@@ -681,9 +683,9 @@ The Embedded Messaging component can be added to a page of an Experience Cloud s
 [Connect a Service Agent to Partner Telephony](https://help.salesforce.com/s/articleView?id=ai.agent_connect_telephony_parent.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMjc5NjIwNCwxNDcxMDY1NjQsMjAwND
-A4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0
-LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMTAzNTQwNzIwMywxMD
-g2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEw
-MDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
+eyJoaXN0b3J5IjpbLTExMjg5NDEzNDksMTQ3MTA2NTY0LDIwMD
+QwODY1MTMsMTczMzQ2MDMyOSw5MDM2ODg2ODgsLTM5MDAzMjI5
+NCwxMzcwOTAzNTcyLC0xOTkxNDQ3ODY3LDEwMzU0MDcyMDMsMT
+A4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1NDQ2NCwyMDIxMzYx
+MDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0XX0=
 -->
