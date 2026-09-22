@@ -803,11 +803,13 @@ Custom actions and topics can be created for use cases specific to the business 
 
 ## Scenarios & Solutions
 ### Scenario 1
+Cosmic Appliances uses an Agentforce Employee agent to assist internal staff with HR and IT requests and an SDR agent that supports sales reps. Now, customers are contacting support through the website chat asking, “How do I file a warranty claim?” and “My package shows delivered but is missing.” The company’s Agentforce Specialist must decide which agent type to deploy for these public-facing service interactions.
 ### Solution 1
+
 ### Scenario 2
 ### Solution 2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTkzMzg2MCwtNjg4NTQ1MjE2LC0xMD
+eyJoaXN0b3J5IjpbLTQxNzcwNzEzOCwtNjg4NTQ1MjE2LC0xMD
 M5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2
 NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMz
 UzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0
