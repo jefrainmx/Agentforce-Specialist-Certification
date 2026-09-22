@@ -633,10 +633,18 @@ Connection settings define channel-specific behavior, such as adaptive response 
 ![Connecting Settings](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20124359.png)
 
 ## Connecting a Service Agent to Digital Experience
+### Connecting a Service Agent to Experience Cloud
+An AgentforceService Agent can be connected to a customer channel, such as a digital experience.
+#### SERVICE CLOUD CONFIGURATION
+A Service Agent can be exposed to customers through Messaging for In-App and Web after the required Service Cloud, Messaging, and routing setup is complete. 
+#### OMNI-CHANNEL SETUP
+Omni-Channel must be enabled so Messaging conversations can be routed to the Service Agent and fallback destinations.
+#### MESSAGING
+Messaging must be enabled and configured to create the customer-facing channel that receives messages from the Experience Cloud site.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzI1Njc3MywtMTk5MTQ0Nzg2NywxMD
+eyJoaXN0b3J5IjpbMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMD
 M1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0
 NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3NDc1NzE5NF19
 -->
