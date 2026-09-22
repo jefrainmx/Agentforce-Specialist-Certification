@@ -674,12 +674,13 @@ The Embedded Messaging component can be added to a page of an Experience Cloud s
 
 ## References:
 [Deploy Your Agent to Channels](https://help.salesforce.com/s/articleView?id=ai.agent_parent_deploy.htm&type=5)
-[enter link description here](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/overview)
-
+[Get Hands on with Agentforce Service Agents](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/overview)
+[Agentforce Service for Slack](https://trailhead.salesforce.com/content/learn/trails/service-cloud-for-slack)
+[# Connect a Service Agent to Partner Telephony](https://help.salesforce.com/s/articleView?id=ai.agent_connect_telephony_parent.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODUwNTM3MywyMDA0MDg2NTEzLDE3Mz
-M0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MDkwMzU3
-MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAzODEsNj
-k3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4MzcxNzYy
-NDQsLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbLTIwOTgxMTQwMjMsMjAwNDA4NjUxMywxNz
+MzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1
+NzIsLTE5OTE0NDc4NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLD
+Y5NzA1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2
+MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
