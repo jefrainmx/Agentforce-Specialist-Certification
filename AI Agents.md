@@ -799,17 +799,19 @@ The default topics, actions, and instructions can be updated. Custom actions and
 ### STANDARD USE CASES
 Standard topics and actions assigned to the agent can handle tasks such as account management, case management, order and delivery inquiries, reservation management, escalation, and general FAQs.
 ### CUSTOM USE CASES
-Custom actions and topics can be created for use cases specific to the business or industry, such as healthcare management, retailmanagement, nonprofit sector, travel arrangements, insurance, etc.
-
+Custom actions and topics can be created for use cases specific to the business or industry, such as healthcare management, retail management, nonprofit sector, travel arrangements, insurance, etc.
 
 ## Scenarios & Solutions
-
+### Scenario 1
+### Solution 1
+### Scenario 2
+### Solution 2
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODU0NTIxNiwtMTAzOTQ1ODcyNiwxNT
-c1MTY4OTY1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1
-NzE1LDE4NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMT
-cwNzQ1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgy
-NTU4ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOS
-w5MDM2ODg2ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkx
-NDQ3ODY3XX0=
+eyJoaXN0b3J5IjpbMTUwNTkzMzg2MCwtNjg4NTQ1MjE2LC0xMD
+M5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2
+NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMz
+UzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0
+MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMy
+wxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5
+MDM1NzJdfQ==
 -->
