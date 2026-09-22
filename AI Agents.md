@@ -727,9 +727,10 @@ When creating an agent that needs an agent user, the specialist can create a new
 ![Agent User](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20140038.png)
 
 ### Agentforce Permission Sets for Sales & Service
-PERMISSION SETAGENT TYPEDESCRIPTIONUse Agentforce Sales CoachAgentforce Sales CoachAllows users to access and utilize Agentforce Sales Coach.Manage Agentforce Sales CoachAgentforce Sales CoachAllows an admin to enable and configure Agentforce Sales Coach. Agentforce Sales CoachAgentforce Sales CoachNeeds to be assigned to the Agentforce Sales Coach user record.Use Agentforce SDR AgentAgentforce SDRAllows users to access and interact with Agentforce Lead Nurturing.Configure Agentforce SDR AgentAgentforce SDRAllows an admin to manage and monitor Agentforce Lead Nurturing.Agentforce permission sets can assigned to users based on their persona and responsibilities.
+Agentforce permission sets can assigned to users based on their persona and responsibilities.
+PERMISSION SETAGENT TYPEDESCRIPTIONUse Agentforce Sales CoachAgentforce Sales CoachAllows users to access and utilize Agentforce Sales Coach.Manage Agentforce Sales CoachAgentforce Sales CoachAllows an admin to enable and configure Agentforce Sales Coach. Agentforce Sales CoachAgentforce Sales CoachNeeds to be assigned to the Agentforce Sales Coach user record.Use Agentforce SDR AgentAgentforce SDRAllows users to access and interact with Agentforce Lead Nurturing.Configure Agentforce SDR AgentAgentforce SDRAllows an admin to manage and monitor Agentforce Lead Nurturing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2Nzg3OTgxMSwzMDMzNDg3MTksMzUzOD
+eyJoaXN0b3J5IjpbMTg0OTU0OTg5OSwzMDMzNDg3MTksMzUzOD
 cyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUw
 ODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNz
 MzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1
