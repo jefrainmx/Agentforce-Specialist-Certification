@@ -831,15 +831,19 @@ Using the Agent API requires setting up a connected app that supports the client
 Agent API allows starting a session, sending messages (synchronous or streaming), receiving agent responses, and ending sessions. API requests can be made from an app after generating an access token.
 
 ## Agent API
+Agent API is a REST API interface that allows external systems (web apps, mobile apps, other agents) to invoke Agentforce agents programmatically.
+### EXTERNAL UI
+Agent API can be used to connect Agentforce agents to websites, external platforms, non-traditional UI (e.g., a highly customized Experience Cloud site), or workflows.
+### HEADLESS AUTOMATIONHeadless agents can be created and deployed to automate functionality without UI constraints. ❖AGENTIC ECOSYSTEMAn agentic ecosystem can be built by invoking Agentforce agents from other agents.
 
 ## Scenarios &Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzg4Njg5MTgsLTE0MzYwNzIzNTAsLT
-E0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNjg4NTQ1MjE2LC0xMDM5
-NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2Nj
-EzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUz
-ODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0Mj
-UwODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywx
-NzMzNDYwMzI5XX0=
+eyJoaXN0b3J5IjpbLTM4OTAxMzA2NywtMTQzNjA3MjM1MCwtMT
+Q4MzQxMTkzNSwtNDE3NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0
+NTg3MjYsMTU3NTE2ODk2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MT
+MsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4
+NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNT
+A4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3
+MzM0NjAzMjldfQ==
 -->
