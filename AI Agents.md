@@ -641,10 +641,15 @@ A Service Agent can be exposed to customers through Messaging for In-App and Web
 Omni-Channel must be enabled so Messaging conversations can be routed to the Service Agent and fallback destinations.
 #### MESSAGING
 Messaging must be enabled and configured to create the customer-facing channel that receives messages from the Experience Cloud site.
+#### INBOUND FLOW
+An inbound Omni-Channel Flow must be created to route Messaging requests to the Service Agent. The Route Work action must be added to the flow, and it must be configured by selecting the Service Channel, Service Agent, and Fallback Queue.
+#### MESSAGING CHANNEL
+A Messaging Channel must be created on the Messaging Settings page in Setup by selecting the Messaging for In-App and Web type. The Omni-Channel Flow and Fallback Queue must be added for routing.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMD
-M1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0
-NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOT
+kxNDQ3ODY3LDEwMzU0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEz
+NjcsMTAwNjA1NDQ2NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMj
+c0NzU3MTk0XX0=
 -->
