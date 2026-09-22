@@ -630,12 +630,13 @@ The Connections section in Agentforce Builder is used to add and manage channel 
 
 ### Connection Settings
 Connection settings define channel-specific behavior, such as adaptive response formats, routing flows, and other settings required for the selected channel.
+![Connecting Settings](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20124359.png)
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk4MTM2NTY1LC0xOTkxNDQ3ODY3LDEwMz
-U0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNjA1NDQ2
-NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0XX0=
+eyJoaXN0b3J5IjpbLTI2NzI1Njc3MywtMTk5MTQ0Nzg2NywxMD
+M1NDA3MjAzLDEwODY2NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0
+NjQsMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3NDc1NzE5NF19
 -->
