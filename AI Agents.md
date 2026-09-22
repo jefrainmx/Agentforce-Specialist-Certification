@@ -663,8 +663,16 @@ The diagram below illustrates how a Service Agent can be connected to a Messagin
 
 #### Inbound Omni-Channel Flow
 An Inbound Omni-Channel Flow can be created to route messaging requests to a Service Agent.
+#### Outbound Omni-Channel Flow
+An Outbound Omni-Channel Flow can be created to enable routing conversations to a queue.
+#### Messaging Channel
+A Messaging Channel must be created for a digital customer channel in Setup.
+#### Embedded Service Deployment
+An Embedded Service Deployment must be configured and published to deploy a Service Agent.
+#### Embedded Messaging Component
+The Embedded Messaging component can be added to a page of an Experience Cloud site.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExOTczMjI0MiwxNzMzNDYwMzI5LDkwMz
+eyJoaXN0b3J5IjpbMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMz
 Y4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4
 NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMD
 A2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcx
