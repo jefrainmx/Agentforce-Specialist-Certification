@@ -380,6 +380,7 @@ Availability conditions can make actions, subagents, or prompts available only w
 ### Custom Variables
 Custom variables can be created in Agentforce Builder and used to store conversation state, action outputs, and values needed for filters, instructions, or later action inputs.
 
+
 ###  Using Variables
 Variables can be referenced in instructions, mapped to action inputs, populated from action outputs, and inserted into Agent Script prompt text with {!@variables.variable_name}.
 
@@ -608,6 +609,6 @@ The diagram below illustrates how an Agentforce Service agent can be connected t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMTM2MTAwMSw4MzcxNzYyNDQsLTI3ND
-c1NzE5NF19
+eyJoaXN0b3J5IjpbNDIxNzYwMDg3LDIwMjEzNjEwMDEsODM3MT
+c2MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
