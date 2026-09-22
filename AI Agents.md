@@ -861,17 +861,18 @@ The API has a timeout value of 120 seconds. When an API call times out, an HTTP 
 
 ## Scenarios & Solutions
 ### Scenario 1
-The Agentforce Specialist should recommend using the Agent API. It would allow the company’s web development team to connect the site directly to an Agentforce agent and display responses in a fully customized web interface. This approach is appropriate when users interact with an agent outside Salesforce, and the experience must align with the company’s branding and layout.
+Cosmic Outfitters wants to enhance its public website by adding a conversational interface that answers product questions and helps visitors place orders. The company wants this experience to match the site’s existing design and operate independently of Salesforce UI components.
 ### Solution 1
-Cosmic Logistics needs an automated agent to summarize delivery exceptions each night and notify regional managers of late shipments. The process should run automatically without user interaction.
+The Agentforce Specialist should recommend using the Agent API. It would allow the company’s web development team to connect the site directly to an Agentforce agent and display responses in a fully customized web interface. This approach is appropriate when users interact with an agent outside Salesforce, and the experience must align with the company’s branding and layout.
 
 ### Scenario 2
-The Agentforce Specialist should use the Agent API to deploy a headless agent. This API enables agents to operate behind the scenes, generate summaries, and post insights on other systems without requiring a chat interface. It’s best suited for back-end automations that don’t involve a conversational UI.
+Cosmic Logistics needs an automated agent to summarize delivery exceptions each night and notify regional managers of late shipments. The process should run automatically without user interaction.
 ### Solution 2
 Cosmic Bank wants its existing tools, including Slack and a customer service app, to trigger Agentforce agents that analyze customer messages and suggest actions within ongoing workflows.
 
 ### Scenario 3
-
+Cosmic Bank wants its existing tools, including Slack and a customer service app, to trigger Agentforce agents that analyze customer messages and suggest actions within ongoing workflows.
+The Agentforce Specialist should choose the Agent API to integrate Agentforce agents into those workflows. This API allows other systems and platforms to send context, receive agent-generated responses, and continue the process seamlessly. It’s appropriate when agents must extend existing business workflows across applications.
 ### Solution 3
 
 
@@ -880,11 +881,11 @@ Cosmic Bank wants its existing tools, including Slack and a customer service app
 ### Solution 4
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzU4MDIxMTcsLTIwODc2NDU2OSwtMT
-QzNjA3MjM1MCwtMTQ4MzQxMTkzNSwtNDE3NzA3MTM4LC02ODg1
-NDUyMTYsLTEwMzk0NTg3MjYsMTU3NTE2ODk2NSwtMjg4NDU3Nj
-k5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMw
-MzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOT
-YxNjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwy
-MDA0MDg2NTEzXX0=
+eyJoaXN0b3J5IjpbNDE5MzkwODAwLC0xMTM1ODAyMTE3LC0yMD
+g3NjQ1NjksLTE0MzYwNzIzNTAsLTE0ODM0MTE5MzUsLTQxNzcw
+NzEzOCwtNjg4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5Nj
+UsLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1
+MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5Nj
+cxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4Miwx
+NDcxMDY1NjRdfQ==
 -->
