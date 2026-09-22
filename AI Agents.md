@@ -708,12 +708,18 @@ Employee-facing agents in logged-in Salesforce experiences typically use the log
 #### ACCESS IMPACT
 The logged-in user’s license, object permissions, field permissions, sharing, and record access determine what the agent can read, update, or execute.
 
+### Agent User Context
+In unauthenticated or customer-facing channels, the agent runs as a dedicated agent user.
+#### AGENT USER
+An agent user is a Salesforce integration user that provides the runtime access an agent needs when the end user is not directly authorized in Salesforce. 
+### ACCESS IMPACT
+The agent user’s role, permission sets, object access, field access, sharing access, and feature permissions determine which actions can run successfully.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLT
-E0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2
-NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIyOTQsMT
-M3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2
-NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2MTAwMS
-w4MzcxNzYyNDQsLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMT
+E3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxNDcxMDY1
+NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4OCwtMz
+kwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMTAzNTQw
+NzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0NDY0LD
+IwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
