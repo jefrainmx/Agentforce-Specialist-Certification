@@ -645,11 +645,17 @@ Messaging must be enabled and configured to create the customer-facing channel t
 An inbound Omni-Channel Flow must be created to route Messaging requests to the Service Agent. The Route Work action must be added to the flow, and it must be configured by selecting the Service Channel, Service Agent, and Fallback Queue.
 #### MESSAGING CHANNEL
 A Messaging Channel must be created on the Messaging Settings page in Setup by selecting the Messaging for In-App and Web type. The Omni-Channel Flow and Fallback Queue must be added for routing.
+#### OUTBOUND FLOW
+An outbound Omni-Channel Flow must be created to enable the agent to transfer conversations to a queue. The flow must be added to the agent by navigating to the Connections tab of its details page in Setup.
+#### EMBEDDED SERVICE DEPLOYMENT
+An Embedded Service Deployment must be configured in Setup to add the agent to the messaging interface of the channel.
+#### EXPERIENCE CLOUD
+The agent can be deployed to a customer-facing Experience Cloud site by adding the Embedded Messaging component to a site page.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOT
-kxNDQ3ODY3LDEwMzU0MDcyMDMsMTA4NjY1MDM4MSw2OTcwNTEz
-NjcsMTAwNjA1NDQ2NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMj
-c0NzU3MTk0XX0=
+eyJoaXN0b3J5IjpbOTAzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MD
+kwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAz
+ODEsNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4Mz
+cxNzYyNDQsLTI3NDc1NzE5NF19
 -->
