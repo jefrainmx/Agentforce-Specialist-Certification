@@ -658,9 +658,13 @@ Progress indicators can be used to alert customers to agent activity during a me
 #### TESTING
 To preserve message formatting during testing, Salesforce recommends chatting with the agent in a test channel.
 
+### Connecting a Service Agent to Experience Cloud
+The diagram below illustrates how a Service Agent can be connected to a Messaging Channel on an Experience Cloud site.
 
+#### Inbound Omni-Channel Flow
+An Inbound Omni-Channel Flow can be created to route messaging requests to a Service Agent.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MTY1MTAzMSwxNzMzNDYwMzI5LDkwMz
+eyJoaXN0b3J5IjpbMTExOTczMjI0MiwxNzMzNDYwMzI5LDkwMz
 Y4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4
 NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMD
 A2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcx
