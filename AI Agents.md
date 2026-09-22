@@ -810,8 +810,11 @@ An Agentforce Service agent should be deployed for the requirement because the r
 Cosmic Health employs thousands of staff across HR, IT, and clinical operations. Employees frequently contact HR about benefits or onboarding and message IT in Slack for password resets and laptop issues. Managers and staff use different Salesforce apps but require quick, secure help without escalating to multiple teams. The Salesforce admin wants to deploy a digital AI assistant to help employees perform these internal tasks while respecting org security and permissions.
 ### Solution 2
 The Salesforce admin should deploy an Agentforce Employee agent. Unlike customer-facing agents, it operates with user-specific context and can be assigned to specific profiles or users. Each employee sees only what their role allows. In Salesforce or Slack, the agent can answer HR questions, guide onboarding, or resolve IT issues. Furthermore, it leverages theEinstein Trust Layer to ensure that the data and employee information are never shared, ensuring privacy and compliance.
+
+## References:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjgxMTc5NjUsLTQxNzcwNzEzOCwtNj
+eyJoaXN0b3J5IjpbLTE3MDYzODcxNTcsLTQxNzcwNzEzOCwtNj
 g4NTQ1MjE2LC0xMDM5NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1
 NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMy
 wzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3
