@@ -610,12 +610,18 @@ The diagram below illustrates how an Agentforce Employee agent can be connected 
 The diagram below illustrates how an Agentforce Service agent can be connected to Email, allowing it to autonomously respond to customer email inquiries.
 ![Connecting an Agent to Email](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20122821.png)
 
+### Connecting a Service Agent to Voice
+Voice connections allow customers to interact with an Agentforce Service Agent through a telephony channel.
+#### TELEPHONY CONNECTION
+A telephony connection connects voice conversations to the Service Agent and defines how calls enter the agent experience.
+#### VOICE MODE SETTINGS
+Voice mode settings control the voice interaction experience, including how the agent listens, responds, and handles the call flow.
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4NjY1MDM4MSw2OTcwNTEzNjcsMTAwNj
-A1NDQ2NCwyMDIxMzYxMDAxLDgzNzE3NjI0NCwtMjc0NzU3MTk0
-XX0=
+eyJoaXN0b3J5IjpbMTgzNjYwMDE3NiwxMDg2NjUwMzgxLDY5Nz
+A1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0
+LC0yNzQ3NTcxOTRdfQ==
 -->
