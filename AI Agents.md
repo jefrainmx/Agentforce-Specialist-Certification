@@ -741,12 +741,15 @@ AgentforceServiceAgentUserPsg | Agentforce Service Agent | Permission Set Group 
 Service Planner User | Agentforce Service Planner | Allows service reps to draft service plans using Agentforce Service Planner.
 Service Planner Builder | Agentforce Service Planner | Allows an admin to set up and manage Agentforce Service Planner.
 
+### Considerations for Setting Up Agent Permissions
+Certain considerations apply to setting up permissions for an Agentforce agent.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzOD
-cyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUw
-ODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNz
-MzNDYwMzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1
-NzIsLTE5OTE0NDc4NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLD
-Y5NzA1MTM2NywxMDA2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2
-MjQ0XX0=
+eyJoaXN0b3J5IjpbLTYwMjEyNTAyOCwxODUzNDcyMTAzLDMwMz
+M0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYx
+NjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMD
+A0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIy
+OTQsMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLD
+EwODY2NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2
+MTAwMV19
 -->
