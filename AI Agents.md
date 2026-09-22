@@ -792,17 +792,24 @@ Agentforce for Service can answer questions using natural language responses, de
 Agentforce for Service can be grounded in credible sources like Knowledge articles, similar cases, and CRM data. All LLM calls go through the Einstein Trust Layer, keeping the customer data safe.
 ### SETUP
 Agentforce Service Agent can be set up quickly with prebuilt topics and actions. The default Agentforce Service Agent template can be used to create an agent designed to resolve common support cases and requests.
-###
+### CHANNELS
+The agent can connect to customer channels, such as enhanced messaging channels, and use Omni-Channel Flow to escalate complex or sensitive support requests to service reps or other destinations.
+### MAINTENANCE
+The default topics, actions, and instructions can be updated. Custom actions and topics can be created to support additional use cases.
+### STANDARD USE CASES
+Standard topics and actions assigned to the agent can handle tasks such as account management, case management, order and delivery inquiries, reservation management, escalation, and general FAQs.
+### CUSTOM USE CASES
+Custom actions and topics can be created for use cases specific to the business or industry, such as healthcare management, retailmanagement, nonprofit sector, travel arrangements, insurance, etc.
 
 
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMxOTg1MDQ1LC0xMDM5NDU4NzI2LDE1Nz
-UxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3
-MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNz
-A3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1
-NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LD
-kwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0
-NDc4NjddfQ==
+eyJoaXN0b3J5IjpbLTY4ODU0NTIxNiwtMTAzOTQ1ODcyNiwxNT
+c1MTY4OTY1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1
+NzE1LDE4NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMT
+cwNzQ1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgy
+NTU4ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOS
+w5MDM2ODg2ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkx
+NDQ3ODY3XX0=
 -->
