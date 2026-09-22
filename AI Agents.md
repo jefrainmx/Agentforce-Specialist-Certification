@@ -671,10 +671,15 @@ A Messaging Channel must be created for a digital customer channel in Setup.
 An Embedded Service Deployment must be configured and published to deploy a Service Agent.
 #### Embedded Messaging Component
 The Embedded Messaging component can be added to a page of an Experience Cloud site.
+
+## References:
+[Deploy Your Agent to Channels](https://help.salesforce.com/s/articleView?id=ai.agent_parent_deploy.htm&type=5)
+[enter link description here](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/overview)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMz
-Y4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4
-NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMD
-A2MDU0NDY0LDIwMjEzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcx
-OTRdfQ==
+eyJoaXN0b3J5IjpbLTQ2ODUwNTM3MywyMDA0MDg2NTEzLDE3Mz
+M0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MDkwMzU3
+MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2NTAzODEsNj
+k3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2MTAwMSw4MzcxNzYy
+NDQsLTI3NDc1NzE5NF19
 -->
