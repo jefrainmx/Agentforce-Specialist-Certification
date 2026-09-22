@@ -763,7 +763,11 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 ## Introduction
 Agentforce offers different types of agents for specific clouds and common use cases. The Agentforce EmployeeAgentsupports employees and includes various topics and actions that help sales reps perform tasks related to sales. The Agentforce Service Agent supports customers by processing incoming cases, autonomously resolving common inquiries, and escalating complex or sensitive support requests.
 
-
+### Employee & Service Agents
+#### AGENTFORCE EMPLOYEE AGENT
+Agentforce Employee Agent supports employees by helping them find information, complete tasks, and access personalized support across channels. Sales reps can use the agent to invoke sales-related actions.
+#### AGENTFORCE SERVICE AGENT
+Agentforce Service Agent supports customers by processing incoming cases and autonomously resolving common inquiries. It can also escalate complex or sensitive support requests.
 
 ## Agentforce Employee Agent
 
@@ -772,11 +776,11 @@ Agentforce offers different types of agents for specific clouds and common use c
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjE2ODM1MzcsLTI0MDc0NjYxMywtMj
-I4NDg1NzE1LDE4NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2
-MSwtMTcwNzQ1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MC
-wtNzgyNTU4ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2
-MDMyOSw5MDM2ODg2ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC
-0xOTkxNDQ3ODY3LDEwMzU0MDcyMDMsMTA4NjY1MDM4MSw2OTcw
-NTEzNjddfQ==
+eyJoaXN0b3J5IjpbLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMj
+g0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYx
+LC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC
+03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYw
+MzI5LDkwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLT
+E5OTE0NDc4NjcsMTAzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1
+MTM2N119
 -->
