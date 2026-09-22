@@ -842,15 +842,23 @@ An agentic ecosystem can be built by invoking Agentforce agents from other agent
 Agent API allows starting a session, sending messages (synchronous or streaming), receiving agent responses, and ending sessions. API requests can be made from an app after generating an access token.
 ### PREREQUISITE
 Agent API requires Agentforce enabled with at least one agent activated. However, it isn’t supported for agents of type “Agentforce (Default)”.
+### SETUP
+Using the Agent API requires setting up a connected app that supports the client credentials flow. However, any flow that provides a JWT-based access token can be utilized. The connected app must also be added to the agent before calling the API.
+### ACCESS TOKEN
+An access token is required for all calls to the Agent API. It can be created by using the consumer key, consumer secret, and the My Domain URL.
+### CALLING REQUIREMENTS
+Calling the API requires the agent ID, access token, a random UUID, and the My Domain URL. The agent ID can be found in the URL of the Agent Overview Page. The random UUID value represents the session key and can be used to trace the conversation in the agent’s event logs.
+### SESSION LIFECYCLE
+Creating a session is required to communicate with an agent. Messagescan be sent to the agent by using the ID associated with that session. The agent keeps track of the context throughout the session. The session can be ended when working with the agent is no longer required.
 
 ## Scenarios &Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDAxNzY4MDksLTE0MzYwNzIzNTAsLT
-E0ODM0MTE5MzUsLTQxNzcwNzEzOCwtNjg4NTQ1MjE2LC0xMDM5
-NDU4NzI2LDE1NzUxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2Nj
-EzLC0yMjg0ODU3MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUz
-ODcyMjYxLC0xNzA3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0Mj
-UwODkwLC03ODI1NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywx
-NzMzNDYwMzI5XX0=
+eyJoaXN0b3J5IjpbLTIwODc2NDU2OSwtMTQzNjA3MjM1MCwtMT
+Q4MzQxMTkzNSwtNDE3NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0
+NTg3MjYsMTU3NTE2ODk2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MT
+MsLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4
+NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNT
+A4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3
+MzM0NjAzMjldfQ==
 -->
