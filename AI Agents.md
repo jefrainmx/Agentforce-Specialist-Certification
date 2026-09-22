@@ -783,15 +783,17 @@ Employee agents run in the logged-in user context, and can be created as multipl
 Employee agents can be deployed to simplify and automate work across various departments, such as HR, IT, service, sales, marketing, legal, engineering, supply chain management, etc.
 
 ## Agentforce Service Agent
+Agentforce Service Agent supports customers by processing incoming cases and autonomously resolving common inquiries. It can also escalate complex or sensitive support requests.
+
 
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzk0NTg3MjYsMTU3NTE2ODk2NSwtMj
-g4NDU3Njk5LC0yNDA3NDY2MTMsLTIyODQ4NTcxNSwxODUzNDcy
-MTAzLDMwMzM0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLT
-ExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEw
-NjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC
-0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1
-NDA3MjAzXX0=
+eyJoaXN0b3J5IjpbMTMxNTUxNzk3MSwtMTAzOTQ1ODcyNiwxNT
+c1MTY4OTY1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1
+NzE1LDE4NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMT
+cwNzQ1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgy
+NTU4ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOS
+w5MDM2ODg2ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkx
+NDQ3ODY3XX0=
 -->
