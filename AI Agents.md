@@ -597,11 +597,10 @@ An Agentforce Employee Agent can be made available in Lightning Experience and t
 ### Connecting an Agent to Slack
 The diagram below illustrates how an Agentforce Employee agent can be connected to Slack.
 
-![Connecting an Agent to Slack](https://github.com/jefrainmx/Agentforce-Specialist-Certification/blob/main/images/Screenshot%202026-09-22%20113402.png)
 
 ## Connecting a Service Agent to Digital Experience
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbMjg2MTkwMDU0LC0yNzQ3NTcxOTRdfQ==
 -->
