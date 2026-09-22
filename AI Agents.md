@@ -721,8 +721,10 @@ The agent user should start with minimal access and then receive only the additi
 Creating a new agent user gives the agent a secure baseline with the Einstein Agent license, Einstein Agent User profile, and default permission set assignments.
 #### ADDITIONAL ACCESS
 Additional permissions should be granted through targeted permission sets for the specific objects, fields, flows, Apex classes, prompt templates, Knowledge, or Data 360 assets the agent uses.
+
+### Agent 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExOTM3NDQ0OSwzNTM4NzIyNjEsLTE3MD
+eyJoaXN0b3J5IjpbMTcyODQwMjc0MSwzNTM4NzIyNjEsLTE3MD
 c0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAsLTc4MjU1
 ODgyLDE0NzEwNjU2NCwyMDA0MDg2NTEzLDE3MzM0NjAzMjksOT
 AzNjg4Njg4LC0zOTAwMzIyOTQsMTM3MDkwMzU3MiwtMTk5MTQ0
