@@ -387,6 +387,7 @@ Variables can be referenced in instructions, mapped to action inputs, populated 
 
 ### Using Filters
 Filters can be created to control when a subagent or action is available based on variable conditions.
+![Using filter](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20120950.png)
 
 ### Using Conditionals
 Conditionals are used to deterministically control agent behavior based on variable values.
@@ -610,6 +611,6 @@ The diagram below illustrates how an Agentforce Service agent can be connected t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODkyNzIwNDksMjAyMTM2MTAwMSw4Mz
-cxNzYyNDQsLTI3NDc1NzE5NF19
+eyJoaXN0b3J5IjpbMjc2Njc4Njg3LDIwMjEzNjEwMDEsODM3MT
+c2MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
