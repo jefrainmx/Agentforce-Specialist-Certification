@@ -701,11 +701,16 @@ Organization-wide defaults, sharing, roles, and field-level security determine w
 Agent users and human users should receive only the minimum access required for the agent’s intended tasks.
 
 ## Agent Runtime Security Context
-
+### Logged-In User Context
+In authenticated employee experiences, the agent runs in the context of the user who interacts with it.
+#### EMPLOYEE EXPERIENCES
+Employee-facing agents in logged-in Salesforce experiences typically use the logged-in user’s existing Salesforce access controls.
+#### ACCESS IMPACT
+The logged-in user’s license, object permissions, field permissions, sharing, and record access determine what the agent can read, update, or execute.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg5NzExOTAsLTExMTcwOTYxNjQsLT
+eyJoaXN0b3J5IjpbLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLT
 E0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMDA0MDg2
 NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIyOTQsMT
 M3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLDEwODY2
