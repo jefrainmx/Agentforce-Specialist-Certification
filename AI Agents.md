@@ -473,6 +473,7 @@ A custom action created inside an agent in Agentforce Builder is available only 
 
 ### Creating a Custom Action
 A custom action can be created from the Agentforce Asset Library or from within an agent in Agentforce Builder. The custom action references underlying Salesforce functionality, such as an autolaunched flow, invocable Apex, ApexREST, external service, MuleSoft API, or prompt template.
+![Create Custom Action](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121137.png)
 
 ### Action Instructions
 Action instructions help the agent understand when and how to use an action.
@@ -613,6 +614,6 @@ The diagram below illustrates how an Agentforce Service agent can be connected t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODUzNTA2OCwxMDA2MDU0NDY0LDIwMj
+eyJoaXN0b3J5IjpbLTc3NzA2MjQyNSwxMDA2MDU0NDY0LDIwMj
 EzNjEwMDEsODM3MTc2MjQ0LC0yNzQ3NTcxOTRdfQ==
 -->
