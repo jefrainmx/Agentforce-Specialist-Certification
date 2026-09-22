@@ -788,16 +788,21 @@ Agentforce Service Agent supports customers by processing incoming cases and aut
 Agentforce for Service (also known as Agentforce Service Agent) is a trusted AI agent that is designed to support customer service teams. It uses generative AI to operate 24/7 across self-service portals and messaging channels to handle tasks, make decisions, and provide natural responses aligned with branding.
 ### KEY FEATURES
 Agentforce for Service can answer questions using natural language responses, deflect cases, and ask questions specific to the business. It can understand context and match a brand’s voice. It can also transfer or escalate to live agents who can solve more complex issues.
+### TRUSTED DATA
+Agentforce for Service can be grounded in credible sources like Knowledge articles, similar cases, and CRM data. All LLM calls go through the Einstein Trust Layer, keeping the customer data safe.
+### SETUP
+Agentforce Service Agent can be set up quickly with prebuilt topics and actions. The default Agentforce Service Agent template can be used to create an agent designed to resolve common support cases and requests.
+###
 
 
 ## Scenarios & Solutions
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDUyNjg5OSwtMTAzOTQ1ODcyNiwxNT
-c1MTY4OTY1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1
-NzE1LDE4NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMT
-cwNzQ1OTY3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgy
-NTU4ODIsMTQ3MTA2NTY0LDIwMDQwODY1MTMsMTczMzQ2MDMyOS
-w5MDM2ODg2ODgsLTM5MDAzMjI5NCwxMzcwOTAzNTcyLC0xOTkx
-NDQ3ODY3XX0=
+eyJoaXN0b3J5IjpbNzMxOTg1MDQ1LC0xMDM5NDU4NzI2LDE1Nz
+UxNjg5NjUsLTI4ODQ1NzY5OSwtMjQwNzQ2NjEzLC0yMjg0ODU3
+MTUsMTg1MzQ3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNz
+A3NDU5NjcxLC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1
+NTg4MiwxNDcxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LD
+kwMzY4ODY4OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0
+NDc4NjddfQ==
 -->
