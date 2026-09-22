@@ -749,13 +749,16 @@ Access to additional features, such as prompt templates, should be granted by cr
 
 Organization-wide defaults (OWD) determine access to records. An agent session with an authenticated user runs in the end user’s context and OWD depend on whether the user is external or internal. An agent session with an unauthenticated user runs in the agent user’s context and OWD for internal users apply.
 
+## References:
+[Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&utm_source=chatgpt.com)
+[enter link description here](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMz
-M0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYx
-NjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMD
-A0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIy
-OTQsMTM3MDkwMzU3MiwtMTk5MTQ0Nzg2NywxMDM1NDA3MjAzLD
-EwODY2NTAzODEsNjk3MDUxMzY3LDEwMDYwNTQ0NjQsMjAyMTM2
-MTAwMV19
+eyJoaXN0b3J5IjpbODMzMDk5ODQyLC0yMjg0ODU3MTUsMTg1Mz
+Q3MjEwMywzMDMzNDg3MTksMzUzODcyMjYxLC0xNzA3NDU5Njcx
+LC0xMTE3MDk2MTY0LC0xNDc0MjUwODkwLC03ODI1NTg4MiwxND
+cxMDY1NjQsMjAwNDA4NjUxMywxNzMzNDYwMzI5LDkwMzY4ODY4
+OCwtMzkwMDMyMjk0LDEzNzA5MDM1NzIsLTE5OTE0NDc4NjcsMT
+AzNTQwNzIwMywxMDg2NjUwMzgxLDY5NzA1MTM2NywxMDA2MDU0
+NDY0XX0=
 -->
