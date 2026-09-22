@@ -745,12 +745,13 @@ Service Planner Builder | Agentforce Service Planner | Allows an admin to set up
 Certain considerations apply to setting up permissions for an Agentforce agent.
 Most agent users require a role that lets the agent view or edit the records that it interacts with. In addition, the agent requires access to the relevant objects referenced in each action. The principle of least privilege should be followed to grant the permissions, which means that only the minimum necessary permissions should be granted.
 
-Organization-wide defaults (OWD) determine access to records. An agent session with an authenticated user runs in the end user’s context and OWD depend on whether the user is external or internal. An agent session with an unauthenticated user runs in the agent user’s context and OWD for internal users apply.
-
 Access to additional features, such as prompt templates, should be granted by creating and assigning a permission set or permission set group. Flows require the Run Flows permission. Features and actions that leverage Knowledge and Data Cloud require the Allow View Knowledge and Access Conversation Entriespermissions.
 
+Organization-wide defaults (OWD) determine access to records. An agent session with an authenticated user runs in the end user’s context and OWD depend on whether the user is external or internal. An agent session with an unauthenticated user runs in the agent user’s context and OWD for internal users apply.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMDY0MzgyMSwxODUzNDcyMTAzLDMwMz
+eyJoaXN0b3J5IjpbLTIyODQ4NTcxNSwxODUzNDcyMTAzLDMwMz
 M0ODcxOSwzNTM4NzIyNjEsLTE3MDc0NTk2NzEsLTExMTcwOTYx
 NjQsLTE0NzQyNTA4OTAsLTc4MjU1ODgyLDE0NzEwNjU2NCwyMD
 A0MDg2NTEzLDE3MzM0NjAzMjksOTAzNjg4Njg4LC0zOTAwMzIy
