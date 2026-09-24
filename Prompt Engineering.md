@@ -43,9 +43,9 @@ The Prompt Template Manager permission set allows users to create and manage pro
 Users can create prompt templates by accessing the Prompt Builder page in Setup and clicking the New Prompt Template button. The page displays all the standard and custom prompt templates in the org
 
 Prompt Builder can be accessed by navigating to Prompt Builder in Salesforce Setup
-
+![Prompt Builder Main](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20123823.png)
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbMTE1NTg4NTY0MiwtMjAyNzc2Njc0MF19
 -->
