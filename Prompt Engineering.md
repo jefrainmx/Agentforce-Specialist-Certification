@@ -95,12 +95,19 @@ Various types of prompt templates can be created using Prompt Builder.
 
 ### Using Prompt Templates
 Users can apply prompt templates to draft emails, generate summaries, complete text form fields, and perform other unique tasks.
-
+#### SALES EMAIL
+Users can draft a personalized email using a custom sales email prompt template by clicking the Draft with Einstein button in the Lightning Experience email composer.
+#### FLEX TEMPLATE
+Flex prompt templates are specific to the use cases, so they can be called wherever they are needed. For example, a flex prompt template can be called with an invocable action using REST API.
+#### FIELD GENERATION
+Users can click an icon next to a dynamic form field that is associated with a field generation prompt template to populate it with an AI-generated description or summary.
+#### INTEGRATION
+A prompt template can be called through an invocable action anywhere on the Salesforce Platform or by using the Connect REST API or Connect in Apex.
 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMj
-c3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbNDA4MzE2MTMsODk4ODA4NTcyLDIxMjk4Mj
+c1MzMsLTIwMjc3NjY3NDBdfQ==
 -->
