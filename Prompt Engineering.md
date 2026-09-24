@@ -126,8 +126,8 @@ For example, this type of flow can be used to retrieve new cases related to a pa
 
 ### Prompt Template Action
 A Prompt Template action can be added to a flow to generate a response using a prompt template.
-
-![Prompt Template Action](images/Screenshot%202026-09-24%20133143.png)
+![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133143.png)
+![Prompt Template Action](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133143.png)
 
 ## Scenarios & Solutions
 ### Scenario 1
@@ -161,7 +161,7 @@ Cosmic Lights wants to send marketing emails highlighting products that align cl
 A custom Sales Email prompt template can be created to meet the requirement. It should be grounded in the customer's interests and product preferences. Users can click the Draft with Einstein button in the email composer on a contact or lead record and select the custom template to generate a personalized email.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODMyMTIyMjcsLTI3MDkyNDM3LDExNj
-A3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMjk4Mjc1
-MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbODI5MzI0NzIwLC0yNzA5MjQzNywxMTYwNz
+E5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMz
+LC0yMDI3NzY2NzQwXX0=
 -->
