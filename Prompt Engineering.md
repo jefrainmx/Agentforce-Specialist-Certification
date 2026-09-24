@@ -68,10 +68,12 @@ One of several prompt template types can be selected when creating a new prompt 
 
 ### Prompt Template Workspace
 The Prompt Template Workspace allows creating and testing prompt templates.
+![Prompt Builder resources](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20125427.png)
 
-
+![Prompt Builder Preview](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20125451.png)
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbODI3NzEwMjg3LDIxMjk4Mjc1MzMsLTIwMj
+c3NjY3NDBdfQ==
 -->
