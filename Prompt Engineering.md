@@ -155,10 +155,12 @@ The leadership team at Cosmic Furniture wants to enhance customer interactions b
 A Field Generation prompt template can be created for the requirement. It can use AI to generate a description for a dynamic form field. Users can review, modify, and finalize the text before engaging with customers, ensuring human oversight and validation.
 
 ### Scenario 6
+Cosmic Lights wants to send marketing emails highlighting products that align closely with each customer's interests. The goal is to create personalized content that resonates with customers based on their preferences for particular products.
 ### Solution 6
+A custom Sales Email prompt template can be created to meet the requirement. It should be grounded in the customer's interests and product preferences. Users can click the Draft with Einstein button in the email composer on a contact or lead record and select the custom template to generate a personalized email.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzkzNjQzMDIsMTE2MDcxOTIyMywtMT
-EwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2
-Njc0MF19
+eyJoaXN0b3J5IjpbLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMD
+c4MjY3NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3
+NDBdfQ==
 -->
