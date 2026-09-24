@@ -74,10 +74,12 @@ One of several prompt template types can be selected when creating a new prompt 
 
 Various types of prompt templates can be created using Prompt Builder.
 
-|TYPEUSAGEEXAMPLEField GenerationA Field Generation prompt template can be used to generate content for a record field in Lightning Experience. Users can click an icon to run the prompt template and populate the field with output.A Lightning record page form field on the Case object can be populated with dynamically generated summary containing key case details.Sales EmailA Sales Email prompt template can be used to generate personalized customer emails based on record data. Users can click the Draft with Einstein button in the email composer on contacts and leads.A sales email prompt template can be created to allow users to generate personalized, targeted emails that leverage the customer relationship history and insights.
+|TYPE|USAGE|EXAMPLE|
+|:----------------------------------------|:----------------------------------------|:----------------------------------------|
+|Field Generation|A Field Generation prompt template can be used to generate content for a record field in Lightning Experience. Users can click an icon to run the prompt template and populate the field with output|.A Lightning record page form field on the Case object can be populated with dynamically generated summary containing key case details.|Sales EmailA Sales Email prompt template can be used to generate personalized customer emails based on record data. Users can click the Draft with Einstein button in the email composer on contacts and leads.A sales email prompt template can be created to allow users to generate personalized, targeted emails that leverage the customer relationship history and insights.
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTM2MTY2MzcsMjEyOTgyNzUzMywtMj
+eyJoaXN0b3J5IjpbLTEyNjE0MTA1NDUsMjEyOTgyNzUzMywtMj
 AyNzc2Njc0MF19
 -->
