@@ -126,7 +126,7 @@ For example, this type of flow can be used to retrieve new cases related to a pa
 
 ### Prompt Template Action
 A Prompt Template action can be added to a flow to generate a response using a prompt template.
-![Prompt Template Action](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133143.png)
+![Prompt Template Action](images/Screenshot%202026-09-24%20133143.png)
 
 ## Scenarios & Solutions
 ### Scenario 1
