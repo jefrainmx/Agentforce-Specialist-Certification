@@ -119,10 +119,12 @@ A Template-Triggered Prompt Flowcan be created to provide data to a prompt templ
 #### FLOW ACTION
 A Prompt Template flow action can be added to a flow to generate a prompt response based on a specific prompt template and inputs. The prompt template must have an active version.
 
+### Template-Triggered Prompt Flows
+A template-triggered prompt flow can be created to perform dynamic logic and actionsto generate output text that’s merged into the associated prompt template’s resolution.For example, this type of flow can be used to retrieve new cases related to a particular account and send their details to a prompt template using a flow merge field.A template-triggered prompt flow must be created in Flow Builder to make its flow merge field available for adding to a prompt template. The flow sends its prompt instructions to the associated prompt template. 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwOTUyNjI2MywtMTEwNzgyNjc0Niw4OT
+eyJoaXN0b3J5IjpbLTEzNDkyOTc1NSwtMTEwNzgyNjc0Niw4OT
 g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
