@@ -78,15 +78,18 @@ Various types of prompt templates can be created using Prompt Builder.
 |:----------------------------------------|:----------------------------------------|:----------------------------------------|
 |Field Generation|A Field Generation prompt template can be used to generate content for a record field in Lightning Experience. Users can click an icon to run the prompt template and populate the field with output.|A Lightning record page form field on the Case object can be populated with dynamically generated summary containing key case details.|
 |Sales Email|A Sales Email prompt template can be used to generate personalized customer emails based on record data. Users can click the Draft with Einstein button in the email composer on contacts and leads.|A sales email prompt template can be created to allow users to generate personalized, targeted emails that leverage the customer relationship history and insights.|
-|Record Summary||
-|||
-|||
-|||
+|Record Summary|A Record Summary prompt template can be used to summarize record data for a comprehensive view of a record.|The Summarize Record standard invocable action uses record summary prompt templates. They are also used by the Summarize Record standard agent action.|
+|Flex|A Flex prompt template can be used to generate content for any business purpose that is not covered by the other template types by defining resources.|A Flex prompt template can be used to generate sales proposals that use data from multiple unrelated objects.|
+|Contextual Service Replies|Standard Contextual Service Replies prompt templates for Live Chat and Messaging Sessions can be customized.||
+||||
+||||
+||||
+||||
 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNDkzMTg4LDIxMjk4Mjc1MzMsLTIwMj
-c3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbLTE1MjYyNzQ0NiwyMTI5ODI3NTMzLC0yMD
+I3NzY2NzQwXX0=
 -->
