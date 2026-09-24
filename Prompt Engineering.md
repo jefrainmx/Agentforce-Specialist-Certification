@@ -104,10 +104,14 @@ Users can click an icon next to a dynamic form field that is associated with a f
 #### INTEGRATION
 A prompt template can be called through an invocable action anywhere on the Salesforce Platform or by using the Connect REST API or Connect in Apex.
 
+### Field Generation
+A Field Generation prompt template can be used to populate a dynamic form field.
+### Sales Emails
+The Draft with Einstein button can be clicked in the Lightning Experience email composer to draft a personalized email for a customer.
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA4MzE2MTMsODk4ODA4NTcyLDIxMjk4Mj
-c1MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMj
+k4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
 -->
