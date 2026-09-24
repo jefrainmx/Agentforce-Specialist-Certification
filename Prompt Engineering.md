@@ -130,6 +130,7 @@ A Prompt Template action can be added to a flow to generate a response using a p
 
 ## Scenarios & Solutions
 ### Scenario 1
+Cosmic Electronics is exploring public generative AI models to assist its sales and service teams. While they have experience crafting prompts to extract information effectively, users find it challenging and time-consuming to write prompts for each interaction manually. For instance, a support manager must create a new prompt every time a new bulletin post about product updates needs to be generated. The company seeks the assistance of an AI specialist to standardize prompts to save time and maintain response consistency
 ### Solution 1
 
 ### Scenario 2
@@ -148,6 +149,7 @@ A Prompt Template action can be added to a flow to generate a response using a p
 ### Solution 6
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OT
-g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbLTIyOTg0MjQyNCwxMTYwNzE5MjIzLC0xMT
+A3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2
+NzQwXX0=
 -->
