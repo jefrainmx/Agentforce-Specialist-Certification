@@ -89,12 +89,16 @@ Various types of prompt templates can be created using Prompt Builder.
 |Generate Case Description|A Generate Case Description prompt template can be used to create detailed case descriptions based on interactions, helping agents understand and resolve customer issues.|A Generate Case Description prompt template can create a detailed support case with a structured summary, relevant conversation history, and a linked chat transcript from a chat  interaction.|
 |Generate Case Subject|A Generate Case Subject prompt template can create a subject line that captures the core issue or topic discussed during a support interaction.|A Generate Case Subject prompt template can generate a concise and meaningful subject like “Billing Issue with Annual Subscription.”|
 |Sales Pitch Coaching|A Sales Pitch Coaching prompt template can be used to generate feedback for sales reps based on their transcript from a sales pitch or role play session.|A Sales Pitch Coaching prompt template can analyze a transcript and offer suggestions for improvement, such as better objection handling or improved messaging clarity|
-|
+|Security Risk Analysis|A Security Risk Analysis prompt template can be used to generate next steps to mitigate security risks detected using Salesforce posture data.|A Security Risk Analysis prompt template can suggest actions such as password resets or MFA enforcement based on threat signals.|
+|Record Prioritization|A Record Prioritization prompt template can be used to rank records, such as leads or opportunities, based on user input or scoring logic.|A Record Prioritization prompt template can highlight top opportunities based on deal size, close date, and activity level for sales focus.|
+|Work Summary|A Work Summary prompt template can be used to generate a summary, issue, and resolution of a support interaction.|A Work Summary prompt template can populate the Wrap Up component at the end of a voice call or messaging session to capture final case details.|
+
+
 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNzQyMjk4LDIxMjk4Mjc1MzMsLTIwMj
-c3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbLTM4NzYzNjQ3NywyMTI5ODI3NTMzLC0yMD
+I3NzY2NzQwXX0=
 -->
