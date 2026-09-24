@@ -110,10 +110,19 @@ A Field Generation prompt template can be used to populate a dynamic form field.
 
 ### Sales Emails
 The Draft with Einstein button can be clicked in the Lightning Experience email composer to draft a personalized email for a customer.
-![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133120.png)
+![Sales Emails](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133120.png)
+
+### Prompt Templates & Flows
+Prompt templates can be used with flows created in Flow Builder.
+#### FLOW
+A Template-Triggered Prompt Flowcan be created to provide data to a prompt template using the Add Prompt Instructions flow element. A flow merge field can be added to the template to trigger the flow.
+#### FLOW ACTION
+A Prompt Template flow action can be added to a flow to generate a prompt response based on a specific prompt template and inputs. The prompt template must have an active version.
+
+
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxOTczMDA0MywtMTEwNzgyNjc0Niw4OT
+eyJoaXN0b3J5IjpbMTYwOTUyNjI2MywtMTEwNzgyNjc0Niw4OT
 g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
