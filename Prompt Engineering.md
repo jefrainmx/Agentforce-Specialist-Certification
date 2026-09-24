@@ -106,12 +106,14 @@ A prompt template can be called through an invocable action anywhere on the Sale
 
 ### Field Generation
 A Field Generation prompt template can be used to populate a dynamic form field.
+![Field Generation](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133052.png)
+
 ### Sales Emails
 The Draft with Einstein button can be clicked in the Lightning Experience email composer to draft a personalized email for a customer.
-
+![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133120.png)
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMj
-k4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbMTUxOTczMDA0MywtMTEwNzgyNjc0Niw4OT
+g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
