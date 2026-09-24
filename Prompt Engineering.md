@@ -51,12 +51,14 @@ Creating a prompt template requires selecting a Prompt Template Type that matche
 #### STANDARD TEMPLATES
 Salesforce provides various standard templates that consist of detailed, thoughtfully worded prompts that represent a variety of common use cases for different prompt template types.
 #### CUSTOM PROMPT TEMPLATES
-Custom templates can be created from scratch or a standard template. A standard template can be copied using the Save as a New Templatebutton, customized, and then saved as a custom template.
-#### NEW TEMPLATE OPTIONSWhen creating a new custom prompt template, its Prompt Template Type, Prompt Template Name, and Template Description can be specified. Other fields depend on the selected prompt template type.
+Custom templates can be created from scratch or a standard template. A standard template can be copied using the Save as a New Template button, customized, and then saved as a custom template.
+#### NEW TEMPLATE OPTIONS
+When creating a new custom prompt template, its Prompt Template Type, Prompt Template Name, and Template Description can be specified. Other fields depend on the selected prompt template type.
 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTYyMzkxNywtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbLTE5NDA0OTg3NjMsLTIwMjc3NjY3NDBdfQ
+==
 -->
