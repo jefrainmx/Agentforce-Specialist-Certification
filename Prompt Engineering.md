@@ -80,7 +80,14 @@ Various types of prompt templates can be created using Prompt Builder.
 |Sales Email|A Sales Email prompt template can be used to generate personalized customer emails based on record data. Users can click the Draft with Einstein button in the email composer on contacts and leads.|A sales email prompt template can be created to allow users to generate personalized, targeted emails that leverage the customer relationship history and insights.|
 |Record Summary|A Record Summary prompt template can be used to summarize record data for a comprehensive view of a record.|The Summarize Record standard invocable action uses record summary prompt templates. They are also used by the Summarize Record standard agent action.|
 |Flex|A Flex prompt template can be used to generate content for any business purpose that is not covered by the other template types by defining resources.|A Flex prompt template can be used to generate sales proposals that use data from multiple unrelated objects.|
-|Contextual Service Replies|Standard Contextual Service Replies prompt templates for Live Chat and Messaging Sessions can be customized.||
+|Contextual Service Replies|Standard Contextual Service Replies prompt templates for Live Chat and Messaging Sessions can be customized.|Recommendations or solutions can be provided based on specific questions or concerns of the customer. The replies adapt to the ongoing chat, using information such as the customer's recent messages and the interaction history within the session.|
+|Grounded Service Replies|Standard Grounded Service Replies prompt templates for Live Chat and Messaging Sessions can be customized.|Responses grounded in knowledge articles, case histories, or other relevant documents can be generated. Customer concerns can be addressed using detailed instructions or policies provided from a knowledge base.|
+||||
+||||
+||||
+||||
+||||
+||||
 ||||
 ||||
 ||||
@@ -90,6 +97,6 @@ Various types of prompt templates can be created using Prompt Builder.
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjYyNzQ0NiwyMTI5ODI3NTMzLC0yMD
-I3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbNjI3NzE3ODIsMjEyOTgyNzUzMywtMjAyNz
+c2Njc0MF19
 -->
