@@ -66,8 +66,12 @@ The Template Settings icon can be clicked to display the Template Details sectio
 ### Prompt Template Types
 One of several prompt template types can be selected when creating a new prompt template, here some samples: Field Generation, Flex, Gen AI Summary, Global Standard, Knowledge Answers, Knowledge Article Summary, Knowledge Q&A, NPS Validation and Extraction. 
 
+### Prompt Template Workspace
+The Prompt Template Workspace allows creating and testing prompt templates.
+
+
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MTA4ODY2NiwtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
