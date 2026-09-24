@@ -93,12 +93,14 @@ Various types of prompt templates can be created using Prompt Builder.
 |Record Prioritization|A Record Prioritization prompt template can be used to rank records, such as leads or opportunities, based on user input or scoring logic.|A Record Prioritization prompt template can highlight top opportunities based on deal size, close date, and activity level for sales focus.|
 |Work Summary|A Work Summary prompt template can be used to generate a summary, issue, and resolution of a support interaction.|A Work Summary prompt template can populate the Wrap Up component at the end of a voice call or messaging session to capture final case details.|
 
+### Using Prompt Templates
+Users can apply prompt templates to draft emails, generate summaries, complete text form fields, and perform other unique tasks.
 
 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NzYzNjQ3NywyMTI5ODI3NTMzLC0yMD
-I3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMj
+c3NjY3NDBdfQ==
 -->
