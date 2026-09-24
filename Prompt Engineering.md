@@ -132,15 +132,22 @@ A Prompt Template action can be added to a flow to generate a response using a p
 ### Scenario 1
 ### Solution 1
 
-### Scenario 1
-### Solution 1
+### Scenario 2
+### Solution 2
 
-### Scenario 1
-### Solution 1
-### Scenario 1
-### Solution 1
+### Scenario 3
+### Solution 3
+
+### Scenario 4
+### Solution 4
+
+### Scenario 5
+### Solution 5
+
+### Scenario 6
+### Solution 6
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTQ5MzAyMTEsLTExMDc4MjY3NDYsOD
-k4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OT
+g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
