@@ -85,13 +85,16 @@ Various types of prompt templates can be created using Prompt Builder.
 |Knowledge Answers|This prompt template type can be used to customize how agents answer questions using knowledge.|The included information, tone, and voice of the answers can be customized according to business needs.|
 |Campaign Brief|A Campaign Brief prompt template can be used to draft campaign content, including a name, key message, audience description, and detailed campaign goals.|A Campaign Brief prompt template can generate marketing content that outlines campaign objectives and messaging strategy for team alignment.|
 |Case Summary|A Case Summary prompt template can be used to generate a structured summary of a Case record, including the issue, resolution, and supporting details.|A Case Summary prompt template can generate concise case summaries that better align with the business needs by tweaking the response voice and tone.|
-Contract Analysis|A Contract Analysis prompt template can be used to retrieve key information from contract documents to answer user questions or generate summaries of important clauses and sections.|A Contract Analysis prompt template can extract important details from a contract, such as renewal dates, pricing clauses, or termination conditions.Various types of prompt templates can be created using Prompt Builder.|
-|Generate Case Description|A Generate Case Description prompt template can be used to create detailed case descriptions based on interactions, helping agents understand and resolve customer issues.A Generate Case Description prompt template can create a detailed support case with a structured summary, relevant conversation history, and a linked chat transcript from a chat  interaction.Generate Case SubjectA Generate Case Subject prompt template can create a subject line that captures the core issue or topic discussed during a support interaction.A Generate Case Subject prompt template can generate a concise and meaningful subject like “Billing Issue with Annual Subscription.”
+|Contract Analysis|A Contract Analysis prompt template can be used to retrieve key information from contract documents to answer user questions or generate summaries of important clauses and sections.|A Contract Analysis prompt template can extract important details from a contract, such as renewal dates, pricing clauses, or termination conditions.Various types of prompt templates can be created using Prompt Builder.|
+|Generate Case Description|A Generate Case Description prompt template can be used to create detailed case descriptions based on interactions, helping agents understand and resolve customer issues.|A Generate Case Description prompt template can create a detailed support case with a structured summary, relevant conversation history, and a linked chat transcript from a chat  interaction.|
+|Generate Case Subject|A Generate Case Subject prompt template can create a subject line that captures the core issue or topic discussed during a support interaction.|A Generate Case Subject prompt template can generate a concise and meaningful subject like “Billing Issue with Annual Subscription.”|
+|Sales Pitch Coaching|A Sales Pitch Coaching prompt template can be used to generate feedback for sales reps based on their transcript from a sales pitch or role play session.|A Sales Pitch Coaching prompt template can analyze a transcript and offer suggestions for improvement, such as better objection handling or improved messaging clarity|
+|
 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDgyMDgyMjgsMjEyOTgyNzUzMywtMj
-AyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbMTUyNzQyMjk4LDIxMjk4Mjc1MzMsLTIwMj
+c3NjY3NDBdfQ==
 -->
