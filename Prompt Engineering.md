@@ -63,17 +63,18 @@ After making changes, a prompt template can be tested by selecting record(s) and
 #### TEMPLATE SETTINGS
 The Template Settings icon can be clicked to display the Template Details section, which allows selecting the large language model (LLM). It also allows selecting the Response Format and the Response Language.
 
-### Prompt Template Types
-One of several prompt template types can be selected when creating a new prompt template, here some samples: Field Generation, Flex, Gen AI Summary, Global Standard, Knowledge Answers, Knowledge Article Summary, Knowledge Q&A, NPS Validation and Extraction. 
-
 ### Prompt Template Workspace
 The Prompt Template Workspace allows creating and testing prompt templates.
 ![Prompt Builder resources](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20125427.png)
 
 ![Prompt Builder Preview](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20125451.png)
 
+### Prompt Template Types
+One of several prompt template types can be selected when creating a new prompt template.
+
+
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI3NzEwMjg3LDIxMjk4Mjc1MzMsLTIwMj
+eyJoaXN0b3J5IjpbMzY4OTE1MzMyLDIxMjk4Mjc1MzMsLTIwMj
 c3NjY3NDBdfQ==
 -->
