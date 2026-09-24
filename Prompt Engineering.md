@@ -64,10 +64,10 @@ After making changes, a prompt template can be tested by selecting record(s) and
 The Template Settings icon can be clicked to display the Template Details section, which allows selecting the large language model (LLM). It also allows selecting the Response Format and the Response Language.
 
 ### Prompt Template Types
-One of several prompt template types can be selected when creating a new prompt template: Field Generation, Flex, 
+One of several prompt template types can be selected when creating a new prompt template, here some samples: Field Generation, Flex, Gen AI Summary, Global Standard, Knowledge Answers, Knowledge Article Summary, Knowledge Q&A, NPS Validation and Extraction. 
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI4NDYxNTcwLC0yMDI3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbLTI0MTA4ODY2NiwtMjAyNzc2Njc0MF19
 -->
