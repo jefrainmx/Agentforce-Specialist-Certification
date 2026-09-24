@@ -82,9 +82,10 @@ Various types of prompt templates can be created using Prompt Builder.
 |Flex|A Flex prompt template can be used to generate content for any business purpose that is not covered by the other template types by defining resources.|A Flex prompt template can be used to generate sales proposals that use data from multiple unrelated objects.|
 |Contextual Service Replies|Standard Contextual Service Replies prompt templates for Live Chat and Messaging Sessions can be customized.|Recommendations or solutions can be provided based on specific questions or concerns of the customer. The replies adapt to the ongoing chat, using information such as the customer's recent messages and the interaction history within the session.|
 |Grounded Service Replies|Standard Grounded Service Replies prompt templates for Live Chat and Messaging Sessions can be customized.|Responses grounded in knowledge articles, case histories, or other relevant documents can be generated. Customer concerns can be addressed using detailed instructions or policies provided from a knowledge base.|
-||||
-||||
-||||
+|Knowledge Answers|This prompt template type can be used to customize how agents answer questions using knowledge.|The included information, tone, and voice of the answers can be customized according to business needs.|
+|Campaign Brief|A Campaign Brief prompt template can be used to draft campaign content, including a name, key message, audience description, and detailed campaign goals.|A Campaign Brief prompt template can generate marketing content that outlines campaign objectives and messaging strategy for team alignment.|
+|Case Summary|A Case Summary prompt template can be used to generate a structured summary of a Case record, including the issue, resolution, and supporting details.A Case Summary prompt template can generate concise case summaries that better align with the business needs by tweaking the response voice and tone.Contract AnalysisA Contract Analysis prompt template can be used to retrieve key information from contract documents to answer user questions or generate summaries of important clauses and sections.A Contract Analysis prompt template can extract important details from a contract, such as renewal dates, pricing clauses, or termination conditions.Various types of prompt templates can be created using Prompt Builder.
+|||
 ||||
 ||||
 ||||
@@ -97,6 +98,6 @@ Various types of prompt templates can be created using Prompt Builder.
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI3NzE3ODIsMjEyOTgyNzUzMywtMjAyNz
-c2Njc0MF19
+eyJoaXN0b3J5IjpbMzM0MjcxODQ4LDIxMjk4Mjc1MzMsLTIwMj
+c3NjY3NDBdfQ==
 -->
