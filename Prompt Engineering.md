@@ -45,7 +45,16 @@ Users can create prompt templates by accessing the Prompt Builder page in Setup 
 Prompt Builder can be accessed by navigating to Prompt Builder in Salesforce Setup
 ![Prompt Builder Main](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20123823.png)
 
+Prompt Builder can be used to create, test, revise, customize, and manage prompt templates.
+PROMPT TEMPLATE TYPES
+Creating a prompt template requires selecting a Prompt Template Typethat matches the use case. The available types include Campaign Brief, Case Summary, Contextual Service Replies, Contract Analysis, Field Generation, Flex, Grounded Service Replies, Generate case description, Generate case subject, Knowledge Answers, Sales Emails, Sales Pitch Coaching, Security Risk Analysis, Record Prioritization, Record Summary, Work Summary, etc.
+STANDARD TEMPLATESSalesforce provides various standard templates that consist of detailed, thoughtfully worded prompts that represent a variety of common use cases for different prompt template types.
+CUSTOM PROMPT TEMPLATESCustom templates can be created from scratch or a standard template. A standard template can be copied using the Save as a New Templatebutton, customized, and then saved as a custom template.
+NEW TEMPLATE OPTIONSWhen creating a new custom prompt template, its Prompt Template Type, Prompt Template Name, and Template Description can be specified. Other fields depend on the selected prompt template type.
+
+
+
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NTg4NTY0MiwtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbODE3MDc5MjczLC0yMDI3NzY2NzQwXX0=
 -->
