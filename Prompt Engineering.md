@@ -55,10 +55,12 @@ Custom templates can be created from scratch or a standard template. A standard 
 #### NEW TEMPLATE OPTIONS
 When creating a new custom prompt template, its Prompt Template Type, Prompt Template Name, and Template Description can be specified. Other fields depend on the selected prompt template type.
 
+### Prompt Template Types
+One of several prompt template types can be selected when creating a new prompt template.
 
 
 ## Scenarios & Solutions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDA0OTg3NjMsLTIwMjc3NjY3NDBdfQ
+eyJoaXN0b3J5IjpbLTE2MDA1ODUxOTcsLTIwMjc3NjY3NDBdfQ
 ==
 -->
