@@ -317,10 +317,20 @@ Record snapshots provide a convenient way to include page-layout data without ad
 A record snapshot includes data available on the user’s page layout for the selected object. 
 #### USE CASE
 Record snapshots are useful when a prompt needs a broad view of the record but doesn’t require custom sorting, filtering, or transformation. 
-15
-Retriever ConfigurationRetriever settings control what indexed knowledge is searched and how much retrieved content is inserted into the prompt. ❖SEARCH TEXTRetriever search text determines what indexed content is searched and can use supported prompt inputs and merge fields. ❖OUTPUT CONTROLOutput fields and number of results control which returned fields and how many search results are added to the prompt.
-16
-Template-Triggered Prompt FlowA Template-Triggered Prompt Flow can add calculated, filtered, transformed, or Data 360-based content to a prompt template. ❖FLOW LOGICA Template-Triggered Prompt Flow can retrieve records, apply decisions, transform values, and return prompt instructions. ❖FLOW MERGE FIELDA flow merge field in the prompt template triggers the flow and inserts the returned prompt instructions into the resolved prompt. The Add Prompt Instructions flow element can be used to insert prompt instructions into the prompt template. 
+
+### Retriever Configuration
+Retriever settings control what indexed knowledge is searched and how much retrieved content is inserted into the prompt.
+#### SEARCH TEXT
+Retriever search text determines what indexed content is searched and can use supported prompt inputs and merge fields.
+#### OUTPUT CONTROL
+Output fields and number of results control which returned fields and how many search results are added to the prompt.
+
+### Template-Triggered Prompt Flow
+A Template-Triggered Prompt Flow can add calculated, filtered, transformed, or Data 360-based content to a prompt template. 
+#### FLOW LOGIC
+A Template-Triggered Prompt Flow can retrieve records, apply decisions, transform values, and return prompt instructions.
+FLOW MERGE FIELD
+A flow merge field in the prompt template triggers the flow and inserts the returned prompt instructions into the resolved prompt. The Add Prompt Instructions flow element can be used to insert prompt instructions into the prompt template. 
 
 
 ## Scenarios & Solutions
@@ -335,7 +345,7 @@ Template-Triggered Prompt FlowA Template-Triggered Prompt Flow can add calculate
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MzAzNzMyMiwyMDYzMjE0MDAzLDMxMz
+eyJoaXN0b3J5IjpbLTQ4MTI2NzQ0NSwyMDYzMjE0MDAzLDMxMz
 A5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5
 LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOT
 QwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQz
