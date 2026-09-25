@@ -194,10 +194,21 @@ A user must have the Prompt Template User permission set to see the generative A
 ## References:
 [Enable Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_enable.htm&type=5)
 
+# Identify the considerations for using a prompt template type such as field generation and flex types.
+
+
+
+
+# Given a scenario, identify the appropriate grounding technique.
+
+# Explain the process for creating, activating, and executing prompt templates.
+
+# Explain how to implement best practices for writing effective prompts.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5ND
-AyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3
-LDExNjA3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMj
-k4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbLTM3NjgxMjE0Miw4MDUyNTAzMzAsMTA0Nz
+Q0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2
+MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OT
+g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
