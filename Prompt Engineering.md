@@ -236,6 +236,8 @@ To prevent hallucination behavior, prompts should contain as much specific data 
 ### JSON
 If JSON data is required in a prompt, Apex code can be utilized to generate and return a well-formatted JSON string. The associated Apex merge field can be added to the prompt template.
 
+## References:
+[Prompt Builder Key Concepts](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_key_concepts.htm&type=5)
 
 # Given a scenario, identify the appropriate grounding technique.
 
@@ -248,9 +250,9 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NDA5Mjc1NCwtNzM4OTg0MjQ5LC0xNT
-M5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUw
-NSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMT
-YwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3
-NTMzLC0yMDI3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbODUwMDMzNjkyLC03Mzg5ODQyNDksLTE1Mz
+kwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAyNTA1
+LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3LDExNj
+A3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMjk4Mjc1
+MzMsLTIwMjc3NjY3NDBdfQ==
 -->
