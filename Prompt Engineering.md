@@ -164,14 +164,24 @@ A custom Sales Email prompt template can be created to meet the requirement. It 
 ## Introduction
 Salesforce users can be allowed to manage and execute prompt templates by assigning the appropriate permission sets. The Prompt Template User permission set can be assigned to users who need to access and run prompt templates. It provides visibility to the generative AI-enabled icon next to a dynamic form field that uses a field generation prompt template. The Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates. The Einstein Sales Emails permission set can be assigned to those who need to draft emails using a Sales Email prompt template. Additionally, it is necessary to ensure that users can access all the relevant fields when drafting sales emails.
 
-## Access Controls for Prompt Templates
+### Prompt Template User
+The Prompt Template User permission set can be assigned to users who need to access and run prompt templates.
+### Prompt Template Manager
+The Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates using Prompt Builder.
+### Considerations
+A user who need to draft a sales email must have access to all the relevant fields. The Prompt Template User permission set provides visibility to the field generation icon.
+### Sales Email User
+The Einstein Sales Emails permission set can be assigned to users who need to execute Sales Email prompt templates to draft emails.
 
+## Access Controls for Prompt Templates
+### Executing & Managing Prompt Templates
+The use of prompt templates can be enabled for two user roles: users and managers.❖PROMPT TEMPLATE USERThe Prompt Template User permission set can be assigned to users who need to access and run prompt templates.❖PROMPT TEMPLATE MANAGERThe Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates. Users who need to be assigned to this permission set must have access to Setup.❖SALES EMAIL USERThe Einstein Sales Emails permission set can be assigned to users who need to execute a sales email prompt template to draft emails for contacts or leads using Einstein Generative AI.
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMzU0ODgwNywxMjk0MDI1MDUsLTE0MD
+eyJoaXN0b3J5IjpbMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MD
 Q3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIy
 MywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMj
 AyNzc2Njc0MF19
