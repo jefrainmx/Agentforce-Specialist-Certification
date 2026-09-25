@@ -336,6 +336,7 @@ A flow merge field in the prompt template triggers the flow and inserts the retu
 A prompt template can be grounded with various types of data using merge fields, depending on the prompt template type and the objects associated with the prompt template.
 ![Grounding a Prompt Template 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164643.png)
 
+![Grounding a Prompt Temaplte 2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164725.png)
 ### Template-Triggered Prompt Flow
 A Template-Triggered Prompt Flow can be used to bring data from unified Data Cloud objects into a prompt template.
 
@@ -351,7 +352,7 @@ A Template-Triggered Prompt Flow can be used to bring data from unified Data Clo
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MzE3MjIwNSwtNjIzMzIyMDQ0LDIwNj
+eyJoaXN0b3J5IjpbMTI1MTc5MjIxMiwtNjIzMzIyMDQ0LDIwNj
 MyMTQwMDMsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMx
 LC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwND
 c0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3
