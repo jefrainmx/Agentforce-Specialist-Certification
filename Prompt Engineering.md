@@ -161,9 +161,11 @@ Cosmic Lights wants to send marketing emails highlighting products that align cl
 A custom Sales Email prompt template can be created to meet the requirement. It should be grounded in the customer's interests and product preferences. Users can click the Draft with Einstein button in the email composer on a contact or lead record and select the custom template to generate a personalized email.
 
 ## Identify access controls governing prompt templates.
-
+### Introduction
+Salesforce users can be allowed to manage and execute prompt templates by assigning the appropriate permission sets. The Prompt Template User permission set can be assigned to users who need to access and run prompt templates. It provides visibility to the generative AI-enabled icon next to a dynamic form field that uses a field generation prompt template. The Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates. The Einstein Sales Emails permission set can be assigned to those who need to draft emails using a Sales Email prompt template. Additionally, it is necessary to ensure that users can access all the relevant fields when drafting sales emails.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMj
-cwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OTg4MDg1
-NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02Mz
+I5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3
+NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ
+==
 -->
