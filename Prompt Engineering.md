@@ -175,14 +175,25 @@ The Einstein Sales Emails permission set can be assigned to users who need to ex
 
 ## Access Controls for Prompt Templates
 ### Executing & Managing Prompt Templates
-The use of prompt templates can be enabled for two user roles: users and managers.❖PROMPT TEMPLATE USERThe Prompt Template User permission set can be assigned to users who need to access and run prompt templates.❖PROMPT TEMPLATE MANAGERThe Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates. Users who need to be assigned to this permission set must have access to Setup.❖SALES EMAIL USERThe Einstein Sales Emails permission set can be assigned to users who need to execute a sales email prompt template to draft emails for contacts or leads using Einstein Generative AI.
+The use of prompt templates can be enabled for two user roles: users and managers.
+#### PROMPT TEMPLATE USER
+The Prompt Template User permission set can be assigned to users who need to access and run prompt templates.
+#### PROMPT TEMPLATE MANAGER
+The Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates. Users who need to be assigned to this permission set must have access to Setup.
+#### SALES EMAIL USER
+The Einstein Sales Emails permission set can be assigned to users who need to execute a sales email prompt template to draft emails for contacts or leads using Einstein Generative AI.
+#### FIELD PERMISSIONS
+A user who needs to draft a sales email must have access to all the relevant fields in the draft email. Otherwise, the email contains placeholders for attributes that could have been derived from the fields.
+#### FIELD GENERATION ICON
+A user must have the Prompt Template User permission set to see the generative AI-enabled field icon next to a dynamic form field that uses a field generation prompt template.
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MD
-Q3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIy
-MywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMj
-AyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbMTMyNDE5MTUxMSwxMDQ3NDQzODk2LDEyOT
+QwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQz
+NywxMTYwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMT
+I5ODI3NTMzLC0yMDI3NzY2NzQwXX0=
 -->
