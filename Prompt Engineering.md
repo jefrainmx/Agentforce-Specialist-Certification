@@ -265,7 +265,18 @@ Retrievers ground the prompt with relevant content from indexed Data 360 knowled
 ## Grounding Techniques
 ### Grounding Prompt Templates
 Prompt templates can be dynamically grounded with Salesforce resources so the LLM receives business-specific context at runtime. 
-GROUNDINGGrounding provides the LLM with relevant business context so generated responses are based on accurate and current information. ❖MERGE FIELDSMerge fields can reference record fields, related lists, record snapshots, Flow outputs, Apex outputs, Data 360 DMOs, and retriever results. 
+GROUNDING
+Grounding provides the LLM with relevant business context so generated responses are based on accurate and current information. 
+MERGE FIELDS
+Merge fields can reference record fields, related lists, record snapshots, Flow outputs, Apex outputs, Data 360 DMOs, and retriever results. 
+
+### Resources and Free Text Inputs
+Prompt Builder resources and inputs determine what information can be inserted into the resolved prompt. 
+RESOURCE
+The Insert Resource button can be used to is used to insert available grounding resources, such as record fields, related lists, flows, Apex classes, Data 360 DMOs, retrievers, and file inputs.
+FREE TEXT INPUTS
+Free text inputs allow a Flex prompt template to receive text supplied at runtime, but they don’t retrieve stored Salesforce data by themselves. 
+
 
 ## Scenarios & Solutions
 
@@ -279,10 +290,10 @@ GROUNDINGGrounding provides the LLM with relevant business context so generated 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU2MDgxOTYsNDA0NjU4Nzc4LDE4OT
-IxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAz
-MzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLT
-YzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgy
-Njc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF
-19
+eyJoaXN0b3J5IjpbMTM4MzY3MjU4MSw0MDQ2NTg3NzgsMTg5Mj
+EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
+MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
+MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
+NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2NzQwXX
+0=
 -->
