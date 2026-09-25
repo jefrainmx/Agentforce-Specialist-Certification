@@ -304,9 +304,19 @@ Retrievers and file inputs support grounding with unstructured knowledge or file
 |Retrievers|Retrievers use RAG to search indexed knowledge in Data 360 and return relevant facts or chunks for prompt grounding.|An Einstein Search retriever can be created and added to a prompt template to search through a large set of unstructured data from Wikipedia to create an account description.|
 |File Inputs|File inputs can ground prompt templates with supported PDF, PNG, and JPEG files when the selected model supports file processing.|A PDF file can be associated with a prompt template to process and analyze the visual information in the file. 
 
-Grounding a Prompt TemplateA prompt template should be grounded with the resource that most directly satisfies the data and logicrequirement. ❖SIMPLE CONTEXTRecord merge fields, related lists, and record snapshots are best when the needed information already existson or near the selected record.❖ADVANCED CONTEXTFlow, Apex, Data 360 DMOs, retrievers, and file inputs are better when the prompt needs logic, unified data, indexed knowledge, external data, or runtime files. 
-14
-Record Snapshot ConsiderationsRecord snapshots provide a convenient way to include page-layout data without adding each fieldindividually. ❖PAGE CONTEXTA record snapshot includes data available on the user’s page layout for the selected object. ❖USE CASERecord snapshots are useful when a prompt needs a broad view of the record but doesn’t require custom sorting, filtering, or transformation. 
+### Grounding a Prompt Template
+A prompt template should be grounded with the resource that most directly satisfies the data and logic requirement. 
+#### SIMPLE CONTEXT
+Record merge fields, related lists, and record snapshots are best when the needed information already existson or near the selected record.
+#### ADVANCED CONTEXT
+Flow, Apex, Data 360 DMOs, retrievers, and file inputs are better when the prompt needs logic, unified data, indexed knowledge, external data, or runtime files. 
+
+### Record Snapshot Considerations
+Record snapshots provide a convenient way to include page-layout data without adding each fieldindividually. 
+#### PAGE CONTEXT
+A record snapshot includes data available on the user’s page layout for the selected object. 
+#### USE CASE
+Record snapshots are useful when a prompt needs a broad view of the record but doesn’t require custom sorting, filtering, or transformation. 
 15
 Retriever ConfigurationRetriever settings control what indexed knowledge is searched and how much retrieved content is inserted into the prompt. ❖SEARCH TEXTRetriever search text determines what indexed content is searched and can use supported prompt inputs and merge fields. ❖OUTPUT CONTROLOutput fields and number of results control which returned fields and how many search results are added to the prompt.
 16
@@ -325,7 +335,7 @@ Template-Triggered Prompt FlowA Template-Triggered Prompt Flow can add calculate
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NzEyNDc2NywyMDYzMjE0MDAzLDMxMz
+eyJoaXN0b3J5IjpbMTc3MzAzNzMyMiwyMDYzMjE0MDAzLDMxMz
 A5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5
 LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOT
 QwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQz
