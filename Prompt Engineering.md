@@ -297,6 +297,13 @@ Flow and Apex are used when the prompt requires logic, filtering, calculations, 
 |Flow Merge Fields|Flow merge fields are appropriate for declarative logic, decision paths, data transformation, and accessing unified Data 360 objects.|A prompt template flow is added to a prompt template as Flow: FlowName. For example, a flow named Get_Opportunities_Flow is added as Flow: Get_Opportunities_Flow.|
 |Apex Merge Fields|Apex merge fields are appropriate for SOQL queries, external APIs, formatted JSON, and programmatic filtering.|An Apex class is added to a prompt template as Apex: ApexClassName. For example, an Apex class named ContactEventsPrompt is added as Apex: ContactEventsPrompt.|
 
+### Retrievers and File Inputs
+Retrievers and file inputs support grounding with unstructured knowledge or files that are not simple Salesforce record fields.
+|TECHNIQUE|DESCRIPTION|EXAMPLE|
+|:-----------------|:-----------------|:-----------------|
+|Retrievers|Retrievers use RAG to search indexed knowledge in Data 360 and return relevant facts or chunks for prompt grounding.|An Einstein Search retriever can be created and added to a prompt template to search through a large set of unstructured data from Wikipedia to create an account description.|
+|File Inputs|File inputs can ground prompt templates with supported PDF, PNG, and JPEG files when the selected model supports file processing.|A PDF file can be associated with a prompt template to process and analyze the visual information in the file. 
+
 
 ## Scenarios & Solutions
 
@@ -310,10 +317,10 @@ Flow and Apex are used when the prompt requires logic, filtering, calculations, 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMT
-A3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMw
-LDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02Mz
-I5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3
-NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ
-==
+eyJoaXN0b3J5IjpbMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0Nj
+U4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIw
+Miw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MD
+Q3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIy
+MywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMj
+AyNzc2Njc0MF19
 -->
