@@ -329,9 +329,14 @@ Output fields and number of results control which returned fields and how many s
 A Template-Triggered Prompt Flow can add calculated, filtered, transformed, or Data 360-based content to a prompt template. 
 #### FLOW LOGIC
 A Template-Triggered Prompt Flow can retrieve records, apply decisions, transform values, and return prompt instructions.
-FLOW MERGE FIELD
+#### FLOW MERGE FIELD
 A flow merge field in the prompt template triggers the flow and inserts the returned prompt instructions into the resolved prompt. The Add Prompt Instructions flow element can be used to insert prompt instructions into the prompt template. 
 
+### Grounding a Prompt Template
+A prompt template can be grounded with various types of data using merge fields, depending on the prompt template type and the objects associated with the prompt template.
+
+### Template-Triggered Prompt Flow
+A Template-Triggered Prompt Flow can be used to bring data from unified Data Cloud objects into a prompt template.
 
 ## Scenarios & Solutions
 
@@ -345,7 +350,7 @@ A flow merge field in the prompt template triggers the flow and inserts the retu
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MTI2NzQ0NSwyMDYzMjE0MDAzLDMxMz
+eyJoaXN0b3J5IjpbLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMz
 A5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5
 LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOT
 QwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQz
