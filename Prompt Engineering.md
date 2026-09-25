@@ -227,6 +227,10 @@ GROUNDING
 If the response returned by executing a prompt template does not contain the expected information, it is most likely because the data used for grounding is incorrect or incomplete.
 AUDIT TRAIL
 When a prompt template is created or updated, the change is not tracked in the Setup Audit Trail.
+RECORD SNAPSHOTS
+Record Snapshots use the page layout of the current user for grounding. The fields and related lists configured on the page layout directly influence the data included in the snapshot.“Empty” data, such as fieldsand sections without values, are filtered out.
+APEX & LWC
+A Flex prompt template can be called from Apex and Lightning Web Components using the Connect API.
 
 
 # Given a scenario, identify the appropriate grounding technique.
@@ -240,9 +244,9 @@ When a prompt template is created or updated, the change is not tracked in the S
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyMzM2ODQ4LC03Mzg5ODQyNDksLTE1Mz
-kwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAyNTA1
-LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3LDExNj
-A3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMjk4Mjc1
-MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbMTk0NzA1Njc0OSwtNzM4OTg0MjQ5LC0xNT
+M5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUw
+NSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMT
+YwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3
+NTMzLC0yMDI3NzY2NzQwXX0=
 -->
