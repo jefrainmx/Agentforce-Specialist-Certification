@@ -290,7 +290,8 @@ Record-based grounding is best when the prompt needs data that is already availa
 |Related List Merge Fields|Related list merge fields provide context from related records, but they are based on page-layout availability and don’t apply record-level filters.|A related list is added to a prompt template as Related List: Object.RelatedListName. For example, the Contacts related list on the Account object is added as Related List: Account.Contacts.
 |Data 360 DMO Merge Fields|Data 360 DMO merge fields ground prompts with harmonized data model objects created from unified and mapped enterprise data. |Copy fields and related lists of DMOs on objects such as Contact and Lead can be used for grounding.|
 
-
+### Flow and Apex Grounding
+TECHNIQUEDESCRIPTIONEXAMPLEFlow Merge FieldsFlow merge fields are appropriate for declarative logic, decision paths, data transformation, and accessing unified Data 360 objects.A prompt template flow is added to a prompt template as Flow: FlowName. For example, a flow named Get_Opportunities_Flow is added as Flow: Get_Opportunities_Flow.Apex Merge FieldsApex merge fields are appropriate for SOQL queries, external APIs, formatted JSON, and programmatic filtering.An Apex class is added to a prompt template as Apex: ApexClassName. For example, an Apex class named ContactEventsPrompt is added as Apex: ContactEventsPrompt.Flow and Apex are used when the prompt requires logic, filtering, calculations, external data, or formatted output before grounding. 
 
 
 ## Scenarios & Solutions
@@ -305,10 +306,10 @@ Record-based grounding is best when the prompt needs data that is already availa
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA5NDYxMTUzLDQwNDY1ODc3OCwxODkyMT
-A3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMw
-LDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02Mz
-I5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3
-NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ
-==
+eyJoaXN0b3J5IjpbLTE4OTMyNzE4MDksNDA0NjU4Nzc4LDE4OT
+IxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAz
+MzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLT
+YzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgy
+Njc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF
+19
 -->
