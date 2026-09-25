@@ -195,6 +195,7 @@ A user must have the Prompt Template User permission set to see the generative A
 [Enable Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_enable.htm&type=5)
 
 # Identify the considerations for using a prompt template type such as field generation and flex types.
+## Considerations for Creating Prompt Templates
 
 
 
@@ -205,10 +206,13 @@ A user must have the Prompt Template User permission set to see the generative A
 
 # Explain how to implement best practices for writing effective prompts.
 
+# Identify the security and privacy features of the Trust Layer.
+
+# Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NjgxMjE0Miw4MDUyNTAzMzAsMTA0Nz
-Q0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2
-MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OT
-g4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwND
+c0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3
+NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3NDYsOD
+k4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
 -->
