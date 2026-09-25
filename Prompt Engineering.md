@@ -189,14 +189,15 @@ A user must have the Prompt Template User permission set to see the generative A
 
 ### Prompt Template User Permission Set
 1. The Prompt Template User permission set allows users to access and run prompt templates.
-2.The Prompt Template Manager permission set allows users to create and manage prompt templates
+2. The Prompt Template Manager permission set allows users to create and manage prompt templates
 
-
+## References:
+[Enable Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_enable.htm&type=5)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MTU0NjUyMywxMDQ3NDQzODk2LDEyOT
-QwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQz
-NywxMTYwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMT
-I5ODI3NTMzLC0yMDI3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5ND
+AyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3
+LDExNjA3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMj
+k4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
 -->
