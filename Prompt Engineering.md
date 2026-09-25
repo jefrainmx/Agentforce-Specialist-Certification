@@ -160,17 +160,25 @@ Cosmic Lights wants to send marketing emails highlighting products that align cl
 #### Solution 6
 A custom Sales Email prompt template can be created to meet the requirement. It should be grounded in the customer's interests and product preferences. Users can click the Draft with Einstein button in the email composer on a contact or lead record and select the custom template to generate a personalized email.
 
-## Identify access controls governing prompt templates.
-### Introduction
+# Identify access controls governing prompt templates.
+## Introduction
 Salesforce users can be allowed to manage and execute prompt templates by assigning the appropriate permission sets. The Prompt Template User permission set can be assigned to users who need to access and run prompt templates. It provides visibility to the generative AI-enabled icon next to a dynamic form field that uses a field generation prompt template. The Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates. The Einstein Sales Emails permission set can be assigned to those who need to draft emails using a Sales Email prompt template. Additionally, it is necessary to ensure that users can access all the relevant fields when drafting sales emails.
 
-#### Access Controls for Prompt Templates
-##### Prompt Template User
-The Prompt Template User permission set can be assigned to users who need to access and run prompt templates.Prompt Template ManagerThe Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates using Prompt Builder.ConsiderationsA user who need to draft a sales email must have access to all the relevant fields. The Prompt Template User permission set provides visibility to the field generation icon.Sales Email UserThe Einstein Sales Emails permission set can be assigned to users who need to execute Sales Email prompt templates to draft emails.
+### Access Controls for Prompt Templates
+#### Prompt Template User
+The Prompt Template User permission set can be assigned to users who need to access and run prompt templates.
+#### Prompt Template Manager
+The Prompt Template Manager permission set can be assigned to users who need to create and manage prompt templates using Prompt Builder.
+#### Considerations
+A user who need to draft a sales email must have access to all the relevant fields. The Prompt Template User permission set provides visibility to the field generation icon.
+#### Sales Email User
+The Einstein Sales Emails permission set can be assigned to users who need to execute Sales Email prompt templates to draft emails.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMDIxMzgwNCwxMjk0MDI1MDUsLTE0MD
-Q3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIy
-MywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMj
-AyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbLTE1MTE0NTQ5MjAsMTI5NDAyNTA1LC0xND
+A0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTky
+MjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLT
+IwMjc3NjY3NDBdfQ==
 -->
