@@ -187,13 +187,16 @@ A user who needs to draft a sales email must have access to all the relevant fie
 #### FIELD GENERATION ICON
 A user must have the Prompt Template User permission set to see the generative AI-enabled field icon next to a dynamic form field that uses a field generation prompt template.
 
+### Prompt Template User Permission Set
+The Prompt Template User permission set allows users to access and run prompt templates.
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNDE5MTUxMSwxMDQ3NDQzODk2LDEyOT
-QwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQz
-NywxMTYwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMT
-I5ODI3NTMzLC0yMDI3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbLTEwMDM3OTI0NTMsMTA0NzQ0Mzg5NiwxMj
+k0MDI1MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0
+MzcsMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMj
+EyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
