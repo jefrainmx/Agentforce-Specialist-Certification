@@ -285,7 +285,11 @@ Record-based grounding is best when the prompt needs data that is already availa
 |Record Snapshots|Record snapshots provide broader page-layout context with one resource, reducing the need to manually insert many individual fields.|An account record snapshot can be added to a prompt template to ground it with the account record data visible to the user.|
 
 ### Related Records and Data 360
-TECHNIQUEDESCRIPTIONEXAMPLERelated List Merge FieldsRelated list merge fields provide context from related records, but they are based on page-layout availability and don’t apply record-level filters.A related list is added to a prompt template as Related List: Object.RelatedListName. For example, the Contacts related list on the Account object is added as Related List: Account.Contacts.Data 360 DMO Merge FieldsData 360 DMO merge fields ground prompts with harmonized data model objects created from unified and mapped enterprise data. Copy fields and related lists of DMOs on objects such as Contact and Lead can be used for grounding.
+|TECHNIQUE|DESCRIPTION|EXAMPLE|
+|:------------------|:------------------|:------------------|
+|Related List Merge Fields|Related list merge fields provide context from related records, but they are based on page-layout availability and don’t apply record-level filters.|A related list is added to a prompt template as Related List: Object.RelatedListName. For example, the Contacts related list on the Account object is added as Related List: Account.Contacts.
+|Data 360 DMO Merge Fields|Data 360 DMO merge fields ground prompts with harmonized data model objects created from unified and mapped enterprise data. |Copy fields and related lists of DMOs on objects such as Contact and Lead can be used for grounding.|
+
 
 
 
@@ -301,10 +305,10 @@ TECHNIQUEDESCRIPTIONEXAMPLERelated List Merge FieldsRelated list merge fields pr
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MjE2Nzk4MSw0MDQ2NTg3NzgsMTg5Mj
-EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
-MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
-MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
-NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2NzQwXX
-0=
+eyJoaXN0b3J5IjpbNDA5NDYxMTUzLDQwNDY1ODc3OCwxODkyMT
+A3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMw
+LDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02Mz
+I5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3
+NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ
+==
 -->
