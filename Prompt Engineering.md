@@ -291,10 +291,11 @@ Record-based grounding is best when the prompt needs data that is already availa
 |Data 360 DMO Merge Fields|Data 360 DMO merge fields ground prompts with harmonized data model objects created from unified and mapped enterprise data. |Copy fields and related lists of DMOs on objects such as Contact and Lead can be used for grounding.|
 
 ### Flow and Apex Grounding
+Flow and Apex are used when the prompt requires logic, filtering, calculations, external data, or formatted output before grounding. 
 |TECHNIQUE|DESCRIPTION|EXAMPLE
 |:-----------------|:-----------------|:-----------------|
 |Flow Merge Fields|Flow merge fields are appropriate for declarative logic, decision paths, data transformation, and accessing unified Data 360 objects.|A prompt template flow is added to a prompt template as Flow: FlowName. For example, a flow named Get_Opportunities_Flow is added as Flow: Get_Opportunities_Flow.|
-|Apex Merge Fields|Apex merge fields are appropriate for SOQL queries, external APIs, formatted JSON, and programmatic filtering.|An Apex class is added to a prompt template as Apex: ApexClassName. For example, an Apex class named ContactEventsPrompt is added as Apex: ContactEventsPrompt.Flow and Apex are used when the prompt requires logic, filtering, calculations, external data, or formatted output before grounding. 
+|Apex Merge Fields|Apex merge fields are appropriate for SOQL queries, external APIs, formatted JSON, and programmatic filtering.|An Apex class is added to a prompt template as Apex: ApexClassName. For example, an Apex class named ContactEventsPrompt is added as Apex: ContactEventsPrompt.|
 
 
 ## Scenarios & Solutions
@@ -309,10 +310,10 @@ Record-based grounding is best when the prompt needs data that is already availa
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0ODc0NzgwNCw0MDQ2NTg3NzgsMTg5Mj
-EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
-MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
-MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
-NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2NzQwXX
-0=
+eyJoaXN0b3J5IjpbMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMT
+A3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMw
+LDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02Mz
+I5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3
+NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ
+==
 -->
