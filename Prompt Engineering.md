@@ -282,7 +282,8 @@ Record-based grounding is best when the prompt needs data that is already availa
 |TECHNIQUE|DESCRIPTION|EXAMPLE|
 |:------------------------|:------------------------|:------------------------|
 |Record Merge Fields|Record merge fields connect a prompt template to fields on the selected Salesforce object, such as Lead, Account, Case, or Opportunity. |A standard or custom object field is added to a prompt template as Input:RecordName.FieldName. For example, the Name field on the Account object is added as Input:Account.Name.|
-|Record SnapshotsRecord snapshots provide broader page-layout context with one resource, reducing the need to manually insert many individual fields.An account record snapshot can be added to a prompt template to ground it with the account record data visible to the user.
+|Record Snapshots|Record snapshots provide broader page-layout context with one resource, reducing the need to manually insert many individual fields.|An account record snapshot can be added to a prompt template to ground it with the account record data visible to the user.|
+
 
 
 
@@ -298,10 +299,10 @@ Record-based grounding is best when the prompt needs data that is already availa
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTM5MTI4LDQwNDY1ODc3OCwxODkyMT
-A3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMw
-LDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02Mz
-I5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3
-NDYsODk4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ
-==
+eyJoaXN0b3J5IjpbMTc1MjAzNDI3Miw0MDQ2NTg3NzgsMTg5Mj
+EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
+MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
+MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
+NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2NzQwXX
+0=
 -->
