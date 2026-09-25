@@ -284,6 +284,8 @@ Record-based grounding is best when the prompt needs data that is already availa
 |Record Merge Fields|Record merge fields connect a prompt template to fields on the selected Salesforce object, such as Lead, Account, Case, or Opportunity. |A standard or custom object field is added to a prompt template as Input:RecordName.FieldName. For example, the Name field on the Account object is added as Input:Account.Name.|
 |Record Snapshots|Record snapshots provide broader page-layout context with one resource, reducing the need to manually insert many individual fields.|An account record snapshot can be added to a prompt template to ground it with the account record data visible to the user.|
 
+### Related Records and Data 360
+TECHNIQUEDESCRIPTIONEXAMPLERelated List Merge FieldsRelated list merge fields provide context from related records, but they are based on page-layout availability and don’t apply record-level filters.A related list is added to a prompt template as Related List: Object.RelatedListName. For example, the Contacts related list on the Account object is added as Related List: Account.Contacts.Data 360 DMO Merge FieldsData 360 DMO merge fields ground prompts with harmonized data model objects created from unified and mapped enterprise data. Copy fields and related lists of DMOs on objects such as Contact and Lead can be used for grounding.
 
 
 
@@ -299,7 +301,7 @@ Record-based grounding is best when the prompt needs data that is already availa
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjAzNDI3Miw0MDQ2NTg3NzgsMTg5Mj
+eyJoaXN0b3J5IjpbMTk5MjE2Nzk4MSw0MDQ2NTg3NzgsMTg5Mj
 EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
 MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
 MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
