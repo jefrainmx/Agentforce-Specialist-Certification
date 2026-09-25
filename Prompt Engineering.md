@@ -240,7 +240,7 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 [Prompt Builder Key Concepts](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_key_concepts.htm&type=5)
 [Prompt Builder Limits](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limits.htm&type=5)
 [Grounding with Related List Merge Fields](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_related_list.htm&type=5)
-
+[Grounding Prompts with Record Snapshots](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_record_snapshots.htm&type=5)
 
 # Given a scenario, identify the appropriate grounding technique.
 
@@ -253,9 +253,9 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njc5ODAxODQsLTczODk4NDI0OSwtMT
-UzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1
-MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMT
-E2MDcxOTIyMywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgy
-NzUzMywtMjAyNzc2Njc0MF19
+eyJoaXN0b3J5IjpbMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNT
+M5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUw
+NSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMT
+YwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3
+NTMzLC0yMDI3NzY2NzQwXX0=
 -->
