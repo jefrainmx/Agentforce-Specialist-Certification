@@ -339,6 +339,7 @@ A prompt template can be grounded with various types of data using merge fields,
 ![Grounding a Prompt Temaplte 2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164725.png)
 ### Template-Triggered Prompt Flow
 A Template-Triggered Prompt Flow can be used to bring data from unified Data Cloud objects into a prompt template.
+![Template-Triggered Prompt Flow](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164743.png)
 
 ## Scenarios & Solutions
 
@@ -352,10 +353,10 @@ A Template-Triggered Prompt Flow can be used to bring data from unified Data Clo
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MTc5MjIxMiwtNjIzMzIyMDQ0LDIwNj
-MyMTQwMDMsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMx
-LC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwND
-c0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3
-NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTExMDc4MjY3NDYsOD
-k4ODA4NTcyLDIxMjk4Mjc1MzMsLTIwMjc3NjY3NDBdfQ==
+eyJoaXN0b3J5IjpbLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMD
+YzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzcz
+MSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMD
+Q3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1
+NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2NzQ2LD
+g5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2NzQwXX0=
 -->
