@@ -215,7 +215,7 @@ Prompt templates have various numerical limits. For example, the maximum number 
 The Activities related list is not supported as a merge field on objects such as Account and Case since the relationship is polymorphic.
 ### USER RELATED LIST
 The User and Organization related lists aren’t supported as merge fields due to a limitation involving global variables.
-
+### 
 
 
 
@@ -230,7 +230,7 @@ The User and Organization related lists aren’t supported as merge fields due t
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzOTUwNzY2MywtNzM4OTg0MjQ5LC0xNT
+eyJoaXN0b3J5IjpbMTI2MzgzNTYwNCwtNzM4OTg0MjQ5LC0xNT
 M5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUw
 NSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMT
 YwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3
