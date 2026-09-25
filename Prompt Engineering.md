@@ -265,17 +265,21 @@ Retrievers ground the prompt with relevant content from indexed Data 360 knowled
 ## Grounding Techniques
 ### Grounding Prompt Templates
 Prompt templates can be dynamically grounded with Salesforce resources so the LLM receives business-specific context at runtime. 
-GROUNDING
+#### GROUNDING
 Grounding provides the LLM with relevant business context so generated responses are based on accurate and current information. 
-MERGE FIELDS
+#### MERGE FIELDS
 Merge fields can reference record fields, related lists, record snapshots, Flow outputs, Apex outputs, Data 360 DMOs, and retriever results. 
 
 ### Resources and Free Text Inputs
 Prompt Builder resources and inputs determine what information can be inserted into the resolved prompt. 
-RESOURCE
+#### RESOURCE
 The Insert Resource button can be used to is used to insert available grounding resources, such as record fields, related lists, flows, Apex classes, Data 360 DMOs, retrievers, and file inputs.
-FREE TEXT INPUTS
+#### FREE TEXT INPUTS
 Free text inputs allow a Flex prompt template to receive text supplied at runtime, but they don’t retrieve stored Salesforce data by themselves. 
+
+### Record-Based Grounding
+TECHNIQUEDESCRIPTIONEXAMPLERecord Merge FieldsRecord merge fields connect a prompt template to fields on the selected Salesforce object, such as Lead, Account, Case, or Opportunity. A standard or custom object field is added to a prompt template as Input:RecordName.FieldName. For example, the Name field on the Account object is added as Input:Account.Name.Record SnapshotsRecord snapshots provide broader page-layout context with one resource, reducing the need to manually insert many individual fields.An account record snapshot can be added to a prompt template to ground it with the account record data visible to the user.Record-based grounding is best when the prompt needs data that is already available from the associated Salesforce record. 
+
 
 
 ## Scenarios & Solutions
@@ -290,7 +294,7 @@ Free text inputs allow a Flex prompt template to receive text supplied at runtim
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MzY3MjU4MSw0MDQ2NTg3NzgsMTg5Mj
+eyJoaXN0b3J5IjpbMjExOTE5MDk5OCw0MDQ2NTg3NzgsMTg5Mj
 EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
 MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
 MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
