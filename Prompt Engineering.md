@@ -263,6 +263,9 @@ Related list merge fields ground the prompt with related records when custom fil
 Retrievers ground the prompt with relevant content from indexed Data 360 knowledge or Agentforce Data Libraries.
 
 ## Grounding Techniques
+### Grounding Prompt Templates
+Prompt templates can be dynamically grounded with Salesforce resources so the LLM receives business-specific context at runtime. 
+GROUNDINGGrounding provides the LLM with relevant business context so generated responses are based on accurate and current information. ❖MERGE FIELDSMerge fields can reference record fields, related lists, record snapshots, Flow outputs, Apex outputs, Data 360 DMOs, and retriever results. 
 
 ## Scenarios & Solutions
 
@@ -276,7 +279,7 @@ Retrievers ground the prompt with relevant content from indexed Data 360 knowled
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjk5OTc1NTQsNDA0NjU4Nzc4LDE4OT
+eyJoaXN0b3J5IjpbLTIxMzU2MDgxOTYsNDA0NjU4Nzc4LDE4OT
 IxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAz
 MzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLT
 YzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgy
