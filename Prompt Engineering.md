@@ -243,6 +243,13 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 [Grounding Prompts with Record Snapshots](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_record_snapshots.htm&type=5)
 
 # Given a scenario, identify the appropriate grounding technique.
+## Introduction
+Prompt templates can be grounded with Salesforce data and external context so the LLM generates more accurate, relevant, and personalized responses. Grounding can use simple CRM data through record merge fields, broader page context through record snapshots, related records through related list merge fields, and unified data through Data 360 DMO merge fields. More advanced grounding can use Flow for declarative logic, Apex for programmatic logic and external API responses, retrievers for RAG over indexed knowledge, and file inputs for supported PDFs and images. The best grounding technique depends on the scenario, including where the source data is stored, how much filtering or transformation is required, and whether the content is structured, unstructured, or supplied at runtime. 
+
+## Grounding Techniques
+
+## Scenarios & Solutions
+
 
 # Explain the process for creating, activating, and executing prompt templates.
 
@@ -253,9 +260,9 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNT
-M5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUw
-NSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMT
-YwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3
-NTMzLC0yMDI3NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczOD
+k4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5
+NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMj
+cwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgyNjc0Niw4OTg4MDg1
+NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF19
 -->
