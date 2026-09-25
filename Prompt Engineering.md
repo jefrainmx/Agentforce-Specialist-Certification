@@ -247,10 +247,20 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 Prompt templates can be grounded with Salesforce data and external context so the LLM generates more accurate, relevant, and personalized responses. Grounding can use simple CRM data through record merge fields, broader page context through record snapshots, related records through related list merge fields, and unified data through Data 360 DMO merge fields. More advanced grounding can use Flow for declarative logic, Apex for programmatic logic and external API responses, retrievers for RAG over indexed knowledge, and file inputs for supported PDFs and images. The best grounding technique depends on the scenario, including where the source data is stored, how much filtering or transformation is required, and whether the content is structured, unstructured, or supplied at runtime. 
 
 ### Grounding Techniques
-Declarative Logic
+#### Declarative Logic
 Flow merge fields ground the prompt with values produced by Flow logic or Data 360 data access.
-Programmatic Logic
-Apex merge fields ground the prompt with SOQL results, external API data, formatted JSON, or programmatically filtered data. Runtime FilesFile inputs ground the prompt with uploaded PDFs or images when the selected model supports file inputs.Current Record DataRecord merge fields ground the prompt with fields from the object associated with the prompt template. Broad Page ContextRecord snapshots ground the prompt with record data available on the user’s page layout. Related RecordsRelated list merge fields ground the prompt with related records when custom filtering or sorting isn’t required.Indexed KnowledgeRetrievers ground the prompt with relevant content from indexed Data 360 knowledge or Agentforce Data Libraries.
+#### Programmatic Logic
+Apex merge fields ground the prompt with SOQL results, external API data, formatted JSON, or programmatically filtered data. 
+#### Runtime Files
+File inputs ground the prompt with uploaded PDFs or images when the selected model supports file inputs.
+#### Current Record Data
+Record merge fields ground the prompt with fields from the object associated with the prompt template. 
+#### Broad Page Context
+Record snapshots ground the prompt with record data available on the user’s page layout. 
+#### Related Records
+Related list merge fields ground the prompt with related records when custom filtering or sorting isn’t required.
+#### Indexed Knowledge
+Retrievers ground the prompt with relevant content from indexed Data 360 knowledge or Agentforce Data Libraries.
 
 ## Grounding Techniques
 
@@ -266,10 +276,10 @@ Apex merge fields ground the prompt with SOQL results, external API data, format
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzA5MzM4Miw0MDQ2NTg3NzgsMTg5Mj
-EwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMz
-MCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNj
-MyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2
-NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3NzY2NzQwXX
-0=
+eyJoaXN0b3J5IjpbLTExNjk5OTc1NTQsNDA0NjU4Nzc4LDE4OT
+IxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAz
+MzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLT
+YzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEwNzgy
+Njc0Niw4OTg4MDg1NzIsMjEyOTgyNzUzMywtMjAyNzc2Njc0MF
+19
 -->
