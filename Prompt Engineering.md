@@ -479,6 +479,7 @@ A model configuration defines the model and settings used by the prompt template
 
 ## References:
 [Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_about.htm&type=5)
+[Drive Productivity with Salesforce AI](https://trailhead.salesforce.com/content/learn/trails/drive-productivity-with-einstein-ai)
 
 # Explain how to implement best practices for writing effective prompts.
 
@@ -487,11 +488,11 @@ A model configuration defines the model and settings used by the prompt template
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzc1MTYyMzAsMjIyNTA1MTIzLC0yMD
-EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
-ODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Nj
-g5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0
-NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMj
-IwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0
-MDQ3MDMxNjhdfQ==
+eyJoaXN0b3J5IjpbMTU1NzUyMjAzNiwyMjI1MDUxMjMsLTIwMT
+I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
+NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2OD
+ksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2
+NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMj
+AyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQw
+NDcwMzE2OF19
 -->
