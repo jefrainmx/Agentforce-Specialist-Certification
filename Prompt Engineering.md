@@ -695,7 +695,7 @@ If an organization needs to block access to every model from a model provider, a
 Turning off a model provider can stopAgentforce agents, prompt templates, and other generative AI features from running if they depend on that provider’s models. Salesforce warns that admins should understand dependencies before turning off a provider.
 #### USE CASES
 Provider-level control is appropriate when a company has a compliance restriction, vendor policy, contractual limitation, regional requirement, or risk decision that prevents the use of a provider’s models. 
-USE CASESProvider-level control is appropriate when a company has a compliance restriction, vendor policy, contractual limitation, regional requirement, or risk decision that prevents the use of a provider’s models. ❖DIFFERENCEHiding a model prevents selection in Prompt Builder, while turning off a provider blocks access to the provider’s models. Existing prompt templates using hidden models can continue running, but provider-level blocking can break dependent features.DIFFERENCE
+#### DIFFERENCE
 Hiding a model prevents selection in Prompt Builder, while turning off a provider blocks access to the provider’s models. Existing prompt templates using hidden models can continue running, but provider-level blocking can break dependent features. 
 
 
@@ -704,7 +704,7 @@ Hiding a model prevents selection in Prompt Builder, while turning off a provide
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjYzOTI1NjksMTgwOTEzNjg3NSwtMT
+eyJoaXN0b3J5IjpbLTE5MTQ3NDk3ODIsMTgwOTEzNjg3NSwtMT
 UxMDA0OTU2MywxODI0ODUwNDEwLC0xMzg2NzUzNzQ0LDQ4MTMx
 NzI4Miw4NjY1MTQzNjgsMTQwMDI3MTksODY5MjcyMDc5LC0yOD
 kyNzA2MjksNjk5Nzk1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMx
