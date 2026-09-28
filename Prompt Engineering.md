@@ -736,9 +736,11 @@ Before hiding a model or turning off a provider, teams should test dependent tem
 [Manage Model Provider Access](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&type=5)
 [Large Language Model Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&type=5)
 [Use AI Models](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_use_ai_models.htm&type=5)
+[Packaging Considerations for Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_considerations_packaging.htm&type=5)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2MTYwMDM1LC0xOTE0NzQ5NzgyLDE4MD
+eyJoaXN0b3J5IjpbOTEzNzAyNDk4LC0xOTE0NzQ5NzgyLDE4MD
 kxMzY4NzUsLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMTM4Njc1
 Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OT
 I3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTEx
