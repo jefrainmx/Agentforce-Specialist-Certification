@@ -468,7 +468,14 @@ A Flex prompt template can be executed from Flow, an invocable action, Connect R
 ### Saving a Standard Prompt Template
 A standard prompt template can be copied into a custom prompt template by using the Save as a New Template option. Some standard templates can also be overridden.
 
+### Revising a Draft Email
+A draft email generated from a Sales Email prompt template can be revised with predefined adjustment options, such as making the draft shorter, longer, more formal, or less formal. 
 
+### Selecting a Model Type
+A prompt template can use a standard or custom model configuration. The selected configuration should be tested because different models and settings can produce different response quality.
+
+### Model Configuration in AI Models
+A model configuration defines the model and settings used by the prompt template. Prompt templates should be retested after changing the model configuration because the generated output can change.
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -478,11 +485,11 @@ A standard prompt template can be copied into a custom prompt template by using 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xND
-E4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2
-NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC02MjMzMjIwND
-QsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIx
-MDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMz
-AsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLTYz
-MjkyNTc2M119
+eyJoaXN0b3J5IjpbODQ0NzE2MDQwLDIyMjUwNTEyMywtMjAxMj
+UzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwtMTMzMzc4Mzg0
+OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OS
+wtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4NTQyLDQwNDY1
+ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMD
+IsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0
+NzAzMTY4XX0=
 -->
