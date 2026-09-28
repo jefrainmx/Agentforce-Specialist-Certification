@@ -543,7 +543,10 @@ Secure data retrieval based on dynamic grounding is the first step in the Trust 
 The Trust Layer is a secure AI architecture built into the Salesforce platform. It elevates the security of generative AI features through data and privacy controls.
 ### FEATURES, PROCESSES & POLICIES
 The Trust Layer contains features, processes, and policies designed to safeguard data privacy, enhance AI accuracy, and promote responsible use of Salesforce generative AI and Agentforce experiences .
-DATA SECURITYThe data and privacy controls enable Einstein to deliver AI that is securely grounded in the customer and company data, without introducing potential security risks. ❖SEQUENCEThe Trust Layer consists of a sequence of gatewaysandretrieval mechanisms that enable trusted generative open AI.
+### DATA SECURITY
+The data and privacy controls enable Einstein to deliver AI that is securely grounded in the customer and company data, without introducing potential security risks. 
+### SEQUENCE
+The Trust Layer consists of a sequence of gateways and retrieval mechanisms that enable trusted generative open AI.
 
 
 ## References:
@@ -553,11 +556,11 @@ DATA SECURITYThe data and privacy controls enable Einstein to deliver AI that is
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTcxNzU1MzUsNjk5Nzk1NDM3LC04ND
-M4MzY5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcx
-NDYsMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LD
-QzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAw
-NDE4Njg5LC0xMTAwNDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxND
-AwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTcz
-ODk4NDI0OV19
+eyJoaXN0b3J5IjpbLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0Mz
+gzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0
+NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsND
+MyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0
+MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MD
+AzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4
+OTg0MjQ5XX0=
 -->
