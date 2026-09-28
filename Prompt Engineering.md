@@ -700,7 +700,7 @@ Hiding a model prevents selection in Prompt Builder, while turning off a provide
 
 ### Model Provider Access
 The models of a model provider that is turned off are unavailable for selection in Prompt Builder.
-4
+![Model Provider Access](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20183118.png)
 
 ## Prompt Template Considerations
 Prompt templates can reference specific LLM configurations, so model restrictions should be reviewed alongside template configuration and activation.
@@ -740,7 +740,7 @@ Before hiding a model or turning off a provider, teams should test dependent tem
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjIxNTMyMiw5MTM3MDI0OTgsLTE5MT
+eyJoaXN0b3J5IjpbLTI2MTMwNDEyNSw5MTM3MDI0OTgsLTE5MT
 Q3NDk3ODIsMTgwOTEzNjg3NSwtMTUxMDA0OTU2MywxODI0ODUw
 NDEwLC0xMzg2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMT
 QwMDI3MTksODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3
