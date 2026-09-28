@@ -367,6 +367,10 @@ Cosmic Furniture wants to enhance a prompt template by including data from an ex
 ### Solution 5
 A flow can be created to perform a REST API callout and capture the response. The Add Prompt Instructions flow element can be used to pass the retrieved data into the prompt template. A corresponding flow merge field should be added to the prompt template to ground it with the external service data.It is important to note that while an Apex merge field could also meet the given requirement, it is more suitable for advanced use cases, such as programmatic filtering, JSON formatting, or complex SOQL queries. 
 
+## References:
+[Ground Prompt Templates with Salesforce Resources](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_template.htm&type=5)
+[enter link description here](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates)
+
 # Explain the process for creating, activating, and executing prompt templates.
 
 # Explain how to implement best practices for writing effective prompts.
@@ -376,7 +380,7 @@ A flow can be created to perform a REST API callout and capture the response. Th
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDQxNDgwOSwtMTEwMDQxODY4OSwtMT
+eyJoaXN0b3J5IjpbMTYxNzk1OTQwNywtMTEwMDQxODY4OSwtMT
 EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
 NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLT
 E1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAy
