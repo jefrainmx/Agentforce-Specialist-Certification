@@ -378,7 +378,16 @@ A flow can be created to perform a REST API callout and capture the response. Th
 Prompt Builder is used to create, test, revise, activate, and manageprompt templates that bring generative AI into Salesforce workflows. A prompt template begins with a selected template type, required inputs, and prompt instructions. Builders can add grounding resources such as record fields, related lists, flows, Apex, Data 360 DMOs, retrievers, and other supported resources. In the Prompt Builder workspace, the template can be previewed with test data to review the resolved prompt and generated response. After testing and revision, a specific template version must be activated before users, apps, flows, APIs, or Agentforce actions can execute it. 
 
 ### Creating, Activating & Executing Prompt Templates
-
+#### New Prompt Template
+A prompt template starts with a selected template type, name, description, and any required type-specific fields.
+#### Preview & Revision
+Builders preview the template with test data and revise the prompt until the generated response meets the intended goal.
+#### Versions & Activation
+A specific template version must be activated before it is available, and any version that has been activated becomes immutable.
+#### Execution
+Activated prompt templates can be executed through supported user experiences, Flow, invocable actions, Connect REST API, Connect in Apex, apps, and Agentforce actions.
+#### Prompt Template Workspace
+The workspace is used to write instructions, insert resources, configure model settings, preview the resolved prompt, and review generated responses.
 
 ## Creating Prompt Templates
 
@@ -391,7 +400,7 @@ Prompt Builder is used to create, test, revise, activate, and manageprompt templ
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTg3ODgzNzksLTIxMTY5NzY1OTIsLT
+eyJoaXN0b3J5IjpbLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLT
 ExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYz
 MjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMS
 wtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3
