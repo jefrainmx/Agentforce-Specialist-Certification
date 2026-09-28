@@ -397,6 +397,16 @@ A new prompt template can be created by navigating to Prompt Builderin Setup and
 #### TEMPLATE DETAILS
 The prompt template type, name, description, and any type-specific fields define how the template will be used.
 
+### Prompt Template Workspace
+The Prompt Template Workspace provides the areas needed to write, configure, preview, and revise a prompt template.
+#### WORKSPACE
+The workspace is used to write the prompt, insert resources, configure settings, select a model configuration, and save the template. 
+#### PREVIEW
+The preview area shows how the prompt resolves with selected test data and how the LLM responds.
+
+
+
+
 
 # Explain how to implement best practices for writing effective prompts.
 
@@ -405,11 +415,11 @@ The prompt template type, name, description, and any type-specific fields define
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYxNjkzMjg0LC0xMzMzNzgzODQ5LC0yMT
-E2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC02MjMz
-MjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LD
-E4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUy
-NTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNj
-gsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEw
-NzgyNjc0Nl19
+eyJoaXN0b3J5IjpbLTkxMDIwNzU0MSwtMTMzMzc4Mzg0OSwtMj
+ExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OSwtNjIz
+MzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4NTQyLDQwNDY1ODc3OC
+wxODkyMTA3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1
+MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMT
+Y4LC02MzI5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTEx
+MDc4MjY3NDZdfQ==
 -->
