@@ -559,7 +559,8 @@ A prompt can come from any Salesforce app. Prompts can be created in Prompt Buil
 When a generated response is returned by the Large Language Model (LLM), the Trust Layer applies certain policies and processes to ensure that it is safe and useful. 
 
 Data flows through the Trust Layer in the form of prompt and response.
-![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20154303.png)
+![Trust Layer](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20154303.png)
+
 
 
 ## References:
@@ -569,11 +570,11 @@ Data flows through the Trust Layer in the form of prompt and response.
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NzIxODE1MywtMjg5MjcwNjI5LDY5OT
-c5NTQzNywtODQzODM2OTExLDE1OTMwMTQzMSwxNjk5NTk4NTY4
-LC0xNzQ2MTA3MTQ2LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwtMT
-QxODExODA3NSw0MzI0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3
-NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OSwtNjIzMzIyMD
-Q0LDIwNjMyMTQwMDMsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODky
-MTA3NzMxXX0=
+eyJoaXN0b3J5IjpbLTE5MzE0OTc4NTUsLTI4OTI3MDYyOSw2OT
+k3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2
+OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLT
+E0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5
+NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMj
+A0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5
+MjEwNzczMV19
 -->
