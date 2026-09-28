@@ -411,7 +411,12 @@ The generated response shows the LLM output for the selected test inputs or reco
 #### RESOLVE PROMPT
 The resolved prompt shows the final prompt after merge fields and resources are replaced with selected Salesforce data. 
 
-
+### Resources and Model Configuration
+Resources and model configuration determine what data grounds the prompt and which modelgenerates the response.
+#### RESOURCES
+Resources can ground prompt templates with record fields, related lists, flows, Apex, Data 360 DMOs, record snapshots, retrievers, and other supported inputs. 
+#### MODEL CONFIGURATION
+A prompt template can use a standard or custom model configuration, but model selection should follow current org policy and supported model availability.
 
 
 
@@ -422,7 +427,7 @@ The resolved prompt shows the final prompt after merge fields and resources are 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDQzOTk5MDUsLTEzMzM3ODM4NDksLT
+eyJoaXN0b3J5IjpbLTE3MDA0MTQ5MzEsLTEzMzM3ODM4NDksLT
 IxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYy
 MzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3Nz
 gsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgw
