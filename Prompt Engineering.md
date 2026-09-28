@@ -648,7 +648,12 @@ Model configurations are managed in AI Models and can be shown or hidden from se
 
 ## Model Access
 ### Model Access Control Layers
-Model visibilitycontrols individual model availability, while provider access controls access to all models from a selected provider.❖MODEL VISIBILITYModel visibility controls whether a specific LLM configuration is shown or hidden as an available option in Prompt Builder. This is useful when an organization wants to prevent builders from selecting a specific model for new or edited prompt templates. ❖MODEL PROVIDER ACCESSModel provider access controls whether an entire provider’s models can be accessed in the org. Turning off a provider blocks access to that provider’s models and can affect agents, prompt templates, and other generative AI features that depend on them.
+Model visibility controls individual model availability, while provider access controls access to all models from a selected provider.
+#### MODEL VISIBILITY
+Model visibility controls whether a specific LLM configuration is shown or hidden as an available option in Prompt Builder. This is useful when an organization wants to prevent builders from selecting a specific model for new or edited prompt templates. 
+#### MODEL PROVIDER ACCESS
+Model provider access controls whether an entire provider’s models can be accessed in the org. Turning off a provider blocks access to that provider’s models and can affect agents, prompt templates, and other generative AI features that depend on them.
+MODEL MANAGEMENT PERMISSIONThe ability to manage models in AI Models is controlled through the Allow users to manage modelsin AI Models user permission, which should be granted only to users responsible for model governanceand administration. ❖MODEL MANAGEMENT PERMISSION SETThe Data Cloud Architect permission set provides admin-level access to all AI Models features. The Data Cloud User permission set provides restricted access to use a model.
 
 ## Hiding Specific Models
 
@@ -659,11 +664,11 @@ Model visibilitycontrols individual model availability, while provider access co
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODAzNDAxMTAsMTgyNDg1MDQxMCwtMT
-M4Njc1Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5
-LDg2OTI3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzOD
-M2OTExLDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2
-LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0Mz
-I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
-ODY4OV19
+eyJoaXN0b3J5IjpbMTA5NDk5MjM3MCwxODI0ODUwNDEwLC0xMz
+g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
+ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
+Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
+MjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMj
+Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
+Njg5XX0=
 -->
