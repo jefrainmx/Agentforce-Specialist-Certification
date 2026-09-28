@@ -703,11 +703,16 @@ The models of a model provider that is turned off are unavailable for selection 
 4
 
 ## Prompt Template Considerations
+Prompt templates can reference specific LLM configurations, so model restrictions should be reviewed alongside template configuration and activation.
+### CHANGING LLM CONFIGURATION
+Prompt templates can be configured to use a selected LLM configuration. If a model should no longer be used, the prompt template should be updated to use an approved model configuration and then tested. 
+### HIDDEN MODEL BEHAVIOR
+A prompt template using a hidden model can continue to run, so hiding a model alone is not enough when the goal is to remove that model from existing production use.
 
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjkxMTUyMTUsLTE5MTQ3NDk3ODIsMT
+eyJoaXN0b3J5IjpbLTEzNTA1MTM3MzgsLTE5MTQ3NDk3ODIsMT
 gwOTEzNjg3NSwtMTUxMDA0OTU2MywxODI0ODUwNDEwLC0xMzg2
 NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTksOD
 Y5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4MzY5
