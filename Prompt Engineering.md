@@ -730,12 +730,17 @@ Regular reviews help ensure that hidden models are not still being used by exist
 #### TESTING
 Before hiding a model or turning off a provider, teams should test dependent templates, agents, and automation to avoid disrupting production experiences. 
 
+## References:
+[Manage Large Language Model (LLM) Access by Hiding Configurations](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_mm_show_hide_models.htm&type=5)
+[Change LLM Configurations in Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_changing_llm_configurations.htm&type=5)
+[Manage Model Provider Access
+](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjY3NjgyNywtMTkxNDc0OTc4MiwxOD
-A5MTM2ODc1LC0xNTEwMDQ5NTYzLDE4MjQ4NTA0MTAsLTEzODY3
-NTM3NDQsNDgxMzE3MjgyLDg2NjUxNDM2OCwxNDAwMjcxOSw4Nj
-kyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkx
-MSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMj
-I1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2
-OThdfQ==
+eyJoaXN0b3J5IjpbNDU3MDA5MzcwLC0xOTE0NzQ5NzgyLDE4MD
+kxMzY4NzUsLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMTM4Njc1
+Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OT
+I3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTEx
+LDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMj
+UwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5
+OF19
 -->
