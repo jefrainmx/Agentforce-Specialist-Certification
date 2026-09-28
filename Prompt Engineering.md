@@ -636,7 +636,15 @@ Generated responses should be reviewed for accuracy, safety, tone, and alignment
 Salesforce provides controls for managing which large language models (LLMs) can be selected and used by generative AI features. Administrators can manage model visibility in AI Models, so specific LLM configurations are hidden from selection in Prompt Builder. They can also manage provider-level access, which blocks access to all models from a selected model provider. These controls help organizations align model usage with security, compliance, cost, and business requirements. However, hiding a model is notthe same as disabling every existing use of that model. Existing prompt templates that already use a hidden model can continue to run, so admins must review active templates and update their model configurations when a model should no longer be used. 
 ### Managing LLM Access in Salesforce
 #### Prompt Builder
-LLM models can be selected and tested in Prompt Builder during template creation and editing.Model VisibilityHidden models are removed from the selectable model list in Prompt Builder.Model Provider AccessAdmins can turn off a model provider to block access to that provider’s models across the org.Existing Prompt TemplatesPrompt templates that already use a hidden model can continue to run, so their LLM configurations must be reviewed and changed if the model should no longer be used.AI Models Model configurations are managed in AI Models and can be shown or hidden from selection in Prompt Builder.
+LLM models can be selected and tested in Prompt Builder during template creation and editing.
+#### Model Visibility
+Hidden models are removed from the selectable model list in Prompt Builder.
+#### Model Provider Access
+Admins can turn off a model provider to block access to that provider’s models across the org.
+#### Existing Prompt Templates
+Prompt templates that already use a hidden model can continue to run, so their LLM configurations must be reviewed and changed if the model should no longer be used.
+#### AI Models
+Model configurations are managed in AI Models and can be shown or hidden from selection in Prompt Builder.
 
 ## Model Access
 
@@ -649,7 +657,7 @@ LLM models can be selected and tested in Prompt Builder during template creation
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNjM0NjUwMiwtMTM4Njc1Mzc0NCw0OD
+eyJoaXN0b3J5IjpbMTgyNDg1MDQxMCwtMTM4Njc1Mzc0NCw0OD
 EzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OTI3MjA3OSwt
 Mjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTExLDE1OTMwMT
 QzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMjUwNTEyMywt
