@@ -444,7 +444,12 @@ Activating a prompt template makes one specific version available to users, agen
 #### MODEL CONFIGURATION
 The selected model configuration should be tested before activation because model choice and settings can affect response quality.
 
-
+### Versions and New Templates
+Prompt template versions help builders test changes without immediately affecting the active version. 
+#### VERSIONS
+An edited prompt template can be saved as a new version with the Save as a New Version option so changes can be tested before activation. 
+#NEW TEMPLATES
+A prompt template can be modified by copying it with the Save as a New Template option, and some standard templates can be overridden with an active custom version.
 
 
 
@@ -455,11 +460,11 @@ The selected model configuration should be tested before activation because mode
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTg3NSwtMTQxODExODA3NSw0MzI0ND
-Y5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4
-OSwtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMz
-EzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQy
-NDksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMT
-I5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDky
-NDM3XX0=
+eyJoaXN0b3J5IjpbMTEwMjM5ODgxNCwtMTQxODExODA3NSw0Mz
+I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
+ODY4OSwtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMD
+MsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5
+ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OT
+YsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3
+MDkyNDM3XX0=
 -->
