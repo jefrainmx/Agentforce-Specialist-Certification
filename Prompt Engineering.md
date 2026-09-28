@@ -698,17 +698,20 @@ Provider-level control is appropriate when a company has a compliance restrictio
 #### DIFFERENCE
 Hiding a model prevents selection in Prompt Builder, while turning off a provider blocks access to the provider’s models. Existing prompt templates using hidden models can continue running, but provider-level blocking can break dependent features. 
 
+### Model Provider Access
+The models of a model provider that is turned off are unavailable for selection in Prompt Builder.
+4
 
 ## Prompt Template Considerations
 
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTQ3NDk3ODIsMTgwOTEzNjg3NSwtMT
-UxMDA0OTU2MywxODI0ODUwNDEwLC0xMzg2NzUzNzQ0LDQ4MTMx
-NzI4Miw4NjY1MTQzNjgsMTQwMDI3MTksODY5MjcyMDc5LC0yOD
-kyNzA2MjksNjk5Nzk1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMx
-LDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMD
-EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
-ODQ5XX0=
+eyJoaXN0b3J5IjpbLTE2NjkxMTUyMTUsLTE5MTQ3NDk3ODIsMT
+gwOTEzNjg3NSwtMTUxMDA0OTU2MywxODI0ODUwNDEwLC0xMzg2
+NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTksOD
+Y5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4MzY5
+MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYsMj
+IyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0
+Njk4XX0=
 -->
