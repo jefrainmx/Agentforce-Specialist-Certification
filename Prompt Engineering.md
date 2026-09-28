@@ -658,6 +658,12 @@ The ability to manage models in AI Models is controlled through the Allow users 
 #### MODEL MANAGEMENT PERMISSION SET
 The Data Cloud Architect permission set provides admin-level access to all AI Models features. The Data Cloud User permission set provides restricted access to use a model.
 
+### Model Visibility
+Specific model configurations can be hidden in AI Models.
+1
+
+### Model Provider Access
+A model provider can be turned off to block access to its models in the org.
 
 
 ## Hiding Specific Models
@@ -669,11 +675,11 @@ The Data Cloud Architect permission set provides admin-level access to all AI Mo
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzQwNTU1MCwxODI0ODUwNDEwLC0xMz
-g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
-ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
-Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
-MjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMj
-Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
-Njg5XX0=
+eyJoaXN0b3J5IjpbMTk0MTA0MDY4LDE4MjQ4NTA0MTAsLTEzOD
+Y3NTM3NDQsNDgxMzE3MjgyLDg2NjUxNDM2OCwxNDAwMjcxOSw4
+NjkyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNj
+kxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0Niwy
+MjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyND
+Q2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2
+ODldfQ==
 -->
