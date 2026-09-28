@@ -540,22 +540,23 @@ Secure data retrieval based on dynamic grounding is the first step in the Trust 
 
 
 ## Trust Layer
+### Trust Layer
 The Trust Layer is a secure AI architecture built into the Salesforce platform. It elevates the security of generative AI features through data and privacy controls.
-### FEATURES, PROCESSES & POLICIES
+#### FEATURES, PROCESSES & POLICIES
 The Trust Layer contains features, processes, and policies designed to safeguard data privacy, enhance AI accuracy, and promote responsible use of Salesforce generative AI and Agentforce experiences .
-### DATA SECURITY
+#### DATA SECURITY
 The data and privacy controls enable Einstein to deliver AI that is securely grounded in the customer and company data, without introducing potential security risks. 
-### SEQUENCE
+#### SEQUENCE
 The Trust Layer consists of a sequence of gateways and retrieval mechanisms that enable trusted generative open AI.
-### PROMPT JOURNEY
+#### PROMPT JOURNEY
 Data flows through the Trust Layer in the form of a prompt from a Salesforce app to a Large Language Model (LLM). This data flow is called the prompt journey. The Trust Layer applies protections before the prompt reaches the LLM and after the LLM returns a response. 
-### RESPONSE GENERATION
+#### RESPONSE GENERATION
 The Large Language Model (LLM) generates a response using the prompt from Salesforce. This process is called response generation.
-### RESPONSE JOURNEY
+#### RESPONSE JOURNEY
 The generated response flows back through the Trust Layer from the Large Language Model (LLM) to the Salesforce app. This data flow is called the response journey. 
-### PROMPT
+#### PROMPT
 A prompt can come from any Salesforce app. Prompts can be created in Prompt Builder and invoked by Flow, Apex, APIs, or agent actions, depending on the use case. Once invoked, it goes through various steps during the prompt journey in the Trust Layer.
-### RESPONSE
+#### RESPONSE
 When a generated response is returned by the Large Language Model (LLM), the Trust Layer applies certain policies and processes to ensure that it is safe and useful. 
 
 Data flows through the Trust Layer in the form of prompt and response.
@@ -607,7 +608,7 @@ The Trust Layer applies various processes and policies to ensure the safety and 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODA3NDM0Myw4NjkyNzIwNzksLTI4OT
+eyJoaXN0b3J5IjpbMjAzNTc4NjM1Nyw4NjkyNzIwNzksLTI4OT
 I3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEs
 MTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMT
 I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
