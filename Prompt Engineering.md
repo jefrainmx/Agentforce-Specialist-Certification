@@ -547,7 +547,12 @@ The Trust Layer contains features, processes, and policies designed to safeguard
 The data and privacy controls enable Einstein to deliver AI that is securely grounded in the customer and company data, without introducing potential security risks. 
 ### SEQUENCE
 The Trust Layer consists of a sequence of gateways and retrieval mechanisms that enable trusted generative open AI.
-
+### PROMPT JOURNEY
+Data flows through the Trust Layer in the form of a prompt from a Salesforce app to a Large Language Model (LLM). This data flow is called the prompt journey. The Trust Layer applies protections before the prompt reaches the LLM and after the LLM returns a response. 
+### RESPONSE GENERATION
+The Large Language Model (LLM) generates a response using the prompt from Salesforce. This process is called response generation.
+### RESPONSE JOURNEY
+The generated response flows back through the Trust Layer from the Large Language Model (LLM) to the Salesforce app. This data flow is called the response journey. 
 
 ## References:
 
@@ -556,11 +561,11 @@ The Trust Layer consists of a sequence of gateways and retrieval mechanisms that
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0Mz
-gzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0
-NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsND
-MyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0
-MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MD
-AzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4
-OTg0MjQ5XX0=
+eyJoaXN0b3J5IjpbLTIxMDQ4MzEzMTAsLTI4OTI3MDYyOSw2OT
+k3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2
+OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLT
+E0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5
+NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMj
+A0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5
+MjEwNzczMV19
 -->
