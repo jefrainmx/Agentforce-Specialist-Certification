@@ -448,9 +448,13 @@ The selected model configuration should be tested before activation because mode
 Prompt template versions help builders test changes without immediately affecting the active version. 
 #### VERSIONS
 An edited prompt template can be saved as a new version with the Save as a New Version option so changes can be tested before activation. 
-#NEW TEMPLATES
+#### NEW TEMPLATES
 A prompt template can be modified by copying it with the Save as a New Template option, and some standard templates can be overridden with an active custom version.
 
+### Executing Sales Email Templates
+Sales Email prompt templates are executed from the email drafting experience in Lightning Experience. 
+#### DRAFT WITH EINSTEIN
+A Sales Email prompt template can be executed from the email composer by selecting Draft with Einstein. ❖DRAFT REVISION A generated email draft can be revised with predefined options such as making it shorter, longer, more formal, or less formal. 
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -460,7 +464,7 @@ A prompt template can be modified by copying it with the Save as a New Template 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMjM5ODgxNCwtMTQxODExODA3NSw0Mz
+eyJoaXN0b3J5IjpbMTMzODYwNjg1NSwtMTQxODExODA3NSw0Mz
 I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
 ODY4OSwtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMD
 MsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5
