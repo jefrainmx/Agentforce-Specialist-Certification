@@ -673,6 +673,11 @@ Hidden models are removed from the selectable model list, but existing templates
 A model configuration can be hidden when it should no longer be available for selection in Prompt Builder. For example, an organization might hide a model that is experimental, not approved for a business unit, too costly, deprecated, or not aligned with internal compliance rules. 
 #### HOW IT WORKS
 In AI Models / Model Library, the Model Visibility column shows whether an LLM configuration is shown or hidden. Hiding the model removes it from selection in Prompt Builder so prompt template creators cannot select it for new or edited templates.
+#### EXISTING TEMPLATES
+Hiding a model is a selection control. It prevents future selection in Prompt Builder, but it does not automatically rewrite every prompt template that already references that model.
+#### HIDDEN MODEL CONSIDERATION
+If a prompt template already uses a model that becomes hidden, that template can continue to run as before. This means hiding a model does not automatically stop every existing use of that model.
+
 
 ## Model Provider Access
 
@@ -681,11 +686,11 @@ In AI Models / Model Library, the Model Visibility column shows whether an LLM c
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNDU3OTUxLDE4MjQ4NTA0MTAsLTEzOD
-Y3NTM3NDQsNDgxMzE3MjgyLDg2NjUxNDM2OCwxNDAwMjcxOSw4
-NjkyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNj
-kxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0Niwy
-MjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyND
-Q2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2
-ODldfQ==
+eyJoaXN0b3J5IjpbMjEwMTU3Nzk0MSwxODI0ODUwNDEwLC0xMz
+g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
+ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
+Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
+MjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMj
+Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
+Njg5XX0=
 -->
