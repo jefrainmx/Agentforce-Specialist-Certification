@@ -418,6 +418,9 @@ Resources can ground prompt templates with record fields, related lists, flows, 
 #### MODEL CONFIGURATION
 A prompt template can use a standard or custom model configuration, but model selection should follow current org policy and supported model availability.
 
+### Creating a Prompt Template
+When creating a prompt template, the builder selects the prompt template type and enters the prompt template name and description. Additional required fields depend on the selected type.
+
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -427,7 +430,7 @@ A prompt template can use a standard or custom model configuration, but model se
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDA0MTQ5MzEsLTEzMzM3ODM4NDksLT
+eyJoaXN0b3J5IjpbLTEwNTM0MjM0ODksLTEzMzM3ODM4NDksLT
 IxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYy
 MzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3Nz
 gsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgw
