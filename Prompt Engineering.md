@@ -664,6 +664,9 @@ Specific model configurations can be hidden in AI Models.
 
 ### Model Provider Access
 A model provider can be turned off to block access to its models in the org.
+2
+
+
 
 
 ## Hiding Specific Models
@@ -675,11 +678,11 @@ A model provider can be turned off to block access to its models in the org.
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTA0MDY4LDE4MjQ4NTA0MTAsLTEzOD
-Y3NTM3NDQsNDgxMzE3MjgyLDg2NjUxNDM2OCwxNDAwMjcxOSw4
-NjkyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNj
-kxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0Niwy
-MjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyND
-Q2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2
-ODldfQ==
+eyJoaXN0b3J5IjpbMTY5MjQ3Mjk2OCwxODI0ODUwNDEwLC0xMz
+g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
+ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
+Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
+MjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMj
+Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
+Njg5XX0=
 -->
