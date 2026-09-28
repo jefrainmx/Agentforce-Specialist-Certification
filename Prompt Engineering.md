@@ -369,7 +369,9 @@ A flow can be created to perform a REST API callout and capture the response. Th
 
 ## References:
 [Ground Prompt Templates with Salesforce Resources](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_template.htm&type=5)
-[enter link description here](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates)
+[Create and Ground Prompt Templates](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates)
+[Get Started with Prompt Builder](https://trailhead.salesforce.com/content/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder)
+
 
 # Explain the process for creating, activating, and executing prompt templates.
 
@@ -380,7 +382,7 @@ A flow can be created to perform a REST API callout and capture the response. Th
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzk1OTQwNywtMTEwMDQxODY4OSwtMT
+eyJoaXN0b3J5IjpbLTM2Nzk0Njg1MSwtMTEwMDQxODY4OSwtMT
 EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
 NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLT
 E1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAy
