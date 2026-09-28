@@ -495,22 +495,29 @@ A prompt template should be clear, concise, consistent, and include roleplay as 
 
 ## Best Practices for Writing Effective Prompts
 Various best practices and limitations apply to writing effective prompts for prompt templates.
-CLEAR & CONCISE
+### CLEAR & CONCISE
 Prompt templates should be concise, easy to understand, and use natural language and conversation design guidelines. Industry jargon or technical terms should be avoided. 
-STYLE & CONSISTENCY
+### STYLE & CONSISTENCY
 Prompt templates should use a consistent writing style to generate consistent responses. The writing style is shaped by  word choice, intensifiers, emojis, and punctuation.
-CONTEXTContextual information can be provided to the LLM by asking it to role play as a character, such as a sales or support representative, and then defining the character’s goal.
+### CONTEXT
+Contextual information can be provided to the LLM by asking it to role play as a character, such as a sales or support representative, and then defining the character’s goal.
+### ITERATIONS
+The same goal can be achieved using different prompt templates to see how the parts impact the model’s response. Iterative feedback should be obtained from end users to see how well a prompt template generates the desired  response.
+### INSTRUCTIONS
+An instructions section should be created to help the LLM differentiate between context and instructions. ‘Instructions:’ should be entered on a separate line, and then the instructions should be surrounded with triple quotes (""").
+###
+
 
 # Identify the security and privacy features of the Trust Layer.
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc4NjE5NDI1LC0xNzQ2MTA3MTQ2LDIyMj
-UwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5
-OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OS
-wtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEz
-MDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyND
-ksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5
-NDAyNTA1XX0=
+eyJoaXN0b3J5IjpbLTE5OTIxNzkzOTcsLTE3NDYxMDcxNDYsMj
+IyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0
+Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Nj
+g5LC0xMTAwNDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywz
+MTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4ND
+I0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5Niwx
+Mjk0MDI1MDVdfQ==
 -->
