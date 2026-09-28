@@ -510,17 +510,21 @@ Direct instructions should be included for the LLM to generate only the expected
 ### PROMPT SECTIONS
 When writing an effective prompt that follows best practices, instructions can be provided in specific sections like Role, Task, Context, and Constraints.
 
+### Prompt Template Instructions
+Instructions in a prompt template should be surrounded with triple quotes (""").
+
+
 
 # Identify the security and privacy features of the Trust Layer.
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMj
-I1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2
-OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2OD
-ksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMx
-MzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0Mj
-Q5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEy
-OTQwMjUwNV19
+eyJoaXN0b3J5IjpbNjA4Mzc5NTIsMTY5OTU5ODU2OCwtMTc0Nj
+EwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgw
+NzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLT
+ExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYz
+MjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMS
+wtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3
+NDQzODk2XX0=
 -->
