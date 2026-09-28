@@ -733,10 +733,12 @@ Before hiding a model or turning off a provider, teams should test dependent tem
 ## References:
 [Manage Large Language Model (LLM) Access by Hiding Configurations](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_mm_show_hide_models.htm&type=5)
 [Change LLM Configurations in Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_changing_llm_configurations.htm&type=5)
-[Manage Model Provider Access
-](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&type=5)
+[Manage Model Provider Access](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&type=5)
+[Large Language Model Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&type=5)
+[Use AI Models](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_use_ai_models.htm&type=5)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU3MDA5MzcwLC0xOTE0NzQ5NzgyLDE4MD
+eyJoaXN0b3J5IjpbMzM2MTYwMDM1LC0xOTE0NzQ5NzgyLDE4MD
 kxMzY4NzUsLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMTM4Njc1
 Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OT
 I3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTEx
