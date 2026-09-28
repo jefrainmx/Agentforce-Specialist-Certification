@@ -686,19 +686,20 @@ Model visibility should be used to prevent future selection. It is also necessar
 A hidden model is not available for selection in Prompt Builder.
 3
 
-
 ## Model Provider Access
+### Managing Model Provider Access
+Provider-level control blocks or allows access to all models from a model provider across supported Salesforce generative AI experiences.❖PROVIDER-LEVEL CONTROLIf an organization needs to block access to every model from a model provider, an admin can turn off that model provider. This is broader than hiding one model configuration because it blocks access to the provider’s models in the org. ❖IMPACTTurning off a model provider can stopAgentforce agents, prompt templates, and other generative AI features from running if they depend on that provider’s models. Salesforce warns that admins should understand dependencies before turning off a provider.
 
 ## Prompt Template Considerations
 
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwOTEzNjg3NSwtMTUxMDA0OTU2MywxOD
-I0ODUwNDEwLC0xMzg2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQz
-NjgsMTQwMDI3MTksODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nz
-k1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMxLDE2OTk1OTg1Njgs
-LTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xND
-E4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2
-NTkyXX0=
+eyJoaXN0b3J5IjpbMTMwMTM4MjE5MSwxODA5MTM2ODc1LC0xNT
+EwMDQ5NTYzLDE4MjQ4NTA0MTAsLTEzODY3NTM3NDQsNDgxMzE3
+MjgyLDg2NjUxNDM2OCwxNDAwMjcxOSw4NjkyNzIwNzksLTI4OT
+I3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEs
+MTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMT
+I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
+NDldfQ==
 -->
