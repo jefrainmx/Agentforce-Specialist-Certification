@@ -374,8 +374,11 @@ A flow can be created to perform a REST API callout and capture the response. Th
 
 
 # Explain the process for creating, activating, and executing prompt templates.
+## Introduction
+Prompt Builder is used to create, test, revise, activate, and manageprompt templates that bring generative AI into Salesforce workflows. A prompt template begins with a selected template type, required inputs, and prompt instructions. Builders can add grounding resources such as record fields, related lists, flows, Apex, Data 360 DMOs, retrievers, and other supported resources. In the Prompt Builder workspace, the template can be previewed with test data to review the resolved prompt and generated response. After testing and revision, a specific template version must be activated before users, apps, flows, APIs, or Agentforce actions can execute it. 
 
 ## Creating Prompt Templates
+
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -385,11 +388,11 @@ A flow can be created to perform a REST API callout and capture the response. Th
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY3MjgxNTM5LC0xMTAwNDE4Njg5LC0xMT
-AwNDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1
-NDIsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMT
-UzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1
-MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMT
-E2MDcxOTIyMywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgy
-NzUzM119
+eyJoaXN0b3J5IjpbLTIxMTY5NzY1OTIsLTExMDA0MTg2ODksLT
+ExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5
+ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC
+0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQw
+MjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNy
+wxMTYwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5
+ODI3NTMzXX0=
 -->
