@@ -522,6 +522,16 @@ Instructions in a prompt template should be surrounded with triple quotes (""").
 ## Introduction
 The Trust Layer provides security, privacy, and safety controls for Salesforce generative AI. It helps protect data as prompts are grounded, sent to large language models, and returned as generated responses. Key features include secure data retrieval, dynamic grounding, data masking, prompt defense, zero data retention, toxicity detection, audit trail, and feedback. These controls reduce the risk of exposing sensitive customer or company data, improve response relevance, and create accountability across the prompt-to-response journey. Because Trust Layer capabilities can vary by Salesforce generative AI feature, Agentforce Specialists must understand which protections apply to prompt templates, embedded AI features, and agents. 
 
+### Trust Layer
+#### Audit Trail & Feedback
+A user can accept, modify, or reject the generated response. Explicit feedback and data such as toxicity scores and de-masked output are included in the audit trail and stored in Data Cloud.
+#### Data Demasking
+Before a generated response is presented to the user, the sensitive data in the response is de-masked using the stored relationships.
+#### Toxicity Detection
+The Trust Layer scans the response for toxicity. The toxicity confidence score determines the probability of the response including harmful or inappropriate content.
+#### Zero Data RetentionData sent to an external partner model provider is not retained and is deleted after a response is sent back.Prompt DefenseSystem policies are used to decrease the likelihood of unintended or harmful responses and defend against jailbreaking and prompt injection attacks.Data MaskingThe Trust Layer identifies and masks sensitive data in a prompt using placeholder text. Data masking and demasking are currently disabled for agents. Secure Data Retrieval & GroundingSecure data retrieval based on dynamic grounding is the first step in the Trust Layer. Merge fields can be used in a prompt for data grounding.
+
+
 ## Trust Layer
 
 
@@ -533,11 +543,11 @@ The Trust Layer provides security, privacy, and safety controls for Salesforce g
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MzgzNjkxMSwxNTkzMDE0MzEsMTY5OT
-U5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1
-MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLT
-IxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYy
-MzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3Nz
-gsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgw
-NTI1MDMzMF19
+eyJoaXN0b3J5IjpbMTEwMTcyMzQ1NSwtODQzODM2OTExLDE1OT
+MwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMjUwNTEy
+MywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwtMT
+MzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEw
+MDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4NT
+QyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLTE1
+MzkwMzIyMDJdfQ==
 -->
