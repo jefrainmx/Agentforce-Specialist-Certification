@@ -493,18 +493,24 @@ Iterative feedback should be obtained from end users to see how well a prompt te
 #### Language, Style & Context
 A prompt template should be clear, concise, consistent, and include roleplay as a character to provide contextual information. 
 
-
+## Best Practices for Writing Effective Prompts
+Various best practices and limitations apply to writing effective prompts for prompt templates.
+CLEAR & CONCISE
+Prompt templates should be concise, easy to understand, and use natural language and conversation design guidelines. Industry jargon or technical terms should be avoided. 
+STYLE & CONSISTENCY
+Prompt templates should use a consistent writing style to generate consistent responses. The writing style is shaped by  word choice, intensifiers, emojis, and punctuation.
+CONTEXTContextual information can be provided to the LLM by asking it to role play as a character, such as a sales or support representative, and then defining the character’s goal.
 
 # Identify the security and privacy features of the Trust Layer.
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMD
-EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
-ODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Nj
-g5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0
-NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMj
-IwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0
-MDQ3MDMxNjhdfQ==
+eyJoaXN0b3J5IjpbNjc4NjE5NDI1LC0xNzQ2MTA3MTQ2LDIyMj
+UwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5
+OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OS
+wtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEz
+MDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyND
+ksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5
+NDAyNTA1XX0=
 -->
