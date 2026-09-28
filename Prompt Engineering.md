@@ -428,7 +428,7 @@ The workspace is used to write prompt instructions, insert grounding resources, 
 
 ### Preview Button
 Preview requires selecting test records, related records, or input values in the Preview Settings.
-![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20141450.png)
+![Peview Button](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20141450.png)
 
 
 
@@ -441,11 +441,11 @@ Preview requires selecting test records, related records, or input values in the
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NjcwMjc2LDQzMjQ0Njk4LC0xMzMzNz
-gzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4
-Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsND
-A0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAz
-MjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLT
-E0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcx
-OTIyM119
+eyJoaXN0b3J5IjpbLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMz
+M3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0
+MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Mi
+w0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5
+MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNS
+wtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMTYw
+NzE5MjIzXX0=
 -->
