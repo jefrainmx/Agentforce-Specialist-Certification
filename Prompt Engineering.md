@@ -514,17 +514,22 @@ When writing an effective prompt that follows best practices, instructions can b
 Instructions in a prompt template should be surrounded with triple quotes (""").
 ![Prompt Template Instructions](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20151409.png)
 
+## References:
+[Best Practices for Building Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_best_practices.htm&type=5)
+
 
 # Identify the security and privacy features of the Trust Layer.
+
+
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzI1MjMwNjAsMTY5OTU5ODU2OCwtMT
-c0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgx
-MTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OT
-IsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwy
-MDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNz
-czMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwx
-MDQ3NDQzODk2XX0=
+eyJoaXN0b3J5IjpbMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3ND
+YxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4
+MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC
+0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC02MjMzMjIwNDQsMjA2
+MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIxMDc3Mz
+EsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMzAsMTA0
+NzQ0Mzg5Nl19
 -->
