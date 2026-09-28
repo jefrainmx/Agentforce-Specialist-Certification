@@ -611,7 +611,16 @@ In addition to feedback data, the audit trail includes data such as the original
 The LLM generates a suitable response based on the resolved prompt.
 4
 
-### Trust Layer ConsiderationsVarious considerations apply to the Trust Layer.
+### Trust Layer Considerations
+Various considerations apply to the Trust Layer.
+#### Feature Availability
+Trust Layer features can vary across Prompt Builder, embedded generative AI features, and Agentforce agents.
+#### Access Controls Still Apply
+Secure retrieval depends on Salesforce permissions and sharing. The Trust Layer does not replace object, field, record, or runtime access controls. 
+#### Data Masking for Agents
+LLM data masking is currently disabled for agents, even though it is available for supported embedded generative AI features.
+#### Human Review
+Generated responses should be reviewed for accuracy, safety, tone, and alignment with company policy before being shared externally. Salesforce states that generative AI is not a replacement for human judgment.
 
 
 ## References:
@@ -621,11 +630,11 @@ The LLM generates a suitable response based on the resolved prompt.
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1ODA5MzU1NSw4NjkyNzIwNzksLTI4OT
-I3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEs
-MTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMT
-I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
-NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2OD
-ksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2
-NTg3NzhdfQ==
+eyJoaXN0b3J5IjpbMTQwMDI3MTksODY5MjcyMDc5LC0yODkyNz
+A2MjksNjk5Nzk1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMxLDE2
+OTk1OTg1NjgsLTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNT
+M2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5
+LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC
+02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4
+Nzc4XX0=
 -->
