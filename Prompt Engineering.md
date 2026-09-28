@@ -677,7 +677,10 @@ In AI Models / Model Library, the Model Visibility column shows whether an LLM c
 Hiding a model is a selection control. It prevents future selection in Prompt Builder, but it does not automatically rewrite every prompt template that already references that model.
 #### HIDDEN MODEL CONSIDERATION
 If a prompt template already uses a model that becomes hidden, that template can continue to run as before. This means hiding a model does not automatically stop every existing use of that model.
-
+#### TEMPLATE REVIEW
+When a model should no longer be used, admins should identify prompt templates that reference the model, change their LLM configuration to an approved model, test the output, and activate the updated template version. 
+#### BEST PRACTICE
+Model visibility should be used to prevent future selection. It is also necessary to review active templates and dependent agents or automations to ensure no important business process continues using the hidden model.
 
 ## Model Provider Access
 
@@ -686,11 +689,11 @@ If a prompt template already uses a model that becomes hidden, that template can
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMTU3Nzk0MSwxODI0ODUwNDEwLC0xMz
-g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
-ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
-Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
-MjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMj
-Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
-Njg5XX0=
+eyJoaXN0b3J5IjpbLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMT
+M4Njc1Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5
+LDg2OTI3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzOD
+M2OTExLDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2
+LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0Mz
+I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
+ODY4OV19
 -->
