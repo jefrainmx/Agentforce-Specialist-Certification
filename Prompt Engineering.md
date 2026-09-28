@@ -519,17 +519,25 @@ Instructions in a prompt template should be surrounded with triple quotes (""").
 
 
 # Identify the security and privacy features of the Trust Layer.
+## Introduction
+The Trust Layer provides security, privacy, and safety controls for Salesforce generative AI. It helps protect data as prompts are grounded, sent to large language models, and returned as generated responses. Key features include secure data retrieval, dynamic grounding, data masking, prompt defense, zero data retention, toxicity detection, audit trail, and feedback. These controls reduce the risk of exposing sensitive customer or company data, improve response relevance, and create accountability across the prompt-to-response journey. Because Trust Layer capabilities can vary by Salesforce generative AI feature, Agentforce Specialists must understand which protections apply to prompt templates, embedded AI features, and agents. 
+
+## Trust Layer
+
+
+
+## References:
 
 
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3ND
-YxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4
-MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC
-0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC02MjMzMjIwNDQsMjA2
-MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIxMDc3Mz
-EsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMzAsMTA0
-NzQ0Mzg5Nl19
+eyJoaXN0b3J5IjpbLTg0MzgzNjkxMSwxNTkzMDE0MzEsMTY5OT
+U5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1
+MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLT
+IxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYy
+MzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3Nz
+gsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgw
+NTI1MDMzMF19
 -->
