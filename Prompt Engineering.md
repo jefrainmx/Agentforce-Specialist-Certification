@@ -708,15 +708,24 @@ Prompt templates can reference specific LLM configurations, so model restriction
 Prompt templates can be configured to use a selected LLM configuration. If a model should no longer be used, the prompt template should be updated to use an approved model configuration and then tested. 
 ### HIDDEN MODEL BEHAVIOR
 A prompt template using a hidden model can continue to run, so hiding a model alone is not enough when the goal is to remove that model from existing production use.
+### RECOMMENDED REVIEW STEPS
+Prompt templates should be reviewed by identifying the templates using restricted or hidden models, changing the LLM configuration, testing the generated output, activating the new version, and monitoring the results. 
+### EXISTING DEPENDENCIES
+Models can be referenced by prompt templates, agents, actions, flows, Apex, and other generative AI experiences. If a model or provider is restricted, dependent templates or agents should be reviewed before the change is applied.
+### CUSTOM LLM CONFIGURATION
+When deploying prompt templates that use custom LLM model configurations, the target org must have the matching model configuration available, or the deployment/installation can fail.
+### GOVERNANCE POINT
+Model access decisions should be coordinated with release management so template deployments, activation, and model availability are aligned across sandbox and production. 
+
 
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTA1MTM3MzgsLTE5MTQ3NDk3ODIsMT
-gwOTEzNjg3NSwtMTUxMDA0OTU2MywxODI0ODUwNDEwLC0xMzg2
-NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTksOD
-Y5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4MzY5
-MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYsMj
-IyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0
-Njk4XX0=
+eyJoaXN0b3J5IjpbODA0NTc2NDg1LC0xOTE0NzQ5NzgyLDE4MD
+kxMzY4NzUsLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMTM4Njc1
+Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OT
+I3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTEx
+LDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMj
+UwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5
+OF19
 -->
