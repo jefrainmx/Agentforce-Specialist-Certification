@@ -660,11 +660,11 @@ The Data Cloud Architect permission set provides admin-level access to all AI Mo
 
 ### Model Visibility
 Specific model configurations can be hidden in AI Models.
-1
+![Model Visibility](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20182851.png)
 
 ### Model Provider Access
 A model provider can be turned off to block access to its models in the org.
-2
+![Model Provider Access](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20183020.png)
 
 ## Hiding Specific Models
 ### Hiding LLM Configurations
@@ -684,7 +684,7 @@ Model visibility should be used to prevent future selection. It is also necessar
 
 ### Hidden Model
 A hidden model is not available for selection in Prompt Builder.
-3
+![Hidden Model](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20183044.png)
 
 ## Model Provider Access
 ### Managing Model Provider Access
@@ -740,11 +740,11 @@ Before hiding a model or turning off a provider, teams should test dependent tem
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEzNzAyNDk4LC0xOTE0NzQ5NzgyLDE4MD
-kxMzY4NzUsLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMTM4Njc1
-Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OT
-I3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTEx
-LDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMj
-UwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5
-OF19
+eyJoaXN0b3J5IjpbLTIzNjIxNTMyMiw5MTM3MDI0OTgsLTE5MT
+Q3NDk3ODIsMTgwOTEzNjg3NSwtMTUxMDA0OTU2MywxODI0ODUw
+NDEwLC0xMzg2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMT
+QwMDI3MTksODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3
+LC04NDM4MzY5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3ND
+YxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4
+MDc1XX0=
 -->
