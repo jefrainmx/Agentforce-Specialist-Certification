@@ -553,6 +553,12 @@ Data flows through the Trust Layer in the form of a prompt from a Salesforce app
 The Large Language Model (LLM) generates a response using the prompt from Salesforce. This process is called response generation.
 ### RESPONSE JOURNEY
 The generated response flows back through the Trust Layer from the Large Language Model (LLM) to the Salesforce app. This data flow is called the response journey. 
+### PROMPT
+A prompt can come from any Salesforce app. Prompts can be created in Prompt Builder and invoked by Flow, Apex, APIs, or agent actions, depending on the use case. Once invoked, it goes through various steps during the prompt journey in the Trust Layer.
+### RESPONSE
+When a generated response is returned by the Large Language Model (LLM), the Trust Layer applies certain policies and processes to ensure that it is safe and useful. 
+
+
 
 ## References:
 
@@ -561,11 +567,11 @@ The generated response flows back through the Trust Layer from the Large Languag
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQ4MzEzMTAsLTI4OTI3MDYyOSw2OT
-k3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2
-OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLT
-E0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5
-NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMj
-A0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5
-MjEwNzczMV19
+eyJoaXN0b3J5IjpbMTA3MTc3MTEyOCwtMjg5MjcwNjI5LDY5OT
+c5NTQzNywtODQzODM2OTExLDE1OTMwMTQzMSwxNjk5NTk4NTY4
+LC0xNzQ2MTA3MTQ2LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwtMT
+QxODExODA3NSw0MzI0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3
+NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OSwtNjIzMzIyMD
+Q0LDIwNjMyMTQwMDMsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODky
+MTA3NzMxXX0=
 -->
