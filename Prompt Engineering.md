@@ -375,6 +375,9 @@ A flow can be created to perform a REST API callout and capture the response. Th
 
 # Explain the process for creating, activating, and executing prompt templates.
 
+## Creating Prompt Templates
+
+
 # Explain how to implement best practices for writing effective prompts.
 
 # Identify the security and privacy features of the Trust Layer.
@@ -382,11 +385,11 @@ A flow can be created to perform a REST API callout and capture the response. Th
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Nzk0Njg1MSwtMTEwMDQxODY4OSwtMT
-EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
-NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLT
-E1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAy
-NTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3LD
-ExNjA3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMjk4
-Mjc1MzNdfQ==
+eyJoaXN0b3J5IjpbNDY3MjgxNTM5LC0xMTAwNDE4Njg5LC0xMT
+AwNDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1
+NDIsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMT
+UzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1
+MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMjcwOTI0MzcsMT
+E2MDcxOTIyMywtMTEwNzgyNjc0Niw4OTg4MDg1NzIsMjEyOTgy
+NzUzM119
 -->
