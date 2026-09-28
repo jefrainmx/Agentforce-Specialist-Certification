@@ -577,6 +577,9 @@ Prompt Defense refers to the use of system policies to decrease the likelihood o
 Instructions can be defined for the LLM for how to behave in a certain manner to build trust with users. For example, the LLM can be instructed to not address contentor generate answers that it doesn’t have information about. 
 
 During the prompt journey in the Trust Layer, a prompt goes through secure data retrieval based on dynamic grounding, data masking, and prompt defense.
+1
+2
+
 
 
 
@@ -588,7 +591,7 @@ During the prompt journey in the Trust Layer, a prompt goes through secure data 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NTU3MjE4Niw4NjkyNzIwNzksLTI4OT
+eyJoaXN0b3J5IjpbMTA0MTY2MzM2Nyw4NjkyNzIwNzksLTI4OT
 I3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEs
 MTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMT
 I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
