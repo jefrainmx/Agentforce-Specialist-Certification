@@ -512,7 +512,7 @@ When writing an effective prompt that follows best practices, instructions can b
 
 ### Prompt Template Instructions
 Instructions in a prompt template should be surrounded with triple quotes (""").
-
+![Prompt Template Instructions](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20151409.png)
 
 
 # Identify the security and privacy features of the Trust Layer.
@@ -520,11 +520,11 @@ Instructions in a prompt template should be surrounded with triple quotes (""").
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA4Mzc5NTIsMTY5OTU5ODU2OCwtMTc0Nj
-EwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgw
-NzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLT
-ExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYz
-MjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMS
-wtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3
-NDQzODk2XX0=
+eyJoaXN0b3J5IjpbLTE2MzI1MjMwNjAsMTY5OTU5ODU2OCwtMT
+c0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgx
+MTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OT
+IsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwy
+MDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNz
+czMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwx
+MDQ3NDQzODk2XX0=
 -->
