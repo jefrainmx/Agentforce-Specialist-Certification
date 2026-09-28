@@ -578,12 +578,12 @@ Prompt Defense refers to the use of system policies to decrease the likelihood o
 Instructions can be defined for the LLM for how to behave in a certain manner to build trust with users. For example, the LLM can be instructed to not address contentor generate answers that it doesn’t have information about. 
 
 During the prompt journey in the Trust Layer, a prompt goes through secure data retrieval based on dynamic grounding, data masking, and prompt defense.
-1
-2
+![Prompt Jouney 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20155603.png)
+![Prompt Journey 2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20155623.png)
 
 ### Trust Layer: Data Masking
 Sensitive data is masked before being sent to the LLM. However, data masking and demasking are disabled for Agentforce Agents.
-3
+![Data Mask](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20155822.png)
 
 ### Trust Layer: Response Generation
 After a prompt has been fully hydrated and secured in the Trust Layer, it is sent through the LLM gateway to generate a response using a model.
@@ -630,11 +630,11 @@ Generated responses should be reviewed for accuracy, safety, tone, and alignment
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDI3MTksODY5MjcyMDc5LC0yODkyNz
-A2MjksNjk5Nzk1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMxLDE2
-OTk1OTg1NjgsLTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNT
-M2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5
-LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC
-02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4
-Nzc4XX0=
+eyJoaXN0b3J5IjpbODY2NTE0MzY4LDE0MDAyNzE5LDg2OTI3Mj
+A3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTExLDE1
+OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMjUwNT
+EyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwt
+MTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMT
+EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
+NTQyXX0=
 -->
