@@ -624,17 +624,20 @@ Generated responses should be reviewed for accuracy, safety, tone, and alignment
 
 
 ## References:
+[Trust Layer](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)
+[The Agentforce Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)
+[Large Language Model Data Masking in the Agentforce Trust Layer](https://trailhead.salesforce.com/content/learn/modules/llm-data-masking-in-the-einstein-trust-layer)
 
 
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY2NTE0MzY4LDE0MDAyNzE5LDg2OTI3Mj
-A3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTExLDE1
-OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMjUwNT
-EyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwt
-MTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMT
-EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
-NTQyXX0=
+eyJoaXN0b3J5IjpbMjk4Mjc2OTk3LDg2NjUxNDM2OCwxNDAwMj
+cxOSw4NjkyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0
+MzgzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNz
+E0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUs
+NDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMD
+A0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0
+MDAzXX0=
 -->
