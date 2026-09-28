@@ -437,6 +437,15 @@ The generated response should be reviewed for accuracy, relevance, tone, safety,
 #### ITERATIVE REVISION
 Builders should regenerate responses, compare outputs, revise the prompt, and repeat testing until the template produces reliable results. 
 
+### Prompt Template Activation
+A prompt template must be activated before it becomes available for execution. 
+#### ACTIVATION
+Activating a prompt template makes one specific version available to users, agents, apps, or automations. 
+#### MODEL CONFIGURATION
+The selected model configuration should be tested before activation because model choice and settings can affect response quality.
+
+
+
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -446,11 +455,11 @@ Builders should regenerate responses, compare outputs, revise the prompt, and re
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNzI5MDUwLC0xNDE4MTE4MDc1LDQzMj
-Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
-Njg5LC0xMTAwNDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMy
-wzMTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4
-NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5Ni
-wxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLTYzMjkyNTc2MywtMjcw
-OTI0MzddfQ==
+eyJoaXN0b3J5IjpbMTMwNTg3NSwtMTQxODExODA3NSw0MzI0ND
+Y5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4
+OSwtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMz
+EzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQy
+NDksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMT
+I5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDky
+NDM3XX0=
 -->
