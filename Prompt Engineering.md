@@ -580,7 +580,16 @@ During the prompt journey in the Trust Layer, a prompt goes through secure data 
 1
 2
 
+### Trust Layer: Data Masking
+Sensitive data is masked before being sent to the LLM. However, data masking and demasking are disabled for Agentforce Agents.
+3
 
+### Trust Layer: Response Generation
+After a prompt has been fully hydrated and secured in the Trust Layer, it is sent through the LLM gateway to generate a response using a model.
+#### LLM GATEWAY
+Once a prompt is fully hydrated and secured, it is sent through the LLM gateway, which governs interactions with different model providers and represents a unified and secure way to communicate with multiple LLMs. The gateway provides a controlled path between Salesforce and supported models. 
+#### MODELS
+Models that are built or fine-tuned by Salesforce are hosted in the Salesforce trust boundary. External models, built and maintained by third-party providers, such as OpenAI and Azure OpenAI, are in the shared trust boundary. Bring Your Own Models (BYOMs) are hosted on the company’s infrastructure.
 
 
 
@@ -591,11 +600,11 @@ During the prompt journey in the Trust Layer, a prompt goes through secure data 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MTY2MzM2Nyw4NjkyNzIwNzksLTI4OT
-I3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEs
-MTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMT
-I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
-NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2OD
-ksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2
-NTg3NzhdfQ==
+eyJoaXN0b3J5IjpbLTE0MjU0MzQ0MDEsODY5MjcyMDc5LC0yOD
+kyNzA2MjksNjk5Nzk1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMx
+LDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMD
+EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
+ODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Nj
+g5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0
+NjU4Nzc4XX0=
 -->
