@@ -454,7 +454,20 @@ A prompt template can be modified by copying it with the Save as a New Template 
 ### Executing Sales Email Templates
 Sales Email prompt templates are executed from the email drafting experience in Lightning Experience. 
 #### DRAFT WITH EINSTEIN
-A Sales Email prompt template can be executed from the email composer by selecting Draft with Einstein. ❖DRAFT REVISION A generated email draft can be revised with predefined options such as making it shorter, longer, more formal, or less formal. 
+A Sales Email prompt template can be executed from the email composer by selecting Draft with Einstein. 
+#### DRAFT REVISION
+A generated email draft can be revised with predefined options such as making it shorter, longer, more formal, or less formal. 
+
+### Executing Field Generation and Flex Templates
+Execution options depend on the prompt template type and where the generated output is needed. 
+#### FIELD GENERATION
+A Field Generation prompt template can be executed from a generative AI-enabled field icon on a Lightning record page.
+#### FLEX TEMPLATES
+A Flex prompt template can be executed from Flow, an invocable action, Connect REST API, Connect in Apex, or a custom experience.
+
+
+
+
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -464,11 +477,11 @@ A Sales Email prompt template can be executed from the email composer by selecti
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzODYwNjg1NSwtMTQxODExODA3NSw0Mz
-I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
-ODY4OSwtMTEwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMD
-MsMzEzMDk4NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5
-ODQyNDksLTE1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OT
-YsMTI5NDAyNTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3
-MDkyNDM3XX0=
+eyJoaXN0b3J5IjpbLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsND
+MyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0
+MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MD
+AzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4
+OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzOD
+k2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0y
+NzA5MjQzN119
 -->
