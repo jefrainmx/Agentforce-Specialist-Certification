@@ -404,6 +404,13 @@ The workspace is used to write the prompt, insert resources, configure settings,
 #### PREVIEW
 The preview area shows how the prompt resolves with selected test data and how the LLM responds.
 
+### Preview and Resolution
+Previewing helps builders validate the final prompt text and generated response before activation. 
+#### GENERATED RESPONSE
+The generated response shows the LLM output for the selected test inputs or records. 
+#### RESOLVE PROMPT
+The resolved prompt shows the final prompt after merge fields and resources are replaced with selected Salesforce data. 
+
 
 
 
@@ -415,11 +422,11 @@ The preview area shows how the prompt resolves with selected test data and how t
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMDIwNzU0MSwtMTMzMzc4Mzg0OSwtMj
-ExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OSwtNjIz
-MzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4NTQyLDQwNDY1ODc3OC
-wxODkyMTA3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMDIsODA1
-MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0NzAzMT
-Y4LC02MzI5MjU3NjMsLTI3MDkyNDM3LDExNjA3MTkyMjMsLTEx
-MDc4MjY3NDZdfQ==
+eyJoaXN0b3J5IjpbLTEzNDQzOTk5MDUsLTEzMzM3ODM4NDksLT
+IxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYy
+MzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3Nz
+gsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgw
+NTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMz
+E2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0x
+MTA3ODI2NzQ2XX0=
 -->
