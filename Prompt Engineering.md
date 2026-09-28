@@ -350,16 +350,22 @@ A Template-Triggered Prompt Flow can be created to pull data from unified Data C
 ### Scenario 2
 An AI specialist at Cosmic Fitness is required to create a custom prompt template that generates personalized sales emails. The email must include data from opportunity products and upcoming events near the customer and adhere to specific tone and voice guidelines. 
 ### Solution 2
-
+A sales email prompt template can be created to allow users to generate personalized sales emails using generative AI. The template should call a Template-Triggered Prompt Flow to fetch and ground the required data using a flow merge field. The flow can dynamically retrieve opportunity products, upcoming events near the customer, and specific tone and voice guidelines, ensuring the email content is accurate, relevant, and properly grounded based on real-time data.
 
 ### Scenario 3
+Cosmic Solutions has implemented Einstein Sales Emails to help its sales team send personalized follow-up emails to leads based on their interactions and data within Salesforce. The sales team wants these emails to be generated using the most accurate and up-to-date lead information in the system. The company's AI specialist must use an appropriate grounding technique to ensure the generated content is precise.
 ### Solution 3
+The prompt templates should utilize grounding with record merge fieldsto ensure that the generated emails pull information directly from the latest recipient data stored in lead records, enhancing personalization and relevance.
 
 ### Scenario 4
+An AI specialist at Cosmic Financial needs to create a prompt template to populate a custom field called ‘Latest Deals Summary’ on the Account object. This field should display information from the three most recently opened opportunities associated with the account. The specialist must determine the best method for gathering this data to ensure the prompt template pulls the correct information.
 ### Solution 4
+A flow can be created to retrieve the three most recently opened opportunities associated with the account. A corresponding flow merge field should be added to the prompt template to populate the ‘Latest Deals Summary’ field with the opportunity information.
 
 ### Scenario 5
+Cosmic Furniture wants to enhance a prompt template by including data from an external REST API service. An AI specialist needs to integrate the response data from the API callout into the template so that it can be used to enhance the generated content dynamically. 
 ### Solution 5
+A flow can be created to perform a REST API callout and capture the response. The Add Prompt Instructions flow element can be used to pass the retrieved data into the prompt template. A corresponding flow merge field should be added to the prompt template to ground it with the external service data.It is important to note that while an Apex merge field could also meet the given requirement, it is more suitable for advanced use cases, such as programmatic filtering, JSON formatting, or complex SOQL queries. 
 
 # Explain the process for creating, activating, and executing prompt templates.
 
@@ -370,7 +376,7 @@ An AI specialist at Cosmic Fitness is required to create a custom prompt templat
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNzU2NTA1OSwtMTEwMDQxODY4OSwtMT
+eyJoaXN0b3J5IjpbMTMzNDQxNDgwOSwtMTEwMDQxODY4OSwtMT
 EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
 NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLT
 E1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAy
