@@ -682,6 +682,9 @@ When a model should no longer be used, admins should identify prompt templates t
 #### BEST PRACTICE
 Model visibility should be used to prevent future selection. It is also necessary to review active templates and dependent agents or automations to ensure no important business process continues using the hidden model.
 
+### Hidden Model
+A hiddenmodel is not available for selection in Prompt Builder.
+
 ## Model Provider Access
 
 ## Prompt Template Considerations
@@ -689,11 +692,11 @@ Model visibility should be used to prevent future selection. It is also necessar
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMT
-M4Njc1Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5
-LDg2OTI3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzOD
-M2OTExLDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2
-LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0Mz
-I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
-ODY4OV19
+eyJoaXN0b3J5IjpbLTMwMTQ1NjIyOCwtMTUxMDA0OTU2MywxOD
+I0ODUwNDEwLC0xMzg2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQz
+NjgsMTQwMDI3MTksODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nz
+k1NDM3LC04NDM4MzY5MTEsMTU5MzAxNDMxLDE2OTk1OTg1Njgs
+LTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xND
+E4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2
+NTkyXX0=
 -->
