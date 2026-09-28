@@ -633,14 +633,24 @@ Generated responses should be reviewed for accuracy, safety, tone, and alignment
 
 # Explain how to manage and prevent specific models from being accessed.
 ## Introduction
+Salesforce provides controls for managing which large language models (LLMs) can be selected and used by generative AI features. Administrators can manage model visibility in AI Models, so specific LLM configurations are hidden from selection in Prompt Builder. They can also manage provider-level access, which blocks access to all models from a selected model provider. These controls help organizations align model usage with security, compliance, cost, and business requirements. However, hiding a model is notthe same as disabling every existing use of that model. Existing prompt templates that already use a hidden model can continue to run, so admins must review active templates and update their model configurations when a model should no longer be used. 
+
 ## Model Access
 
+## Hiding Specific Models
+
+## Model Provider Access
+
+## Prompt Template Considerations
+
+## Governance & Review
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODkyODcwNSw0ODEzMTcyODIsODY2NT
-E0MzY4LDE0MDAyNzE5LDg2OTI3MjA3OSwtMjg5MjcwNjI5LDY5
-OTc5NTQzNywtODQzODM2OTExLDE1OTMwMTQzMSwxNjk5NTk4NT
-Y4LC0xNzQ2MTA3MTQ2LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwt
-MTQxODExODA3NSw0MzI0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNj
-k3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OSwtNjIzMzIy
-MDQ0XX0=
+eyJoaXN0b3J5IjpbLTEzODY3NTM3NDQsNDgxMzE3MjgyLDg2Nj
+UxNDM2OCwxNDAwMjcxOSw4NjkyNzIwNzksLTI4OTI3MDYyOSw2
+OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEsMTY5OTU5OD
+U2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQs
+LTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMT
+Y5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMy
+MjA0NF19
 -->
