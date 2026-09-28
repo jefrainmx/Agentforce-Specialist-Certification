@@ -342,7 +342,24 @@ A Template-Triggered Prompt Flow can be used to bring data from unified Data Clo
 ![Template-Triggered Prompt Flow](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164743.png)
 
 ## Scenarios & Solutions
+### Scenario 1
+Cosmic Electronics wants to use Flow Builder to bring data from unified Data Cloud objects into a prompt template and generate context-rich responses based on the most updated data stored within Data Cloud.
+### Solution 1
+A Template-Triggered Prompt Flow can be created to pull data from unified Data Cloud objects. The Add Prompt Instructions flow element can be used to insert the retrieved data via merge fields. A corresponding flow merge field should be added to the prompt template to ensure the flow is triggered when the template is executed.
 
+### Scenario 2
+An AI specialist at Cosmic Fitness is required to create a custom prompt template that generates personalized sales emails. The email must include data from opportunity products and upcoming events near the customer and adhere to specific tone and voice guidelines. 
+### Solution 2
+
+
+### Scenario 3
+### Solution 3
+
+### Scenario 4
+### Solution 4
+
+### Scenario 5
+### Solution 5
 
 # Explain the process for creating, activating, and executing prompt templates.
 
@@ -353,11 +370,11 @@ A Template-Triggered Prompt Flow can be used to bring data from unified Data Clo
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDA0MTg2ODksLTExMDA0MTg2ODksLT
-YyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3
-NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLD
-gwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcw
-MzE2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC
-0xMTA3ODI2NzQ2LDg5ODgwODU3MiwyMTI5ODI3NTMzLC0yMDI3
-NzY2NzQwXX0=
+eyJoaXN0b3J5IjpbLTMwNzU2NTA1OSwtMTEwMDQxODY4OSwtMT
+EwMDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4
+NTQyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLT
+E1MzkwMzIyMDIsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAy
+NTA1LC0xNDA0NzAzMTY4LC02MzI5MjU3NjMsLTI3MDkyNDM3LD
+ExNjA3MTkyMjMsLTExMDc4MjY3NDYsODk4ODA4NTcyLDIxMjk4
+Mjc1MzNdfQ==
 -->
