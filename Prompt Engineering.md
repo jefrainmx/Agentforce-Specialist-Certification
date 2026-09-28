@@ -505,7 +505,10 @@ Contextual information can be provided to the LLM by asking it to role play as a
 The same goal can be achieved using different prompt templates to see how the parts impact the model’s response. Iterative feedback should be obtained from end users to see how well a prompt template generates the desired  response.
 ### INSTRUCTIONS
 An instructions section should be created to help the LLM differentiate between context and instructions. ‘Instructions:’ should be entered on a separate line, and then the instructions should be surrounded with triple quotes (""").
-###
+### DIRECT INSTRUCTIONS
+Direct instructions should be included for the LLM to generate only the expected content, which prevents generating a response about the process of creating content.
+### PROMPT SECTIONS
+When writing an effective prompt that follows best practices, instructions can be provided in specific sections like Role, Task, Context, and Constraints.
 
 
 # Identify the security and privacy features of the Trust Layer.
@@ -513,11 +516,11 @@ An instructions section should be created to help the LLM differentiate between 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTIxNzkzOTcsLTE3NDYxMDcxNDYsMj
-IyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0
-Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Nj
-g5LC0xMTAwNDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywz
-MTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4ND
-I0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5Niwx
-Mjk0MDI1MDVdfQ==
+eyJoaXN0b3J5IjpbMTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMj
+I1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2
+OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2OD
+ksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMx
+MzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0Mj
+Q5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEy
+OTQwMjUwNV19
 -->
