@@ -653,7 +653,12 @@ Model visibility controls individual model availability, while provider access c
 Model visibility controls whether a specific LLM configuration is shown or hidden as an available option in Prompt Builder. This is useful when an organization wants to prevent builders from selecting a specific model for new or edited prompt templates. 
 #### MODEL PROVIDER ACCESS
 Model provider access controls whether an entire provider’s models can be accessed in the org. Turning off a provider blocks access to that provider’s models and can affect agents, prompt templates, and other generative AI features that depend on them.
-MODEL MANAGEMENT PERMISSIONThe ability to manage models in AI Models is controlled through the Allow users to manage modelsin AI Models user permission, which should be granted only to users responsible for model governanceand administration. ❖MODEL MANAGEMENT PERMISSION SETThe Data Cloud Architect permission set provides admin-level access to all AI Models features. The Data Cloud User permission set provides restricted access to use a model.
+#### MODEL MANAGEMENT PERMISSION
+The ability to manage models in AI Models is controlled through the Allow users to manage models in AI Models user permission, which should be granted only to users responsible for model governance and administration. 
+#### MODEL MANAGEMENT PERMISSION SET
+The Data Cloud Architect permission set provides admin-level access to all AI Models features. The Data Cloud User permission set provides restricted access to use a model.
+
+
 
 ## Hiding Specific Models
 
@@ -664,7 +669,7 @@ MODEL MANAGEMENT PERMISSIONThe ability to manage models in AI Models is controll
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NDk5MjM3MCwxODI0ODUwNDEwLC0xMz
+eyJoaXN0b3J5IjpbLTQzMzQwNTU1MCwxODI0ODUwNDEwLC0xMz
 g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
 ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
 Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
