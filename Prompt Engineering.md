@@ -666,10 +666,9 @@ Specific model configurations can be hidden in AI Models.
 A model provider can be turned off to block access to its models in the org.
 2
 
-
-
-
 ## Hiding Specific Models
+### Hiding LLM Configurations
+Hidden models are removed from the selectable model list, but existing templates that already use the model require separate review.❖WHEN TO HIDEA model configuration can be hidden when it should no longer be available for selection in Prompt Builder. For example, an organization might hide a model that is experimental, not approvedfor a business unit, too costly, deprecated, or not aligned with internal compliance rules. ❖HOW IT WORKSIn AI Models / Model Library, the Model Visibility column shows whether an LLM configuration is shown or hidden. Hiding the model removes it from selection in Prompt Builder so prompt template creators cannot select it for new or edited templates.
 
 ## Model Provider Access
 
@@ -678,7 +677,7 @@ A model provider can be turned off to block access to its models in the org.
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5MjQ3Mjk2OCwxODI0ODUwNDEwLC0xMz
+eyJoaXN0b3J5IjpbMTc0MjYzMDM4NSwxODI0ODUwNDEwLC0xMz
 g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
 ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
 Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
