@@ -647,6 +647,8 @@ Prompt templates that already use a hidden model can continue to run, so their L
 Model configurations are managed in AI Models and can be shown or hidden from selection in Prompt Builder.
 
 ## Model Access
+### Model Access Control Layers
+Model visibilitycontrols individual model availability, while provider access controls access to all models from a selected provider.❖MODEL VISIBILITYModel visibility controls whether a specific LLM configuration is shown or hidden as an available option in Prompt Builder. This is useful when an organization wants to prevent builders from selecting a specific model for new or edited prompt templates. ❖MODEL PROVIDER ACCESSModel provider access controls whether an entire provider’s models can be accessed in the org. Turning off a provider blocks access to that provider’s models and can affect agents, prompt templates, and other generative AI features that depend on them.
 
 ## Hiding Specific Models
 
@@ -657,11 +659,11 @@ Model configurations are managed in AI Models and can be shown or hidden from se
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNDg1MDQxMCwtMTM4Njc1Mzc0NCw0OD
-EzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OTI3MjA3OSwt
-Mjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTExLDE1OTMwMT
-QzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMjUwNTEyMywt
-MjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwtMTMzMz
-c4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQx
+eyJoaXN0b3J5IjpbLTEwODAzNDAxMTAsMTgyNDg1MDQxMCwtMT
+M4Njc1Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5
+LDg2OTI3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzOD
+M2OTExLDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2
+LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0Mz
+I0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQx
 ODY4OV19
 -->
