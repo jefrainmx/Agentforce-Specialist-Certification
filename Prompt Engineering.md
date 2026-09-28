@@ -421,6 +421,15 @@ A prompt template can use a standard or custom model configuration, but model se
 ### Creating a Prompt Template
 When creating a prompt template, the builder selects the prompt template type and enters the prompt template name and description. Additional required fields depend on the selected type.
 
+### Prompt Template Workspace
+The workspace is used to write prompt instructions, insert grounding resources, configure settings, select a model configuration, preview the resolved prompt, and review the generated response. 
+
+### Preview Button
+Preview requires selecting test records, related records, or input values in the Preview Settings.
+
+
+
+
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -430,11 +439,11 @@ When creating a prompt template, the builder selects the prompt template type an
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTM0MjM0ODksLTEzMzM3ODM4NDksLT
-IxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYy
-MzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3Nz
-gsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgw
-NTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMz
-E2OCwtNjMyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0x
-MTA3ODI2NzQ2XX0=
+eyJoaXN0b3J5IjpbNDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMT
+Y5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMy
+MjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMT
+g5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1
+MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OC
+wtNjMyOTI1NzYzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3
+ODI2NzQ2XX0=
 -->
