@@ -529,7 +529,14 @@ A user can accept, modify, or reject the generated response. Explicit feedback a
 Before a generated response is presented to the user, the sensitive data in the response is de-masked using the stored relationships.
 #### Toxicity Detection
 The Trust Layer scans the response for toxicity. The toxicity confidence score determines the probability of the response including harmful or inappropriate content.
-#### Zero Data RetentionData sent to an external partner model provider is not retained and is deleted after a response is sent back.Prompt DefenseSystem policies are used to decrease the likelihood of unintended or harmful responses and defend against jailbreaking and prompt injection attacks.Data MaskingThe Trust Layer identifies and masks sensitive data in a prompt using placeholder text. Data masking and demasking are currently disabled for agents. Secure Data Retrieval & GroundingSecure data retrieval based on dynamic grounding is the first step in the Trust Layer. Merge fields can be used in a prompt for data grounding.
+#### Zero Data Retention
+Data sent to an external partner model provider is not retained and is deleted after a response is sent back.
+#### Prompt Defense
+System policies are used to decrease the likelihood of unintended or harmful responses and defend against jailbreaking and prompt injection attacks.
+#### Data Masking
+The Trust Layer identifies and masks sensitive data in a prompt using placeholder text. Data masking and demasking are currently disabled for agents. 
+#### Secure Data Retrieval & Grounding
+Secure data retrieval based on dynamic grounding is the first step in the Trust Layer. Merge fields can be used in a prompt for data grounding.
 
 
 ## Trust Layer
@@ -543,11 +550,11 @@ The Trust Layer scans the response for toxicity. The toxicity confidence score d
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMTcyMzQ1NSwtODQzODM2OTExLDE1OT
-MwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMjUwNTEy
-MywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwtMT
-MzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEw
-MDQxODY4OSwtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4NT
-QyLDQwNDY1ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLTE1
-MzkwMzIyMDJdfQ==
+eyJoaXN0b3J5IjpbNjk5Nzk1NDM3LC04NDM4MzY5MTEsMTU5Mz
+AxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYsMjIyNTA1MTIz
+LC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMz
+MzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAw
+NDE4Njg5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1ND
+IsNDA0NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUz
+OTAzMjIwMl19
 -->
