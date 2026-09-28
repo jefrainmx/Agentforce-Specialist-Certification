@@ -465,7 +465,8 @@ A Field Generation prompt template can be executed from a generative AI-enabled 
 #### FLEX TEMPLATES
 A Flex prompt template can be executed from Flow, an invocable action, Connect REST API, Connect in Apex, or a custom experience.
 
-
+### Saving a Standard Prompt Template
+A standard prompt template can be copied into a custom prompt template by using the Save as a New Template option. Some standard templates can also be overridden.
 
 
 
@@ -477,11 +478,11 @@ A Flex prompt template can be executed from Flow, an invocable action, Connect R
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsND
-MyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMDA0
-MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0MD
-AzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMSwtNzM4
-OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3NDQzOD
-k2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1NzYzLC0y
-NzA5MjQzN119
+eyJoaXN0b3J5IjpbMjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xND
+E4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2
+NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC02MjMzMjIwND
+QsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LDE4OTIx
+MDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUyNTAzMz
+AsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNjgsLTYz
+MjkyNTc2M119
 -->
