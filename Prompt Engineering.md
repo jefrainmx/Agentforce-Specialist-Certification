@@ -668,7 +668,11 @@ A model provider can be turned off to block access to its models in the org.
 
 ## Hiding Specific Models
 ### Hiding LLM Configurations
-Hidden models are removed from the selectable model list, but existing templates that already use the model require separate review.❖WHEN TO HIDEA model configuration can be hidden when it should no longer be available for selection in Prompt Builder. For example, an organization might hide a model that is experimental, not approvedfor a business unit, too costly, deprecated, or not aligned with internal compliance rules. ❖HOW IT WORKSIn AI Models / Model Library, the Model Visibility column shows whether an LLM configuration is shown or hidden. Hiding the model removes it from selection in Prompt Builder so prompt template creators cannot select it for new or edited templates.
+Hidden models are removed from the selectable model list, but existing templates that already use the model require separate review.
+#### WHEN TO HIDE
+A model configuration can be hidden when it should no longer be available for selection in Prompt Builder. For example, an organization might hide a model that is experimental, not approvedfor a business unit, too costly, deprecated, or not aligned with internal compliance rules. 
+#### HOW IT WORKS
+In AI Models / Model Library, the Model Visibility column shows whether an LLM configuration is shown or hidden. Hiding the model removes it from selection in Prompt Builder so prompt template creators cannot select it for new or edited templates.
 
 ## Model Provider Access
 
@@ -677,11 +681,11 @@ Hidden models are removed from the selectable model list, but existing templates
 ## Governance & Review
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MjYzMDM4NSwxODI0ODUwNDEwLC0xMz
-g2NzUzNzQ0LDQ4MTMxNzI4Miw4NjY1MTQzNjgsMTQwMDI3MTks
-ODY5MjcyMDc5LC0yODkyNzA2MjksNjk5Nzk1NDM3LC04NDM4Mz
-Y5MTEsMTU5MzAxNDMxLDE2OTk1OTg1NjgsLTE3NDYxMDcxNDYs
-MjIyNTA1MTIzLC0yMDEyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMj
-Q0Njk4LC0xMzMzNzgzODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4
-Njg5XX0=
+eyJoaXN0b3J5IjpbMTQ3MzczNzMsMTgyNDg1MDQxMCwtMTM4Nj
+c1Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2
+OTI3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OT
+ExLDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIy
+MjUwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0ND
+Y5OCwtMTMzMzc4Mzg0OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4
+OV19
 -->
