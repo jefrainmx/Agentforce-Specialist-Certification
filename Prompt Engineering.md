@@ -390,7 +390,12 @@ Activated prompt templates can be executed through supported user experiences, F
 The workspace is used to write instructions, insert resources, configure model settings, preview the resolved prompt, and review generated responses.
 
 ## Creating Prompt Templates
-
+### Creating a New Prompt Template
+Prompt Builder can be used to create, test, and activate different types of prompt templates.
+#### NEW PROMPT TEMPLATE
+A new prompt template can be created by navigating to Prompt Builderin Setup and clicking the New Prompt Template button.
+#### TEMPLATE DETAILS
+The prompt template type, name, description, and any type-specific fields define how the template will be used.
 
 
 # Explain how to implement best practices for writing effective prompts.
@@ -400,11 +405,11 @@ The workspace is used to write instructions, insert resources, configure model s
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLT
-ExMDA0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYz
-MjE0MDAzLDMxMzA5ODU0Miw0MDQ2NTg3NzgsMTg5MjEwNzczMS
-wtNzM4OTg0MjQ5LC0xNTM5MDMyMjAyLDgwNTI1MDMzMCwxMDQ3
-NDQzODk2LDEyOTQwMjUwNSwtMTQwNDcwMzE2OCwtNjMyOTI1Nz
-YzLC0yNzA5MjQzNywxMTYwNzE5MjIzLC0xMTA3ODI2NzQ2LDg5
-ODgwODU3Ml19
+eyJoaXN0b3J5IjpbMjYxNjkzMjg0LC0xMzMzNzgzODQ5LC0yMT
+E2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Njg5LC02MjMz
+MjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0NjU4Nzc4LD
+E4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMjIwMiw4MDUy
+NTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0MDQ3MDMxNj
+gsLTYzMjkyNTc2MywtMjcwOTI0MzcsMTE2MDcxOTIyMywtMTEw
+NzgyNjc0Nl19
 -->
