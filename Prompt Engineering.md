@@ -486,14 +486,21 @@ A model configuration defines the model and settings used by the prompt template
 Writing effective prompts is essential to guiding the large language model (LLM) toward producing accurate, relevant, and consistent responses. Effective prompts are clear and concise, using plain natural language that avoids unnecessary jargon. Maintaining style and consistency ensures predictable outputs, while adding context helps the model understand the user’s intent, often through role-based instructions that define a character and goal. Iterative testing and feedback help refine prompts for improved results. To strengthen clarity, prompts should include direct instructions separated from context using triple quotes (“””). Structuring prompts into sections such as Role, Task, Context, and Constraints provides a framework for consistent and goal-oriented responses. Applying these best practices helps reduce hallucinations, ensures precision, and creates more reliable, business-ready prompt templates in Agentforce.
 
 ### Best Practices for Writing Effective Prompts
-#### 
+#### Instructions
+Instructions should be direct and surrounded with triple quotes(""") in a separate section. Specific instructions can be provided in sections like Role, Task, Context, and Constraints.
+#### Additional Considerations
+Iterative feedback should be obtained from end users to see how well a prompt template generates the desired  response.
+#### Language, Style & Context
+A prompt template should be clear, concise, consistent, and include roleplay as a character to provide contextual information. 
+
+
 
 # Identify the security and privacy features of the Trust Layer.
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjk5ODE4MjEsMjIyNTA1MTIzLC0yMD
+eyJoaXN0b3J5IjpbLTE3NDYxMDcxNDYsMjIyNTA1MTIzLC0yMD
 EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
 ODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Nj
 g5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0
