@@ -719,13 +719,23 @@ Model access decisions should be coordinated with release management so template
 
 
 ## Governance & Review
+### Model Access Governance
+Model access governance ensures that only approved models are available for the right users, use cases, and environments.
+#### LIMITING MODEL ADMINISTRATION
+Only users responsible for model governance should receive permissions to manage models in AI Models. Salesforce provides a permission for managing models in AI Models that can be assigned through permission sets.
+#### APPROVED MODEL LIST
+Organizations should define which models are approved for specific use cases, business units, data sensitivity levels, and regions. 
+#### HIDDEN & ACTIVE MODELS
+Regular reviews help ensure that hidden models are not still being used by existing prompt templates and that active templates use approved model configurations.
+#### TESTING
+Before hiding a model or turning off a provider, teams should test dependent templates, agents, and automation to avoid disrupting production experiences. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0NTc2NDg1LC0xOTE0NzQ5NzgyLDE4MD
-kxMzY4NzUsLTE1MTAwNDk1NjMsMTgyNDg1MDQxMCwtMTM4Njc1
-Mzc0NCw0ODEzMTcyODIsODY2NTE0MzY4LDE0MDAyNzE5LDg2OT
-I3MjA3OSwtMjg5MjcwNjI5LDY5OTc5NTQzNywtODQzODM2OTEx
-LDE1OTMwMTQzMSwxNjk5NTk4NTY4LC0xNzQ2MTA3MTQ2LDIyMj
-UwNTEyMywtMjAxMjUzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5
-OF19
+eyJoaXN0b3J5IjpbLTMwMjY3NjgyNywtMTkxNDc0OTc4MiwxOD
+A5MTM2ODc1LC0xNTEwMDQ5NTYzLDE4MjQ4NTA0MTAsLTEzODY3
+NTM3NDQsNDgxMzE3MjgyLDg2NjUxNDM2OCwxNDAwMjcxOSw4Nj
+kyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkx
+MSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMj
+I1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2
+OThdfQ==
 -->
