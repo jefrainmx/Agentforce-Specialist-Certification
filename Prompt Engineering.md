@@ -598,7 +598,20 @@ The LLM follows the instructions in the prompt while adhering to the guardrails 
 
 ### Trust Layer: Response Journey
 The Trust Layer applies various processes and policies to ensure the safety and usefulness of the generated response returned from the LLM.
+#### TOXICITY DETECTION
+The generated response is scanned for toxicity. A toxicity confidence score is calculated to determine the probability of the response including harmful or inappropriate content. The toxicity scores in the responses are stored in Data Cloud. However, toxicity detection should not be used as an accuracy validator. 
+#### DATA DEMASKING
+The placeholders created for masking the data during the prompt journey are replaced with the actual data using the stored relationshipsbetween the original entities and their respective placeholders. However, it is disabled for Agentforce agents.
+#### FEEDBACK
+The user can accept, modify, or reject the generated response in Salesforce. They can also provide explicit feedback that is captured as part of the audit and feedback data (audit trail) and stored in Data Cloud. 
+#### AUDIT TRAIL
+In addition to feedback data, the audit trail includes data such as the original prompt, masked prompt where applicable, toxicity scores, the original output from the LLM, and the de-masked output where applicable. The audit and feedback data are stored in Data Cloud. Audit data supports accountability and review. 
 
+### Trust Layer: Generated Response
+The LLM generates a suitable response based on the resolved prompt.
+4
+
+### Trust Layer ConsiderationsVarious considerations apply to the Trust Layer.
 
 
 ## References:
@@ -608,7 +621,7 @@ The Trust Layer applies various processes and policies to ensure the safety and 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTc4NjM1Nyw4NjkyNzIwNzksLTI4OT
+eyJoaXN0b3J5IjpbLTU1ODA5MzU1NSw4NjkyNzIwNzksLTI4OT
 I3MDYyOSw2OTk3OTU0MzcsLTg0MzgzNjkxMSwxNTkzMDE0MzEs
 MTY5OTU5ODU2OCwtMTc0NjEwNzE0NiwyMjI1MDUxMjMsLTIwMT
 I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
