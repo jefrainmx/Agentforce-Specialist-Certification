@@ -632,13 +632,15 @@ Generated responses should be reviewed for accuracy, safety, tone, and alignment
 
 
 # Explain how to manage and prevent specific models from being accessed.
+## Introduction
+## Model Access
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgxMzE3MjgyLDg2NjUxNDM2OCwxNDAwMj
-cxOSw4NjkyNzIwNzksLTI4OTI3MDYyOSw2OTk3OTU0MzcsLTg0
-MzgzNjkxMSwxNTkzMDE0MzEsMTY5OTU5ODU2OCwtMTc0NjEwNz
-E0NiwyMjI1MDUxMjMsLTIwMTI1MzY1MDQsLTE0MTgxMTgwNzUs
-NDMyNDQ2OTgsLTEzMzM3ODM4NDksLTIxMTY5NzY1OTIsLTExMD
-A0MTg2ODksLTExMDA0MTg2ODksLTYyMzMyMjA0NCwyMDYzMjE0
-MDAzXX0=
+eyJoaXN0b3J5IjpbMTQ2ODkyODcwNSw0ODEzMTcyODIsODY2NT
+E0MzY4LDE0MDAyNzE5LDg2OTI3MjA3OSwtMjg5MjcwNjI5LDY5
+OTc5NTQzNywtODQzODM2OTExLDE1OTMwMTQzMSwxNjk5NTk4NT
+Y4LC0xNzQ2MTA3MTQ2LDIyMjUwNTEyMywtMjAxMjUzNjUwNCwt
+MTQxODExODA3NSw0MzI0NDY5OCwtMTMzMzc4Mzg0OSwtMjExNj
+k3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OSwtNjIzMzIy
+MDQ0XX0=
 -->
