@@ -477,6 +477,8 @@ A prompt template can use a standard or custom model configuration. The selected
 ### Model Configuration in AI Models
 A model configuration defines the model and settings used by the prompt template. Prompt templates should be retested after changing the model configuration because the generated output can change.
 
+## References:
+[Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_about.htm&type=5)
 
 # Explain how to implement best practices for writing effective prompts.
 
@@ -485,11 +487,11 @@ A model configuration defines the model and settings used by the prompt template
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ0NzE2MDQwLDIyMjUwNTEyMywtMjAxMj
-UzNjUwNCwtMTQxODExODA3NSw0MzI0NDY5OCwtMTMzMzc4Mzg0
-OSwtMjExNjk3NjU5MiwtMTEwMDQxODY4OSwtMTEwMDQxODY4OS
-wtNjIzMzIyMDQ0LDIwNjMyMTQwMDMsMzEzMDk4NTQyLDQwNDY1
-ODc3OCwxODkyMTA3NzMxLC03Mzg5ODQyNDksLTE1MzkwMzIyMD
-IsODA1MjUwMzMwLDEwNDc0NDM4OTYsMTI5NDAyNTA1LC0xNDA0
-NzAzMTY4XX0=
+eyJoaXN0b3J5IjpbLTEzNzc1MTYyMzAsMjIyNTA1MTIzLC0yMD
+EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
+ODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Nj
+g5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0
+NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMj
+IwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0
+MDQ3MDMxNjhdfQ==
 -->
