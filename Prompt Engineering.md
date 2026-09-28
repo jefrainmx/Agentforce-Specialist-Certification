@@ -482,17 +482,22 @@ A model configuration defines the model and settings used by the prompt template
 [Drive Productivity with Salesforce AI](https://trailhead.salesforce.com/content/learn/trails/drive-productivity-with-einstein-ai)
 
 # Explain how to implement best practices for writing effective prompts.
+## Introduction
+Writing effective prompts is essential to guiding the large language model (LLM) toward producing accurate, relevant, and consistent responses. Effective prompts are clear and concise, using plain natural language that avoids unnecessary jargon. Maintaining style and consistency ensures predictable outputs, while adding context helps the model understand the user’s intent, often through role-based instructions that define a character and goal. Iterative testing and feedback help refine prompts for improved results. To strengthen clarity, prompts should include direct instructions separated from context using triple quotes (“””). Structuring prompts into sections such as Role, Task, Context, and Constraints provides a framework for consistent and goal-oriented responses. Applying these best practices helps reduce hallucinations, ensures precision, and creates more reliable, business-ready prompt templates in Agentforce.
+
+### Best Practices for Writing Effective Prompts
+#### 
 
 # Identify the security and privacy features of the Trust Layer.
 
 # Explain how to manage and prevent specific models from being accessed.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NzUyMjAzNiwyMjI1MDUxMjMsLTIwMT
-I1MzY1MDQsLTE0MTgxMTgwNzUsNDMyNDQ2OTgsLTEzMzM3ODM4
-NDksLTIxMTY5NzY1OTIsLTExMDA0MTg2ODksLTExMDA0MTg2OD
-ksLTYyMzMyMjA0NCwyMDYzMjE0MDAzLDMxMzA5ODU0Miw0MDQ2
-NTg3NzgsMTg5MjEwNzczMSwtNzM4OTg0MjQ5LC0xNTM5MDMyMj
-AyLDgwNTI1MDMzMCwxMDQ3NDQzODk2LDEyOTQwMjUwNSwtMTQw
-NDcwMzE2OF19
+eyJoaXN0b3J5IjpbLTEwNjk5ODE4MjEsMjIyNTA1MTIzLC0yMD
+EyNTM2NTA0LC0xNDE4MTE4MDc1LDQzMjQ0Njk4LC0xMzMzNzgz
+ODQ5LC0yMTE2OTc2NTkyLC0xMTAwNDE4Njg5LC0xMTAwNDE4Nj
+g5LC02MjMzMjIwNDQsMjA2MzIxNDAwMywzMTMwOTg1NDIsNDA0
+NjU4Nzc4LDE4OTIxMDc3MzEsLTczODk4NDI0OSwtMTUzOTAzMj
+IwMiw4MDUyNTAzMzAsMTA0NzQ0Mzg5NiwxMjk0MDI1MDUsLTE0
+MDQ3MDMxNjhdfQ==
 -->
