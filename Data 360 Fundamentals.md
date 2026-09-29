@@ -83,10 +83,18 @@ Data 360 helps generative AI, automation, and analytics use trusted business dat
 ### Data 360 Concepts
 #### Vectorization & Indexing
 Chunks are converted into embeddings and stored in search indexes for retrieval. 
-Search Type
+#### Search Type
 Vector search retrieves semantically similar content, while hybrid search combines semantic and keyword matching.
-Retriever
-A retriever searches the index and returns relevant grounding content to prompts, agents, Flow, and other features.Grounded ResponseThe LLM uses retrieved content to produce a more accurate and context-specific answer.Data SourcesStructured and unstructured sources can include Knowledge articles, case notes, PDFs, transcripts, DMOs, and UDMOs.Data ObjectsData is represented in Data 360 through DMOs, UDMOs, and related chunk and index model objects.ChunkingLong text is divided into meaningful units that can be searched and inserted into prompts.
+#### Retriever
+A retriever searches the index and returns relevant grounding content to prompts, agents, Flow, and other features.
+#### Grounded Response
+The LLM uses retrieved content to produce a more accurate and context-specific answer.
+#### Data Sources
+Structured and unstructured sources can include Knowledge articles, case notes, PDFs, transcripts, DMOs, and UDMOs.
+#### Data Objects
+Data is represented in Data 360 through DMOs, UDMOs, and related chunk and index model objects.
+#### Chunking
+Long text is divided into meaningful units that can be searched and inserted into prompts.
 
 ## Unstructured Data, Chunking, and Indexing
 
@@ -101,6 +109,6 @@ A retriever searches the index and returns relevant grounding content to prompts
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDE1ODYwMTUsLTIwMjA3MjU5NzYsLT
+eyJoaXN0b3J5IjpbLTE0Njc5NTc4NjMsLTIwMjA3MjU5NzYsLT
 QxMTk3MDI2NCw4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
 -->
