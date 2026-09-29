@@ -180,8 +180,9 @@ Related fields for search filtering can be selected.
 
 ## Retrieval Augmented Generation (RAG)
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDc4NjYzLC0yMDE2MzcxOTEzLC0xND
+eyJoaXN0b3J5IjpbODI3Mjk2MjMxLC0yMDE2MzcxOTEzLC0xND
 Y4NDczNTU5LDEwNzgxMDQ5OSwxODMxMzUyNjYsLTE0Njc5NTc4
 NjMsLTIwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NTg3NDc5OTQsLT
 E2MjE4NDg3XX0=
