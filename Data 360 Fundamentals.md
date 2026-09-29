@@ -97,7 +97,8 @@ Data is represented in Data 360 through DMOs, UDMOs, and related chunk and index
 Long text is divided into meaningful units that can be searched and inserted into prompts.
 
 ## Unstructured Data, Chunking, and Indexing
-
+### Unstructured Data, Chunking, and Indexing
+Unstructured data is data without a specific, consistent format that can’t be easily stored in a typical relational database.Examples include data from Knowledge articles and sales call transcripts.
 
 
 
@@ -109,6 +110,7 @@ Long text is divided into meaningful units that can be searched and inserted int
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc5NTc4NjMsLTIwMjA3MjU5NzYsLT
-QxMTk3MDI2NCw4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbMTE5NTcwMTQyNSwtMTQ2Nzk1Nzg2MywtMj
+AyMDcyNTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0
+ODddfQ==
 -->
