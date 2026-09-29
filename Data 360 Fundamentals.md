@@ -15,12 +15,15 @@ The agent uses retrieved content to ground the prompt and generate a more accura
 Data 360 processes the selected source through data objects, chunking, indexing, and retriever creation.
 
 ## Agentforce Data Library Concepts
-
+### Agentforce Data Library
+Data Libraries can be assigned to Agentforce features to improve accuracy, add personalization, and build trust in generative AI responses.
+#### DATA LIBRARY
+An Agentforce Data Library is a library of content that can be used by an agent to answer questions. The source of a data library can be Salesforce Knowledge articles, uploaded files, web search, or a custom retriever.❖GROUNDINGAgentforce uses the information in the assigned data library at run time to ground LLM prompts and produce better, more accurate, and relevant LLM responses. Grounding adds domain-specific knowledge or customer information to the prompt and provides context to the LLM.
 
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbMTM1Mjg5OTY2NCwtMTYyMTg0ODddfQ==
 -->
