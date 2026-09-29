@@ -50,11 +50,16 @@ In Agentforce Builder, the data library that the agent uses to generate response
 #### KNOWLEDGE RECORDS & FIELDS
 Agent responses can be based on all Knowledge articles and fields by selecting All Knowledge records and fields.
 
+### Creating an Agentforce Data Library
+A data library can be created on the Agentforce Data Library page in Setup. After the library is saved, Data 360 creates or uses the supporting assets needed for indexing and retrieval. 
 
+### Data Library Source
+A data library can be configured to use Knowledgearticles, uploadedfiles, web search, or a custom retriever as its data source. After a data source is selected, it can’t be changed later.
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4NzQ3OTk0LC0xNjIxODQ4N119
+eyJoaXN0b3J5IjpbLTIwNjAyOTY2OTMsODU4NzQ3OTk0LC0xNj
+IxODQ4N119
 -->
