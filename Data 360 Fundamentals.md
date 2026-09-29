@@ -161,10 +161,12 @@ Vector search recognizes that How do I reset my password? and How can I change m
 Keyword search recognizes that Model X200 Printer and Model X210 Printer are lexically similar.
 
 
+
+
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTg3NTk3MywxMDc4MTA0OTksMTgzMT
-M1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC00MTE5NzAy
-NjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
+eyJoaXN0b3J5IjpbLTE0Njg0NzM1NTksMTA3ODEwNDk5LDE4Mz
+EzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcw
+MjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
 -->
