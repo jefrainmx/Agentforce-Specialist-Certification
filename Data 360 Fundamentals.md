@@ -168,21 +168,21 @@ A search type and data model object can be selected for a new search index confi
 ![Search Type and Source Object](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151441.png)
 
 The fields to chunk can be added, and the chunking strategy can be set for each field.
-Chunking
+![Chunking](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151504.png)
 
 A vectorization strategy can be selected to measure the unstructured data for semantic relevance.
-Vectorizing 4
+![Vectorizing](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151526.png)
 
 Related fields for search filtering can be selected.
-Fields for Filter 5
+![Fields for Filter](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151717.png)
 
 
 
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5ODUzNDEyMCwtMjAxNjM3MTkxMywtMT
-Q2ODQ3MzU1OSwxMDc4MTA0OTksMTgzMTM1MjY2LC0xNDY3OTU3
-ODYzLC0yMDIwNzI1OTc2LC00MTE5NzAyNjQsODU4NzQ3OTk0LC
-0xNjIxODQ4N119
+eyJoaXN0b3J5IjpbLTQxNDc4NjYzLC0yMDE2MzcxOTEzLC0xND
+Y4NDczNTU5LDEwNzgxMDQ5OSwxODMxMzUyNjYsLTE0Njc5NTc4
+NjMsLTIwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NTg3NDc5OTQsLT
+E2MjE4NDg3XX0=
 -->
