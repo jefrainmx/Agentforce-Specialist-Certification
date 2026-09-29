@@ -60,15 +60,15 @@ A data library can be configured to use Knowledge articles, uploadedfiles, web s
 
 ### Knowledge Fields
 Identifying Fields and Content Fields can be selected to base a data library on the Knowledge base.
-Add Knowledge Da
+![Add Knowledge Data](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132509.png)
 
 ### Knowledge Settings
 Indexed articles can be restricted to public articles and filtered by specific data categories.
-4
+![Knowledge Settings](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132601.png)
 
 ### File Upload
 Uploaded files can be used as a data source for a data library.
-5
+![Add files](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132640.png)
 
 ## References:
 [Agentforce Data Library](https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm&type=5)
@@ -79,6 +79,6 @@ Uploaded files can be used as a data source for a data library.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MTQyMDcwOCw4NTg3NDc5OTQsLTE2Mj
+eyJoaXN0b3J5IjpbLTQxMTk3MDI2NCw4NTg3NDc5OTQsLTE2Mj
 E4NDg3XX0=
 -->
