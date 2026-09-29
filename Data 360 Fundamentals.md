@@ -171,6 +171,9 @@ The fields to chunk can be added, and the chunking strategy can be set for each 
 Chunking 3
 
 A vectorization strategy can be selected to measure the unstructured data for semantic relevance.
+Vectorizing 4
+
+Related fields for search filtering can be selected.
 
 
 
@@ -178,7 +181,8 @@ A vectorization strategy can be selected to measure the unstructured data for se
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMDI5MDE5MywtMTQ2ODQ3MzU1OSwxMD
-c4MTA0OTksMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1
-OTc2LC00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
+eyJoaXN0b3J5IjpbLTE5MTI0MTY2NzgsLTE0Njg0NzM1NTksMT
+A3ODEwNDk5LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcy
+NTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ
+==
 -->
