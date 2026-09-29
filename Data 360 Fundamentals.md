@@ -132,6 +132,12 @@ If a search index is on a DMO of a Salesforce object with file attachments, the 
 #### FIELD SELECTION
 Search index quality depends on selecting fields that contain meaningful, relevant text for the intended retrieval use case.
 
+### Chunking Strategy
+When creating a Search Index Configuration, the Chunking Strategy can be selected for each field.
+Search Index Configuration 1
+
+
+
 
 
 ## Data 360 Search
@@ -142,7 +148,7 @@ Search index quality depends on selecting fields that contain meaningful, releva
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMD
-IwNzI1OTc2LC00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4
-N119
+eyJoaXN0b3J5IjpbMTE1NzY4MDE1MywxODMxMzUyNjYsLTE0Nj
+c5NTc4NjMsLTIwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NTg3NDc5
+OTQsLTE2MjE4NDg3XX0=
 -->
