@@ -216,10 +216,10 @@ The side panel can be used to define the search parameters of an active retrieve
 
 ### Using a Retriever
 The Insert Resource button can be used to add a search retriever to a prompt template.
-Use retrievers as resources
+![Use retrievers as resources](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151745.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDI2NzA1NywxNDA3MTM4MTY0LDgyNz
-I5NjIzMSwtMjAxNjM3MTkxMywtMTQ2ODQ3MzU1OSwxMDc4MTA0
-OTksMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC
-00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
+eyJoaXN0b3J5IjpbLTE0NTExNzA3OTAsMTQwNzEzODE2NCw4Mj
+cyOTYyMzEsLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEw
+NDk5LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3Ni
+wtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
 -->
