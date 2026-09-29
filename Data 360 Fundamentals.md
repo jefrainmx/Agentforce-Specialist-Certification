@@ -52,15 +52,15 @@ Agent responses can be based on all Knowledge articles and fields by selecting A
 
 ### Creating an Agentforce Data Library
 A data library can be created on the Agentforce Data Library page in Setup. After the library is saved, Data 360 creates or uses the supporting assets needed for indexing and retrieval. 
-
+![Add a Data Library](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132335.png)
 
 ### Data Library Source
 A data library can be configured to use Knowledge articles, uploadedfiles, web search, or a custom retriever as its data source. After a data source is selected, it can’t be changed later.
-2
+![Data Library Source](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132412.png)
 
 ### Knowledge Fields
 Identifying Fields and Content Fields can be selected to base a data library on the Knowledge base.
-3
+Add Knowledge Da
 
 ### Knowledge Settings
 Indexed articles can be restricted to public articles and filtered by specific data categories.
@@ -79,6 +79,6 @@ Uploaded files can be used as a data source for a data library.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODE0NjE5Miw4NTg3NDc5OTQsLTE2Mj
+eyJoaXN0b3J5IjpbMTQ3MTQyMDcwOCw4NTg3NDc5OTQsLTE2Mj
 E4NDg3XX0=
 -->
