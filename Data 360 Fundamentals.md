@@ -18,12 +18,23 @@ Data 360 processes the selected source through data objects, chunking, indexing,
 ### Agentforce Data Library
 Data Libraries can be assigned to Agentforce features to improve accuracy, add personalization, and build trust in generative AI responses.
 #### DATA LIBRARY
-An Agentforce Data Library is a library of content that can be used by an agent to answer questions. The source of a data library can be Salesforce Knowledge articles, uploaded files, web search, or a custom retriever.❖GROUNDINGAgentforce uses the information in the assigned data library at run time to ground LLM prompts and produce better, more accurate, and relevant LLM responses. Grounding adds domain-specific knowledge or customer information to the prompt and provides context to the LLM.
+An Agentforce Data Library is a library of content that can be used by an agent to answer questions. The source of a data library can be Salesforce Knowledge articles, uploaded files, web search, or a custom retriever.
+#### GROUNDING
+Agentforce uses the information in the assigned data library at run time to ground LLM prompts and produce better, more accurate, and relevant LLM responses. Grounding adds domain-specific knowledge or customer information to the prompt and provides context to the LLM.
+#### CHUNKING
+Data sources are broken down into smaller parts called chunks to make search more efficient and improve relevance. Chunking helps agents retrieve focused passages from sources such as Knowledge article text, uploaded files, and indexed web content. 
+#### INDEXING
+Data that is split into chunks is organized and categorized, which is called indexing. This process simplifies the search and retrieval of chunks. When information is required or a user asks a question, an agent searches through the chunks in the index.
+#### SEARCH
+When a search is performed by an agent, the user’s question is compared with indexed chunks. Chunks with high relevance or similarity are returned and added to the prompt because they point to relevant articles or sources. 
+#### RETRIEVERS
+A retriever connects an agent or prompt template to indexed content that can be searched for grounding. The retriever assigned to a data library determines which Data 360 data sources are available for AI responses.
+#### AGENT ACTIONWhen a user asks a question, the AI agent uses the Answer Questions with Knowledge standard agent action to answer the query based on data in the corresponding Agentforce Data Library.❖REQUIREMENTSUsing Agentforce Data Libraries require Data 360 setup, appropriate permissions, and available Data 360 credits for processing, indexing, and runtime retrieval. 
 
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Mjg5OTY2NCwtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbLTU0NDI0NzQ2NywtMTYyMTg0ODddfQ==
 -->
