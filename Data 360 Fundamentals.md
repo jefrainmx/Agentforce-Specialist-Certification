@@ -77,8 +77,19 @@ Uploaded files can be used as a data source for a data library.
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
+## Unstructured Data, Chunking, and Indexing
+
+
+
+
+## Data 360 Search
+
+
+
+
+## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTk3MDI2NCw4NTg3NDc5OTQsLTE2Mj
-E4NDg3XX0=
+eyJoaXN0b3J5IjpbLTIwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NT
+g3NDc5OTQsLTE2MjE4NDg3XX0=
 -->
