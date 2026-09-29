@@ -162,13 +162,13 @@ Keyword search recognizes that Model X200 Printer and Model X210 Printer are lex
 
 ### Creating a Search Index Configuration
 A Search Index Configuration can be created in Data 360 by selecting one of three options.
-New Search Index 1
+![New Search Index](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151419.png)
 
 A search type and data model object can be selected for a new search index configuration.
-Search Type and Source Object 2
+![Search Type and Source Object](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151441.png)
 
 The fields to chunk can be added, and the chunking strategy can be set for each field.
-Chunking 3
+Chunking
 
 A vectorization strategy can be selected to measure the unstructured data for semantic relevance.
 Vectorizing 4
@@ -181,8 +181,8 @@ Fields for Filter 5
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMT
-A3ODEwNDk5LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcy
-NTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ
-==
+eyJoaXN0b3J5IjpbMTk5ODUzNDEyMCwtMjAxNjM3MTkxMywtMT
+Q2ODQ3MzU1OSwxMDc4MTA0OTksMTgzMTM1MjY2LC0xNDY3OTU3
+ODYzLC0yMDIwNzI1OTc2LC00MTE5NzAyNjQsODU4NzQ3OTk0LC
+0xNjIxODQ4N119
 -->
