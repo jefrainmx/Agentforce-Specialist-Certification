@@ -141,14 +141,27 @@ A Search Index can be edited and rebuilt.
 ![Edit and Rebuild Search Index](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20145202.png)
 
 ## Data 360 Search
-
+### Data 360 Search
+In Data 360, search indexes can be created for more accurate and relevant AI-generated content, deeper insights from analytics, and more efficient automation workflows.
+#### GROUNDING
+Data 360 search can be grounded on unstructured and structured data to enhance the use of generative AI, analytics, and automation toolsacross Salesforce. Grounding brings customer-specific data, including unstructured data like text documents and multimedia files, into applications like Agentforce, Tableau, and Flow Builder.
+SEARCH INDEXES
+In Data 360, vector or hybrid search indexes can be created depending on data and query needs. A search index configuration can be created to define a search index in Data 360.
+VECTOR SEARCH
+A vector search embedding is a numerical representation of a unit of text, such as an article or passage from a larger document, that is retrieved or used during a response generation. Vector search helps understand semantic similarities and context between embeddings. 
+VECTOR SEARCH INDEX
+A vector search index configuration can be created for a data model object. The referenced data is broken up into semantically related chunks to generate searchable vectors, which can then be used to find semantically similar items. 
+HYBRID SEARCH
+Hybrid search combines vector search for semantic similarity with keyword search for lexical similarity. It understands semantic similarities and context while focusing on specific domain vocabulary. 
+HYBRID SEARCH INDEX
+A hybrid search index configuration can be created for a data model object (DMO) or an unstructured data model object (UDMO) to provide relevant information to generative AI applications. Data 360 generates a vector index and a keyword index.
 
 
 
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNTM5NjEzNywxMDc4MTA0OTksMTgzMT
+eyJoaXN0b3J5IjpbMjAxMjQzMDcyMywxMDc4MTA0OTksMTgzMT
 M1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC00MTE5NzAy
 NjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
 -->
