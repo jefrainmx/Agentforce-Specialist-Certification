@@ -136,6 +136,11 @@ Search index quality depends on selecting fields that contain meaningful, releva
 When creating a Search Index Configuration, the Chunking Strategy can be selected for each field.
 Search Index Configuration 1
 
+### Editing & Rebuilding a Search Index
+A Search Index can be edited and rebuilt.
+Edit and Rebuild Search Index 2
+
+
 
 
 
@@ -148,7 +153,7 @@ Search Index Configuration 1
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NzY4MDE1MywxODMxMzUyNjYsLTE0Nj
-c5NTc4NjMsLTIwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NTg3NDc5
-OTQsLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbMTUwNjM5NjQ3LDE4MzEzNTI2NiwtMTQ2Nz
+k1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5
+NCwtMTYyMTg0ODddfQ==
 -->
