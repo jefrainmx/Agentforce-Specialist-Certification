@@ -58,14 +58,20 @@ A data library can be created on the Agentforce Data Library page in Setup. Afte
 A data library can be configured to use Knowledge articles, uploadedfiles, web search, or a custom retriever as its data source. After a data source is selected, it can’t be changed later.
 2
 
+### Knowledge Fields
+Identifying Fields and Content Fields can be selected to base a data library on the Knowledge base.
+3
 
+### Knowledge Settings
+Indexed articles can be restricted to public articles and filtered by specific data categories.
+4
 
-
+### 
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzE2OTU3OCw4NTg3NDc5OTQsLTE2Mj
-E4NDg3XX0=
+eyJoaXN0b3J5IjpbLTEwNDM0NzY0NzUsODU4NzQ3OTk0LC0xNj
+IxODQ4N119
 -->
