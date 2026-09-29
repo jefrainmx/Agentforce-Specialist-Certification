@@ -66,12 +66,17 @@ Identifying Fields and Content Fields can be selected to base a data library on 
 Indexed articles can be restricted to public articles and filtered by specific data categories.
 4
 
-### 
+### File Upload
+Uploaded files can be used as a data source for a data library.
+5
+
+## References:
+[enter link description here](https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm&type=5)
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDM0NzY0NzUsODU4NzQ3OTk0LC0xNj
-IxODQ4N119
+eyJoaXN0b3J5IjpbMzM5NDkyMzc5LDg1ODc0Nzk5NCwtMTYyMT
+g0ODddfQ==
 -->
