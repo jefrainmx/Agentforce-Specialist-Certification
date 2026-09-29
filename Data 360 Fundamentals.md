@@ -162,6 +162,15 @@ Keyword search recognizes that Model X200 Printer and Model X210 Printer are lex
 
 ### Creating a Search Index Configuration
 A Search Index Configuration can be created in Data 360 by selecting one of three options.
+New Search Index 1
+
+A search type and data model object can be selected for a new search index configuration.
+Search Type and Source Object 2
+
+The fields to chunk can be added, and the chunking strategy can be set for each field.
+Chunking 3
+
+A vectorization strategy can be selected to measure the unstructured data for semantic relevance.
 
 
 
@@ -169,7 +178,7 @@ A Search Index Configuration can be created in Data 360 by selecting one of thre
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5MDA4OTA0LC0xNDY4NDczNTU5LDEwNz
-gxMDQ5OSwxODMxMzUyNjYsLTE0Njc5NTc4NjMsLTIwMjA3MjU5
-NzYsLTQxMTk3MDI2NCw4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbLTkwMDI5MDE5MywtMTQ2ODQ3MzU1OSwxMD
+c4MTA0OTksMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1
+OTc2LC00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
 -->
