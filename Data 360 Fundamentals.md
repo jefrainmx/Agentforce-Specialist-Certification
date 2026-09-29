@@ -174,14 +174,14 @@ A vectorization strategy can be selected to measure the unstructured data for se
 Vectorizing 4
 
 Related fields for search filtering can be selected.
-
+Fields for Filter 5
 
 
 
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTI0MTY2NzgsLTE0Njg0NzM1NTksMT
+eyJoaXN0b3J5IjpbLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMT
 A3ODEwNDk5LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcy
 NTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ
 ==
