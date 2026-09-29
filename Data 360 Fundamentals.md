@@ -6,7 +6,11 @@ A data library acts as a structured source of knowledge that an Agentforce agent
 #### Data Library & Source
 A data library can be based on Knowledge articles, uploaded files, web search, or a custom retriever. It must be assigned to the AI feature or agent.
 #### Search Index
-The search index organizes chunks so relevant information can be found efficiently at runtime.RetrieverThe retriever connects the AI feature to the indexed content that should be searched.Grounded ResponseThe agent uses retrieved content to ground the prompt and generate a more accurate answer.Data 360 ProcessingData 360 processes the selected source through data objects, chunking, indexing, and retriever creation.
+The search index organizes chunks so relevant information can be found efficiently at runtime.RetrieverThe retriever connects the AI feature to the indexed content that should be searched.
+#### Grounded Response
+The agent uses retrieved content to ground the prompt and generate a more accurate answer.
+#### Data 360 Processing
+Data 360 processes the selected source through data objects, chunking, indexing, and retriever creation.
 
 ## Agentforce Data Library Concepts
 
@@ -16,5 +20,5 @@ The search index organizes chunks so relevant information can be found efficient
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5NTA1OTI1XX0=
+eyJoaXN0b3J5IjpbMTE0ODEzNzM4N119
 -->
