@@ -99,7 +99,20 @@ Long text is divided into meaningful units that can be searched and inserted int
 ## Unstructured Data, Chunking, and Indexing
 ### Unstructured Data, Chunking, and Indexing
 Unstructured data is data without a specific, consistent format that can’t be easily stored in a typical relational database.Examples include data from Knowledge articles and sales call transcripts.
-
+#### ENHANCING AI RESPONSES
+Unstructured data can be connected in Data 360 to create customer-centric results in Einstein generative AI (Prompt Builder and Agentforce). For example, responses to customers can be enhanced using Knowledge article data or prior emails.
+DATA FORMATS & CONNECTIONS
+Data 360 can reference unstructured data in HTML, TXT, and PDF formats and supports connections from Amazon S3, Azure Blob Storage, and Google Cloud Storage.
+UNSTRUCTURED DATA OBJECTS
+A connection can be created between an external blob store and Data 360. After creating the connection, the unstructured data can be referenced in Data 360 by creating an unstructured data lake object (UDLO) and mapping it to an unstructured data model object (UDMO).
+RELATIONSHIPS & FIELD MAPPINGS
+The relationship between UDLOs and UDMOs can be 1:1 or N:1, which means that each UDLO can be mapped to at most one UDMO, while multiple UDLOs can be mapped to a single UDMO. Field-level mappingsare automatically created between the two due to identical schemas.
+KNOWLEDGE ARTICLE DATA
+Knowledge articles contain both structured fields and unstructured text content. In Data 360, the Knowledge article bundle can be used to ingest Knowledge article data from the Salesforce org and includes default mappings to relevant data model objects (DMOs). 
+SEARCH INDEX
+Search Index Configurations can be utilized to ground search on unstructured and structured data and enhance the use of generative AI by bringing customer-specific data into applications like Agentforce.
+CHUNKING
+DMOs and UDMOs can be chunked with text fields, breaking them down into manageable, semantically meaningful chunks. These units of text are stored in chunk data model objects (CDMOs). When creating a search index configuration, the chunking strategy can be selected.❖CHUNKING STRATEGIESData 360 supports these chunking strategies: Section-Aware Chunking, Semantic-Based Passage Extraction, Conversation-Based Chunking, and Prepend Field Chunking.
 
 
 ## Data 360 Search
@@ -110,7 +123,7 @@ Unstructured data is data without a specific, consistent format that can’t be 
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5NTcwMTQyNSwtMTQ2Nzk1Nzg2MywtMj
-AyMDcyNTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0
-ODddfQ==
+eyJoaXN0b3J5IjpbLTIxMTk2ODY5MjQsLTE0Njc5NTc4NjMsLT
+IwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NTg3NDc5OTQsLTE2MjE4
+NDg3XX0=
 -->
