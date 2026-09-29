@@ -221,10 +221,13 @@ The Insert Resource button can be used to add a search retriever to a prompt tem
 ## References:
 [Get Started with Unstructured Data in Data 360](https://trailhead.salesforce.com/content/learn/projects/unstructured-data-in-data-cloud/get-started-with-unstructured-data-in-data-cloud)
 [Create an Unstructured Data Lake Object from a Data Kit](https://help.salesforce.com/s/articleView?id=data.c360_a_unstructured_data_create_udlo_from_data_kit.htm&type=5)
-
+[Chunking Strategies](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_supported_chunking_strategies.htm&type=5)
+[Rebuild a Search Index Configuration](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_rebuild_search_index.htm&type=5)
+[Create a Hybrid Search Index with Advanced Setup](https://help.salesforce.com/s/articleView?id=data.c360_a_hybridsearch_index_create.htm&type=5)
+[Retrieve Data](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2MzcxNjg2MywxNDA3MTM4MTY0LDgyNz
-I5NjIzMSwtMjAxNjM3MTkxMywtMTQ2ODQ3MzU1OSwxMDc4MTA0
-OTksMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC
-00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
+eyJoaXN0b3J5IjpbLTE5MDQ4MjA2OTEsMTQwNzEzODE2NCw4Mj
+cyOTYyMzEsLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEw
+NDk5LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3Ni
+wtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
 -->
