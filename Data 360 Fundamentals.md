@@ -73,12 +73,12 @@ Uploaded files can be used as a data source for a data library.
 ## References:
 [Agentforce Data Library](https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm&type=5)
 [Augment Agents and Prompts with Relevant Business Knowledge](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look/augment-prompts-with-relevant-knowledge)
-[enter link description here](https://help.salesforce.com/s/articleView?id=ai.agent_setup_data_sources.htm&type=5)
+[Use the Answer Questions with Knowledge Action](https://help.salesforce.com/s/articleView?id=ai.agent_setup_data_sources.htm&type=5)
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyOTczNzM5MCw4NTg3NDc5OTQsLTE2Mj
-E4NDg3XX0=
+eyJoaXN0b3J5IjpbODY3NTA3NTg5LDg1ODc0Nzk5NCwtMTYyMT
+g0ODddfQ==
 -->
