@@ -52,7 +52,7 @@ Agent responses can be based on all Knowledge articles and fields by selecting A
 
 ### Creating an Agentforce Data Library
 A data library can be created on the Agentforce Data Library page in Setup. After the library is saved, Data 360 creates or uses the supporting assets needed for indexing and retrieval. 
-1
+
 
 ### Data Library Source
 A data library can be configured to use Knowledge articles, uploadedfiles, web search, or a custom retriever as its data source. After a data source is selected, it can’t be changed later.
@@ -79,6 +79,6 @@ Uploaded files can be used as a data source for a data library.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3NTA3NTg5LDg1ODc0Nzk5NCwtMTYyMT
-g0ODddfQ==
+eyJoaXN0b3J5IjpbMTc1ODE0NjE5Miw4NTg3NDc5OTQsLTE2Mj
+E4NDg3XX0=
 -->
