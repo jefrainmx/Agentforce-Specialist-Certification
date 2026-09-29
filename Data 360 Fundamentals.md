@@ -77,6 +77,17 @@ Uploaded files can be used as a data source for a data library.
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
+## Introduction
+Data 360 helps generative AI, automation, and analytics use trusted business data by making structured and unstructured content searchable. Data from Knowledge articles, documents, transcripts, DMOs, and UDMOs can be chunked into meaningful units, vectorized, and stored in search indexes. Search indexes support vector and hybrid search, while retrievers use those indexes to return relevant information at runtime. These foundational concepts allow Agentforce agents and prompt templates to ground responses in current, relevant, and governed enterprise data instead of relying only on general model knowledge. 
+
+### Data 360 Concepts
+#### Vectorization & Indexing
+Chunks are converted into embeddings and stored in search indexes for retrieval. 
+Search Type
+Vector search retrieves semantically similar content, while hybrid search combines semantic and keyword matching.
+Retriever
+A retriever searches the index and returns relevant grounding content to prompts, agents, Flow, and other features.Grounded ResponseThe LLM uses retrieved content to produce a more accurate and context-specific answer.Data SourcesStructured and unstructured sources can include Knowledge articles, case notes, PDFs, transcripts, DMOs, and UDMOs.Data ObjectsData is represented in Data 360 through DMOs, UDMOs, and related chunk and index model objects.ChunkingLong text is divided into meaningful units that can be searched and inserted into prompts.
+
 ## Unstructured Data, Chunking, and Indexing
 
 
@@ -90,6 +101,6 @@ Uploaded files can be used as a data source for a data library.
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjA3MjU5NzYsLTQxMTk3MDI2NCw4NT
-g3NDc5OTQsLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbLTE3NDE1ODYwMTUsLTIwMjA3MjU5NzYsLT
+QxMTk3MDI2NCw4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
 -->
