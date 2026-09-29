@@ -189,8 +189,15 @@ RAG consists of two main parts in Data 360: offline preparation and online usage
 Offline preparation comprises connecting the unstructured data, creating a search index configuration to chunk and vectorize the data, and storing and managing the search index in Data 360.
 #### ONLINE USAGE
 Online usage involves calling a retriever in a prompt template to obtain relevant information from the search index in the vector database, populating the original prompt with the information, and submitting the augmented prompt to the LLM, which generates and returns a response.
+
+### Retrievers
+A retriever can be used to return relevant data from the search index to augment a prompt, which improves the value and relevance of LLM responses for users.
+### DATA PREPARATION
+Data preparation is required to use retrievers. It involves loading, chunking, vectorizing, and storing content in a search-optimized way in Data 360. It uses a vector data store for unstructured data, such as documents and conversation histories.
+SEARCH INDEX
+Chunked and vectorized data is stored in a search index for search and retrieval. Search indexes are defined in a data space and associated with a Data Model Object (DMO).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODMwNjIzMSw4MjcyOTYyMzEsLTIwMT
+eyJoaXN0b3J5IjpbMTAwNjEyNzQ1Niw4MjcyOTYyMzEsLTIwMT
 YzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEwNDk5LDE4MzEzNTI2
 NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LD
 g1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
