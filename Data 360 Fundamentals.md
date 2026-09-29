@@ -134,11 +134,11 @@ Search index quality depends on selecting fields that contain meaningful, releva
 
 ### Chunking Strategy
 When creating a Search Index Configuration, the Chunking Strategy can be selected for each field.
-Search Index Configuration 1
+![Search Index Configuration](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20145140.png)
 
 ### Editing & Rebuilding a Search Index
 A Search Index can be edited and rebuilt.
-Edit and Rebuild Search Index 2
+![Edit and Rebuild Search Index](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20145202.png)
 
 
 
@@ -153,7 +153,7 @@ Edit and Rebuild Search Index 2
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNjM5NjQ3LDE4MzEzNTI2NiwtMTQ2Nz
+eyJoaXN0b3J5IjpbMTA3ODEwNDk5LDE4MzEzNTI2NiwtMTQ2Nz
 k1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5
 NCwtMTYyMTg0ODddfQ==
 -->
