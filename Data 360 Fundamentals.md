@@ -228,10 +228,10 @@ The Insert Resource button can be used to add a search retriever to a prompt tem
 [Use Search for AI, Automation, and Analytics](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_ground_ai.htm&type=5)
 [Ground with Knowledge Using Retrieval Augmented Generation](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag.htm&type=5)
 [Add a Retriever to a Field Generation Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_add_retriever_field_gen.htm&type=5)
-
+[Augment Agents and Prompts with Relevant Business Knowledge](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look/augment-prompts-with-relevant-knowledge)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzNDkyODYsMTQwNzEzODE2NCw4MjcyOT
-YyMzEsLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEwNDk5
-LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtND
-ExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbLTEyMjUzMTY2ODQsMTQwNzEzODE2NCw4Mj
+cyOTYyMzEsLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEw
+NDk5LDE4MzEzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3Ni
+wtNDExOTcwMjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
 -->
