@@ -206,9 +206,19 @@ A custom individual retriever can be edited and saved, which creates another ver
 An ensemble retriever is a collection of individual retrievers. Running it executes the individual retrievers, combines their results into a single list, reranks the list according to relevance to the search request, and returns just the most relevant information to the prompt or agent.
 #### CITATIONS
 Citations can be enabled at the individual retriever level in AI Models. They link AI-generated responses to the source content relevant to each response and allow users to compare the LLM response with the source data to verify the validity of the response and identify any potential inaccuracies or hallucinations.
+
+### Grounding with Retrieval Augmented Generation (RAG)
+Retrievers can be added to prompt templates to ground prompts with relevant knowledge from unstructured text sources, such as articles, emails, chat transcripts, and other sources.
+#### INSERTING RESOURCES
+The Insert Resource button in Prompt Builder shows active retrieversthat can be added to prompt templates.
+RETRIEVER SETTINGS
+The side panel can be used to define the search parameters of an active retriever while adding it to a prompt template.
+
+### Using a Retriever
+The Insert Resource button can be used to add a search retriever to a prompt template.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNzEzODE2NCw4MjcyOTYyMzEsLTIwMT
-YzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEwNDk5LDE4MzEzNTI2
-NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LD
-g1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbMTkwNzYyMzMxNiwxNDA3MTM4MTY0LDgyNz
+I5NjIzMSwtMjAxNjM3MTkxMywtMTQ2ODQ3MzU1OSwxMDc4MTA0
+OTksMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC
+00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
 -->
