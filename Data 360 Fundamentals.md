@@ -183,12 +183,15 @@ Related fields for search filtering can be selected.
 Retrieval Augmented Generation (RAG) is a framework for grounding LLM prompts with accurate, current, and pertinent information, improving the relevance and value of responses for users.
 #### RAG
 RAG retrieves relevant information from structured and unstructured data indexed in Data 360’s search index, augments the original prompt using the information, and generates a response. 
-PROCESS
+#### PROCESS
 RAG consists of two main parts in Data 360: offline preparation and online usage. Offline preparation focuses on data loading, chunking, vectorization, and indexing. Online usage refers to response generation via a retriever in a prompt template.
-OFFLINE PREPARATIONOffline preparation comprises connecting the unstructured data, creating a search index configuration to chunk and vectorize the data, and storing and managing the search index in Data 360.❖ONLINE USAGEOnline usage involves calling a retriever in a prompt template to obtain relevant information from the search index in the vector database, populating the original prompt with the information, and submitting the augmented prompt to the LLM, which generates and returns a response.
+#### OFFLINE PREPARATION
+Offline preparation comprises connecting the unstructured data, creating a search index configuration to chunk and vectorize the data, and storing and managing the search index in Data 360.
+#### ONLINE USAGE
+Online usage involves calling a retriever in a prompt template to obtain relevant information from the search index in the vector database, populating the original prompt with the information, and submitting the augmented prompt to the LLM, which generates and returns a response.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzk2MTMzNDMsODI3Mjk2MjMxLC0yMD
-E2MzcxOTEzLC0xNDY4NDczNTU5LDEwNzgxMDQ5OSwxODMxMzUy
-NjYsLTE0Njc5NTc4NjMsLTIwMjA3MjU5NzYsLTQxMTk3MDI2NC
-w4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbLTQ5ODMwNjIzMSw4MjcyOTYyMzEsLTIwMT
+YzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEwNDk5LDE4MzEzNTI2
+NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LD
+g1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
 -->
