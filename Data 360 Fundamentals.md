@@ -101,35 +101,37 @@ Long text is divided into meaningful units that can be searched and inserted int
 Unstructured data is data without a specific, consistent format that can’t be easily stored in a typical relational database.Examples include data from Knowledge articles and sales call transcripts.
 #### ENHANCING AI RESPONSES
 Unstructured data can be connected in Data 360 to create customer-centric results in Einstein generative AI (Prompt Builder and Agentforce). For example, responses to customers can be enhanced using Knowledge article data or prior emails.
-DATA FORMATS & CONNECTIONS
+#### DATA FORMATS & CONNECTIONS
 Data 360 can reference unstructured data in HTML, TXT, and PDF formats and supports connections from Amazon S3, Azure Blob Storage, and Google Cloud Storage.
-UNSTRUCTURED DATA OBJECTS
+#### UNSTRUCTURED DATA OBJECTS
 A connection can be created between an external blob store and Data 360. After creating the connection, the unstructured data can be referenced in Data 360 by creating an unstructured data lake object (UDLO) and mapping it to an unstructured data model object (UDMO).
-RELATIONSHIPS & FIELD MAPPINGS
+#### RELATIONSHIPS & FIELD MAPPINGS
 The relationship between UDLOs and UDMOs can be 1:1 or N:1, which means that each UDLO can be mapped to at most one UDMO, while multiple UDLOs can be mapped to a single UDMO. Field-level mappingsare automatically created between the two due to identical schemas.
-KNOWLEDGE ARTICLE DATA
+#### KNOWLEDGE ARTICLE DATA
 Knowledge articles contain both structured fields and unstructured text content. In Data 360, the Knowledge article bundle can be used to ingest Knowledge article data from the Salesforce org and includes default mappings to relevant data model objects (DMOs). 
-SEARCH INDEX
+#### SEARCH INDEX
 Search Index Configurations can be utilized to ground search on unstructured and structured data and enhance the use of generative AI by bringing customer-specific data into applications like Agentforce.
-CHUNKING
+#### CHUNKING
 DMOs and UDMOs can be chunked with text fields, breaking them down into manageable, semantically meaningful chunks. These units of text are stored in chunk data model objects (CDMOs). When creating a search index configuration, the chunking strategy can be selected.
-CHUNKING STRATEGIES
+#### CHUNKING STRATEGIES
 Data 360 supports these chunking strategies: Section-Aware Chunking, Semantic-Based Passage Extraction, Conversation-Based Chunking, and Prepend Field Chunking.
-SECTION-AWARE CHUNKING
+#### SECTION-AWARE CHUNKING
 In section-aware chunking, title and heading elements are used to chunk documents. When creating a search index, Max Token and Overlap Tokens settings can be used to avoid misidentifying short paragraphs or list items as standalone sections, leading to overly small chunks.
-SEMANTIC-BASED PASSAGE EXTRACTION
+#### SEMANTIC-BASED PASSAGE EXTRACTION
 In semantic-based passage extraction, the semantic meaning inherent in HTML tags is used to chunk a document into passages. The HTML elements (e.g., heading levels 1-6 <h1-h6>, thematic breaks <hr>, bold <b>, etc.) are considered logical boundaries for chunks.
-CONVERSATION-BASED CHUNKING
+#### CONVERSATION-BASED CHUNKING
 In conversation-based chunking, the transcribed data from audio and video files are segmented into chunks, typically separated when the voice changes. If there are multiple speakers, each chunk represents the speech of an individual speaker.
-PREPEND FIELD CHUNKING
+#### PREPEND FIELD CHUNKING
 When creating a search index using the advanced builder, prepend fieldscan be configured when there’s a need to add additional fields or metadata to provide context for a chunk. For example, the Title field can be prepended to provide more context for the Description field in a Knowledge article, which could exceed the optimal chunk size for prompt-based retrieval.
-SEARCH INDEX CREATION
+#### SEARCH INDEX CREATION
 Easy setup can be used to create a hybrid search index configuration for a data model object (DMO) or an unstructured data model object (UDMO). Data 360 automatically applies defaults for the chunking and vectorization strategies, and creates chunk and index model objects.
-EDITING & REBUILDING A SEARCH INDEX
+#### EDITING & REBUILDING A SEARCH INDEX
 A search index configuration can be edited to add fields or file extensionsfor chunking. The search index can then be rebuilt to re-chunk and regenerate the embeddings.
-ATTACHMENTS
+#### ATTACHMENTS
 If a search index is on a DMO of a Salesforce object with file attachments, the attachments can be included by clicking Include Attachments and selecting the ContentDocumentVersion UDMO.
-FIELD SELECTIONSearch index quality depends on selecting fields that contain meaningful, relevant text for the intended retrieval use case.
+#### FIELD SELECTION
+Search index quality depends on selecting fields that contain meaningful, relevant text for the intended retrieval use case.
+
 
 
 ## Data 360 Search
@@ -140,7 +142,7 @@ FIELD SELECTIONSearch index quality depends on selecting fields that contain mea
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU5MzY3OTc4LC0xNDY3OTU3ODYzLC0yMD
+eyJoaXN0b3J5IjpbMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMD
 IwNzI1OTc2LC00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4
 N119
 -->
