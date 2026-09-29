@@ -160,13 +160,16 @@ Vector search recognizes that How do I reset my password? and How can I change m
 #### KEYWORD SEARCH EXAMPLE
 Keyword search recognizes that Model X200 Printer and Model X210 Printer are lexically similar.
 
+### Creating a Search Index Configuration
+A Search Index Configuration can be created in Data 360 by selecting one of three options.
+
 
 
 
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njg0NzM1NTksMTA3ODEwNDk5LDE4Mz
-EzNTI2NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcw
-MjY0LDg1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbOTI5MDA4OTA0LC0xNDY4NDczNTU5LDEwNz
+gxMDQ5OSwxODMxMzUyNjYsLTE0Njc5NTc4NjMsLTIwMjA3MjU5
+NzYsLTQxMTk3MDI2NCw4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
 -->
