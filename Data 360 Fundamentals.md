@@ -140,11 +140,6 @@ When creating a Search Index Configuration, the Chunking Strategy can be selecte
 A Search Index can be edited and rebuilt.
 ![Edit and Rebuild Search Index](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20145202.png)
 
-
-
-
-
-
 ## Data 360 Search
 
 
@@ -153,7 +148,7 @@ A Search Index can be edited and rebuilt.
 ## Retrieval Augmented Generation (RAG)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODEwNDk5LDE4MzEzNTI2NiwtMTQ2Nz
-k1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LDg1ODc0Nzk5
-NCwtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbMTMxNTM5NjEzNywxMDc4MTA0OTksMTgzMT
+M1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC00MTE5NzAy
+NjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
 -->
