@@ -216,8 +216,9 @@ The side panel can be used to define the search parameters of an active retrieve
 
 ### Using a Retriever
 The Insert Resource button can be used to add a search retriever to a prompt template.
+Use retrievers as resources
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNzYyMzMxNiwxNDA3MTM4MTY0LDgyNz
+eyJoaXN0b3J5IjpbMTU3NDI2NzA1NywxNDA3MTM4MTY0LDgyNz
 I5NjIzMSwtMjAxNjM3MTkxMywtMTQ2ODQ3MzU1OSwxMDc4MTA0
 OTksMTgzMTM1MjY2LC0xNDY3OTU3ODYzLC0yMDIwNzI1OTc2LC
 00MTE5NzAyNjQsODU4NzQ3OTk0LC0xNjIxODQ4N119
