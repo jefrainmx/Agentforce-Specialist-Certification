@@ -192,20 +192,23 @@ Online usage involves calling a retriever in a prompt template to obtain relevan
 
 ### Retrievers
 A retriever can be used to return relevant data from the search index to augment a prompt, which improves the value and relevance of LLM responses for users.
-### DATA PREPARATION
+#### DATA PREPARATION
 Data preparation is required to use retrievers. It involves loading, chunking, vectorizing, and storing content in a search-optimized way in Data 360. It uses a vector data store for unstructured data, such as documents and conversation histories.
-SEARCH INDEX
+#### SEARCH INDEX
 Chunked and vectorized data is stored in a search index for search and retrieval. Search indexes are defined in a data space and associated with a Data Model Object (DMO).
-INDIVIDUAL RETRIEVER
+#### INDIVIDUAL RETRIEVER
 An individual retriever can be created in AI Models. It can be customized by selecting its search index, defining filters, and specifying the information it returns. Filters narrow the search focus to more relevantdata. The search index defines the fields for filtering.
-FILTERING
+#### FILTERING
 A custom individual retriever can be used to configure the data returned to the prompt, including the fields and number of results to return.
-RETRIEVER VERSIONS
+#### RETRIEVER VERSIONS
 A custom individual retriever can be edited and saved, which creates another version. However, only one version can be active.
-ENSEMBLE RETRIEVERAn ensemble retriever is a collection of individual retrievers. Running it executes the individual retrievers, combines their results into a single list, reranks the list according to relevance to the search request, and returns just the most relevant information to the prompt or agent.
+#### ENSEMBLE RETRIEVER
+An ensemble retriever is a collection of individual retrievers. Running it executes the individual retrievers, combines their results into a single list, reranks the list according to relevance to the search request, and returns just the most relevant information to the prompt or agent.
+#### CITATIONS
+Citations can be enabled at the individual retriever level in AI Models. They link AI-generated responses to the source content relevant to each response and allow users to compare the LLM response with the source data to verify the validity of the response and identify any potential inaccuracies or hallucinations.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjczODY3NDIsODI3Mjk2MjMxLC0yMD
-E2MzcxOTEzLC0xNDY4NDczNTU5LDEwNzgxMDQ5OSwxODMxMzUy
-NjYsLTE0Njc5NTc4NjMsLTIwMjA3MjU5NzYsLTQxMTk3MDI2NC
-w4NTg3NDc5OTQsLTE2MjE4NDg3XX0=
+eyJoaXN0b3J5IjpbMTQwNzEzODE2NCw4MjcyOTYyMzEsLTIwMT
+YzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEwNDk5LDE4MzEzNTI2
+NiwtMTQ2Nzk1Nzg2MywtMjAyMDcyNTk3NiwtNDExOTcwMjY0LD
+g1ODc0Nzk5NCwtMTYyMTg0ODddfQ==
 -->
