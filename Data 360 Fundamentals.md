@@ -33,19 +33,28 @@ A retriever connects an agent or prompt template to indexed content that can be 
 When a user asks a question, the AI agent uses the Answer Questions with Knowledge standard agent action to answer the query based on data in the corresponding Agentforce Data Library.
 #### REQUIREMENTS
 Using Agentforce Data Libraries require Data 360 setup, appropriate permissions, and available Data 360 credits for processing, indexing, and runtime retrieval. 
-AUTOMATED CONFIGURATION
+#### AUTOMATED CONFIGURATION
 Creating a data library automates several configuration steps, such as processing the selected source in Data 360, creating a search index and retriever, and linking the agent to that data.
-DATA SOURCE
+#### DATA SOURCE
 A data library can use Knowledge articles, uploaded files, web search, or a custom retriever as its data source. A data library can’t support multiple data sources at the same time, and the selected source type can’t be changed later.
-KNOWLEDGE FIELDS
+#### KNOWLEDGE FIELDS
 A data library can be configured to use the Knowledge base as its data source by editing the Knowledge source settings for the data library and selecting the Knowledge fields for the library to index. Identifying fieldshelp agents locate the correct Knowledge articles. Content fields help agents enrich responses with relevant details.
-KNOWLEDGE ARTICLES
+#### KNOWLEDGE ARTICLES
 Under Knowledge Settings, the Knowledge articles that should be included in the data library can be specified. Indexed articles can be restricted to use only publicly available articles in the Knowledge base. They can also be filtered by specific data categories.
+#### FILES
+A data library can use specific files as its data source by selecting the File Upload tab and uploading the files. Up to 4 MB of text or HTML files and 100 MB of PDF files can be uploaded, and adding files rebuilds the library’s search index.
+#### ASSIGNMENT
+Data libraries can be assigned to AI features, including Agentforce Agents, Agentforce Service Agent, and Einstein Service Replies. Each feature can use only one data library at a time. 
+#### AGENTFORCE BUILDER
+In Agentforce Builder, the data library that the agent uses to generate responses can be configured from the Data tab. An existing library can be selected, or a new library can be created. The selected library’s source settings determine what content is indexed and available for retrieval.
+#### KNOWLEDGE RECORDS & FIELDS
+Agent responses can be based on all Knowledge articles and fields by selecting All Knowledge records and fields.
+
 
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NjczMjI2OCwtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbODU4NzQ3OTk0LC0xNjIxODQ4N119
 -->
