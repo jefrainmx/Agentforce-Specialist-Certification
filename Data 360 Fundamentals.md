@@ -29,12 +29,23 @@ Data that is split into chunks is organized and categorized, which is called ind
 When a search is performed by an agent, the user’s question is compared with indexed chunks. Chunks with high relevance or similarity are returned and added to the prompt because they point to relevant articles or sources. 
 #### RETRIEVERS
 A retriever connects an agent or prompt template to indexed content that can be searched for grounding. The retriever assigned to a data library determines which Data 360 data sources are available for AI responses.
-#### AGENT ACTIONWhen a user asks a question, the AI agent uses the Answer Questions with Knowledge standard agent action to answer the query based on data in the corresponding Agentforce Data Library.❖REQUIREMENTSUsing Agentforce Data Libraries require Data 360 setup, appropriate permissions, and available Data 360 credits for processing, indexing, and runtime retrieval. 
+#### AGENT ACTION
+When a user asks a question, the AI agent uses the Answer Questions with Knowledge standard agent action to answer the query based on data in the corresponding Agentforce Data Library.
+#### REQUIREMENTS
+Using Agentforce Data Libraries require Data 360 setup, appropriate permissions, and available Data 360 credits for processing, indexing, and runtime retrieval. 
+AUTOMATED CONFIGURATION
+Creating a data library automates several configuration steps, such as processing the selected source in Data 360, creating a search index and retriever, and linking the agent to that data.
+DATA SOURCE
+A data library can use Knowledge articles, uploaded files, web search, or a custom retriever as its data source. A data library can’t support multiple data sources at the same time, and the selected source type can’t be changed later.
+KNOWLEDGE FIELDS
+A data library can be configured to use the Knowledge base as its data source by editing the Knowledge source settings for the data library and selecting the Knowledge fields for the library to index. Identifying fieldshelp agents locate the correct Knowledge articles. Content fields help agents enrich responses with relevant details.
+KNOWLEDGE ARTICLES
+Under Knowledge Settings, the Knowledge articles that should be included in the data library can be specified. Indexed articles can be restricted to use only publicly available articles in the Knowledge base. They can also be filtered by specific data categories.
 
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDI0NzQ2NywtMTYyMTg0ODddfQ==
+eyJoaXN0b3J5IjpbMTM5NjczMjI2OCwtMTYyMTg0ODddfQ==
 -->
