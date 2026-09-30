@@ -44,7 +44,8 @@ The Agentforce Specialist at Cosmic Computers is preparing a CSV file with test 
 While a large number of utterances can be tested using the Agentforce Testing Center, it is important to note that the topic and action API names should be used for the expected values in the CSV file that contains test cases. These API names can be found in the Agent Builder.
 
 ## References:
-
+[Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&type=5)
+[Agentforce Testing Center](https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-testing)
 
 # Explain how Testing Center evaluations work.
 
@@ -65,6 +66,6 @@ While a large number of utterances can be tested using the Agentforce Testing Ce
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2MDgxNzYwLC01NjU2NDc3ODksLTEyNj
+eyJoaXN0b3J5IjpbLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNj
 I4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
