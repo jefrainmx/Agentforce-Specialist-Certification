@@ -196,7 +196,8 @@ Change sets can be utilized for deploying an agent from sandbox to production. T
 2. Add all the relevant metadata components.
 3. Upload the outbound change set to the production org.
 4. Validate and deploy the inbound change set in the production org.
-
+### METADATA COMPONENTS
+All the metadata components related to the agent, such as the agent planner (GenAiPlanner), associated topics (GenAiPlugin), agent actions (GenAiFunction), prompt templates (GenAiPromptTemplate), flows, and Apex classes, must be identified and added to the deployment.
 
 
 
@@ -205,7 +206,7 @@ Change sets can be utilized for deploying an agent from sandbox to production. T
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgwMDY1MDE1LC0xMjk4MjMxMDA4LDE2Nj
+eyJoaXN0b3J5IjpbMTkwMDY0MDM2LC0xMjk4MjMxMDA4LDE2Nj
 kwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2
 NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMT
 IwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3
