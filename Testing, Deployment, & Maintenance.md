@@ -126,7 +126,20 @@ Subagent Evaluation Pass % shows how often the agent selected the expected subag
 #### ACTION & RESPONSE EVALUATION
 Action Evaluation Pass % and Response Evaluation Pass % show how often actions and responses matched expectations.
 
-##
+### Response Evaluation
+Response evaluation checks whether the agent’s actual answer matches the expected response intent defined in the test case. 
+#### EXPECTED RESPONSE
+The expected response should describe the required outcome or content, not every possible wording variation.
+#### RESPONSE FAILURE
+A response can fail when the agent omits required information, asks for confirmation unexpectedly, or returns content that does not match the expected result. 
+
+### Troubleshooting Failed Evaluations
+Failed evaluations should be investigated by reviewing both the test criteria and the agent’s actual behavior.
+#### RETESTING
+Failed utterances can be retested in Agentforce Builder Conversation Preview to inspect the selected subagent, launched actions, and generated response.
+#### FIXING THE ISSUE
+The utterance, expected criteria, instructions, actions, filters, or guardrails can be updated, and then the test suite can be rerun. 
+
 
 ## Evaluation Considerations
 
@@ -146,8 +159,8 @@ Action Evaluation Pass % and Response Evaluation Pass % show how often actions a
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU3NjI4NjE5LC0yOTI1OTkyNjcsMjA2MT
-gyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5
-OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMT
-Y3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbLTUxNjUxMzcwNSwtMjkyNTk5MjY3LDIwNj
+E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
+OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
+E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
 -->
