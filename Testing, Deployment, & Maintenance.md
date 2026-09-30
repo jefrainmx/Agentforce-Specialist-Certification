@@ -121,8 +121,12 @@ Testing Center records actual outputs, including selected subagent, executed act
 
 ### Evaluation Summary Metrics
 Testing Center summarizes evaluation quality with pass percentages across the major parts of the agent’s behavior. 
+#### SUBAGENT EVALUATION
+Subagent Evaluation Pass % shows how often the agent selected the expected subagent. 
+#### ACTION & RESPONSE EVALUATION
+Action Evaluation Pass % and Response Evaluation Pass % show how often actions and responses matched expectations.
 
-
+##
 
 ## Evaluation Considerations
 
@@ -142,8 +146,8 @@ Testing Center summarizes evaluation quality with pass percentages across the ma
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDA1MzI5NzMsLTI5MjU5OTI2NywyMD
-YxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3
-Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0Ni
-wxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbNzU3NjI4NjE5LC0yOTI1OTkyNjcsMjA2MT
+gyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5
+OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMT
+Y3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
