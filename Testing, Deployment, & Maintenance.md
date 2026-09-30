@@ -222,14 +222,31 @@ When deploying an agent using an Outbound Change Set, all the associated metadat
 [GenAiPlanner](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_genaiplanner.htm)
 
 # Identify the considerations for deploying a template from sandbox to production.
+## Introduction
+Deploying a prompt template is not only about moving the prompt text. A prompt template can depend on template type settings, Salesforce objects and fields, flows, Apex classes, prompt templates, Data 360 resources, retrievers, model configurations, permissions, and the calling experience that executes it. Some of these assets can be moved through standard release processes, while others must be created or configured directly in the production org. After deployment, the intended template version, model configuration, grounding resources, permissions, and runtime execution path must be validated before users, agents, flows, apps, or APIs rely on the template in production.
+
 ## Deployment Readiness
 
 
+
+
+
+
+## Target Org Preparation
+
+
+
+
+
+
+## Activation and Validation
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDUyMTY5MSwtODE0MzQwMjYwLDE5MD
-A2NDAzNiwtMTI5ODIzMTAwOCwxNjY5MDY4OTkzLDYyNDY5OTUz
-MCwxODA0NzgyNjQ4LC0yOTI1OTkyNjcsMjA2MTgyOTIwLC0xMz
-EyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5OTMsLTk3OTE4
-OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMi
-wtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbNDUxNTQ1ODQ5LC04MTQzNDAyNjAsMTkwMD
+Y0MDM2LC0xMjk4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMw
+LDE4MDQ3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMT
+I1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5
+OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC
+0xNDY5Njg1OTYwXX0=
 -->
