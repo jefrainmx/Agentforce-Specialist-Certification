@@ -243,7 +243,12 @@ The template is tested from the same experience that will execute it in producti
 A deployment should begin by identifying exactly what the template uses and how it will run in production.
 #### TEMPLATE DETAILS
 Templatename, templatetype, activeversion, inputs, target object, target field, and model configuration should be documented before the deployment of the prompt template.
+#### RUNTIME CALLER
+The calling experience should be identified for the prompt template. This can be Prompt Builder, Field Generation, Sales Email, Flow, Apex, Connect API, or an Agentforce action.
 
+### Template Type Considerations
+The prompt template type affects what dependencies exist and how the template can be used after deployment.
+#### TYPE-SPECIFIC DEPENDENCIESField Generation, Record Summary, Sales Email, and Flex templates can have different inputs, grounding resources, output behavior, and execution paths.
 
 
 
@@ -259,10 +264,10 @@ Templatename, templatetype, activeversion, inputs, target object, target field, 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2OTM1NTk1LDIxMjAxODE3MjksLTgxND
-M0MDI2MCwxOTAwNjQwMzYsLTEyOTgyMzEwMDgsMTY2OTA2ODk5
-Myw2MjQ2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNj
-E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
-OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
-E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbMTM0NDM0ODYzOCw5OTY5MzU1OTUsMjEyMD
+E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
+OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
+I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
+MTYwLDEyMDQ4NzI5OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLT
+EyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
