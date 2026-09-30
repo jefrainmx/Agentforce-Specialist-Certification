@@ -54,13 +54,16 @@ Testing Center helps validate Agentforce agents by running repeatable automated 
 ### Testing Center Evaluations
 #### Test Suite
 A test suite is a collection of test cases for a selected agent version.
-Test Case
-A test case contains an utterance plus expected outcomes, such as expected subagent, actions, or response. 
-Test Execution
+#### Actual Results
+Testing Center records the actual subagent, actual actions, and agent response.
+#### Evaluation Results
+Testing Center compares expected and actual outcomes and returns pass/fail results.
+#### Troubleshooting
+Failed tests are reviewed in Testing Center and retested in Agentforce Builder Conversation Preview.
+#### Test Execution
 During testing, the agent processes the utterance and chooses a subagent, actions, and response.
-Actual Results
-Testing Center records the actual subagent, actual actions, and agent response.Evaluation ResultsTesting Center compares expected and actual outcomes and returns pass/fail results.TroubleshootingFailed tests are reviewed in Testing Center and retested in Agentforce Builder Conversation Preview.
-
+#### Test Case
+A test case contains an utterance plus expected outcomes, such as expected subagent, actions, or response. 
 
 ## Testing Center Evaluation Fundamentals
 
@@ -90,7 +93,7 @@ Testing Center records the actual subagent, actual actions, and agent response.E
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyMDM2ODkzLC05NzkxODk5MCwtNTY1Nj
-Q3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5
-NjBdfQ==
+eyJoaXN0b3J5IjpbMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NT
+Y0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1
+OTYwXX0=
 -->
