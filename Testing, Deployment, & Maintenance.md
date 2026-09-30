@@ -282,8 +282,12 @@ Users, automations, agents, or integrations that execute the template need the a
 The runtime context must also have access to the records, fields, flows, Apex, Knowledge, Data 360 assets, and external resources used by the prompt template. 
 
 ## Target Org Preparation
-
-
+### Environment-Specific Setup
+Some dependencies are environment-specific and should be configured directly in production before or after deployment.
+#### ORG CONFIGURATION
+Model provider access, model visibility, external credentials, named credentials, connected apps, Data 360 connections, and data librarie scan differ between sandbox and production.
+#### RESOURCE AVAILABILITY
+Newly created custom objects or fields may not appear immediately in Prompt Builder, so production verification may require refreshing the session or logging out and back in. 
 
 
 
@@ -292,7 +296,7 @@ The runtime context must also have access to the records, fields, flows, Apex, K
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2ODAwODI0MSw5OTY5MzU1OTUsMjEyMD
+eyJoaXN0b3J5IjpbLTI2OTUwMjcxOCw5OTY5MzU1OTUsMjEyMD
 E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
 OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
 I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
