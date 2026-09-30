@@ -222,12 +222,14 @@ When deploying an agent using an Outbound Change Set, all the associated metadat
 [GenAiPlanner](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_genaiplanner.htm)
 
 # Identify the considerations for deploying a template from sandbox to production.
+## Deployment Readiness
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDM0MDI2MCwxOTAwNjQwMzYsLTEyOT
-gyMzEwMDgsMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0
-OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMT
-Q4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3
-Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5Nj
-BdfQ==
+eyJoaXN0b3J5IjpbLTg4NDUyMTY5MSwtODE0MzQwMjYwLDE5MD
+A2NDAzNiwtMTI5ODIzMTAwOCwxNjY5MDY4OTkzLDYyNDY5OTUz
+MCwxODA0NzgyNjQ4LC0yOTI1OTkyNjcsMjA2MTgyOTIwLC0xMz
+EyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5OTMsLTk3OTE4
+OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMi
+wtMTQ2OTY4NTk2MF19
 -->
