@@ -304,14 +304,24 @@ Supported prompt template assets and dependencies should be moved through contro
 Environment-specific or unsupported dependencies should be listed in a deployment checklist so they are not missed in production. 
 
 ## Activation and Validation
+### Activation and Versioning
+Deployment does not automatically guarantee that the intended template version is active and ready for production use.
+#### ACTIVE VERSION
+The intended prompt template version should be activated in production before users, automations, apps, APIs, or agents execute it.
+#### VERSION REVIEW
+Only the reviewed and approved version should be active, and older versions should not remain active unintentionally. 
 
+### Runtime Execution Testing
+Testing should verify both Prompt Builder preview behavior and the real production execution path. 
+#### PROMPT BUILDER PREVIEW
+Preview testing confirms that production records, inputs, merge fields, grounding resources, and model configuration resolve as expected.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMDE3NTE1NCwtNzgzNzQyMzMwLC0yNj
-k1MDI3MTgsOTk2OTM1NTk1LDIxMjAxODE3MjksLTgxNDM0MDI2
-MCwxOTAwNjQwMzYsLTEyOTgyMzEwMDgsMTY2OTA2ODk5Myw2Mj
-Q2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNjE4Mjky
-MCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcyOTkzLC
-05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3
-Nzg5MzJdfQ==
+eyJoaXN0b3J5IjpbNjAxMTEwNDM4LC0yMjAxNzUxNTQsLTc4Mz
+c0MjMzMCwtMjY5NTAyNzE4LDk5NjkzNTU5NSwyMTIwMTgxNzI5
+LC04MTQzNDAyNjAsMTkwMDY0MDM2LC0xMjk4MjMxMDA4LDE2Nj
+kwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2
+NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMT
+IwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3
+OTY0Nl19
 -->
