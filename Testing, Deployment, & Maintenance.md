@@ -94,6 +94,13 @@ Expected Subagent and Expected Actions use API names instead ofdisplay labels.
 #### RESPONSE
 Expected Response describes what the agent’s response should coveror accomplish. 
 
+### Required Test Criteria
+Testing Center test cases must include enough expected criteria for the platform to evaluate the utterance meaningfully.
+#### REQUIRED COLUMNS
+The Utterance column is required, along with at least one additional expected-outcome column.
+#### FAILURES
+Empty expected values are treated as failures, so test criteria should be completed intentionally.
+
 ## Evaluation Execution and Results
 
 
@@ -118,7 +125,7 @@ Expected Response describes what the agent’s response should coveror accomplis
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MDQyMzU3MSwxMjA0ODcyOTkzLC05Nz
-kxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5
-MzIsLTE0Njk2ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOT
+c5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4
+OTMyLC0xNDY5Njg1OTYwXX0=
 -->
