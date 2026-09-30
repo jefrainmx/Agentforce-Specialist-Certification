@@ -1,5 +1,9 @@
 # Given a scenario, test an agent using Testing Center.
+## Agentforce Testing Center
+### Introduction
+The Agentforce Testing Center enables efficient testing of agents by allowing a large number of utterances to be evaluated in a single test. This reduces overall testing time and facilitates the quick activation of agents. Users can access the Testing Center in Agentforce Studio and leverage batch testing to execute multiple test cases simultaneously. The testing process involves creating a test suite, defining test conditions, selecting test data, and selecting scorers. The test results display both successful and failed utterances, which helps fine-tune instructions, subagents, and actions. Running tests consumes Einstein Requests and Data Cloud credits, and should be conducted in a sandbox to prevent unintended CRM data modifications. The Testing Center supports up to 10 tests in a 10-hour timeframe and 1,000 test cases per test.
 
+## Scenarios & Solutions
 
 
 
@@ -24,5 +28,5 @@
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njk2ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
