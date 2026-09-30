@@ -16,7 +16,11 @@ The Testing Center can be accessed by navigating to the Tests section in Agentfo
 ### BATCH TESTING
 The Testing Center allows the use of batch testing to quickly test a large number of utterances in a single test.
 ### TESTING PROCESS
-The testing process consists of the following steps:1) Create a Test Suite with test cases using a template.2) Define Test Conditions.3) Select Test Data.4) Select Scorers.
+The testing process consists of the following steps:
+1) Create a Test Suite with test cases using a template.
+2) Define Test Conditions.
+3) Select Test Data.
+4) Select Scorers.
 
 ## Scenarios & Solutions
 
@@ -43,6 +47,6 @@ The testing process consists of the following steps:1) Create a Test Suite with 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMT
-Q2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbMTkwNjc2MTY5MCwtMTI2Mjg3OTY0NiwxNj
+c2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
 -->
