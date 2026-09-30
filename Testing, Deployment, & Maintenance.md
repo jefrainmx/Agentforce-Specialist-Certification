@@ -224,6 +224,19 @@ When deploying an agent using an Outbound Change Set, all the associated metadat
 # Identify the considerations for deploying a template from sandbox to production.
 ## Introduction
 Deploying a prompt template is not only about moving the prompt text. A prompt template can depend on template type settings, Salesforce objects and fields, flows, Apex classes, prompt templates, Data 360 resources, retrievers, model configurations, permissions, and the calling experience that executes it. Some of these assets can be moved through standard release processes, while others must be created or configured directly in the production org. After deployment, the intended template version, model configuration, grounding resources, permissions, and runtime execution path must be validated before users, agents, flows, apps, or APIs rely on the template in production.
+### Deploying a Prompt Template from Sandbox to Production
+#### Build in Sandbox
+The template is created, grounded, previewed, revised, and tested with representative records or inputs.
+#### Review Dependencies
+Objects, fields, flows, Apex classes, retrievers, model configurations, permissions, and calling experiences are identified.
+#### Prepare Production
+Target-org features, licenses, model access, provider access, external credentials, and data resources are configured.
+#### Deploy Supported Assets
+Supported template metadata and dependencies are moved through the organization’s release process.Activate TemplateThe intended template version is activated after deployment and review. 
+Complete Manual Setup
+Unsupported or environment-specific dependencies are manually recreated or connected in production. 
+Test Runtime Execution
+The template is tested from the same experience that will execute it in production.
 
 ## Deployment Readiness
 
@@ -243,7 +256,7 @@ Deploying a prompt template is not only about moving the prompt text. A prompt t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxNTQ1ODQ5LC04MTQzNDAyNjAsMTkwMD
+eyJoaXN0b3J5IjpbODMyODE5ODg3LC04MTQzNDAyNjAsMTkwMD
 Y0MDM2LC0xMjk4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMw
 LDE4MDQ3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMT
 I1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5
