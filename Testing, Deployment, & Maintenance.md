@@ -326,13 +326,22 @@ Deployment can fail when the target org is missing referenced objects, fields, f
 Runtime execution can fail when the template is inactive, a flow is inactive, a model is unavailable, or the running context lacks access to data or automation.
 
 ### Governance Considerations
-Prompt template deployment should be controlled through release governance because not all prompt-template changes are tracked in Setup Audit Trail. ❖CHANGE TRACKINGTemplate changes should be documented through release notes, source control, or deployment records because creating or updating prompt templates is not tracked in Setup Audit Trail.
+Prompt template deployment should be controlled through release governance because not all prompt-template changes are tracked in Setup Audit Trail.
+#### CHANGE TRACKING
+Template changes should be documented through release notes, source control, or deployment records because creating or updating prompt templates is not tracked in Setup Audit Trail.
+#### PRODUCTION APPROVAL
+The deployment should include evidence of preview testing, runtime testing, model review, grounding review, permission review, and business approval. 
+
+## References:
+[Packaging Considerations for Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_considerations_packaging.htm&type=5)
+[Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&type=5)
+[enter link description here](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_activate_deactivate_templates.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjcxNzIzNDIsLTIyMDE3NTE1NCwtNz
-gzNzQyMzMwLC0yNjk1MDI3MTgsOTk2OTM1NTk1LDIxMjAxODE3
-MjksLTgxNDM0MDI2MCwxOTAwNjQwMzYsLTEyOTgyMzEwMDgsMT
-Y2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5
-MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MC
-wxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYy
-ODc5NjQ2XX0=
+eyJoaXN0b3J5IjpbMTY0MTYxOTc1NCwtMjIwMTc1MTU0LC03OD
+M3NDIzMzAsLTI2OTUwMjcxOCw5OTY5MzU1OTUsMjEyMDE4MTcy
+OSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAwOCwxNj
+Y5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOTI1OTky
+NjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcyMTYwLD
+EyMDQ4NzI5OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNjI4
+Nzk2NDZdfQ==
 -->
