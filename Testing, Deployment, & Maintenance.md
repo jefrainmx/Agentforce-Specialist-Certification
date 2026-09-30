@@ -101,6 +101,9 @@ The Utterance column is required, along with at least one additional expected-ou
 #### FAILURES
 Empty expected values are treated as failures, so test criteria should be completed intentionally.
 
+### Test Suites
+AI agents can be tested by creating test suites using the Testing Center in Agentforce Studio.
+
 ## Evaluation Execution and Results
 
 
@@ -125,7 +128,7 @@ Empty expected values are treated as failures, so test criteria should be comple
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOT
-c5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4
-OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMT
+IwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3
+OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
 -->
