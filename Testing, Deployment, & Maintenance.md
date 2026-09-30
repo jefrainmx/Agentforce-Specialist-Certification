@@ -274,7 +274,12 @@ The production org must have access to the model configuration referenced by the
 #### CUSTOM LLM MATCHING
 When a template uses a custom or BYOLLM configuration, the matching model configuration must exist in production with the expected name.
 
-### Permission and Access DependenciesA template can deploy successfully but still fail if the running user or process lacks access at runtime. ❖TEMPLATE EXECUTION ACCESSUsers, automations, agents, or integrations that execute the template need the appropriate permissions to run prompt templates. 
+### Permission and Access Dependencies
+A template can deploy successfully but still fail if the running user or process lacks access at runtime. 
+#### TEMPLATE EXECUTION ACCESS
+Users, automations, agents, or integrations that execute the template need the appropriate permissions to run prompt templates. 
+#### UNDERLYING RESOURCE ACCESS
+The runtime context must also have access to the records, fields, flows, Apex, Knowledge, Data 360 assets, and external resources used by the prompt template. 
 
 
 ## Target Org Preparation
@@ -288,7 +293,7 @@ When a template uses a custom or BYOLLM configuration, the matching model config
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDk2NTExNiw5OTY5MzU1OTUsMjEyMD
+eyJoaXN0b3J5IjpbMTY1OTY0MDk5Myw5OTY5MzU1OTUsMjEyMD
 E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
 OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
 I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
