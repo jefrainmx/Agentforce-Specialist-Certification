@@ -315,13 +315,24 @@ Only the reviewed and approved version should be active, and older versions shou
 Testing should verify both Prompt Builder preview behavior and the real production execution path. 
 #### PROMPT BUILDER PREVIEW
 Preview testing confirms that production records, inputs, merge fields, grounding resources, and model configuration resolve as expected.
+#### REAL CALLER TEST
+The template should also be tested from the actual caller, which can be a Flow, Apex, Connect API, Agentforce, Field Generation, Sales Email, or Record Summary.
 
+### Common Deployment Issues
+Most deployment or runtime issues come from missing dependencies, inactive assets, model mismatches, or access gaps.
+#### DEPLOYMENT FAILURES
+Deployment can fail when the target org is missing referenced objects, fields, flows, Apex classes, prompt templates, retrievers, or model configurations.
+#### RUNTIME FAILURES
+Runtime execution can fail when the template is inactive, a flow is inactive, a model is unavailable, or the running context lacks access to data or automation.
+
+### Governance Considerations
+Prompt template deployment should be controlled through release governance because not all prompt-template changes are tracked in Setup Audit Trail. ❖CHANGE TRACKINGTemplate changes should be documented through release notes, source control, or deployment records because creating or updating prompt templates is not tracked in Setup Audit Trail.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAxMTEwNDM4LC0yMjAxNzUxNTQsLTc4Mz
-c0MjMzMCwtMjY5NTAyNzE4LDk5NjkzNTU5NSwyMTIwMTgxNzI5
-LC04MTQzNDAyNjAsMTkwMDY0MDM2LC0xMjk4MjMxMDA4LDE2Nj
-kwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2
-NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMT
-IwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3
-OTY0Nl19
+eyJoaXN0b3J5IjpbLTEzMjcxNzIzNDIsLTIyMDE3NTE1NCwtNz
+gzNzQyMzMwLC0yNjk1MDI3MTgsOTk2OTM1NTk1LDIxMjAxODE3
+MjksLTgxNDM0MDI2MCwxOTAwNjQwMzYsLTEyOTgyMzEwMDgsMT
+Y2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5
+MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MC
+wxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYy
+ODc5NjQ2XX0=
 -->
