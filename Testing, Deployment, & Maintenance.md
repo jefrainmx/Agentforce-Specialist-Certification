@@ -248,8 +248,15 @@ The calling experience should be identified for the prompt template. This can be
 
 ### Template Type Considerations
 The prompt template type affects what dependencies exist and how the template can be used after deployment.
-#### TYPE-SPECIFIC DEPENDENCIESField Generation, Record Summary, Sales Email, and Flex templates can have different inputs, grounding resources, output behavior, and execution paths.
+#### TYPE-SPECIFIC DEPENDENCIES
+Field Generation, Record Summary, Sales Email, and Flex templates can have different inputs, grounding resources, output behavior, and execution paths.
+#### FLEX TEMPLATE LIMITS
+Flex template metadata and related references require extra reviewbecause Salesforce documents import/export limitations for Flex templates and related artifacts.
 
+### Grounding Dependencies
+A prompt template must be deployed with or reconnected to the resources that ground the prompt.
+#### SALESFORCE RESOURCES
+Objects, fields, related lists, record snapshots, flows, Apex classes, and prompt-template resources must exist and be accessible in production. 
 
 
 
@@ -264,7 +271,7 @@ The prompt template type affects what dependencies exist and how the template ca
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDM0ODYzOCw5OTY5MzU1OTUsMjEyMD
+eyJoaXN0b3J5IjpbMTM2NjM2MTM3Niw5OTY5MzU1OTUsMjEyMD
 E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
 OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
 I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
