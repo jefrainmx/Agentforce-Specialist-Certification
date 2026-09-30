@@ -251,7 +251,7 @@ The prompt template type affects what dependencies exist and how the template ca
 #### TYPE-SPECIFIC DEPENDENCIES
 Field Generation, Record Summary, Sales Email, and Flex templates can have different inputs, grounding resources, output behavior, and execution paths.
 #### FLEX TEMPLATE LIMITS
-Flex template metadata and related references require extra reviewbecause Salesforce documents import/export limitations for Flex templates and related artifacts.
+Flex template metadata and related references require extra review because Salesforce documents import/export limitations for Flex templates and related artifacts.
 
 ### Grounding Dependencies
 A prompt template must be deployed with or reconnected to the resources that ground the prompt.
@@ -289,17 +289,22 @@ Model provider access, model visibility, external credentials, named credentials
 #### RESOURCE AVAILABILITY
 Newly created custom objects or fields may not appear immediately in Prompt Builder, so production verification may require refreshing the session or logging out and back in. 
 
-
+### Retriever and Search Index Considerations
+Retriever-backed templates require special planning because some retrieval assets are not moved automatically. 
+#### RETRIEVER SETUP
+If a template uses a retriever, the retriever and its search index should be verified or recreated in the production org before runtime testing.
+#### DEPLOYMENT GAPSalesforce notes that change sets and Metadata API deployments don’t include retriever or search index metadata for Einstein Search retrievers, so those assets must be manually created in the target org.
 
 
 ## Activation and Validation
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTUwMjcxOCw5OTY5MzU1OTUsMjEyMD
-E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
-OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
-I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
-MTYwLDEyMDQ4NzI5OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLT
-EyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbMTg3MDY4MTA0MCwtMjY5NTAyNzE4LDk5Nj
+kzNTU5NSwyMTIwMTgxNzI5LC04MTQzNDAyNjAsMTkwMDY0MDM2
+LC0xMjk4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MD
+Q3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5
+MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLT
+U2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5
+Njg1OTYwXX0=
 -->
