@@ -48,6 +48,9 @@ While a large number of utterances can be tested using the Agentforce Testing Ce
 [Agentforce Testing Center](https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-testing)
 
 # Explain how Testing Center evaluations work.
+## Introduction
+Testing Center helps validate Agentforce agents by running repeatable automated tests against many user inputs. A test casestarts with an utterance and includes one or more expected outcomes, such as the expected subagent, expected actions, or expected response. During a test run, the agent processes each utterance, and Testing Center compares the actual subagent, actions, and response against the expected values. Results are summarized as pass/fail evaluations, giving teams a structured way to identify routing issues, missing actions, incorrect expectations, or response-quality gaps before deployment. Testing should be performed in a sandbox because tests can consume requests and credits and may modify CRM data.
+
 ## Testing Center Evaluation Fundamentals
 
 
@@ -76,7 +79,7 @@ While a large number of utterances can be tested using the Agentforce Testing Ce
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDU5MjE0MzEsLTk3OTE4OTkwLC01Nj
-U2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4
-NTk2MF19
+eyJoaXN0b3J5IjpbOTUyNTQ5MDk1LC05NzkxODk5MCwtNTY1Nj
+Q3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5
+NjBdfQ==
 -->
