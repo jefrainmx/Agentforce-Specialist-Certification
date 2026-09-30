@@ -178,8 +178,10 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 
 
 # Identify the considerations for deploying an agent from sandbox to production.
+## Introduction
+Deploying an Agentforce agent from a sandbox to productionenvironment ensures its availability for end-users. This process involves metadata deployment using Change Sets or Metadata API. All the relevant metadata components, such as GenAiPlanner, Einstein Bot, and Bot Version, must be included in the deployment. Additionally, service agents typically require the Embedded Messaging component for deployment to an Experience Cloud site. After deployment, the agent must be activated in the Agent Builder to make it available to users. Finally, stakeholders and end-users must be informed, with proper training and documentation provided.
 
-
+## Agent Deployment
 
 
 
@@ -190,9 +192,9 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwND
-c4MjY0OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0Njky
-NiwtMTQ4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNT
-Y1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2
-ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbODE0NzgxNjI0LDE2NjkwNjg5OTMsNjI0Nj
+k5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAs
+LTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOT
+c5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4
+OTMyLC0xNDY5Njg1OTYwXX0=
 -->
