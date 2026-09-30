@@ -10,9 +10,13 @@ Certain considerations and limitations apply to the use of the Testing Center. F
 The Testing Center can be accessed in Agentforce Studio to quickly test a large number of utterances in a single test for a particular agent. 
 
 ## Agentforce Testing Center
-The Testing Center can be utilized to test a large number of utterances in a single test, which reducesthe testing time and allows the quick activation of agents.
-
-
+The Testing Center can be utilized to test a large number of utterances in a single test, which reduces the testing time and allows the quick activation of agents.
+### ACCESS
+The Testing Center can be accessed by navigating to the Tests section in Agentforce Studio.
+### BATCH TESTING
+The Testing Center allows the use of batch testing to quickly test a large number of utterances in a single test.
+### TESTING PROCESS
+The testing process consists of the following steps:1) Create a Test Suite with test cases using a template.2) Define Test Conditions.3) Select Test Data.4) Select Scorers.
 
 ## Scenarios & Solutions
 
@@ -39,6 +43,6 @@ The Testing Center can be utilized to test a large number of utterances in a sin
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDE3MjQzNjMsMTY3Njc3ODkzMiwtMT
+eyJoaXN0b3J5IjpbLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMT
 Q2OTY4NTk2MF19
 -->
