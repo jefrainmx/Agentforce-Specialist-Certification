@@ -10,6 +10,7 @@ Certain considerations and limitations apply to the use of the Testing Center. F
 The Testing Center can be accessed in Agentforce Studio to quickly test a large number of utterances in a single test for a particular agent. 
 
 ## Agentforce Testing Center
+The Testing Center can be utilized to test a large number of utterances in a single test, which reducesthe testing time and allows the quick activation of agents.
 
 
 
@@ -38,6 +39,6 @@ The Testing Center can be accessed in Agentforce Studio to quickly test a large 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODU2MDc0OTUsMTY3Njc3ODkzMiwtMT
+eyJoaXN0b3J5IjpbLTE3NDE3MjQzNjMsMTY3Njc3ODkzMiwtMT
 Q2OTY4NTk2MF19
 -->
