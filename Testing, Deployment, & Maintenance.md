@@ -233,9 +233,9 @@ Objects, fields, flows, Apex classes, retrievers, model configurations, permissi
 Target-org features, licenses, model access, provider access, external credentials, and data resources are configured.
 #### Deploy Supported Assets
 Supported template metadata and dependencies are moved through the organization’s release process.Activate TemplateThe intended template version is activated after deployment and review. 
-Complete Manual Setup
+#### Complete Manual Setup
 Unsupported or environment-specific dependencies are manually recreated or connected in production. 
-Test Runtime Execution
+#### Test Runtime Execution
 The template is tested from the same experience that will execute it in production.
 
 ## Deployment Readiness
@@ -256,10 +256,10 @@ The template is tested from the same experience that will execute it in producti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMyODE5ODg3LC04MTQzNDAyNjAsMTkwMD
-Y0MDM2LC0xMjk4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMw
-LDE4MDQ3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMT
-I1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5
-OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC
-0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbMjEyMDE4MTcyOSwtODE0MzQwMjYwLDE5MD
+A2NDAzNiwtMTI5ODIzMTAwOCwxNjY5MDY4OTkzLDYyNDY5OTUz
+MCwxODA0NzgyNjQ4LC0yOTI1OTkyNjcsMjA2MTgyOTIwLC0xMz
+EyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5OTMsLTk3OTE4
+OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMi
+wtMTQ2OTY4NTk2MF19
 -->
