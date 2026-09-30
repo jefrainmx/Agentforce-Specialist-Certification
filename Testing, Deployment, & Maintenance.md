@@ -214,14 +214,16 @@ Stakeholders and end-users must be informed about the new agent deployment. Nece
 When deploying an agent using an Outbound Change Set, all the associated metadata componentsmust be added to the change set in the sandbox environment.
 ![Change Set for Agent Deployment](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20152235.png)
 
+## References:
+
 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDEzOTg2NjgsMTkwMDY0MDM2LC0xMj
-k4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2
-NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLT
-E0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0
-Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OT
-YwXX0=
+eyJoaXN0b3J5IjpbMTYzNTQ4NzIzMCwxOTAwNjQwMzYsLTEyOT
+gyMzEwMDgsMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0
+OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMT
+Q4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3
+Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5Nj
+BdfQ==
 -->
