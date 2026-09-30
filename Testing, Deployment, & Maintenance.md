@@ -140,9 +140,18 @@ Failed utterances can be retested in Agentforce Builder Conversation Preview to 
 #### FIXING THE ISSUE
 The utterance, expected criteria, instructions, actions, filters, or guardrails can be updated, and then the test suite can be rerun. 
 
+### Running Tests
+A test can be run for the selected agent after generating test cases.
+*Running Test*
+
+
+### Responses & Evaluations
+After running a test, agent responses and evaluations can be checked.
+*Responses & Evaluations*
+
 
 ## Evaluation Considerations
-
+### Test Coverage and QualityStrong evaluation depends on a test set that covers the full range of expected and unexpected user behavior.❖GOOD TEST DATASETA good test dataset includes enough volume and diversity to cover common requests, edge cases, invalid inputs, and negative tests. 
 
 
 
@@ -159,7 +168,7 @@ The utterance, expected criteria, instructions, actions, filters, or guardrails 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxNjUxMzcwNSwtMjkyNTk5MjY3LDIwNj
+eyJoaXN0b3J5IjpbMTkzODcyNjM0MiwtMjkyNTk5MjY3LDIwNj
 E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
 OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
 E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
