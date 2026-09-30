@@ -105,6 +105,10 @@ Empty expected values are treated as failures, so test criteria should be comple
 AI agents can be tested by creating test suites using the Testing Center in Agentforce Studio.
 ![TS1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20141959.png)
 ![TS2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142022.png)
+![TS3](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142043.png)
+![TS4](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142103.png)
+![TS5](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142124.png)
+
 
 
 ## Evaluation Execution and Results
@@ -131,7 +135,7 @@ AI agents can be tested by creating test suites using the Testing Center in Agen
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5ODQ4MjE1NywyMDYxODI5MjAsLTEzMT
+eyJoaXN0b3J5IjpbLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMT
 I1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5
 OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC
 0xNDY5Njg1OTYwXX0=
