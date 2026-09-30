@@ -173,6 +173,8 @@ Up to 10 test jobs can run at once in a 10-hour time frame.
 A test can include up to 1,000 test cases, so large suites may need to be organized by feature, agent version, or release cycle. 
 
 ## References:
+[Agentforce Testing Center](https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-testing)
+[Test Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_test.htm&type=5)
 
 
 # Identify the considerations for deploying an agent from sandbox to production.
@@ -188,8 +190,8 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNj
-E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
-OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
-E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5Mj
+U5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIx
+NjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMT
+I2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
 -->
