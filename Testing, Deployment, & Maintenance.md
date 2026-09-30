@@ -10,6 +10,19 @@
 
 
 
+
+# Identify the considerations for deploying an agent from sandbox to production.
+
+
+
+
+
+
+
+
+
+# Identify the considerations for deploying a template from sandbox to production.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTMxNjAwOV19
+eyJoaXN0b3J5IjpbLTE0Njk2ODU5NjBdfQ==
 -->
