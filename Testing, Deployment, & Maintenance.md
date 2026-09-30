@@ -239,7 +239,10 @@ Unsupported or environment-specific dependencies are manually recreated or conne
 The template is tested from the same experience that will execute it in production.
 
 ## Deployment Readiness
-
+### Template Inventory
+A deployment should begin by identifying exactly what the template uses and how it will run in production.
+#### TEMPLATE DETAILS
+Templatename, templatetype, activeversion, inputs, target object, target field, and model configuration should be documented before the deployment of the prompt template.
 
 
 
@@ -256,10 +259,10 @@ The template is tested from the same experience that will execute it in producti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDE4MTcyOSwtODE0MzQwMjYwLDE5MD
-A2NDAzNiwtMTI5ODIzMTAwOCwxNjY5MDY4OTkzLDYyNDY5OTUz
-MCwxODA0NzgyNjQ4LC0yOTI1OTkyNjcsMjA2MTgyOTIwLC0xMz
-EyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5OTMsLTk3OTE4
-OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMi
-wtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbOTk2OTM1NTk1LDIxMjAxODE3MjksLTgxND
+M0MDI2MCwxOTAwNjQwMzYsLTEyOTgyMzEwMDgsMTY2OTA2ODk5
+Myw2MjQ2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNj
+E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
+OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
+E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
 -->
