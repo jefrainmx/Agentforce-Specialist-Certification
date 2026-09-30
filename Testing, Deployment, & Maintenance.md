@@ -25,10 +25,15 @@ The testing process consists of the following steps:
 Multiple subagents and actions can be tested at the same time. The subagent and action API names should be used for the expected values in the CSV file; they can be found in the Agentforce Builder.
 ### TEST RESULTS
 The test results show which test casespassed and failed. A failed utterance can be retested in the Preview panel of Agentforce Builder to identify what caused the failure. The detailed data can be used to fine-tune the instructions, actions, or topics.
-### EDITIONS & ADDONSThe Testing Center is available in Enterprise, Performance, Unlimited, and Developer Editions. The add-on licenses required for the Testing Center vary by agent type.
-
+### EDITIONS & ADDONS
+The Testing Center is available in Enterprise, Performance, Unlimited, and Developer Editions. The add-on licenses required for the Testing Center vary by agent type.
+### LIMITATIONS
+Up to 10 tests can be run at once in a 10-hour timeframe, and each test can have up to 1000 test cases.
+### CONSIDERATIONS
+Running tests consumes Einstein Requests and possibly Data Cloud credits. Tests should only be run in a  sandbox environment since testing agents can modify CRM data.
 
 ## Scenarios & Solutions
+### Scenario 1
 
 
 
@@ -53,6 +58,6 @@ The test results show which test casespassed and failed. A failed utterance can 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTMwOTIzNTAsLTEyNjI4Nzk2NDYsMT
+eyJoaXN0b3J5IjpbLTE0MzI4NzMwMTksLTEyNjI4Nzk2NDYsMT
 Y3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
