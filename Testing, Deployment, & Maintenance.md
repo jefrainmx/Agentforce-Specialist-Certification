@@ -218,15 +218,16 @@ When deploying an agent using an Outbound Change Set, all the associated metadat
 [How to deploy Agentforce AI Planner metadata](https://docs.gearset.com/en/articles/10406930-how-to-deploy-agentforce-ai-planner-metadata)
 [Deploy change sets from sandbox to production](https://help.salesforce.com/s/articleView?id=000382677&type=1&utm_source=chatgpt.com)
 [Activate or Deactivate Your Agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&type=5)
-
+[Distribute a Service Agent](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/3-distribute-service-agent)
+[GenAiPlanner](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_genaiplanner.htm)
 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk3NTE1ODE1LDE5MDA2NDAzNiwtMTI5OD
-IzMTAwOCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4
-LC0yOTI1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xND
-gzMTcyMTYwLDEyMDQ4NzI5OTMsLTk3OTE4OTkwLC01NjU2NDc3
-ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF
-19
+eyJoaXN0b3J5IjpbLTgxNDM0MDI2MCwxOTAwNjQwMzYsLTEyOT
+gyMzEwMDgsMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0
+OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMT
+Q4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3
+Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5Nj
+BdfQ==
 -->
