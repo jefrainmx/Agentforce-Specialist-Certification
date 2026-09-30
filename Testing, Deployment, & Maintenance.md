@@ -142,12 +142,12 @@ The utterance, expected criteria, instructions, actions, filters, or guardrails 
 
 ### Running Tests
 A test can be run for the selected agent after generating test cases.
-*Running Test*
+![*Running Test*](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20144832.png)
 
 
 ### Responses & Evaluations
 After running a test, agent responses and evaluations can be checked.
-*Responses & Evaluations*
+![*Responses & Evaluations*](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20144857.png)
 
 
 ## Evaluation Considerations
@@ -190,8 +190,9 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5Mj
-U5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIx
-NjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMT
-I2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwND
+c4MjY0OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0Njky
+NiwtMTQ4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNT
+Y1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2
+ODU5NjBdfQ==
 -->
