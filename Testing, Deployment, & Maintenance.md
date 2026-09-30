@@ -207,7 +207,7 @@ Metadata API can also be used to retrieve agent metadata from a sandbox using a 
 An embedded service deployment must be created to deploy a service agent to an Experience Cloud site. The Embedded Messaging component must be added to the site in production, and the site must be published.
 #### ACTIVATION
 After deploying all the metadata components and confirming that the agent is working as expected in the production org, it must be activated in the Agent Builder to make it available to users.
-### COMMUNICATION
+#### COMMUNICATION
 Stakeholders and end-users must be informed about the new agent deployment. Necessary training or documentation must be provided.
 
 ### Change Set for Agent Deployment
@@ -217,10 +217,10 @@ When deploying an agent using an Outbound Change Set, all the associated metadat
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjUxNTM1NjAsMTkwMDY0MDM2LC0xMj
-k4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2
-NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLT
-E0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0
-Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OT
-YwXX0=
+eyJoaXN0b3J5IjpbMzc3MzkwMzk3LDE5MDA2NDAzNiwtMTI5OD
+IzMTAwOCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4
+LC0yOTI1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xND
+gzMTcyMTYwLDEyMDQ4NzI5OTMsLTk3OTE4OTkwLC01NjU2NDc3
+ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF
+19
 -->
