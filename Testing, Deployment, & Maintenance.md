@@ -200,17 +200,23 @@ Change sets can be utilized for deploying an agent from sandbox to production. T
 All the metadata components related to the agent, such as the agent planner (GenAiPlanner), associated topics (GenAiPlugin), agent actions (GenAiFunction), prompt templates (GenAiPromptTemplate), flows, and Apex classes, must be identified and added to the deployment.
 ### BOT METADATA
 When deploying a new agent, the associated Einstein Bot and Bot Versionmust be deployed along with the GenAiPlanner.
-### 
-
+### METADATA API
+Metadata API can also be used to retrieve agent metadata from a sandbox using a tool such as Salesforce CLI. The retrieved metadata can be deployed to the production org.
+### SERVICE AGENT DEPLOYMENT
+An embedded service deployment must be created to deploy a service agent to an Experience Cloud site. The Embedded Messaging component must be added to the site in production, and the site must be published.
+### ACTIVATION
+After deploying all the metadata components and confirming that the agent is working as expected in the production org, it must be activated in the Agent Builder to make it available to users.
+### COMMUNICATION
+Stakeholders and end-users must be informed about the new agent deployment. Necessary training or documentation must be provided.
 
 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDIxMjQ4MjYsMTkwMDY0MDM2LC0xMj
-k4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2
-NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLT
-E0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0
-Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OT
-YwXX0=
+eyJoaXN0b3J5IjpbMTIxNTczNjc1NCwxOTAwNjQwMzYsLTEyOT
+gyMzEwMDgsMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0
+OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMT
+Q4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3
+Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5Nj
+BdfQ==
 -->
