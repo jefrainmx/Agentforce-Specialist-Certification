@@ -49,7 +49,7 @@ While a large number of utterances can be tested using the Agentforce Testing Ce
 
 # Explain how Testing Center evaluations work.
 ## Introduction
-Testing Center helps validate Agentforce agents by running repeatable automated tests against many user inputs. A test casestarts with an utterance and includes one or more expected outcomes, such as the expected subagent, expected actions, or expected response. During a test run, the agent processes each utterance, and Testing Center compares the actual subagent, actions, and response against the expected values. Results are summarized as pass/fail evaluations, giving teams a structured way to identify routing issues, missing actions, incorrect expectations, or response-quality gaps before deployment. Testing should be performed in a sandbox because tests can consume requests and credits and may modify CRM data.
+Testing Center helps validate Agentforce agents by running repeatable automated tests against many user inputs. A test case starts with an utterance and includes one or more expected outcomes, such as the expected subagent, expected actions, or expected response. During a test run, the agent processes each utterance, and Testing Center compares the actual subagent, actions, and response against the expected values. Results are summarized as pass/fail evaluations, giving teams a structured way to identify routing issues, missing actions, incorrect expectations, or response-quality gaps before deployment. Testing should be performed in a sandbox because tests can consume requests and credits and may modify CRM data.
 
 ### Testing Center Evaluations
 #### Test Suite
@@ -165,6 +165,13 @@ Running tests consumes requests and credits, even in sandbox environments.
 #### DATA
 Tests should be run in a sandbox because agent testing can modify CRM data.
 
+### Limits and Parallel Runs
+Testing Center supports scalable testing, but evaluation planning should account for platform limits. 
+#### TEST JOBS
+Up to 10 test jobs can run at once in a 10-hour time frame.
+#### TEST CASES
+A test can include up to 1,000 test cases, so large suites may need to be organized by feature, agent version, or release cycle. 
+
 
 
 # Identify the considerations for deploying an agent from sandbox to production.
@@ -180,8 +187,8 @@ Tests should be run in a sandbox because agent testing can modify CRM data.
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTQ5NjQxNSwtMjkyNTk5MjY3LDIwNj
-E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
-OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
-E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbOTI3NTE3MjY4LC0yOTI1OTkyNjcsMjA2MT
+gyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5
+OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMT
+Y3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
