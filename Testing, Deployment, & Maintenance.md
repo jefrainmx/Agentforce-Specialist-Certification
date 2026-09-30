@@ -335,13 +335,16 @@ The deployment should include evidence of preview testing, runtime testing, mode
 ## References:
 [Packaging Considerations for Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_considerations_packaging.htm&type=5)
 [Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&type=5)
-[enter link description here](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_activate_deactivate_templates.htm&type=5)
+[Activate and Deactivate Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_activate_deactivate_templates.htm&type=5)
+[Prompt Template Run-time Execution](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_runtime.htm&type=5)
+[Integrate Prompt Templates with Salesforce Features](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_integrate.htm&type=5)
+[Change LLM Configurations in Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_changing_llm_configurations.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTYxOTc1NCwtMjIwMTc1MTU0LC03OD
-M3NDIzMzAsLTI2OTUwMjcxOCw5OTY5MzU1OTUsMjEyMDE4MTcy
-OSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAwOCwxNj
-Y5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOTI1OTky
-NjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcyMTYwLD
-EyMDQ4NzI5OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNjI4
-Nzk2NDZdfQ==
+eyJoaXN0b3J5IjpbLTE0NjAzNjY2MTAsLTIyMDE3NTE1NCwtNz
+gzNzQyMzMwLC0yNjk1MDI3MTgsOTk2OTM1NTk1LDIxMjAxODE3
+MjksLTgxNDM0MDI2MCwxOTAwNjQwMzYsLTEyOTgyMzEwMDgsMT
+Y2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5
+MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MC
+wxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYy
+ODc5NjQ2XX0=
 -->
