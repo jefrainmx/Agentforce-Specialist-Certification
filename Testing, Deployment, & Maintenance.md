@@ -151,7 +151,19 @@ After running a test, agent responses and evaluations can be checked.
 
 
 ## Evaluation Considerations
-### Test Coverage and QualityStrong evaluation depends on a test set that covers the full range of expected and unexpected user behavior.❖GOOD TEST DATASETA good test dataset includes enough volume and diversity to cover common requests, edge cases, invalid inputs, and negative tests. 
+### Test Coverage and Quality
+Strong evaluation depends on a test set that covers the full range of expected and unexpected user behavior.
+#### GOOD TEST DATASET
+A good test dataset includes enough volume and diversity to cover common requests, edge cases, invalid inputs, and negative tests. 
+#### USING AI
+AI-generated test cases can help create many synthetic interactionsbased on the agent’s subagents and actions. 
+
+### Sandbox, Data, and Credits
+Testing Center evaluations should be run in a safe environment because they can consume usage and affect data.
+#### CONSUMPTION
+Running tests consumes requests and credits, even in sandbox environments.
+#### DATA
+Tests should be run in a sandbox because agent testing can modify CRM data.
 
 
 
@@ -168,7 +180,7 @@ After running a test, agent responses and evaluations can be checked.
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzODcyNjM0MiwtMjkyNTk5MjY3LDIwNj
+eyJoaXN0b3J5IjpbLTEyOTQ5NjQxNSwtMjkyNTk5MjY3LDIwNj
 E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
 OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
 E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
