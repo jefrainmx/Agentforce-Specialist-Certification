@@ -82,7 +82,17 @@ Automated testing in Testing Center runs many utterances in parallel and provide
 
 ### Test Case Structure
 Each test case defines what the agent receives and what Testing Center should check after the agent responds.
+#### TEST CASE
+A test case includes an utterance, which is the user input or question the agent must handle. 
+#### EXPECTED OUTCOMES
+A test case can include expected outcomes, such as Expected Subagent, Expected Actions, and Expected Response.
 
+### Expected Outcomes
+Expected outcomes tell Testing Center which parts of the agent’s behavior should be evaluated for each utterance.
+#### API NAMES
+Expected Subagent and Expected Actions use API names instead ofdisplay labels. 
+#### RESPONSE
+Expected Response describes what the agent’s response should coveror accomplish. 
 
 ## Evaluation Execution and Results
 
@@ -108,7 +118,7 @@ Each test case defines what the agent receives and what Testing Center should ch
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0MTc2NDU2LDEyMDQ4NzI5OTMsLTk3OT
-E4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkz
-MiwtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbLTM3MDQyMzU3MSwxMjA0ODcyOTkzLC05Nz
+kxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5
+MzIsLTE0Njk2ODU5NjBdfQ==
 -->
