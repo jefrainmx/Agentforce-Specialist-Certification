@@ -180,6 +180,13 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 # Identify the considerations for deploying an agent from sandbox to production.
 ## Introduction
 Deploying an Agentforce agent from a sandbox to productionenvironment ensures its availability for end-users. This process involves metadata deployment using Change Sets or Metadata API. All the relevant metadata components, such as GenAiPlanner, Einstein Bot, and Bot Version, must be included in the deployment. Additionally, service agents typically require the Embedded Messaging component for deployment to an Experience Cloud site. After deployment, the agent must be activated in the Agent Builder to make it available to users. Finally, stakeholders and end-users must be informed, with proper training and documentation provided.
+### Agent Deployment
+#### Metadata Deployment
+All the metadata components related to the agent, such as GenAiPlanner, Einstein Bot, and Bot Version, must be included in the deployment. An embedded service deployment is required for a service agent.
+#### Activation
+After deploying all the metadata components for an agent to the target production org, the agent must be activated in the Agent Builder to make it available to users.
+#### Change Sets
+Change Sets can be utilized to deploy an agent. An outbound change set can be created in a sandbox. An inbound change set can be validated and deployed in production.
 
 ## Agent Deployment
 
@@ -192,9 +199,9 @@ Deploying an Agentforce agent from a sandbox to productionenvironment ensures it
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE0NzgxNjI0LDE2NjkwNjg5OTMsNjI0Nj
-k5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAs
-LTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOT
-c5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4
-OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbLTEyOTgyMzEwMDgsMTY2OTA2ODk5Myw2Mj
+Q2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNjE4Mjky
+MCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcyOTkzLC
+05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3
+Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
 -->
