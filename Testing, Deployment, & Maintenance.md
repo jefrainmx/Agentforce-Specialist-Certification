@@ -112,8 +112,15 @@ AI agents can be tested by creating test suites using the Testing Center in Agen
 
 
 ## Evaluation Execution and Results
+### Running Evaluations
+A Testing Center evaluation runs test cases against one selected agent and records what the agent actually selected and returned. 
+#### TEST SUITE
+Each test suite runs against one agent version, and the agent processes each utterance as it would during a conversation.
+#### ACTUAL OUTPUTS
+Testing Center records actual outputs, including selected subagent, executed actions, and generated agent response.
 
-
+### Evaluation Summary Metrics
+Testing Center summarizes evaluation quality with pass percentages across the major parts of the agent’s behavior. 
 
 
 
@@ -135,8 +142,8 @@ AI agents can be tested by creating test suites using the Testing Center in Agen
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMT
-I1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5
-OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC
-0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbLTEwMDA1MzI5NzMsLTI5MjU5OTI2NywyMD
+YxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMTIwNDg3
+Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0Ni
+wxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
 -->
