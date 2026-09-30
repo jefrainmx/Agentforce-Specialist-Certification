@@ -264,7 +264,17 @@ Data 360 resources, Agentforce Data Libraries, search indexes, retrievers, and K
 Templates that use Flow or Apex require both deployment and runtime access validation. 
 #### FLOW ACCESS
 Referenced flows must exist in production, be activated when required, and be executable by the user or process that runs the template. 
-#### APEX ACCESSApex classes must be deployed with required test coverage and granted to the correct users, profiles, permission sets, or runtime context.
+#### APEX ACCESS
+Apex classes must be deployed with required test coverage and granted to the correct users, profiles, permission sets, or runtime context.
+
+### Model Configuration Dependencies
+The selected model configuration must exist and be allowed in the production org. 
+#### MODEL AVAILABILITY
+The production org must have access to the model configuration referenced by the template. 
+#### CUSTOM LLM MATCHING
+When a template uses a custom or BYOLLM configuration, the matching model configuration must exist in production with the expected name.
+
+### Permission and Access DependenciesA template can deploy successfully but still fail if the running user or process lacks access at runtime. ❖TEMPLATE EXECUTION ACCESSUsers, automations, agents, or integrations that execute the template need the appropriate permissions to run prompt templates. 
 
 
 ## Target Org Preparation
@@ -278,7 +288,7 @@ Referenced flows must exist in production, be activated when required, and be ex
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTY3OTAwNCw5OTY5MzU1OTUsMjEyMD
+eyJoaXN0b3J5IjpbMTE0NDk2NTExNiw5OTY5MzU1OTUsMjEyMD
 E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
 OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
 I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
