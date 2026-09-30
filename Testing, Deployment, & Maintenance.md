@@ -281,7 +281,6 @@ Users, automations, agents, or integrations that execute the template need the a
 #### UNDERLYING RESOURCE ACCESS
 The runtime context must also have access to the records, fields, flows, Apex, Knowledge, Data 360 assets, and external resources used by the prompt template. 
 
-
 ## Target Org Preparation
 
 
@@ -293,7 +292,7 @@ The runtime context must also have access to the records, fields, flows, Apex, K
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTY0MDk5Myw5OTY5MzU1OTUsMjEyMD
+eyJoaXN0b3J5IjpbLTM2ODAwODI0MSw5OTY5MzU1OTUsMjEyMD
 E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
 OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
 I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
