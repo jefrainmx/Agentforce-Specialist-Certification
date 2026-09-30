@@ -198,17 +198,19 @@ Change sets can be utilized for deploying an agent from sandbox to production. T
 4. Validate and deploy the inbound change set in the production org.
 ### METADATA COMPONENTS
 All the metadata components related to the agent, such as the agent planner (GenAiPlanner), associated topics (GenAiPlugin), agent actions (GenAiFunction), prompt templates (GenAiPromptTemplate), flows, and Apex classes, must be identified and added to the deployment.
-
-
+### BOT METADATA
+When deploying a new agent, the associated Einstein Bot and Bot Versionmust be deployed along with the GenAiPlanner.
+### 
 
 
 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDY0MDM2LC0xMjk4MjMxMDA4LDE2Nj
-kwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2
-NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMT
-IwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3
-OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbLTE5NDIxMjQ4MjYsMTkwMDY0MDM2LC0xMj
+k4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2
+NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLT
+E0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0
+Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OT
+YwXX0=
 -->
