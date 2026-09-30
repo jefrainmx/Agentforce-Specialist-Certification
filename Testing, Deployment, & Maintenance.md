@@ -90,7 +90,7 @@ A test case can include expected outcomes, such as Expected Subagent, Expected A
 ### Expected Outcomes
 Expected outcomes tell Testing Center which parts of the agent’s behavior should be evaluated for each utterance.
 #### API NAMES
-Expected Subagent and Expected Actions use API names instead ofdisplay labels. 
+Expected Subagent and Expected Actions use API names instead of display labels. 
 #### RESPONSE
 Expected Response describes what the agent’s response should coveror accomplish. 
 
@@ -172,6 +172,7 @@ Up to 10 test jobs can run at once in a 10-hour time frame.
 #### TEST CASES
 A test can include up to 1,000 test cases, so large suites may need to be organized by feature, agent version, or release cycle. 
 
+## References:
 
 
 # Identify the considerations for deploying an agent from sandbox to production.
@@ -187,8 +188,8 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3NTE3MjY4LC0yOTI1OTkyNjcsMjA2MT
-gyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcyMTYwLDEyMDQ4NzI5
-OTMsLTk3OTE4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMT
-Y3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNj
+E4MjkyMCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcy
+OTkzLC05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LD
+E2NzY3Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
 -->
