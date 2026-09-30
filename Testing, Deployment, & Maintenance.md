@@ -34,7 +34,9 @@ Running tests consumes Einstein Requests and possibly Data Cloud credits. Tests 
 
 ## Scenarios & Solutions
 ### Scenario 1
+Cosmic Electronics is considering using the Agentforce Testing Center to test the behavior of certain AI agents in Salesforce. The company’s Agentforce Specialist needs to identify any considerations related to its usage for running tests.
 ### Solution 1
+With regard to using the Agentforce Testing Center, it is important to consider that running tests consumes Einstein Requests and possibly Data Cloud credits. Tests should only be run in a  sandbox environment since testing agents can modify CRM data.
 
 ### Scenario 2
 ### Solution 2
@@ -60,6 +62,6 @@ Running tests consumes Einstein Requests and possibly Data Cloud credits. Tests 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNj
-c2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbMjI0NTQ2MDA1LC01NjU2NDc3ODksLTEyNj
+I4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
