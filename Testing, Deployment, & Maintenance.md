@@ -66,8 +66,14 @@ During testing, the agent processes the utterance and chooses a subagent, action
 A test case contains an utterance plus expected outcomes, such as expected subagent, actions, or response. 
 
 ## Testing Center Evaluation Fundamentals
+### Testing Center
+Testing Center provides a repeatable way to validate agent behavior at scale instead of relying only on manual conversation testing.
+#### BATCH TESTING
+Automated batch testing runs many utterances to verify how the agent behaves across expected, unexpected, and edge-case requests.
+#### TEST SUITES
+Test suites can be reused over time so agent changes can be checked repeatedly as subagents, actions, instructions, and guardrails evolve.
 
-
+#
 
 ## Evaluation Execution and Results
 
@@ -93,7 +99,7 @@ A test case contains an utterance plus expected outcomes, such as expected subag
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NT
-Y0Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1
-OTYwXX0=
+eyJoaXN0b3J5IjpbNTQxNTcwNjM1LDEyMDQ4NzI5OTMsLTk3OT
+E4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkz
+MiwtMTQ2OTY4NTk2MF19
 -->
