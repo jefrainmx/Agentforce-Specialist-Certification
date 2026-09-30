@@ -293,14 +293,25 @@ Newly created custom objects or fields may not appear immediately in Prompt Buil
 Retriever-backed templates require special planning because some retrieval assets are not moved automatically. 
 #### RETRIEVER SETUP
 If a template uses a retriever, the retriever and its search index should be verified or recreated in the production org before runtime testing.
-#### DEPLOYMENT GAPSalesforce notes that change sets and Metadata API deployments don’t include retriever or search index metadata for Einstein Search retrievers, so those assets must be manually created in the target org.
+#### DEPLOYMENT GAP
+Salesforce notes that change sets and Metadata API deployments don’t include retriever or search index metadata for Einstein Search retrievers, so those assets must be manually created in the target org.
+
+### Deployment Method
+Supported template assets should move through the organization’s normal release process, while unsupported assets need manual setup. 
+#### RELEASE PROCESS
+Supported prompt template assets and dependencies should be moved through controlled release tools such as change sets, packages, Metadata API-based tools, or CI/CD. 
+#### MANUAL CONFIGURATION
+Environment-specific or unsupported dependencies should be listed in a deployment checklist so they are not missed in production. 
+
+
+
 
 
 ## Activation and Validation
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MDY4MTA0MCwtMjY5NTAyNzE4LDk5Nj
+eyJoaXN0b3J5IjpbLTc4Mzc0MjMzMCwtMjY5NTAyNzE4LDk5Nj
 kzNTU5NSwyMTIwMTgxNzI5LC04MTQzNDAyNjAsMTkwMDY0MDM2
 LC0xMjk4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MD
 Q3ODI2NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5
