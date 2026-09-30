@@ -257,7 +257,14 @@ Flex template metadata and related references require extra reviewbecause Salesf
 A prompt template must be deployed with or reconnected to the resources that ground the prompt.
 #### SALESFORCE RESOURCES
 Objects, fields, related lists, record snapshots, flows, Apex classes, and prompt-template resources must exist and be accessible in production. 
+#### DATA & RETRIEVAL RESOURCES
+Data 360 resources, Agentforce Data Libraries, search indexes, retrievers, and Knowledge settings may require separate setup.
 
+### Flow and Apex Dependencies
+Templates that use Flow or Apex require both deployment and runtime access validation. 
+#### FLOW ACCESS
+Referenced flows must exist in production, be activated when required, and be executable by the user or process that runs the template. 
+#### APEX ACCESSApex classes must be deployed with required test coverage and granted to the correct users, profiles, permission sets, or runtime context.
 
 
 ## Target Org Preparation
@@ -271,7 +278,7 @@ Objects, fields, related lists, record snapshots, flows, Apex classes, and promp
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjM2MTM3Niw5OTY5MzU1OTUsMjEyMD
+eyJoaXN0b3J5IjpbLTE2MTY3OTAwNCw5OTY5MzU1OTUsMjEyMD
 E4MTcyOSwtODE0MzQwMjYwLDE5MDA2NDAzNiwtMTI5ODIzMTAw
 OCwxNjY5MDY4OTkzLDYyNDY5OTUzMCwxODA0NzgyNjQ4LC0yOT
 I1OTkyNjcsMjA2MTgyOTIwLC0xMzEyNTQ2OTI2LC0xNDgzMTcy
