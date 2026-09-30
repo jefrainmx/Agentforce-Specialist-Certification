@@ -73,7 +73,16 @@ Automated batch testing runs many utterances to verify how the agent behaves acr
 #### TEST SUITES
 Test suites can be reused over time so agent changes can be checked repeatedly as subagents, actions, instructions, and guardrails evolve.
 
-#
+### Manual Testing vs Automated Testing
+Manual testing is useful for troubleshooting, while automated testing is better for repeatable validation across many conversation variations.
+#### MANUAL TESTING
+Manual testing in Agentforce Builder Conversation Preview helps inspect a single utterance and see how the agent selected subagents, actions, and responses.
+#### AUTOMATED TESTING
+Automated testing in Testing Center runs many utterances in parallel and provides structured pass/fail results for evaluation.
+
+### Test Case Structure
+Each test case defines what the agent receives and what Testing Center should check after the agent responds.
+
 
 ## Evaluation Execution and Results
 
@@ -99,7 +108,7 @@ Test suites can be reused over time so agent changes can be checked repeatedly a
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxNTcwNjM1LDEyMDQ4NzI5OTMsLTk3OT
+eyJoaXN0b3J5IjpbNDU0MTc2NDU2LDEyMDQ4NzI5OTMsLTk3OT
 E4OTkwLC01NjU2NDc3ODksLTEyNjI4Nzk2NDYsMTY3Njc3ODkz
 MiwtMTQ2OTY4NTk2MF19
 -->
