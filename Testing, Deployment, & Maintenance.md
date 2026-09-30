@@ -189,34 +189,38 @@ After deploying all the metadata components for an agent to the target productio
 Change Sets can be utilized to deploy an agent. An outbound change set can be created in a sandbox. An inbound change set can be validated and deployed in production.
 
 ## Agent Deployment
+### Agent Deployment
 Once an Agentforce agent has been created and thoroughly tested within a sandbox environment, it must be deployed to production to make it available to users.
-### CHANGE SETS
+#### CHANGE SETS
 Change sets can be utilized for deploying an agent from sandbox to production. The process comprises the following steps:
 1. Create an outbound change set in a sandbox. 
 2. Add all the relevant metadata components.
 3. Upload the outbound change set to the production org.
 4. Validate and deploy the inbound change set in the production org.
-### METADATA COMPONENTS
+#### METADATA COMPONENTS
 All the metadata components related to the agent, such as the agent planner (GenAiPlanner), associated topics (GenAiPlugin), agent actions (GenAiFunction), prompt templates (GenAiPromptTemplate), flows, and Apex classes, must be identified and added to the deployment.
-### BOT METADATA
+#### BOT METADATA
 When deploying a new agent, the associated Einstein Bot and Bot Versionmust be deployed along with the GenAiPlanner.
-### METADATA API
+#### METADATA API
 Metadata API can also be used to retrieve agent metadata from a sandbox using a tool such as Salesforce CLI. The retrieved metadata can be deployed to the production org.
-### SERVICE AGENT DEPLOYMENT
+#### SERVICE AGENT DEPLOYMENT
 An embedded service deployment must be created to deploy a service agent to an Experience Cloud site. The Embedded Messaging component must be added to the site in production, and the site must be published.
-### ACTIVATION
+#### ACTIVATION
 After deploying all the metadata components and confirming that the agent is working as expected in the production org, it must be activated in the Agent Builder to make it available to users.
 ### COMMUNICATION
 Stakeholders and end-users must be informed about the new agent deployment. Necessary training or documentation must be provided.
+
+### Change Set for Agent Deployment
+When deploying an agent using an Outbound Change Set, all the associated metadata componentsmust be added to the change set in the sandbox environment.
 
 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTczNjc1NCwxOTAwNjQwMzYsLTEyOT
-gyMzEwMDgsMTY2OTA2ODk5Myw2MjQ2OTk1MzAsMTgwNDc4MjY0
-OCwtMjkyNTk5MjY3LDIwNjE4MjkyMCwtMTMxMjU0NjkyNiwtMT
-Q4MzE3MjE2MCwxMjA0ODcyOTkzLC05NzkxODk5MCwtNTY1NjQ3
-Nzg5LC0xMjYyODc5NjQ2LDE2NzY3Nzg5MzIsLTE0Njk2ODU5Nj
-BdfQ==
+eyJoaXN0b3J5IjpbLTEyMjUxNTM1NjAsMTkwMDY0MDM2LC0xMj
+k4MjMxMDA4LDE2NjkwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2
+NDgsLTI5MjU5OTI2NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLT
+E0ODMxNzIxNjAsMTIwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0
+Nzc4OSwtMTI2Mjg3OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OT
+YwXX0=
 -->
