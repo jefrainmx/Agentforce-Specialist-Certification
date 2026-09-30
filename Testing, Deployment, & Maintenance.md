@@ -22,6 +22,11 @@ The testing process consists of the following steps:
 3) Select Test Data.
 4) Select Scorers.
 
+### SUBAGENTS & ACTIONS
+Multiple subagents and actions can be tested at the same time. The subagent and action API names should be used for the expected values in the CSV file; they can be found in the Agentforce Builder.
+### TEST RESULTS
+The test results show which test casespassed and failed. A failed utterance can be retested in the Preview panel of Agentforce Builder to identify what caused the failure. The detailed data can be used to fine-tune the instructions, actions, or topics.
+
 ## Scenarios & Solutions
 
 
@@ -47,6 +52,6 @@ The testing process consists of the following steps:
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjc2MTY5MCwtMTI2Mjg3OTY0NiwxNj
-c2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
+eyJoaXN0b3J5IjpbMzQzMzMyMzUsLTEyNjI4Nzk2NDYsMTY3Nj
+c3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
