@@ -189,7 +189,13 @@ After deploying all the metadata components for an agent to the target productio
 Change Sets can be utilized to deploy an agent. An outbound change set can be created in a sandbox. An inbound change set can be validated and deployed in production.
 
 ## Agent Deployment
-
+Once an Agentforce agent has been created and thoroughly tested within a sandbox environment, it must be deployed to production to make it available to users.
+### CHANGE SETS
+Change sets can be utilized for deploying an agent from sandbox to production. The process comprises the following steps:
+1. Create an outbound change set in a sandbox. 
+2. Add all the relevant metadata components.
+3. Upload the outbound change set to the production org.
+4. Validate and deploy the inbound change set in the production org.
 
 
 
@@ -199,9 +205,9 @@ Change Sets can be utilized to deploy an agent. An outbound change set can be cr
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgyMzEwMDgsMTY2OTA2ODk5Myw2Mj
-Q2OTk1MzAsMTgwNDc4MjY0OCwtMjkyNTk5MjY3LDIwNjE4Mjky
-MCwtMTMxMjU0NjkyNiwtMTQ4MzE3MjE2MCwxMjA0ODcyOTkzLC
-05NzkxODk5MCwtNTY1NjQ3Nzg5LC0xMjYyODc5NjQ2LDE2NzY3
-Nzg5MzIsLTE0Njk2ODU5NjBdfQ==
+eyJoaXN0b3J5IjpbMzgwMDY1MDE1LC0xMjk4MjMxMDA4LDE2Nj
+kwNjg5OTMsNjI0Njk5NTMwLDE4MDQ3ODI2NDgsLTI5MjU5OTI2
+NywyMDYxODI5MjAsLTEzMTI1NDY5MjYsLTE0ODMxNzIxNjAsMT
+IwNDg3Mjk5MywtOTc5MTg5OTAsLTU2NTY0Nzc4OSwtMTI2Mjg3
+OTY0NiwxNjc2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
 -->
