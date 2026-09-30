@@ -39,8 +39,11 @@ Cosmic Electronics is considering using the Agentforce Testing Center to test th
 With regard to using the Agentforce Testing Center, it is important to consider that running tests consumes Einstein Requests and possibly Data Cloud credits. Tests should only be run in a  sandbox environment since testing agents can modify CRM data.
 
 ### Scenario 2
+The Agentforce Specialist at Cosmic Computers is preparing a CSV file with test cases to test a large and repeatable number of utterances using the Agentforce Testing Center. They need to specify the expected output to ensure the testing accurately reflects the agent’s functionality.
 ### Solution 2
+While a large number of utterances can be tested using the Agentforce Testing Center, it is important to note that the topic and action API names should be used for the expected values in the CSV file that contains test cases. These API names can be found in the Agent Builder.
 
+## References:
 
 
 # Explain how Testing Center evaluations work.
@@ -62,6 +65,6 @@ With regard to using the Agentforce Testing Center, it is important to consider 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI0NTQ2MDA1LC01NjU2NDc3ODksLTEyNj
+eyJoaXN0b3J5IjpbMTU2MDgxNzYwLC01NjU2NDc3ODksLTEyNj
 I4Nzk2NDYsMTY3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
 -->
