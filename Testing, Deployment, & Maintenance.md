@@ -34,8 +34,10 @@ Running tests consumes Einstein Requests and possibly Data Cloud credits. Tests 
 
 ## Scenarios & Solutions
 ### Scenario 1
+### Solution 1
 
-
+### Scenario 2
+### Solution 2
 
 
 
@@ -58,6 +60,6 @@ Running tests consumes Einstein Requests and possibly Data Cloud credits. Tests 
 # Identify the considerations for deploying a template from sandbox to production.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzI4NzMwMTksLTEyNjI4Nzk2NDYsMT
-Y3Njc3ODkzMiwtMTQ2OTY4NTk2MF19
+eyJoaXN0b3J5IjpbLTU2NTY0Nzc4OSwtMTI2Mjg3OTY0NiwxNj
+c2Nzc4OTMyLC0xNDY5Njg1OTYwXX0=
 -->
