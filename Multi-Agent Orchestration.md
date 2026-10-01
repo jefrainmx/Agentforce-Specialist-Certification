@@ -46,13 +46,18 @@ Teams can add, replace, modify, and test individual agents more easily as the so
 SOMA improves control by separating concerns and limiting each agent to the responsibilities, data, and actions it needs.
 #### SPECIALIST
 Each specialist agent can have a narrower scope, clearer instructions, and a more controlled action set. 
-
-
-
+#### DOMAIN
+Governance, troubleshooting, and accountability can be isolated to the agent responsible for a specific domain. 
 
 ## SOMA Architecture
+### Primary and Specialist Agents
+The primary agent owns the user experience, while specialist agents provide deep domain capability behind the scenes.
+#### PRIMARY AGENT
+The primary agent analyzes intent and routes work to the best-fit specialist agent.
+#### SECONDARY AGENTS
+Secondary agents use focused knowledge and actions, then return the result to the primary agent. 
 
-
+#
 
 ## Scenarios & Solutions
 
@@ -76,6 +81,6 @@ Each specialist agent can have a narrower scope, clearer instructions, and a mor
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTc0MTQwNiwtMTc0NDQ5MDgzNSwtMj
-k4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE1ODEwMzc5NzksLTE3NDQ0OTA4MzUsLT
+I5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
