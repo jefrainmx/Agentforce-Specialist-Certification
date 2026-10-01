@@ -18,7 +18,8 @@ The specialist completes the task and returns the result through the primary age
 Single-agent and SOMA architectures solve different design problems and should not be treated as the same pattern.
 #### SINGLE AGENT
 In single-agent architecture, one Agentforce agent owns the conversation, topics, actions, instructions, and runtime behavior.
-#### SOMAIn SOMA architecture, multiple agents collaborate within one Salesforce org through a primary or supervisor agent and specialist agents. 
+#### SOMA
+In SOMA architecture, multiple agents collaborate within one Salesforce org through a primary or supervisor agent and specialist agents. 
 
 ## SOMA Architecture
 
@@ -46,6 +47,6 @@ In single-agent architecture, one Agentforce agent owns the conversation, topics
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MjY2NDk3LC0yOTg1MTU0MjMsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE3NDQ0OTA4MzUsLTI5ODUxNTQyMyw3Mz
+A5OTgxMTZdfQ==
 -->
