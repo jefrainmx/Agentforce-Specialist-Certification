@@ -234,10 +234,11 @@ When an agent cannot resolve a request or policy conflict, it can delegate to a 
 [A Comprehensive Overview of the Model Context Protocol (MCP)](https://medium.com/@astropomeai/a-comprehensive-overview-of-the-model-context-protocol-mcp-f65150da0aa0)
 [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)
 [Unleashing the Power of Connected Agents with the Newly Expanded AgentExchange](https://www.salesforce.com/blog/connected-agents-agentexchange/?utm_source=chatgpt.com)
-
-
+[Agentic Patterns and Implementation with Agentforce](https://architect.salesforce.com/docs/architect/fundamentals/guide/agentic-patterns.html#2__Agent_Interoperability__A2A_and_MCP)
+[Bridging Worlds: How Salesforce Agentforce and Googles A2A Protocol Will Revolutionize AI Workflows](https://www.linkedin.com/pulse/bridging-worlds-how-salesforce-agentforce-googles-a2a-protocol-3ioic/)
+[Announcing the Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/?utm_source=chatgpt.com)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MTc2NjYxMCw0MTk0MzA2MDksLTE3ND
-Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MDEyNzMyNDAsNDE5NDMwNjA5LC0xNz
+Q0NDkwODM1LC0yOTg1MTU0MjMsNzMwOTk4MTE2XX0=
 -->
