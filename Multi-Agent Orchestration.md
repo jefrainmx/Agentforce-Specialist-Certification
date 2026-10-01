@@ -185,15 +185,21 @@ A2A allows heterogeneous agents (e.g., sales, service, employee, partner, etc.) 
 A2A allows agents to seamlessly communicate and orchestrate complex tasks directly with external agents, fostering truly collaborative AI workflows while ensuring secure, scalable interoperability and an enhanced digital workforce across all ecosystems.
 ### TRUST & GOVERNANCE
 A2A enforces org-level permissions, context propagation, and auditability across A2A exchanges through the Einstein Trust Layer.
-HOW IT WORKS
+### HOW IT WORKS
 A2A focuses on horizontal agent communication. Agents can publish their capabilities via Agent Cards so others know what they can do. They can exchange structured tasks and messages using standard web technologies (HTTP, JSON).
-BENEFITS
+### BENEFITS
 A2A offers various benefits, such as faster solution building, better accuracy & resilience, and enterprise-grade trust & compliance.
+### PLATFORM EVENTS
+Platform Events act as the nervous system for proactive and collaborative agents, serving as the transport layer for A2A communication in the Agentforce ecosystem.
+### EVENT-DRIVEN COLLABORATION
+Agents publish, subscribe, and react to contextual events to trigger actions or escalate tasks asynchronously.
+### COMPOSABLE AGENT MESH
+A2A supports distributed orchestration, allowing specialized agents (sales, service, employee, etc.) to coordinate dynamically.
 
 ## Use Cases
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MDM0MjkxMiw0MTk0MzA2MDksLTE3ND
-Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTExOTAyNTY0MDYsNDE5NDMwNjA5LC0xNz
+Q0NDkwODM1LC0yOTg1MTU0MjMsNzMwOTk4MTE2XX0=
 -->
