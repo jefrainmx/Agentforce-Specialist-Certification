@@ -231,8 +231,13 @@ When an agent cannot resolve a request or policy conflict, it can delegate to a 
 [Agentforce MCP Support](https://www.salesforce.com/agentforce/mcp-support/)
 [What Is MCP? A Simple Guide to Model Context Protocol for Salesforce Admins](https://admin.salesforce.com/blog/2025/what-is-mcp-a-simple-guide-to-model-context-protocol-for-salesforce-admins)
 [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+[A Comprehensive Overview of the Model Context Protocol (MCP)](https://medium.com/@astropomeai/a-comprehensive-overview-of-the-model-context-protocol-mcp-f65150da0aa0)
+[What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)
+[Unleashing the Power of Connected Agents with the Newly Expanded AgentExchange](https://www.salesforce.com/blog/connected-agents-agentexchange/?utm_source=chatgpt.com)
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxODIxOTExLDQxOTQzMDYwOSwtMTc0ND
-Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTc2MTc2NjYxMCw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
