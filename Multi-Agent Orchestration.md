@@ -93,8 +93,16 @@ SOMA can be used when actions should be isolated by business functionor risk lev
 SOMA improves accountability because each specialist agent can be monitored and maintained separately.
 
 ### When a Single Agent Is Better
-A single-agent architecture is usually better when the scope is small enough to govern, test, and maintain without orchestration. SIMPLICITY
+A single-agent architecture is usually better when the scope is small enough to govern, test, and maintain without orchestration. 
+#### SIMPLICITY
 A single agent should be used when the use case has a small number of related topics and a simple action set. 
+#### COMPLEXITY
+SOMA should be avoided when the added routing and orchestration complexity does not create meaningful control or scalability benefits. 
+
+### When SOMA Is Not Enough
+SOMA is limited to collaboration within one Salesforce org, so other patterns are needed when work crosses org or vendor boundaries. 
+#### MOMA
+MOMA (Multi-Org Multi-Agent) should be used when agents must collaborate across multiple Salesforce orgs.
 
 
 ## Scenarios & Solutions
@@ -119,6 +127,6 @@ A single agent should be used when the use case has a small number of related to
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQ0MDY0OTgsLTE3NDQ0OTA4MzUsLT
+eyJoaXN0b3J5IjpbLTEwMTU1ODc4OTEsLTE3NDQ0OTA4MzUsLT
 I5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
