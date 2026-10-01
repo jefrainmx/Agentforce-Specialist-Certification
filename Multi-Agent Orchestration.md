@@ -57,7 +57,19 @@ The primary agent analyzes intent and routes work to the best-fit specialist age
 #### SECONDARY AGENTS
 Secondary agents use focused knowledge and actions, then return the result to the primary agent. 
 
-#
+### Task Orchestration
+Task orchestration determines which specialist agent is best equipped to complete each request.
+#### ATLAS REASONING ENGINE
+Agentforce uses the Atlas Reasoning Engine to review agent descriptions, instructions, and actions for routing.
+#### SOMA DESIGN
+Effective SOMA design depends on clear specialist-agent boundaries and strong descriptions.
+
+### Shared Governance Boundary
+SOMA is appropriate when multiple agents can operate inside the same Salesforce org and governance boundary.
+#### SHARING
+Agents share the same org-level governance, identity, permissions, observability, and Salesforce data context. 
+
+
 
 ## Scenarios & Solutions
 
@@ -81,6 +93,6 @@ Secondary agents use focused knowledge and actions, then return the result to th
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODEwMzc5NzksLTE3NDQ0OTA4MzUsLT
-I5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTMyMDgwNDQ4MiwtMTc0NDQ5MDgzNSwtMj
+k4NTE1NDIzLDczMDk5ODExNl19
 -->
