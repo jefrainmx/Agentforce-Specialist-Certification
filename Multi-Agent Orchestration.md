@@ -124,6 +124,8 @@ Cosmic Manufacturing must determine whether SOMA is enough when agent collaborat
 ### Solution 3
 The Agentforce Specialist should not select SOMA as the final architecture because the required specialist agents are spread across multiple Salesforce orgs and SOMA is intended for multiple agents collaborating within one Salesforce org. Since this scenario spans Sales, Service, and Field Operations orgs, a multi-org pattern such as MOMA is more appropriate. SOMA would be suitable only if the required specialist agents were all operating within the same Salesforce org and shared one governance and data boundary.
 
+## References:
+[Multi-Agent Orchestration](https://www.salesforce.com/agentforce/multi-agent-orchestration/)
 
 
 
@@ -144,6 +146,6 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3NDUwMDMsLTE3NDQ0OTA4MzUsLTI5OD
-UxNTQyMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTM1MDcwMjYzOCwtMTc0NDQ5MDgzNSwtMj
+k4NTE1NDIzLDczMDk5ODExNl19
 -->
