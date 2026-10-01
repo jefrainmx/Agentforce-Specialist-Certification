@@ -6,7 +6,12 @@
 ## References
 
 # Explain agent analytics and agent optimization
-
+## Introduction
+## Agentforce Observability
+## Agent Analytics
+## Agent Optimization
+## Continuous Optimization Cycle
+## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMDUwNTMzMl19
+eyJoaXN0b3J5IjpbLTE0NDA1MTExNTBdfQ==
 -->
