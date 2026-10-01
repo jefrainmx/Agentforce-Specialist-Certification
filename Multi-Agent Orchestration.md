@@ -103,7 +103,8 @@ SOMA should be avoided when the added routing and orchestration complexity does 
 SOMA is limited to collaboration within one Salesforce org, so other patterns are needed when work crosses org or vendor boundaries. 
 #### MOMA
 MOMA (Multi-Org Multi-Agent) should be used when agents must collaborate across multiple Salesforce orgs.
-
+#### A2A & MCP
+A2A or MCP should be used when agents must coordinate with external agents, tools, APIs, or non-Salesforce systems.
 
 ## Scenarios & Solutions
 
@@ -127,6 +128,6 @@ MOMA (Multi-Org Multi-Agent) should be used when agents must collaborate across 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTU1ODc4OTEsLTE3NDQ0OTA4MzUsLT
-I5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTA1OTkzOTgwOSwtMTc0NDQ5MDgzNSwtMj
+k4NTE1NDIzLDczMDk5ODExNl19
 -->
