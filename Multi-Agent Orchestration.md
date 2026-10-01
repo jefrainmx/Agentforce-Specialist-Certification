@@ -82,9 +82,15 @@ SOMA lets each domain agent own a focused instruction set, data access pattern, 
 SOMA is appropriate when a single agent is becoming too large, brittle, or difficult to test. 
 #### SCALABILITY
 SOMA can be used when one agent has too many unrelated topics, actions, or decision paths.
+#### MAINTAINABILITY
+SOMA supports modular testing, clearer ownership, and easier updates to individual agents.
 
-
-
+### SOMA for Control and Governance
+SOMA is appropriate when different work domains require different permissions, policies, or operational ownership.
+#### ISOLATION
+SOMA can be used when actions should be isolated by business functionor risk level.
+#### ACCOUNTABILITY
+SOMA improves accountability because each specialist agent can be monitored and maintained separately.
 
 ## Scenarios & Solutions
 
@@ -108,6 +114,6 @@ SOMA can be used when one agent has too many unrelated topics, actions, or decis
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NTkxNTMxMiwtMTc0NDQ5MDgzNSwtMj
+eyJoaXN0b3J5IjpbLTU3MTk0MDQ1MCwtMTc0NDQ5MDgzNSwtMj
 k4NTE1NDIzLDczMDk5ODExNl19
 -->
