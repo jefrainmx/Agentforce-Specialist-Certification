@@ -68,6 +68,21 @@ Effective SOMA design depends on clear specialist-agent boundaries and strong de
 SOMA is appropriate when multiple agents can operate inside the same Salesforce org and governance boundary.
 #### SHARING
 Agents share the same org-level governance, identity, permissions, observability, and Salesforce data context. 
+#### TRUST
+Keeping orchestration in one org reduces cross-org trust complexitycompared with multi-org patterns. 
+
+### SOMA for Domain Specialization
+SOMA is appropriate when one user journey spans several specialized business domains that should be controlled separately.
+#### DIFFERENT DOMAINS
+SOMA can be used when one conversation may require specialist agentsfor different domains, such as Claims, Billing, Orders, or Benefits. 
+#### FOCUSED
+SOMA lets each domain agent own a focused instruction set, data access pattern, and action library.
+
+### SOMA for Scale and Maintainability
+SOMA is appropriate when a single agent is becoming too large, brittle, or difficult to test. 
+#### SCALABILITY
+SOMA can be used when one agent has too many unrelated topics, actions, or decision paths.
+
 
 
 
@@ -93,6 +108,6 @@ Agents share the same org-level governance, identity, permissions, observability
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMDgwNDQ4MiwtMTc0NDQ5MDgzNSwtMj
+eyJoaXN0b3J5IjpbMTM2NTkxNTMxMiwtMTc0NDQ5MDgzNSwtMj
 k4NTE1NDIzLDczMDk5ODExNl19
 -->
