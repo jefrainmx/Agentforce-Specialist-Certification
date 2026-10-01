@@ -116,7 +116,13 @@ The Agentforce Specialist should recommend the SOMA architecture because the use
 Cosmic Retail must decide whether SOMA is necessary for a narrow internal support use case. The company wants an internal Agentforce agent for store employees who need answers about return policy exceptions. The agent will search a small set of approved Knowledge articles, answer return-policy questions, and create a simple escalation case when the situation falls outside policy. The agent uses one data domain, one support team owns the process, and the action set is limited. The company wants to avoid unnecessary architecture complexity.
 
 ### Solution 2
+The Agentforce Specialist should recommend a single Agentforce agent rather than SOMA because the use case is narrow, stable, and easy to govern. Due to one policy domain, one owner, and a small action set, a single agent can be tested and governed effectively. SOMA would add routing and orchestration overhead without providing meaningful scalability or control benefits. If the agent later expands into inventory, loyalty, order management, and store operations, the architecture could be revisited.
 
+### Scenario 3
+Cosmic Manufacturing must determine whether SOMA is enough when agent collaboration spans multiple Salesforce orgs. The company has separate Salesforce orgs for Sales, Service, and Field Operations. It wants one agent conversation where a customer can ask about a warranty claim, schedule a technician, and check replacement-part inventory. Each org has its own data model, permissions, and operational ownership. The team wants unified orchestration, but the specialist agents do not all live in the same Salesforce org.
+
+### Solution 3
+The Agentforce Specialist should not select SOMA as the final architecture because the required specialist agents are spread across multiple Salesforce orgs and SOMA is intended for multiple agents collaborating within one Salesforce org. Since this scenario spans Sales, Service, and Field Operations orgs, a multi-org pattern such as MOMA is more appropriate. SOMA would be suitable only if the required specialist agents were all operating within the same Salesforce org and shared one governance and data boundary.
 
 
 
@@ -138,6 +144,6 @@ Cosmic Retail must decide whether SOMA is necessary for a narrow internal suppor
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU5OTU2NTIyLC0xNzQ0NDkwODM1LC0yOT
-g1MTU0MjMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTg3NDUwMDMsLTE3NDQ0OTA4MzUsLTI5OD
+UxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
