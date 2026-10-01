@@ -126,8 +126,8 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 
 ## References:
 [Multi-Agent Orchestration](https://www.salesforce.com/agentforce/multi-agent-orchestration/)
-
-
+[Seven Requirements for Effective Agents](https://www.salesforce.com/agentforce/effective-ai-agent-checklist/)
+[Learn about Agentforce SOMA(Single Org, Multi Agent) Orchestration and MCP](https://help.salesforce.com/s/articleView?id=005317683&type=1)
 
 
 # Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A.
@@ -146,6 +146,6 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDcwMjYzOCwtMTc0NDQ5MDgzNSwtMj
-k4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDE5NDMwNjA5LC0xNzQ0NDkwODM1LC0yOT
+g1MTU0MjMsNzMwOTk4MTE2XX0=
 -->
