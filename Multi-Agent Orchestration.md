@@ -134,6 +134,16 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 ## Introduction
 Model Context Protocol (MCP) is an open standard that defines how AI models connect with external tools, systems, and data. Originally developed by Anthropic, MCP enables Agentforce agents to perform real-world tasks by securely integrating with external applications through standardized interfaces known as MCP servers.The Agent-to-Agent Protocol (A2A) defines how AI agents within and across organizations communicate, coordinate, and collaborate securely. It provides a standardized and interoperable framework that allows diverse agents, such as sales, service, or partner agents, to exchange messages, delegate tasks, and share results regardless of platform or vendor.
 ### Model Context Protocol (MCP)
+#### MCP Servers
+MCP servers found on AgentExchange provide the tools that enable AI agents to perform specific tasks. Agents can be connected to MCP servers in Agentforce Builder.
+#### Open Standard
+Model Context Protocol (MCP), is an open standard originally developed by Anthropic that enables connecting AI applications like agents to external systems.
+#### Context
+MCP provides a universal standard that enables Agentforce to engage with an external server to receive the context of the functionality needed to deliver accurate, effective results. 
+#### Use Cases
+Use cases of MCP include data retrieval, record management, workflow automation, document and file access, system-to-system integration, and tool discovery.
+
+### Agent-to-Agent Protocol (A2A)
 #### 
 
 ## Model Context Protocol (MCP)
@@ -150,6 +160,6 @@ Model Context Protocol (MCP) is an open standard that defines how AI models conn
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NjA2MjIxOCw0MTk0MzA2MDksLTE3ND
-Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjUzOTQ0MzQyLDQxOTQzMDYwOSwtMTc0ND
+Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
 -->
