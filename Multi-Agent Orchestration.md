@@ -92,6 +92,11 @@ SOMA can be used when actions should be isolated by business functionor risk lev
 #### ACCOUNTABILITY
 SOMA improves accountability because each specialist agent can be monitored and maintained separately.
 
+### When a Single Agent Is Better
+A single-agent architecture is usually better when the scope is small enough to govern, test, and maintain without orchestration. SIMPLICITY
+A single agent should be used when the use case has a small number of related topics and a simple action set. 
+
+
 ## Scenarios & Solutions
 
 
@@ -114,6 +119,6 @@ SOMA improves accountability because each specialist agent can be monitored and 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTk0MDQ1MCwtMTc0NDQ5MDgzNSwtMj
-k4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEwMzQ0MDY0OTgsLTE3NDQ0OTA4MzUsLT
+I5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
