@@ -161,7 +161,7 @@ Model Context Protocol (MCP), originally developed and open-sourced by Anthropic
 #### BENEFITS
 Model Context Protocol (MCP) reduces integration effort and complexity while enforcing consistent enterprise-grade trust, security, and compliance across all agent interactions.
 #### CONTEXT
-MCP provides a universal standard that enables Agentforce to engage with an external server to receive the context of the functionalityneeded to deliver accurate, effective results. The context fits into the agent’s system of topics, prompts and instructions.
+MCP provides a universal standard that enables Agentforce to engage with an external server to receive the context of the functionality needed to deliver accurate, effective results. The context fits into the agent’s system of topics, prompts and instructions.
 #### MCP SERVERS
 AI agents can be connected to MCP servers in Agentforce Builder. These servers can be found on AgentExchange. For example, a service agent can retrieve location data from a shipping and logistics provider’s MCP server to provide an accurate delivery window to a customer. 
 #### TOOLS & PROMPTS
@@ -174,7 +174,13 @@ Various AgentExchange partners offer MCP servers that enable agents to connect t
 
 
 ## Agent-to-Agent Protocol (A2A)
-
+Agent-to-Agent Protocol (also called A2A) is an open standard that lets AI agents from different vendors or stacks communicate, coordinate, and collaborate securely.
+### STANDARDIZED & SECURE
+The Agent-to-Agent Protocol (A2A) complements MCP (which connects a single agent to tools/data) and provides standardized and secure agent-to-agent messaging, delegation, and result handoff. 
+### SEAMLESS
+A2A enables seamless communication and collaboration between diverse agents, regardless of their underlying platform or developer.
+### INTEROPERABILITY
+A2A allows heterogeneous agents (e.g., sales, service, employee, partner, etc.) to exchange tasks and context across platforms.
 
 
 
@@ -182,6 +188,6 @@ Various AgentExchange partners offer MCP servers that enable agents to connect t
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjgxNjMwNjI4LDQxOTQzMDYwOSwtMTc0ND
-Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTA2NDg4Nzc0Myw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
