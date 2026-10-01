@@ -237,8 +237,8 @@ When an agent cannot resolve a request or policy conflict, it can delegate to a 
 [Agentic Patterns and Implementation with Agentforce](https://architect.salesforce.com/docs/architect/fundamentals/guide/agentic-patterns.html#2__Agent_Interoperability__A2A_and_MCP)
 [Bridging Worlds: How Salesforce Agentforce and Googles A2A Protocol Will Revolutionize AI Workflows](https://www.linkedin.com/pulse/bridging-worlds-how-salesforce-agentforce-googles-a2a-protocol-3ioic/)
 [Announcing the Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/?utm_source=chatgpt.com)
-
+[Linux Foundation Launches the Agent2Agent Protocol Project to Enable Secure, Intelligent Communication Between AI Agents](https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents?utm_source=chatgpt.com)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDEyNzMyNDAsNDE5NDMwNjA5LC0xNz
-Q0NDkwODM1LC0yOTg1MTU0MjMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI1Mjc0MzkxNSw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
