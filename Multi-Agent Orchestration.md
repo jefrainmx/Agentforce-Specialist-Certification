@@ -107,6 +107,16 @@ MOMA (Multi-Org Multi-Agent) should be used when agents must collaborate across 
 A2A or MCP should be used when agents must coordinate with external agents, tools, APIs, or non-Salesforce systems.
 
 ## Scenarios & Solutions
+### Scenario 1
+Cosmic Health must decide whether one agent can support several member-service domains or whether SOMA is needed. The company uses one Salesforce org for member services and wants a single chat experience where authenticated members can ask about eligibility, benefits, claims, prior authorizations, and open cases. Each domain has different data sources, actions, compliance rules, and business owners. The existing single Service Agent has become difficult to test because updates to one area sometimes affect unrelated flows. Leadership wants one user-facing conversation, but separate control over each business domain.
+### Solution 1
+The Agentforce Specialist should recommend the SOMA architecture because the use case spans multiple specialized domains inside one Salesforce org. A primary agent should act as the single front door for members and route tasks to specialist agents for Eligibility, Benefits, Claims, Prior Authorization, and Cases. This keeps the member experience seamless while giving each domain a focused instruction set, scoped actions, and separate testing and governance. A single agent would concentrate too many unrelated topics and actions in one place, making the solution harder to scale and control.
+
+### Scenario 2
+Cosmic Retail must decide whether SOMA is necessary for a narrow internal support use case. The company wants an internal Agentforce agent for store employees who need answers about return policy exceptions. The agent will search a small set of approved Knowledge articles, answer return-policy questions, and create a simple escalation case when the situation falls outside policy. The agent uses one data domain, one support team owns the process, and the action set is limited. The company wants to avoid unnecessary architecture complexity.
+
+### Solution 2
+
 
 
 
@@ -128,6 +138,6 @@ A2A or MCP should be used when agents must coordinate with external agents, tool
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1OTkzOTgwOSwtMTc0NDQ5MDgzNSwtMj
-k4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMjU5OTU2NTIyLC0xNzQ0NDkwODM1LC0yOT
+g1MTU0MjMsNzMwOTk4MTE2XX0=
 -->
