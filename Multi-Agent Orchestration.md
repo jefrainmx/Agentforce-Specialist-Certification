@@ -2,17 +2,16 @@
 ## Introduction
 Single-agent architectures are often the starting point for Agentforce solutions because one agent can handle common use cases across a range of topics. As the solution grows, a single agent can become harder to govern, test, and maintain because too many unrelated topics, actions, and permissions are concentrated in one place. SOMA, or Single-Org Multi-Agent architecture, addresses this by using a primary or supervisor agent as the single front door while delegating work to specialist agents inside the same Salesforce org. This preserves one user experience while improving control, modularity, testing, permissions, and observability. SOMA is most appropriate when several related domains must collaborate within one Salesforce org and share the same governance and data boundary.
 ### SOMA Architecture
+#### User
+SOMA architecture keeps one user-facing conversation while routing specialized work to agents inside the same Salesforce org.
 #### Primary / Supervisor Agent
 The primary/supervisor agent acts as the single front door, interprets intent, and decides which specialist agent should handle the request. 
-Consolidated Response
-The specialist completes the task and returns the result through the primary agent so the user keeps one seamless conversation.
-Task Routing
+#### Task Routing
 Task routing uses agent descriptions, instructions, and available actions to route the task to the best-fit specialist.
-Specialist Agents
+#### Specialist Agents
 Specialist agents handle focused domains such as Cases, Orders, Benefits, Claims, Billing, or Knowledge using their own instructions and actions.
-User
-SOMA architecture keeps one user-facing conversation while routing specialized work to agents inside the same Salesforce org.
-
+#### Consolidated Response
+The specialist completes the task and returns the result through the primary agent so the user keeps one seamless conversation.
 
 ## Single-Agent vs SOMA Architecture 
 
@@ -43,5 +42,5 @@ SOMA architecture keeps one user-facing conversation while routing specialized w
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTAwNDA1NSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
