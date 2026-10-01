@@ -131,6 +131,10 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 
 
 # Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A.
+## Introduction
+Model Context Protocol (MCP) is an open standard that defines how AI models connect with external tools, systems, and data. Originally developed by Anthropic, MCP enables Agentforce agents to perform real-world tasks by securely integrating with external applications through standardized interfaces known as MCP servers.The Agent-to-Agent Protocol (A2A) defines how AI agents within and across organizations communicate, coordinate, and collaborate securely. It provides a standardized and interoperable framework that allows diverse agents, such as sales, service, or partner agents, to exchange messages, delegate tasks, and share results regardless of platform or vendor.
+### Model Context Protocol (MCP)
+#### 
 
 ## Model Context Protocol (MCP)
 
@@ -146,6 +150,6 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE5NDMwNjA5LC0xNzQ0NDkwODM1LC0yOT
-g1MTU0MjMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTI3NjA2MjIxOCw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
