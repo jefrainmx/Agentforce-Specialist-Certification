@@ -197,9 +197,13 @@ Agents publish, subscribe, and react to contextual events to trigger actions or 
 A2A supports distributed orchestration, allowing specialized agents (sales, service, employee, etc.) to coordinate dynamically.
 
 ## Use Cases
-
-
+### Use Cases of Model Context Protocol (MCP)
+MCP has various practical use cases and empowers AI agents to execute real-world tasks.
+#### DATA RETRIEVAL
+Agents can access live CRM, ERP, or Knowledge data to provide contextually accurate responses.
+#### RECORD MANAGEMENT
+Agents can create, update, or close records (e.g., cases, leads, opportunities) through standardized MCP tool calls.Enable users with no Salesforce license to access Chatter and additional featuresWORKFLOW AUTOMATIONAgents can coordinate multi-step processes like order fulfillment or employee onboarding across connected systems.DOCUMENT AND FILE ACCESSINTEGRATIONAgents can retrieve, summarize, or analyze documents from systems like SharePoint or Google Drive.Agents can perform actions that span multiple platforms, such as syncing billing data or triggering approvals in an ERP.Enable users with no Salesforce license to access Chatter and additional featuresTOOL DISCOVERYAgents can dynamically identify or add new tools exposed via MCP servers, expanding t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTAyNTY0MDYsNDE5NDMwNjA5LC0xNz
-Q0NDkwODM1LC0yOTg1MTU0MjMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTEzNDc1NzQ5MCw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
