@@ -214,12 +214,19 @@ Agents can dynamically identify or add new tools exposed via MCP servers, expand
 
 ### Use Cases of Agent-to-Agent Protocol (A2A)
 A2A has various use cases that are relevant for Agentforce.
-CROSS-DOMAIN HANDOFF
+#### CROSS-DOMAIN HANDOFF
 A Service agent can escalate to a Billing agent (collections policy), which can send a response with a structured resolution.
-SPECIALIST DELEGATION
+#### SPECIALIST DELEGATION
 A Sales agent can delegate pricing to a CPQ agent and contract language to a Legal agent, and then compose the final offer.
-SWARMING & TRIAGEMultiple agents (Knowledge, Case, Logistics) can collaborate on an incident, each providing results to a coordinator agent. PARTNER COLLABORATIONMULTI-STEP PLANNINGAn in-org Agentforce agent can collaborate with a partner’s fulfillment agent across company boundaries.A coordinator agent can plan a task, assign subtasks to domain agents, merge outputs, and report status.Enable users with no Salesforce license to access Chatter and additional featuresESCALATIONWhen an agent cannot resolve a request or policy conflict, it can
+#### SWARMING & TRIAGE
+Multiple agents (Knowledge, Case, Logistics) can collaborate on an incident, each providing results to a coordinator agent.
+#### PARTNER COLLABORATION
+An in-org Agentforce agent can collaborate with a partner’s fulfillment agent across company boundaries.
+#### MULTI-STEP PLANNING
+A coordinator agent can plan a task, assign subtasks to domain agents, merge outputs, and report status.
+#### ESCALATION
+When an agent cannot resolve a request or policy conflict, it can delegate to a specialized escalation agent.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDI2NTU1NzcsNDE5NDMwNjA5LC0xNz
+eyJoaXN0b3J5IjpbLTEzMDQ5MDgyNjgsNDE5NDMwNjA5LC0xNz
 Q0NDkwODM1LC0yOTg1MTU0MjMsNzMwOTk4MTE2XX0=
 -->
