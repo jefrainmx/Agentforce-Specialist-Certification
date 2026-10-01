@@ -203,11 +203,15 @@ MCP has various practical use cases and empowers AI agents to execute real-world
 Agents can access live CRM, ERP, or Knowledge data to provide contextually accurate responses.
 #### RECORD MANAGEMENT
 Agents can create, update, or close records (e.g., cases, leads, opportunities) through standardized MCP tool calls.
-WORKFLOW AUTOMATION
+#### WORKFLOW AUTOMATION
 Agents can coordinate multi-step processes like order fulfillment or employee onboarding across connected systems.
-DOCUMENT AND FILE ACCESS
-Agents can retrieve, summarize, or analyze documents from systems like SharePoint or Google Drive.Agents can perform actions that span multiple platforms, such as syncing billing data or triggering approvals in an ERP.Enable users with no Salesforce license to access Chatter and additional featuresTOOL DISCOVERYAgents can dynamically identify or add new tools exposed via MCP servers, expanding t
+#### DOCUMENT AND FILE ACCESS
+Agents can retrieve, summarize, or analyze documents from systems like SharePoint or Google Drive.
+#### INTEGRATION
+Agents can perform actions that span multiple platforms, such as syncing billing data or triggering approvals in an ERP.
+#### TOOL DISCOVERY
+Agents can dynamically identify or add new tools exposed via MCP servers, expanding their capabilities.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMwMDAwMDE5LDQxOTQzMDYwOSwtMTc0ND
-Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTE2NDM2NDAwMCw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
