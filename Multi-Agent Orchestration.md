@@ -226,7 +226,13 @@ An in-org Agentforce agent can collaborate with a partner’s fulfillment agent 
 A coordinator agent can plan a task, assign subtasks to domain agents, merge outputs, and report status.
 #### ESCALATION
 When an agent cannot resolve a request or policy conflict, it can delegate to a specialized escalation agent.
+
+## References:
+[Agentforce MCP Support](https://www.salesforce.com/agentforce/mcp-support/)
+[What Is MCP? A Simple Guide to Model Context Protocol for Salesforce Admins](https://admin.salesforce.com/blog/2025/what-is-mcp-a-simple-guide-to-model-context-protocol-for-salesforce-admins)
+[Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDQ5MDgyNjgsNDE5NDMwNjA5LC0xNz
-Q0NDkwODM1LC0yOTg1MTU0MjMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbNzYxODIxOTExLDQxOTQzMDYwOSwtMTc0ND
+Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
 -->
