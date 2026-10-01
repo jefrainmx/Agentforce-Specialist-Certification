@@ -21,6 +21,15 @@ In single-agent architecture, one Agentforce agent owns the conversation, topics
 #### SOMA
 In SOMA architecture, multiple agents collaborate within one Salesforce org through a primary or supervisor agent and specialist agents. 
 
+### Single-Agent Architecture
+A single agent works best when the use case is narrow, stable, and can be governed without splitting responsibilities across agents.
+#### WHEN TO USE
+A single agent should be used when topics are closely related and the action set is small enough to manage safely. 
+#### BUILDING & MAINTENANCE
+A single agent can be easier to build initially, but can become harder to maintain as scope expands. 
+
+
+
 ## SOMA Architecture
 
 
@@ -47,6 +56,6 @@ In SOMA architecture, multiple agents collaborate within one Salesforce org thro
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ0OTA4MzUsLTI5ODUxNTQyMyw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTI0MTM0MjU4NiwtMTc0NDQ5MDgzNSwtMj
+k4NTE1NDIzLDczMDk5ODExNl19
 -->
