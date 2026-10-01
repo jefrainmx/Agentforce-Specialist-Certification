@@ -134,17 +134,24 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 ## Introduction
 Model Context Protocol (MCP) is an open standard that defines how AI models connect with external tools, systems, and data. Originally developed by Anthropic, MCP enables Agentforce agents to perform real-world tasks by securely integrating with external applications through standardized interfaces known as MCP servers.The Agent-to-Agent Protocol (A2A) defines how AI agents within and across organizations communicate, coordinate, and collaborate securely. It provides a standardized and interoperable framework that allows diverse agents, such as sales, service, or partner agents, to exchange messages, delegate tasks, and share results regardless of platform or vendor.
 ### Model Context Protocol (MCP)
-#### MCP Servers
-MCP servers found on AgentExchange provide the tools that enable AI agents to perform specific tasks. Agents can be connected to MCP servers in Agentforce Builder.
 #### Open Standard
 Model Context Protocol (MCP), is an open standard originally developed by Anthropic that enables connecting AI applications like agents to external systems.
+#### MCP Servers
+MCP servers found on AgentExchange provide the tools that enable AI agents to perform specific tasks. Agents can be connected to MCP servers in Agentforce Builder.
 #### Context
 MCP provides a universal standard that enables Agentforce to engage with an external server to receive the context of the functionality needed to deliver accurate, effective results. 
 #### Use Cases
 Use cases of MCP include data retrieval, record management, workflow automation, document and file access, system-to-system integration, and tool discovery.
 
 ### Agent-to-Agent Protocol (A2A)
-#### 
+#### Platform Events
+Platform Events act as the transport layer for A2A communication in the Agentforce ecosystem. Agents publish, subscribe, and react to contextual events to trigger actions or escalate tasks asynchronously.
+#### Open Standard
+Agent-to-Agent Protocol (A2A) is an open standard that complements MCP and provides standardized and secure agent-to-agent messaging, delegation, and result handoff. 
+#### Features
+A2A offers features such as seamless communication, interoperability, scalable collaboration, and governance. Agents can publish their capabilities via Agent Cards and exchange structured tasks and messages using standard web technologies (HTTP, JSON).
+#### Use Cases
+A2A has various use cases relevant for Agentforce, such as cross-domain handoff, specialist handoff, swarming and triage, partner collaboration, multi-step planning, and escalation.
 
 ## Model Context Protocol (MCP)
 
@@ -160,6 +167,6 @@ Use cases of MCP include data retrieval, record management, workflow automation,
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzOTQ0MzQyLDQxOTQzMDYwOSwtMTc0ND
-Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTc0OTY4NzIwMiw0MTk0MzA2MDksLTE3ND
+Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
