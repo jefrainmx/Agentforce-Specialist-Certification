@@ -28,7 +28,12 @@ A single agent should be used when topics are closely related and the action set
 #### BUILDING & MAINTENANCE
 A single agent can be easier to build initially, but can become harder to maintain as scope expands. 
 
-
+### SOMA Architecture
+SOMA uses one front-door agent to route work to specialized agents inside the same Salesforce org. 
+#### PRIMARY AGENT
+A primary or supervisor agent receives the user request and routes it to the best-fit specialist. 
+#### SECONDARY AGENTS
+Specialist or secondary agents handle delegated tasks using focused instructions, data, and actions.
 
 ## SOMA Architecture
 
@@ -56,6 +61,6 @@ A single agent can be easier to build initially, but can become harder to mainta
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0MTM0MjU4NiwtMTc0NDQ5MDgzNSwtMj
-k4NTE1NDIzLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDA4NzAwOTE1LC0xNzQ0NDkwODM1LC0yOT
+g1MTU0MjMsNzMwOTk4MTE2XX0=
 -->
