@@ -158,15 +158,20 @@ A2A has various use cases relevant for Agentforce, such as cross-domain handoff,
 Model Context Protocol (MCP) is an open standard that describes how AI models can connect with external tools, systems, and data.
 #### OPEN SOURCE
 Model Context Protocol (MCP), originally developed and open-sourced by Anthropic, enables connecting AI applications to external systems.
-BENEFITS
+#### BENEFITS
 Model Context Protocol (MCP) reduces integration effort and complexity while enforcing consistent enterprise-grade trust, security, and compliance across all agent interactions.
-CONTEXT
+#### CONTEXT
 MCP provides a universal standard that enables Agentforce to engage with an external server to receive the context of the functionalityneeded to deliver accurate, effective results. The context fits into the agent’s system of topics, prompts and instructions.
-MCP SERVERS
+#### MCP SERVERS
 AI agents can be connected to MCP servers in Agentforce Builder. These servers can be found on AgentExchange. For example, a service agent can retrieve location data from a shipping and logistics provider’s MCP server to provide an accurate delivery window to a customer. 
-TOOLS & PROMPTS
+#### TOOLS & PROMPTS
 MCP servers provide the tools that enable AI agents to perform tasks. These are functions or actions that AI agents can take. MCP partners can also share useful prompts for recurring or common tasks with AI agents to ensure they quickly get the information they need to help customers.
-MCP PARTNERSSome examples of AgentExchange partners that offer MCP servers are AWS, Cisco, PayPal, Box, IBM, Zoom, etc.
+#### MCP PARTNERS
+Some examples of AgentExchange partners that offer MCP servers are AWS, Cisco, PayPal, Box, IBM, Zoom, etc.
+
+### MCP Partners
+Various AgentExchange partners offer MCP servers that enable agents to connect to external systems.
+
 
 ## Agent-to-Agent Protocol (A2A)
 
@@ -177,6 +182,6 @@ MCP PARTNERSSome examples of AgentExchange partners that offer MCP servers are A
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc5NzI0MzM1LDQxOTQzMDYwOSwtMTc0ND
+eyJoaXN0b3J5IjpbNjgxNjMwNjI4LDQxOTQzMDYwOSwtMTc0ND
 Q5MDgzNSwtMjk4NTE1NDIzLDczMDk5ODExNl19
 -->
