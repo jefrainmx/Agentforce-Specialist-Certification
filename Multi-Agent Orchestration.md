@@ -181,13 +181,19 @@ The Agent-to-Agent Protocol (A2A) complements MCP (which connects a single agent
 A2A enables seamless communication and collaboration between diverse agents, regardless of their underlying platform or developer.
 ### INTEROPERABILITY
 A2A allows heterogeneous agents (e.g., sales, service, employee, partner, etc.) to exchange tasks and context across platforms.
-
-
+### SCALABLE COLLABORATION
+A2A allows agents to seamlessly communicate and orchestrate complex tasks directly with external agents, fostering truly collaborative AI workflows while ensuring secure, scalable interoperability and an enhanced digital workforce across all ecosystems.
+### TRUST & GOVERNANCE
+A2A enforces org-level permissions, context propagation, and auditability across A2A exchanges through the Einstein Trust Layer.
+HOW IT WORKS
+A2A focuses on horizontal agent communication. Agents can publish their capabilities via Agent Cards so others know what they can do. They can exchange structured tasks and messages using standard web technologies (HTTP, JSON).
+BENEFITS
+A2A offers various benefits, such as faster solution building, better accuracy & resilience, and enterprise-grade trust & compliance.
 
 ## Use Cases
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDg4Nzc0Myw0MTk0MzA2MDksLTE3ND
+eyJoaXN0b3J5IjpbMTM0MDM0MjkxMiw0MTk0MzA2MDksLTE3ND
 Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==
 -->
