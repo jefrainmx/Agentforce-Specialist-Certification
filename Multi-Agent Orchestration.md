@@ -35,6 +35,21 @@ A primary or supervisor agent receives the user request and routes it to the bes
 #### SECONDARY AGENTS
 Specialist or secondary agents handle delegated tasks using focused instructions, data, and actions.
 
+### Why SOMA Improves Scalability
+SOMA improves scalability by decomposing a large agent workload into smaller, specialized agent responsibilities.
+#### SPECIALIST AGENTS
+Specialist agents reduce cognitive and instruction load by focusing on a specific business domain or capability. 
+#### INDIVIDUAL AGENTS
+Teams can add, replace, modify, and test individual agents more easily as the solution grows. 
+
+### Why SOMA Improves Control
+SOMA improves control by separating concerns and limiting each agent to the responsibilities, data, and actions it needs.
+#### SPECIALIST
+Each specialist agent can have a narrower scope, clearer instructions, and a more controlled action set. 
+
+
+
+
 ## SOMA Architecture
 
 
@@ -61,6 +76,6 @@ Specialist or secondary agents handle delegated tasks using focused instructions
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA4NzAwOTE1LC0xNzQ0NDkwODM1LC0yOT
-g1MTU0MjMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMjAwOTc0MTQwNiwtMTc0NDQ5MDgzNSwtMj
+k4NTE1NDIzLDczMDk5ODExNl19
 -->
