@@ -262,14 +262,14 @@ Users typically need access such as Data Cloud User, Tableau Next permissions, o
 
 ### Data Timing Considerations
 Analytics and optimization data may not appear immediately because session data must be captured, processed, and surfaced.
-CONVERSATIONS
+#### CONVERSATIONS
 Insights generally apply to conversations that occur after Session Tracing and related features are enabled.
-
-
-
+#### TIME
+Dashboards or optimization insights can take time to populate after conversations occur and sessions close.
 
 ## References
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1ODc1OTk1LDEzNDQzMDk4NTYsLTIyNT
-UxNDAyNCwtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbLTExMjAwMDM4NTUsMTM0NDMwOTg1NiwtMj
+I1NTE0MDI0LC0xNDQwNTExMTUwXX0=
 -->
