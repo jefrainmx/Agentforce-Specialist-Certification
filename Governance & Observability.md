@@ -21,7 +21,24 @@ Changes are tested again before the updated agent is made available to users.
 ### Agent Management Surfaces
 Agent management happens across Setup, Agentforce Builder, Agentforce Studio, and connected channel configuration.
 #### AGENTFORCE BUILDER
-Agentforce Builder is used to configure the agent’s subagents, actions, instructions, variables, filters, connections, preview conversations, and activation state.❖AGENTFORCE STUDIOAgentforce Studio provides access to agent-related work areas such as Agents, Tests, Prompt Templates, Data, AI Models, Agentforce DX, Analytics, Optimization, Scorers, and Alerts. 
+Agentforce Builder is used to configure the agent’s subagents, actions, instructions, variables, filters, connections, preview conversations, and activation state.
+#### AGENTFORCE STUDIO
+Agentforce Studio provides access to agent-related work areas such as Agents, Tests, Prompt Templates, Data, AI Models, Agentforce DX, Analytics, Optimization, Scorers, and Alerts. 
+
+### Activation and Deactivation
+Activation controls whether an agent is available to users in its connected channels. 
+#### ACTIVATION
+Activating an agent makes the selected agent version available to users through configured channels and experiences.
+#### DEACTIVATION
+Deactivating an agent is required when changes must be made to live configuration such as subagents, actions, or instructions. 
+
+### Agent Version Management
+Agent versions help teams control which configuration is tested, activated, and changed. 
+#### VERSION CONTROL
+Agent versions provide a way to manage changes to subagents, actions, instructions, and configuration over time.
+#### RELEASE CONTROL
+Only a tested and approved version should be activated in productionafter changes are reviewed.
+
 
 ## Monitoring Agents
 ## Using Monitoring Data
@@ -35,5 +52,5 @@ Agentforce Builder is used to configure the agent’s subagents, actions, instru
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1ODMxNjc0OCwtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbMTU0Njk3MzM3OSwtMTQ0MDUxMTE1MF19
 -->
