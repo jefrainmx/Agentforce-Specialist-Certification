@@ -126,8 +126,11 @@ The Agentforce Specialist should not select SOMA as the final architecture becau
 
 ## References:
 [Multi-Agent Orchestration](https://www.salesforce.com/agentforce/multi-agent-orchestration/)
+
 [Seven Requirements for Effective Agents](https://www.salesforce.com/agentforce/effective-ai-agent-checklist/)
+
 [Learn about Agentforce SOMA(Single Org, Multi Agent) Orchestration and MCP](https://help.salesforce.com/s/articleView?id=005317683&type=1)
+
 
 
 # Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A.
@@ -229,15 +232,25 @@ When an agent cannot resolve a request or policy conflict, it can delegate to a 
 
 ## References:
 [Agentforce MCP Support](https://www.salesforce.com/agentforce/mcp-support/)
+
 [What Is MCP? A Simple Guide to Model Context Protocol for Salesforce Admins](https://admin.salesforce.com/blog/2025/what-is-mcp-a-simple-guide-to-model-context-protocol-for-salesforce-admins)
+
 [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+
 [A Comprehensive Overview of the Model Context Protocol (MCP)](https://medium.com/@astropomeai/a-comprehensive-overview-of-the-model-context-protocol-mcp-f65150da0aa0)
+
 [What is the Model Context Protocol (MCP)?](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)
+
 [Unleashing the Power of Connected Agents with the Newly Expanded AgentExchange](https://www.salesforce.com/blog/connected-agents-agentexchange/?utm_source=chatgpt.com)
+
 [Agentic Patterns and Implementation with Agentforce](https://architect.salesforce.com/docs/architect/fundamentals/guide/agentic-patterns.html#2__Agent_Interoperability__A2A_and_MCP)
+
 [Bridging Worlds: How Salesforce Agentforce and Googles A2A Protocol Will Revolutionize AI Workflows](https://www.linkedin.com/pulse/bridging-worlds-how-salesforce-agentforce-googles-a2a-protocol-3ioic/)
+
 [Announcing the Agent2Agent Protocol (A2A)](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/?utm_source=chatgpt.com)
+
 [Linux Foundation Launches the Agent2Agent Protocol Project to Enable Secure, Intelligent Communication Between AI Agents](https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents?utm_source=chatgpt.com)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTI1Mjc0MzkxNSw0MTk0MzA2MDksLTE3ND
 Q0OTA4MzUsLTI5ODUxNTQyMyw3MzA5OTgxMTZdfQ==

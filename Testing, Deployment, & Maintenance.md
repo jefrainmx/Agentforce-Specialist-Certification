@@ -45,7 +45,9 @@ While a large number of utterances can be tested using the Agentforce Testing Ce
 
 ## References:
 [Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&type=5)
+
 [Agentforce Testing Center](https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-testing)
+
 
 # Explain how Testing Center evaluations work.
 ## Introduction
@@ -103,11 +105,11 @@ Empty expected values are treated as failures, so test criteria should be comple
 
 ### Test Suites
 AI agents can be tested by creating test suites using the Testing Center in Agentforce Studio.
-![TS1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20141959.png)
-![TS2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142022.png)
-![TS3](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142043.png)
-![TS4](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142103.png)
-![TS5](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20142124.png)
+![TS1](/images/Screenshot%202026-09-30%20141959.png)
+![TS2](/images/Screenshot%202026-09-30%20142022.png)
+![TS3](/images/Screenshot%202026-09-30%20142043.png)
+![TS4](/images/Screenshot%202026-09-30%20142103.png)
+![TS5](/images/Screenshot%202026-09-30%20142124.png)
 
 
 
@@ -142,12 +144,12 @@ The utterance, expected criteria, instructions, actions, filters, or guardrails 
 
 ### Running Tests
 A test can be run for the selected agent after generating test cases.
-![*Running Test*](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20144832.png)
+![*Running Test*](/images/Screenshot%202026-09-30%20144832.png)
 
 
 ### Responses & Evaluations
 After running a test, agent responses and evaluations can be checked.
-![*Responses & Evaluations*](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20144857.png)
+![*Responses & Evaluations*](/images/Screenshot%202026-09-30%20144857.png)
 
 
 ## Evaluation Considerations
@@ -174,6 +176,7 @@ A test can include up to 1,000 test cases, so large suites may need to be organi
 
 ## References:
 [Agentforce Testing Center](https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-testing)
+
 [Test Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_test.htm&type=5)
 
 
@@ -212,14 +215,19 @@ Stakeholders and end-users must be informed about the new agent deployment. Nece
 
 ### Change Set for Agent Deployment
 When deploying an agent using an Outbound Change Set, all the associated metadata componentsmust be added to the change set in the sandbox environment.
-![Change Set for Agent Deployment](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-30%20152235.png)
+![Change Set for Agent Deployment](/images/Screenshot%202026-09-30%20152235.png)
 
 ## References:
 [How to deploy Agentforce AI Planner metadata](https://docs.gearset.com/en/articles/10406930-how-to-deploy-agentforce-ai-planner-metadata)
+
 [Deploy change sets from sandbox to production](https://help.salesforce.com/s/articleView?id=000382677&type=1&utm_source=chatgpt.com)
+
 [Activate or Deactivate Your Agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&type=5)
+
 [Distribute a Service Agent](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/3-distribute-service-agent)
+
 [GenAiPlanner](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_genaiplanner.htm)
+
 
 # Identify the considerations for deploying a template from sandbox to production.
 ## Introduction
@@ -334,11 +342,17 @@ The deployment should include evidence of preview testing, runtime testing, mode
 
 ## References:
 [Packaging Considerations for Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_considerations_packaging.htm&type=5)
+
 [Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&type=5)
+
 [Activate and Deactivate Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_activate_deactivate_templates.htm&type=5)
+
 [Prompt Template Run-time Execution](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_runtime.htm&type=5)
+
 [Integrate Prompt Templates with Salesforce Features](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_integrate.htm&type=5)
+
 [Change LLM Configurations in Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_changing_llm_configurations.htm&type=5)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE0NjAzNjY2MTAsLTIyMDE3NTE1NCwtNz
 gzNzQyMzMwLC0yNjk1MDI3MTgsOTk2OTM1NTk1LDIxMjAxODE3

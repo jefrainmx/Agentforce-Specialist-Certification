@@ -43,7 +43,7 @@ The Prompt Template Manager permission set allows users to create and manage pro
 Users can create prompt templates by accessing the Prompt Builder page in Setup and clicking the New Prompt Template button. The page displays all the standard and custom prompt templates in the org
 
 Prompt Builder can be accessed by navigating to Prompt Builder in Salesforce Setup
-![Prompt Builder Main](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20123823.png)
+![Prompt Builder Main](/images/Screenshot%202026-09-24%20123823.png)
 
 Prompt Builder can be used to create, test, revise, customize, and manage prompt templates.
 #### PROMPT TEMPLATE TYPES
@@ -65,9 +65,9 @@ The Template Settings icon can be clicked to display the Template Details sectio
 
 ### Prompt Template Workspace
 The Prompt Template Workspace allows creating and testing prompt templates.
-![Prompt Builder resources](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20125427.png)
+![Prompt Builder resources](/images/Screenshot%202026-09-24%20125427.png)
 
-![Prompt Builder Preview](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20125451.png)
+![Prompt Builder Preview](/images/Screenshot%202026-09-24%20125451.png)
 
 ### Prompt Template Types
 One of several prompt template types can be selected when creating a new prompt template.
@@ -106,11 +106,11 @@ A prompt template can be called through an invocable action anywhere on the Sale
 
 ### Field Generation
 A Field Generation prompt template can be used to populate a dynamic form field.
-![Field Generation](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133052.png)
+![Field Generation](/images/Screenshot%202026-09-24%20133052.png)
 
 ### Sales Emails
 The Draft with Einstein button can be clicked in the Lightning Experience email composer to draft a personalized email for a customer.
-![Sales Emails](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133120.png)
+![Sales Emails](/images/Screenshot%202026-09-24%20133120.png)
 
 ### Prompt Templates & Flows
 Prompt templates can be used with flows created in Flow Builder.
@@ -127,7 +127,7 @@ For example, this type of flow can be used to retrieve new cases related to a pa
 ### Prompt Template Action
 A Prompt Template action can be added to a flow to generate a response using a prompt template.
 
-![Prompt Template Action](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-24%20133143.png)
+![Prompt Template Action](/images/Screenshot%202026-09-24%20133143.png)
 
 ### Scenarios & Solutions
 #### Scenario 1
@@ -194,6 +194,7 @@ A user must have the Prompt Template User permission set to see the generative A
 ## References:
 [Enable Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_enable.htm&type=5)
 
+
 # Identify the considerations for using a prompt template type such as field generation and flex types.
 ## Introduction
 When creating prompt templates in Prompt Builder, understanding the key considerations and limitations for field generation and flex types ensures accuracy, consistency, and optimal grounding. Record Snapshots use the page layout of the current user for grounding. A Field Generation prompt template can only be added to a Lightning record page that is upgraded to Dynamic Forms. Some related lists, like Activities, User, and Organization, aren’t supported due to relationship and global variable limitations. Prompt templates must also respect numerical limits, such as a maximum of five related list merge fields. Flex templates introduce additional considerations, including integration with flows using the Add Prompt Instructions flow element, support for Apex and LWC through the Connect API. There are also considerations related to the handling of token limits and hallucinationerrors. Together, these considerations help ensure prompt templates return grounded, predictable, and contextually accurate responses.
@@ -238,9 +239,13 @@ If JSON data is required in a prompt, Apex code can be utilized to generate and 
 
 ## References:
 [Prompt Builder Key Concepts](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_key_concepts.htm&type=5)
+
 [Prompt Builder Limits](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limits.htm&type=5)
+
 [Grounding with Related List Merge Fields](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_related_list.htm&type=5)
+
 [Grounding Prompts with Record Snapshots](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_record_snapshots.htm&type=5)
+
 
 # Given a scenario, identify the appropriate grounding technique.
 ## Introduction
@@ -334,12 +339,12 @@ A flow merge field in the prompt template triggers the flow and inserts the retu
 
 ### Grounding a Prompt Template
 A prompt template can be grounded with various types of data using merge fields, depending on the prompt template type and the objects associated with the prompt template.
-![Grounding a Prompt Template 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164643.png)
+![Grounding a Prompt Template 1](/images/Screenshot%202026-09-25%20164643.png)
 
-![Grounding a Prompt Temaplte 2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164725.png)
+![Grounding a Prompt Temaplte 2](/images/Screenshot%202026-09-25%20164725.png)
 ### Template-Triggered Prompt Flow
 A Template-Triggered Prompt Flow can be used to bring data from unified Data Cloud objects into a prompt template.
-![Template-Triggered Prompt Flow](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-25%20164743.png)
+![Template-Triggered Prompt Flow](/images/Screenshot%202026-09-25%20164743.png)
 
 ## Scenarios & Solutions
 ### Scenario 1
@@ -369,8 +374,11 @@ A flow can be created to perform a REST API callout and capture the response. Th
 
 ## References:
 [Ground Prompt Templates with Salesforce Resources](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_template.htm&type=5)
+
 [Create and Ground Prompt Templates](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates)
+
 [Get Started with Prompt Builder](https://trailhead.salesforce.com/content/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder)
+
 
 
 # Explain the process for creating, activating, and executing prompt templates.
@@ -420,15 +428,15 @@ A prompt template can use a standard or custom model configuration, but model se
 
 ### Creating a Prompt Template
 When creating a prompt template, the builder selects the prompt template type and enters the prompt template name and description. Additional required fields depend on the selected type.
-![New Prompt Template](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20141332.png)
+![New Prompt Template](/images/Screenshot%202026-09-28%20141332.png)
 
 ### Prompt Template Workspace
 The workspace is used to write prompt instructions, insert grounding resources, configure settings, select a model configuration, preview the resolved prompt, and review the generated response. 
-![Prompt Template Workspace](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20141424.png)
+![Prompt Template Workspace](/images/Screenshot%202026-09-28%20141424.png)
 
 ### Preview Button
 Preview requires selecting test records, related records, or input values in the Preview Settings.
-![Peview Button](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20141450.png)
+![Peview Button](/images/Screenshot%202026-09-28%20141450.png)
 
 ### Revising Prompt Templates
 Creating an effective prompt template is an iterative process of previewing, reviewing, and revising. 
@@ -479,7 +487,9 @@ A model configuration defines the model and settings used by the prompt template
 
 ## References:
 [Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_about.htm&type=5)
+
 [Drive Productivity with Salesforce AI](https://trailhead.salesforce.com/content/learn/trails/drive-productivity-with-einstein-ai)
+
 
 # Explain how to implement best practices for writing effective prompts.
 ## Introduction
@@ -512,10 +522,11 @@ When writing an effective prompt that follows best practices, instructions can b
 
 ### Prompt Template Instructions
 Instructions in a prompt template should be surrounded with triple quotes (""").
-![Prompt Template Instructions](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20151409.png)
+![Prompt Template Instructions](/images/Screenshot%202026-09-28%20151409.png)
 
 ## References:
 [Best Practices for Building Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_best_practices.htm&type=5)
+
 
 
 # Identify the security and privacy features of the Trust Layer.
@@ -560,7 +571,7 @@ A prompt can come from any Salesforce app. Prompts can be created in Prompt Buil
 When a generated response is returned by the Large Language Model (LLM), the Trust Layer applies certain policies and processes to ensure that it is safe and useful. 
 
 Data flows through the Trust Layer in the form of prompt and response.
-![Trust Layer](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20154303.png)
+![Trust Layer](/images/Screenshot%202026-09-28%20154303.png)
 
 ### Trust Layer: Prompt Journey
 During the prompt journey in the Trust Layer, a prompt goes through secure data retrieval based on dynamic grounding, data masking, and prompt defense.
@@ -578,12 +589,12 @@ Prompt Defense refers to the use of system policies to decrease the likelihood o
 Instructions can be defined for the LLM for how to behave in a certain manner to build trust with users. For example, the LLM can be instructed to not address contentor generate answers that it doesn’t have information about. 
 
 During the prompt journey in the Trust Layer, a prompt goes through secure data retrieval based on dynamic grounding, data masking, and prompt defense.
-![Prompt Jouney 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20155603.png)
-![Prompt Journey 2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20155623.png)
+![Prompt Jouney 1](/images/Screenshot%202026-09-28%20155603.png)
+![Prompt Journey 2](/images/Screenshot%202026-09-28%20155623.png)
 
 ### Trust Layer: Data Masking
 Sensitive data is masked before being sent to the LLM. However, data masking and demasking are disabled for Agentforce Agents.
-![Data Mask](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20155822.png)
+![Data Mask](/images/Screenshot%202026-09-28%20155822.png)
 
 ### Trust Layer: Response Generation
 After a prompt has been fully hydrated and secured in the Trust Layer, it is sent through the LLM gateway to generate a response using a model.
@@ -625,10 +636,15 @@ Generated responses should be reviewed for accuracy, safety, tone, and alignment
 
 ## References:
 [Trust Layer](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)
+
 [The Agentforce Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)
+
 [Large Language Model Data Masking in the Agentforce Trust Layer](https://trailhead.salesforce.com/content/learn/modules/llm-data-masking-in-the-einstein-trust-layer)
+
 [Einstein Trust Layer](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_layer.htm&type=5)
+
 [Protect Data Security and Privacy with Einstein Trust Layer](https://salesforce.vidyard.com/watch/xw4UVFdaazJcndvo9yKv6r?_ga=2.213192084.1864142441.1726486426-1262041820.1726261816&_gl=1*1or2rth*_gcl_au*MjEyNjU3MDE4Ny4xNzI2MjYxODE2*_ga*MTI2MjA0MTgyMC4xNzI2MjYxODE2*_ga_H6M98GGB18*MTcyNjU4ODUzOS4xMC4xLjE3MjY1ODg1OTYuMC4wLjA.)
+
 
 
 # Explain how to manage and prevent specific models from being accessed.
@@ -660,11 +676,11 @@ The Data Cloud Architect permission set provides admin-level access to all AI Mo
 
 ### Model Visibility
 Specific model configurations can be hidden in AI Models.
-![Model Visibility](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20182851.png)
+![Model Visibility](/images/Screenshot%202026-09-28%20182851.png)
 
 ### Model Provider Access
 A model provider can be turned off to block access to its models in the org.
-![Model Provider Access](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20183020.png)
+![Model Provider Access](/images/Screenshot%202026-09-28%20183020.png)
 
 ## Hiding Specific Models
 ### Hiding LLM Configurations
@@ -684,7 +700,7 @@ Model visibility should be used to prevent future selection. It is also necessar
 
 ### Hidden Model
 A hidden model is not available for selection in Prompt Builder.
-![Hidden Model](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20183044.png)
+![Hidden Model](/images/Screenshot%202026-09-28%20183044.png)
 
 ## Model Provider Access
 ### Managing Model Provider Access
@@ -700,7 +716,7 @@ Hiding a model prevents selection in Prompt Builder, while turning off a provide
 
 ### Model Provider Access
 The models of a model provider that is turned off are unavailable for selection in Prompt Builder.
-![Model Provider Access](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-28%20183118.png)
+![Model Provider Access](/images/Screenshot%202026-09-28%20183118.png)
 
 ## Prompt Template Considerations
 Prompt templates can reference specific LLM configurations, so model restrictions should be reviewed alongside template configuration and activation.
@@ -732,11 +748,17 @@ Before hiding a model or turning off a provider, teams should test dependent tem
 
 ## References:
 [Manage Large Language Model (LLM) Access by Hiding Configurations](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_mm_show_hide_models.htm&type=5)
+
 [Change LLM Configurations in Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_changing_llm_configurations.htm&type=5)
+
 [Manage Model Provider Access](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&type=5)
+
 [Large Language Model Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&type=5)
+
 [Use AI Models](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_use_ai_models.htm&type=5)
+
 [Packaging Considerations for Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_considerations_packaging.htm&type=5)
+
 
 
 <!--stackedit_data:

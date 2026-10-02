@@ -52,28 +52,31 @@ Agent responses can be based on all Knowledge articles and fields by selecting A
 
 ### Creating an Agentforce Data Library
 A data library can be created on the Agentforce Data Library page in Setup. After the library is saved, Data 360 creates or uses the supporting assets needed for indexing and retrieval. 
-![Add a Data Library](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132335.png)
+![Add a Data Library](/images/Screenshot%202026-09-29%20132335.png)
 
 ### Data Library Source
 A data library can be configured to use Knowledge articles, uploadedfiles, web search, or a custom retriever as its data source. After a data source is selected, it can’t be changed later.
-![Data Library Source](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132412.png)
+![Data Library Source](/images/Screenshot%202026-09-29%20132412.png)
 
 ### Knowledge Fields
 Identifying Fields and Content Fields can be selected to base a data library on the Knowledge base.
-![Add Knowledge Data](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132509.png)
+![Add Knowledge Data](/images/Screenshot%202026-09-29%20132509.png)
 
 ### Knowledge Settings
 Indexed articles can be restricted to public articles and filtered by specific data categories.
-![Knowledge Settings](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132601.png)
+![Knowledge Settings](/images/Screenshot%202026-09-29%20132601.png)
 
 ### File Upload
 Uploaded files can be used as a data source for a data library.
-![Add files](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20132640.png)
+![Add files](/images/Screenshot%202026-09-29%20132640.png)
 
 ## References:
 [Agentforce Data Library](https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm&type=5)
+
 [Augment Agents and Prompts with Relevant Business Knowledge](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look/augment-prompts-with-relevant-knowledge)
+
 [Use the Answer Questions with Knowledge Action](https://help.salesforce.com/s/articleView?id=ai.agent_setup_data_sources.htm&type=5)
+
 
 # Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
@@ -118,7 +121,7 @@ Data 360 supports these chunking strategies: Section-Aware Chunking, Semantic-Ba
 #### SECTION-AWARE CHUNKING
 In section-aware chunking, title and heading elements are used to chunk documents. When creating a search index, Max Token and Overlap Tokens settings can be used to avoid misidentifying short paragraphs or list items as standalone sections, leading to overly small chunks.
 #### SEMANTIC-BASED PASSAGE EXTRACTION
-In semantic-based passage extraction, the semantic meaning inherent in HTML tags is used to chunk a document into passages. The HTML elements (e.g., heading levels 1-6 <h1-h6>, thematic breaks <hr>, bold <b>, etc.) are considered logical boundaries for chunks.
+In semantic-based passage extraction, the semantic meaning inherent in HTML tags is used to chunk a document into passages. The HTML elements (e.g., heading levels 1-6, thematic breaks, bold, etc.) are considered logical boundaries for chunks.
 #### CONVERSATION-BASED CHUNKING
 In conversation-based chunking, the transcribed data from audio and video files are segmented into chunks, typically separated when the voice changes. If there are multiple speakers, each chunk represents the speech of an individual speaker.
 #### PREPEND FIELD CHUNKING
@@ -134,11 +137,11 @@ Search index quality depends on selecting fields that contain meaningful, releva
 
 ### Chunking Strategy
 When creating a Search Index Configuration, the Chunking Strategy can be selected for each field.
-![Search Index Configuration](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20145140.png)
+![Search Index Configuration](/images/Screenshot%202026-09-29%20145140.png)
 
 ### Editing & Rebuilding a Search Index
 A Search Index can be edited and rebuilt.
-![Edit and Rebuild Search Index](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20145202.png)
+![Edit and Rebuild Search Index](/images/Screenshot%202026-09-29%20145202.png)
 
 ## Data 360 Search
 ### Data 360 Search
@@ -162,19 +165,19 @@ Keyword search recognizes that Model X200 Printer and Model X210 Printer are lex
 
 ### Creating a Search Index Configuration
 A Search Index Configuration can be created in Data 360 by selecting one of three options.
-![New Search Index](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151419.png)
+![New Search Index](/images/Screenshot%202026-09-29%20151419.png)
 
 A search type and data model object can be selected for a new search index configuration.
-![Search Type and Source Object](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151441.png)
+![Search Type and Source Object](/images/Screenshot%202026-09-29%20151441.png)
 
 The fields to chunk can be added, and the chunking strategy can be set for each field.
-![Chunking](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151504.png)
+![Chunking](/images/Screenshot%202026-09-29%20151504.png)
 
 A vectorization strategy can be selected to measure the unstructured data for semantic relevance.
-![Vectorizing](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151526.png)
+![Vectorizing](/images/Screenshot%202026-09-29%20151526.png)
 
 Related fields for search filtering can be selected.
-![Fields for Filter](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151717.png)
+![Fields for Filter](/images/Screenshot%202026-09-29%20151717.png)
 
 
 
@@ -216,19 +219,29 @@ The side panel can be used to define the search parameters of an active retrieve
 
 ### Using a Retriever
 The Insert Resource button can be used to add a search retriever to a prompt template.
-![Use retrievers as resources](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-29%20151745.png)
+![Use retrievers as resources](/images/Screenshot%202026-09-29%20151745.png)
 
 ## References:
 [Get Started with Unstructured Data in Data 360](https://trailhead.salesforce.com/content/learn/projects/unstructured-data-in-data-cloud/get-started-with-unstructured-data-in-data-cloud)
+
 [Create an Unstructured Data Lake Object from a Data Kit](https://help.salesforce.com/s/articleView?id=data.c360_a_unstructured_data_create_udlo_from_data_kit.htm&type=5)
+
 [Chunking Strategies](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_supported_chunking_strategies.htm&type=5)
+
 [Rebuild a Search Index Configuration](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_rebuild_search_index.htm&type=5)
+
 [Create a Hybrid Search Index with Advanced Setup](https://help.salesforce.com/s/articleView?id=data.c360_a_hybridsearch_index_create.htm&type=5)
+
 [Retrieve Data](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever.htm&type=5)
+
 [Use Search for AI, Automation, and Analytics](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_ground_ai.htm&type=5)
+
 [Ground with Knowledge Using Retrieval Augmented Generation](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag.htm&type=5)
+
 [Add a Retriever to a Field Generation Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_add_retriever_field_gen.htm&type=5)
+
 [Augment Agents and Prompts with Relevant Business Knowledge](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look/augment-prompts-with-relevant-knowledge)
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTEyMjUzMTY2ODQsMTQwNzEzODE2NCw4Mj
 cyOTYyMzEsLTIwMTYzNzE5MTMsLTE0Njg0NzM1NTksMTA3ODEw
