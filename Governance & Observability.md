@@ -63,7 +63,22 @@ Session or trace details can help troubleshoot agent behavior by showing what ha
 
 ### Agent Analytics
 Agent Analytics helps teams monitor broad trends across agent usage, performance, quality, and trust. 
-#### AGENT ANALYTICSAgent Analytics provides overview and performance views that can be filtered by agent type, agent, timeframe, and channel.❖METRIC CATEGORIESAgent Analytics organizes performance data into areas such as Effectiveness, Usage, User Satisfaction, Quality, Health, and Trust.
+#### AGENT ANALYTICS
+Agent Analytics provides overview and performance views that can be filtered by agent type, agent, timeframe, and channel.
+#### METRIC CATEGORIES
+Agent Analytics organizes performance data into areas such as Effectiveness, Usage, User Satisfaction, Quality, Health, and Trust.
+
+### Feedback and Performance Insights
+Feedback and performance insights help teams understand whether users are getting useful, accurate, and trusted responses.
+#### USER SATISFACTION
+User satisfaction and feedback metrics help identify responses that users find helpful, unhelpful, incomplete, or misaligned with expectations.
+#### INTERACTION PATTERNS
+Performance insights and optimization data help identify repeated failure patterns, unresolved interactions, and areas where subagents, actions, or grounding may need improvement.
+
+### Session and Trace Data
+Session-level data provides deeper visibility into what happened during an agent interaction.
+#### SESSION DATA
+Session data captures conversation-level information such as user inputs, agent responses, selected subagents, actions, and outcomes. ❖TRACE DATATrace data supports deeper troubleshooting through reasoning steps, action calls, errors, prompt inputs, and generated outputs when Session Tracing is enabled.
 
 
 ## Using Monitoring Data
@@ -77,6 +92,6 @@ Agent Analytics helps teams monitor broad trends across agent usage, performance
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDY2NTk4NSwtMjI1NTE0MDI0LC0xND
+eyJoaXN0b3J5IjpbLTU3NzczMTUxMSwtMjI1NTE0MDI0LC0xND
 QwNTExMTUwXX0=
 -->
