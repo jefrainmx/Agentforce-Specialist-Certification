@@ -110,11 +110,11 @@ The Agent Analytics page in Agentforce Studio shows analytics and performance me
 
 ### Agent Analytics
 The Optimization section in Agentforce Studio allows viewing performance-related insights.
-Agent Analytics 2
+![Agent Analytics 2](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-10-02%20103615.png)
 
 ### Agent Preview
 The Preview button in Agentforce Builder allows manual testing of utterances.
-Agent Preview
+![Agent Preview](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-10-02%20103635.png)
 
 
 
@@ -128,6 +128,6 @@ Agent Preview
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTU4MDIyMjAsLTIyNTUxNDAyNCwtMT
-Q0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbLTY1NDMwMzExNCwtMjI1NTE0MDI0LC0xND
+QwNTExMTUwXX0=
 -->
