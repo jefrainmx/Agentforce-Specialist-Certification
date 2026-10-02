@@ -151,13 +151,22 @@ Agent Optimization focuses on unresolved interactions, knowledge gaps, session i
 Agent Analytics and Agent Optimization rely on session-level data captured through Agentforce Session Tracing.
 #### SESSION TRACING
 Agentforce Session Tracing captures turn-by-turn interactions, reasoning executions, actions, prompt and gateway inputs/outputs, error messages, and final responses. 
+#### SESSION DATA
+Session data is stored in Data 360 DLOs and DMOs so it can be queried, reported on, and used for dashboards. 
 
+### Session Tracing Data Model
+The Session Tracing Data Model organizes agent behavior into sessions, participants, interactions, messages, and steps.
+#### SESSION
+AIAgentSession represents the overall session, while AIAgentInteraction represents a turn or segment inside the session.
+#### OPERATIONS
+AIAgentInteractionStep captures discrete operations such as LLM execution, action execution, errors, inputs, and outputs. 
 
 ## Agent Analytics
+
 ## Agent Optimization
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDM3MTY1NCwxMzQ0MzA5ODU2LC0yMj
+eyJoaXN0b3J5IjpbMTQ4MDA2Nzc1MSwxMzQ0MzA5ODU2LC0yMj
 U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
