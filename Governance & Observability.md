@@ -106,7 +106,7 @@ Agent updates should follow a controlled release process with documentation, tes
 
 ### Agent Analytics
 The Agent Analytics page in Agentforce Studio shows analytics and performance metrics related to categories such as Effectiveness, Usage, User Satisfaction, Quality, Health, and Trust. 
-Agent Analytics 1
+![Agent Analytics 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-10-02%20103550.png)
 
 ### Agent Analytics
 The Optimization section in Agentforce Studio allows viewing performance-related insights.
@@ -128,6 +128,6 @@ Agent Preview
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjY3OTI2MDksLTIyNTUxNDAyNCwtMT
+eyJoaXN0b3J5IjpbLTE2NTU4MDIyMjAsLTIyNTUxNDAyNCwtMT
 Q0MDUxMTE1MF19
 -->
