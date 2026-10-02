@@ -39,6 +39,16 @@ Agent versions provide a way to manage changes to subagents, actions, instructio
 #### RELEASE CONTROL
 Only a tested and approved version should be activated in productionafter changes are reviewed.
 
+### Managing Subagents and Actions
+Subagents and actions define what the agent can understand and what work it can perform. 
+#### SUBAGENTS
+Subagents define the jobs an agent can perform, including scope, instructions, and assigned actions. 
+#### ACTIONS
+Actions give the agent specific capabilities, such as retrieving data, calling automation, updating records, or escalating work. 
+
+### Managing Connections and Access
+Channel configuration and user access determine where the agent appears and what it can do. ❖CONNECTIONSConnections define how an agent is exposed through channels such as Lightning, Slack, Messaging, Email, or Voice. ❖ACCESSAgent availability and action execution depend on user access, agent user permissions, runtime security context, and channel-specific setup.
+
 
 ## Monitoring Agents
 ## Using Monitoring Data
@@ -52,5 +62,5 @@ Only a tested and approved version should be activated in productionafter change
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0Njk3MzM3OSwtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbLTIyNTUxNDAyNCwtMTQ0MDUxMTE1MF19
 -->
