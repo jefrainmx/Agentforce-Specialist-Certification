@@ -176,12 +176,23 @@ Engagement and deflection metrics show whether users are interacting with agents
 #### ESCALATION, ABANDONMENT & ERROR
 Escalation, abandonment, and error metrics show where conversationsfail, transfer, time out, or encounter technical issues.
 
+### Analytics Dashboards
+Dashboards turn session data into visual summaries that help teams monitor usage, quality, performance, and trends.
+#### DASHBOARDS
+Dashboards can show adoption, conversation volume, session outcomes, user feedback, and agent effectiveness across time. 
+#### ANALYTICS
+Analytics can help identify subagents, actions, channels, or conversation types that require deeper investigation. 
 
+### Agent Analytics
+Agent Analytics can be accessed in Agentforce Studio to understand agent performance through various types of metrics.
+Agent Analytics 1
 
 ## Agent Optimization
+
+
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk0NTQyMzIsMTM0NDMwOTg1NiwtMj
-I1NTE0MDI0LC0xNDQwNTExMTUwXX0=
+eyJoaXN0b3J5IjpbOTY1MTY5MzgxLDEzNDQzMDk4NTYsLTIyNT
+UxNDAyNCwtMTQ0MDUxMTE1MF19
 -->
