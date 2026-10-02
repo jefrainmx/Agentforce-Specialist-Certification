@@ -246,10 +246,30 @@ High escalation or abandonment rates may indicate unclear instructions, missing 
 #### UNRESOLVED INTENTS
 Repeated unresolved intents may indicate that a new subagent, action, Knowledge article, or retriever is needed.
 
-#### Testing After OptimizationTesting confirms whether analytics-driven changes actually improve the agent before the changes are released broadly.❖TEST UTTERANCESFailed sessions and low-quality intents can be converted into test utterances for Testing Center or Builder conversation testing.
+#### Testing After Optimization
+Testing confirms whether analytics-driven changes actually improve the agent before the changes are released broadly.
+#### TEST UTTERANCES
+Failed sessions and low-quality intents can be converted into test utterances for Testing Center or Builder conversation testing.
+#### TEST RESULTS
+Test results should be compared against future analytics and optimization trends to confirm improvement.
+
+### Access and Setup Considerations
+Users need the right setup, data, and permissions before analytics and optimization insights become available.
+#### SESSION TRACING
+Session Tracing must be enabled so new conversations are captured for analytics and optimization.
+#### ACCESS
+Users typically need access such as Data Cloud User, Tableau Next permissions, or Access Agent Optimization, depending on the feature.
+
+### Data Timing Considerations
+Analytics and optimization data may not appear immediately because session data must be captured, processed, and surfaced.
+CONVERSATIONS
+Insights generally apply to conversations that occur after Session Tracing and related features are enabled.
+
+
+
 
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NzcwMTc2NywxMzQ0MzA5ODU2LC0yMj
-U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
+eyJoaXN0b3J5IjpbLTU1ODc1OTk1LDEzNDQzMDk4NTYsLTIyNT
+UxNDAyNCwtMTQ0MDUxMTE1MF19
 -->
