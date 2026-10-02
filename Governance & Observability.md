@@ -85,10 +85,23 @@ Trace data supports deeper troubleshooting through reasoning steps, action calls
 ## Using Monitoring Data
 ### Investigating Issues
 Monitoring data should be used to identify the likely cause of unexpected or low-quality agent behavior. 
-ROUTING ISSUES
+#### ROUTING ISSUES
 Routing issues can occur when the wrong subagent is selected, a request falls into a general fallback path, or instructions are unclear. 
-EXECUTION ISSUES
+#### EXECUTION ISSUES
 Execution issues can occur when actions are missing, inputs are incomplete, permissions are insufficient, or the underlying Flow, Apex, API, or data source fails.
+
+### Updating and Retesting Agents
+Agent improvements should be tested before the updated agent is made available to users again. 
+#### AGENT UPDATES
+Updates can include changing subagent descriptions, instructions, actions, filters, variables, grounding, escalation rules, or channel configuration. 
+#### RETESTING
+Updated behavior should be tested in Agentforce Builder and Testing Center before the agent version is activated again.
+
+###  Governance and Operational Review
+Ongoing governance ensures that agents continue to meet business, security, compliance, and qualityexpectations.OPERATIONAL REVIEWTeams should regularly review usage, feedback, unresolved requests, failed tests, escalation trends, and action failures.❖CHANGE GOVERNANCEAgent updates should follow a controlled release process with documentation, testing evidence, approval, and rollback planning.
+
+
+
 
 ## References
 
@@ -100,6 +113,6 @@ Execution issues can occur when actions are missing, inputs are incomplete, perm
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjU0MzkwMjMsLTIyNTUxNDAyNCwtMT
-Q0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbMTM1MDIzNTkzMCwtMjI1NTE0MDI0LC0xND
+QwNTExMTUwXX0=
 -->
