@@ -202,10 +202,25 @@ Intents represent sets of interactions within a session that address a specific 
 #### CLUSTERING
 Intents are generated and clustered to help identify common issues, unmet requests, and improvement opportunities.
 
+### Quality Scores
+Quality scores help prioritize which interactions need attention by showing how relevant the agent’s response was to the user request.
+#### LOW-QUALITY SCORES
+Low-quality scores can highlight weak instructions, missing knowledge, incorrect action selection, or poor response grounding.
+#### QUALITY TRENDS
+Quality trends can help teams decide which subagents, topics, instructions, or knowledge sources should be updated first.
+
+### Session Analysis
+Session analysis provides a detailed view of what happened from the initial user request to the final outcome.
+#### ANALYSIS
+Session analysis allows builders to inspect how the agent interpretedthe request, which subagentwas selected, and which actions or LLM stepswere executed.
+#### DETAILS
+Session details can reveal misrouted requests, missing actions, grounding failures, prompt issues, or escalation problems.
+
+
 
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODkxOTA5OSwxMzQ0MzA5ODU2LC0yMj
+eyJoaXN0b3J5IjpbMTA1MDY2MDgwMiwxMzQ0MzA5ODU2LC0yMj
 U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
