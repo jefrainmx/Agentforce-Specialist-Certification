@@ -216,11 +216,26 @@ Session analysis allows builders to inspect how the agent interpretedthe request
 #### DETAILS
 Session details can reveal misrouted requests, missing actions, grounding failures, prompt issues, or escalation problems.
 
+### Knowledge Gaps and Configuration Gaps
+Optimization insights help separate content problems from agent configuration problems.
+#### KNOWLEDGE GAP
+A knowledge gap occurs when the agent lacks the right approved information to answer the user’s request. 
+#### CONFIGURATION GAP
+A configuration gap occurs when instructions, subagent descriptions, actions, filters, or escalation rules do not guide behavior correctly. 
 
+### Insights
+Insights can be accessed under Agent Optimization in Agentforce Studio to drill into sessions, analyze quality scores, and identify patterns to improve an agent's performance.
+Insights 1
+
+### Sessions & Intents
+Sessions & Intents can be accessed under Agent Optimization in Agentforce Studio to understand user requests, analyze interaction patterns, and improve an agent's performance. 
+Sessions & Intents 1
 
 ## Continuous Optimization Cycle
+
+
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDY2MDgwMiwxMzQ0MzA5ODU2LC0yMj
-U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
+eyJoaXN0b3J5IjpbLTIwNDg4MDcwNTAsMTM0NDMwOTg1NiwtMj
+I1NTE0MDI0LC0xNDQwNTExMTUwXX0=
 -->
