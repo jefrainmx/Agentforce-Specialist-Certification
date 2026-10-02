@@ -162,11 +162,26 @@ AIAgentSession represents the overall session, while AIAgentInteraction represen
 AIAgentInteractionStep captures discrete operations such as LLM execution, action execution, errors, inputs, and outputs. 
 
 ## Agent Analytics
+### What Agent Analytics Measures
+Agent Analytics helps teams understand how agents perform across users, sessions, channels, and business outcomes.
+#### PERFORMANCE
+It analyzes agent performance within user and agent sessions using data from the unified Session Tracing Data Model. 
+#### METRICS
+It supports insights into engagement, escalation, deflection, abandonment, feedback, errors, and agent effectiveness. 
+
+### Key Agent Analytics Metrics
+Agent Analytics metrics help teams understand whether agents are being used successfully and where users need additional support. 
+#### ENGAGEMENT & DEFLECTION
+Engagement and deflection metrics show whether users are interacting with agents and resolvingissues without escalation.
+#### ESCALATION, ABANDONMENT & ERROR
+Escalation, abandonment, and error metrics show where conversationsfail, transfer, time out, or encounter technical issues.
+
+
 
 ## Agent Optimization
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MDA2Nzc1MSwxMzQ0MzA5ODU2LC0yMj
-U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
+eyJoaXN0b3J5IjpbLTE2ODk0NTQyMzIsMTM0NDMwOTg1NiwtMj
+I1NTE0MDI0LC0xNDQwNTExMTUwXX0=
 -->
