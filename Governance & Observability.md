@@ -142,7 +142,15 @@ Changes are tested in Builder or Testing Center, then monitored again using anal
 ## Agentforce Observability
 ### Agentforce Observability
 Agentforce Observability provides tools for measuring, analyzing, and improvingagent behavior across real conversations.
-#### AGENT ANALYTICSAgent Analytics focuses on performance, usage, effectiveness, feedback, escalation, deflection, and abandonment metrics. 
+#### AGENT ANALYTICS
+Agent Analytics focuses on performance, usage, effectiveness, feedback, escalation, deflection, and abandonment metrics. 
+#### AGENT OPTIMIZATION
+Agent Optimization focuses on unresolved interactions, knowledge gaps, session inspection, intents, and response-quality trends.
+
+### Session Tracing Foundation
+Agent Analytics and Agent Optimization rely on session-level data captured through Agentforce Session Tracing.
+#### SESSION TRACING
+Agentforce Session Tracing captures turn-by-turn interactions, reasoning executions, actions, prompt and gateway inputs/outputs, error messages, and final responses. 
 
 
 ## Agent Analytics
@@ -150,6 +158,6 @@ Agentforce Observability provides tools for measuring, analyzing, and improvinga
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExMTg4MTg5LDEzNDQzMDk4NTYsLTIyNT
-UxNDAyNCwtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbMTM1MDM3MTY1NCwxMzQ0MzA5ODU2LC0yMj
+U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
