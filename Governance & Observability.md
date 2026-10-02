@@ -269,10 +269,9 @@ Dashboards or optimization insights can take time to populate after conversation
 
 ## References
 [Monitor Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_monitor.htm&type=5)
-[Agent Analytics and Monitoring
-](https://trailhead.salesforce.com/content/learn/modules/agent-analytics-and-monitoring)
+[Agent Analytics and Monitoring](https://trailhead.salesforce.com/content/learn/modules/agent-analytics-and-monitoring)
 [Agentforce : Agentforce Observability Setup and Access](https://help.salesforce.com/s/articleView?id=005237036&type=1)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0Mzg0MTYzOSwtMTEyMDAwMzg1NSwxMz
+eyJoaXN0b3J5IjpbMTE0MDY1NDkzMywtMTEyMDAwMzg1NSwxMz
 Q0MzA5ODU2LC0yMjU1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
