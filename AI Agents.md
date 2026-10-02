@@ -149,8 +149,11 @@ Canvas View, Script View, and preview tools help inspect subagent selection, act
 
 ## References:
 [Get Started with Agent Script](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-script.html)
+
 [Agent Script Language Characteristics](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-lang.html)
+
 [Agent Script Blocks](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-blocks.html)
+
 [Agent Script Flow of Control](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-flow.html)
 
 
@@ -290,10 +293,15 @@ Script View can help diagnose validation errors and make fast, precise correctio
 
 ## References:
 [Get Started with Agent Script](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-script.html)
+
 [Hybrid Reasoning with New Agentforce Builder and Agent Script](https://architect.salesforce.com/docs/architect/fundamentals/guide/hybrid-reasoning-agentforce-builder-agent-script?utm_source=chatgpt.com)
+
 [Agent Script Language Characteristics](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-lang.html?utm_source=chatgpt.com)
+
 [Agent Script Blocks](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-blocks.html?utm_source=chatgpt.com)
+
 [Agent Script Variables](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-variables.html?utm_source=chatgpt.com)
+
 [Build With Confidence: Inside the New Agentforce Builder](https://admin.salesforce.com/blog/2026/build-with-confidence-inside-the-new-agentforce-builder?utm_source=chatgpt.com)
 
 # Given a use case, manage deterministic behavior for the agent using mechanisms like filters, variables, and template expressions.
@@ -379,19 +387,19 @@ Availability conditions can make actions, subagents, or prompts available only w
 
 ### Custom Variables
 Custom variables can be created in Agentforce Builder and used to store conversation state, action outputs, and values needed for filters, instructions, or later action inputs.
-![Create Custom Variable](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20120850.png)
+![Create Custom Variable](/images/Screenshot%202026-09-22%20120850.png)
 
 ###  Using Variables
 Variables can be referenced in instructions, mapped to action inputs, populated from action outputs, and inserted into Agent Script prompt text with {!@variables.variable_name}.
-![Using variable](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20120927.png)
+![Using variable](/images/Screenshot%202026-09-22%20120927.png)
 
 ### Using Filters
 Filters can be created to control when a subagent or action is available based on variable conditions.
-![Using filter](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20120950.png)
+![Using filter](/images/Screenshot%202026-09-22%20120950.png)
 
 ### Using Conditionals
 Conditionals are used to deterministically control agent behavior based on variable values.
-![Using conditionals](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121009.png)
+![Using conditionals](/images/Screenshot%202026-09-22%20121009.png)
 
 ## Scenarios & Solutions
 ### Scenario 1
@@ -421,11 +429,17 @@ The Agentforce Specialist should use template expressions and conditional logic 
 
 References:
 [Variables](https://help.salesforce.com/s/articleView?id=ai.agent_parent_variables.htm&language=en_US)
+
 [Create Variables in Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.agent_builder_variables_create.htm&language=en_US&type=5)
+
 [Create a Filter to Control Access to Subagents and Actions in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.agent_asset_filters.htm&type=5)
+
 [Example: Improve Your Agent's Memory with Filters and Variables](https://help.salesforce.com/s/articleView?id=ai.agent_custom_variables_filters_example.htm&type=5)
+
 [Agent Script Reference: Variables (Custom and Linked)](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-variables.html)
+
 [Agent Script Reference: Conditional Expressions](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-ref-expressions.html)
+
 [Agent Script Language Characteristics](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-lang.html)
 
 # Given a scenario, select and configure standard topics, custom topics, standard Agent actions, and custom Agent actions.
@@ -462,7 +476,7 @@ Actions can be reviewed in the Agentforce Asset Library and assigned or configur
 
 ### Managing Agent Actions
 Actions assigned to a subagent can be managed in Agentforce Builder. Available standard, managed, and custom actions can be reviewed in the Agentforce Asset Library.
-![enter image description here](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121105.png)
+![enter image description here](/images/Screenshot%202026-09-22%20121105.png)
 
 ### Creating Custom Actions
 Custom actions can be created from the Asset Library for reuse or from inside an agent for a single agent version. 
@@ -473,7 +487,7 @@ A custom action created inside an agent in Agentforce Builder is available only 
 
 ### Creating a Custom Action
 A custom action can be created from the Agentforce Asset Library or from within an agent in Agentforce Builder. The custom action references underlying Salesforce functionality, such as an autolaunched flow, invocable Apex, ApexREST, external service, MuleSoft API, or prompt template.
-![Create Custom Action](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121137.png)
+![Create Custom Action](/images/Screenshot%202026-09-22%20121137.png)
 
 ### Action Instructions
 Action instructions help the agent understand when and how to use an action.
@@ -498,7 +512,7 @@ Outputs marked to show in conversation can be used in the agent’s response to 
 
 ### Custom Action Instructions
 Custom action instructions define the action’s purpose, when it should run, how the agent should collect inputs, and how outputs should be used in the conversation.
-![Custom Action Instructions](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20121221.png)
+![Custom Action Instructions](/images/Screenshot%202026-09-22%20121221.png)
 
 ### Testing Agent Actions
 Agentforce Builder can be used to test whether the agent selects the correct subagent and action. 
@@ -552,8 +566,11 @@ A custom agent action can be created and assigned to the agent to meet the requi
 
 ## References:
 [Agentforce Glossary of Terms](https://help.salesforce.com/s/articleView?id=ai.copilot_glossary.htm&type=5)
+
 [Subagents](https://help.salesforce.com/s/articleView?id=ai.agent_topics_parent.htm&type=5)
+
 [Agent Actions](https://help.salesforce.com/s/articleView?id=ai.copilot_actions.htm&type=5)
+
 
 # Explain the process for connecting agents to various channels such as digital experience, email, voice, and Slack.
 ## Introduction
@@ -608,7 +625,7 @@ The diagram below illustrates how an Agentforce Employee agent can be connected 
 
 ### Connecting an Agent to Email
 The diagram below illustrates how an Agentforce Service agent can be connected to Email, allowing it to autonomously respond to customer email inquiries.
-![Connecting an Agent to Email](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20122821.png)
+![Connecting an Agent to Email](/images/Screenshot%202026-09-22%20122821.png)
 
 ### Connecting a Service Agent to Voice
 Voice connections allow customers to interact with an Agentforce Service Agent through a telephony channel.
@@ -626,11 +643,11 @@ Escalation or transfer behavior should be configured so the agent can hand off c
 
 ### Connections in Agentforce Builder
 The Connections section in Agentforce Builder is used to add and manage channel connections such as Messaging, Email, Voice, and Slack.
-![Connection in Agentforce Builder](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20124118.png)
+![Connection in Agentforce Builder](/images/Screenshot%202026-09-22%20124118.png)
 
 ### Connection Settings
 Connection settings define channel-specific behavior, such as adaptive response formats, routing flows, and other settings required for the selected channel.
-![Connecting Settings](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20124359.png)
+![Connecting Settings](/images/Screenshot%202026-09-22%20124359.png)
 
 ## Connecting a Service Agent to Digital Experience
 ### Connecting a Service Agent to Experience Cloud
@@ -660,22 +677,22 @@ To preserve message formatting during testing, Salesforce recommends chatting wi
 
 ### Connecting a Service Agent to Experience Cloud
 The diagram below illustrates how a Service Agent can be connected to a Messaging Channel on an Experience Cloud site.
-![Connecting a Service Agent to Experience Cloud](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130355.png)
+![Connecting a Service Agent to Experience Cloud](/images/Screenshot%202026-09-22%20130355.png)
 #### Inbound Omni-Channel Flow
 An Inbound Omni-Channel Flow can be created to route messaging requests to a Service Agent.
-![Inbound](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130436.png)
+![Inbound](/images/Screenshot%202026-09-22%20130436.png)
 #### Outbound Omni-Channel Flow
 An Outbound Omni-Channel Flow can be created to enable routing conversations to a queue.
-![Outbound](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130503.png)
+![Outbound](/images/Screenshot%202026-09-22%20130503.png)
 #### Messaging Channel
 A Messaging Channel must be created for a digital customer channel in Setup.
-![Messaging Channel](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130530.png)
+![Messaging Channel](/images/Screenshot%202026-09-22%20130530.png)
 #### Embedded Service Deployment
 An Embedded Service Deployment must be configured and published to deploy a Service Agent.
-![Embedded Service](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130550.png)
+![Embedded Service](/images/Screenshot%202026-09-22%20130550.png)
 #### Embedded Messaging Component
 The Embedded Messaging component can be added to a page of an Experience Cloud site.
-![Embedded Message Component](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20130613.png)
+![Embedded Message Component](/images/Screenshot%202026-09-22%20130613.png)
 
 ## References:
 [Deploy Your Agent to Channels](https://help.salesforce.com/s/articleView?id=ai.agent_parent_deploy.htm&type=5)
@@ -724,7 +741,7 @@ Additional permissions should be granted through targeted permission sets for th
 
 ### Agent User
 When creating an agent that needs an agent user, the specialist can create a new agent user or select an existing one. The agent user should be reviewed after creation to ensure it has only the permissions required for the agent’s assigned actions.
-![Agent User](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-09-22%20140038.png)
+![Agent User](/images/Screenshot%202026-09-22%20140038.png)
 
 ### Agentforce Permission Sets for Sales & Service
 Agentforce permission sets can assigned to users based on their persona and responsibilities.
@@ -751,13 +768,21 @@ Organization-wide defaults (OWD) determine access to records. An agent session w
 
 ## References:
 [Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&utm_source=chatgpt.com)
+
 [Maintain Trust with Agentforce Actions in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions.htm&type=5)
+
 [Create an Agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create.htm&type=5)
+
 [Agent Types and Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&type=5)
+
 [Create an Agent from an Agentforce Service Agent Template](https://help.salesforce.com/s/articleView?id=ai.service_agent_setup.htm&type=5&utm_source=chatgpt.com)
+
 [Engagement Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&type=5)
+
 [Best Practices for Building Secure Agentforce Service Agents](https://admin.salesforce.com/blog/2025/best-practices-for-building-secure-agentforce-service-agents?utm_source=chatgpt.com)
+
 [Agentforce Security and the Shared Responsibility Model](https://help.salesforce.com/s/articleView?id=005315874&type=1)
+
 
 # Given a scenario, identify when to use an Employee or Service agent.
 ## Introduction
@@ -813,9 +838,14 @@ The Salesforce admin should deploy an Agentforce Employee agent. Unlike customer
 
 ## References:
 [Agentforce Service for Slack](https://trailhead.salesforce.com/content/learn/trails/service-cloud-for-slack)
+
 [Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=service.service_agent_overview.htm&type=5)
+
 [Get Started with Agentforce for Employees](https://trailhead.salesforce.com/content/learn/modules/agentforce-for-employees-quick-look/get-started-with-agentforce-for-employees)
+
 [Create an Agent from an Agentforce Employee Agent Template](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_setup.htm&type=5)
+
+
 
 # Given a scenario, identify when it’s appropriate to use Agent API.
 ## Introduction
@@ -882,6 +912,7 @@ The Agentforce Specialist should recommend using the Agent API to enable program
 
 ## References:
 [Agent API Developer Guide](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api.html)
+
 [Agent API: Quick Look](https://trailhead.salesforce.com/content/learn/modules/agent-api-quick-look)
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTgwNzU3NjE5OCwtMTEzNTgwMjExNywtMj
