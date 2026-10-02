@@ -123,12 +123,27 @@ The Preview button in Agentforce Builder allows manual testing of utterances.
 
 # Explain agent analytics and agent optimization
 ## Introduction
+Agent analytics and optimization help organizations monitor, understand, and improve Agentforce agents after they are deployed. Agent Analytics provides dashboards and metrics that show how agents are being used, how effectively they resolve conversations, and where users escalate, abandon, or disengage. Agent Optimization provides deeper analysis of sessions, intents, quality scores, unresolved interactions, and knowledge gaps. Both capabilities rely on session-level data captured through Agentforce Session Tracing, which records agent interactions, reasoning steps, actions, prompt and gateway inputs/outputs, errors, and final responses. Together, analytics and optimization support an ongoing improvement cycle: measure agent performance, investigate weak areas, update subagents or actions, test changes, and monitor results.
+### Agent Analytics and Optimization
+#### Agent Conversations
+Users interact with agents across supported channels such as messaging, Slack, email, voice, or embedded experiences.
+Session Tracing Data
+Agentforce Session Tracing captures detailed session data, including interactions, reasoning executions, actions, prompts, gateway inputs/outputs, errors, and final responses. 
+Agent Analytics
+Dashboards and metrics show usage, engagement, effectiveness, escalation, deflection, abandonment, feedback, and error patterns.
+Agent Optimization
+Optimization tools help inspect sessions, identify unresolved interactions, group intents, review quality scores, and find knowledge or configuration gaps.
+Agent Updates
+Builders improve subagents, instructions, actions, grounding, knowledge, filters, or escalation paths based on observed issues.Testing & MonitoringChanges are tested in Builder or Testing Center, then monitored again using analytics and optimization insights. 
+
+
 ## Agentforce Observability
+
 ## Agent Analytics
 ## Agent Optimization
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDMwOTg1NiwtMjI1NTE0MDI0LC0xND
-QwNTExMTUwXX0=
+eyJoaXN0b3J5IjpbMTg2Mjk2NDg3OCwxMzQ0MzA5ODU2LC0yMj
+U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
