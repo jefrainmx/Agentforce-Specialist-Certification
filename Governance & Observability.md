@@ -1,7 +1,15 @@
 # Explain the process for managing and monitoring agents.
 ## Introduction
 Managing and monitoring agents is an ongoing lifecycle instead of a one-time setup task. After an agent is built and tested, admins must activate it, manage changes carefully, control access, maintain channel connections, and deactivate it when updates are needed. Once the agent is live, teams monitor how it performs by reviewing Agent Analytics, feedback, session data, performance trends, and optimization insights. Monitoring can reveal misrouted requests, low-quality responses, missing subagents, action failures, escalation issues, or trust and health concerns. The management process then continues through investigation, testing, updates, and reactivation.
-
+### Managing and Monitoring Agent Lifecycle
+#### Monitor Behavior
+Agent Analytics, feedback, session data, trace data, and optimization insights are reviewed after deployment.
+Update Agent
+Subagents, actions, instructions, filters, grounding, connections, permissions, or escalation paths are adjusted. 
+Investigate Issues
+Failed tests, unexpected subagent selection, missing actions, escalation patterns, poor feedback, and low-quality responses are analyzed. 
+Retest and Reactivate
+Changes are tested again before the updated agent is made available to users.Configure AgentThe agent is configured with subagents, actions, instructions, variables, filters, connections, and access settings. Test AgentBuilder preview and Testing Center validate expected subagent selection, action execution, and responses before activation. Activate AgentActivation makes the agent available in its connected channels or experiences. 
 
 ## Managing Agents
 ## Monitoring Agents
@@ -16,6 +24,5 @@ Managing and monitoring agents is an ongoing lifecycle instead of a one-time set
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjcwMTM1MzUsLTE0NDA1MTExNTBdfQ
-==
+eyJoaXN0b3J5IjpbLTIzOTUxODUxNywtMTQ0MDUxMTE1MF19
 -->
