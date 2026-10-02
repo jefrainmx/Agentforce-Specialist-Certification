@@ -119,7 +119,7 @@ The Preview button in Agentforce Builder allows manual testing of utterances.
 
 ## References
 [Monitor Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_monitor.htm&type=5&utm_source=chatgpt.com)
-
+[Agent Analytics and Monitoring](https://trailhead.salesforce.com/content/learn/modules/agent-analytics-and-monitoring)
 
 # Explain agent analytics and agent optimization
 ## Introduction
@@ -129,6 +129,6 @@ The Preview button in Agentforce Builder allows manual testing of utterances.
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjkzNDIyNTMsLTIyNTUxNDAyNCwtMT
-Q0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbMTM0NDMwOTg1NiwtMjI1NTE0MDI0LC0xND
+QwNTExMTUwXX0=
 -->
