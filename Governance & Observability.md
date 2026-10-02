@@ -78,10 +78,18 @@ Performance insights and optimization data help identify repeated failure patter
 ### Session and Trace Data
 Session-level data provides deeper visibility into what happened during an agent interaction.
 #### SESSION DATA
-Session data captures conversation-level information such as user inputs, agent responses, selected subagents, actions, and outcomes. ❖TRACE DATATrace data supports deeper troubleshooting through reasoning steps, action calls, errors, prompt inputs, and generated outputs when Session Tracing is enabled.
-
+Session data captures conversation-level information such as user inputs, agent responses, selected subagents, actions, and outcomes. 
+#### TRACE DATA
+Trace data supports deeper troubleshooting through reasoning steps, action calls, errors, prompt inputs, and generated outputs when Session Tracing is enabled.
 
 ## Using Monitoring Data
+### Investigating Issues
+Monitoring data should be used to identify the likely cause of unexpected or low-quality agent behavior. 
+ROUTING ISSUES
+Routing issues can occur when the wrong subagent is selected, a request falls into a general fallback path, or instructions are unclear. 
+EXECUTION ISSUES
+Execution issues can occur when actions are missing, inputs are incomplete, permissions are insufficient, or the underlying Flow, Apex, API, or data source fails.
+
 ## References
 
 # Explain agent analytics and agent optimization
@@ -92,6 +100,6 @@ Session data captures conversation-level information such as user inputs, agent 
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3NzczMTUxMSwtMjI1NTE0MDI0LC0xND
-QwNTExMTUwXX0=
+eyJoaXN0b3J5IjpbLTEzNjU0MzkwMjMsLTIyNTUxNDAyNCwtMT
+Q0MDUxMTE1MF19
 -->
