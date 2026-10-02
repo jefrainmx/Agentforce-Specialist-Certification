@@ -98,9 +98,22 @@ Updates can include changing subagent descriptions, instructions, actions, filte
 Updated behavior should be tested in Agentforce Builder and Testing Center before the agent version is activated again.
 
 ###  Governance and Operational Review
-Ongoing governance ensures that agents continue to meet business, security, compliance, and qualityexpectations.OPERATIONAL REVIEWTeams should regularly review usage, feedback, unresolved requests, failed tests, escalation trends, and action failures.❖CHANGE GOVERNANCEAgent updates should follow a controlled release process with documentation, testing evidence, approval, and rollback planning.
+Ongoing governance ensures that agents continue to meet business, security, compliance, and qualityexpectations.
+#### OPERATIONAL REVIEW
+Teams should regularly review usage, feedback, unresolved requests, failed tests, escalation trends, and action failures.
+#### CHANGE GOVERNANCE
+Agent updates should follow a controlled release process with documentation, testing evidence, approval, and rollback planning.
 
+### Agent Analytics
+The Agent Analytics page in Agentforce Studio shows analytics and performance metrics related to categories such as Effectiveness, Usage, User Satisfaction, Quality, Health, and Trust. 
+Agent Analytics 1
 
+### Agent Analytics
+The Optimization section in Agentforce Studio allows viewing performance-related insights.
+Agent Analytics 2
+
+### Agent Preview
+The Preview button in Agentforce Builder allows manual testing of utterances.
 
 
 ## References
@@ -113,6 +126,6 @@ Ongoing governance ensures that agents continue to meet business, security, comp
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDIzNTkzMCwtMjI1NTE0MDI0LC0xND
+eyJoaXN0b3J5IjpbMTA4Njg5NDUxOCwtMjI1NTE0MDI0LC0xND
 QwNTExMTUwXX0=
 -->
