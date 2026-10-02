@@ -185,7 +185,7 @@ Analytics can help identify subagents, actions, channels, or conversation types 
 
 ### Agent Analytics
 Agent Analytics can be accessed in Agentforce Studio to understand agent performance through various types of metrics.
-Agent Analytics 1
+![Agent Analytics 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-10-02%20112004.png)
 
 ## Agent Optimization
 ### What Agent Optimization Does
@@ -225,11 +225,11 @@ A configuration gap occurs when instructions, subagent descriptions, actions, fi
 
 ### Insights
 Insights can be accessed under Agent Optimization in Agentforce Studio to drill into sessions, analyze quality scores, and identify patterns to improve an agent's performance.
-Insights 1
+![Insights 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-10-02%20112042.png)
 
 ### Sessions & Intents
 Sessions & Intents can be accessed under Agent Optimization in Agentforce Studio to understand user requests, analyze interaction patterns, and improve an agent's performance. 
-Sessions & Intents 1
+![Sessions & Intents 1](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/refs/heads/main/images/Screenshot%202026-10-02%20112100.png)
 
 ## Continuous Optimization Cycle
 ### Continuous Improvement Workflow
@@ -268,8 +268,9 @@ Insights generally apply to conversations that occur after Session Tracing and r
 Dashboards or optimization insights can take time to populate after conversations occur and sessions close.
 
 ## References
+[Monitor Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_monitor.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjAwMDM4NTUsMTM0NDMwOTg1NiwtMj
-I1NTE0MDI0LC0xNDQwNTExMTUwXX0=
+eyJoaXN0b3J5IjpbLTMzMjg3MDE0NywtMTEyMDAwMzg1NSwxMz
+Q0MzA5ODU2LC0yMjU1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
