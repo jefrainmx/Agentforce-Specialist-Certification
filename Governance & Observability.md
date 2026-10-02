@@ -232,10 +232,24 @@ Sessions & Intents can be accessed under Agent Optimization in Agentforce Studio
 Sessions & Intents 1
 
 ## Continuous Optimization Cycle
+### Continuous Improvement Workflow
+Agent optimization is an iterative process that uses analytics data to improve agent behavior over time.
+#### ROOT CAUSE
+Trends can be analyzed in Agent Analytics. Low-performing sessions can be inspected in Agent Optimization to find the likely root cause.
+#### PROCESS
+Subagents, instructions, actions, data sources, filters, or escalation paths can be updated and tested. The results can be monitored.
 
+### From Insight to Action
+Analytics only creates value when teams convert insights into targeted improvements.
+#### ESCALATION / ABANDONMENT
+High escalation or abandonment rates may indicate unclear instructions, missing actions, poor routing, or insufficient knowledge.
+#### UNRESOLVED INTENTS
+Repeated unresolved intents may indicate that a new subagent, action, Knowledge article, or retriever is needed.
+
+#### Testing After OptimizationTesting confirms whether analytics-driven changes actually improve the agent before the changes are released broadly.❖TEST UTTERANCESFailed sessions and low-quality intents can be converted into test utterances for Testing Center or Builder conversation testing.
 
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg4MDcwNTAsMTM0NDMwOTg1NiwtMj
-I1NTE0MDI0LC0xNDQwNTExMTUwXX0=
+eyJoaXN0b3J5IjpbMTA0NzcwMTc2NywxMzQ0MzA5ODU2LC0yMj
+U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
