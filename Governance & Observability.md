@@ -4,12 +4,18 @@ Managing and monitoring agents is an ongoing lifecycle instead of a one-time set
 ### Managing and Monitoring Agent Lifecycle
 #### Monitor Behavior
 Agent Analytics, feedback, session data, trace data, and optimization insights are reviewed after deployment.
-Update Agent
+#### Update Agent
 Subagents, actions, instructions, filters, grounding, connections, permissions, or escalation paths are adjusted. 
-Investigate Issues
+#### Investigate Issues
 Failed tests, unexpected subagent selection, missing actions, escalation patterns, poor feedback, and low-quality responses are analyzed. 
-Retest and Reactivate
-Changes are tested again before the updated agent is made available to users.Configure AgentThe agent is configured with subagents, actions, instructions, variables, filters, connections, and access settings. Test AgentBuilder preview and Testing Center validate expected subagent selection, action execution, and responses before activation. Activate AgentActivation makes the agent available in its connected channels or experiences. 
+#### Retest and Reactivate
+Changes are tested again before the updated agent is made available to users.
+#### Configure Agent
+The agent is configured with subagents, actions, instructions, variables, filters, connections, and access settings. 
+#### Test Agent
+Builder preview and Testing Center validate expected subagent selection, action execution, and responses before activation.
+#### Activate Agent
+Activation makes the agent available in its connected channels or experiences. 
 
 ## Managing Agents
 ## Monitoring Agents
@@ -24,5 +30,5 @@ Changes are tested again before the updated agent is made available to users.Con
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTUxODUxNywtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbMjk4OTQwMjE5LC0xNDQwNTExMTUwXX0=
 -->
