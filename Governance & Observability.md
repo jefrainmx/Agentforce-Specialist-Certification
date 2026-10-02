@@ -188,11 +188,24 @@ Agent Analytics can be accessed in Agentforce Studio to understand agent perform
 Agent Analytics 1
 
 ## Agent Optimization
+### What Agent Optimization Does
+Agent Optimization helps builders move from dashboard trends to deeper diagnosis and improvement actions.
+#### INSPECTION
+It provides tools to inspect sessions, review unresolved interactions, identify knowledge gaps, and analyze real-world agent behavior.
+#### UNDERSTANDING
+It helps teams understand why agentsfail, go off topic, misinterpretintent, or return low-quality responses.
+
+### Intents and Clustering
+Agent Optimization groups related interactions so teams can see what users are asking and where patterns emerge.
+#### INTENTS
+Intents represent sets of interactions within a session that address a specific user request.
+#### CLUSTERING
+Intents are generated and clustered to help identify common issues, unmet requests, and improvement opportunities.
 
 
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1MTY5MzgxLDEzNDQzMDk4NTYsLTIyNT
-UxNDAyNCwtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbMTU0ODkxOTA5OSwxMzQ0MzA5ODU2LC0yMj
+U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
 -->
