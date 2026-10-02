@@ -47,10 +47,14 @@ Subagents define the jobs an agent can perform, including scope, instructions, a
 Actions give the agent specific capabilities, such as retrieving data, calling automation, updating records, or escalating work. 
 
 ### Managing Connections and Access
-Channel configuration and user access determine where the agent appears and what it can do. ❖CONNECTIONSConnections define how an agent is exposed through channels such as Lightning, Slack, Messaging, Email, or Voice. ❖ACCESSAgent availability and action execution depend on user access, agent user permissions, runtime security context, and channel-specific setup.
-
+Channel configuration and user access determine where the agent appears and what it can do. 
+#### CONNECTIONS
+Connections define how an agent is exposed through channels such as Lightning, Slack, Messaging, Email, or Voice.
+#### ACCESS
+Agent availability and action execution depend on user access, agent user permissions, runtime security context, and channel-specific setup.
 
 ## Monitoring Agents
+### Builder Preview and Session InvestigationBuilder-based tools helps admins inspect how an agent behaves during individual conversations. ❖CONVERSATION PREVIEWThe Preview helps test real utterances and inspect which subagent, action, or response path the agent selected. ❖SESSION INVESTIGATIONSession or trace details can help troubleshoot agent behavior by showing what happened during a conversation, including selected subagents, actions, errors, and responses. 
 ## Using Monitoring Data
 ## References
 
@@ -62,5 +66,6 @@ Channel configuration and user access determine where the agent appears and what
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNTUxNDAyNCwtMTQ0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbLTE0Mzc2MDc2OTUsLTIyNTUxNDAyNCwtMT
+Q0MDUxMTE1MF19
 -->
