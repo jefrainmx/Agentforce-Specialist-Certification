@@ -127,23 +127,29 @@ Agent analytics and optimization help organizations monitor, understand, and imp
 ### Agent Analytics and Optimization
 #### Agent Conversations
 Users interact with agents across supported channels such as messaging, Slack, email, voice, or embedded experiences.
-Session Tracing Data
+#### Session Tracing Data
 Agentforce Session Tracing captures detailed session data, including interactions, reasoning executions, actions, prompts, gateway inputs/outputs, errors, and final responses. 
-Agent Analytics
+#### Agent Analytics
 Dashboards and metrics show usage, engagement, effectiveness, escalation, deflection, abandonment, feedback, and error patterns.
-Agent Optimization
+#### Agent Optimization
 Optimization tools help inspect sessions, identify unresolved interactions, group intents, review quality scores, and find knowledge or configuration gaps.
-Agent Updates
-Builders improve subagents, instructions, actions, grounding, knowledge, filters, or escalation paths based on observed issues.Testing & MonitoringChanges are tested in Builder or Testing Center, then monitored again using analytics and optimization insights. 
+#### Agent Updates
+Builders improve subagents, instructions, actions, grounding, knowledge, filters, or escalation paths based on observed issues.
+#### Testing & Monitoring
+Changes are tested in Builder or Testing Center, then monitored again using analytics and optimization insights. 
 
 
 ## Agentforce Observability
+### Agentforce Observability
+Agentforce Observability provides tools for measuring, analyzing, and improvingagent behavior across real conversations.
+#### AGENT ANALYTICSAgent Analytics focuses on performance, usage, effectiveness, feedback, escalation, deflection, and abandonment metrics. 
+
 
 ## Agent Analytics
 ## Agent Optimization
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Mjk2NDg3OCwxMzQ0MzA5ODU2LC0yMj
-U1MTQwMjQsLTE0NDA1MTExNTBdfQ==
+eyJoaXN0b3J5IjpbMzExMTg4MTg5LDEzNDQzMDk4NTYsLTIyNT
+UxNDAyNCwtMTQ0MDUxMTE1MF19
 -->
