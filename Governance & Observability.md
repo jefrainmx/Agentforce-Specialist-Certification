@@ -54,7 +54,18 @@ Connections define how an agent is exposed through channels such as Lightning, S
 Agent availability and action execution depend on user access, agent user permissions, runtime security context, and channel-specific setup.
 
 ## Monitoring Agents
-### Builder Preview and Session InvestigationBuilder-based tools helps admins inspect how an agent behaves during individual conversations. ❖CONVERSATION PREVIEWThe Preview helps test real utterances and inspect which subagent, action, or response path the agent selected. ❖SESSION INVESTIGATIONSession or trace details can help troubleshoot agent behavior by showing what happened during a conversation, including selected subagents, actions, errors, and responses. 
+### Builder Preview and Session Investigation
+Builder-based tools helps admins inspect how an agent behaves during individual conversations. 
+#### CONVERSATION PREVIEW
+The Preview helps test real utterances and inspect which subagent, action, or response path the agent selected. 
+#### SESSION INVESTIGATION
+Session or trace details can help troubleshoot agent behavior by showing what happened during a conversation, including selected subagents, actions, errors, and responses. 
+
+### Agent Analytics
+Agent Analytics helps teams monitor broad trends across agent usage, performance, quality, and trust. 
+#### AGENT ANALYTICSAgent Analytics provides overview and performance views that can be filtered by agent type, agent, timeframe, and channel.❖METRIC CATEGORIESAgent Analytics organizes performance data into areas such as Effectiveness, Usage, User Satisfaction, Quality, Health, and Trust.
+
+
 ## Using Monitoring Data
 ## References
 
@@ -66,6 +77,6 @@ Agent availability and action execution depend on user access, agent user permis
 ## Continuous Optimization Cycle
 ## References
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc2MDc2OTUsLTIyNTUxNDAyNCwtMT
-Q0MDUxMTE1MF19
+eyJoaXN0b3J5IjpbLTY4NDY2NTk4NSwtMjI1NTE0MDI0LC0xND
+QwNTExMTUwXX0=
 -->
