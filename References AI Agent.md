@@ -927,6 +927,8 @@ Sending and receiving messages can be performed synchronously or with the stream
 - [Agent API Postman Collection](https://www.postman.com/salesforce-developers/salesforce-developers/collection/gwv9bjy/agent-api)
 - [Agent API Reference](/docs/ai/agentforce/references/agent-api?meta=summary)
 
+
+
 # Agent API Examples
 
 This section provides examples using the Agent API endpoints. To onboard, see [Get Started with Agent API](/docs/ai/agentforce/guide/agent-api-get-started.md).
@@ -3785,8 +3787,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODUyNTAwNiwxOTM0ODYxNTIyLDkwMD
-Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
-MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
-==
+eyJoaXN0b3J5IjpbNTI3Mjk3MTY2LDE5MzQ4NjE1MjIsOTAwND
+Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
+MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
