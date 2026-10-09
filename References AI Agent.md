@@ -2400,6 +2400,72 @@ The **Engagement Agent** permission set is for the automated Engagement agent us
 
 
 
+# Best Practices for Building Secure Agentforce Service Agents
+
+By [Sri Srinivasan](https://admin.salesforce.com/blog/author/ssrinivasan) |  February 10, 2025
+![Best Practices for Building Secure Agentforce Service Agents](https://d3nqfz2gm66yqg.cloudfront.net/images/20250207140546/Text-w-Character-2.png)
+Agentforce is transforming the way businesses [manage customer interactions](https://www.salesforce.com/agentforce/use-cases/) by automating conversations across channels like chat, email, and phone. With AI-powered [agents](https://admin.salesforce.com/blog/2024/introduction-to-agentforce-for-salesforce-admins) capable of resolving issues, answering questions, and executing actions on behalf of customers, organizations can significantly boost productivity by streamlining tasks that once required considerable time and resources, such as customer support and retail order management.
+
+While agents offer immense potential to streamline service operations, as admins, you’re instrumental in building and deploying agents in your orgs. It’s crucial to understand how to implement agents securely to protect sensitive data and maintain customer trust.
+
+## Understanding Agentforce and its capabilities
+
+Agentforce employs “agents” trained on specific topics and equipped to perform predefined actions. These agents operate based on:
+
+-   **Topics:** Agent topics is a category of actions that are tied to a specific job or function. They define the scope of work an agent handles, acting as guardrails for their operation. For instance, an agent focused on “Order Management” will address queries related to order status, tracking, and returns, while avoiding unrelated topics like installation scheduling. Salesforce provides a library of standard topics for common use cases, and you can create custom topics to meet your organization’s unique needs.
+-   **Actions:** Agent actions are mechanisms through which an agent accomplishes tasks. Each agent has access to a library of predefined actions, enabling them to perform tasks ranging from simple information retrieval to complex operations, like scheduling appointments or updating customer records. Actions can be triggered by specific customer requests or defined within the agent’s workflow.
+
+You can build and customize these agents with ease, creating topics and instructions with natural language, and using prebuilt actions or building custom actions using no/low-code tools, such as Flow, prompt templates, and Apex.
+
+## The shared responsibility model: Admins and Salesforce
+
+Admins are the gatekeepers of security. In fact, it’s one of the [core admin responsibilities](https://admin.salesforce.com/blog/2024/core-responsibilities-of-a-salesforce-admin). While Salesforce provides a robust platform with many [built-in security features](https://security.salesforce.com/security-best-practices), it’s up to you to configure Agentforce securely. This is part of the shared responsibility model between Salesforce and its customers.
+
+Salesforce provides the following security features for Agentforce.
+
+-   **Platform security:** The underlying Salesforce Platform offers security features like data encryption, access controls, and threat detection. Agentforce leverages this foundation to ensure secure data storage and processing.
+-   **Agentforce guardrails:** The Agentforce framework itself includes mechanisms like topic-based limitations and harm/toxicity detection to prevent agents from engaging in inappropriate or malicious conversations.
+-   **Prebuilt standard actions:** Salesforce offers actions like [Identify Customer by Email](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref_identify_customer_email.htm&type=5), which can be leveraged to implement authentication within agent workflows.
+
+In addition to the features above, admins have a responsibility to securely manage:
+
+-   **Data governance:** Understanding the data accessed and processed by agents is vital. Customers need to implement proper data governance practices to ensure the quality, accuracy, and security of the data Agentforce uses.
+-   **Agent design and configuration:** Carefully defining agent topics and actions is crucial. Customers must ensure agents are designed to access only the information necessary to fulfill their specific tasks and prevent unintended data exposure.
+-   **Authentication and authorization:** Implementing strong authentication mechanisms for actions that involve sensitive data is essential. Salesforce provides guidance and tools, but the admin (aka customer) is responsible for configuring the specific authentication flow according to their corporate security policies.
+
+## Implementing authentication for Agentforce actions
+
+When setting up an agent, categorizing actions as public or private based on their sensitivity is crucial for determining appropriate security measures.
+
+-   **Public actions** can be performed without user authentication, as they involve publicly available information or low-risk operations. Examples include answering general questions about company policies or providing product details.
+-   **Private actions** require user authentication before execution. These actions involve accessing or modifying sensitive customer data, like updating account details, making purchases, and scheduling appointments.
+
+User authentication is a crucial component of Agentforce security (and for the security of your Salesforce orgs in general). Admins can take various approaches to authenticate users interacting with Agentforce, such as:
+
+-   **Experience site authentication:** When Agentforce is [deployed](https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent) on an Experience site restricted to authenticated users, leveraging the existing AuthSession is straightforward. This can be used to obtain the user’s account and contact IDs for secure data access.
+-   **External site/app authentication:** For custom sites or apps with their own authentication mechanisms, mapping Agentforce sessions to [MessagingSession](https://help.salesforce.com/s/articleView?id=service.agent_context_variables.htm&type=5) records is necessary. Securely passing user identifiers like email addresses allows verification within private actions.
+-   **Third-party messaging channel authentication:** For enhanced channels like Apple Messages for Business, authentication can be built into the interaction flow using channel-specific identifiers, side channels, or messaging components that leverage standard authentication providers like Facebook or Google.
+
+## Best practices for admins implementing Agentforce
+
+We’ve outlined why it’s so important for admins to securely implement Agentforce. It’s also necessary to follow these tried and true security best practices.
+
+-   **[Principle of least privilege](https://www.salesforce.com/blog/principle-of-least-privilege/):** Grant agents the minimum user permissions required to fulfill their tasks. Regularly review and update these permissions to prevent unintended access using a permission set-led security model.
+-   **Robust access controls:** Implement strong authentication mechanisms like two-factor authentication for private actions. Monitor access logs regularly to detect any suspicious activity.
+-   **Secure action design:** Limit the scope of actions to prevent unauthorized data access. Validate all user inputs to mitigate risks from malicious input. Implement comprehensive error handling to prevent information disclosure or system instability.
+
+Agentforce offers exciting opportunities for admins to automate and enhance customer service. By understanding your role in securely configuring these agents and following best practices for authentication and security, you can ensure your org leverages the full power of Agentforce while maintaining data protection and customer trust.
+
+## Resources
+
+-   Salesforce Admins Blog: [Introduction to Agentforce for Salesforce Admins](https://admin.salesforce.com/blog/2024/introduction-to-agentforce-for-salesforce-admins)
+-   The 360 Blog: [Protecting Data with the Principle of Least Privilege](https://www.salesforce.com/blog/principle-of-least-privilege/)
+-   Salesforce Admins Blog: [3 Steps for Admins To Build a Strong Security Culture](https://admin.salesforce.com/blog/2024/steps-for-admins-to-build-a-strong-security-culture)
+-   Salesforce Developers Site: [Agentforce Workshop: Distribute a Service Agent](https://developer.salesforce.com/agentforce-workshop/service-agents/3-distribute-service-agent)
+-   Trailhead: [Configure an Agentforce Service Agent](https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent)
+
+
+
 ---
 ---
 ---
@@ -4447,7 +4513,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNzI2OTM0NSwyMDM2MTYxMDYxLDMwNj
+eyJoaXN0b3J5IjpbMTc4MDkxODUyMiwyMDM2MTYxMDYxLDMwNj
 c1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3NjIsMTkzNDg2MTUy
 Miw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNT
 EyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDky
