@@ -1451,6 +1451,8 @@ If you receive an HTTP 500 response, verify that you've followed the setup instr
 - [Agent API Considerations](/docs/ai/agentforce/guide/agent-api-considerations.md)
 - [Agent API Reference](/docs/ai/agentforce/references/agent-api?meta=summary)
 
+
+
 # Create an Agent from an Agentforce Employee Agent Template
 
 Agentforce Employee agents help employees find information, complete tasks, and access personalized support across channels. Use Agentforce Employee agent templates to build agents that serve specific departmental needs, support role-based access, and scale securely across the organization. Unlike other agent templates, Employee agents are designed for internal employees, run in the logged-in user context, and you can assign each Employee agent to specific profiles or users.
@@ -3854,8 +3856,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDIyODE1NCwxODQ2Mzg1NzYyLDE5Mz
-Q4NjE1MjIsOTAwNDQ1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAw
-MywtMTUxMjI4NDIzMiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMT
-U1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbLTkwMzk4MDA1NCwtMTQ0MjI4MTU0LDE4ND
+YzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzNDcwNTMy
+LC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsND
+Q4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
