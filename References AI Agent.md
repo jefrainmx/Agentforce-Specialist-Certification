@@ -1543,6 +1543,38 @@ To learn more about the Escalation subagent, see [Transfer Conversations from an
 -   **[Activate or Deactivate Your Agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5)**  
     Activate your agent to make it available to your customers or employees. When an agent is deployed to one or more channels, including the Agentforce panel, activating the agent makes it immediately available to your users.
 
+# Connect a Service Agent to Partner Telephony
+
+Route voice conversations to your Agentforce Service agents. Learn how to create a telephony connection to your partner telephony system, configure voice mode settings, and route calls to your agent.
+
+Watch this video for a demonstration of how to route voice conversations to an Agentforce Service agent.
+
+
+This flow chart summarizes the setup steps.![Flow chart that shows the Agentforce Voice setup steps](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/generative_ai/images/agentforce_voice_setup_flowchart.png)
+
+
+## Roles of Agentforce Voice and Salesforce Voice with Telephony Providers
+
+Agentforce Voice is the conversational AI capability built into Agentforce. Agentforce Voice processes voice interactions, understanding the customer intent and generating spoken responses.
+
+[Salesforce Voice with Telephony Providers](https://help.salesforce.com/s/articleView?id=service.voice_about.htm&language=en_US&type=5) integrates third-party telephony systems, such as Amazon Connect, Genesys, and CCaaS systems, with Salesforce. To use Agentforce Voice, at minimum, Voice with Telephony Providers must be turned on–a complete setup isn’t required. For example, if you are using CCaaS, you just need to turn on Voice with Telephony Providers. Although, with a complete Voice with Telephony Providers setup, Agentforce Voice integrates seamlessly into your contact center, making it easy to handle scenarios such as agent escalation and context passing.
+
+Agentforce Voice and Voice with Telephony Providers work together to transform your contact center from traditional, static telephony into an intelligent, conversational experience. With Agentforce Voice and Voice with Telephony Providers, provide 24/7 support with built-in agent transfer and escalation capabilities when your customers need them.
+
+-   **[Complete the Prerequisites](https://help.salesforce.com/s/articleView?id=ai.agentforce_voice_setup_prereqs.htm&language=en_US&type=5)**  
+    Before you connect an agent to your partner telephony system, complete these prerequisites.
+-   **[Launch Agentforce Voice Setup](https://help.salesforce.com/s/articleView?id=ai.agent_agentforce_voice_setup.htm&language=en_US&type=5)**  
+    Agentforce Voice Setup walks you through the entire setup process.
+-   **[Choose Your Communication Protocol](https://help.salesforce.com/s/articleView?id=ai.agent_agentforce_voice_choose_your_protocol.htm&language=en_US&type=5)**  
+    You can set up Agentforce Voice with the PSTN, SIP, or Dynamic Routing communication protocol. The steps vary based on the protocol.
+-   **[Configure Call Routing and Call Escalation for the Agent](https://help.salesforce.com/s/articleView?id=ai.agent_call_routing_escalation.htm&language=en_US&type=5)**  
+    Configure an Omni-Channel flow to transfer inbound calls to the voice-enabled agent. Create an escalation Omni-Channel flow to disconnect the agent and, if supported by your telephony or CCaaS system, transfer the call to a rep. Add the activated escalation flow to the agent.
+-   **[Configure the Channel and Telephony Settings for PSTN](https://help.salesforce.com/s/articleView?id=ai.agentforce_voice_pstn_channel_and_telephony_settings.htm&language=en_US&type=5)**  
+    Create a channel that's used to manage inbound calls routed to the Agentforce agent. If supported, configure your telephony system to create a VoiceCall record in Salesforce for every incoming call, and then transfer each call to the Agentforce agent using the procured phone number. When needed, transfer the call to a human service rep.
+-   **[Configure the Channel and Telephony Settings for SIP or Dynamic Routing](https://help.salesforce.com/s/articleView?id=ai.agentforce_voice_sip_channel_and_telephony_settings.htm&language=en_US&type=5)**  
+    Create a channel that’s used to manage inbound calls routed to the Agentforce agent. If supported, configure your telephony system to create a VoiceCall record in Salesforce for every incoming call, and then transfer each call to the Agentforce agent using the SIP address or dynamic routing phone number. When needed, transfer the call to a human service rep.
+-   **[Connecting Related Voice Calls](https://help.salesforce.com/s/articleView?id=ai.agent_connect_related_voice_calls.htm&language=en_US&type=5)**  
+    When a customer conversation involves call transfers, a separate voice call record can be created in Salesforce for each call segment. This action results in multiple voice call records for the same conversation. To provide a single, comprehensive view and preserve the full call context, connect these related voice call records. Connecting records enables more informed decisions. For instance, you can escalate the call to the appropriate rep based on all gathered information.
 
 
 
@@ -3594,7 +3626,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAwNDQ1NjIyLDM1MzQ3MDUzMiwtMTg1NT
-M2NjAwMywtMTUxMjI4NDIzMiwxODU5MjY4NTM1LDQ0ODE0OTEz
-MywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbMTkyODE0MTQzOSw5MDA0NDU2MjIsMzUzND
+cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
+MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
