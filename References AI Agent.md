@@ -1707,7 +1707,7 @@ When building an agent that connects to customer channels and can take private a
 
 | Guideline | Details |
 | --- | --- |
-| Follow the principle of least privilege. |-   **Restrict access:** Grant only the minimum necessary permissions to your agent.-   **Review permissions regularly:** To ensure that permissions are still appropriate, conduct periodic reviews. |
+| Follow the principle of least privilege. |-   **Restrict access:** Grant only the minimum necessary permissions to your agent.<br>-**Review permissions regularly:** To ensure that permissions are still appropriate, conduct periodic reviews. |
 | Implement robust access controls. | 
 
 -   **Enforce strong authentication:** Implement strong authentication mechanisms, such as two-factor authentication, to verify the identity of users interacting with your agent.
@@ -3796,7 +3796,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5MTgyNjUyLDE5MzQ4NjE1MjIsOTAwND
+eyJoaXN0b3J5IjpbMjgzMzA3NTU2LDE5MzQ4NjE1MjIsOTAwND
 Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
 MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
