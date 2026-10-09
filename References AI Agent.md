@@ -1691,7 +1691,7 @@ When your agent is connected to customer channels, think of agent actions as eit
 
 Public actions are actions that your company is comfortable taking on behalf of anyone, regardless of identity, without authentication. For example, the [Answer Questions with Knowledge](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref_answer_questions_with_knowledge&language=en_US&type=5) action is usually considered a public action, especially if it’s grounded in public information such as return policies. Looking up an order can also be a public action if you’re comfortable doing so without securely confirming the requester's identity. In such cases, the information required to identify a specific order, such as the order ID or email address, can be passed conversationally.
 
-Private Actions
+### Private Actions
 
 Private actions require the requester’s identity to be confirmed according to your company’s comfort level; for example, through authentication or through the sharing of identifying information in a messaging session. Updating personal appointment information, making purchases, or requesting services on a support contract are typically examples of private actions, and we don't recommend making them public. For an Agentforce Service agent to complete a private action, the user triggering the action must be authorized to access the action, and their identity should be securely confirmed.
 
@@ -1707,11 +1707,7 @@ When building an agent that connects to customer channels and can take private a
 
 | Guideline | Details |
 | --- | --- |
-| Follow the principle of least privilege. | 
--   **Restrict access:** Grant only the minimum necessary permissions to your agent.
--   **Review permissions regularly:** To ensure that permissions are still appropriate, conduct periodic reviews.
-
- |
+| Follow the principle of least privilege. |-   **Restrict access:** Grant only the minimum necessary permissions to your agent.-   **Review permissions regularly:** To ensure that permissions are still appropriate, conduct periodic reviews. |
 | Implement robust access controls. | 
 
 -   **Enforce strong authentication:** Implement strong authentication mechanisms, such as two-factor authentication, to verify the identity of users interacting with your agent.
@@ -3800,8 +3796,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjY0MTI3MywxOTM0ODYxNTIyLDkwMD
-Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
-MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
-==
+eyJoaXN0b3J5IjpbNTk5MTgyNjUyLDE5MzQ4NjE1MjIsOTAwND
+Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
+MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
