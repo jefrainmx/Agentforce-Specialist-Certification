@@ -2909,12 +2909,14 @@ Beyond user permissions, administrators have direct control over the _behavior_ 
 
 These administrative guardrails include:
 
--   **Restricting Topics:** You can define the specific topics and business functions an ag
-
+-   **Restricting Topics:** You can define the specific topics and business functions an agent is allowed to discuss or handle.
+    
+-   **Limiting Actions:** You can (and should) limit a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyNTAwMTk2LDIxNzAzNzA2NywxMzcyMz
-I3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4LC0xNDQyMjgxNTQs
-MTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0Nz
-A1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUz
-NSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbLTIwMDIyMzA5OTQsNzkyNTAwMTk2LDIxNz
+AzNzA2NywxMzcyMzI3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4
+LC0xNDQyMjgxNTQsMTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMD
+Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
+MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
+==
 -->
