@@ -1455,7 +1455,7 @@ When you're ready, [activate your agent](https://help.salesforce.com/s/articleVi
 
 A subagent is a particular job an agent can do. Collectively, the subagents assigned to your agent define the capabilities your agent can handle. Learn about subagents in Agentforce Builder and the legacy builder.
 
-### Required Editions
+## Required Editions
 
 <table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
 
@@ -1468,6 +1468,35 @@ Note Beginning in April 2026, agent topics are now called subagents. There are n
 -   **[Subagents in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.copilot_topics.htm&language=en_US&type=5)**  
     A subagent is a particular job an agent can do and an essential element of an agent’s reasoning. A subagent contains actions, which are the tools available for the job, and instructions, which tell the agent how to make decisions. Collectively, the subagents assigned to your agent define the capabilities your agent can handle. Salesforce provides a library of standard subagents for common use cases, and you can create custom subagents to meet your users’ specific business needs.
 
+
+# Agent Actions
+
+Actions are how agents get things done. Agents include a library of actions, which are the tools an agent can use to do its job. For example, if a user asks an agent for help with writing an email, the agent first selects a subagent, then it launches an action that drafts and revises the email and grounds it in relevant Salesforce data.
+
+## Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
+
+-   **[Common User Access for Standard Agent Actions](https://help.salesforce.com/s/articleView?id=ai.agent_actions_common_perms.htm&language=en_US&type=5)**  
+    Learn about the permissions required for users to run many standard agent actions.
+-   **[Add an Action to a Subagent from the Asset Library](https://help.salesforce.com/s/articleView?id=ai.agent_actions_add_asset_library.htm&language=en_US&type=5)**  
+    Add standard actions to your agent to start handling common business use cases quickly, or create custom actions tailored to your business needs. When you add these actions to an agent, the agent gets its own, independent copy. Changes to template actions within the asset library aren't automatically synced to subagents and actions within your agent. Changes made to one agent's actions don't affect another agent's subagents or actions.
+-   **[Verify Customers with Standard Subagents in Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.service_agent_customer_verification.htm&language=en_US&type=5)**  
+    To verify the identity of an unverified user in an agent session, configure your agent to use the Customer Verification subagent or the Service Customer Verification subagent and limit access to subagents and actions that you specify. You can require different levels of verification for different subagents and actions, based on your business’s security requirements.
+-   **[Edit the Loading Text for an Agent Action](https://help.salesforce.com/s/articleView?id=ai.agent_actions_loading_text.htm&language=en_US&type=5)**  
+    Loading text tells the user what an agent is doing while an action runs in the background. For editable actions, both standard and custom, you can specify the loading text and tailor it for each action individually.
+-   **[Agent Actions in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_legacy.htm&language=en_US&type=5)**  
+    Create and manage actions in the legacy Agentforce Builder.
+-   **[Editing Standard Agent Action Reference Actions](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_edit_reference.htm&language=en_US&type=5)**  
+    Customize the behavior of some standard agent actions by editing the underlying flow or prompt template.
+-   **[Explore Standard Agent Actions](https://help.salesforce.com/s/articleView?id=ai.agent_actions_ref_pointer.htm&language=en_US&type=5)**  
+    Learn all about the agent actions Salesforce provides out of the box in our comprehensive reference library.
+
+### See Also
+
+-   [The Building Blocks of Agents](https://help.salesforce.com/s/articleView?id=ai.copilot_building_blocks.htm&language=en_US&type=5)
+-   [Trust and Agentforce](https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&language=en_US&type=5)
+-   [Standard Agent Action Reference](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref.htm&language=en_US&type=5)
 
 
 
@@ -3519,7 +3548,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNT
-EyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDky
-NTEwXX0=
+eyJoaXN0b3J5IjpbLTIwMzc3NDM2NTAsMzUzNDcwNTMyLC0xOD
+U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
+MTMzLC0xNTU1MDkyNTEwXX0=
 -->
