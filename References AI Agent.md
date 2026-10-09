@@ -2239,6 +2239,18 @@ A numerical representation of [unstructured data](https://help.salesforce.com/s/
 
 See [Vector Search](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_vector_index.htm&language=en_US&type=5).
 
+# Agentforce Service Agent
+
+Agentforce Service agents intelligently support your customers by processing incoming cases and autonomously resolving common inquiries. These agents connect to customer channels, such as enhanced messaging channels, and use Omni-Channel Flow to escalate complex or sensitive support requests to service reps or other destinations.
+
+The Salesforce Help content for Agentforce Service Agent has moved to [Design and Implement Agentforce Agents](https://help.salesforce.com/s/articleView?id=ai.copilot_intro.htm&language=en_US&type=5). Learn more about the Agentforce Service Agent type and how to create agents that connect to customer channels. You can still use the default Agentforce Service Agent template to create an agent designed to resolve common support cases and requests, or you can select from more specialized Agentforce Service templates to fit your use case.
+
+## See Also
+
+-   [Explore Agent Types and Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&language=en_US&type=5)
+-   [Create an Agent from an Agentforce Service Agent Template](https://help.salesforce.com/s/articleView?id=ai.service_agent_setup.htm&language=en_US&type=5)
+-   [Connect a Service Agent to Customer Channels](https://help.salesforce.com/s/articleView?id=ai.service_agent_setup_channels.htm&language=en_US&type=5)
+-   [Agentforce Service Agent Topics](https://help.salesforce.com/s/articleView?id=ai.copilot_topics_ref_agentforce_service_agent.htm&language=en_US&type=5)
 
 # Build With Confidence: Inside the New Agentforce Builder
 
@@ -4099,102 +4111,9 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 ### InstanceConfig
 
 - **type:** object
-- **description:** API configuration parameters.
-#### properties
-
-##### endpoint
-
-- **description:** My Domain URL for your Salesforce org. From Setup, search for My Domain. Copy the value shown in the Current My Domain URL field. See [Get Started with Agent API](/docs/ai/agentforce/guide/agent-api-get-started.html).
-- **type:** string
-- **example:** https://d5e000009s7bceah-dev-ed.my.salesforce.com/
-
-
-#### required
-
-- endpoint
-
-
-### FeedbackId
-
-- **type:** string
-- **description:** Unique ID to identify the generation. Used to submit feedback.
-- **example:** 9247bbd8-5ed9-11ee-8c99-0242ac120002
-
-### EventId
-
-- **type:** string
-- **description:** Unique ID to identify the event.
-- **example:** auMZc8ZRv37sIW2iJKq3M9MFx1YvV11A2x
-
-### Status
-
-- **type:** object
-#### properties
-
-##### status
-
-- **type:** string
-- **description:** Health status of Agent API.
-###### enum
-
-- UP
-- DOWN
-
-- **example:** UP
-
-
-#### required
-
-- status
-
-
-### Error
-
-- **type:** object
-#### properties
-
-##### status
-
-- **description:** HTTP status.
-- **type:** integer
-- **format:** int32
-
-##### path
-
-- **description:** Request path.
-- **type:** string
-
-##### requestId
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **type:** string
-
-##### error
-
-- **description:** Error class name.
-- **type:** string
-
-##### message
-
-- **description:** Exception message.
-- **type:** string
-
-##### timestamp
-
-- **description:** Unix timestamp.
-- **type:** number
-
-
-#### required
-
-- status
-- path
-- requestId
-- error
-- message
-- times
+- **descri
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE4Njg5NjI0LDIwMzYxNjEwNjEsMzA2Nz
+eyJoaXN0b3J5IjpbMTM5Njc5MTI2LDIwMzYxNjEwNjEsMzA2Nz
 U0NzU4LC0xNDQyMjgxNTQsMTg0NjM4NTc2MiwxOTM0ODYxNTIy
 LDkwMDQ0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MT
 IyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1
