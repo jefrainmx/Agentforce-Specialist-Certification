@@ -2909,11 +2909,100 @@ Beyond user permissions, administrators have direct control over the _behavior_ 
 
 These administrative guardrails include:
 
--   **Restricting Topics:** You can define the specific topics and business functions an ag
+-   **Restricting Topics:** You can define the specific topics and business functions an agent is allowed to discuss or handle.
+    
+-   **Limiting Actions:** You can (and should) limit an agent to only execute pre-defined, approved actions, such as specific **Salesforce Flows**, **Apex classes**, or API calls. This prevents the agent from performing unintended or malicious operations.
+    
+-   **Configuring Rejection Responses:** Admins can configure custom messages that the agent delivers when a user's request is out-of-scope, unethical, or violates a defined security policy.
+    
+-   **Data Grounding:** Agents are "grounded" in your specific Salesforce data (like Data Cloud, Knowledge articles, or specific records) to provide relevant and accurate responses. Your Field Level Security (FLS) and object security settings can also control which data is available for this grounding.
+    
+
+## **4\. Integration with Salesforce Shield & Security Center**
+
+For organizations with advanced compliance and security needs, Agentforce's security can be enhanced by other Salesforce security products which Salesforce recommends:
+
+-   **Salesforce Shield:**
+    
+    -   **Event Monitoring:** Comprehensive security and operational logging system that records granular actions performed by users, agents or automated processes. Offers real-time visibility into [agent/user activities](https://help.salesforce.com/s/articleView?id=release-notes.rn_security_em.htm&release=226&type=5&language=en_US) and other security-related events. 
+        
+    -   **Field Audit Trail:** Creates a detailed history of changes to your data by Agents/users, which is crucial for compliance.
+        
+-   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce orgs, including Agentforce-related activities.
+    
+
+## **Summary of Responsibilities:**
+
+**Salesforce's Responsibility:**
+
+-   Securing the core platform & infrastructure.
+    
+-   Providing the Einstein Trust Layer (zero-retention, Toxicity and Prompt Injection Detection etc.).
+    
+-   Detecting broad threats like toxicity and prompt injection.
+    
+-   Providing audit logging capabilities.
+    
+
+**Customer’s Responsibility:**
+
+-   Implementing the Principle of Least Privilege for all users.
+    
+-   Correctly configuring Profiles, Permission Sets, and FLS.
+    
+-   Building secure Agent Guardrails (restricting topics and actions).
+    
+-   Regularly monitoring and auditing agent and user activity.
+    
+-   Ensuring data in Data Cloud is clean, accurate, and secure.
+    
+-   Enable Enhanced Event Logs
+    
+-   Enable Human-in-the-loop for custom actions
+    
+
+## **Conclusion:**
+
+Agentforce is designed to be as secure as it is intelligent. However, in an era of autonomous AI, the traditional boundaries of access control are more important than ever. By embracing the shared responsibility model outlined here, you can confidently deploy agents that not only solve complex business problems but also uphold the highest standards of data privacy and trust, the core pillar of the Salesforce ecosystem.
+
+Additional Resources
+
+[**Salesforce’s Agentforce Privacy FAQ**](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/agentforce-privacy-FAQ.pdf)[**Prompt Injection Detection**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_prompt_injection_detection.htm&type=5&language=en_US)[**Agentforce Audit Trail**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&type=5&language=en_US)[**Best Practices for Agent User Permissions**](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&language=en_US)[**Trust and Agentforce**](https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5&language=en_US)[**Trust Layer**](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)[**Enable Enhanced Event Logs**](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&type=5&language=en_US)
+
+Knowledge Article Number
+
+005315874
+
+
+
+---
+---
+---
+---
+
+# Agent API v1.0.0 YAML
+- **openapi:** 3.0.0
+# info
+
+- **title:** Agent API
+- **version:** v1.0.0
+- **description:** 
+Use Agent API to communicate with AI agents in your org. Get access to your topics and actions in Agentforce by sending messages to AI agents. Create a Salesforce app in your org, generate a token, and then start using the API. To onboard to this API, see [Get Started with the Agent API](/docs/ai/agentforce/guide/agent-api-get-started.html) and [Agent API Examples](/docs/ai/agentforce/guide/agent-api-examples.html).
+
+## Postman Collection
+
+The quickest way to get started with the Agent API is with our [Postman collection](https://www.postman.com/salesforce-developers/salesforce-developers/collection/gwv9bjy/agent-api).
+
+## Endpoints
+
+- [Start a Session](?meta=startSession): Start a session with an agent.
+- [Send a Message (sync)](?meta=sendMessage): Send a sync message to the agent on an active session.
+- [Send a Message (streaming)](?meta=sendMessageStream): Send a streaming message to the agent on an active session.
+- [End a Session](?meta=endSession): E
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTk1NzQ1MCw3OTI1MDAxOTYsMjE3MD
-M3MDY3LDEzNzIzMjc3NjcsMjAzNjE2MTA2MSwzMDY3NTQ3NTgs
-LTE0NDIyODE1NCwxODQ2Mzg1NzYyLDE5MzQ4NjE1MjIsOTAwND
-Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
-MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbLTUzMTk1NzQ1MCwyMTcwMzcwNjcsMTM3Mj
+MyNzc2NywyMDM2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0
+LDE4NDYzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
+cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
+MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
