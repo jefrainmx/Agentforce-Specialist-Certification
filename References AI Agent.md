@@ -1382,11 +1382,94 @@ If you receive an HTTP 500 response, verify that you've followed the setup instr
 - [Agent API Considerations](/docs/ai/agentforce/guide/agent-api-considerations.md)
 - [Agent API Reference](/docs/ai/agentforce/references/agent-api?meta=summary)
 
+# Create an Agent from an Agentforce Employee Agent Template
+
+Agentforce Employee agents help employees find information, complete tasks, and access personalized support across channels. Use Agentforce Employee agent templates to build agents that serve specific departmental needs, support role-based access, and scale securely across the organization. Unlike other agent templates, Employee agents are designed for internal employees, run in the logged-in user context, and you can assign each Employee agent to specific profiles or users.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
+
+| User Permissions Needed |   |
+| --- | --- |
+| To build and manage Employee agents: | 
+Manage AI Agents
+
+OR
+
+Customize Application
+
+ |
+
+Before you begin, [set up Einstein Generative AI](https://help.salesforce.com/s/articleView?id=ai.generative_ai_enable.htm&language=en_US&type=5) and [enable Agentforce](https://help.salesforce.com/s/articleView?id=ai.agent_setup_enable.htm&language=en_US&type=5).
+
+-   **[Manage Employee Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5)**  
+    Control user access to specific Agentforce Employee agents with permission sets or profiles. In Agentforce Builder, use the Agent Access page. In the legacy Agentforce Builder, use the Agent Access tab.
+
+#### See Also
+
+-   [_Trailhead_: Quick Start: Create Employee Agents in Agentforce](https://trailhead.salesforce.com/content/learn/projects/quick-start-create-employee-agents-in-agentforce)
+-   [_Agentforce Workshop_: Get Hands On with Employee Agents](https://developer.salesforce.com/agentforce-workshop/employee-agents/overview)
+
+## Create an Agent from an Employee Agent Template
+
+1.  From the App Launcher, enter Agent, and then select the **Agentforce Studio** app.
+2.  On the Agents tab, click **New Agent**.
+3.  Select an Agentforce Employee agent template. Enter the agent's name and then click **Let's Go**.
+4.  In the Settings section, define the settings that determine how your agent behaves in conversations, such as [system messages](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_system_messages.htm&language=en_US&type=5) and [language settings](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_tone.htm&language=en_US&type=5).
+5.  In the Subagents section, manage and customize your agent's [subagents](https://help.salesforce.com/s/articleView?id=ai.agent_topics_manage.htm&language=en_US&type=5) and [actions](https://help.salesforce.com/s/articleView?id=ai.agent_actions_custom.htm&language=en_US&type=5).
+6.  In the Data section, select a data library. The Answer Questions with Knowledge action grounds your agent's responses with it. To create or manage data libraries, see [Setting Up Data Libraries](https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5).
+7.  Test your agent and confirm that it performs as expected and meets your security standards on the **Preview** tab. For more details about testing, see [Preview and Test in Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.agent_preview_and_test.htm&language=en_US&type=5).
+
+To give your users access to your agent in Lightning Experience and mobile, see [Manage Employee Agent Access in Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5#agent_access_setup).
+
+You can also connect your agent to [Enhanced Web Chat v1](https://help.salesforce.com/s/articleView?id=ai.agent_deploy_enhanced_chat_v1.htm&language=en_US&type=5#connect_aea_v1), [Enhanced Chat v2](https://help.salesforce.com/s/articleView?id=ai.service_agent_deploy_enhanced_chat_v2.htm&language=en_US&type=5), or [Slack](https://slack.com/help/articles/36218109305875-Set-up-and-manage-Agentforce-in-Slack).
+
+When you're ready, [activate your agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5).
+
+## Create an Agent from an Employee Agent Template in the Legacy Agentforce Builder
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
+
+Note Starting the week of July 13, 2026, you can no longer create agents in the legacy Agentforce Builder in Setup. Instead, create an agent in Agentforce Builder in Agentforce Studio. Or [upgrade an agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5) from the legacy builder to the new builder.
+
+For the latest features and enhancements, we recommend migrating existing agents from the legacy builder to the new builder. [Learn more.](https://help.salesforce.com/s/articleView?id=ai.agent_migrate_parent.htm&language=en_US&type=5)
+
+1.  From Setup, in the Quick Find box, enter Agent, and select **Agentforce Agents**.
+2.  Click **New Agent**.
+3.  Select **Create from a Template**, select the template that you want to use, and then click **Next**.
+4.  Review the agent's subagents and actions that come with your template. You can customize these subagents and actions later, but if any of them don’t apply to your use cases, remove them, and then click **Next**.
+5.  Define your agent's settings, such as [system messages](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_system_messages.htm&language=en_US&type=5) and [language settings](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_tone.htm&language=en_US&type=5). These settings determine how agents behave and present themselves in conversations.
+6.  Select a data source to ground your agent's responses with the Answer Questions with Knowledge action, and then click **Create**. For more information about data libraries, see [Agentforce Data Library](https://help.salesforce.com/s/articleView?id=ai.data_library_parent.htm&language=en_US&type=5)
+7.  [Configure your agent with subagents, actions, and other agent assets.](https://help.salesforce.com/s/articleView?id=ai.agent_parent_configure.htm&language=en_US&type=5)
+8.  Test your agent in Agentforce Builder to confirm that your agent performs as expected and [meets your security standards](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions.htm&language=en_US&type=5).
+
+To give your users access to your agent in Lightning Experience and mobile, see [Manage Employee Agent Access in the Legacy Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5#agent_access_legacy_setup).
+
+Optionally, connect your agent to [Enhanced Chat v1](https://help.salesforce.com/s/articleView?id=ai.agent_deploy_enhanced_chat_v1.htm&language=en_US&type=5#connect_aea_v1) or [Slack](https://slack.com/help/articles/36218109305875-Set-up-and-manage-Agentforce-in-Slack).
+
+When you're ready, [activate your agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5).
+
+
 <!--
 Source - https://stackoverflow.com/a/75574050
 Posted by flyx
 Retrieved 2026-10-09, License - CC BY-SA 4.0
 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Agent API v1.0.0 YAML
 - **openapi:** 3.0.0
 # info
@@ -3429,6 +3512,6 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0ND
-gxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbMjIwMjQ0MDYxLC0xNTEyMjg0MjMyLDE4NT
+kyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
