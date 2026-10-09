@@ -2523,30 +2523,30 @@ instructions:->
            - amount to transfer
             Only after you have all the data, you can proceed with the next steps.
 
-        if not @variables.source_account:
-            set @variables.validation_information = "Missing source account"
-            set @variables.validation_passed = False
-            | You need the source account number before proceeding.
-              Ask the customer for the source account number.
-        else:
-            set @variables.validation_passed = True
-        if @variables.source_account and not @variables.destination_account:
-           set @variables.validation_information = "Missing destination account"
-           set @variables.validation_passed = False
-           | You need the destination account number before proceeding.
-              Ask the customer for the destination account number.
-        else:
-           set @variables.validation_passed = True
-        if not @variables.source_account or not @variables.destination_account:
-            | Do NOT proceed with the transfer yet.
-        if @variables.transfer_amount <= 0:
-            set @variables.validation_information = "Invalid transfer amount"
-            set @variables.validation_passed = False
-            | The transfer amount must be greater than zero. Ask the customer
-              how much they want to transfer.
-              Do NOT proceed with the transfer yet.
-        else:
-           set @variables.validation_passed = True
+    if not @variables.source_account:
+        set @variables.validation_information = "Missing source account"
+        set @variables.validation_passed = False
+        | You need the source account number before proceeding.
+          Ask the customer for the source account number.
+    else:
+        set @variables.validation_passed = True
+    if @variables.source_account and not @variables.destination_account:
+       set @variables.validation_information = "Missing destination account"
+       set @variables.validation_passed = False
+       | You need the destination account number before proceeding.
+          Ask the customer for the destination account number.
+    else:
+       set @variables.validation_passed = True
+    if not @variables.source_account or not @variables.destination_account:
+        | Do NOT proceed with the transfer yet.
+    if @variables.transfer_amount <= 0:
+        set @variables.validation_information = "Invalid transfer amount"
+        set @variables.validation_passed = False
+        | The transfer amount must be greater than zero. Ask the customer
+          how much they want to transfer.
+          Do NOT proceed with the transfer yet.
+    else:
+       set @variables.validation_passed = True
 
 **Enforce business rules**
 
@@ -2910,10 +2910,11 @@ Beyond user permissions, administrators have direct control over the _behavior_ 
 These administrative guardrails include:
 
 -   **Restricting Topics:** You can define the specific topics and business functions an ag
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTk1NzQ1MCwyMTcwMzcwNjcsMTM3Mj
-MyNzc2NywyMDM2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0
-LDE4NDYzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
-cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
-MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbNzkyNTAwMTk2LDIxNzAzNzA2NywxMzcyMz
+I3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4LC0xNDQyMjgxNTQs
+MTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0Nz
+A1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUz
+NSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
