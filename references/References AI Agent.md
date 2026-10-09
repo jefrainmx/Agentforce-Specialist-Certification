@@ -2694,13 +2694,11 @@ As you work through the exercises in this workshop, use the diagram below to und
 
 ![](https://developer.salesforce.com/workshops/assets/service-agent-architecture.DOc64LMo.webp)
 
----
----
----
----
 
-
+# Agent API (v1.0.0)
+[enter link description here](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNjQ4MjE4Niw0MzY4NDU4NDddfQ==
+eyJoaXN0b3J5IjpbLTQ2NDI3MjA2MSwxMjI2NDgyMTg2LDQzNj
+g0NTg0N119
 -->
