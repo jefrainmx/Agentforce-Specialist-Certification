@@ -2377,6 +2377,9 @@ The Atlas Reasoning Engine is a state machine executor. On each turn, it travers
 
 ![Three-stage execution pipeline showing Agentforce Builder, Agent Script compilation to Agent Graph, and Atlas Reasoning Engine runtime execution](https://architect.salesforce.com/ns-assets/hybrid-reasoning-pipeline.png)
 
+## The LLM boundary: where judgment ends and code begins 
+
+
 Agent Graph isn’t an LLM wrapper. It’s a hybrid reasoning engine that separates deterministic execution from probabilistic reasoning. The governing rule is straightforward: if you can express a decision as code, it should be written as logic. If the decision requires judgment, interpretation, or natural language generation, the LLM should handle it. This design decision is the most important architectural choice in the new Agentforce model. Where the LLM boundary falls directly affects your solution’s cost, latency, auditability, and reliability.
 
 The Atlas Reasoning Engine evaluates every incoming user turn and routes it down one of two paths.
@@ -2407,6 +2410,8 @@ Use Agent Script logic instructions when writing prompt instructions that could 
 
 The default position should be deterministic. Isolate every agent behavior that can be codified as a rule and move it into Agent Script. The remaining tasks that require natural language synthesis, contextual judgment, or complex interpretation belong in prompt-bearing nodes. That’s not a limitation; it’s the boundary working as intended. The LLM handles what it’s best suited for, and everything else runs as code.
 
+## The parse boundary: before_reasoning, reasoning, and after_reasoning 
+
 The primary unit of execution in Agent Script isn’t the user turn. It’s the parse: a single complete cycle through a subagent’s three lifecycle blocks. The Atlas Reasoning Engine initiates a parse each time a subagent needs to process something, which happens in three situations: on first entry into the subagent, after every tool call when an action completes and returns a result, and on every new user turn within the same subagent.
 
 Understanding the parse boundary matters because it determines how many times each block runs, and therefore where you can and can’t rely on a given piece of logic executing exactly once.
@@ -2430,6 +2435,11 @@ Use this block for session initialization: fetching context records, setting ses
 What doesn’t belong here is logic that should only run once per session, since `before_reasoning` runs on every parse, not just on the first entry. Anything that depends on user input from the current turn also doesn’t belong here, because that input hasn’t been processed yet. And transitions should never be in `before_reasoning`: a `transition to` instruction here will fire unconditionally on every parse and create loops.
 
 If you need once-per-session initialization, guard it explicitly:
+
+    before_reasoning:
+   if @variables.sessionInitialized == False:
+       run @actions.InitializeSession
+       set @variables.sessionInitialized = True
 
 One user turn can trigger multiple parses: once on entry, then again after each tool call. That functionality has three practical consequences: initialization actions in `before_reasoning` will run more than once per user turn in multi-action flows, counter variables incremented here will reflect parse count, not turn count, and actions with side effects, external API calls or record writes, should not live in `before_reasoning` unless re-execution on every parse is explicitly acceptable.
 
@@ -2885,22 +2895,11 @@ For organizations with advanced compliance and security needs, Agentforce's secu
     
 -   Providing the Einstein Trust Layer (zero-retention, Toxicity and Prompt Injection Detection etc.).
     
--   Detecting broad threats like toxicity and prompt injection.
-    
--   Providing audit logging capabilities.
-    
-
-**Customer’s Responsibility:**
-
--   Implementing the Principle of Least Privilege for all users.
-    
--   Correctly configuring Profiles, Permission Sets, and FLS.
-    
--   Building secure Agent Guardra
+-   Detecting broad threats li
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjcyMTg1NCwxMzcyMzI3NzY3LDIwMz
-YxNjEwNjEsMzA2NzU0NzU4LC0xNDQyMjgxNTQsMTg0NjM4NTc2
-MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0NzA1MzIsLTE4NT
-UzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkx
-MzMsLTE1NTUwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbLTE4MTg3MDQwMjIsMTM3MjMyNzc2NywyMD
+M2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3
+NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xOD
+U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
+MTMzLC0xNTU1MDkyNTEwXX0=
 -->
