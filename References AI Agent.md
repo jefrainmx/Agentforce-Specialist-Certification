@@ -1455,14 +1455,6 @@ When you're ready, [activate your agent](https://help.salesforce.com/s/articleVi
 
 A subagent is a particular job an agent can do. Collectively, the subagents assigned to your agent define the capabilities your agent can handle. Learn about subagents in Agentforce Builder and the legacy builder.
 
-## Required Editions
-
-<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
-
-![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
-
-Note Beginning in April 2026, agent topics are now called subagents. There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
-
 -   **[Subagents](https://help.salesforce.com/s/articleView?id=ai.agent_topics.htm&language=en_US&type=5)**  
     A subagent is a job an agent can do. Learn about the parts of a subagent and how to use them to define an agent’s logic, reasoning, and conversational capabilities.
 -   **[Subagents in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.copilot_topics.htm&language=en_US&type=5)**  
@@ -3607,7 +3599,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Mzk1OTA1NSwzNTM0NzA1MzIsLTE4NT
-UzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkx
-MzMsLTE1NTUwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbLTExNTY4MDk3NzksMzUzNDcwNTMyLC0xOD
+U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
+MTMzLC0xNTU1MDkyNTEwXX0=
 -->
