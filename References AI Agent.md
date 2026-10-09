@@ -971,20 +971,10 @@ Learn about agent types and default templates for specific clouds and common use
 | Agent Type | What it Does | Required Editions | Required Permissions |
 | --- | --- | --- | --- |
 | Employee Agent | Assists employees by providing access to company knowledge, performing tasks, and streamlining workflows across departments.Before getting started, review [Considerations for Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/).Agentforce Employee agents require [Flex Credits](https://help.salesforce.com/s/articleView?id=ai.usage_flex_credits.htm&language=en_US&type=5). | To create and manage Agentforce Employee Agent: Manage AI Agents.To use Agentforce Employee Agent, see [Manage Employee Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5). |
-| Lead Nurturing (formerly known as SDR) | 
+| Lead Nurturing (formerly known as SDR) | Intelligently engages leads with personalized content, answers common questions, and schedules meetings.Before getting started, review [Considerations for Using Agentforce Lead Nurturing](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_considerations.htm&language=en_US&type=5).| Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [SDR Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&language=en_US&type=5). |
+| Sales Coach | Intelligently gives reps personalized, actionable, and stage-specific feedback on their sales pitch or role-play session.
 
-Intelligently engages leads with personalized content, answers common questions, and schedules meetings.
-
-Before getting started, review [Considerations for Using Agentforce Lead Nurturing](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_considerations.htm&language=en_US&type=5).
-
- | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [SDR Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&language=en_US&type=5). |
-| Sales Coach | 
-
-Intelligently gives reps personalized, actionable, and stage-specific feedback on their sales pitch or role-play session.
-
-Before getting started, review [Generative AI Considerations for Agentforce Sales Coach](https://help.salesforce.com/s/articleView?id=sales.sales_coach_agent_gen_ai_considerations.htm&language=en_US&type=5).
-
- | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [Agentforce Sales Coach Permissions](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_permissions.htm&language=en_US&type=5). |
+Before getting started, review [Generative AI Considerations for Agentforce Sales Coach](https://help.salesforce.com/s/articleView?id=sales.sales_coach_agent_gen_ai_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [Agentforce Sales Coach Permissions](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_permissions.htm&language=en_US&type=5). |
 | Service Agent | 
 
 Intelligently supports your customers with common inquiries and escalates complex issues.
@@ -3932,7 +3922,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM2Mzc4OTY4LDE5MzQ4NjE1MjIsOTAwND
+eyJoaXN0b3J5IjpbNzc5NzQxNzk2LDE5MzQ4NjE1MjIsOTAwND
 Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
 MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
