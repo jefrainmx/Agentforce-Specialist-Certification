@@ -1670,7 +1670,91 @@ Review your agent user’s current access and make sure that they have the neces
 On the Agent Access page in Agentforce Builder, you can review the user record that represents the agent in the Agent's User Record section. Review and edit the agent's assigned permission sets and permission set groups in the Permissions and Profiles section.
 
 To manage agent user permissions, edit the \[Agent\_Name\]\_Permissions permission set associated with your agent user. If you want to create a different permission set for your agent user, make sure that it’s associated with the Einstein Agent license and Einstein Agent User profile.
+[Video: Setup Agent Permissions](https://play.vidyard.com/71611389-ded2-4cda-a6dc-502e1e72700a)
 
+# Maintain Trust with Agentforce Actions in the Legacy Builder
+
+Agents connected to employee channels, such as Lightning Experience, the Salesforce mobile app, and Slack, limit access to subagents and actions by default, based on the end user's context. Agentforce Service agents connected to customer channels, such as enhanced Messaging channels and Enhanced Chat, require additional configuration to ensure secure access. As you configure your agent, it's important to think through the security and identification requirements for your use case and only grant your agents the actions and access required to complete the tasks you want them to be able to complete autonomously on behalf of your customers. For sensitive actions, we recommend building customer verification directly into the action’s flow.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
+
+You have full control over the actions that your agents can take, so you can tailor your customer experience to your needs. To enhance security and ensure that agents operate within defined boundaries, we recommend:
+
+-   Assigning agents that connect to customer channels the minimum user permissions required to do their job.
+-   Building identity confirmation and access control directly into the flow of sensitive actions.
+
+Every company’s risk tolerance and security standards are unique, and there’s no one way to incorporate identity verification into your agent implementation. For instance, depending on your company policy, you might allow an Agentforce Service agent to accept order IDs conversationally and provide order statuses without requiring any formal identity verification beyond that. However, if your business requires shipping sensitive or regulated materials, you might require customers to authenticate themselves before looking up order information on their behalf. Consider your company’s risk tolerance and security standards before configuring your agent. To prevent agents from sharing data outside the intended scope, configure them with authentication and authorization in mind.
+
+## Agentforce Actions and Security
+
+When your agent is connected to customer channels, think of agent actions as either public or private. While Salesforce doesn’t have a specific setting to designate actions as public or private, this framework helps you conceptualize and implement your company’s security standards.
+
+Public Actions
+
+Public actions are actions that your company is comfortable taking on behalf of anyone, regardless of identity, without authentication. For example, the [Answer Questions with Knowledge](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref_answer_questions_with_knowledge&language=en_US&type=5) action is usually considered a public action, especially if it’s grounded in public information such as return policies. Looking up an order can also be a public action if you’re comfortable doing so without securely confirming the requester's identity. In such cases, the information required to identify a specific order, such as the order ID or email address, can be passed conversationally.
+
+Private Actions
+
+Private actions require the requester’s identity to be confirmed according to your company’s comfort level; for example, through authentication or through the sharing of identifying information in a messaging session. Updating personal appointment information, making purchases, or requesting services on a support contract are typically examples of private actions, and we don't recommend making them public. For an Agentforce Service agent to complete a private action, the user triggering the action must be authorized to access the action, and their identity should be securely confirmed.
+
+## Guidelines for Securely Implementing Private Actions
+
+To enhance the security of agents connected to customer channels, it's best practice to require agents to confirm the identity of the person they’re interacting with before they take a private action on their behalf.
+
+For particularly sensitive actions, we recommend confirming identity using techniques such as two-factor authentication, which handle the authentication process outside the scope of the conversation. Sharing identifying information within the chat isn't a secure verification method, but the approach you choose depends on your risk tolerance and security standards.
+
+After a customer's identity has been confirmed, the identifying information can be saved in the associated [MessagingSession](https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_messagingsession.htm) record. Before completing any private action, the agent can reference the MessagingSession record to confirm the identity and permissions of the person it's interacting with. This process can be built directly into the flow of private actions.
+
+When building an agent that connects to customer channels and can take private actions, it’s crucial to consider how to mitigate risk. While all use cases are different, keep these guidelines in mind.
+
+| Guideline | Details |
+| --- | --- |
+| Follow the principle of least privilege. | 
+-   **Restrict access:** Grant only the minimum necessary permissions to your agent.
+-   **Review permissions regularly:** To ensure that permissions are still appropriate, conduct periodic reviews.
+
+ |
+| Implement robust access controls. | 
+
+-   **Enforce strong authentication:** Implement strong authentication mechanisms, such as two-factor authentication, to verify the identity of users interacting with your agent.
+-   **Monitor access logs:** To identify any suspicious activity, regularly review the access logs.
+
+ |
+| Design secure actions. | 
+
+-   **Limit scope:** Design actions to operate within specific boundaries and prevent unauthorized access to sensitive data. Build confirmation of user identity and permissions directly into each private action.
+-   **Validate input:** To prevent malicious input and potential security vulnerabilities, implement input validation.
+-   **Error handling:** To prevent information disclosure and system instability, implement robust error handling.
+
+ |
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_important.png)
+
+Important
+
+Organization-wide sharing defaults (OWD) determine what access users have to records they don’t own. In an agent session with an authenticated user, the session runs in the end user’s context and OWD depend on whether the user is external or internal. In an agent session with an unauthenticated user, the session runs in [the agent user’s](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5) context and OWD for internal users apply.
+
+Carefully review your OWD, your agent user’s permissions, and your agent configuration to ensure the right record access for your end users and your business.
+
+-   For all agents that use the agent’s user record, we recommend using [filters](https://help.salesforce.com/s/articleView?id=ai.agent_asset_filters.htm&language=en_US&type=5) and [variables](https://help.salesforce.com/s/articleView?id=ai.agent_variables.htm&language=en_US&type=5) to limit record access at the subagent and action levels. This strategy protects sensitive data regardless of your OWD.
+-   You can [restrict your OWD for internal users](https://help.salesforce.com/s/articleView?id=platform.admin_sharing.htm&language=en_US&type=5) to limit record access for all internal users. Then you can [create sharing rules](https://help.salesforce.com/s/articleView?id=platform.admin_sharing.htm&language=en_US&type=5) to selectively grant access, excluding the Einstein Agent User where appropriate.
+
+## Next Steps
+
+Learn how to build user authentication into your private agent actions, including with the Customer Verification standard subagent.
+
+-   **[Add User Identification to Agentforce Actions](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions_implement.htm&language=en_US&type=5)**  
+    When configuring your agent that connects to customer channels so that it can take private actions securely, have it confirm the identity of the person it’s interacting with according to your company’s standards.
+-   **[Verify Customers with Standard Subagents in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.service_agentforce_customer_verification.htm&language=en_US&type=5#service_agentforce_customer_verification)**  
+    Before an Agentforce Service agent takes a private action on a user’s behalf, Salesforce recommends verifying the identity of the person the agent is interacting with. To verify the identity of an unverified user in an agent session, configure your agent to use the Customer Verification subagent or the Service Customer Verification subagent and limit access to subagents and actions that you specify. You can require different levels of verification for different subagents and actions, based on your business’s security requirements.
+-   **[Example Implementation of a Secure Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions_example.htm&language=en_US&type=5)**  
+    The details of implementing secure Agentforce Service agents vary depending on where the agent is deployed and the surrounding user authentication policies. To get a feel for the underlying patterns, let’s look at an example.
+
+#### See Also
+
+-   [_Trailhead_: Deploy Agent Authentication](https://trailhead.salesforce.com/content/learn/modules/agent-customization-with-apex)
 
 
 ---
@@ -3720,7 +3804,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYwMDkwNDUzLDE5MzQ4NjE1MjIsOTAwND
-Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
-MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbNTgxNjI5OTYsMTkzNDg2MTUyMiw5MDA0ND
+U2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMy
+LDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
