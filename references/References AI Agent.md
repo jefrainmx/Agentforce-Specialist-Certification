@@ -2678,7 +2678,21 @@ Knowledge Article Number
 
 005315874
 
+# Get Hands on with Agentforce Service Agents ​
 
+## Overview ​
+
+Coral Cloud Resorts would like to create a customer service agent to help customers learn more about their experiences. In this chapter, we explore how you can use Agentforce Service Agents to distribute an agent through Experience Cloud.
+
+This takes a combination of Omni-Channel functionality in Service Cloud to route a conversation from a customer through to an agent.
+
+To bring this service agent framework to life, you'll explore how to set up and customize agents using Agentforce, design flows for efficient message routing, and seamlessly connect these components with Experience Cloud for an integrated customer support experience.
+
+Coral Cloud Resorts uses a variety of Salesforce solutions and standard objects to manage customer service. For instance, customer queries are handled through Service Cloud's routing flows, which are then linked to contacts and cases via Experience Cloud.
+
+As you work through the exercises in this workshop, use the diagram below to understand how Agentforce, Service Cloud, Experience Cloud, and standard Salesforce objects collaborate to build a cohesive support system.
+
+![](https://developer.salesforce.com/workshops/assets/service-agent-architecture.DOc64LMo.webp)
 
 ---
 ---
@@ -2688,5 +2702,5 @@ Knowledge Article Number
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM2ODQ1ODQ3XX0=
+eyJoaXN0b3J5IjpbMTIyNjQ4MjE4Niw0MzY4NDU4NDddfQ==
 -->
