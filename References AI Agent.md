@@ -2150,37 +2150,37 @@ The first subagent collects the source account, destination account, and transfe
 
 The script below shows this in practice. Notice that `validation_passed` is explicitly set to `false` at each failure point, and the LLM is instructed not to proceed. The deterministic checks run unconditionally, while the prompt instructions handle the user-facing response.
 
-instructions:->
-        | Always ensure to request the following data from the user, and to store it using {!@actions.store_details}
-           - source account number
-           - destination account number
-           - amount to transfer
-            Only after you have all the data, you can proceed with the next steps.
-
-        if not @variables.source_account:
-            set @variables.validation_information = "Missing source account"
-            set @variables.validation_passed = False
-            | You need the source account number before proceeding.
-              Ask the customer for the source account number.
-        else:
-            set @variables.validation_passed = True
-        if @variables.source_account and not @variables.destination_account:
-           set @variables.validation_information = "Missing destination account"
-           set @variables.validation_passed = False
-           | You need the destination account number before proceeding.
-              Ask the customer for the destination account number.
-        else:
-           set @variables.validation_passed = True
-        if not @variables.source_account or not @variables.destination_account:
-            | Do NOT proceed with the transfer yet.
-        if @variables.transfer_amount <= 0:
-            set @variables.validation_information = "Invalid transfer amount"
-            set @variables.validation_passed = False
-            | The transfer amount must be greater than zero. Ask the customer
-              how much they want to transfer.
-              Do NOT proceed with the transfer yet.
-        else:
-           set @variables.validation_passed = True
+    instructions:->
+            | Always ensure to request the following data from the user, and to store it using {!@actions.store_details}
+               - source account number
+               - destination account number
+               - amount to transfer
+                Only after you have all the data, you can proceed with the next steps.
+    
+            if not @variables.source_account:
+                set @variables.validation_information = "Missing source account"
+                set @variables.validation_passed = False
+                | You need the source account number before proceeding.
+                  Ask the customer for the source account number.
+            else:
+                set @variables.validation_passed = True
+            if @variables.source_account and not @variables.destination_account:
+               set @variables.validation_information = "Missing destination account"
+               set @variables.validation_passed = False
+               | You need the destination account number before proceeding.
+                  Ask the customer for the destination account number.
+            else:
+               set @variables.validation_passed = True
+            if not @variables.source_account or not @variables.destination_account:
+                | Do NOT proceed with the transfer yet.
+            if @variables.transfer_amount <= 0:
+                set @variables.validation_information = "Invalid transfer amount"
+                set @variables.validation_passed = False
+                | The transfer amount must be greater than zero. Ask the customer
+                  how much they want to transfer.
+                  Do NOT proceed with the transfer yet.
+            else:
+               set @variables.validation_passed = True
 
 **Enforce business rules**
 
@@ -2190,6 +2190,18 @@ If the amount exceeds the limit, `validation_passed` is set back to `false` and 
 
 The script below shows how the limit check works. The deterministic condition evaluates the transfer amount against the limit variable, sets `validation_passed` to `false` if the threshold is breached, and delegates to a prompt instruction to handle the user-facing response.
 
+    instructions:->
+       if @variables.transfer_amount > @variables.transfer_limit:
+          set @variables.validation_information = "Amount exceeds transfer limit"
+          set @variables.validation_passed = False
+          | ⚠️ STOP: The requested amount (${!@variables.transfer_amount}) exceeds
+            the maximum transfer limit of ${!@variables.transfer_limit}.
+            Inform the customer and ask if they'd like to:
+            1. Transfer the maximum allowed amount (${!@variables.transfer_limit})
+            2. Split into multiple transfers
+            3. Contact support for higher limits
+            Do NOT proceed with the transfer.
+
 **Apply guard clauses**
 
 With amount and limit checks complete, the agent fetches the source account balance and confirms that sufficient funds are available. Guard clauses prevent the agent from attempting operations when preconditions aren’t met. Unlike a prompt instruction that tells the LLM to check the balance, a guard clause in Agent Script makes the check unconditional. The LLM doesn’t decide whether to run it.
@@ -2198,6 +2210,23 @@ If the balance is insufficient, the agent calculates the shortfall and presents 
 
 The script below shows a deterministic action call that fetches the balance, followed by a conditional check that evaluates it. The fetch only runs if the balance hasn’t already been retrieved, avoiding redundant API calls on subsequent parses.
 
+    instructions:->
+       # Fetch balance if needed
+       if @variables.source_account and not @variables.source_balance:
+          run @actions.get_account_balance
+             with account_number = @variables.source_account
+             set @variables.source_balance = @outputs.balance
+    
+       # Validate sufficient funds
+       if @variables.source_balance < @variables.transfer_amount:
+          set @variables.validation_information = "Insufficient funds"
+          set @variables.validation_passed = False
+          | ⚠️ STOP: Insufficient funds in the source account.
+            - Available balance: ${!@variables.source_balance}
+            - Requested transfer: ${!@variables.transfer_amount}
+            - Shortfall: ${!@variables.transfer_amount-@variables.source_balance}
+            Ask if they'd like to transfer a smaller amount.
+            Do NOT proceed with the transfer.
 
 **Surface errors clearly**
 
@@ -2615,11 +2644,11 @@ Knowledge Article Number
 ---
 ---
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMzg3MDc2NiwtNTMxOTU3NDUwLDIxNz
-AzNzA2NywxMzcyMzI3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4
-LC0xNDQyMjgxNTQsMTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMD
-Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
-MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
-==
+eyJoaXN0b3J5IjpbNTY2OTE3MDExLC01MzE5NTc0NTAsMjE3MD
+M3MDY3LDEzNzIzMjc3NjcsMjAzNjE2MTA2MSwzMDY3NTQ3NTgs
+LTE0NDIyODE1NCwxODQ2Mzg1NzYyLDE5MzQ4NjE1MjIsOTAwND
+Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
+MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
