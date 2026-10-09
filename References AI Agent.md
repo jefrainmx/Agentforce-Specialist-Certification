@@ -1451,11 +1451,11 @@ Optionally, connect your agent to [Enhanced Chat v1](https://help.salesforce.com
 When you're ready, [activate your agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5).
 
 
-<!--
-Source - https://stackoverflow.com/a/75574050
-Posted by flyx
-Retrieved 2026-10-09, License - CC BY-SA 4.0
--->
+
+---
+---
+---
+---
 
 
 
@@ -3512,6 +3512,6 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIwMjQ0MDYxLC0xNTEyMjg0MjMyLDE4NT
-kyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMT
+g1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
