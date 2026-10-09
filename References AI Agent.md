@@ -1451,6 +1451,80 @@ If you receive an HTTP 500 response, verify that you've followed the setup instr
 - [Agent API Considerations](/docs/ai/agentforce/guide/agent-api-considerations.md)
 - [Agent API Reference](/docs/ai/agentforce/references/agent-api?meta=summary)
 
+# Create an Agent from an Agentforce Service Agent Template
+
+Agentforce Service agents intelligently support your customers by connecting to messaging and other channels and escalating to reps when necessary. Use the default Agentforce Service Agent template to create an agent designed to resolve common support cases and requests. Or select from more specialized templates to fit your use case.
+
+| User Permissions Needed |   |
+| --- | --- |
+| To build and manage Service Agents: | 
+Manage Agentforce Service Agents AND Manage AI Agents
+
+OR
+
+Customize Application
+
+ |
+
+-   **[Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5)**  
+    Learn how Agentforce Service agents control data access. Set up an agent user for your Agentforce Service agent and assign permissions, so your agent has everything it needs to do its job.
+-   **[Configure Service Agent Managers](https://help.salesforce.com/s/articleView?id=ai.service_agent_managers.htm&language=en_US&type=5)**  
+    When Service agents are enabled for your Salesforce org, Salesforce admins can create and edit service agents. To define other users as Service agent managers so that they can also create and edit service agents, assign those users the Manage Agentforce Service Agents permission set.
+
+#### See Also
+
+-   [_Trailhead_: Quick Start: Build a Service Agent with Agentforce](https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce)
+-   [_Agentforce Workshop_: Get Hands On with Service Agents](https://developer.salesforce.com/agentforce-workshop/service-agents/overview)
+
+## Create an Agent from a Service Agent Template
+
+Before you begin, [set up Einstein Generative AI](https://help.salesforce.com/s/articleView?id=ai.generative_ai_enable.htm&language=en_US&type=5) and [enable Agentforce](https://help.salesforce.com/s/articleView?id=ai.agent_setup_enable.htm&language=en_US&type=5).
+
+1.  From the App Launcher, enter `Agent`, and then select **Agentforce Studio**.
+2.  On the Agents tab, click **New Agent**.
+3.  Select an Agentforce Service agent template. Under Agent Details, select or create an **Agent's User Record** for this agent. To securely access data and perform actions, Service agents operate as an agent user, or a Salesforce integration user with all the permissions that the agent needs to do its job. See [Best Practices for Agent User Permissions](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5).
+4.  Enter the agent's name and then click **Let's Go**.
+5.  In the Settings section, define the settings that determine how your agent behaves in conversations, such as [system messages](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_system_messages.htm&language=en_US&type=5) and [language settings](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_tone.htm&language=en_US&type=5).
+6.  In the Subagents section, manage and customize your agent's [subagents](https://help.salesforce.com/s/articleView?id=ai.agent_topics_manage.htm&language=en_US&type=5) and [actions](https://help.salesforce.com/s/articleView?id=ai.agent_actions_custom.htm&language=en_US&type=5).
+7.  In the Data section, select a data library. The Answer Questions with Knowledge action grounds your agent's responses with it. To create or manage data libraries, see [Setting Up Data Libraries](https://help.salesforce.com/s/articleView?id=ai.data_library_setup.htm&language=en_US&type=5).
+8.  Click Preview to test out your agent and confirm that it performs as expected and meets your security standards. You can simulate your agent’s behavior with mock data without risking any changes to your actual data or org. Use trace to dig into the steps the agent performed, and ask Agentforce to help you understand your agent’s behavior at any step. See [Preview and Test in Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.agent_preview_and_test.htm&language=en_US&type=5) for more details.
+9.  Connect your agent to service channels to transfer agent conversations. See [Connect an Agent to Messaging](https://help.salesforce.com/s/articleView?id=ai.agent_parent_deploy_messaging.htm&language=en_US&type=5) for more information on deploying your agent to a Messaging channel.
+10.  When you’re ready to use your agent outside of the builder, click Commit Version. You must commit an agent version before you can activate it. Committed versions can’t be edited. To continue making changes after committing, create a new version by clicking New Version. See [Versioning and Editing Agents](https://help.salesforce.com/s/articleView?id=ai.agent_versions_lifecycle.htm&language=en_US&type=5) for more information.
+11.  When you're ready, [activate your agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5).
+
+## Create an Agent from a Service Agent Template in the Legacy Agentforce Builder
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/8f79e91a-cacc-4a50-9604-d1286798b180/images/icon_note.png)
+
+Note Starting the week of July 13, 2026, you can no longer create agents in the legacy Agentforce Builder in Setup. Instead, create an agent in Agentforce Builder in Agentforce Studio. Or [upgrade an agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5) from the legacy builder to the new builder.
+
+For the latest features and enhancements, we recommend migrating existing agents from the legacy builder to the new builder. [Learn more.](https://help.salesforce.com/s/articleView?id=ai.agent_migrate_parent.htm&language=en_US&type=5)
+
+1.  From Setup, in the Quick Find box, enter Agent, and then select **Agentforce Agents**.
+2.  Click **New Agent**.
+3.  Select **Create from a Template**. Select the template that you want to use to create an agent, and then click **Next**.
+4.  Review the subagents that come with your template. You can customize these subagents and actions later, but if any of them don’t apply to your use cases, remove them. Then click **Next**.
+5.  Give your agent a unique name, API name, description, role, and company.
+    
+    The description field is used by you and others in your org to identify your agent. The role and company fields are used by your agent to help it understand its responsibilities and the company that it represents.
+    
+6.  Under Agent User, select **New Agent User**. Then click **Next**.
+    
+    To securely access data and perform actions, Service agents operate as an agent user—a Salesforce integration user with all the permissions that the agent needs to do its job. Creating a new agent user in the guided setup creates an agent user record with minimal access so that your agent is secure by default. Grant the agent the additional access that it needs. See [Best Practices for Agent User Permissions](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5).
+    
+7.  Select **Keep a record of conversations with enhanced event logs to review agent behavior**. See [Enable Enhanced Event Logs](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&language=en_US&type=5).
+8.  Select a data source to ground your agent responses with the Answer Questions with Knowledge action. To continue without selecting any data sources, leave this field blank. You can add and remove data sources later. Then click **Create**.
+    
+    If you don't want to use any of the available data sources, you can create a library to limit Agentforce Service agents to specific articles or uploaded files. See [Use the Answer Questions with Knowledge Action](https://help.salesforce.com/s/articleView?id=ai.agent_setup_data_sources.htm&language=en_US&type=5).
+    
+9.  From the Settings page, define your agent's settings, such as [system messages](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_system_messages.htm&language=en_US&type=5) and [language settings](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_tone.htm&language=en_US&type=5). These settings determine how agents behave and present themselves in conversations.
+10.  Back in the builder, [configure your agent with subagents, actions, and other agent assets.](https://help.salesforce.com/s/articleView?id=ai.agent_parent_configure.htm&language=en_US&type=5)
+11.  Test your agent in Agentforce Builder to confirm that your agent performs as expected and [meets your security standards](https://help.salesforce.com/s/articleView?id=ai.service_agent_secure_actions.htm&language=en_US&type=5).
+     
+     The service agent operates in the same Agent User context here as it does when deployed in messaging channels, so design-time testing reflects how your service agent behaves when deployed.
+     
+12.  [Connect your service agent to channels](https://help.salesforce.com/s/articleView?id=ai.agent_parent_deploy.htm&language=en_US&type=5) and [configure the escalation subagent](https://help.salesforce.com/s/articleView?id=ai.service_agent_escalation.htm&language=en_US&type=5) to transfer agent conversations.
+13.  When you're ready, [activate your agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5).
 
 
 # Create an Agent from an Agentforce Employee Agent Template
@@ -3856,8 +3930,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMzk4MDA1NCwtMTQ0MjI4MTU0LDE4ND
-YzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzNDcwNTMy
-LC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsND
-Q4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbMzA2NzU0NzU4LC0xNDQyMjgxNTQsMTg0Nj
+M4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0NzA1MzIs
+LTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0ND
+gxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
