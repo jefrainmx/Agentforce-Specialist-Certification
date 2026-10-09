@@ -1383,7 +1383,1957 @@ If you receive an HTTP 500 response, verify that you've followed the setup instr
 - [Agent API Reference](/docs/ai/agentforce/references/agent-api?meta=summary)
 
 
+
+
+
+
+
+
+# Agent API (v1.0.0)
+
+Download OpenAPI specification:[Download](https://developer.salesforce.com/static/genai/agentforce/agent-api/agents.yaml)
+
+Use Agent API to communicate with AI agents in your org. Get access to your topics and actions in Agentforce by sending messages to AI agents. Create a Salesforce app in your org, generate a token, and then start using the API. To onboard to this API, see [Get Started with the Agent API](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-get-started.html) and [Agent API Examples](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-api-examples.html).
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#section/Postman-Collection)Postman Collection
+
+The quickest way to get started with the Agent API is with our [Postman collection](https://www.postman.com/salesforce-developers/salesforce-developers/collection/gwv9bjy/agent-api).
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#section/Endpoints)Endpoints
+
+-   [Start a Session](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=startSession): Start a session with an agent.
+-   [Send a Message (sync)](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=sendMessage): Send a sync message to the agent on an active session.
+-   [Send a Message (streaming)](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=sendMessageStream): Send a streaming message to the agent on an active session.
+-   [End a Session](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=endSession): End a session.
+-   [Submit Feedback](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=submitFeedback): Submit feedback for a message.
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#operation/startSession)Start a session
+
+Begin an agent session. The endpoint contains the ID of the Salesforce agent. You can find this ID in the URL of the agent details page. When you select the agent from Setup, use the ID at the end of the URL.
+
+##### path Parameters
+
+id
+
+required
+
+string
+
+The ID of the Salesforce agent. You can find this ID in the URL of the agent details page. When you select the agent from Setup, use the ID at the end of the URL.
+
+##### header Parameters
+
+Authorization
+
+required
+
+string
+
+Example: Bearer •••••
+
+Authorization information that contains the JWT.
+
+##### Request Body schema: application/json
+
+required
+
+Request payload to initiate a session.
+
+externalSessionKey
+
+required
+
+string (ExternalSessionKey)
+
+UUID that you provide for the conversation. You can use this parameter to trace the conversation in your agent's event logs.
+
+instanceConfig
+
+required
+
+object (InstanceConfig)
+
+API configuration parameters.
+
+tz
+
+string
+
+Client timezone where the customer starts the chat. Uses the tz database timezone format. Can be null.
+
+variables
+
+Array of objects (Variables)
+
+Array of custom and context agent variables passed to the agent during a session. See [Agent Variables](https://help.salesforce.com/s/articleView?id=ai.agent_variables.htm). Many variables are read-only and can only be set during the start session call. By default, context variables (which have the `$Context` prefix) aren't editable after the session has started, except for the `$Context.EndUserLanguage` variable. You can only modify editable variables during a send message call. When specifying variables that are derived from custom fields, omit the `__c` suffix. For instance, `Conversation_Key__c` becomes `$Context.Conversation_Key`. This array can be null.
+
+featureSupport
+
+string (SessionFeature)
+
+Enum: "Sync" "Streaming"
+
+Defines how the session supports message processing.
+
+streamingCapabilities
+
+object (StreamingCapability)
+
+Describes the streaming capabilities.
+
+bypassUser
+
+boolean
+
+Indicates whether to use the agent-assigned user instead of the logged in user. If set to `true`, the API uses the user associated with the agent. If set to `false`, the API uses the user associated with the token. Set this value to `true` when using the client credentials flow. Defaults to `false`.
+
+### Responses
+
+**200**
+
+Response to a new session.
+
+Response Headers
+
+x-session-mode
+
+string
+
+Example: "default"
+
+Agent session mode.
+
+##### Response Schema: application/json
+
+sessionId
+
+required
+
+string (ResponseSessionId)
+
+Agent session ID. Use this value for the session ID when sending messages or ending a session.
+
+_links
+
+required
+
+object (SyncLinks)
+
+List of Agentforce endpoints for HATEOS compliance.
+
+messages
+
+required
+
+Array of objects (AbstractResponseMessage) >= 0
+
+Array of initial messages. Each message can be one of the following response message types: [Inform](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AInformMessage), [TextChunk](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATextChunkMessage), [ValidationFailureChunk](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AValidationFailureChunkMessage), [ProgressIndicator](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AProgressIndicatorMessage), [Inquire](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AInquireMessage), [Confirm](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AConfirmMessage), [Failure](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AFailureMessage), [Escalate](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AEscalateMessage), [SessionEnded](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ASessionEndedMessage), [EndOfTurn](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AEndOfTurnMessage), [Error](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AErrorMessage).
+
+**400**
+
+Bad Request
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**401**
+
+Access bearer token is missing or invalid
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**403**
+
+User forbidden from accessing the resource
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**404**
+
+Resource not found
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**422**
+
+Any exception that occurred during the request execution
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**423**
+
+Server is busy and cannot process the request at this time
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**429**
+
+Too many requests for the server to handle
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**503**
+
+Service is unavailable possibly because Apex or Flow calls timed out
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**default**
+
+Something went wrong
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+post/agents/{id}/sessions
+
+### Request samples
+
+-   Payload
+
+Content type
+
+application/json
+
+Copy
+
+Expand allCollapse all
+
+`{`
+
+-   "externalSessionKey": "57904eb6-5352-4c5e-adf6-5f100572cf5d",
+    
+-   "instanceConfig": {
+    
+    -   "endpoint": "[https://d5e000009s7bceah-dev-ed.my.salesforce.com/](https://d5e000009s7bceah-dev-ed.my.salesforce.com/)"
+        
+    
+    },
+    
+-   "tz": "America/Los_Angeles",
+    
+-   "variables": [
+    
+    -   {}
+        
+    
+    ],
+    
+-   "featureSupport": "Sync",
+    
+-   "streamingCapabilities": {
+    
+    -   "chunkTypes": []
+        
+    
+    },
+    
+-   "bypassUser": "true"
+    
+
+}
+
+### Response samples
+
+-   200
+-   400
+-   401
+-   403
+-   404
+-   422
+-   423
+-   429
+-   503
+-   default
+
+Content type
+
+application/json
+
+Copy
+
+Expand allCollapse all
+
+`{`
+
+-   "sessionId": "57904eb6-5352-4c5e-adf6-5f100572cf5d",
+    
+-   "_links": {
+    
+    -   "self": {},
+        
+    -   "messages": {},
+        
+    -   "session": {},
+        
+    -   "end": {}
+        
+    
+    },
+    
+-   "messages": [
+    
+    -   {}
+        
+    
+    ]
+    
+
+}
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#operation/sendMessage)Send a message (synchronous)
+
+Send a synchronous message to the agent on an active session. The endpoint contains the ID of the active session, which was returned in the response of the Start Session call.
+
+##### path Parameters
+
+session-id
+
+required
+
+string
+
+The ID of the active session, which is the `sessionId` value returned from the Start Session call.
+
+##### header Parameters
+
+Authorization
+
+required
+
+string
+
+Example: Bearer •••••
+
+Authorization information that contains the JWT.
+
+##### Request Body schema: application/json
+
+required
+
+Request payload to continue the chat.
+
+message
+
+required
+
+object (AbstractRequestMessage)
+
+Represents the message to be sent. Can be one of the following request message types: [Text](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATextMessage), [Reply](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AReplyMessage), [Cancel](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ACancelMessage), [TransferFailed](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATransferFailedMessage), [TransferSucceeded](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATransferSucceededMessage), [PlanTemplate](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3APlanTemplateMessage).
+
+variables
+
+Array of objects (Variables)
+
+Array of custom and context agent variables passed to the agent during a session. See [Agent Variables](https://help.salesforce.com/s/articleView?id=ai.agent_variables.htm). Many variables are read-only and can only be set during the start session call. By default, context variables (which have the `$Context` prefix) aren't editable after the session has started, except for the `$Context.EndUserLanguage` variable. You can only modify editable variables during a send message call. When specifying variables that are derived from custom fields, omit the `__c` suffix. For instance, `Conversation_Key__c` becomes `$Context.Conversation_Key`. This array can be null.
+
+### Responses
+
+**200**
+
+Batched Response (Headless)
+
+##### Response Schema: application/json
+
+messages
+
+required
+
+Array of objects (AbstractResponseMessage) >= 0
+
+Array of response messages. Each message can be one of the following response message types: [Inform](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AInformMessage), [TextChunk](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATextChunkMessage), [ValidationFailureChunk](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AValidationFailureChunkMessage), [ProgressIndicator](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AProgressIndicatorMessage), [Inquire](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AInquireMessage), [Confirm](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AConfirmMessage), [Failure](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AFailureMessage), [Escalate](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AEscalateMessage), [SessionEnded](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ASessionEndedMessage), [EndOfTurn](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AEndOfTurnMessage), [Error](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AErrorMessage).
+
+_links
+
+required
+
+object (SyncLinks)
+
+List of Agentforce endpoints for HATEOS compliance.
+
+**400**
+
+Bad Request
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**401**
+
+Access bearer token is missing or invalid
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**403**
+
+User forbidden from accessing the resource
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**404**
+
+Resource not found
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**422**
+
+Any exception that occurred during the request execution
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**423**
+
+Server is busy and cannot process the request at this time
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**429**
+
+Too many requests for the server to handle
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**503**
+
+Service is unavailable possibly because Apex or Flow calls timed out
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+**default**
+
+Something went wrong
+
+Response Headers
+
+X-Request-ID
+
+string
+
+Example: "36a73651-a46d-4d16-9a8a-fd436ed62e1a"
+
+Request ID. A UUID in string format to help with request tracking.
+
+##### Response Schema: application/json
+
+status
+
+required
+
+integer <int32>
+
+HTTP status.
+
+path
+
+required
+
+string
+
+Request path.
+
+requestId
+
+required
+
+string
+
+Request ID. A UUID in string format to help with request tracking.
+
+error
+
+required
+
+string
+
+Error class name.
+
+message
+
+required
+
+string
+
+Exception message.
+
+timestamp
+
+required
+
+number
+
+Unix timestamp.
+
+post/sessions/{session-id}/messages
+
+### Request samples
+
+-   Payload
+
+Content type
+
+application/json
+
+Copy
+
+Expand allCollapse all
+
+`{`
+
+-   "message": {
+    
+    -   "type": "Text",
+        
+    -   "sequenceId": 1,
+        
+    -   "text": "Can you provide a summary of my orders?"
+        
+    
+    },
+    
+-   "variables": [
+    
+    -   {}
+        
+    
+    ]
+    
+
+}
+
+### Response samples
+
+-   200
+-   400
+-   401
+-   403
+-   404
+-   422
+-   423
+-   429
+-   503
+-   default
+
+Content type
+
+application/json
+
+Copy
+
+Expand allCollapse all
+
+`{`
+
+-   "messages": [
+    
+    -   {}
+        
+    
+    ],
+    
+-   "_links": {
+    
+    -   "self": {},
+        
+    -   "messages": {},
+        
+    -   "session": {},
+        
+    -   "end": {}
+        
+    
+    }
+    
+
+}
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#operation/sendMessageStream)Send a message (streaming)
+
+Send a streaming message to the agent on an active session. Returns an SSE stream in the response. The endpoint contains the ID of the active session, which was returned in the response of the Start Session call.
+
+##### path Parameters
+
+session-id
+
+required
+
+string
+
+The ID of the active session, which is the `sessionId` value returned from the Start Session call.
+
+##### header Parameters
+
+Authorization
+
+required
+
+string
+
+Example: Bearer •••••
+
+Authorization information that contains the JWT.
+
+Accept
+
+required
+
+string
+
+Example: text/event-stream
+
+Indicates which content type the sender is able to understand. For this endpoint, specify `text/event-stream`.
+
+##### Request Body schema: application/json
+
+required
+
+Request payload to continue the chat.
+
+message
+
+required
+
+object (AbstractRequestMessage)
+
+Represents the message to be sent. Can be one of the following request message types: [Text](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATextMessage), [Reply](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3AReplyMessage), [Cancel](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ACancelMessage), [TransferFailed](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATransferFailedMessage), [TransferSucceeded](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3ATransferSucceededMessage), [PlanTemplate](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=type%3APlanTemplateMessage).
+
+variables
+
+Array of objects (Variables)
+
+Array of custom and context agent variables passed to the agent during a session. See [Agent Variables](https://help.salesforce.com/s/articleView?id=ai.agent_variables.htm). Many variables are read-only and can only be set during the start session call. By default, context variables (which have the `$Context` prefix) aren't editable after the session has started, except for the `$Context.EndUserLanguage` variable. You can only modify editable variables during a send message call. When specifying variables that are derived from custom fields, omit the `__c` suffix. For instance, `Conversation_Key__c` becomes `$Context.Conversation_Key`. This array can be null.
+
+### Responses
+
+**200**
+
+OK
+
+**400**
+
+Bad Request
+
+**401**
+
+Access bearer token is missing or invalid
+
+**403**
+
+User forbidden from accessing the resource
+
+**404**
+
+Resource not found
+
+**422**
+
+Any exception that occurred during the request execution
+
+**423**
+
+Server is busy and cannot process the request at this time
+
+**429**
+
+Too many requests for the server to handle
+
+**503**
+
+Service is unavailable possibly because Apex or Flow calls timed out
+
+**default**
+
+Something went wrong
+
+post/sessions/{session-id}/messages/stream
+
+### Request samples
+
+-   Payload
+
+Content type
+
+application/json
+
+Copy
+
+Expand allCollapse all
+
+`{`
+
+-   "message": {
+    
+    -   "type": "Text",
+        
+    -   "sequenceId": 1,
+        
+    -   "text": "Can you provide a summary of my orders?"
+        
+    
+    },
+    
+-   "variables": [
+    
+    -   {}
+        
+    
+    ]
+    
+
+}
+
+### Response samples
+
+-   400
+-   401
+-   403
+-   404
+-   422
+-   423
+-   429
+-   503
+-   default
+
+Content type
+
+application/json
+
+Copy
+
+`{`
+
+-   "status": 400,
+    
+-   "path": "/v6/00DRM00000067To/sessions/HelloWorldBot/messages",
+    
+-   "requestId": "19c056ab-d909-49df-b976-65e56b6ab214",
+    
+-   "error": "BadRequestError",
+    
+-   "message": "Bad Request",
+    
+-   "timestamp": 1531245973799
+    
+
+}
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#operation/endSession)End an active session
+
+Send a message to the agent to end a session. The endpoint contains the ID of the active session, which was returned in the response of the Start Session call.
+
+##### path Parameters
+
+session-id
+
+required
+
+string
+
+The ID of the active session, which is the `sessionId` value returned from the Start Session call.
+
+##### header Parameters
+
+Authorization
+
+required
+
+string
+
+Example: Bearer •••••
+
+Authorization information that contains the JWT.
+
+x-session-end-reason
+
+required
+
+string (EndSessionReason)
+
+Enum: "UserRequest" "Transfer" "Expiration" "Error" "Other"
+
+Example: UserRequest
+
+The reason the session ended.
+
+### Responses
+
+**200**
+
+Batched Response (Headless)
+
+**400**
+
+Bad Request
+
+**401**
+
+Access bearer token is missing or invalid
+
+**403**
+
+User forbidden from accessing the resource
+
+**404**
+
+Resource not found
+
+**422**
+
+Any exception that occurred during the request execution
+
+**423**
+
+Server is busy and cannot process the request at this time
+
+**429**
+
+Too many requests for the server to handle
+
+**503**
+
+Service is unavailable possibly because Apex or Flow calls timed out
+
+**default**
+
+Something went wrong
+
+delete/sessions/{session-id}
+
+### Response samples
+
+-   200
+-   400
+-   401
+-   403
+-   404
+-   422
+-   423
+-   429
+-   503
+-   default
+
+Content type
+
+application/json
+
+Copy
+
+Expand allCollapse all
+
+`{`
+
+-   "messages": [
+    
+    -   {}
+        
+    
+    ],
+    
+-   "_links": {
+    
+    -   "self": {},
+        
+    -   "messages": {},
+        
+    -   "session": {},
+        
+    -   "end": {}
+        
+    
+    }
+    
+
+}
+
+## [](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary#operation/submitFeedback)Submit feedback
+
+Submit feedback for a message. Feedback data is stored in Data 360.
+
+##### path Parameters
+
+session-id
+
+required
+
+string
+
+The ID of the session, which is the `sessionId` value returned from the Start Session call.
+
+##### header Parameters
+
+Authorization
+
+required
+
+string
+
+Example: Bearer •••••
+
+Authorization information that contains the JWT.
+
+##### Request Body schema: application/json
+
+required
+
+The feedback payload.
+
+feedbackId
+
+required
+
+string (FeedbackId)
+
+Unique ID to identify the generation. Used to submit feedback.
+
+feedback
+
+required
+
+string (FeedbackRating)
+
+Enum: "GOOD" "BAD"
+
+Feedback rating, suggesting a thumbs up or thumbs down.
+
+text
+
+string
+
+Textual representation of user feedback.
+
+details
+
+object <= 10 properties
+
+Additional details to provide as key value pairs.
+
+### Responses
+
+**202**
+
+Feedback successfully accepted.
+
+**400**
+
+Bad Request
+
+**401**
+
+Access bearer token is missing or invalid
+
+**403**
+
+User forbidden from accessing the resource
+
+**404**
+
+Resource not found
+
+**422**
+
+Any exception that occurred during the request execution
+
+**423**
+
+Server is busy and cannot process the request at this time
+
+**429**
+
+Too many requests for the server to handle
+
+**503**
+
+Service is unavailable possibly because Apex or Flow calls timed out
+
+**default**
+
+Something went wrong
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NT
-UwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbLTM1MTc0OTA5MCwxODU5MjY4NTM1LDQ0OD
+E0OTEzMywtMTU1NTA5MjUxMF19
 -->
