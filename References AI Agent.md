@@ -1455,16 +1455,9 @@ If you receive an HTTP 500 response, verify that you've followed the setup instr
 
 Agentforce Service agents intelligently support your customers by connecting to messaging and other channels and escalating to reps when necessary. Use the default Agentforce Service Agent template to create an agent designed to resolve common support cases and requests. Or select from more specialized templates to fit your use case.
 
-| User Permissions Needed |   |
+| User Permissions Needed |   |
 | --- | --- |
-| To build and manage Service Agents: | 
-Manage Agentforce Service Agents AND Manage AI Agents
-
-OR
-
-Customize Application
-
- |
+| To build and manage Service Agents: | Manage Agentforce Service Agents AND Manage AI Agents OR Customize Application |
 
 -   **[Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5)**  
     Learn how Agentforce Service agents control data access. Set up an agent user for your Agentforce Service agent and assign permissions, so your agent has everything it needs to do its job.
@@ -1495,10 +1488,7 @@ Before you begin, [set up Einstein Generative AI](https://help.salesforce.com/s/
 ## Create an Agent from a Service Agent Template in the Legacy Agentforce Builder
 
 ![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/8f79e91a-cacc-4a50-9604-d1286798b180/images/icon_note.png)
-
-Note Starting the week of July 13, 2026, you can no longer create agents in the legacy Agentforce Builder in Setup. Instead, create an agent in Agentforce Builder in Agentforce Studio. Or [upgrade an agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5) from the legacy builder to the new builder.
-
-For the latest features and enhancements, we recommend migrating existing agents from the legacy builder to the new builder. [Learn more.](https://help.salesforce.com/s/articleView?id=ai.agent_migrate_parent.htm&language=en_US&type=5)
+Note Starting the week of July 13, 2026, you can no longer create agents in the legacy Agentforce Builder in Setup. Instead, create an agent in Agentforce Builder in Agentforce Studio. Or [upgrade an agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5) from the legacy builder to the new builder.For the latest features and enhancements, we recommend migrating existing agents from the legacy builder to the new builder. [Learn more.](https://help.salesforce.com/s/articleView?id=ai.agent_migrate_parent.htm&language=en_US&type=5)
 
 1.  From Setup, in the Quick Find box, enter Agent, and then select **Agentforce Agents**.
 2.  Click **New Agent**.
@@ -3930,8 +3920,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA2NzU0NzU4LC0xNDQyMjgxNTQsMTg0Nj
-M4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0NzA1MzIs
-LTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0ND
-gxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbLTE2MTEzOTIxMjAsMzA2NzU0NzU4LC0xND
+QyMjgxNTQsMTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYy
+MiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMT
+g1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
