@@ -2239,6 +2239,7 @@ A numerical representation of [unstructured data](https://help.salesforce.com/s/
 
 See [Vector Search](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_vector_index.htm&language=en_US&type=5).
 
+#  Hybrid Reasoning with New Agentforce Builder and Agent Script
 ## Introduction
 
 _Note: “Topics” have been renamed to “subagents” throughout this article, per our latest product naming conventions._
@@ -2250,6 +2251,10 @@ LLMs can produce inconsistent outcomes in response to identical inputs. Subtle v
 The new Agentforce Builder and Agent Script address this issue by separating deterministic execution from LLM reasoning. Agentforce’s hybrid model ensures that the agent follows a precisely defined structure for every workflow execution, while still using LLM reasoning where judgment, natural language understanding, or contextual interpretation is genuinely needed.
 
 In the previous version of Agentforce, an agent operated as a simple reactive loop. Every decision, from interpreting intent to selecting the next action, was made in real time by the LLM based solely on the user’s most recent input. There was no guaranteed execution path, no persistent state, and no mechanism to enforce a sequence of steps.
+
+## Previous Agentforce Limitations 
+
+
 
 **Execution paths couldn’t be guaranteed**
 
@@ -2885,12 +2890,11 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 - [Start a Session](?meta=startSession): Start a session with an agent.
 - [Send a Message (sync)](?meta=sendMessage): Send a sync message to the agent on an active session.
-- [Send a Message (streaming)](?meta=sendMessageStream): Send a streaming message to the agent on an active session.
-- [End a Session](?meta=endSession): E
+- [Send a Message (streaming)](?meta=sendMessageStr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjMyNzc2NywyMDM2MTYxMDYxLDMwNj
-c1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3NjIsMTkzNDg2MTUy
-Miw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNT
-EyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDky
-NTEwXX0=
+eyJoaXN0b3J5IjpbLTE0Mjg0Mzg1NDgsMTM3MjMyNzc2NywyMD
+M2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3
+NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xOD
+U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
+MTMzLC0xNTU1MDkyNTEwXX0=
 -->
