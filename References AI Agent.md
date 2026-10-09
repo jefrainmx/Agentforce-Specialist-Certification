@@ -973,25 +973,8 @@ Learn about agent types and default templates for specific clouds and common use
 | Employee Agent | Assists employees by providing access to company knowledge, performing tasks, and streamlining workflows across departments.Before getting started, review [Considerations for Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/).Agentforce Employee agents require [Flex Credits](https://help.salesforce.com/s/articleView?id=ai.usage_flex_credits.htm&language=en_US&type=5). | To create and manage Agentforce Employee Agent: Manage AI Agents.To use Agentforce Employee Agent, see [Manage Employee Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5). |
 | Lead Nurturing (formerly known as SDR) | Intelligently engages leads with personalized content, answers common questions, and schedules meetings.Before getting started, review [Considerations for Using Agentforce Lead Nurturing](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_considerations.htm&language=en_US&type=5).| Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [SDR Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&language=en_US&type=5). |
 | Sales Coach | Intelligently gives reps personalized, actionable, and stage-specific feedback on their sales pitch or role-play session.Before getting started, review [Generative AI Considerations for Agentforce Sales Coach](https://help.salesforce.com/s/articleView?id=sales.sales_coach_agent_gen_ai_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [Agentforce Sales Coach Permissions](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_permissions.htm&language=en_US&type=5). |
-| Service Agent | Intelligently supports your customers with common inquiries and escalates complex issues.Before getting started, review [Considerations for Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=ai.service_agent_considerations.htm&language=en_US&type=5).
-| Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/). | 
-
-To create and manage Agentforce Service agents: Manage Agentforce Service Agents permission set
-
-![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
-
-Note This permission set contains the Manage AI Agents permission, which is required to access Agentforce Builder. Manage AI Agents grants org-wide management access to all agents, not just the agent type or template named in the permission set. Users with this permission can manage, activate, and deactivate agents, customize subagents and actions, and monitor agent activity. Assign this permission set only to users who require org-wide agent management access.
-
-To let the agent user securely access data and perform actions, see [Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5).
-
- |
-| Service Assistant | 
-
-Intelligently helps your service reps resolve cases faster with case summaries and step-by-step resolution guidance.
-
-Before getting started, review [Considerations for Service Assistant](https://help.salesforce.com/s/articleView?id=service.sp_considerations.htm&language=en_US&type=5).
-
- | Available in Enterprise, Performance, and Unlimited Editions with Foundations and the Agentforce for Service add-on or Agentforce 1 Service Edition | See [Permissions and Licensing for Service Assistant](https://help.salesforce.com/s/articleView?id=service.sp_permissions.htm&language=en_US&type=5). |
+| Service Agent | Intelligently supports your customers with common inquiries and escalates complex issues.Before getting started, review [Considerations for Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=ai.service_agent_considerations.htm&language=en_US&type=5).| Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/). | To create and manage Agentforce Service agents: Manage Agentforce Service Agents permission set![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)Note This permission set contains the Manage AI Agents permission, which is required to access Agentforce Builder. Manage AI Agents grants org-wide management access to all agents, not just the agent type or template named in the permission set. Users with this permission can manage, activate, and deactivate agents, customize subagents and actions, and monitor agent activity. Assign this permission set only to users who require org-wide agent management access.To let the agent user securely access data and perform actions, see [Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5).|
+| Service Assistant | Intelligently helps your service reps resolve cases faster with case summaries and step-by-step resolution guidance.Before getting started, review [Considerations for Service Assistant](https://help.salesforce.com/s/articleView?id=service.sp_considerations.htm&language=en_US&type=5).| Available in Enterprise, Performance, and Unlimited Editions with Foundations and the Agentforce for Service add-on or Agentforce 1 Service Edition | See [Permissions and Licensing for Service Assistant](https://help.salesforce.com/s/articleView?id=service.sp_permissions.htm&language=en_US&type=5). |
 | Setup with Agentforce | 
 
 Helps your Salesforce admins complete Setup tasks, such as managing users, troubleshooting issues, and customizing your org. The Setup agent is created automatically when you enable Setup with Agentforce and isn’t visible or able to be customized in Agentforce Builder.
@@ -3915,8 +3898,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ3MDc0MDIsMTkzNDg2MTUyMiw5MD
-A0NDU2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0
-MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX
-0=
+eyJoaXN0b3J5IjpbNzQyNzM0OCwxOTM0ODYxNTIyLDkwMDQ0NT
+YyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIs
+MTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
