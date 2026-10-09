@@ -1676,10 +1676,6 @@ To manage agent user permissions, edit the \[Agent\_Name\]\_Permissions permissi
 
 Agents connected to employee channels, such as Lightning Experience, the Salesforce mobile app, and Slack, limit access to subagents and actions by default, based on the end user's context. Agentforce Service agents connected to customer channels, such as enhanced Messaging channels and Enhanced Chat, require additional configuration to ensure secure access. As you configure your agent, it's important to think through the security and identification requirements for your use case and only grant your agents the actions and access required to complete the tasks you want them to be able to complete autonomously on behalf of your customers. For sensitive actions, we recommend building customer verification directly into the action’s flow.
 
-### Required Editions
-
-<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
-
 You have full control over the actions that your agents can take, so you can tailor your customer experience to your needs. To enhance security and ensure that agents operate within defined boundaries, we recommend:
 
 -   Assigning agents that connect to customer channels the minimum user permissions required to do their job.
@@ -1691,7 +1687,7 @@ Every company’s risk tolerance and security standards are unique, and there’
 
 When your agent is connected to customer channels, think of agent actions as either public or private. While Salesforce doesn’t have a specific setting to designate actions as public or private, this framework helps you conceptualize and implement your company’s security standards.
 
-Public Actions
+### Public Actions
 
 Public actions are actions that your company is comfortable taking on behalf of anyone, regardless of identity, without authentication. For example, the [Answer Questions with Knowledge](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref_answer_questions_with_knowledge&language=en_US&type=5) action is usually considered a public action, especially if it’s grounded in public information such as return policies. Looking up an order can also be a public action if you’re comfortable doing so without securely confirming the requester's identity. In such cases, the information required to identify a specific order, such as the order ID or email address, can be passed conversationally.
 
@@ -3804,7 +3800,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTgxNjI5OTYsMTkzNDg2MTUyMiw5MDA0ND
-U2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMy
-LDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbLTEzMjY0MTI3MywxOTM0ODYxNTIyLDkwMD
+Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
+MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
+==
 -->
