@@ -2330,6 +2330,76 @@ The new Agentforce Builder isn’t just a new interface. It empowers admins to b
 -   Salesforce Developers site: [Get Started with Agent Script](https://developer.salesforce.com/docs/ai/agentforce/guide/agent-script.html)
 -   External site: [YouTube: Use Words, Not Code with Agent Builder | Dreamforce 2025](https://www.youtube.com/watch?v=Gi2g_pnXuEs)
 
+
+
+# Engagement Agent Permission Sets
+
+Agentforce Engagement includes multiple permission sets you can assign based on a user’s role and responsibilities. The permission sets include individual user permissions and object permissions.
+
+### Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience in <strong>Enterprise</strong>, <strong>Performance</strong>, and <strong>Unlimited</strong> editions with Sales and Einstein for Sales.</td></tr></tbody></table>
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-sales-sales_agents-264-0-0-production-enus/e6dcfee1-3835-43cb-ae7b-91c6d75e5fe5/images/icon_note.png)
+
+Note The Agentforce Lead Nurturing name has changed to Agentforce Engagement. The new name better describes the work the agent does to nurture existing prospects and differentiates it from the Agentforce Lead Generation agent template.
+
+## Sales User Permissions
+
+The **Use Engagement Agent** permission set allows human users to access and interact with Agentforce Engagement. This permission set includes this permission.
+
+-   Use Engagement Agent App
+
+## Sales Manager Permissions
+
+The **Configure Engagement Agent** permission set allows human users to manage and monitor Agentforce Engagement in their organization. This permission set includes these user permissions.
+
+-   Configure Engagement Agent App
+-   Use Engagement Agent App
+-   Manage AI Agents
+-   Execute Prompt Template
+-   Manage Prompt Templates
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-sales-sales_agents-264-0-0-production-enus/e6dcfee1-3835-43cb-ae7b-91c6d75e5fe5/images/icon_note.png)
+
+Note This permission set contains the Manage AI Agents permission, which is required to access Agentforce Builder. Manage AI Agents grants org-wide management access to all agents, not just the agent type or template named in the permission set. Users with this permission can manage, activate, and deactivate agents, customize subagents and actions, and monitor agent activity. Assign this permission set only to users who require org-wide agent management access.
+
+To view and configure an Engagement agent in Agentforce Builder, sales managers need additional permissions.
+
+-   Data Cloud Admin
+
+When an agent is set up to Send as Seller, prospect record owners need [Einstein Activity Capture permission](https://help.salesforce.com/s/articleView?id=sales.aac_setup_select_users.htm&language=en_US&type=5) so the agent can send emails using the record owner’s email account.
+
+## Engagement Agent User Permissions
+
+The **Engagement Agent** permission set is for the automated Engagement agent user record. This permission set includes these user permissions.
+
+-   Access Activities
+-   Automated Actions User
+-   Edit Tasks
+-   Engage Prospects as an Agentforce Sales Development Agent
+-   Execute Prompt Templates
+-   Run Flows
+-   Sales Engagement User
+-   Cadence Object Permission Read
+-   Cadence Step Object Permissions Read
+-   Cadence Step Tracker Object Permissions Read, Create, Edit, Delete
+-   Cadence Tracker Object Permissions Read, Create, Edit, Delete
+-   Lead Object Permissions Read, Edit
+-   Operating Hours Object Permissions Create, Edit, Read, Delete
+-   Record Collection Object Permissions Read
+-   Lead.HasOptedOutOfEmail Field Permissions Read, Edit
+-   Send Email
+-   Use Einstein Activity Capture
+-   Use Inbox
+-   View Roles and Role Hierarchy
+-   View Setup and Configuration
+-   View Knowledge
+-   Allow View Knowledge
+
+
+
+
 ---
 ---
 ---
@@ -4377,7 +4447,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NzM0NDY3OSwyMDM2MTYxMDYxLDMwNj
+eyJoaXN0b3J5IjpbLTMyNzI2OTM0NSwyMDM2MTYxMDYxLDMwNj
 c1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3NjIsMTkzNDg2MTUy
 Miw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNT
 EyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDky
