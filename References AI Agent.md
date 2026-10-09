@@ -1576,6 +1576,100 @@ Agentforce Voice and Voice with Telephony Providers work together to transform y
     When a customer conversation involves call transfers, a separate voice call record can be created in Salesforce for each call segment. This action results in multiple voice call records for the same conversation. To provide a single, comprehensive view and preserve the full call context, connect these related voice call records. Connecting records enables more informed decisions. For instance, you can escalate the call to the appropriate rep based on all gathered information.
 
 
+# Configure Service Agent Access
+
+Learn how Agentforce Service agents control data access. Set up an agent user for your Agentforce Service agent and assign permissions, so your agent has everything it needs to do its job.
+
+Agentforce Service agents connect to channels that aren’t restricted to logged-in users. When a Service agent can’t use an end user’s user record to control access, it uses a dedicated user record that determines what types of data it can read and edit. This is called the agent user or the agent’s user record.
+
+If an Agentforce Service agent doesn’t have permission to view a product inventory or reservation calendar, it can’t answer questions about them. Conversely, if the agent has access to data it doesn’t need, the agent can expose proprietary information to customers. Configuring your agent user to have access to the data it needs to do its job while limiting its access to everything else is an essential part of building a safe, reliable, and helpful agent.
+
+## Service Agent Access By End User
+
+Your Service agent governs access differently depending on the authentication level of the end user. Learn when the agent user’s access applies.
+
+|   | **End User Type** |
+| --- | --- |
+|   | **Unidentified End User** | **Identified (verified) End User** | **Authenticated User** |
+| --- | --- | --- | --- |
+| **Description** | The customer interacts with an agent without verifying their identity. For example, agents that handle FAQs. | The customer interacting with an agent has a contact record, but not a user record. They might be verified (for example, they’ve provided an OTP to confirm their identity), but they aren’t logged in. | The customer is interacting with an agent on an Experience Cloud site, is logged in through the site, and has a user record. Available for Enhanced Chat and Experience Cloud sites only with [credential-based user verification enabled](https://help.salesforce.com/s/articleView?id=service.miaw_credential_user_verification_setup.htm&language=en_US&type=5). |
+| **Runs As** | Agent User (EinsteinServiceAgent User) | Agent User (EinsteinServiceAgent User) | Logged-in site user |
+| **Data Access Governed By** | Agent user profile, permissions, field-level security, and sharing rules. OWD for internal users apply. | Agent user profile, permissions, field-level security, and sharing rules. OWD for internal users apply. | Logged-in site user’s profile, permissions, field-level security, and sharing rules. OWD depend on whether the user is internal or external. |
+| **User Identified By** | N/A | Context variables (for example, `MessagingSession.ContactId`). Context variables tell the agent who the user is but don’t control data access. | Logged-in site user |
+
+## Create an Agent User
+
+You create or select an existing agent user whenever you [make a new Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=ai.service_agent_setup.htm&language=en_US&type=5). After the agent user is created, you can view it by opening **Setup** and typing `Users` in the Quick Find box, then selecting **Users**.
+
+After the agent user is created, it has these properties:
+
+-   **Name**: EinsteinServiceAgent User
+    
+-   **User License**: Einstein Agent
+    
+-   **Profile**: Einstein Agent User
+    
+-   **Org-wide sharing defaults (OWD)**: Internal
+    
+-   **Permission Sets**: Agentforce Service Agent Secure Base, \[Agent\_Name\]\_Permissions
+    
+-   **Permission Set Group**: AgentforceServiceAgentUserPsg, which contains the Agentforce Service Agent User, Data Cloud User, and Prompt Template User permission sets
+    
+-   **Permission Set Licenses**: Agentforce Service Agent User, Data Cloud, Einstein Prompt Templates
+    
+
+The agent user is created with minimal access so that your agent is secure by default. To support your use cases, expand your agent user’s access, based on the principle of least privilege. Only Salesforce users with admin permissions can view or edit agent users.
+
+![Tip](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_tip.png)
+
+Tip
+
+When you have multiple agent users in your org, here are some ways to make it easier to manage agent users on the Users Setup page. To differentiate between multiple agent users, update the first name of each user to the name of the agent that it’s associated with. To easily find all agent users, create a list view that filters by the Einstein Agent User profile on the Users Setup page.
+
+## Grant the Agent User Object Access
+
+The agent user requires the minimum level of object permissions for each object that the agent interacts with via flows, Apex, or prompt templates. When you add a new action to your agent, make sure that the agent user has access to the objects referenced in the action. If you connect your agent to an Enhanced Messaging channel, your agent also requires access to the Messaging Session object.
+
+Object permissions for agent users are handled the same way as they are for regular users. [To manage object permissions](https://help.salesforce.com/s/articleView?id=platform.perm_object_access_summary.htm&language=en_US&type=5), edit the \[Agent\_Name\]\_Permissions permission set associated with your agent user. If you want to create a different permission set for your agent user, make sure that it’s associated with the Einstein Agent license and Einstein Agent User profile. For more information, see [Object Permissions](https://help.salesforce.com/s/articleView?id=platform.users_profiles_object_perms.htm&language=en_US&type=5).
+
+## Grant the Agent User Record Access
+
+**Assign a Role**
+
+Roles grant users record access via sharing rules and role hierarchies. [Assign the agent user to a role](https://help.salesforce.com/s/articleView?id=platform.assigning_users_to_roles.htm&language=en_US&type=5) that lets the agent view or edit the records that it interacts with.
+
+When assigning a role, consider the role hierarchy for your org and give your agent a role that lets it view or edit the records it’s necessary for your agent to interact with. Follow the principle of least privilege. For more information, see [Controlling Access Using the Role Hierarchy](https://help.salesforce.com/s/articleView?id=platform.security_controlling_access_using_hierarchies.htm&language=en_US&type=5).
+
+**Review and Modify Sharing Rules**
+
+When a Service agent runs in the agent user’s context, org-wide sharing defaults (OWD) for internal users apply. [Restrict your OWD for internal users](https://help.salesforce.com/s/articleView?id=platform.admin_sharing.htm&language=en_US&type=5) to limit record access for all internal users. [Create sharing rules](https://help.salesforce.com/s/articleView?id=platform.security_sharing_rules_create.htm&language=en_US&type=5) to selectively grant access, excluding the Einstein Agent User where appropriate.
+
+**Scope Data Access to Verified Users**
+
+When a Service agent runs in the context of the agent user, context variables (for example, `MessagingSession.ContactId`) can be used to pass the customer’s identity to the agent, but they don’t control data access. Plan ahead to scope record access to verified users, especially for any agent actions that access private customer information (for example, looking up order information).
+
+First, pass verified customer IDs into the custom `VerifiedCustomerId` variableIf you use the standard [Customer Verification or Service Customer Verification](https://help.salesforce.com/s/articleView?id=ai.service_agentforce_customer_verification.htm&language=en_US&type=5#service_agentforce_customer_verification) subagents for user verification in your agent, the actions are configured to store the user’s ID in the `VerifiedCustomerId` variable after their identity is successfully verified. If you don’t, you can create a custom agent action and an Apex class or flow to pass the verified ID to your agent and store it in the `VerifiedCustomerId` variable.
+
+After you’ve verified and stored the customer ID, use it to restrict record access.
+
+-   Build a check of the `VerifiedCustomerID` variable into the Apex classes and flows called by standard and custom agent actions to customer records (`WHERE ContactId = VerifiedCustomerId`).Some standard actions support customer verification by default. For example, the [Get Cases for Verified Contact](https://help.salesforce.com/s/articleView?id=ai.copilot_action_get_cases_verified_contact.htm&language=en_US&type=5) action calls a flow that looks up the customer’s contact ID, checks it against the `VerifiedCustomerId` variable, and uses the verified customer ID to scope its queries. Carefully test and customize each action to meet your security needs.
+    
+-   Create filters on subagents and actions to restrict access to only verified customers.
+    
+    -   To add a filter to a subagent in Canvas view, in the Agent Router, place your cursor after the transition you want to add a filter to. From the Add to block shortcut, click **Add filter**. Specify a variable, an operator, and a value to create the condition `VerifiedCustomerId is not None`. To add an additional condition, place your cursor after the value. From the Add to block shortcut, select And or Or, and then specify another variable, operator, and value.
+    -   To add a filter to an action in Canvas view, in a subagent, place your cursor after the action you want to add a filter to. From the Add to block shortcut, click **Add filter**. Specify a variable, an operator, and a value to create the condition VerifiedCustomerId is not None. To add an additional condition, place your cursor after the value. From the Add to block shortcut, select And or Or, and then specify another variable, operator, and value.
+
+To learn more, see [Agent Script Pattern: Enforce Business Rules with Filters](https://developer.salesforce.com/docs/ai/agentforce/guide/ascript-patterns-filtering.html).
+
+## Assign Additional Permissions
+
+In addition to object and record access, agent users require [permissions required to run agent actions](https://help.salesforce.com/s/articleView?id=ai.agent_actions_common_perms.htm&language=en_US&type=5)
+
+Review your agent user’s current access and make sure that they have the necessary permissions for your use case.
+
+On the Agent Access page in Agentforce Builder, you can review the user record that represents the agent in the Agent's User Record section. Review and edit the agent's assigned permission sets and permission set groups in the Permissions and Profiles section.
+
+To manage agent user permissions, edit the \[Agent\_Name\]\_Permissions permission set associated with your agent user. If you want to create a different permission set for your agent user, make sure that it’s associated with the Einstein Agent license and Einstein Agent User profile.
 
 
 ---
@@ -3625,7 +3719,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
-cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
-MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbLTE0OTY4NzMzOTEsMTkzNDg2MTUyMiw5MD
+A0NDU2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0
+MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX
+0=
 -->
