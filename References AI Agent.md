@@ -964,6 +964,119 @@ For custom use cases, create an agent with the help of generative AI. Describe t
 -   [Agent Types and Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&language=en_US&type=5)
 -   [Configure Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_configure.htm&language=en_US&type=5)
 
+# Agent Types and Considerations
+
+Learn about agent types and default templates for specific clouds and common use cases.
+
+| Agent Type | What it Does | Required Editions | Required Permissions |
+| --- | --- | --- | --- |
+| Employee Agent | Assists employees by providing access to company knowledge, performing tasks, and streamlining workflows across departments.Before getting started, review [Considerations for Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/).Agentforce Employee agents require [Flex Credits](https://help.salesforce.com/s/articleView?id=ai.usage_flex_credits.htm&language=en_US&type=5). | To create and manage Agentforce Employee Agent: Manage AI Agents
+
+To use Agentforce Employee Agent, see [Manage Employee Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5).
+
+ |
+| Lead Nurturing (formerly known as SDR) | 
+
+Intelligently engages leads with personalized content, answers common questions, and schedules meetings.
+
+Before getting started, review [Considerations for Using Agentforce Lead Nurturing](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_considerations.htm&language=en_US&type=5).
+
+ | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [SDR Agent Permission Sets](https://help.salesforce.com/s/articleView?id=sales.sales_agent_sdr_permissions.htm&language=en_US&type=5). |
+| Sales Coach | 
+
+Intelligently gives reps personalized, actionable, and stage-specific feedback on their sales pitch or role-play session.
+
+Before getting started, review [Generative AI Considerations for Agentforce Sales Coach](https://help.salesforce.com/s/articleView?id=sales.sales_coach_agent_gen_ai_considerations.htm&language=en_US&type=5).
+
+ | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | See [Agentforce Sales Coach Permissions](https://help.salesforce.com/s/articleView?id=sales.sales_agents_coach_permissions.htm&language=en_US&type=5). |
+| Service Agent | 
+
+Intelligently supports your customers with common inquiries and escalates complex issues.
+
+Before getting started, review [Considerations for Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=ai.service_agent_considerations.htm&language=en_US&type=5).
+
+ | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/). | 
+
+To create and manage Agentforce Service agents: Manage Agentforce Service Agents permission set
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
+
+Note This permission set contains the Manage AI Agents permission, which is required to access Agentforce Builder. Manage AI Agents grants org-wide management access to all agents, not just the agent type or template named in the permission set. Users with this permission can manage, activate, and deactivate agents, customize subagents and actions, and monitor agent activity. Assign this permission set only to users who require org-wide agent management access.
+
+To let the agent user securely access data and perform actions, see [Configure Service Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&language=en_US&type=5).
+
+ |
+| Service Assistant | 
+
+Intelligently helps your service reps resolve cases faster with case summaries and step-by-step resolution guidance.
+
+Before getting started, review [Considerations for Service Assistant](https://help.salesforce.com/s/articleView?id=service.sp_considerations.htm&language=en_US&type=5).
+
+ | Available in Enterprise, Performance, and Unlimited Editions with Foundations and the Agentforce for Service add-on or Agentforce 1 Service Edition | See [Permissions and Licensing for Service Assistant](https://help.salesforce.com/s/articleView?id=service.sp_permissions.htm&language=en_US&type=5). |
+| Setup with Agentforce | 
+
+Helps your Salesforce admins complete Setup tasks, such as managing users, troubleshooting issues, and customizing your org. The Setup agent is created automatically when you enable Setup with Agentforce and isn’t visible or able to be customized in Agentforce Builder.
+
+Before getting started, review [Considerations for Setup with Agentforce](https://help.salesforce.com/s/articleView?id=xcloud.setup_agentforce_considerations.htm&language=en_US&type=5).
+
+ | Available in: Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | To enable or use Setup with Agentforce: [See Grant Permissions to Use Setup with Agentforce](https://help.salesforce.com/s/articleView?id=xcloud.setup_agentforce_permissions.htm&language=en_US&type=5) |
+| Agentforce (Default) - (Retired) | 
+
+Helps your employees accomplish key business tasks in Salesforce.
+
+Before getting started, review [Agentforce (Default) Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_default_considerations.htm&language=en_US&type=5).
+
+ | 
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_important.png)
+
+Important Starting June 17, 2025, Agentforce (Default) will not include new features or improvements and isn’t available in new Salesforce environments. We recommend migrating to Agentforce Employee agent for continued enhancements and support. If you plan to transition to Agentforce Employee agent or make related license changes, complete the migration of your existing Agentforce (Default) agents in advance to avoid potential disruption in agent availability. If you can't complete the migration in advance, you can create new agents after the transition, which can involve some downtime. See [Migrate from Agentforce (Default) to Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.migrate_agentforce_default_to_aea.htm&language=en_US&type=5).
+
+
+
+
+
+ | 
+
+To create and manage Agentforce (Default): Manage AI Agents AND Manage Agentforce Default Agent OR Customize Application
+
+To use Agentforce (Default), see [Give Users Access to Agentforce (Default)](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_user_access.htm&language=en_US&type=5).
+
+ |
+| Agent for Setup - (Retired) | 
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
+
+Note Agent for Setup is no longer being updated and can’t be enabled in new orgs beginning April 2026. We recommend that you use Setup with Agentforce instead, which can help with many more administrative tasks and is automatically updated with new functionality.
+
+Helps your org admins with every day administration tasks, looks for answers in Salesforce Help, and more.
+
+Before getting started, review [Agent for Setup Considerations](https://resources.docs.salesforce.com/rel1/doc/en-us/static/pdf/setup_agent_original.pdf).
+
+ | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions | 
+
+To create and manage Agent for Setup: Customize Application OR Agentforce Default Admin permission set AND View Setup and Configuration
+
+To use Agent for Setup: Access Agentforce Default Agent permission set AND View Setup and Configuration
+
+ |
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
+
+Note Users with the Manage AI Agents permission can manage, activate, and deactivate agents, customize subagents and actions, and monitor agent activity. Assign this permission only to users who require org-wide management access to all agents.
+
+-   **[Considerations for Agentforce Service Agent](https://help.salesforce.com/s/articleView?id=ai.service_agent_considerations.htm&language=en_US&type=5)**  
+    To use Agentforce Service Agent, consider supported functionality, usage, limitations and allowances, limits, and other issues.
+-   **[Considerations for Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&language=en_US&type=5)**  
+    Before setting up an Agentforce Employee agent, keep these considerations in mind.
+-   **[Agentforce (Default) Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_default_considerations.htm&language=en_US&type=5)**  
+    To use Agentforce (Default), consider supported functionality, usage, limits and allowances, and more.
+
+#### See Also
+
+-   [Agentforce Considerations](https://help.salesforce.com/s/articleView?id=ai.copilot_considerations.htm&language=en_US&type=5)
+-   [Agent Execution Context and Data Access by Type](https://help.salesforce.com/s/articleView?id=ai.agent_execution_data.htm&language=en_US&type=5)
+
 
 # Agent API Examples
 
@@ -3823,7 +3936,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgxMzA2OTAzLDE5MzQ4NjE1MjIsOTAwND
-Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
-MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbMTEzMzk4NTgyMCwxOTM0ODYxNTIyLDkwMD
+Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
+MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
+==
 -->
