@@ -1672,6 +1672,7 @@ On the Agent Access page in Agentforce Builder, you can review the user record t
 To manage agent user permissions, edit the \[Agent\_Name\]\_Permissions permission set associated with your agent user. If you want to create a different permission set for your agent user, make sure that it’s associated with the Einstein Agent license and Einstein Agent User profile.
 
 
+
 ---
 ---
 ---
@@ -3719,8 +3720,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMzQ4MzYwOSwxOTM0ODYxNTIyLDkwMD
-Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
-MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
-==
+eyJoaXN0b3J5IjpbOTYwMDkwNDUzLDE5MzQ4NjE1MjIsOTAwND
+Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
+MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
