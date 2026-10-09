@@ -1588,8 +1588,8 @@ If an Agentforce Service agent doesn’t have permission to view a product inven
 
 Your Service agent governs access differently depending on the authentication level of the end user. Learn when the agent user’s access applies.
 
-|   | **End User Type** | ||
-| --- | --- | --- | --- |
+
+ **End User Type** 
 |   |**Unidentified End User** | **Identified (verified) End User** | **Authenticated User** |
 | --- | --- | --- | --- |
 | **Description** | The customer interacts with an agent without verifying their identity. For example, agents that handle FAQs. | The customer interacting with an agent has a contact record, but not a user record. They might be verified (for example, they’ve provided an OTP to confirm their identity), but they aren’t logged in. | The customer is interacting with an agent on an Experience Cloud site, is logged in through the site, and has a user record. Available for Enhanced Chat and Experience Cloud sites only with [credential-based user verification enabled](https://help.salesforce.com/s/articleView?id=service.miaw_credential_user_verification_setup.htm&language=en_US&type=5). |
@@ -3719,7 +3719,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjExODA2NSwxOTM0ODYxNTIyLDkwMD
+eyJoaXN0b3J5IjpbLTUyMzQ4MzYwOSwxOTM0ODYxNTIyLDkwMD
 Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
 MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
 ==
