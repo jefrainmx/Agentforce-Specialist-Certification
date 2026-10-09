@@ -1708,19 +1708,8 @@ When building an agent that connects to customer channels and can take private a
 | Guideline | Details |
 | --- | --- |
 | Follow the principle of least privilege. |-   **Restrict access:** Grant only the minimum necessary permissions to your agent.<br>-**Review permissions regularly:** To ensure that permissions are still appropriate, conduct periodic reviews. |
-| Implement robust access controls. | 
-
--   **Enforce strong authentication:** Implement strong authentication mechanisms, such as two-factor authentication, to verify the identity of users interacting with your agent.
--   **Monitor access logs:** To identify any suspicious activity, regularly review the access logs.
-
- |
-| Design secure actions. | 
-
--   **Limit scope:** Design actions to operate within specific boundaries and prevent unauthorized access to sensitive data. Build confirmation of user identity and permissions directly into each private action.
--   **Validate input:** To prevent malicious input and potential security vulnerabilities, implement input validation.
--   **Error handling:** To prevent information disclosure and system instability, implement robust error handling.
-
- |
+| Implement robust access controls. |-   **Enforce strong authentication:** Implement strong authentication mechanisms, such as two-factor authentication, to verify the identity of users interacting with your agent.<br>-   **Monitor access logs:** To identify any suspicious activity, regularly review the access logs.|
+| Design secure actions. |-   **Limit scope:** Design actions to operate within specific boundaries and prevent unauthorized access to sensitive data. Build confirmation of user identity and permissions directly into each private action.<br>-   **Validate input:** To prevent malicious input and potential security vulnerabilities, implement input validation.<br>-   **Error handling:** To prevent information disclosure and system instability, implement robust error handling. |
 
 ![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_important.png)
 
@@ -3796,7 +3785,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgzMzA3NTU2LDE5MzQ4NjE1MjIsOTAwND
-Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
-MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbLTUyODUyNTAwNiwxOTM0ODYxNTIyLDkwMD
+Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
+MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
+==
 -->
