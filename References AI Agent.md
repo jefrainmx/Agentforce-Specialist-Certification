@@ -1386,9 +1386,6 @@ If you receive an HTTP 500 response, verify that you've followed the setup instr
 
 Agentforce Employee agents help employees find information, complete tasks, and access personalized support across channels. Use Agentforce Employee agent templates to build agents that serve specific departmental needs, support role-based access, and scale securely across the organization. Unlike other agent templates, Employee agents are designed for internal employees, run in the logged-in user context, and you can assign each Employee agent to specific profiles or users.
 
-### Required Editions
-
-<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
 
 | User Permissions Needed |   |
 | --- | --- |
@@ -1428,8 +1425,6 @@ You can also connect your agent to [Enhanced Web Chat v1](https://help.salesforc
 When you're ready, [activate your agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5).
 
 ## Create an Agent from an Employee Agent Template in the Legacy Agentforce Builder
-
-![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
 
 Note Starting the week of July 13, 2026, you can no longer create agents in the legacy Agentforce Builder in Setup. Instead, create an agent in Agentforce Builder in Agentforce Studio. Or [upgrade an agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5) from the legacy builder to the new builder.
 
@@ -3599,7 +3594,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTY4MDk3NzksMzUzNDcwNTMyLC0xOD
-U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
-MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbOTAwNDQ1NjIyLDM1MzQ3MDUzMiwtMTg1NT
+M2NjAwMywtMTUxMjI4NDIzMiwxODU5MjY4NTM1LDQ0ODE0OTEz
+MywtMTU1NTA5MjUxMF19
 -->
