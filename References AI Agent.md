@@ -928,6 +928,42 @@ Sending and receiving messages can be performed synchronously or with the stream
 - [Agent API Reference](/docs/ai/agentforce/references/agent-api?meta=summary)
 
 
+# Create an Agent
+
+Create intelligent, trusted, and customizable agents for your customers and employees.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
+
+Note Starting the week of July 13, 2026, you can no longer create agents in the legacy Agentforce Builder in Setup. Instead, create an agent in Agentforce Builder in Agentforce Studio. Or [upgrade an agent](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5) from the legacy builder to the new builder.
+
+For the latest features and enhancements, we recommend migrating existing agents from the legacy builder to the new builder. [Learn more.](https://help.salesforce.com/s/articleView?id=ai.agent_migrate_parent.htm&language=en_US&type=5)
+
+You can create agents in multiple ways.
+
+To start with an agent for a common business use case, create an agent from a template. A template includes relevant subagents and actions, as well as default system messages, variables, and filters. To create an agent from a template, you must have the permissions for the associated agent type, as well as any additional permissions required for the template.
+
+For custom use cases, create an agent with the help of generative AI. Describe the job you want your agent to be able to do. Then Salesforce creates subagents based on your description and the actions available to your agent. To create an agent with gen AI, you must have the permissions for the associated agent type.
+
+-   **[Create a Custom Agent with AI Assistance](https://help.salesforce.com/s/articleView?id=ai.copilot_create_gen_ai_agent.htm&language=en_US&type=5)**  
+    Use AI assistance to create a custom Agentforce Service agent for your business.
+-   **[Create an Agent from an Agentforce Service Agent Template](https://help.salesforce.com/s/articleView?id=ai.service_agent_setup.htm&language=en_US&type=5)**  
+    Agentforce Service agents intelligently support your customers by connecting to messaging and other channels and escalating to reps when necessary. Use the default Agentforce Service Agent template to create an agent designed to resolve common support cases and requests. Or select from more specialized templates to fit your use case.
+-   **[Create a Help Agent in Minutes with Quick Service Agent Configuration](https://help.salesforce.com/s/articleView?id=ai.service_agent_quick_configuration.htm&language=en_US&type=5)**  
+    With just a few quick steps, build AI-powered service channels grounded in your knowledge base using Quick Service Agent Configuration. This process can build your help portal, Voice channel, and web chat channel, and build a Help Agent to resolve customer issues in those channels. Help agent is based on the Agentforce Service agent template. Use these channels to provide 24/7 support and deflect cases.
+-   **[Create an Agent from an Agentforce Employee Agent Template](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_setup.htm&language=en_US&type=5)**  
+    Agentforce Employee agents help employees find information, complete tasks, and access personalized support across channels. Use Agentforce Employee agent templates to build agents that serve specific departmental needs, support role-based access, and scale securely across the organization. Unlike other agent templates, Employee agents are designed for internal employees, run in the logged-in user context, and you can assign each Employee agent to specific profiles or users.
+-   **[Upgrade an Agent from the Legacy Builder to the New Builder](https://help.salesforce.com/s/articleView?id=ai.agent_setup_create_upgrade.htm&language=en_US&type=5)**  
+    Create a new version of an agent from the legacy Agentforce Builder in Setup in the new Agentforce Builder in Agentforce Studio, with just a few clicks. The new version contains all of the original agent's subagents, actions, system messages and settings, data, and connections, converted to Agent Script. Upgrading an agent doesn't affect the original agent in the legacy builder. You can continue to access and edit the agent in the legacy builder.
+-   **[Create the Agentforce (Default) Agent in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.agent_setup_enable_default.htm&language=en_US&type=5)**  
+    Help your employees accomplish key business tasks in Salesforce and Slack with the default AI assistant for Salesforce CRM.
+-   **[Migrate from Agentforce (Default) to Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.migrate_agentforce_default_to_aea.htm&language=en_US&type=5)**  
+    Discover the key differences between Agentforce (Default) and Agentforce Employee agent, and learn how to seamlessly migrate your default agents. The migration flow creates a new Employee agent with the same subagents and actions, variables and settings as your default agent. You can fine-tune your Agentforce (Default) agent into multiple employee agent personas, each specializing in different use cases, with improved access control and channel integrations.
+
+#### See Also
+
+-   [Agent Types and Considerations](https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&language=en_US&type=5)
+-   [Configure Your Agent](https://help.salesforce.com/s/articleView?id=ai.agent_parent_configure.htm&language=en_US&type=5)
+
 
 # Agent API Examples
 
@@ -3787,7 +3823,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI3Mjk3MTY2LDE5MzQ4NjE1MjIsOTAwND
+eyJoaXN0b3J5IjpbNzgxMzA2OTAzLDE5MzQ4NjE1MjIsOTAwND
 Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
 MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
