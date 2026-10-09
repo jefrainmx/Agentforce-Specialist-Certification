@@ -2474,9 +2474,13 @@ Deciding where to place logic is consequential when designing a subagent. This f
 
 The underlying principle is straightforward. When you write a prompt instruction telling the LLM to “always run” an action, that’s a suggestion. The LLM may or may not follow it depending on context. When you place a `run` directive in `before_reasoning`, that’s code. It executes on every parse without exception.
 
+## Make Actions Available to LLMs Conditionally 
+
 Conditional action availability is the mechanism by which Agent Script exposes or hides actions from the LLM based on runtime variable state. When the `available when` condition evaluates to `false`, the action is removed from the tool list presented to the LLM entirely. Any false value, including `None`, `False`, `0`, or an empty string, suppresses the action.
 
 This is not a prompt instruction telling the LLM “don’t call this yet,” it’s a hard platform-level gate. The LLM can’t call an action it can’t access.
+
+    enter code here
 
 In this example, `execute_transfer` is invisible to the LLM until `validation_passed` evaluates to `true`. The gate is enforced by the platform, not by instruction.
 
@@ -2884,22 +2888,11 @@ For organizations with advanced compliance and security needs, Agentforce's secu
         
     -   **Field Audit Trail:** Creates a detailed history of changes to your data by Agents/users, which is crucial for compliance.
         
--   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce orgs, including Agentforce-related activities.
-    
-
-## **Summary of Responsibilities:**
-
-**Salesforce's Responsibility:**
-
--   Securing the core platform & infrastructure.
-    
--   Providing the Einstein Trust Layer (zero-retention, Toxicity and Prompt Injection Detection etc.).
-    
--   Detecting broad threats li
+-   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce org
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTg3MDQwMjIsMTM3MjMyNzc2NywyMD
-M2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3
-NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xOD
-U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
-MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbMjE3MDM3MDY3LDEzNzIzMjc3NjcsMjAzNj
+E2MTA2MSwzMDY3NTQ3NTgsLTE0NDIyODE1NCwxODQ2Mzg1NzYy
+LDE5MzQ4NjE1MjIsOTAwNDQ1NjIyLDM1MzQ3MDUzMiwtMTg1NT
+M2NjAwMywtMTUxMjI4NDIzMiwxODU5MjY4NTM1LDQ0ODE0OTEz
+MywtMTU1NTA5MjUxMF19
 -->
