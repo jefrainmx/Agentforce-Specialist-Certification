@@ -1387,7 +1387,7 @@ Source - https://stackoverflow.com/a/75574050
 Posted by flyx
 Retrieved 2026-10-09, License - CC BY-SA 4.0
 -->
-# Agent API YAML
+# Agent API Troubleshooting
 
 ```yaml
 openapi: 3.0.0
@@ -3005,6 +3005,6 @@ components:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjMxNzUyNjAsMTg1OTI2ODUzNSw0ND
+eyJoaXN0b3J5IjpbLTEwMDYzMDAzMDMsMTg1OTI2ODUzNSw0ND
 gxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
