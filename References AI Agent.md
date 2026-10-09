@@ -2402,7 +2402,7 @@ The **Engagement Agent** permission set is for the automated Engagement agent us
 
 # Best Practices for Building Secure Agentforce Service Agents
 
-By [Sri Srinivasan](https://admin.salesforce.com/blog/author/ssrinivasan) |  February 10, 2025
+By [Sri Srinivasan](https://admin.salesforce.com/blog/author/ssrinivasan) |  February 10, 2025
 ![Best Practices for Building Secure Agentforce Service Agents](https://d3nqfz2gm66yqg.cloudfront.net/images/20250207140546/Text-w-Character-2.png)
 Agentforce is transforming the way businesses [manage customer interactions](https://www.salesforce.com/agentforce/use-cases/) by automating conversations across channels like chat, email, and phone. With AI-powered [agents](https://admin.salesforce.com/blog/2024/introduction-to-agentforce-for-salesforce-admins) capable of resolving issues, answering questions, and executing actions on behalf of customers, organizations can significantly boost productivity by streamlining tasks that once required considerable time and resources, such as customer support and retail order management.
 
@@ -2463,6 +2463,116 @@ Agentforce offers exciting opportunities for admins to automate and enhance cust
 -   Salesforce Admins Blog: [3 Steps for Admins To Build a Strong Security Culture](https://admin.salesforce.com/blog/2024/steps-for-admins-to-build-a-strong-security-culture)
 -   Salesforce Developers Site: [Agentforce Workshop: Distribute a Service Agent](https://developer.salesforce.com/agentforce-workshop/service-agents/3-distribute-service-agent)
 -   Trailhead: [Configure an Agentforce Service Agent](https://trailhead.salesforce.com/content/learn/projects/quick-start-build-your-first-agent-with-agentforce/configure-an-agentforce-service-agent)
+
+# Agentforce Security and the Shared Responsibility Model
+
+Publish Date: Feb 25, 2026
+
+Description
+
+**Agentforce** is Salesforce's platform for building and deploying autonomous AI agents. These agents are designed to reason, plan, and execute complex, multi-step tasks across the Salesforce ecosystem and external systems.
+
+Given their autonomous nature and deep integration with sensitive data, securing Agentforce is critical. The security framework is built on a **shared responsibility model**: Salesforce provides a secure foundational layer, while administrators are responsible for configuring access, permissions, and agent-specific guardrails.
+
+This article details the primary security controls governing the Agentforce platform.
+
+Resolution
+
+## **1\. The Einstein Trust Layer: The Secure AI Foundation**
+
+The core of Agentforce's security is the **Einstein Trust Layer**. This is a built-in set of security and privacy controls that intercepts all interactions (prompts and responses) between your Salesforce org and the Large Language Models (LLMs) that power the agents.
+
+Its key features include:
+
+-   **Zero Data Retention:** Prompts and responses are not retained by the third-party OOTB LLM providers. Your data is not used to train their models.
+    
+-   **Toxicity and Prompt Injection Detection:** The layer helps to protect both user inputs (prompts) and LLM outputs (responses) from malicious content, hate speech, and common attack vectors used in **prompt injection**.
+    
+-   **Audit Trails:** Track the use of generative AI in your Salesforce org and ensure that AI usage complies with your security, privacy, regulatory, and AI governance policies. For more information, please refer to: [https://help.salesforce.com/s/articleView?id=ai.generative\_ai\_audit\_trail.htm&type=5](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&type=5&language=en_US)
+    
+
+## **2\. Access Controls:**
+
+This is the most critical security concept for administrators to understand. Many AI agents, such as agents that connect to Messaging channels, operate as Salesforce users in your organization. The permissions that you give to these agent users determine the actions that AI agents can take.
+
+Salesforce Agentforce supports two distinct interaction models, **Employee** and **Customer**, each with a tailored security architecture.
+
+-   **Employee Agents (Internal):** These agents typically operate within secure environments like Lightning Experience. They execute in the **context of the logged-in user**, meaning they automatically respect your existing security framework, including user licenses, permission sets, field-level security, and sharing rules.
+    
+-   **Customer Agents (External):** Because these agents interact via public channels (e.g., Messaging or Web Chat), they operate as a dedicated **Agent User**. This is a specialized Integration User that allows the agent to securely perform actions and access data that an external guest user cannot.
+    
+
+**Security Best Practice:** When configuring a Customer Agent, use **Agent Creator** to generate a "New Agent User." This ensures the agent starts with minimal access. You should then manually grant only the specific permissions required, adhering strictly to the **Principle of Least Privilege (PoLP)**.
+
+## **3\. Administrative Guardrails & Agent Configuration**
+
+Beyond user permissions, administrators have direct control over the _behavior_ and _scope_ of each agent using tools like the **Agent Builder** and **Prompt Builder**.
+
+These administrative guardrails include:
+
+-   **Restricting Topics:** You can define the specific topics and business functions an agent is allowed to discuss or handle.
+    
+-   **Limiting Actions:** You can (and should) limit an agent to only execute pre-defined, approved actions, such as specific **Salesforce Flows**, **Apex classes**, or API calls. This prevents the agent from performing unintended or malicious operations.
+    
+-   **Configuring Rejection Responses:** Admins can configure custom messages that the agent delivers when a user's request is out-of-scope, unethical, or violates a defined security policy.
+    
+-   **Data Grounding:** Agents are "grounded" in your specific Salesforce data (like Data Cloud, Knowledge articles, or specific records) to provide relevant and accurate responses. Your Field Level Security (FLS) and object security settings can also control which data is available for this grounding.
+    
+
+## **4\. Integration with Salesforce Shield & Security Center**
+
+For organizations with advanced compliance and security needs, Agentforce's security can be enhanced by other Salesforce security products which Salesforce recommends:
+
+-   **Salesforce Shield:**
+    
+    -   **Event Monitoring:** Comprehensive security and operational logging system that records granular actions performed by users, agents or automated processes. Offers real-time visibility into [agent/user activities](https://help.salesforce.com/s/articleView?id=release-notes.rn_security_em.htm&release=226&type=5&language=en_US) and other security-related events. 
+        
+    -   **Field Audit Trail:** Creates a detailed history of changes to your data by Agents/users, which is crucial for compliance.
+        
+-   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce orgs, including Agentforce-related activities.
+    
+
+## **Summary of Responsibilities:**
+
+**Salesforce's Responsibility:**
+
+-   Securing the core platform & infrastructure.
+    
+-   Providing the Einstein Trust Layer (zero-retention, Toxicity and Prompt Injection Detection etc.).
+    
+-   Detecting broad threats like toxicity and prompt injection.
+    
+-   Providing audit logging capabilities.
+    
+
+**Customer’s Responsibility:**
+
+-   Implementing the Principle of Least Privilege for all users.
+    
+-   Correctly configuring Profiles, Permission Sets, and FLS.
+    
+-   Building secure Agent Guardrails (restricting topics and actions).
+    
+-   Regularly monitoring and auditing agent and user activity.
+    
+-   Ensuring data in Data Cloud is clean, accurate, and secure.
+    
+-   Enable Enhanced Event Logs
+    
+-   Enable Human-in-the-loop for custom actions
+    
+
+## **Conclusion:**
+
+Agentforce is designed to be as secure as it is intelligent. However, in an era of autonomous AI, the traditional boundaries of access control are more important than ever. By embracing the shared responsibility model outlined here, you can confidently deploy agents that not only solve complex business problems but also uphold the highest standards of data privacy and trust, the core pillar of the Salesforce ecosystem.
+
+Additional Resources
+
+[**Salesforce’s Agentforce Privacy FAQ**](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/agentforce-privacy-FAQ.pdf)[**Prompt Injection Detection**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_prompt_injection_detection.htm&type=5&language=en_US)[**Agentforce Audit Trail**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&type=5&language=en_US)[**Best Practices for Agent User Permissions**](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&language=en_US)[**Trust and Agentforce**](https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5&language=en_US)[**Trust Layer**](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)[**Enable Enhanced Event Logs**](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&type=5&language=en_US)
+
+Knowledge Article Number
+
+005315874
 
 
 
@@ -4082,440 +4192,11 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 - requestId
 - error
 - message
-- timestamp
-
-#### example
-
-- **status:** 500
-- **path:** /agents/00DRM00000067To/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** InactiveConfigException
-- **message:** Config is not active
-- **timestamp:** 1531245973799
-
-
-
-## responses
-
-### StatusResponse
-
-- **description:** OK
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Status
-
-
-
-
-### ErrorResponse
-
-- **description:** Something went wrong
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### StartSessionResponse
-
-- **description:** Response to a new session.
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/StartSessionSyncResponseMessage
-
-
-
-#### headers
-
-##### x-session-mode
-
-- **description:** Agent session mode.
-- **example:** default
-###### schema
-
-- **type:** string
-
-
-
-
-### SendMessageSyncResponse
-
-- **description:** Batched Response (Headless)
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/SendMessagesSyncResponseMessage
-
-
-
-
-### StreamMessageResponse
-
-- **description:** OK
-#### content
-
-##### text/event-stream
-
-###### schema
-
-- **$ref:** #/components/schemas/ServerSentEvent
-
-
-
-
-### BadRequestError
-
-- **description:** Bad Request
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 400
-- **path:** /v6/00DRM00000067To/sessions/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** BadRequestError
-- **message:** Bad Request
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### UnauthorizedError
-
-- **description:** Access bearer token is missing or invalid
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 401
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** UnauthorizedError
-- **message:** Access bearer token is missing or invalid
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### ForbiddenError
-
-- **description:** User forbidden from accessing the resource
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 403
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** ForbiddenError
-- **message:** User forbidden from accessing the resource
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### NotFoundError
-
-- **description:** Resource not found
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 404
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** NotFoundError
-- **message:** Resource not found
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### NotAvailableError
-
-- **description:** Resource not available at the time of the request
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 410
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** NotAvailableError
-- **message:** Resource not available at the time of the request
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### RequestProcessingException
-
-- **description:** Any exception that occurred during the request execution
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 422
-- **path:** v4.0.0/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** RequestProcessingException
-- **message:** Cannot determine the active version for the agent
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### ServerBusyError
-
-- **description:** Server is busy and cannot process the request at this time
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 423
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** ServerBusyError
-- **message:** Server is busy and cannot process the request at this time
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### TooManyRequestsError
-
-- **description:** Too many requests for the server to handle
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 429
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** TooManyRequestsError
-- **message:** Too many requests for the server to handle
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-### ServiceUnavailable
-
-- **description:** Service is unavailable possibly because Apex or Flow calls timed out
-#### content
-
-##### application/json
-
-###### schema
-
-- **$ref:** #/components/schemas/Error
-
-###### example
-
-- **status:** 503
-- **path:** /v1/00DRM00000067To/chatbots/HelloWorldBot/messages
-- **requestId:** 19c056ab-d909-49df-b976-65e56b6ab214
-- **error:** ServiceUnavailable
-- **message:** Service is unavailable possibly because Apex/Flow calls timed out
-- **timestamp:** 1531245973799
-
-
-
-#### headers
-
-##### X-Request-ID
-
-- **description:** Request ID. A UUID in string format to help with request tracking.
-- **example:** 36a73651-a46d-4d16-9a8a-fd436ed62e1a
-###### schema
-
-- **type:** string
-
-
-
-
-
-
-
-
-
-
+- times
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4MDkxODUyMiwyMDM2MTYxMDYxLDMwNj
-c1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3NjIsMTkzNDg2MTUy
-Miw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNT
-EyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDky
-NTEwXX0=
+eyJoaXN0b3J5IjpbOTE4Njg5NjI0LDIwMzYxNjEwNjEsMzA2Nz
+U0NzU4LC0xNDQyMjgxNTQsMTg0NjM4NTc2MiwxOTM0ODYxNTIy
+LDkwMDQ0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MT
+IyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1
+MTBdfQ==
 -->
