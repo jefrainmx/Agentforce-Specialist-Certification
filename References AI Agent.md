@@ -2436,11 +2436,11 @@ What doesn’t belong here is logic that should only run once per session, since
 
 If you need once-per-session initialization, guard it explicitly:
 
-//
-before_reasoning:
-   if @variables.sessionInitialized == False:
-       run @actions.InitializeSession
-       set @variables.sessionInitialized = True
+    before_reasoning:
+       if @variables.sessionInitialized == False:
+           run @actions.InitializeSession
+           set @variables.sessionInitialized = True
+
 
 One user turn can trigger multiple parses: once on entry, then again after each tool call. That functionality has three practical consequences: initialization actions in `before_reasoning` will run more than once per user turn in multi-action flows, counter variables incremented here will reflect parse count, not turn count, and actions with side effects, external API calls or record writes, should not live in `before_reasoning` unless re-execution on every parse is explicitly acceptable.
 
@@ -2481,7 +2481,6 @@ Conditional action availability is the mechanism by which Agent Script exposes o
 
 This is not a prompt instruction telling the LLM “don’t call this yet,” it’s a hard platform-level gate. The LLM can’t call an action it can’t access.
 
-    enter code here
 
 In this example, `execute_transfer` is invisible to the LLM until `validation_passed` evaluates to `true`. The gate is enforced by the platform, not by instruction.
 
@@ -2890,10 +2889,11 @@ For organizations with advanced compliance and security needs, Agentforce's secu
     -   **Field Audit Trail:** Creates a detailed history of changes to your data by Agents/users, which is crucial for compliance.
         
 -   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce org
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxOTg0OTg1LDIxNzAzNzA2NywxMzcyMz
-I3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4LC0xNDQyMjgxNTQs
-MTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0Nz
-A1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUz
-NSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
+eyJoaXN0b3J5IjpbMTg5MTY3MTczMiwyMTcwMzcwNjcsMTM3Mj
+MyNzc2NywyMDM2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0
+LDE4NDYzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
+cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
+MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
