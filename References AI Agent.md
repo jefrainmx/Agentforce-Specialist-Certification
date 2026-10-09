@@ -2481,6 +2481,12 @@ Conditional action availability is the mechanism by which Agent Script exposes o
 
 This is not a prompt instruction telling the LLM “don’t call this yet,” it’s a hard platform-level gate. The LLM can’t call an action it can’t access.
 
+    actions:
+       execute_transfer: @actions.execute_transfer
+           available when @variables.validation_passed
+           with from_account=@variables.source_account
+           with to_account=@variables.destination_account
+           with amount=@variables.transfer_amount
 
 In this example, `execute_transfer` is invisible to the LLM until `validation_passed` evaluates to `true`. The gate is enforced by the platform, not by instruction.
 
@@ -2498,6 +2504,8 @@ Consider `available when @variables.interest != ""` as an example. If the action
 
 There are two reliable ways to break the loop. The first is to set the gate variable to a closed state as part of the action’s post-execution logic, so that `available when` evaluates to `false` on the next parse. The second is to use a separate `has_run` boolean that closes the gate after first execution. Both approaches give the gate a deterministic closed state, which is the condition the platform needs to suppress the action.
 
+## Make an Agentic Bank Transfer Deterministic 
+
 A bank transfer is a useful lens for understanding how these patterns work together in practice. The workflow looks simple from the outside: move money from one account to another. The implementation requires multiple complex steps. Before the transfer executes, the agent must collect account details, validate the amount, check transfer limits, confirm the available balance, and only then expose the transfer action. Each step depends on the previous steps. None of them should be left to LLM judgment.
 
 ![Bank transfer workflow showing validation steps, guard clauses, and deterministic execution flow](https://architect.salesforce.com/ns-assets/hybrid-reasoning-bank-transfer-flow.png)
@@ -2507,6 +2515,38 @@ A bank transfer is a useful lens for understanding how these patterns work toget
 The first subagent collects the source account, destination account, and transfer amount from the user. It won’t proceed until all three are present and valid. The Agent Script checks each field in sequence: if the source account is missing, it asks. If the destination is missing, it asks. If the amount is zero or negative, it asks. The `validation_passed` variable is only set to `true` after all checks are clear.
 
 The script below shows this in practice. Notice that `validation_passed` is explicitly set to `false` at each failure point, and the LLM is instructed not to proceed. The deterministic checks run unconditionally, while the prompt instructions handle the user-facing response.
+
+instructions:->
+        | Always ensure to request the following data from the user, and to store it using {!@actions.store_details}
+           - source account number
+           - destination account number
+           - amount to transfer
+            Only after you have all the data, you can proceed with the next steps.
+
+        if not @variables.source_account:
+            set @variables.validation_information = "Missing source account"
+            set @variables.validation_passed = False
+            | You need the source account number before proceeding.
+              Ask the customer for the source account number.
+        else:
+            set @variables.validation_passed = True
+        if @variables.source_account and not @variables.destination_account:
+           set @variables.validation_information = "Missing destination account"
+           set @variables.validation_passed = False
+           | You need the destination account number before proceeding.
+              Ask the customer for the destination account number.
+        else:
+           set @variables.validation_passed = True
+        if not @variables.source_account or not @variables.destination_account:
+            | Do NOT proceed with the transfer yet.
+        if @variables.transfer_amount <= 0:
+            set @variables.validation_information = "Invalid transfer amount"
+            set @variables.validation_passed = False
+            | The transfer amount must be greater than zero. Ask the customer
+              how much they want to transfer.
+              Do NOT proceed with the transfer yet.
+        else:
+           set @variables.validation_passed = True
 
 **Enforce business rules**
 
@@ -2869,29 +2909,9 @@ Beyond user permissions, administrators have direct control over the _behavior_ 
 
 These administrative guardrails include:
 
--   **Restricting Topics:** You can define the specific topics and business functions an agent is allowed to discuss or handle.
-    
--   **Limiting Actions:** You can (and should) limit an agent to only execute pre-defined, approved actions, such as specific **Salesforce Flows**, **Apex classes**, or API calls. This prevents the agent from performing unintended or malicious operations.
-    
--   **Configuring Rejection Responses:** Admins can configure custom messages that the agent delivers when a user's request is out-of-scope, unethical, or violates a defined security policy.
-    
--   **Data Grounding:** Agents are "grounded" in your specific Salesforce data (like Data Cloud, Knowledge articles, or specific records) to provide relevant and accurate responses. Your Field Level Security (FLS) and object security settings can also control which data is available for this grounding.
-    
-
-## **4\. Integration with Salesforce Shield & Security Center**
-
-For organizations with advanced compliance and security needs, Agentforce's security can be enhanced by other Salesforce security products which Salesforce recommends:
-
--   **Salesforce Shield:**
-    
-    -   **Event Monitoring:** Comprehensive security and operational logging system that records granular actions performed by users, agents or automated processes. Offers real-time visibility into [agent/user activities](https://help.salesforce.com/s/articleView?id=release-notes.rn_security_em.htm&release=226&type=5&language=en_US) and other security-related events. 
-        
-    -   **Field Audit Trail:** Creates a detailed history of changes to your data by Agents/users, which is crucial for compliance.
-        
--   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce org
-
+-   **Restricting Topics:** You can define the specific topics and business functions an ag
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTY3MTczMiwyMTcwMzcwNjcsMTM3Mj
+eyJoaXN0b3J5IjpbLTUzMTk1NzQ1MCwyMTcwMzcwNjcsMTM3Mj
 MyNzc2NywyMDM2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0
 LDE4NDYzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
 cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
