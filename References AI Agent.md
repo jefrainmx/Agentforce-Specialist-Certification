@@ -2250,11 +2250,8 @@ LLMs can produce inconsistent outcomes in response to identical inputs. Subtle v
 
 The new Agentforce Builder and Agent Script address this issue by separating deterministic execution from LLM reasoning. Agentforce’s hybrid model ensures that the agent follows a precisely defined structure for every workflow execution, while still using LLM reasoning where judgment, natural language understanding, or contextual interpretation is genuinely needed.
 
-In the previous version of Agentforce, an agent operated as a simple reactive loop. Every decision, from interpreting intent to selecting the next action, was made in real time by the LLM based solely on the user’s most recent input. There was no guaranteed execution path, no persistent state, and no mechanism to enforce a sequence of steps.
-
 ## Previous Agentforce Limitations 
-
-
+In the previous version of Agentforce, an agent operated as a simple reactive loop. Every decision, from interpreting intent to selecting the next action, was made in real time by the LLM based solely on the user’s most recent input. There was no guaranteed execution path, no persistent state, and no mechanism to enforce a sequence of steps.
 
 **Execution paths couldn’t be guaranteed**
 
@@ -2276,6 +2273,8 @@ Relying on single-turn processing meant the agent had no persistent memory of ea
 
 Without state management, agents had no record of which mandatory steps a user had already completed. This produced unpredictable looping, where an agent would return to a step the user had already finished. Beyond the user experience impact, this created a deeper architectural problem: designing a reliable sequential workflow was impossible because the agent couldn’t enforce sequence.
 
+## How the new Agentforce architecture works 
+
 The new Agentforce, GA since February 2026, shifts from purely probabilistic LLM reasoning to a hybrid model. Rather than routing every decision through the LLM, it separates deterministic execution from LLM reasoning and lets each handle only what it’s suited for. To support this, Agentforce introduced two authoring tools: Agent Script for code-based development, and Agentforce Studio, a no-code building environment.
 
 **Agentforce Builder**
@@ -2294,6 +2293,45 @@ When instructions are deterministic, the agent follows a defined execution path 
 
 This logic calls actions in a fixed sequence every time certain conditions are met.
 
+    instructions: ->
+        # Ask for user_id if we don't have it
+        if @variables.user_id=="":
+           | Ask the user for customer ID to view personalized insights. Do not proceed until you have the customer ID.
+             Use {!@actions.set_user_id} to update the user_id variable and set context.
+
+        # Fetch customer data if we have user_id
+        if @variables.user_id!="":
+           run @actions.fetch_user_profile
+              with user_id=@variables.user_id
+              set @variables.user_profile = @outputs.profile
+           # Chain additional data fetches
+           run @actions.fetch_account_data
+              with user_id=@variables.user_id
+              set @variables.account_data = @outputs.account
+           run @actions.fetch_order_history
+              with user_id=@variables.user_id
+              with limit=10
+              set @variables.recent_orders = @outputs.orders
+           run @actions.fetch_support_history
+              with user_id=@variables.user_id
+              set @variables.support_history = @outputs.tickets
+           # Compute insights
+           run @actions.calculate_customer_value
+              with user_id=@variables.user_id
+              with orders=@variables.recent_orders
+              set @variables.customer_lifetime_value = @outputs.clv
+              set @variables.loyalty_status = @outputs.loyalty_tier
+           run @actions.assess_churn_risk
+              with account=@variables.account_data
+              with orders=@variables.recent_orders
+              with support_tickets=@variables.support_history
+              set @variables.churn_risk_score = @outputs.risk_score
+           run @actions.generate_recommendations
+              with profile=@variables.user_profile
+              with clv=@variables.customer_lifetime_value
+              with churn_risk=@variables.churn_risk_score
+              set @variables.recommended_actions = @outputs.recommendations
+
 **Prompt instructions and deliberate LLM handoff**
 
 Where deterministic logic handles conditions and sequences that can be expressed as code, prompt instructions handle everything that requires judgment, interpretation, or natural language generation. When the Atlas Reasoning Engine encounters a node with prompt instructions, it triggers an LLM call. When it doesn’t, it executes deterministically.
@@ -2303,6 +2341,21 @@ The example below shows a subagent for product and services. The instructions ar
 The prompt instructions on a node trigger the LLM call. That’s not incidental—it’s the mechanism by which Agent Script makes the LLM boundary explicit and enforceable, rather than leaving it to runtime inference.
 
 This subagent shows deterministic logic and LLM handoff in action.
+
+    instructions:->
+      | Answer the user's questions about products and services clearly and accurately.
+        When the user asks about a specific product, use {!@actions.get_product_info}
+        to look up current information.
+        When answering:
+        - Be specific and provide helpful details
+        - If the question is unclear, ask for clarification
+        - Stay focused on product-related subagents
+        - Use {!@actions.get_product_info} to get accurate, up-to-date information
+        Subagents you can help with:
+        - Product features and specifications
+        - Pricing and packages
+        - Availability and delivery
+        - Comparisons between products
 
 **The three-stage execution pipeline**
 
@@ -2843,58 +2896,11 @@ For organizations with advanced compliance and security needs, Agentforce's secu
     
 -   Correctly configuring Profiles, Permission Sets, and FLS.
     
--   Building secure Agent Guardrails (restricting topics and actions).
-    
--   Regularly monitoring and auditing agent and user activity.
-    
--   Ensuring data in Data Cloud is clean, accurate, and secure.
-    
--   Enable Enhanced Event Logs
-    
--   Enable Human-in-the-loop for custom actions
-    
-
-## **Conclusion:**
-
-Agentforce is designed to be as secure as it is intelligent. However, in an era of autonomous AI, the traditional boundaries of access control are more important than ever. By embracing the shared responsibility model outlined here, you can confidently deploy agents that not only solve complex business problems but also uphold the highest standards of data privacy and trust, the core pillar of the Salesforce ecosystem.
-
-Additional Resources
-
-[**Salesforce’s Agentforce Privacy FAQ**](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/agentforce-privacy-FAQ.pdf)[**Prompt Injection Detection**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_prompt_injection_detection.htm&type=5&language=en_US)[**Agentforce Audit Trail**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&type=5&language=en_US)[**Best Practices for Agent User Permissions**](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&language=en_US)[**Trust and Agentforce**](https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5&language=en_US)[**Trust Layer**](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)[**Enable Enhanced Event Logs**](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&type=5&language=en_US)
-
-Knowledge Article Number
-
-005315874
-
-
-
----
----
----
----
-
-# Agent API v1.0.0 YAML
-- **openapi:** 3.0.0
-# info
-
-- **title:** Agent API
-- **version:** v1.0.0
-- **description:** 
-Use Agent API to communicate with AI agents in your org. Get access to your topics and actions in Agentforce by sending messages to AI agents. Create a Salesforce app in your org, generate a token, and then start using the API. To onboard to this API, see [Get Started with the Agent API](/docs/ai/agentforce/guide/agent-api-get-started.html) and [Agent API Examples](/docs/ai/agentforce/guide/agent-api-examples.html).
-
-## Postman Collection
-
-The quickest way to get started with the Agent API is with our [Postman collection](https://www.postman.com/salesforce-developers/salesforce-developers/collection/gwv9bjy/agent-api).
-
-## Endpoints
-
-- [Start a Session](?meta=startSession): Start a session with an agent.
-- [Send a Message (sync)](?meta=sendMessage): Send a sync message to the agent on an active session.
-- [Send a Message (streaming)](?meta=sendMessageStr
+-   Building secure Agent Guardra
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mjg0Mzg1NDgsMTM3MjMyNzc2NywyMD
-M2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0LDE4NDYzODU3
-NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzNDcwNTMyLC0xOD
-U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
-MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbMTkwNjcyMTg1NCwxMzcyMzI3NzY3LDIwMz
+YxNjEwNjEsMzA2NzU0NzU4LC0xNDQyMjgxNTQsMTg0NjM4NTc2
+MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0NzA1MzIsLTE4NT
+UzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkx
+MzMsLTE1NTUwOTI1MTBdfQ==
 -->
