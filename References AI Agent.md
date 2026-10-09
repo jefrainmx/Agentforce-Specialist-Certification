@@ -2667,7 +2667,12 @@ Agentforce is designed to be as secure as it is intelligent. However, in an era 
 
 Additional Resources
 
-[**Salesforce’s Agentforce Privacy FAQ**](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/agentforce-privacy-FAQ.pdf)[**Prompt Injection Detection**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_prompt_injection_detection.htm&type=5&language=en_US)[**Agentforce Audit Trail**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&type=5&language=en_US)[**Best Practices for Agent User Permissions**](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&language=en_US)[**Trust and Agentforce**](https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5&language=en_US)[**Trust Layer**](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)[**Enable Enhanced Event Logs**](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&type=5&language=en_US)
+[**Salesforce’s Agentforce Privacy FAQ**](https://www.salesforce.com/en-us/wp-content/uploads/sites/4/documents/legal/Privacy/agentforce-privacy-FAQ.pdf)
+[**Prompt Injection Detection**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_prompt_injection_detection.htm&type=5&language=en_US)
+[**Agentforce Audit Trail**](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&type=5&language=en_US)
+[**Best Practices for Agent User Permissions**](https://help.salesforce.com/s/articleView?id=ai.agent_user.htm&type=5&language=en_US)
+[**Trust and Agentforce**](https://help.salesforce.com/s/articleView?id=ai.copilot_trust.htm&type=5&language=en_US)[**Trust Layer**](https://developer.salesforce.com/docs/ai/agentforce/guide/trust.html)
+[**Enable Enhanced Event Logs**](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&type=5&language=en_US)
 
 Knowledge Article Number
 
@@ -2683,9 +2688,10 @@ Knowledge Article Number
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQyMjM0NTczLC01MzE5NTc0NTAsMjE3MD
-M3MDY3LDEzNzIzMjc3NjcsMjAzNjE2MTA2MSwzMDY3NTQ3NTgs
-LTE0NDIyODE1NCwxODQ2Mzg1NzYyLDE5MzQ4NjE1MjIsOTAwND
-Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
-MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbNDM2ODQ1ODQ3LDM0MjIzNDU3MywtNTMxOT
+U3NDUwLDIxNzAzNzA2NywxMzcyMzI3NzY3LDIwMzYxNjEwNjEs
+MzA2NzU0NzU4LC0xNDQyMjgxNTQsMTg0NjM4NTc2MiwxOTM0OD
+YxNTIyLDkwMDQ0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMs
+LTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NT
+UwOTI1MTBdfQ==
 -->
