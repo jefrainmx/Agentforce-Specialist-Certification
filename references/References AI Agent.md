@@ -2696,9 +2696,9 @@ As you work through the exercises in this workshop, use the diagram below to und
 
 
 # Agent API (v1.0.0)
-[enter link description here](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary)
+[Agent API (v1.0.0)](https://developer.salesforce.com/docs/ai/agentforce/references/agent-api?meta=summary)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NDI3MjA2MSwxMjI2NDgyMTg2LDQzNj
+eyJoaXN0b3J5IjpbLTMyNTIyMzE0MCwxMjI2NDgyMTg2LDQzNj
 g0NTg0N119
 -->
