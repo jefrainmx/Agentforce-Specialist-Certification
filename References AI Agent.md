@@ -2198,6 +2198,7 @@ If the balance is insufficient, the agent calculates the shortfall and presents 
 
 The script below shows a deterministic action call that fetches the balance, followed by a conditional check that evaluates it. The fetch only runs if the balance hasn’t already been retrieved, avoiding redundant API calls on subsequent parses.
 
+
 **Surface errors clearly**
 
 Guard clauses set the state. Error messages communicate it. When `validation_passed` is `false`, the agent needs to give the user enough information to resolve the problem without restarting. Vague error messages create friction; structured ones close the loop faster.
@@ -2615,9 +2616,10 @@ Knowledge Article Number
 ---
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMTk1NzQ1MCwyMTcwMzcwNjcsMTM3Mj
-MyNzc2NywyMDM2MTYxMDYxLDMwNjc1NDc1OCwtMTQ0MjI4MTU0
-LDE4NDYzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
-cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
-MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbMTQxMzg3MDc2NiwtNTMxOTU3NDUwLDIxNz
+AzNzA2NywxMzcyMzI3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4
+LC0xNDQyMjgxNTQsMTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMD
+Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
+MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
+==
 -->
