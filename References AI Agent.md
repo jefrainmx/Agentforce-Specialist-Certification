@@ -1473,10 +1473,6 @@ Note Beginning in April 2026, agent topics are now called subagents. There are n
 
 Actions are how agents get things done. Agents include a library of actions, which are the tools an agent can use to do its job. For example, if a user asks an agent for help with writing an email, the agent first selects a subagent, then it launches an action that drafts and revises the email and grounds it in relevant Salesforce data.
 
-## Required Editions
-
-<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
-
 -   **[Common User Access for Standard Agent Actions](https://help.salesforce.com/s/articleView?id=ai.agent_actions_common_perms.htm&language=en_US&type=5)**  
     Learn about the permissions required for users to run many standard agent actions.
 -   **[Add an Action to a Subagent from the Asset Library](https://help.salesforce.com/s/articleView?id=ai.agent_actions_add_asset_library.htm&language=en_US&type=5)**  
@@ -1502,14 +1498,6 @@ Actions are how agents get things done. Agents include a library of actions, whi
 # Deploy Your Agent to Channels
 
 Connect your agent to multiple channels. Meet your customers and employees where they spend the most time.
-
-## Required Editions
-
-<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
-
-![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
-
-Note Beginning in April 2026, agent topics are now called subagents. There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
 
 Review key concepts for deploying agents to channels.
 
@@ -1567,6 +1555,9 @@ To learn more about the Escalation subagent, see [Transfer Conversations from an
     When an agent encounters conversations that it can’t resolve, it uses the Escalation subagent to escalate the conversation. In the new Agentforce Builder, you can also run the Escalation subagent using the escalate utility function in Agent Script. Escalation and transferring works differently depending on the agent type and channel. You can customize the experience that customers receive when transferring isn’t possible.
 -   **[Activate or Deactivate Your Agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5)**  
     Activate your agent to make it available to your customers or employees. When an agent is deployed to one or more channels, including the Agentforce panel, activating the agent makes it immediately available to your users.
+
+
+
 
 
 ---
@@ -3616,7 +3607,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzY3OTU4NjQsMzUzNDcwNTMyLC0xOD
-U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
-MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbLTQ4Mzk1OTA1NSwzNTM0NzA1MzIsLTE4NT
+UzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUzNSw0NDgxNDkx
+MzMsLTE1NTUwOTI1MTBdfQ==
 -->
