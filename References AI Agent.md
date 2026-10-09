@@ -970,11 +970,7 @@ Learn about agent types and default templates for specific clouds and common use
 
 | Agent Type | What it Does | Required Editions | Required Permissions |
 | --- | --- | --- | --- |
-| Employee Agent | Assists employees by providing access to company knowledge, performing tasks, and streamlining workflows across departments.Before getting started, review [Considerations for Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/).Agentforce Employee agents require [Flex Credits](https://help.salesforce.com/s/articleView?id=ai.usage_flex_credits.htm&language=en_US&type=5). | To create and manage Agentforce Employee Agent: Manage AI Agents
-
-To use Agentforce Employee Agent, see [Manage Employee Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5).
-
- |
+| Employee Agent | Assists employees by providing access to company knowledge, performing tasks, and streamlining workflows across departments.Before getting started, review [Considerations for Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.agent_employee_agent_considerations.htm&language=en_US&type=5). | Available in Enterprise, Performance, Unlimited, and Developer Editions with Foundations or Agentforce 1 Editions. Access to some standard agent actions requires [additional add-on licenses](https://www.salesforce.com/agentforce/pricing/).Agentforce Employee agents require [Flex Credits](https://help.salesforce.com/s/articleView?id=ai.usage_flex_credits.htm&language=en_US&type=5). | To create and manage Agentforce Employee Agent: Manage AI Agents.To use Agentforce Employee Agent, see [Manage Employee Agent Access](https://help.salesforce.com/s/articleView?id=ai.agent_manage_aea_access.htm&language=en_US&type=5). |
 | Lead Nurturing (formerly known as SDR) | 
 
 Intelligently engages leads with personalized content, answers common questions, and schedules meetings.
@@ -3936,8 +3932,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzk4NTgyMCwxOTM0ODYxNTIyLDkwMD
-Q0NTYyMiwzNTM0NzA1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQy
-MzIsMTg1OTI2ODUzNSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ
-==
+eyJoaXN0b3J5IjpbMzM2Mzc4OTY4LDE5MzQ4NjE1MjIsOTAwND
+Q1NjIyLDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIz
+MiwxODU5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
