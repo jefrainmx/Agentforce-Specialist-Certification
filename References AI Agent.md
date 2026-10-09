@@ -2239,11 +2239,8 @@ A numerical representation of [unstructured data](https://help.salesforce.com/s/
 
 See [Vector Search](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_vector_index.htm&language=en_US&type=5).
 
-Did this article solve your issue?
 
-Let us know so we can improve!
 
-YesNo
 
 ---
 ---
@@ -4292,8 +4289,8 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTc1ODY5LDMwNjc1NDc1OCwtMTQ0Mj
-I4MTU0LDE4NDYzODU3NjIsMTkzNDg2MTUyMiw5MDA0NDU2MjIs
-MzUzNDcwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NT
-kyNjg1MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
+eyJoaXN0b3J5IjpbMjAzNjE2MTA2MSwzMDY3NTQ3NTgsLTE0ND
+IyODE1NCwxODQ2Mzg1NzYyLDE5MzQ4NjE1MjIsOTAwNDQ1NjIy
+LDM1MzQ3MDUzMiwtMTg1NTM2NjAwMywtMTUxMjI4NDIzMiwxOD
+U5MjY4NTM1LDQ0ODE0OTEzMywtMTU1NTA5MjUxMF19
 -->
