@@ -2436,7 +2436,8 @@ What doesn’t belong here is logic that should only run once per session, since
 
 If you need once-per-session initialization, guard it explicitly:
 
-    before_reasoning:
+//
+before_reasoning:
    if @variables.sessionInitialized == False:
        run @actions.InitializeSession
        set @variables.sessionInitialized = True
@@ -2890,9 +2891,9 @@ For organizations with advanced compliance and security needs, Agentforce's secu
         
 -   **Security Center:** Provides a single, holistic view of your security, compliance, and governance posture across all your Salesforce org
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE3MDM3MDY3LDEzNzIzMjc3NjcsMjAzNj
-E2MTA2MSwzMDY3NTQ3NTgsLTE0NDIyODE1NCwxODQ2Mzg1NzYy
-LDE5MzQ4NjE1MjIsOTAwNDQ1NjIyLDM1MzQ3MDUzMiwtMTg1NT
-M2NjAwMywtMTUxMjI4NDIzMiwxODU5MjY4NTM1LDQ0ODE0OTEz
-MywtMTU1NTA5MjUxMF19
+eyJoaXN0b3J5IjpbNzQxOTg0OTg1LDIxNzAzNzA2NywxMzcyMz
+I3NzY3LDIwMzYxNjEwNjEsMzA2NzU0NzU4LC0xNDQyMjgxNTQs
+MTg0NjM4NTc2MiwxOTM0ODYxNTIyLDkwMDQ0NTYyMiwzNTM0Nz
+A1MzIsLTE4NTUzNjYwMDMsLTE1MTIyODQyMzIsMTg1OTI2ODUz
+NSw0NDgxNDkxMzMsLTE1NTUwOTI1MTBdfQ==
 -->
