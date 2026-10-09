@@ -1499,6 +1499,74 @@ Actions are how agents get things done. Agents include a library of actions, whi
 -   [Standard Agent Action Reference](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref.htm&language=en_US&type=5)
 
 
+# Deploy Your Agent to Channels
+
+Connect your agent to multiple channels. Meet your customers and employees where they spend the most time.
+
+## Required Editions
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, <strong>Unlimited</strong>, and <strong>Developer</strong> Editions. <a title="Learn about agent types and default templates for specific clouds and common use cases." href="https://help.salesforce.com/s/articleView?id=ai.agent_setup_explore_types.htm&amp;language=en_US&amp;type=5">Required add-on licenses vary by agent type.</a></td></tr></tbody></table>
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/images/icon_note.png)
+
+Note Beginning in April 2026, agent topics are now called subagents. There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
+
+Review key concepts for deploying agents to channels.
+
+Connections and Adaptive Response Formats
+
+A connection includes adaptive response formats that help your agent structure responses and deliver multimedia content, such as images, buttons, links, and videos. It also includes settings and Omni-Channel flows that help route conversations to and from an agent.
+
+Connections help you scale agent development and reduce repetitive setup by letting you build an agent once and easily add it to multiple channels in Agentforce Builder. They also help the agent make customer and employee experiences more dynamic, channel-specific, and consistent. One way to think of connections is to consider how people act in different settings. People adapt their communication methods to align with each setting’s unique rules, etiquettes, and constraints. For example, you use text and a casual tone in Slack, but use audio and a formal tone on phone calls. Each agent template supports specific connections, and you can connect the agent to the channels associated with those connections.
+
+When a user interacts with your agent on a connected channel, your agent identifies the connection associated with the experience. The agent adapts its reasoning based on the behind-the-scenes instructions associated with the connection, classifies the user’s utterance into the most relevant subagent, and launches one or more actions. Before sending a response, the agent determines which adaptive response format to structure it with, if any. To select an adaptive response format, the agent considers the formats available, the action's output, and the accompanying agent message. It takes the adaptive response formats available with the connection and the action output with its accompanying message into account.
+
+For example, let's say that a customer sends a message to an Agenforce Service agent (ASA) on an enhanced Facebook Messenger channel. The ASA has the Messaging connection, which is associated with all enhanced Messaging channels and includes adaptive response formats that map to messaging components. The Messaging connection sends instructions to the reasoning engine that help the ASA reason and respond on an enhanced Facebook Messenger channel. The agent classifies the user’s utterance to a subagent and launches an action. Then it structures the response with the Rich Link Response adaptive response format and sends the response on Facebook Messenger.
+
+To learn more, see [Set Up Connections in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.agent_response_enable.htm&language=en_US&type=5).
+
+Channels
+
+Channels are the messaging platforms, apps, and interfaces that you can deploy an agent to. Channels include the Agentforce panel in Lightning Experience, the Salesforce mobile app, Slack, messaging platforms, and email. Channel support varies by agent type. Some agent types and templates are available for your workforce, and you can add others to your customer-facing channels.
+
+Omni-Channel Flows
+
+Omni-Channel flows make it easy to route agent conversations. These flows use the Route Work action to route conversations and their associated records, such as messaging session and email records. Agents that connect to messaging or email have at least one inbound and outbound Omni-Channel flow.
+
+When a customer interacts with an agent on a channel, a record associated with the conversation is created. Then, an inbound Omni-Channel flow routes the record from the customer channel to an agent. For example, when a customer sends a message on WhatsApp, an inbound Omni-Channel flow routes the conversation from WhatsApp to an Agentforce Service agent. You can connect your agent to multiple inbound flows, but each inbound flow can be connected to one agent only.
+
+Agents use an outbound Omni-Channel flow to route conversations to another destination, such as a service rep, queue, or different agent. You can customize an outbound Omni-Channel flow to meet your business needs. For example, if you have multiple destinations that each excel at a different use case, you can add a Decision element to the flow that routes the conversation to the most relevant destination. You can connect your agent to multiple outbound flows, and each outbound flow can be connected to multiple destinations.
+
+To learn more about Omni-Channel flows, see [Route Work with Omni-Channel](https://help.salesforce.com/s/articleView?id=service.omnichannel_route_work.htm&language=en_US&type=5).
+
+Escalation
+
+When a customer or employee wants to chat with a person or the conversation becomes complex or sensitive, the agent launches the Escalation subagent. For some channels, the subagent transfers the conversation to another destination using the agent’s outbound Omni-Channel flow. The conversation history, including messages and information gathered, is also transferred to the next destination. You can customize the Escalation subagent by adding specific instructions and agent actions. For example, you can customize the Esclation subagent to create a case when transferring the conversation is unsuccessful or isn't supported for your channel. You can also customize the message the agent sends before it transfers a conversation.
+
+To learn more about the Escalation subagent, see [Transfer Conversations from an Agent with an Omni-Channel Flow](https://help.salesforce.com/s/articleView?id=ai.service_agent_escalation.htm&language=en_US&type=5).
+
+-   **[Explore Standard Connections and Adaptive Responses Formats](https://help.salesforce.com/s/articleView?id=ai.agent_surfaces_ref_pointer.htm&language=en_US&type=5)**  
+    Learn about the agent connections and adaptive response formats that Salesforce provides out of the box in our comprehensive reference library.
+-   **[Set Up Connections in Agentforce Builder](https://help.salesforce.com/s/articleView?id=ai.agent_connections_set_up.htm&language=en_US&type=5)**  
+    To get started with deploying your agent to channels, add connections to it. Each connection includes behind-the-scenes instructions that help an agent reason and respond for one or more channels. Each connection contains adaptive response formats that help your agent structure responses and deliver multimedia content, such as images, buttons, links, and videos. You can find adaptive response formats and other settings, including the Omni-Channel flows that route conversations to and from an agent, in your connection settings.
+-   **[Set Up Connections in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.agent_response_enable.htm&language=en_US&type=5)**  
+    To get started with deploying your agent to channels, set up connections. Each connection includes behind-the-scenes instructions that help an agent reason and respond for one or more channels. Each connection contains adaptive response formats that help your agent structure responses and deliver multimedia content, such as images, buttons, links, and videos. You can find adaptive response formats and other settings, including the Omni-Channel flows that route conversations to and from an agent, in your connection settings.
+-   **[Connect an Agent to Lightning Experience and Mobile](https://help.salesforce.com/s/articleView?id=ai.agent_deploy_emp_lex.htm&language=en_US&type=5)**  
+    Deploying Agentforce Employee agents to Lightning Experience and the Salesforce mobile app is as easy as activating your agent.
+-   **[Connect an Agent to Slack](https://help.salesforce.com/s/articleView?id=ai.agent_deploy_emp_slack.htm&language=en_US&type=5)**  
+    Collaborate with Agentforce Employee agents in the same place where your team collaborates. Add the Slack connection to your agent and then finish setting up the agent in Slack.
+-   **[Connect an Agent to Messaging](https://help.salesforce.com/s/articleView?id=ai.agent_parent_deploy_messaging.htm&language=en_US&type=5)**  
+    Route conversations to your Agentforce Service agents and Agentforce Employee agents with messaging channels, including Enhanced Chat and other enhanced messaging channels. Learn how to use context variables, multiple languages, and progess indicators in messaging channels.
+-   **[Connect an Agent to Service Email](https://help.salesforce.com/s/articleView?id=ai.agent_email_parent.htm&language=en_US&type=5)**  
+    Agentforce Service agents can autonomously respond to customer email inquiries. For example, if a customer emails you asking when their package will arrive, your agent can respond to them with the estimated delivery date and tracking number. Email responses are grounded in your Agentforce Data Libraries.
+-   **[Choose Your Telephony Provider for Voice-Enabled Agents](https://help.salesforce.com/s/articleView?id=ai.agentforce_voice_telephony_overview.htm&language=en_US&type=5)**  
+    Route voice conversations to your voice-enabled Agentforce Service agents. Voice-enabled agents use Agentforce Voice features to provide the autonomous AI layer for your contact center. Agentforce Voice replaces static, hierarchical IVR logic with dynamic, intent-driven conversations.
+-   **[Connect a Service Agent to Partner Telephony](https://help.salesforce.com/s/articleView?id=ai.agent_connect_telephony_parent.htm&language=en_US&type=5)**  
+    Route voice conversations to your Agentforce Service agents. Learn how to create a telephony connection to your partner telephony system, configure voice mode settings, and route calls to your agent.
+-   **[Transfer Conversations from an Agent with an Omni-Channel Flow](https://help.salesforce.com/s/articleView?id=ai.service_agent_escalation.htm&language=en_US&type=5)**  
+    When an agent encounters conversations that it can’t resolve, it uses the Escalation subagent to escalate the conversation. In the new Agentforce Builder, you can also run the Escalation subagent using the escalate utility function in Agent Script. Escalation and transferring works differently depending on the agent type and channel. You can customize the experience that customers receive when transferring isn’t possible.
+-   **[Activate or Deactivate Your Agent](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_activate_deactivate.htm&language=en_US&type=5)**  
+    Activate your agent to make it available to your customers or employees. When an agent is deployed to one or more channels, including the Agentforce panel, activating the agent makes it immediately available to your users.
 
 
 ---
@@ -3548,7 +3616,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzc3NDM2NTAsMzUzNDcwNTMyLC0xOD
+eyJoaXN0b3J5IjpbLTE5MzY3OTU4NjQsMzUzNDcwNTMyLC0xOD
 U1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1MzUsNDQ4MTQ5
 MTMzLC0xNTU1MDkyNTEwXX0=
 -->
