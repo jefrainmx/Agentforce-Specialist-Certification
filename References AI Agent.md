@@ -1547,8 +1547,7 @@ To learn more about the Escalation subagent, see [Transfer Conversations from an
 
 Route voice conversations to your Agentforce Service agents. Learn how to create a telephony connection to your partner telephony system, configure voice mode settings, and route calls to your agent.
 
-Watch this video for a demonstration of how to route voice conversations to an Agentforce Service agent.
-
+[Watch this video for a demonstration of how to route voice conversations to an Agentforce Service agent.](https://play.vidyard.com/7UjuTize5zUoSPooDJyN2V)
 
 This flow chart summarizes the setup steps.![Flow chart that shows the Agentforce Voice setup steps](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/cf864731-c3bb-4e3b-b77c-8a56c30bc21f/generative_ai/images/agentforce_voice_setup_flowchart.png)
 
@@ -3626,7 +3625,7 @@ The quickest way to get started with the Agent API is with our [Postman collecti
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyODE0MTQzOSw5MDA0NDU2MjIsMzUzND
+eyJoaXN0b3J5IjpbMTkzNDg2MTUyMiw5MDA0NDU2MjIsMzUzND
 cwNTMyLC0xODU1MzY2MDAzLC0xNTEyMjg0MjMyLDE4NTkyNjg1
 MzUsNDQ4MTQ5MTMzLC0xNTU1MDkyNTEwXX0=
 -->
