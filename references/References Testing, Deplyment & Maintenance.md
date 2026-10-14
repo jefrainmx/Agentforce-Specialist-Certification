@@ -1003,10 +1003,44 @@ When you activate a prompt template, you’re making a specific version of the p
 
 
 
+# Prompt Template Run-time Execution
+
+Invoking a prompt template at run time sets off a chain of events. The run-time life cycle of a prompt template begins with loading the prompt template with input and concludes with forwarding the LLM-generated response to the calling agent or app.
+
+## Design-time Preview
+
+When you design a prompt template, Prompt Builder’s preview feature allows you to simulate a complete run-time experience. You preview the prompt template, provide input, preview the resolved prompt, and then get the generated response returned from the LLM.
+
+## Prompt Execution at Run Time
+
+When an agent or app invokes an activated prompt template at run time, it triggers the same chain of events. Let’s break it down into more detailed steps.
+
+**Prompt Template Execution Steps**
+
+![Illustration showing the series of steps involved with prompt template execution.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/prompt_builder_runtime.png)
+
+| Step | Description |
+| --- | --- |
+| 1 | The prompt template gets invoked with input from an agent, a flow, Apex, or an app. |
+| 2 | Prompt resolution begins with secure data retrievals. Values for merge fields (records, flows, Apex) are added to the prompt. Access to merge data is governed by the permissions of the executing user.For dynamic grounding, relevant information from structured and unstructured data in Data Cloud is retrieved using features like search retrievers, flows, and SOQL queries.|
+| 3 |The resolved prompt then undergoes further protections using enabled features in the [Einstein Trust Layer](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_layer.htm&language=en_US&type=5). Pattern-based [data masking](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_data_mask.htm&language=en_US&type=5) is applied automatically, while field-based data masking is applied if enabled.The Einstein Trust Layer applies prompt defense measures using Salesforce system policies.|
+| 4 |The secured prompt is submitted to the LLM via the LLM gateway. The LLM returns its generated response via the LLM gateway.-   The generated response can include [citations](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_citations.htm&language=en_US&type=5) to original sources that the LLM used when generating the response.
+-   The generated response can be in the user’s language (default) or in a [requested language](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_multi_languages.htm&language=en_US&type=5).
+
+For external model providers, our zero data retention policy ensures that data sent to the LLM from Salesforce isn’t retained but is deleted after a response is sent back to Salesforce.
+
+ |
+| 5 | The LLM-generated response is logged for [audit and feedback](https://help.salesforce.com/s/articleView?id=ai.generative_ai_feedback.htm&language=en_US&type=5). |
+| 6 | The Einstein Trust Layer applies system policies to the LLM-generated response. If enabled, features like toxicity detection help decrease the likelihood of unintended or harmful outputs. If data masking is enabled, the Einstein Trust Layer demasks any masked data, replacing placeholders with their underlying values. |
+| 7 | The generated response is returned to the requesting agent or app in a raw or structured format. |
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note Prompt resolution is sometimes called "hydration" or "prompt grounding". We refer to it as "resolution" in the context of executing prompt templates built with Prompt Builder.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODUzOTk3OCwxODA4NzQ1MDczLDIxND
-Q4MDE4NCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbNTE3Nzc0NjM2LDE4MDg3NDUwNzMsMjE0ND
+gwMTg0LDczMDk5ODExNl19
 -->
