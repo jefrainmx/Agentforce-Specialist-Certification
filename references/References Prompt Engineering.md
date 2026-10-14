@@ -1411,8 +1411,28 @@ Some types of sensitive data have specific formats and validation rules, such as
 
 In this unit, you learned how to configure data masking in the Einstein Trust Layer setup and see how data masking works using Prompt Builder. You also learned about the format and rules Einstein Trust Layer uses to identify sensitive data. If you haven’t already done so, follow the steps at the beginning of this unit to sign up for a custom playground with Data 360 and Einstein AI to complete the hands-on challenge.
 
+
+# Einstein Trust Layer
+
+Trusting generative AI with your company secrets and your customer data while balancing the benefits of generative AI is still a challenge today. The Einstein Trust Layer is a secure AI architecture, built into the Salesforce platform. It’s a set of agreements, security technology, and data and privacy controls used to keep your company safe while you explore generative AI solutions.
+
+Watch the video for a quick overview of how the Einstein Trust Layer works. You can also click [this link](https://salesforce.vidyard.com/watch/Kw7DfNqG7AGPAZcqrrn2T5) to launch the video in full screen mode on a different tab.
+
+For a detailed walkthrough of the Einstein Trust Layer and its capabilities, see [Einstein Trust Layer: Designed for Trust](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_arch.htm&language=en_US&type=5).
+
+
+
+
+#### See Also
+
+-   [Einstein Trust Layer Region and Language Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_lang_region.htm&language=en_US&type=5)
+-   [Set up Einstein Trust Layer](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_setup.htm&language=en_US&type=5)
+-   [Large Language Model Data Masking](https://help.salesforce.com/s/articleView?id=ai.generative_ai_mask_data.htm&language=en_US&type=5)
+-   [Audit Trail](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&language=en_US&type=5)
+-   [_Trailhead_: The Einstein Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0OTIxOTgyMywxODYzNDQ3ODA2LC05Mz
-c1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbLTEzMjI5MTI5MDAsMTg0OTIxOTgyMywxOD
+YzNDQ3ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4
+NzIsNzMwOTk4MTE2XX0=
 -->
