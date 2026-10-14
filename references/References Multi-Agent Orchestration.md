@@ -753,6 +753,8 @@ With Agentforce 3, partners will be able to build, integrate, and distribute AI 
 
 [Discover](https://appexchange.salesforce.com/collections/agentforce-mcp) the Agentforce Model Context Protocol (MCP) partners who are contributing to secure, open interoperability through AgentExchange, the trusted Agentforce marketplace. [Find](https://www.salesforce.com/partners/) Salesforce partners apps and experts to help power your Agentforce success.
 
+# Agentic Patterns and Implementation with Agentforce
+
 ## Abstract
 
 The paradigm of software is shifting from direct manipulation to goal-oriented delegation. At the forefront of this transformation are AI agents—autonomous, intelligent entities capable of understanding, reasoning, and acting on behalf of users. This whitepaper provides a technical exploration of the primary types of AI agents: Conversational, Proactive, Ambient, Autonomous, and Collaborative. It defines each type, presents specific Customer Relationship Management (CRM) use cases, and provides an architectural blueprint for building these agents on the Salesforce _Agentforce_ Platform, complete with technical examples leveraging Flow, Apex, Data 360, Agent2Agent (A2A) communication, and Model Context Protocol (MCP) interoperability.
@@ -2023,8 +2025,8 @@ For agents to be truly effective, they cannot exist in a silo. Agentforce embrac
     
 -   **Model Context Protocol (MCP):** This [standard](https://modelcontextprotocol.io/docs/getting-started/intro) ensures that agents are not locked into a single platform. MCP defines a common message format that allows agents built on different frameworks to communicate. In this model, **Agentforce acts as an MCP client.** For example, a Salesforce agent could query an external agent specializing in complex logistics calculations by sending it an MCP-compliant request. MuleSoft serves as the gateway, transforming the internal A2A request into an external MCP-formatted API call, ensuring seamless interoperability across the enterprise.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjQwMTQ0MDIsLTIxMzU5MDU3OTAsLT
-E4NjY4OTM0MjUsLTE4NjY4OTM0MjUsLTE2Mzg2Njg5OTgsLTY5
-NjAzMTkzOSwtNDE1NTc4OTc1LC0xMTU3ODg3MDcyLC01NTk4MD
-AzNjQsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzMjY2Mjk1NzAsLTE0NjQwMTQ0MDIsLT
+IxMzU5MDU3OTAsLTE4NjY4OTM0MjUsLTE4NjY4OTM0MjUsLTE2
+Mzg2Njg5OTgsLTY5NjAzMTkzOSwtNDE1NTc4OTc1LC0xMTU3OD
+g3MDcyLC01NTk4MDAzNjQsNzMwOTk4MTE2XX0=
 -->
