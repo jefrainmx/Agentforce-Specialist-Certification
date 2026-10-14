@@ -1156,9 +1156,263 @@ Congratulations, you just learned how the Einstein Trust Layer works! To learn m
 -   [_Trailhead_: Responsible Creation of Artificial Intelligence](https://trailhead.salesforce.com/content/learn/modules/responsible-creation-of-artificial-intelligence)
 -   [_Salesforce Help_: Einstein Generative AI & Trust](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_overview.htm&type=5)
 
+# Explore Large Language Model Data Masking
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Explain the importance of masking sensitive information from large language models (LLMs).  
+    
+-   Describe Einstein Trust Layer functionality.  
+    
+
+## Before You Start
+
+We recommend completing the following content, which covers the Einstein Trust Layer and reviews creating prompt templates using Prompt Builder.
+
+-   [The Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)  
+    
+-   [Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)  
+    
+
+## Introduction to Large Language Model Data Masking
+
+Safeguarding your data with generative AI technology can be challenging. Einstein Trust Layer uses data masking to help prevent sensitive information from exposure to third-party large language models (LLMs). Hence the name LLM Data Masking. Let’s learn more about the process.
+
+## How LLM Data Masking Works
+
+### Detection and Masking Process
+
+Einstein Trust Layer uses advanced pattern matching and machine learning techniques to detect sensitive data in prompts. After it’s identified, this data is masked, meaning it’s replaced with placeholder text. For example, let’s say the name Jim is the first instance of a person’s name in the prompt text. Jim is replaced by <Person\_0>. By replacing real data with placeholder text in the prompt, the Einstein Trust Layer ensures that sensitive details aren’t exposed to the LLM.
+
+Data masking for LLMs is [disabled](https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&type=5) for agents. See Data Masking and Agents. For embedded generative AI features, such as Einstein Service Replies, Einstein Work Summaries data masking is available, and you can configure it in Einstein Trust Layer setup.
+
+### Demasking
+
+After receiving the generated response from the LLM, the Einstein Trust Layer reverts the masked data back to its original form. Demasking helps make the response you see accurate and relevant to the task at hand.
+
+## How to Prepare for Data Masking
+
+Before you configure data masking, evaluate the data security and privacy risks to your business and your use cases posed by generative AI. One of the key risks that LLM data masking helps mitigate is data leakage. Data leakage can come from exposing private or personal information to third-party LLMs, such as customer names, credit card numbers, or Social Security numbers.
+
+Salesforce has a zero data retention policy with third-party LLM providers like Open AI and Azure Open AI. This means that the data you send through the prompt isn’t retained by the LLM. Even with the zero data retention policy in place, you may still want to make sure sensitive data is not exposed to the LLM.
+
+Take a look at some questions that can help you make a risk assessment and create a risk profile in order to determine your risk tolerance.
+
+-   What are your current governance and security policies?  
+    
+-   Is your company bound by data-handling regulations like General Data Protection Regulation (GDPR) or Payment Card Industry Data Security Standard (PCI DSS)? Some of these regulations require that you don’t expose certain types of sensitive data to LLMs.  
+    
+-   What are your data residency requirements?  
+    
+-   If your company is global, what country or region’s data do you need to protect?  
+    
+-   Is the sensitive data necessary for grounding the prompt in order to generate the response that’s relevant and useful?  
+    
+-   What are your AI application use cases? Will these use cases include sensitive data in the prompts?  
+    
+
+For a more detailed discussion on risk and mitigation strategies and creating a risk profile, see [AI + Data: Project Planning](https://trailhead.salesforce.com/content/learn/modules/ai-data-project-planning).
+
+Also consider the impact of masking certain types of data and the impact on the quality of the response generated. Your specific use cases and testing is the key to striking the right balance between data security and the quality of the response.
+
+Let’s walk through some examples to understand the impact better.
+
+1.  In the prompt text, you’re asking the LLM to help with downloading an Amazon app to your device. However, because Amazon is a company name, it’s masked from the LLM. The LLM is unable to provide a useful response because it doesn’t understand which app you need help downloading.  
+    
+2.  In the prompt text, you’re asking the LLM to summarize a sales order. The sales order is a 10-digit number that has a similar pattern to a US phone number. As a result, the sales order is masked because the LLM is preserving the privacy of the phone number before sending the prompt to the LLM. This can cause the LLM to generate a response that may not be accurate or useful.  
+    
+
+## How to Use the Einstein Trust Layer
+
+You walk through the setup in detail in the next unit. For now, let’s gain insight into what’s enabled by default and what you can do to customize it further.
+
+### Einstein Trust Layer
+
+After you set up Einstein AI with Data 360, LLM data masking is turned on by default for certain sensitive data types. This makes it easy to keep sensitive data safe. You can review the default settings and update them according to your organization’s governance policies and regulatory requirements.
+
+To track data masking activities, the Einstein Trust Layer logs these actions in Data 360 as part of an audit trail. You can use the prebuilt dashboards to verify data masking and demasking or create custom reports and dashboards.
+
+### Supported Data Entries and Languages
+
+The Einstein Trust Layer supports a variety of data types for masking, including company names, credit card numbers, and email addresses. These entries are supported in multiple languages, making sure that your global operations can comply with data masking requirements. Read the [Einstein Trust Layer Region and Language Support help article](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_lang_region.htm&type=5) to see which data types and languages are supported.
+
+In this unit, you learned about the importance of data masking and how it relates to the Einstein Trust Layer. In the next unit, you learn how to configure data masking in the Einstein Trust Layer and view data masking at run time in Prompt Builder.
+
+## Resources
+
+-   [_Salesforce Help_: Data Masking](https://help.salesforce.com/s/articleView?id=ai.generative_ai_mask_data.htm&type=5)
+-   [_Salesforce Video_: Einstein Trust Layer: How It Works and Why It Matters](https://salesforce.vidyard.com/watch/Kw7DfNqG7AGPAZcqrrn2T5)
+
+# Configure LLM Data Masking Policies
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Sign up for a Custom Playground with Data 360 and Einstein AI.  
+    
+-   Configure LLM Data Masking in Trust Layer.  
+    
+-   Verify masked data in the Prompt Builder.  
+    
+
+## Sign Up for a Custom Playground with Data 360 and Einstein AI
+
+To complete this project, you need a custom playground that contains Data 360, Einstein AI, and our sample data.
+
+1.  Click **Create Playground**.  
+    
+2.  Your new org is automatically attached to your Trailhead account!  
+    
+3.  Make note of your org's expiration date and complete this badge before then.  
+    
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+This custom playground is designed to work with the challenges in this badge and may not work for other badges. Always check that you’re using the Trailhead playground or the special org that we recommend.
+
+## Set Up Einstein Trust Layer
+
+### Enable Einstein Generative AI
+
+Before you can configure Einstein Trust Layer data masking policies, you must turn on Einstein Generative AI. Data 360 is required for Einstein Trust Layer to function correctly and to see and verify Einstein Trust Layer settings. For this module, we set up Data 360 for you in advance as part of the custom Data 360 and Salesforce playground. You just turn on Einstein Generative AI and configure the Einstein Trust Layer. Follow all the steps in this unit and click verify to earn 500 points to complete the challenge at the end of this unit.
+
+1.  If you haven’t already, launch your Data 360 and Salesforce playground.  
+    
+2.  Click the gear icon (![](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/b5628af0e4d39768578d1ee9a1d53da4_kix.4jxvvaxmk51q.jpg)) and click **Setup**. The Setup page opens in a new tab.  
+    
+3.  In the Setup **Quick Find** search box, search for and select **Einstein Setup**.  
+    
+4.  Ensure the Turn on Einstein toggle is set to **On**.  
+    
+
+![A Salesforce Einstein Setup page with the ability to activate Einstein and adjust trust layer settings.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/5c919f28d9b3d5279d3efe6fa214327b_kix.2f132ks7vo2r.png)
+
+5.  Click **Go to Einstein Trust Layer**. Refresh the screen if you don’t see the Einstein Trust Layer settings.  
+    
+6.  If the **Large Language Model Data Masking** isn’t already turned on, use the toggle to turn it on.  
+    
+
+Let’s take a moment to see what data types are listed. You'll see a list of sensitive data types such as name, email address, and credit card number. In the previous unit, you learned about pattern-based masking. Now you can see the type of data that Einstein Trust Layer is able to detect using ‌patterns and context. Notice that **Name**, **Email Address**, **Phone Number**, **Credit Card**, and **United States’ Social Security Numbers (US SSN)** are masked by default.
+
+![A table with a list of sensitive data attributes, such as names, emails, and credit card numbers, with toggles to enable or disable data masking.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/0fec178972af2a72a79554cd230ee417_kix.rmomj7so3o4d.png)
+
+## Turn on Sales Emails
+
+### Enable Sales Emails
+
+Before we create an Email Prompt Template, we need to turn on Sales Email.
+
+1.  In the **Quick Find** search box, type `Einstein for Sales.Copy`
+2.  Click **Einstein for Sales**. This opens the Einstein for Sales page.  
+    
+3.  Toggle the **Turn on Sales Emails** switch to **Enabled**. Note: The deployment can take up to 10 minutes but no need to wait, proceed to the next step.  
+    
+
+Next, let’s see data masking in action in the Prompt Builder. As you learned in the [Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics) badge, the key to scalable generative AI is to use prompt templates to tell a large language model (LLM) how it should generate content.
+
+## Create an Email Prompt Template
+
+1.  With **Einstein Generative AI** menu expanded, click **Prompt Builder**. Refresh the screen if you don’t see the **Prompt Builder** menu.  
+    
+2.  Click **New Prompt Template**.  
+    
+3.  Select **Sales Email** for the **Prompt Template Type**. If you don’t see Sales Email in the list, refresh the screen.  
+    
+4.  Enter a **Prompt Template Name**. Let’s call it `Verification EmailCopy`(API Name '`Verification_EmailCopy`')_._  
+    
+5.  Enter a Template Description. This description is displayed in the list of prompt templates and can be useful to distinguish prompt templates as you add more. Let’s call it `Verify contact informationCopy`_._  
+    
+6.  The Recipient field defaults to Contact and the Related Object field is blank. Accept the defaults, and click **Next**. You’re redirected to the Prompt Template Workspace.  
+    
+
+## Verify Data Masking
+
+Excellent! For this scenario, we’ve provided a prompt for you to use and see how data is masked in prompts. Notice that the prompt text includes several pieces of personally identifiable information (PII) and payment card industry (PCI) information. Usually, when you create a prompt template, you ‌use merge fields from the contact records, but for now, include this information directly in the prompt.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+The prompt text provided here includes examples of sensitive information such as credit card and social security numbers in plain text. This is only to demonstrate how data masking works to protect your data in such cases and should not be considered as acceptable practice.
+
+1.  Copy and paste the text below into the Prompt Template Workspace:  
+    
+
+Your name is Becca and you’re a Sales associate at Coral Cloud Resorts writing an email to a new contact to verify their information on record. Instructions: """ Introduce yourself welcome the new contact Andy Young. Let them know that you’re sending this email to verify their information. List the following information as a bullet list. Full Name: Andy Young Company Name: Dickenson PLC Business Phone Number: (785) 241-6200 Mobile Phone Number: (785) 265-5350 Email: a\_young@dickenson.com SSN: 243930486 Credit Card on file: 378282246310005 Use clear and straightforward language, using active voice, and avoiding the use of filler words. End with asking them to call Coral Cloud Resorts to verify their information on the file """ Now create the email.
+
+2.  In Preview Settings (![](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/d68e485e555881e6bb83700381bd739e_kix.1d3b41km8969.png), under Inputs, type `AndyCopy` and select Andy Young.  
+    
+3.  Click **Save & Preview**. Your Resolved Prompt and Generated Response tabs should look something like this (note that LLM responses can differ slightly so it may not look exactly the same):  
+    
+
+![A screenshot of a prompt template workspace, displaying an email template, a preview of the template, and a response to the template.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/a6935e66f89c3aa8a64372af8f8ff68b_kix.wknjzu6lhpz8.png)
+
+Notice that the Resolved Prompt tab shows the prompt text with the placeholder information. This is the prompt text that is sent to the LLM. This gives you a preview of the data that’s masked before sending it to the LLM. The Generated Response tab shows the generated email with the actual information after the data has been demasked. You’ll also see a shield icon (![Shield icon](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/673ecece889336f97167fd58c9942bd8_kix.mo3rbww8wemp.png)) in the Generated Response tab, which includes a link to see the data masking details.
+
+4.  In the **Generated Response** tab, click the shield icon to view your data masking details. This opens a new window where you can see the placeholder text used to mask and the corresponding actual value. You should see that the credit card number, email address, names of people, both phone numbers, and SSN are masked. However, also notice that the company’s name isn’t currently masked.  
+    
+5.  Click **OK** to close the data masking details window.  
+    
+
+![A table is displayed with masked data and the corresponding true values of a credit card number, email address, names, phone numbers, and SSN.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/87e77dca2e34edadd2910ef269761987_kix.es3ahqozigdc.png)
+
+### Update LLM Data Masking Settings
+
+In this case, you also want the company name to be masked, so let’s get back to the configuration and update the settings.
+
+1.  Click the gear icon (![](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/b5628af0e4d39768578d1ee9a1d53da4_kix.5sycjjm2jllf.jpg)) and click **Setup**. The Setup page opens in a new tab.  
+    
+2.  In the **Quick Find** search box, type `EinsteinCopy`.  
+    
+3.  Expand the **Einstein Generative AI** menu in the left pane.  
+    
+4.  Click **Einstein Setup**. This opens the **Einstein Setup** page.  
+    
+5.  Click **Go to Einstein Trust Layer**.  
+    
+6.  Turn on masking for **Company Name** under **Sensitive Data**.  
+    
+
+### Verify Data Masking for Company Name
+
+1.  Navigate to the Prompt Builder tab that shows the Verification Email tab. If you closed the Verification Email prompt template, you can open it by navigating to the Prompt Builder menu in the left pane. Click the **Verification Email** prompt template you created in the previous section to open the prompt template.  
+    
+2.  In Preview Settings, under Inputs, type `AndyCopy` and select **Andy Young**.  
+    
+3.  Click **Preview**.  
+    
+
+**Note:** It can take a couple of minutes for the LLM Data Masking updates to take effect.
+
+4.  Click the data masking shield (![Shield icon](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/673ecece889336f97167fd58c9942bd8_kix.toh5lvuju8s5.png)) in the Generated Response tab. Notice that ‌company names are now masked.  
+    
+5.  Click **OK** to close the window.  
+    
+
+![A table is displayed with masked data and the corresponding true values of a credit card, email address, names of people and organizations, phone numbers, and SSN.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/44ab1630c3293adaa1adb5a4388ad30c_kix.1nzignouzqgt.png)
+
+After you implement LLM Data Masking in your Salesforce org, be sure to test it on a regular basis. You also want to assess if masking certain types of data for specific use cases affect the quality of the response from the LLM. Large language models change and improve over time, so doing periodic assessments of the results you’re getting is one of best practices in the world of generative AI.
+
+### Verify Invalid Credit Card Number Is Not Masked
+
+Some types of sensitive data have specific formats and validation rules, such as credit card numbers, SSNs, and even phone numbers. LLM data masking knows about those rules, and checks to see if items are valid. If an item isn’t a valid value, it won’t be masked. Try updating the credit card number in your prompt text and see what happens:
+
+1.  Using the same **Verification Email** prompt template you created before, In the prompt text, change the credit card number as follows:  
+    **Credit Card on file: 378282246310005**  
+    to  
+    **Credit Card on file:** `333312312312312Copy`
+2.  Click **Save & Preview**.  
+    
+3.  Click the data masking shield (![Shield icon](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/llm-data-masking-in-the-einstein-trust-layer/configure-llm-data-masking-policies/images/673ecece889336f97167fd58c9942bd8_kix.je5v19be0x0l.png)) in the Generated Response tab. Notice that the modified credit card number is no longer masked.  
+    
+4.  Click **OK** to close the window.  
+    
+
+In this unit, you learned how to configure data masking in the Einstein Trust Layer setup and see how data masking works using Prompt Builder. You also learned about the format and rules Einstein Trust Layer uses to identify sensitive data. If you haven’t already done so, follow the steps at the beginning of this unit to sign up for a custom playground with Data 360 and Einstein AI to complete the hands-on challenge.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYwMTU1NDU1LDE4NjM0NDc4MDYsLTkzNz
-U5MTI3NSwyMDM1OTY5MjA4LDE4OTg5MDg3Miw3MzA5OTgxMTZd
-fQ==
+eyJoaXN0b3J5IjpbMTg0OTIxOTgyMywxODYzNDQ3ODA2LC05Mz
+c1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2
+XX0=
 -->
