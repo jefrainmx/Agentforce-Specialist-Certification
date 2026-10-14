@@ -170,6 +170,16 @@ Agentforce session tracing captures detailed agent interaction data in a unified
 -   **[Agent Platform Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_trace.htm&language=en_US&type=5)**  
     This tracing capability provides comprehensive visibility into the actions and performance of Agentforce Agents, capturing crucial telemetry data across various services. By leveraging Data 360, users can unify this trace data with session information to create detailed reports. These reports are invaluable for monitoring Key Performance Indicators (KPIs), identifying performance bottlenecks, and quickly pinpointing the root cause of issues, ultimately enhancing the reliability and efficiency of Agent implementations.
 
+
+# Monitor Agent Guardrails
+
+Monitor instruction adherence and task resolution for your agents.
+
+-   **[Instruction Adherence](https://help.salesforce.com/s/articleView?id=ai.agent_guardrails_instruction_adherence.htm&language=en_US&type=5)**  
+    Instruction adherence is an agent guardrail that evaluates how well your agents interpret subagent instructions when generating responses.
+-   **[Task Resolution](https://help.salesforce.com/s/articleView?id=ai.agent_guardrails_task_resolution.htm&language=en_US&type=5)**  
+    Task resolution is an agent guardrail. It evaluates how well your agents interpret the user's intent, as expressed in a given conversation, and how well it resolves the task.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTk3ODAzMiw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTg3NzI4NzI3Myw3MzA5OTgxMTZdfQ==
 -->
