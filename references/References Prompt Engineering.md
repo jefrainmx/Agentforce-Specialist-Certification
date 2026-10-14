@@ -1597,8 +1597,44 @@ To manage model provider access:
     
     Important It can take up to ten (10) minutes for model provider disablement to take effect.
     
+    # Use AI Models
+
+AI Models is your home base for AI in Data 360. Augment your business intelligence with AI to identify, surface, and visualize inferences in yourData 360 data. AI is integrated into your Data 360 environment so that you can quickly operationalize generative models, predictions, and improvements with clicks, not code.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-data-data_cloud-264-0-0-production-enus/9a804ab5-dba6-49d5-8077-820fbcc92ad9/images/icon_note.png)
+
+Note As of April 2026, Einstein Studio is now called AI Models. Learn more in the [release note](https://help.salesforce.com/s/articleView?id=release-notes.rn_cdp_2026_spring_predictive_ai_models_update.htm&language=en_US&release=260&type=5).
+
+![Diagram showing access, build, and utilize](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-data-data_cloud-264-0-0-production-enus/9a804ab5-dba6-49d5-8077-820fbcc92ad9/data_cloud/images/c360_a_ai_use_ai_models.png)
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small"><colgroup><col style="width:6.5420560747663545%"><col style="width:93.45794392523365%"></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Access</td><td style="vertical-align:top;" class="slds-cell-wrap"><a href="https://help.salesforce.com/s/articleView?id=data.c360_a_ai_mm_manage_models.htm&amp;language=en_US&amp;type=5">Manage AI Models</a></td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Build</td><td style="vertical-align:top;" class="slds-cell-wrap"><a href="https://help.salesforce.com/s/articleView?id=data.c360_a_ai_create_connect_activate_models.htm&amp;language=en_US&amp;type=5">Create, Connect, and Activate Models</a></td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Utilize</td><td style="vertical-align:top;" class="slds-cell-wrap"><a href="https://help.salesforce.com/s/articleView?id=data.c360_a_ai_utilize.htm&amp;language=en_US&amp;type=5">Utilize Model Output</a></td></tr></tbody></table>
+
+## Blogs, Videos, and Webinars
+
+Hear directly from our product team and see features in action.
+
+-   Webinar: [Elevate Your AI Strategy with Google Vertex AI and Salesforce Data Cloud](https://events.actualtechmedia.com/on-demand/1869/elevate-your-ai-strategy-with-google-vertex-ai-and-salesforce-data-cloud/?pr=18)
+-   AWS re:Invent: [Unlocking the power of AWS AI and data with Salesforce](https://www.youtube.com/watch?v=E4FL67NMqjU)
+
+## Additional Resources
+
+-   Learn more about AI model usage that impacts cost: [Billing Considerations](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_usage_inference.htm&language=en_US&type=5)
+-   Trailhead: [Machine Learning Predictions: Quick Look](https://trailhead.salesforce.com/content/learn/modules/machine-learning-predictions-quick-look)
+
+-   **[Set Up AI Models](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_license_perms.htm&language=en_US&type=5)**  
+    To use AI Model Builder (formerly Einstein Studio Model Builder), your org must be provisioned with an applicable license, and users must be assigned the appropriate permission.
+-   **[Predictive AI](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_predictive.htm&language=en_US&type=5)**  
+    Predictive AI uses models built with machine learning (ML) and your historical data to predict business outcomes and recommend ways to improve predicted outcomes.
+-   **[Create, Connect, and Activate Models](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_create_connect_activate_models.htm&language=en_US&type=5)**  
+    Create your own predictive models with clicks, not code. Establish connections to bring in generative and predictive AI from models outside of Salesforce. Then, activate models to use the inferences and insights revealed in your data.
+-   **[Manage Models](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_mm_manage_models.htm&language=en_US&type=5)**  
+    After creating a predictive model, you can edit to update your settings or delete it if it’s no longer needed.
+-   **[Get Predictions, Prescriptions, and Top Predictors](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_utilize.htm&language=en_US&type=5)**  
+    Put your predictive AI models into action. After a model is activated, use it to get inferences—predictions, prescriptions, and top predictors—from your Salesforce workflows. Get inferences on demand, in batches, and in streams. Use them in flows, prediction jobs, batch data transforms, agents, and prompt templates. Get them programmatically in Apex and REST applications.
+-   **[Retrieve Data](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever.htm&language=en_US&type=5)**  
+    Use a retriever to search and return relevant data from a search index. Create and customize retrievers in AI Models (formerly Einstein Studio) for Retrieval Augmented Generation (RAG) in Data 360. Retrievers augment prompt templates by providing relevant, specialized grounding information for prompts.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4ODA1MTI3NiwxODQ5MjE5ODIzLDE4Nj
-M0NDc4MDYsLTkzNzU5MTI3NSwyMDM1OTY5MjA4LDE4OTg5MDg3
-Miw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTMxNzEyMTEwLC04ODgwNTEyNzYsMTg0OT
+IxOTgyMywxODYzNDQ3ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIw
+OCwxODk4OTA4NzIsNzMwOTk4MTE2XX0=
 -->
