@@ -509,8 +509,120 @@ To start building:
 MCP was created at Anthropic by David Soria Parra and Justin Spahr-Summers. We’re committed to building MCP as a collaborative, open-source project and ecosystem, and we’re eager to hear your feedback. Whether you’re an AI tool developer, an enterprise looking to leverage existing data, or an early adopter exploring the frontier, we invite you to build the future of context-aware AI together.
 
 # A Comprehensive Overview of the Model Context Protocol (MCP)
+_From its technical features and advantages over traditional function calling to its integration with major services and AI agent use cases_
+
+## Introduction
+
+The Model Context Protocol (MCP) is an open standard that enables AI models to connect seamlessly with external data sources and tools. Introduced and open-sourced by Anthropic in November 2024, MCP aims to replace the fragmented, custom-built integrations of the past with a unified protocol. This allows AI systems to access real-time data, perform tasks, and extend their functionality in a standardized, scalable way.
+
+## 1\. Overview and Technical Features
+
+MCP is designed to empower AI assistants (such as large language models) with the ability to access various external resources — ranging from files and databases to web services. Its key technical features include:
+
+-   **Open Standard Approach**  
+    MCP provides a unified interface that multiple tools and services can adopt, similar to how USB-C has standardized connections across devices.
+-   **Client–Server Architecture**  
+    AI applications (like the Claude Desktop app or in-editor AI agents) integrate an MCP client that connects to various MCP servers. These servers expose tools, data, or pre-defined prompt templates over standardized interfaces using protocols such as JSON-RPC 2.0. Transports may include STDIO for local communications or HTTP plus Server-Sent Events (SSE) for remote connections.
+-   **Bidirectional Communication and Context Extension**  
+    Beyond data retrieval, MCP supports commands and data updates. This two-way communication allows AI systems to maintain context while integrating multiple tools and data sources seamlessly.
+-   **Dynamic Tool Discovery and Flexibility**  
+    Once an MCP server is implemented, it can be reused by different AI clients. New tools and data sources can be added following standard procedures, enhancing the overall sustainability and scalability of the ecosystem.
+
+Press enter or click to view image in full size
+
+![](https://miro.medium.com/v2/resize:fit:700/1*ZWVIY-MdFA4pUVA7YkNQ_w.png)
+
+## 2\. Comparing MCP with Function Calling
+
+While both MCP and function calling enable AI models to interact with external resources, they differ significantly in approach and scope.
+
+### Function Calling
+
+-   **Platform-Specific**  
+    For example, OpenAI’s GPT models support function calling, where developers define specific functions that the AI model can call to perform discrete tasks.
+-   **Closed Implementation**  
+    The function calling feature is often implemented as a plugin within a specific platform. This means that integrations are confined to that platform’s ecosystem, requiring separate implementations for other services.
+
+### MCP Advantages
+
+-   **Open, Standardized Protocol**  
+    MCP separates tool implementation from the AI client, allowing for a standardized approach that works across multiple AI models and services.
+-   **Scalable and Flexible Integration**  
+    Ideal for complex, multi-step workflows, MCP can maintain context over long dialogues and orchestrate multiple tool interactions, making it better suited for dynamic and autonomous AI agents.
+-   **Interoperability**  
+    Developers can build an MCP server once, and it can then be utilized by any AI agent that supports the protocol, removing the need for proprietary implementations on every platform.
+
+**Feature** **Function Calling** **MCP** **Scope** Platform-specific (e.g., OpenAI) Open standard for multiple AI models **Implementation** Developer-defined function calls Standardized client–server integration **Flexibility** Best for discrete, clear tasks Suited for complex, multi-step workflows **Extensibility** Requires custom implementation per platform One-time implementation used across clients
+
+## 3\. Major Integrations and Supported Services
+
+Despite its recent introduction, MCP has rapidly gained traction and is already supported by several well-known services:
+
+-   **Anthropic (Claude)**  
+    As the originator of MCP, Anthropic’s Claude Desktop (note: the web version is currently not MCP-enabled) uses MCP to connect with local data sources like file systems and databases.
+-   **Microsoft (Azure AI Agent Service / Copilot Studio)**  
+    Microsoft has integrated MCP into its Azure ecosystem, allowing agents to access Bing search results and internal data sources in real time.
+-   **Zapier**  
+    With MCP, Zapier connects over 7,000 applications, enabling unified management of various tools and services.
+-   **Replit, Codeium, and Cursor**  
+    These development platforms leverage MCP to enhance coding assistance by integrating AI into their environments, allowing for in-editor actions such as code completion, testing, and repository access.
+-   **Others**  
+    Platforms like Cloudflare Workers, Zed, Sourcegraph, and enterprise solutions from companies like Block and Apollo have also begun to adopt MCP, recognizing its potential to streamline data integration and enhance productivity.
+
+## 4\. AI Agent Use Cases with MCP
+
+MCP not only facilitates data connectivity — it also empowers AI agents to execute real-world tasks. Some practical use cases include:
+
+-   **File Operations and Data Retrieval**  
+    AI agents can extract files from systems like Google Drive or internal file servers, processing and presenting the information as needed.
+-   **Development Environment Integration**  
+    Tools such as “Cline” and “Cursor” operate within editors like VS Code, where they edit files, retrieve commit histories from Git repositories, trigger CI tools, and assist in code debugging — all through MCP.
+-   **Productivity Tool Automation**  
+    Integration with services like Slack, Google Calendar, and CRM systems enables AI agents to send messages, schedule meetings, and update customer records seamlessly.
+-   **Autonomous Tool Expansion**  
+    Some agents can even generate new MCP servers on the fly. For example, when instructed to “add a web search tool,” an agent like Cline can create and integrate a corresponding MCP connector, which is then stored locally for reuse in future projects.
+
+## 5\. MCP Adoption in OpenAI and Google Gemini
+
+### OpenAI
+
+Until recently, OpenAI focused on its proprietary function calling and plugin systems. However, the recent launch of their Agents SDK signals a shift toward supporting MCP as well. This move could provide developers with a unified interface to integrate external tools with OpenAI’s GPT models.
+
+### Google Gemini
+
+I researched but could not find any official announcements about MCP as of March 2025.
+
+## Get Astropomeai’s stories in your inbox
+
+Join Medium for free to get updates from this writer.
+
+Remember me for faster sign in
+
+The Model Context Protocol represents a significant step forward in AI integration. By offering a standardized, scalable method for connecting AI models to a wide array of external data sources and tools, MCP breaks down the silos created by proprietary systems. Its advantages over traditional function calling — flexibility, interoperability, and long-term sustainability — make it a promising foundation for the next generation of autonomous AI agents.
+
+As more services adopt MCP and developers begin to harness its capabilities, the ecosystem is poised to evolve toward a more interconnected “agent society.” With potential future support from giants like OpenAI and possibly Google, MCP may well become the industry standard for AI connectivity.
+
+## References
+
+-   [Model Context Protocol (MCP): Integrating Azure OpenAI for Enhanced Tool Integration and Prompting](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/model-context-protocol-mcp-integrating-azure-openai-for-enhanced-tool-integratio/4393788)
+-   [What is Model Context Protocol (MCP)? How it simplifies AI integrations compared to APIs](https://norahsakal.com/blog/mcp-vs-api-model-context-protocol-explained/)
+-   [A Deep Dive Into MCP and the Future of AI Tooling](https://a16z.com/a-deep-dive-into-mcp-and-the-future-of-ai-tooling/)
+-   [OpenAI adds MCP support to Agents SDK](https://news.ycombinator.com/item?id=43485566)
+-   [mcp-server-gemini: MCP server implementation for Google’s Gemini API](https://github.com/aliargun/mcp-server-gemini)
+-   [Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+-   [Introducing Model Context Protocol (MCP) in Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/introducing-model-context-protocol-mcp-in-copilot-studio-simplified-integration-with-ai-apps-and-agents/)
+-   [Zapier MCP](https://zapier.com/mcp)
+-   [Everything you need to know about MCP](https://blog.replit.com/everything-you-need-to-know-about-mcp)
+-   [Why MCP Won](https://www.latent.space/p/why-mcp-won)
+-   [What Are MCP Servers? The New AI Trend Explained for Everyone](https://medium.com/@sebuzdugan/what-are-mcp-servers-the-new-ai-trend-explained-for-everyone-8936489c561f)
+-   [MCP: What It Is and Why It Matters](https://addyo.substack.com/p/mcp-what-it-is-and-why-it-matters)
+-   [OpenAI adopts rival Anthropic’s standard](https://techcrunch.com/2025/03/26/openai-adopts-rival-anthropics-standard-for-connecting-ai-models-to-data/)
+-   [Function Calling vs. Model Context Protocol (MCP)](https://blog.fotiecodes.com/function-calling-vs-model-context-protocol-mcp-what-you-need-to-know-cm88zfwik000108ji0a1d54fc)
+-   [MCP vs LLM Function Calling](https://neon.tech/blog/mcp-vs-llm-function-calling)
+-   [Model Context Protocol Introduction](https://modelcontextprotocol.io/introduction)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NjI4MDY1NCwtNDE1NTc4OTc1LC0xMT
+eyJoaXN0b3J5IjpbLTY5NjAzMTkzOSwtNDE1NTc4OTc1LC0xMT
 U3ODg3MDcyLC01NTk4MDAzNjQsNzMwOTk4MTE2XX0=
 -->
