@@ -151,7 +151,25 @@ Agent Optimization: Fixing specific problems
 
 The Agent optimization tool helps you improve how the agent talks to your customers. You can listen to the recordings of the voice calls, dive into the details of conversations, and review quality scores. You can find knowledge gaps where the AI didn't have the right answer. Review specific examples and quality scores to get insights for optimizing your voice-enabled agent. See [Use Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_use.htm&language=en_US&type=5).
 
+# Agentforce Session Tracing
+
+Agentforce session tracing captures detailed agent interaction data in a unified data model on Data 360. Build dashboards, reports, and queries on this data to derive insights into agent behavior and trends. Take data-driven action while testing, debugging, and monitoring agents in sandbox or production environments.
+
+-   **[About Agentforce Session Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_about.htm&language=en_US&type=5)**  
+    Agentforce session tracing captures details on agent interactions with users from start to finish. Agentforce session tracing ingests data from different sources (starting with reasoning engine logs) and combines everything under a session ID. The log provides detailed information into what happened during agent sessions: turn-by-turn interactions, reasoning engine executions, actions, prompt and gateway inputs/outputs, error messages, and final responses.
+-   **[Set Up Agentforce Session Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_setup.htm&language=en_US&type=5)**  
+    Turn on Agentforce Session Tracing to collect and store, in Data 360, detailed data about agent sessions. By default, Agentforce Session Tracing is off. For orgs with only one dataspace, it’s turned on by default when Agentforce is turned on.
+-   **[Data Model for Agentforce Session Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_data_model.htm&language=en_US&type=5)**  
+    Use the data model in Data 360 to build reports, dashboards, and queries that provide insights into agent behavior. The system streams data to data lake objects (DLOs) in Data 360 within minutes. Access the data via the standard data model objects (DMOs), which are mapped to the DLOs.
+-   **[Get Insights from Agent Session Tracing Data](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_use.htm&language=en_US&type=5)**  
+    To analyze Agentforce session tracing data, you can use observability dashboards, run queries, and build Data 360 reports using the data model.
+-   **[Billing Considerations for Agentforce Session Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_usage_types.htm&language=en_US&type=5)**  
+    Agentforce Session Tracing consumes Data 360 credits for storage used over the allocated amount.
+-   **[Implement Data Governance Permissions for Agentforce Session Tracing Objects](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace_data_governance.htm&language=en_US&type=5)**  
+    Use Data Cloud Data Governance to protect sensitive data by setting up dynamic data masking and field-specific data exclusion policies. Grant access to the impacted Data 360 objects according to an access policy.
+-   **[Agent Platform Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_trace.htm&language=en_US&type=5)**  
+    This tracing capability provides comprehensive visibility into the actions and performance of Agentforce Agents, capturing crucial telemetry data across various services. By leveraging Data 360, users can unify this trace data with session information to create detailed reports. These reports are invaluable for monitoring Key Performance Indicators (KPIs), identifying performance bottlenecks, and quickly pinpointing the root cause of issues, ultimately enhancing the reliability and efficiency of Agent implementations.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDkxMDc0NzAsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTY3NTk3ODAzMiw3MzA5OTgxMTZdfQ==
 -->
