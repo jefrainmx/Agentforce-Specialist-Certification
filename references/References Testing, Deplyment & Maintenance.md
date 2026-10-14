@@ -561,7 +561,35 @@ You now have a better idea of what the Agentforce Testing can do for you and the
 ## Resources
 
 -   [_Salesforce Help_: Batch Test with Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_copilot_testing_center.htm&release=254&type=5)
+
+# Test Your Agent
+
+Testing begins with single-session testing in Agentforce Builder, where you can manually validate agent behavior and troubleshoot issues in detail. When the agent performs reliably in individual scenarios, testing can scale by using batch tests in Agentforce Testing Center. Batch testing provides a broader view of performance across diverse scenarios, helping identify patterns, edge cases, and gaps that didn’t surface during manual testing. Together, these approaches make sure that the agent is well-tested, consistent, and ready for real-world use.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note Beginning in April 2026, agent topics are now called subagents. There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
+
+-   **[Agent Testing Strategy](https://help.salesforce.com/s/articleView?id=ai.agent_test_strategy.htm&language=en_US&type=5)**  
+    Define what your agent is built to achieve, map the observability tools that measure it, and build the plan that connects your KPIs to testing and monitoring before your agent goes live.
+-   **[Agentforce Builder Testing](https://help.salesforce.com/s/articleView?id=ai.agent_preview_and_test.htm&language=en_US&type=5)**  
+    Manual testing, like you do in Agentforce Builder, is the starting point for validating your agent’s performance. It offers a detailed, step-by-step evaluation of your agent's interactions and utterances and is especially effective for confirming configurations and exploring how the agent responds to different inputs. Throughout the agent lifecycle, plan to revisit manual testing in Agentforce Builder, especially after making changes to your agent.
+-   **[Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center.htm&language=en_US&type=5)**  
+    Build confidence in your AI agents and deliver seamless, effective interactions with thorough testing. Easily generate custom test scenarios and leverage our expert evaluation tools to assess response accuracy, conversation quality, subagent recognition, action execution, and knowledge retrieval. Identify issues early and fine-tune your agent’s behavior with precision.
+-   **[Troubleshooting Agents in the Legacy Builder](https://help.salesforce.com/s/articleView?id=ai.copilot_troubleshoot.htm&language=en_US&type=5)**  
+    Solve common agent issues.
+-   **[Enable Enhanced Event Logs](https://help.salesforce.com/s/articleView?id=ai.copilot_setup_enhanced_event_logs.htm&language=en_US&type=5)**  
+    Event logs capture the events and user messages in an agent session to help you test and troubleshoot your agent. In supported agent types, enable enhanced event logs to store conversation data and view all session activity in one place. When enhanced event logs aren't enabled, events associated with agent and user messages (such as Message sent: and User response:) are logged, but the messages themselves aren't included in the event.
+
+
+
+
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxODcxNTM5OCwyMTQ0ODAxODQsNzMwOT
+eyJoaXN0b3J5IjpbMTI4Mjg2MDUwMywyMTQ0ODAxODQsNzMwOT
 k4MTE2XX0=
 -->
