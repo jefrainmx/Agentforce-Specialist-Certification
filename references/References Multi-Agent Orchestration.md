@@ -684,12 +684,79 @@ This tutorial will primarily focus on tools.
 
 # Unleashing the Power of Connected Agents with the Newly Expanded AgentExchange.
 With support for MCP and A2A protocols as part of Agentforce 3, AI agents will now be able to integrate with tools, systems, and other agents securely and at scale.
+As AI fundamentally transforms the business landscape, enterprises are rapidly embracing a new hybrid workforce where humans and AI agents work side by side. Since launching [Agentforce](https://www.salesforce.com/agentforce/), the platform for building and deploying AI agents, last year, we’ve seen firsthand how AI agents deliver undeniable value across thousands of customer deployments, including reduced case handling time, increased subscriber retention, and significant improvements in operational efficiency.
 
+However, the true potential of these AI agents remains untapped when they’re confined to disconnected systems. Without seamless connectivity to the hundreds of applications businesses rely on, agents are limited to narrow technical domains, hindering their ability to intelligently tackle complex tasks that require work across systems.
+
+**This is precisely why secure agent interoperability with Agentforce 3 is so critical.**  
+
+We’re empowering agents with the enterprise-grade tooling, robust governance, and deep connectivity they need to operate across your complete digital infrastructure. By embracing open standards like **[Model Context Protocol](https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce?utm_campaign=amer_sfld&utm_content=Salesforce+Developers__sprout-1750696587&utm_medium=organic_social&utm_source=linkedin) (MCP)**, which facilitates secure and standardized data exchange and tool sharing between models and agents, and **[Agent-to-Agent Protocol](https://www.salesforce.com/blog/agent-interoperability/) (A2A)**, enabling seamless communication and collaboration between diverse agents, Agentforce 3 agents will now be able to integrate with tools, systems, and other AI agents securely and at scale.
+
+This means Agentforce agents will be able to autonomously resolve multi-system customer requests, orchestrate workflows that span tools across finance, HR, IT, and more, or detect emerging business risks by using information across systems. Imagine an agent independently updating customer [CRM](https://www.salesforce.com/crm/what-is-crm/) records, flagging a potential inventory issue from your ERP, and then initiating a service ticket, all from a single request.
+
+For nearly 20 years, Salesforce has been a pioneer in building an open and extensible platform with [force.com](http://force.com/), enabling thousands of partners to build apps and integrations and distribute them to Salesforce customers securely via [AppExchange](https://appexchange.salesforce.com/), the first cloud marketplace.
+
+Now, with Agentforce 3, we’re unveiling the next evolution of this ecosystem: **[AgentExchange](https://agentexchange.salesforce.com/)**. This modern, agentic marketplace, specifically designed for the AI era, allows businesses to discover pre-built agents and agent skills, and now, securely access trusted tools, resources, and other agents via native MCP and A2A support.
+
+## Deep dive: Unlocking secure agent interoperability
+
+Agentforce 3 represents a significant leap forward in empowering businesses with truly connected AI agents. Building on our open ecosystem commitment with Agentforce, we’re introducing powerful new capabilities that provide customers with full visibility and granular control over their agent deployments, offer packaged industry offerings to accelerate time-to-value, and expand agent connectivity through AgentExchange with native support for MCP and A2A.
+
+Open standards like MCP and A2A provide standardized technical protocols that allow AI agents to **access and share information and context** seamlessly, and to **collaborate directly with other agents**, regardless of their underlying platform. These standards offer a scalable alternative to traditional, often complex, one-off API integrations. These open standards have the potential to reduce the ongoing maintenance and technical overhead associated with bespoke integrations and ensure agent ecosystems can evolve and scale dynamically.
+
+While standards like MCP and A2A are fundamental to agent interoperability, simply adopting them on their own can introduce critical challenges for businesses, particularly around governance, digital identity, and granular access control. Without enterprise controls, this usage could lead to risks with data inconsistency, security vulnerability or compliance. With Agentforce 3, we’re pairing open connectivity with enterprise-grade trust and security, ensuring that agents have secure access to the tools and systems they need without compromising on control.
+
+Through embracing these standards as part of our trusted platform, we are:
+
+### 1\. Expanding agent connectivity
+
+By making MCP servers widely available in AgentExchange, we’re building on the momentum of hundreds of partner-built agent actions and providing a standardized and secure pathway for Agentforce agents to connect with an ever-growing ecosystem of third-party tools and systems.
+
+### 2\. Enabling agent-to-agent collaboration
+
+Through A2A support, Agentforce agents will be able to seamlessly communicate and orchestrate complex tasks directly with external agents, fostering truly collaborative AI workflows.
+
+This secure, enterprise-grade approach to agent interoperability will empower Agentforce agents to be significantly more performant and capable, offering scalable tool and system connectivity with unified, trusted discovery in AgentExchange. 
+
+“Agent interoperability creates a massive opportunity for our partners to leverage their existing intellectual property and extend to a whole new category of agent-first businesses,” said Brian Landsman, CEO of AppExchange and Global Partnerships at Salesforce. “Partners on the AgentExchange provide the agentic building blocks and now the agent connections so customers don’t have to DIY their AI and can confidently transform their company into an agentic enterprise.”
+
+## Modern agentic connectivity with Agentforce
+
+### Enhanced system connectivity via MCP and AgentExchange
+
+MCP acts as a universal interface, like a “universal connector for AI,” allowing AI agents to securely and scalably connect to third-party tools and systems. Hundreds of developers have already adopted this protocol, making MCP servers available to interact with their platforms. This is a significant strategic unlock, as companies can establish their MCP integration strategy once — defining how their data and functionality are exposed – and then gain access to an entire, expanding ecosystem of connectivity without needing custom integrations for each new tool.
+
+-   Earlier today, we [announced](https://www.salesforce.com/news/press-releases/2025/06/23/agentforce-3-announcement/) that **35 leading partners** – including AWS, Box, Cisco, Google Cloud, IBM, Notion, PayPal, Stripe, Teradata, WRITER, and more – are already committed to bringing their MCP servers to Agentforce and listing them for trusted discovery in AgentExchange.
+-   With Agentforce’s native MCP client, these partner MCP servers will provide an expansive new set of connectivity, enabling customers to have secure and seamless access to third-party tools and resources through a secure agent gateway. 
+-   As more companies embrace MCP, we will expand scalable connectivity through AgentExchange, ensuring customers can seamlessly discover and interact with the systems and tools needed to accomplish complex agent workflows.
+
+### Agent-to-agent collaboration with A2A
+
+A2A establishes a standardized and secure method for AI agents to communicate and exchange information directly with one another, regardless of their underlying platform or developer. Crucially, A2A provides agents with a digital identity and a structured collaboration framework, which enables them to decompose complex tasks, delegate responsibilities, and collectively execute work as “teammates.”
+
+-   Earlier this year, Salesforce actively collaborated with Google and other leading companies to co-create A2A, setting the foundational technical standard for secure agent collaboration. Companies across industries are already actively working to integrate A2A into their platforms, accelerating this era of connected, collaborative agents.
+-   The creation of A2A was a significant milestone, and we are incredibly proud to see the [Linux Foundation](https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation) take on a vital role in overseeing and advancing the protocol. Salesforce remains deeply committed to this effort and will continue to actively participate as part of the Technical Steering Committee to ensure A2A evolves as the robust, open standard for agent interoperability.
+
+“At Salesforce, we believe the future of enterprise AI lies in seamless agent-to-agent collaboration,” said Gary Lerhaupt, vice president of product architecture at Salesforce. “That’s why we are excited to be part of the Linux Foundation’s A2A Project. By helping set these crucial standards, we’re extending our open platform to empower Agentforce to orchestrate solutions from disconnected systems, ensuring secure, scalable interoperability and an enhanced digital workforce across all ecosystems.”
+
+### Modern Salesforce access via MCP
+
+For over two decades, enabling customers and partners to seamlessly access Salesforce information and context and extend applications with integrated experiences has been a cornerstone of our platform. Exposing Salesforce resources as MCP servers is an important next step to completing our interoperability story and we’ll have more to share on that soon.
+
+## The truly connected agentic enterprise is here
+
+With Agentforce 3, we are not just introducing new technology; we are delivering the foundational platform for intelligent, interconnected enterprise AI. By deeply embedding MCP and A2A, and by launching AgentExchange as the modern agentic marketplace, Agentforce 3 helps customers break down enterprise silos and deploy a highly capable and trusted hybrid workforce of humans and AI agents.
+
+This evolution is the next frontier of innovation for our ecosystem. Just as AppExchange transformed how partners extended the power of CRM, AgentExchange will become the indispensable hub for building, discovering, and deploying the AI agents that power the future of work. 
+
+With Agentforce 3, partners will be able to build, integrate, and distribute AI agents that seamlessly connect with Salesforce data and processes, delivering even greater value to our shared customers. This is critical because it ensures enterprises can maximize their Salesforce investments by integrating agents that access, understand, and act across their entire digital landscape to drive unprecedented efficiency and customer value. **The era of the truly connected enterprise AI agents is here, powered by Agentforce 3.**
+
+[Discover](https://appexchange.salesforce.com/collections/agentforce-mcp) the Agentforce Model Context Protocol (MCP) partners who are contributing to secure, open interoperability through AgentExchange, the trusted Agentforce marketplace. [Find](https://www.salesforce.com/partners/) Salesforce partners apps and experts to help power your Agentforce success.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU5MDU3OTAsLTE4NjY4OTM0MjUsLT
-E4NjY4OTM0MjUsLTE2Mzg2Njg5OTgsLTY5NjAzMTkzOSwtNDE1
-NTc4OTc1LC0xMTU3ODg3MDcyLC01NTk4MDAzNjQsNzMwOTk4MT
-E2XX0=
+eyJoaXN0b3J5IjpbLTUyMDUxNjM3LC0yMTM1OTA1NzkwLC0xOD
+Y2ODkzNDI1LC0xODY2ODkzNDI1LC0xNjM4NjY4OTk4LC02OTYw
+MzE5MzksLTQxNTU3ODk3NSwtMTE1Nzg4NzA3MiwtNTU5ODAwMz
+Y0LDczMDk5ODExNl19
 -->
