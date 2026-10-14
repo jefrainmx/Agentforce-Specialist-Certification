@@ -176,7 +176,32 @@ Unsupported files, files that fail conversion, and files that exceed a limit are
 -   [Grounding with File Inputs](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_file.htm&language=en_US&type=5)
 -   [Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&language=en_US&type=5)
 
+# Grounding with Related List Merge Fields
+
+Ground your prompt templates with your object’s related lists to add depth and context to your grounding.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note Where possible, we changed noninclusive terms to align with our company value of Equality. We maintained certain terms to avoid any effect on customer implementations.
+
+With related list support in Prompt Builder you can add related list merge fields in your prompt templates for rich grounding. When you ground a prompt template with a related list, the fields for the related list are based on the page layout of the parent object for the current user. Record-level filters aren’t applied. The retrieved data is rendered in JSON format and shown in the resolution.
+
+## Considerations, Guidelines, and Limitations
+
+Consider these points when grounding your prompt templates with related lists in Prompt Builder.
+
+-   Activities related lists on objects such as Account and Case aren’t supported.
+-   If you configure a related list in a prompt template and a user doesn’t have the related list on their parent object’s page layout or Read permission on the associated object, no related list data is sent to the LLM.
+-   Only related lists available on the object’s page layout are available for grounding in Prompt Builder. If an object has custom record types, only related lists on the master record type’s layout are available. If no default record type exists for the context user, the Salesforce default record type is used instead.
+-   When entering an expression rather than selecting a resource in the Resource field, an object is shown as `{!$RelatedList:Account.Contacts.Records}`. After you enter this expression, Prompt Builder simplifies the UI presentation, leaving only `Related List: Account.Contacts`.
+-   In situations where a related list yields zero results, the prompt response still responds successfully but without adding any related list content to the response.
+-   The User and Organization related lists aren’t supported due to a limitation involving global variables.
+-   Prompt Builder grounds related-list files that are Salesforce Files. Classic Attachment records aren’t supported.
+-   In Salesforce Classic, uploading a file from the **Notes & Attachments** or **Attachments** related list can create a classic Attachment record instead of a Salesforce File. Prompt Builder can’t resolve that file for grounding. Files uploaded from the **Files** related list, including uploads in Lightning Experience, are Salesforce Files.
+-   Related lists such as **Notes & Attachments** and **Combined Attachments** can include Salesforce Files and classic Attachment records. Prompt Builder uses only the Salesforce Files in that list.
+-   Convert existing classic Attachment records to Salesforce Files before you use them for grounding. If a related-list file is missing from the resolved prompt, then convert it to a Salesforce File and preview again. File size and system limits aren’t the cause.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODkwODcyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOT
+k4MTE2XX0=
 -->
