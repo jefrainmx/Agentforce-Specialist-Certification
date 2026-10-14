@@ -369,7 +369,277 @@ Make sure to click **Check Challenge to Earn 500 Points** before moving on to th
 -   [_Trailhead_: The Einstein Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)
 -   [_Salesforce Help_: Agentforce Testing Center Create a Test](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center_create.htm&type=5)
 
+# Use AI to Generate Tests
 
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Use AI to generate test cases.  
+    
+-   Execute batch testing in Agentforce Studio Tests.  
+    
+
+## Let AI Generate Your Tests
+
+Manually creating a diverse and scalable set of test scenarios is time-consuming and complex. The Agentforce Studio Tests has the solution. You can now use AI to effortlessly generate hundreds of synthetic interactions based on the agent’s subagents and actions to be used as test cases. This helps ensure that your agents handle various customer interactions accurately.
+
+Then you run those tests automatically in parallel to see what subagents and actions the agent chooses. From there, you can iterate by adjusting agent instructions and guardrails as needed—saving time that would have been lost on manually testing many different variations of a conversation. The result is a faster time to testing and a faster time to a more trusted agent that you feel confident deploying.
+
+A good-quality test case dataset has three quality attributes.
+
+-   **Volume:** A sufficient number of test cases to ensure comprehensive coverage of different scenarios and edge cases.  
+    
+-   **Diversity:** A wide range of inputs, contexts, and variations to test the AI agent’s adaptability across real-world use cases.  
+    
+-   **Quality:** Well-defined, accurate, and relevant test cases aligned with the AI agent’s objectives.  
+    
+
+To complete this unit, you’ll need to use the special Developer Edition org you created in the last unit. When you’re finished following the step-by-step instructions, click **Check Challenge to Earn 500 Points** at the bottom of the page.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+**Important!**
+
+-   Running tests consumes requests and credits. See [Considerations for Testing Center](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center_considerations.htm&type=5).  
+    
+-   Testing agents can modify CRM data. To avoid issues, be sure to use the Agentforce Testing Center only in your sandbox environment.  
+    
+
+## Batch Testing
+
+In the last unit you used the Agentforce Testing Center. In this unit you’ll use Agentforce Studio to generate tests with AI.
+
+1.  From the **App Launcher** ![App Launcher icon](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/use-ai-to-generate-tests/images/cd26518777b955132939a15a69512fe5_kix.4pytu4sp2xnx.png), search for and select **Agentforce Studio**.  
+    
+2.  Click **Tests**.  
+    
+3.  Click **New Test Suite** and select **Agent**.  
+    
+4.  For Test Name, enter `Generated Test Agentforce v1Copy`.  
+    
+5.  For Description, enter `Test cases for Agentforce to verify account summaries and details.Copy`  
+    
+6.  Select **Einstein Copilot** or **Agentforce (Default)**.  
+    
+7.  Click **Next**.  
+    
+8.  Click **Next**.  
+    
+9.  Select **Generate Test Cases**.  
+    
+10.  For Number of test cases, leave it at 20.  
+     
+11.  For Test Objective, enter `Generate realistic inquiries that customers might ask about their user account, orders, and other general questions about products.Copy` This is also where you can define the number of these test cases that are positive and negative to create diversity in your test cases.  
+     
+12.  For Generate Test Cases From, select the **Subagents and Actions assigned to the agent**.  
+     
+13.  Click **Next**.  
+     
+14.  Click **Generate Test Cases**.  
+     Wait for the test to be generated. You may have to refresh your browser as it may take a bit to generate the tests.  
+       
+     ![Agentforce Studio with Test cases and Run Test button.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/use-ai-to-generate-tests/images/cc22f20f6301f3622620ce0a260d4139_kix.u677rctdu051.png)  
+     
+
+15.  Click **Run Test**.  
+       
+     ![Tests with Agent Response showing Generating.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/use-ai-to-generate-tests/images/5b7883778f3c7cdd64ee23098573cd2d_kix.n7bjftcb2n5l.png)  
+     
+
+Once the tests are created, you can download them to make sure the agent is doing what you want it to do. You can also fine-tune the agent as needed. In the next unit, you take a closer look at the test results and use Agentforce Builder to troubleshoot a test.
+
+Make sure to click **Check Challenge to Earn 500 Points** before moving on to the next unit.
+
+## Resources
+
+-   [_Salesforce YouTube_: Tools to Build, Test, and Release Agentforce | TDX 2025](https://www.youtube.com/watch?v=L0MlGxPWyCM)
+-   [_Salesforce YouTube_: Agentforce Testing Center | TDX 2025](https://www.youtube.com/watch?v=TrEH6YRCde4)
+
+
+# View Test Results
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Describe Agentforce Studio test results.  
+    
+-   Troubleshoot tests in Agentforce Builder.  
+    
+
+## Working with Test Results
+
+Once the tests are completed, you can view the results and see what worked well and what didn’t work as well as you hoped. Take a look at the results for the test you ran in the last unit.
+
+1.  From the **App Launcher** ![App Launcher icon](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/view-test-results/images/cd26518777b955132939a15a69512fe5_kix.kzpm9btpyqkl.png), search for and select **Agentforce Studio**.  
+    
+2.  Click **Tests**.  
+    
+3.  Select the Test Suite **Generated Test Agentforce v1**.  
+    
+4.  Click **Run history**.  
+    Run history shows the Status, Results, and Run By for each time the test suite is run.  
+    
+5.  Select the Start Time for the test suite that you just ran.  
+    
+
+At the top you see the following: Subagent Evaluation Pass %, Action Evaluation Pass %, and Response Evaluation Pass %. This gives you a quick overview of how the different parts of the tests are completed.![“Agentforce Studio with Generated Test Agentforce v1 test statuses and Details and Download Results buttons.”](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/view-test-results/images/be579127d622fca001e72b5268862cf9_kix.qur4vd1swb9d.png)
+
+The Test Results section displays several columns. Let’s look at the first line in more detail. Your results might be different.
+
+| 
+**Utterance**
+
+ | 
+
+Please update the email address for Ilsa Galgey to new\_email@example.com.
+
+ |
+| --- | --- |
+| 
+
+**Expected Subagent**
+
+ | 
+
+MigrationDefaultTopic
+
+ |
+| 
+
+**Expected Actions**
+
+ | 
+
+\['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput', 'UpdateRecordFields'\]
+
+ |
+| 
+
+**Expected Response**
+
+ | 
+
+The email address for Ilsa Galgey has been updated to new\_email@example.com.
+
+ |
+| 
+
+**Agent Response**
+
+ | 
+
+Can I proceed with updating Ilsa Galgey's email address to new\_email@example.com?
+
+ |
+| 
+
+**Response Evaluation**
+
+ | 
+
+Pass
+
+ |
+| 
+
+**Subagent Evaluation**
+
+ | 
+
+Pass
+
+ |
+| 
+
+**Actual Subagent**
+
+ | 
+
+MigrationDefaultTopic
+
+ |
+| 
+
+**Action Evaluation**
+
+ | 
+
+Fail
+
+ |
+| 
+
+**Actual Actions**
+
+ | 
+
+\['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput'\]
+
+ |
+
+You probably recognize Utterance, Expected Subagent, Expected Actions, and Expected Response from the test file. The new information are the actual responses and results from running the tests.
+
+-   **Agent Response** shows the actual response from the agent.  
+    
+-   **Response Evaluation** shows Pass or Fail if the actual outcome matches the expected response.  
+    
+-   **Subagent Evaluation** shows Pass or Fail if the actual subagent matches the expected subagent.  
+    
+-   **Actual Subagent** shows which subagent was chosen for the utterance.  
+    
+-   **Action Evaluation** shows Pass or Fail if the actual action matches the expected actions.  
+    
+-   **Actual Actions** shows which actions the agent ran from the subagent.  
+    
+
+It looks like the above example test had a fail for Actual Actions. The Expected Actions has IdentifyRecordByName and QueryRecords and the Actual Actions has only QueryRecords. You use the Agentforce Builder for the Agentforce (Default) agent to troubleshoot the utterance of this test to get a better idea of what the agent is doing.
+
+## Troubleshoot with Agentforce Builder
+
+Switch to the Agentforce Builder and manually test the utterance in the Conversation Preview. Using Agentforce Builder in this way is a form of manual testing and lets you dig into the utterance to see the subagents, actions, and responses the agent chooses. Then try changing the utterance to test getting different results.
+
+1.  From Setup, in the Quick Find box, search for and select **Agentforce Agents**.  
+    
+2.  Select the drop down for the Agent Name you want to open and select **Open in Builder**. We’ll continue to look at the Einstein Copilot or Agentforce (Default) agent.  
+      
+    ![Agentforce agent list with the Agentforce (Default) dropdown showing Open in Builder highlighted.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/view-test-results/images/684b30388258fc54196fc4725a9451fb_kix.ax0dbfazpfp0.png)  
+    
+
+3.  In the Conversation Preview, enter the utterance `Please update the email address for Ilsa Galgey to new_email@example.com.Copy` and click **Enter**. The agent might ask you to confirm, click **Confirm** or enter `YesCopy`.  
+    
+
+The Agentforce Builder center screen shows the results, including Session Started, User Prompt, Subagent Selected , and so on.
+
+![](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/view-test-results/images/9f81681a809d1b9075b4dfcc8477443d_kix.q4rq65ujec4n.png)
+
+You also see Action Launched, which shows the Identify Record by Name (IdentifyRecordByName) action was called.
+
+![](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agentforce-agent-testing/view-test-results/images/85e5bb5c00b1f41bb9565ee61467d945_kix.ayg3cep4zky8.png)
+
+The Expected Action test criteria was expecting three actions. The failure is due to the wrong expectation.
+
+At this point there are a few options.
+
+-   The first one is to change the test Expected Action to just have the IdentifyRecordByName and ExtractFieldsAndValuesFromUserInput. But there is also the option to change the test Utterance if it was supposed to invoke both actions.  
+    
+-   Changing the utterance and checking the Actual Actions in the testing results allows you to reiterate over the tests, make changes, and verify that the agent is doing what is expected. The more tests and different test criteria you have, the higher the confidence and trust in the agent there is.  
+    
+-   Or this could be used as a negative test. Just add another test with the positive test criteria so that the criteria is covered.  
+    
+
+## Agentforce Testing Benefits
+
+Testing is an essential part of building Agentforce agents. By creating and maintaining detailed positive and negative test criteria, you’re building and maintaining the confidence and trust that your Agentforce agents are bringing to your users and customers.
+
+Agentforce Testing allows for repeated test runs that give you the ability to quickly determine if changes to your agents are having a negative impact on outcomes. You can even create the testing criteria first, run the tests, and then build the new functionality into the agents to get those tests to pass. This is known as test-driven development (TDD) in the coding community, and is a great way to build out new functionality with agents.
+
+You now have a better idea of what the Agentforce Testing can do for you and the different ways you can work with test criteria to ensure your new agents are a sure way to interact with your users and customers. Now, go forth and create some tests!
+
+## Resources
+
+-   [_Salesforce Help_: Batch Test with Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_copilot_testing_center.htm&release=254&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5NzgzNTQ1LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMjE0NDgwMTg0LDczMDk5ODExNl19
 -->
