@@ -373,7 +373,13 @@ In Short:
 -   Use **MCP** anytime an agent needs to call an external tool or API (regardless of SOMA/MOMA/A2A)
 -   **Agent Gateway** governs _all_ of the above
 
+
+# Agentforce MCP Support
+
+Connect Agentforce to new tools and resources with secure, open interoperability through verified MCP server support from AgentExchange partners.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTc4ODcwNzIsLTU1OTgwMDM2NCw3Mz
-A5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTU5NzE2MDcwMywtMTE1Nzg4NzA3MiwtNT
+U5ODAwMzY0LDczMDk5ODExNl19
 -->
