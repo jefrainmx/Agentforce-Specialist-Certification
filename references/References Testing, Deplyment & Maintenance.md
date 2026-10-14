@@ -493,60 +493,12 @@ The Test Results section displays several columns. Let’s look at the first lin
 | **Expected Subagent**| MigrationDefaultTopic |
 |**Expected Actions**| \['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput', 'UpdateRecordFields'\]|
 |**Expected Response**| The email address for Ilsa Galgey has been updated to new\_email@example.com.|
-|
-
-**Agent Response**
-
- | 
-
-Can I proceed with updating Ilsa Galgey's email address to new\_email@example.com?
-
- |
-| 
-
-**Response Evaluation**
-
- | 
-
-Pass
-
- |
-| 
-
-**Subagent Evaluation**
-
- | 
-
-Pass
-
- |
-| 
-
-**Actual Subagent**
-
- | 
-
-MigrationDefaultTopic
-
- |
-| 
-
-**Action Evaluation**
-
- | 
-
-Fail
-
- |
-| 
-
-**Actual Actions**
-
- | 
-
-\['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput'\]
-
- |
+|**Agent Response**|Can I proceed with updating Ilsa Galgey's email address to new\_email@example.com?|
+|**Response Evaluation**| Pass|
+|**Subagent Evaluation**| Pass|
+|**Actual Subagent**| MigrationDefaultTopic|
+|**Action Evaluation**| Fail|
+|**Actual Actions**| \['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput'\]|
 
 You probably recognize Utterance, Expected Subagent, Expected Actions, and Expected Response from the test file. The new information are the actual responses and results from running the tests.
 
@@ -610,6 +562,6 @@ You now have a better idea of what the Agentforce Testing can do for you and the
 
 -   [_Salesforce Help_: Batch Test with Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_copilot_testing_center.htm&release=254&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzQ5MDA2MCwyMTQ0ODAxODQsNzMwOT
+eyJoaXN0b3J5IjpbLTMxODcxNTM5OCwyMTQ0ODAxODQsNzMwOT
 k4MTE2XX0=
 -->
