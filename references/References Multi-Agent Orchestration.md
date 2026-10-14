@@ -460,8 +460,16 @@ MCP is the power behind the [AgentExchange](https://agentexchange.salesforce.com
 -   Salesforce site: [Salesforce Launches Agentforce 3 to Solve the Biggest Blockers to Scaling AI Agents: Visibility and Control](https://www.salesforce.com/news/press-releases/2025/06/23/agentforce-3-announcement/)
 -   Salesforce Admins Blog: [A Test-Driven Approach to Building Better Agents](https://admin.salesforce.com/blog/2025/a-test-driven-approach-to-building-better-agents)
 
+Announcements
+
+# Introducing the Model Context Protocol
+
+Nov 25, 2024
+
+![An abstract illustration of critical context connecting to a central hub](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fwww-cdn.anthropic.com%2Fimages%2F4zrzovbb%2Fwebsite%2F3aabd8804251c0364cbde9d2e4be6dc8e8c2faec-2880x1620.png&w=3840&q=75)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU5NTE4OTYxLC00MTU1Nzg5NzUsLTExNT
+eyJoaXN0b3J5IjpbNTQ3MDcxNjI0LC00MTU1Nzg5NzUsLTExNT
 c4ODcwNzIsLTU1OTgwMDM2NCw3MzA5OTgxMTZdfQ==
 -->
