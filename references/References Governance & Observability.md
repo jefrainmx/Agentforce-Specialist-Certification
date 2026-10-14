@@ -180,6 +180,93 @@ Monitor instruction adherence and task resolution for your agents.
 -   **[Task Resolution](https://help.salesforce.com/s/articleView?id=ai.agent_guardrails_task_resolution.htm&language=en_US&type=5)**  
     Task resolution is an agent guardrail. It evaluates how well your agents interpret the user's intent, as expressed in a given conversation, and how well it resolves the task.
 
+
+# Monitor Agentforce Session Log Events
+
+Monitor log events captured during AI agent sessions in the AI Agent Session Log data model object (DMO).
+
+## AI Agent Session Log DMO
+
+[AiAgentSessionLog](https://developer.salesforce.com/docs/data/data-cloud-dmo-mapping/guide/c360dm-si-aiagentsessionlogdmo-dmo.html) is a Data 360 DMO that captures details about structured log events emitted during AI agent sessions. It captures informational, warning, debug, and error events. Use this data to analyze run-time behavior, troubleshoot failures, and trace issues across single-agent and multi-agent flows.
+
+AiAgentSessionLog has these attributes.
+
+Field Reference
+| Field Label | Field DEVELOPER Name | Data Type | Description |
+| --- | --- | --- | --- |
+| `AI Agent Session Log Id` | `Id` | Text | Primary key |
+| `AI Agent Session` | `AiAgentSessionId` | Foreign key | Foreign key to `AiAgentSession`. Required. |
+| `AI Agent Interaction` | `AiAgentInteractionId` | Foreign key | Foreign key to `AiAgentInteraction`. Nullable. |
+| `AI Agent Interaction Step` | `AiAgentInteractionStepId` | Foreign key | Foreign key to `AiAgentInteractionStep`. Nullable. |
+| `Telemetry Trace` | `TelemetryTrace` | Text | Shared identifier used for implicit joins on TraceId among DMOs (`AiAgentInteraction`, `TelemetryTraceSpan`, `AiAgentSessionLog`). Nullable. |
+| `Telemetry Trace Span` | `TelemetryTraceSpanId` | Foreign key | Foreign key to `TelementryTraceSpan`. Nullable. |
+| `Cause Log` | `CauseLogId` | Foreign key | Self-FK. Immediate wrapped or underlying cause. Entries can reference a log entry in a different session. Populated only when `LogLevel` is `ERROR` or `FATAL`. |
+| `Root Cause Log` | `RootCauseLogId` | Foreign key | Self-FK. Deepest known cause (denormalized). Entries can reference a log entry in a different session. Populated only when LogLevel is `ERROR` or `FATAL`. |
+| `Log Date Time` | `LogDateTime` | Datetime | Timestamp of the log event. |
+| `Log Level Type` | `LogLevelType` | Text | Log level. Values: `DEBUG` | `INFO` | `WARNING` | `ERROR` | `FATAL` |
+| `Category` | `Category` | Text | Contextual domain of the log entry. Examples: Tool, LLM, Retrieval, Guardrail, Auth, HTTP, Delegation, Platform, Lifecycle, Performance |
+| `Code` | `Code` | Text | Structured code for the event. For errors: user-facing error code (consistent with Salesforce existing codes). For non-errors: event type identifier (examples: `TOOL_INVOCATION_START`, `LLM_RESPONSE_RECEIVED`). |
+| `Description` | `Description` | Text | Short, human-readable summary of the issue. |
+| `Detailed Description` | `DetailedDescription` | Text | Structured JSON payload with diagnostics. Schema varies by `Category` and `LogLevelType`. |
+
+## Error Codes for Agentforce Session Logs
+
+The `Code` field in `AIAgentSessionLog` captures a standardized error code that identifies what happened when an Agentforce agent session encountered an issue during that session. This section describes valid values for `Code`, grouped by where it occurs in the agent's execution. Use this information to monitor, filter, and troubleshoot agent behavior.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note This list reflects the current error codes. Salesforce may add new codes as agent capabilities expand. Any changes to existing error codes (for example, if an error code is removed or repurposed) are documented.
+
+**How Code Relates to Category and LogLevel**
+
+Use `Code` with these fields on the same record:
+
+-   `Category`—which part of the agent pipeline raised the issue (for example, planning, tool execution, or model gateway).
+-   `LogLevel`—how severe the event is (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `FATAL`).
+-   `Code`—specifically what occurred.
+
+**Agent Step Execution Errors**
+
+| Code | Meaning | Typical Severity | Recommended Action |
+| --- | --- | --- | --- |
+| `ACTION_EXECUTION_FAILED` | An agent action (tool or flow invocation) failed to complete. | ERROR | Check the action's own logs or response for the underlying failure. Try again if transient. |
+| `LLM_STEP_FAILED` | A model-reasoning step in the agent's plan failed. | ERROR | Review the prompt or step configuration. Check for model gateway issues in the same session. |
+| `STEP_EXECUTION_FAILED` | A generic plan step failed outside of the other two categories. | ERROR | Inspect the session transcript for the failing step. |
+
+**Agent-to-Agent (A2A) Delegation Errors**
+
+| Code | Meaning | Typical Severity | Recommended Action |
+| --- | --- | --- | --- |
+| `A2A_BAD_REQUEST` | The delegating agent sent a malformed request to another agent. | ERROR | Check the calling agent's configuration or payload. |
+| `A2A_UNAUTHORIZED` | The receiving agent rejected the request due to permissions. | ERROR | Verify permission sets and sharing between the delegating and receiving agents. |
+| `A2A_TIMEOUT` | The receiving agent didn't respond in time. | WARNING | Try again. Check the load on the receiving agent. |
+| `A2A_SYSTEM` | An internal system error occurred during delegation. | ERROR | Try again. Contact Salesforce Support if it doesn't resolve. |
+
+**Planning Errors**
+
+| Code | Meaning | Typical Severity | Recommended Action |
+| --- | --- | --- | --- |
+| `PLANNER_INVALID_AGENT_DSL` | The agent's plan definition was malformed. | ERROR | Review the agent's subagent and action configuration. |
+| `PLANNER_AGENT_NOT_FOUND` | The plan referenced an agent that doesn't exist or isn't active. | ERROR | Confirm that the agent is active and correctly referenced. |
+| `PLANNER_SESSION_NOT_FOUND` | The plan referenced a session that has expired or doesn't exist. | WARNING | Check session lifecycle and timeout settings. |
+
+**Model (LLM) Gateway Errors**
+
+| Code | Meaning | Typical Severity | Recommended Action |
+| --- | --- | --- | --- |
+| `PLANNER_LLM_GATEWAY_TIMEOUT` | The model gateway didn't respond in time. | WARNING | Try again. Check the model gateway status. |
+| `PLANNER_LLM_GATEWAY_RATE_LIMIT` | The model gateway rejected the request due to rate limiting. | WARNING | Reduce the request volume or request a limit increase. |
+| `PLANNER_LLM_GATEWAY_SERVICE_UNAVAILABLE` | The model gateway service was unavailable. | ERROR | Try again. Check for a service-wide incident. |
+
+**Cross-functional / System Errors**
+
+| Code | Meaning | Typical Severity | Recommended Action |
+| --- | --- | --- | --- |
+| `CIRCUIT_BREAKER_OPEN` | A downstream dependency is failing repeatedly. Short circuits requests to protect the system. | WARNING | Wait and try again. Check the status of the dependent service. |
+| `RATE_LIMIT_EXCEEDED` | The session exceeded an allowed request rate. | WARNING | Reduce request volume. |
+| `UNEXPECTED_ERROR` | An unclassified internal error occurred. | ERROR | Try again. Contact Support with the session ID if it recurs. |
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NzI4NzI3Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbODgxNTEwOTkxLDczMDk5ODExNl19
 -->
