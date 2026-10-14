@@ -1039,8 +1039,126 @@ Next, let’s take a look at what happens to this prompt when it crosses the Sec
 -   [_Salesforce AI Research_: Trusted AI](https://www.salesforceairesearch.com/trusted-ai)
 -   [_Trailhead_: Data Quality](https://trailhead.salesforce.com/content/learn/modules/data_quality)
 -   [_Trailhead_: Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)
+
+
+# Follow the Response Journey
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Describe the response journey.  
+    
+-   Explain zero data retention.  
+    
+-   Discuss why toxic language detection is important.  
+    
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+This module includes some beta features of the Einstein Trust Layer. Customers should make their purchase decisions based upon features that are currently generally available.
+
+## A Quick Prompt Journey Review
+
+You can already see the careful steps Salesforce takes with the Einstein Trust Layer to protect Jessica’s customer data and their company data. Before you learn more, do a quick review of the prompt journey.
+
+-   A prompt template was automatically pulled in from Service Replies to assist with Jessica’s customer service case.  
+    
+-   The merge fields in the prompt template were populated with trusted, secure data from Jessica’s org.  
+    
+-   Relevant knowledge articles and details from other objects were retrieved and included to add more context to the prompt.  
+    
+-   Personally identifiable information (PII) was masked.  
+    
+-   Extra security guardrails were applied to the prompt to further protect it.  
+    
+-   Now the prompt is ready to pass through the secure gateway to the external LLM.  
+    
+
+### The Secure LLM Gateway
+
+Populated with relevant data, with protective measures in place, the prompt is ready to leave the Salesforce Trust Boundary by passing through the Secure LLM Gateway to connected LLMs. In this case, the LLM Jessica’s org is connected to is OpenAI. OpenAI uses this prompt to generate a relevant, high-quality response for Jessica to use in her conversation with her customer.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+The prompt may interact with the Trust Layer differently when interacting with LLMs that live inside the Salesforce Trust Boundary, such as Salesforce LLMs developed in-house.
+
+## Zero Data Retention
+
+If Jessica was using a consumer-facing LLM tool, like a generative AI chatbot, without a robust trust layer, her prompt, including all of her customer’s data, and even the LLM’s response, could be stored by the LLM for model training. But when Salesforce partners with an external API-based LLM, we require an agreement to keep the entire interaction safe—it’s called _zero data retention_. Our zero data retention policy means that no customer data including the prompt text and generated responses are stored outside of Salesforce.
+
+![A closeup of the process a prompt takes through the secure gateway to the LLM shows that no data is retained by the LLM.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-response-journey/images/8650fd5c91ab40f271f5d5eaba2029d9_kix.t0en6fqjogkd.png)
+
+Here’s how it works. Jessica’s prompt is sent out to an LLM—remember, that prompt is an instruction. The LLM takes that prompt, and following its instructions while adhering to the guardrails, generates one or more responses.
+
+Typically, OpenAI wants to retain prompts and prompt responses for a period of time to monitor for abuse. OpenAI’s incredibly powerful LLMs check to see if anything unusual is happening to their models—like the prompt injection attacks that you learned about in the last unit. But our zero data retention policy prevents the LLM partners from retaining any data from the interaction. We arrived at an agreement where _we_ handle that moderation.
+
+We don’t allow OpenAI to store anything. So when a prompt is sent to OpenAI, the model forgets the prompt and the responses as soon as the response is sent back to Salesforce. This is important because it allows Salesforce to handle its own content and abuse moderation. Additionally, users like Jessica don’t have to worry about LLM providers retaining and using their customers’ data.
+
+## The Response Journey
+
+When we first introduced Jessica, we mentioned that she was a little nervous that AI-generated replies might not match her level of conscientiousness. She’s really not sure what to expect, but she doesn’t need to worry, because the Einstein Trust Layer has that covered. It contains several features that help keep the conversation personalized and professional.
+
+![The Einstein Trust Layer highlighting the response journey.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-response-journey/images/483d6445faf7b199bac9dae7aa8212dd_kix.ly8y81u4qdpt.png)
+
+So far, we’ve seen the prompt template from Jessica’s conversation with her customer become populated with relevant customer information and helpful context related to the case. Now, the LLM has digested those details and delivered a response back into the Salesforce Trust Boundary. But it’s not quite ready for Jessica to see, yet. While the tone is friendly and the content accurate, it still needs to be checked by the Trust Layer for unintended output. The response also still contains blocks of masked data, and Jessica would think that’s much too impersonal to share with her customer. The Trust Layer still has a few more important actions to perform before it shares the response with her.
+
+![A customer service reply shows masked personal information and a link to a relevant knowledge article.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-response-journey/images/2f3738e640ad56d375ede630fbe0533a_kix.hmie3aj2kcps.png)
+
+Hello **<NAME\_1>**! It’s great to speak with you. I’m sorry you’re having trouble upgrading your credit card today - we appreciate your 5+ years of partnership with **<COMPANY\_1>** and we’ll work to resolve this issue swiftly.
+
+Yes, there is a minimum credit score that is required\*for some of our credit card offerings. Could you tell me more about what trouble you’re having with the application process?
+
+Source: Minimum Requirements for Cumulus Card Upgrades
+
+### Toxic Language Detection and Data Demasking
+
+Two important things happen as the response to Jessica’s conversation passes back into the Salesforce Trust Boundary from the LLM. First, _toxic language detection_ protects Jessica and her customers from toxicity. What’s that, you ask? The Trust Layer uses machine learning models to identify and flag toxic content in prompts and responses, in five categories: violence, sexual, profanity, hate, and physical. The overall toxicity score combines the scores from all detected categories and produces an overall score that ranges from 0 to 1, with 1 being the most toxic. The score for the initial response is returned along with the response to the application that called it—in this case, Service Replies.
+
+Next, before the generated response is shared with Jessica, the Trust Layer needs to reveal the masked data we talked about earlier so that the response is personal and relevant to Jessica’s customer. The Trust Layer uses the same tokenized data we saved when we originally masked the data to demask it. Once the data is demasked, the response is shared with Jessica.
+
+Also, notice that there is a Source link at the bottom of the response. Knowledge Article Creation adds credibility to responses by including links to contributing, helpful source articles.
+
+![A demasked service reply recommendation including a link to a knowledge article.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-response-journey/images/6a3658d1224ac8674ef0b0d9f10e136f_kix.n403eppnai7p.png)
+
+Hello **Dennis Maxfield**! It’s great to speak with you. I’m sorry you’re having trouble upgrading your credit card today - we appreciate your 5+ years of partnership with **Cumulus Financial** and we’ll work to resolve this issue swiftly.
+
+Yes, there is a minimum credit score that is required\* for some of our credit card offerings. Could you tell me more about what trouble you’re having with the application process?
+
+Source: Minimum Requirements for Cumulus Card Upgrades
+
+### Feedback Framework
+
+Now, seeing the response for the first time, Jessica smiles. She’s impressed with the quality and level of detail in the response she received from the LLM. She’s also pleased with how well it aligns with her personal case-handling style. As Jessica reviews the response before sending it to her customer, she sees that she can choose to accept it as is, edit it before sending it, or ignore it.
+
+She can also give qualitative feedback in the form of a thumbs up or thumbs down, and if the response wasn’t helpful, specify a reason why. This feedback is collected, and in the future, it can be [securely used to improve](https://help.salesforce.com/s/articleView?id=ai.generative_ai_feedback.htm&type=5) the quality of the prompts.
+
+![The feedback framework.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-response-journey/images/5da9dfee4d49fcab2c1e5b8feba852c2_kix.sp14vru2j2ku.png)
+
+### Audit Trail
+
+There is one final piece of the Trust Layer to show you. Remember the zero data retention policy we talked about in the beginning of this unit? Since the Trust Layer is handling toxic language scoring and moderation internally, we keep track of every step that happens during the entire prompt-to-response journey.
+
+Everything that has transpired during this entire interaction between Jessica and her customer is timestamped metadata that we collect into an audit trail. This includes the prompt, the original unfiltered response, any toxic language scores, and feedback collected along the way. The Einstein Trust Layer audit trail adds a level of accountability so Jessica can be sure her customer’s data is protected.
+
+![The customer service reply shows the audit trail and timestamped metadata.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-response-journey/images/dd775808896a5c5b1e6b9c53f9208a1b_kix.8kxn70ha9pin.jpg)
+
+A lot has happened since Jessica started helping her customer, but it all happened within a blink of an eye. Within seconds, her conversation went from a prompt called by a chat, through the security of the entire Trust Layer process, to a relevant, professional response she can share with a customer.
+
+She closes the case, knowing her customer is happy with the response and the customer service experience he received. And best of all, she’s excited to continue to use the generative AI power of Service Replies, because she feels confident that it will help her close her cases faster and delight her customers.
+
+Every single one of the Salesforce generative AI solutions goes through the same Trust Layer journey. All of our solutions are safe, so you can be confident that your data and your customers data is secure.
+
+Congratulations, you just learned how the Einstein Trust Layer works! To learn more about what Salesforce is doing around trust and generative AI, earn the [Responsible Creation of Artificial Intelligence](https://trailhead.salesforce.com/content/learn/modules/responsible-creation-of-artificial-intelligence) Trailhead badge.
+
+## Resources
+
+-   [_Trailhead_: Responsible Creation of Artificial Intelligence](https://trailhead.salesforce.com/content/learn/modules/responsible-creation-of-artificial-intelligence)
+-   [_Salesforce Help_: Einstein Generative AI & Trust](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_overview.htm&type=5)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTk2NTg2NiwxODYzNDQ3ODA2LC05Mz
-c1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2
-XX0=
+eyJoaXN0b3J5IjpbNzYwMTU1NDU1LDE4NjM0NDc4MDYsLTkzNz
+U5MTI3NSwyMDM1OTY5MjA4LDE4OTg5MDg3Miw3MzA5OTgxMTZd
+fQ==
 -->
