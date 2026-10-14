@@ -650,37 +650,9 @@ Depending on where you sit in the ecosystem, MCP can have a range of benefits.
 
 MCP is an open protocol supported across a wide range of clients and servers. AI assistants like [Claude](https://claude.com/docs/connectors/building) and [ChatGPT](https://developers.openai.com/api/docs/mcp/), development tools like [Visual Studio Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers), [Cursor](https://cursor.com/docs/context/mcp), [MCPJam](https://docs.mcpjam.com/getting-started), and many others all support MCP — making it easy to build once and integrate everywhere.
 
-> ## Documentation Index
-> Fetch the complete documentation index at: https://modelcontextprotocol.io/llms.txt
-> Use this file to discover all available pages before exploring further.
 
-# Build an MCP server
-
-> Get started building your own server to use in Claude for Desktop and other clients.
-
-In this tutorial, we'll build a simple MCP weather server and connect it to a host, Claude for Desktop.
-
-### What we'll be building
-
-We'll build a server that exposes two tools: `get_alerts` and `get_forecast`. Then we'll connect the server to an MCP host (in this case, Claude for Desktop):
-
-<Frame>
-  <img src="https://mintcdn.com/mcp/4ZXF1PrDkEaJvXpn/images/current-weather.png?fit=max&auto=format&n=4ZXF1PrDkEaJvXpn&q=85&s=dce7b2f8a06c20ba358e4bd2e75fa4c7" width="2780" height="1849" data-path="images/current-weather.png" />
-</Frame>
-
-<Note>
-  Servers can connect to any client. We've chosen Claude for Desktop here for simplicity, but we also have a guide on [building your own client](/docs/2026-07-28/develop/build-client).
-</Note>
-
-### Core MCP Concepts
-
-MCP servers can provide three main types of capabilities:
-
-1. **[Resources](/docs/2026-07-28/learn/server-concepts#resources)**: File-like data that can be read by clients (like API responses or file contents)
-2. **[Tools](/docs/2026-07-28/learn/server-concepts#tools)**: Functions that can be called by the LLM (with user approval)
-3. **[Prompts](/docs/2026-07-28/learn/server-concepts#prompts)**: Pre-written templates that help users accomplish specific tasks
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTczOTIyNDQsLTE4NjY4OTM0MjUsLT
+eyJoaXN0b3J5IjpbLTE4NjY4OTM0MjUsLTE4NjY4OTM0MjUsLT
 E2Mzg2Njg5OTgsLTE4NjY4OTM0MjUsLTY5NjAzMTkzOSwtNDE1
 NTc4OTc1LC0xMTU3ODg3MDcyLC01NTk4MDAzNjQsNzMwOTk4MT
 E2XX0=
