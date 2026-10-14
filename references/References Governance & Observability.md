@@ -23,6 +23,80 @@ Note Beginning in April 2026, agent topics are now called subagents. There are n
 -   **[Monitor Agentforce Session Log Events](https://help.salesforce.com/s/articleView?id=ai.agentforce_diagnostic_data_model.htm&language=en_US&type=5)**  
     Monitor log events captured during AI agent sessions in the AI Agent Session Log data model object (DMO).
 
+# Agent Analytics
+
+Analyze your AI agents’ performance within user and agent sessions. Agent Analytics is built on the unified Session Tracing Data Model (STDM), which captures every event and interaction within a session and logs it as individual events. You can query the logged ‌events to gain insights and optimize the Agent.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note Beginning in April 2026, agent topics are now called subagents. There are no changes to functionality. During this transition, you may see a mix of the new and previous terms in our documentation.
+
+-   **[About Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_about.htm&language=en_US&type=5)**  
+    Analyze the performance of your AI agents. Agent Analytics is a tool specifically designed for comprehensive session analysis. Built on the unified Session Tracing Data Model (STDM), it captures every turn and event occurring in and across all your agent sessions. You can then query the logged events to gain insights and optimize agent performance.
+-   **[Set Up Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_setup.htm&language=en_US&type=5)**  
+    Set up Agent Analytics to gain insights into agent performance, track conversation metrics, and optimize your agents with comprehensive dashboards and session insights.
+-   **[Customize Agentforce Observability](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_observability_customization.htm&language=en_US&type=5)**  
+    Customize Agent Analytics when the standard metrics don't fully represent your business processes. Use scorer results and the analytics semantic data model to refine metrics and surface them in dashboards.
+-   **[Data Model and Calculated Fields for Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_data_model.htm&language=en_US&type=5)**  
+    The data model for Agent Analytics is based on Agent Session Tracing, which contains detailed session trace logs of agent behavior. The data model also includes references to every LLM call that the reasoning engine makes to support joins with feedback data or guardrails metrics. Extended Service Data Model DMOs, such as GenAiFeedback, GenAIContentCategory, and TenantEnrichedUsageEvent support feedback, Trust Layer, and flex credit analytics.
+-   **[Get Insights with Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_use.htm&language=en_US&type=5)**  
+    Monitor agent performance in Agentforce Studio with Agent Analytics dashboards, then open Sessions & Intents to audit transcripts, compare intents, and address low-quality sessions.
+-   **[Improve Agent Performance with Agent Optimizer (Beta)](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimization_agent_use.htm&language=en_US&type=5)**  
+    Understand agent performance, identify high-impact problems, investigate their causes, and get suggestions for improving sessions in Agentforce Studio.
+-   **[Troubleshoot Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_troubleshoot.htm&language=en_US&type=5)**  
+    If you’re unable to see the information, models, dashboards, or metrics that you expect, try these solutions.
+
+# Agent Optimization
+
+Use Agent Optimization to inspect agent sessions from the initial user request to the agent’s resolution.
+
+Watch this video to learn how Agentforce Optimization and Agent Analytics work together to help you continuously refine and improve your AI agents.
+
+[![Watch: Agentforce Optimization and Agent Analytics](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/agentforce_optimization_analytics_video.png)](https://youtu.be/QgSfsD3qwXI?si=BMyIClrzau1-uLP6)
+
+Here are the steps and information required to set up and use Agentforce Optimization.
+
+-   **[About Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_about.htm&language=en_US&type=5)**  
+    Agent Optimization provides tools to dive deeper into unresolved interactions, identify knowledge gaps, and analyze agent sessions using the Session Tracing Data Model. Agent Optimization is a key component of Agentforce Observability, designed to help you understand how your AI agents perform in real-world scenarios. By analyzing user interactions and agent responses, you can identify areas for improvement and take action to enhance agent effectiveness.
+-   **[Set Up Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_setup.htm&language=en_US&type=5)**  
+    To use Agent Optimization, turn it on in Einstein Setup. Analyze agent sessions, identify knowledge gaps, and explore unresolved interactions based on Agentforce Session Tracing data.
+-   **[Scorers and Custom Scorers](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_scorers.htm&language=en_US&type=5)**  
+    Scorers evaluate agent sessions for quality and business insights. You can score sessions with prompt templates that run automatically, by API, or manually in Agentforce Studio. Use out-of-the-box scorers, edit existing scorers, or create custom scorers with predefined or open-ended outputs.
+-   **[Use Intents in Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_intent_use.htm&language=en_US&type=5)**  
+    Work with intents in Agent Optimization to understand user requests, analyze interaction patterns, and improve your agent's performance.
+-   **[Troubleshoot Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_troubleshoot.htm&language=en_US&type=5)**  
+    Resolve common issues with Agent Optimization, including setup problems, data display issues, and performance concerns.
+-   **[Data Model for Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_data_model.htm&language=en_US&type=5)**  
+    Agent Optimization extends Session Tracing Data Model (STDM) capabilities by provisioning additional data model elements that track session moments and user intent. An LLM identifies, clusters, and tags these moments. The resulting information enables targeted queries and insights into user engagement metrics, moment duration, and response relevance quality scores.
+-   **[Analyze Data with Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_use.htm&language=en_US&type=5)**  
+    Use Agent Optimization to drill into sessions, analyze quality scores, and identify patterns to improve your agent's performance.
+
+# Monitor Agent Health
+
+Agent Health Monitoring detects and notifies you of silent agent failures—like spiking error rates or high latency—in near-real time across your AI agents. Rapidly respond to agent performance issues to mitigate customer impact.
+
+## Manage the Health of Your Agents
+
+Built on the data foundation of [Agentforce Session Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace.htm&language=en_US&type=5), Agent Health Monitoring gives your team visibility into agent performance.
+
+-   Create alerts and get notified when agent performance breaches alert thresholds.
+-   Observe agent health status and trends with Tableau Next visualizations.
+-   Rapidly investigate and resolve agent performance issues.
+-   Drill into detailed Agentforce session traces to debug conversation flows and identify root causes quickly.
+-   Implement agent improvements as needed. Then test, deploy and continue to monitor your agent.
+
+## Limitations and Considerations
+
+-   Currently, the custom metric drill-down page supports only time-based filtering, lacking the specific criteria-based filters needed to isolate the sessions that triggered an alert.
+-   Alerts created previously during the Agent Health Monitoring (Beta) program aren’t supported in this GA release. You must create new alerts by using the GA release.
+-   By shifting the alert evaluation frequency from 1 to 10 minutes, we reduce infrastructure load while maintaining compliance with our service-level agreements. This change results in a slight increase in expected alert latency, with customer notifications now arriving between 3 and 7 minutes.
+
+-   **[Set Up Agent Health Monitoring](https://help.salesforce.com/s/articleView?id=ai.agent_monitor_health_setup.htm&language=en_US&type=5)**  
+    Set up Agent Health Monitoring so you can create alerts and get notified when agent performance breaches alert thresholds. Observe agent health status and trends. Rapidly investigate and resolve agent performance issues.
+-   **[Manage Alerts for Agent Health Monitoring](https://help.salesforce.com/s/articleView?id=ai.agent_monitor_health_alert.htm&language=en_US&type=5)**  
+    Set up an alert to monitor a metric for a particular agent. You receive an email notification when a performance data breaches an alert threshold.
+-   **[Investigate Notifications](https://help.salesforce.com/s/articleView?id=ai.agent_monitor_health_notification.htm&language=en_US&type=5)**  
+    Manage the notifications that you received from monitoring alerts that you created. The system sends a notification to your email inbox whenever agent data for a monitored metric breaches an alert threshold.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTAwMjQ4Niw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTM0NDEyNzQzMCw3MzA5OTgxMTZdfQ==
 -->
