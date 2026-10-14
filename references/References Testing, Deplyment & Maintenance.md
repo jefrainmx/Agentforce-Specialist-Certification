@@ -676,7 +676,7 @@ Resolution
 
 Follow these two stages to deploy a change set: first upload it from your sandbox, then deploy it in your production org.
 
-### **Create and upload a change set in your source sandbox organization**
+### **Create and upload a change set in your source sandbox organization**
 
 1.  Log in to your sandbox.
 2.  Navigate to **Setup** and enter c_hange set_ into the Quick Find box.
@@ -684,25 +684,25 @@ Follow these two stages to deploy a change set: first upload it from your sandbo
 4.  Click **New**.
 5.  Enter the new Change Set name and description, then click **Save**.
 6.  From the "Change Set Components" related list, click **Add**.
-7.  Add profiles to the Change Set for the Users you'd like to grant access.
-8.  Select the "Component Type" for the component you want to deploy (for example, Apex class, Apex Trigger).
+7.  Add profiles to the Change Set for the Users you'd like to grant access.
+8.  Select the "Component Type" for the component you want to deploy (for example, Apex class, Apex Trigger).
 9.  Select the specific class or trigger name, then click **Add to Change Set**.
-10.  From the "Change Set Detail" related list, click **Upload**, then select the target organization as **Production**.
+10.  From the "Change Set Detail" related list, click **Upload**, then select the target organization as **Production**.
 11.  Click **Upload**.
 
-After your upload has completed, you'll receive an email to confirm completion of your Change Set upload.To complete the migration, an inbound change administrator can deploy the Change Set in the destination production organization.  
- 
+After your upload has completed, you'll receive an email to confirm completion of your Change Set upload.To complete the migration, an inbound change administrator can deploy the Change Set in the destination production organization.  
+ 
 
 ### **Complete the deployment in your target production organization**
 
 1.  Login to the target organization.
 2.  Navigate to **Setup** and enter _Change Set_ into the Quick Find box.
-3.  Click **Inbound Change Sets**.
+3.  Click **Inbound Change Sets**.
 4.  Under "Change Sets Awaiting Deployment," click your Change Set's name.
-5.  Click **Validate** to validate the components. 
+5.  Click **Validate** to validate the components. 
 6.  Click **Deploy**.
 
-Once you have a successful validation, repeat the above steps and choose **Deploy** on step 5 to complete the deployment of your Change Set. 
+Once you have a successful validation, repeat the above steps and choose **Deploy** on step 5 to complete the deployment of your Change Set. 
 
 ### Code Coverage Requirement
 
@@ -711,8 +711,8 @@ For a successful deployment, your Apex code must have at least 75% test coverage
 Additional Resources
 
   
-[Change Sets Implementation Tips](https://help.salesforce.com/s/articleView?id=platform.changesets_implementation_notes.htm&type=5&language=en_US)   
-[Monitor Deployments](https://help.salesforce.com/s/articleView?id=platform.deploy_monitoring.htm&type=5&language=en_US)   
+[Change Sets Implementation Tips](https://help.salesforce.com/s/articleView?id=platform.changesets_implementation_notes.htm&type=5&language=en_US)   
+[Monitor Deployments](https://help.salesforce.com/s/articleView?id=platform.deploy_monitoring.htm&type=5&language=en_US)   
 [Components Available in Change Sets](https://help.salesforce.com/s/articleView?id=platform.changesets_about_components.htm&type=5&language=en_US)  
 [Deploy profiles via change sets](https://help.salesforce.com/s/articleView?id=000386377&type=1&language=en_US)  
 [**Connect Organizations for Deployment**](https://help.salesforce.com/s/articleView?id=platform.deploy_connection_parent.htm&type=5&language=en_US)  
@@ -722,12 +722,117 @@ Additional Resources
 [How to Add Components to a Change Set and Upload](https://youtu.be/AFezX6KWaFg)  
 [How to Create a Deployment Connection for a Change Set](https://www.youtube.com/watch?v=vJm3rsFts8U)
 
+# Activate or Deactivate Your Agent
+
+Activate your agent to make it available to your customers or employees. When an agent is deployed to one or more channels, including the Agentforce panel, activating the agent makes it immediately available to your users.
+
+Only one version of an agent can be active at a time. You can have up to 100 concurrently active agents. When you activate a version of an agent that already has an active version, the currently active version is automatically deactivated.
+
+Deactivating an agent interrupts any ongoing user conversations. Users aren’t notified that an agent is deactivated. The agent sends the system error message as a response to any messages.
+
+-   If the agent uses the Agentforce panel, the panel is available until the user closes it, and it can’t be reopened until the agent is active.
+-   If the agent is connected to an active Enhanced Chat deployment, the chat window appears, but the agent doesn't join the conversation.
+
+## Activate or Deactivate an Agent
+
+1.  From the Agents page of the Agentforce Studio app, open the agent you want to activate or deactivate.
+2.  If there are multiple versions of your agent, from the header in Agentforce Builder, select the agent version you want to activate or deactivate.
+3.  Click **Activate** to make your agent live or **Deactivate** to remove it from service.
+
+After you activate a version, you can no longer make changes to it, even after you deactivate it. To make changes, [create another version.](https://help.salesforce.com/s/articleView?id=ai.agent_versions_draft.htm&language=en_US&type=5)
+
+## Activate or Deactivate an Agent in the Legacy Builder
+
+To make and test changes to your agent without taking the active version out of production, [create multiple versions of an agent](https://help.salesforce.com/s/articleView?id=ai.agent_versions.htm&language=en_US&type=5).
+
+1.  From Setup, in the Quick Find box, enter Agent, and then select **Agentforce Agents**.
+2.  Click the name of the agent you want to activate or deactivate.
+3.  Click **Open in Builder**.
+4.  Click **Activate** to make your agent live or **Deactivate** to remove it from service.
+
+# Exercise 3: Distribute a Service Agent ​
+
+In this exercise, you will add the Coral Cloud Agent to an Experience Cloud site.
+
+![](https://developer.salesforce.com/workshops/assets/service-agent-architecture_experience-cloud.C8k90Asq.webp)
+
+## Step 1: Add Embedded Service deployment to Experience Cloud ​
+
+Update the Experience Cloud page to include your Coral Cloud agent. This exercise assumes you already configured the messaging channel and embedded service deployment in Exercise 2.
+
+### Add the agent to the site ​
+
+1.  Search for **Digital Experiences** in the Setup Quick Find and select **All Sites**.
+    
+2.  Click **Builder** next to the `Coral Cloud` site.
+    
+3.  If a popup appears, click **OK**.
+    
+4.  Click the **Components** widget.
+    
+5.  Search **Embedded Messaging** and drag and drop the component onto the page (for example, in a hero section or sidebar). Note: exact placement depends on your site template and it may take a few seconds for the component to appear.
+    
+    ![](https://developer.salesforce.com/workshops/assets/service-agent-coral-cloud-site.D7QK-Srp.webp)
+    
+6.  Ensure that the Embedded Messaging Configuration you created in Exercise 2 is selected (for example, `Coral_Cloud_Agent`).
+    
+7.  Click **Publish** in the upper right corner.
+    
+8.  Click **Publish** in the confirmation window.
+    
+9.  Click **Got It**.
+    
+
+### View the agent as a customer ​
+
+1.  Click the **Experience Builder menu**.
+    
+2.  Select **View** to open the published `Coral Cloud` site.
+    
+    TIP
+    
+    Note: It may take a few minutes for the site to publish. Go ahead and verify the challenge below while you wait for your Experience Cloud site to publish.
+    
+3.  Click on the Messaging icon in the lower right corner to start interacting with the new agent. Try some prompts like:
+    
+    txt
+    
+    ```
+    Can you tell me about White Water Rafting Rush?
+    ```
+    
+    txt
+    
+    ```
+    Can you book me in for tomorrow session?
+    ```
+    
+4.  If asked to provide your email address and membership number, use the following text.
+    
+    txt
+    
+    ```
+    Can you book me in for tomorrow?
+    ```
+    
+
+## Summary ​
+
+You have just created a custom service agent that can be used to interact with your customers. Next, we will use the service deployment capabilities in Service Cloud to deploy the agent to a customer-facing Experience Cloud site.
+
+Pager
+
+[Previous pageExercise 2: Configure a Service Deployment](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/2-configure-a-service-deployment)
+
+[Next pageExercise 4 (Optional): Extending a Service Agent with Heroku](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/4-extend-service-agent-with-heroku)
+
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MjgwOTIxLDIxNDQ4MDE4NCw3MzA5OT
-gxMTZdfQ==
+eyJoaXN0b3J5IjpbMTgwODc0NTA3MywyMTQ0ODAxODQsNzMwOT
+k4MTE2XX0=
 -->
