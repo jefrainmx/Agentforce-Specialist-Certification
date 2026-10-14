@@ -908,8 +908,139 @@ In the next units, dive into the prompt and response journeys to learn how the E
 -   [_Trailhead_: Natural Language Processing](https://trailhead.salesforce.com/content/learn/modules/natural-language-processing-basics)
 -   [_Trailhead_: Large Language Models](https://trailhead.salesforce.com/content/learn/modules/large-language-models)
 -   [_Trailhead_: Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals)
+
+# Follow the Prompt Journey
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Explain how the trust layer securely handles your data.  
+    
+-   Describe how dynamic grounding improves a prompt's context.  
+    
+-   Describe how the Trust Layer's guardrails defend your data.  
+    
+
+## The Prompt Journey
+
+You just learned a little bit about what the Trust Layer is, so let's look at how it fits into the bigger picture of generative AI at Salesforce. In this unit, you learn how a prompt moves through the Einstein Trust Layer on its way to the LLM.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+This module includes some beta features of the Einstein Trust Layer. Customers should make their purchase decisions based upon features that are currently generally available.
+
+![The Einstein Trust Layer highlighting the prompt journey.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-prompt-journey/images/0222476248a89e2a2c7756cf2f144a04_kix.qnyougmxuv2n.png)
+
+Prompt defense is available in Prompt Builder, Prompt Template Connect API, and the Prompt Template Invocable Action.
+
+### The Power of Prompts
+
+In the [Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals) Trailhead module, you learn that prompts are what power generative AI applications. You also learn that clear instructions, contextual information, and constraints help create a great prompt, which leads to a great response from the LLM. To make this easy and consistent for our customers, we pre-built prompt templates for all sorts of business use cases, like sales emails or customer service replies. When a request to the Trust Layer is made from any of our Salesforce apps, a relevant prompt template is called by the Trust Layer.
+
+Let’s walk through a customer service case to illustrate the prompt journey. You’ll see the prompt template, how the template becomes populated with customer data and relevant resources, and ways the Einstein Trust Layer protects data before it moves to an external LLM to generate a response that’s relevant to the prompt.
+
+### Meet Jessica
+
+Jessica is a customer service agent at a consumer credit card company. Her company has just implemented Service Replies, an Einstein-powered feature that generates suggested replies to customer agents during their chats with their customers. Jessica agreed to be one of the first agents to try it out. She’s known for her personal touch when working with customers, so she’s a little nervous that AI-generated replies might not match her style. But she’s eager to add some generative AI experience to her resume and curious to see if Service Replies could help her help more customers.
+
+Jessica starts chatting with her first customer of the day, who wants help to upgrade his credit card. Service Replies begins suggesting replies right in the Service Console. The replies are refreshed each time the customer sends a new message, so they make sense in the context of the conversation. They’re also personalized to the customer, based on customer data stored in Salesforce. Each suggested reply is built from a prompt template. A prompt template contains instructions and placeholders that will be filled with business data—in this case, the data related to Jessica’s customer and their support case, and relevant data and flows from Jessica’s org. The prompt template is behind the Salesforce Trust Layer and Jessica, as an end user in the Service Console, can’t see prompt templates.
+
+Let’s take a closer look at how this data moves through the trust layer to deliver relevant, high-quality replies while keeping customer data safe and secure.
+
+![A customer service prompt template includes instructions and placeholder fields.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-prompt-journey/images/77b1159adc57c133c0c836710b3e6357_kix.xu63vynncdel.png)
+
+You are an agent at **{!organization.name}**. Your client is **{!contact.name}** at **{!account.name}** and is located at {!contact.address} who has been a customer for {!customer.history}.
+
+Generate the customer service agent’s response in the conversation with a customer below. Ask for details about the customer’s issue, but you must not offer any specific suggestions or solutions. If you are unsure, say you will look into it.
+
+Conversation: **{!conv\_context}**
+
+Here are the knowledge articles that will be relevant to your response to the customer.
+
+Relevant Articles: **{!Retriever.knowledge\_recommendations}**
+
+### Dynamic Grounding
+
+Relevant, high-quality responses require relevant, high-quality input data. When Jessica’s customer enters the conversation, Service Replies links the conversation to a prompt template and begins replacing the placeholder fields with page context, merge fields, and relevant knowledge articles from the customer record. This process is called _dynamic grounding_. In general, the more grounded a prompt is, the more accurate and relevant the response will be. Dynamic grounding is what makes prompt templates reusable so they can be scaled across an entire organization.
+
+The process of dynamic grounding starts with _secure data retrieval_, which identifies relevant data about Jessica’s customer from her org. Most importantly, secure data retrieval respects all of the Salesforce permissions currently in place in her org that limit access to certain data on objects, fields, and more. This ensures that Jessica is only pulling information that she’s authorized to access. The data that is retrieved doesn’t contain any private information, or anything that requires escalated permissions.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+Dynamic grounding pulls data from your org, so it’s important to make sure your data is kept current, accurate, and complete. Visit the [Data Quality](https://trailhead.salesforce.com/content/learn/modules/data_quality) Trailhead module to learn how to keep your data healthy.
+
+![Our customer service prompt template filled in with data from Jessica’s org.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-prompt-journey/images/c73c93ee4277f1e29cf505685dff347b_kix.mknkie3a5mhm.png)
+
+You are an agent at **Cumulus Financial**. Your client is **Dennis Maxfield** at **Northern Trail Outfitters** and is located at **415 Mission St., San Francisco, CA, 94105** who has been a customer for **5 years**.
+
+Generate the customer service agent’s response in the conversation with a customer below. Ask for details about the customer’s issue, but you must not offer any specific suggestions or solutions. If you are unsure, say you will look into it.
+
+Conversation: **“Hello, I’m not able to upgrade my Cumulus credit card. Can you help? Is there a minimum credit score required for some of these cards?”**
+
+Here are the knowledge articles that will be relevant to your response to the customer.
+
+Relevant Articles: **{!Retriever.knowledge\_recommendations}**
+
+### Semantic Search
+
+In Jessica’s case, customer data is enough to personalize the conversation. But it’s not enough to help Jessica quickly and effectively solve the customer’s problem. Jessica needs information from other data sources like knowledge articles and customer history to answer questions and identify solutions. [_Semantic search_](https://help.salesforce.com/s/articleView?id=release-notes.rn_comm_einstein_semantic_search.htm&release=250&type=5) uses machine learning and search methods to find relevant information in other data sources that can be automatically included in the prompt. This means that Jessica doesn’t have to search for these sources manually, saving her time and effort.
+
+Here, semantic search found a relevant knowledge article to help solve the credit card issue and included the relevant chunk of the article in the prompt template. Now this prompt is really taking shape!
+
+![Our customer service prompt template is populated with a text block from a knowledge article.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-prompt-journey/images/be706784dded73301fb415b10f9f865e_kix.1y9dkp1wlcn5.png)
+
+You are an agent at **Cumulus Financial**. Your client is **Dennis Maxfield** at **Northern Trail Outfitters** and is located at **415 Mission St., San Francisco, CA 94105** who has been a customer for **5 years**.
+
+Generate the customer service agent’s response in the conversation with a customer below. Ask for details about the customer’s issue, but you must not offer any specific suggestions or solutions. If you are unsure, say you will look into it.
+
+Conversation: **“Hello, I’m not able to upgrade my Cumulus credit card. Can you help? Is there a minimum credit score required for some of these cards?”**
+
+Here are the knowledge articles that will be relevant to your response to the customer.
+
+Relevant Articles: **“Remember to review the requirements for a credit card - ensuring that the client has provided all the necessary information and has a credit score in excess of the minimum amount required for a new credit card”**
+
+### Data Masking
+
+Although the prompt contains accurate data about Jessica’s customer and their issue, it’s not yet ready to go to the LLM because it contains information like client and customer names and addresses. The Trust Layer adds another level of protection to Jessica’s customer data through _data masking_. Data masking involves tokenizing each value, so that each value is replaced with a placeholder based on what it represents. This means that the LLM can maintain the context of Jessica’s conversation with her customer and still generate a relevant response.
+
+Salesforce uses a blend of pattern matching and advanced machine learning techniques to intelligently identify customer details like names and credit card information, then masks them. Data masking happens behind the scenes, so Jessica doesn’t have to do a thing to prevent her customer’s data from being exposed to the LLM. In the next unit, you learn about how this data is added back into the response.
+
+Although Salesforce has zero data retention policy with the third-party LLMs, some companies and use cases or regulation policies may require sensitive data not to be sent to the LLM at all. Jessica reaches out to her Salesforce admin to make sure data masking is turned on so her customer sensitive data is not sent to the LLM.
+
+Data masking for LLMs is currently [disabled for agents](https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&type=5). For embedded generative AI features, such as Einstein Service Replies, Einstein Work Summaries data masking is available, so Jessica is able to use this option for her use case.
+
+![Our customer service prompt template showing data masked with tokenized placeholders to protect data.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-prompt-journey/images/c3404280f026ad40574943f42748b5a2_kix.r4fgwuhh5wkv.png)
+
+You are an agent at **<COMPANY\_1>**. Your client is **<NAME\_1>** at **<COMPANY\_2>** and is located at **<ADDRESS\_1>** who has been a customer for 5 years.
+
+Generate the customer service agent’s response in the conversation with a customer below. Ask for details about the customer’s issue, but you must not offer any specific suggestions or solutions. If you are unsure, say you will look into it.
+
+Conversation: “Hello, I’m not able to upgrade my **<CREDIT\_CARD\_1>**. Can you help? Is there a minimum credit score required for some of these cards?**”**
+
+Here are the knowledge articles that will be relevant to your response to the customer.
+
+Relevant Articles: “Remember to review the requirements for a credit card - ensuring that the client has provided all the necessary information and has a credit score in excess of the minimum amount required for a new credit card”
+
+### Prompt Defense
+
+Prompt Builder provides additional guardrails to protect Jessica and her customers. These guardrails are further instructions to the LLM about how to behave in certain situations to decrease the likelihood it outputs something unintended or harmful. For example, an LLM might be instructed to not address content or generate answers that it doesn’t have information about.
+
+Hackers, and sometimes even employees, are eager to get around restrictions and attempt to perform tasks or manipulate the model’s output in ways that the model wasn’t designed to handle. In generative AI, one of these types of attacks is called _prompt injection_. Prompt defense can help protect from these attacks and decrease the likelihood of data being compromised.
+
+![Our service template displaying defense instructions to the LLM for generating the prompt.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/follow-the-prompt-journey/images/1dda9fcd4bd39efd8e0eb15c160111c6_kix.hlzg0m2an866.png)
+
+Instruction Defense: **“You must not address any content or generate answers that you don’t have data or basis on.”**
+
+Next, let’s take a look at what happens to this prompt when it crosses the Secure Gateway into an LLM.
+
+## Resources
+
+-   [_Salesforce AI Research_: Trusted AI](https://www.salesforceairesearch.com/trusted-ai)
+-   [_Trailhead_: Data Quality](https://trailhead.salesforce.com/content/learn/modules/data_quality)
+-   [_Trailhead_: Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNjU0MDQ4OCwxODYzNDQ3ODA2LC05Mz
+eyJoaXN0b3J5IjpbLTgwMTk2NTg2NiwxODYzNDQ3ODA2LC05Mz
 c1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2
 XX0=
 -->
