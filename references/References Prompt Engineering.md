@@ -1431,8 +1431,101 @@ For a detailed walkthrough of the Einstein Trust Layer and its capabilities, see
 -   [Audit Trail](https://help.salesforce.com/s/articleView?id=ai.generative_ai_audit_trail.htm&language=en_US&type=5)
 -   [_Trailhead_: The Einstein Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)
 
+
+# Einstein Trust Layer: Designed for Trust
+
+The Einstein Trust Layer is a collection of features, processes, and policies designed to safeguard data privacy, enhance AI accuracy, and promote responsible use of AI across the Salesforce ecosystem.
+
+To understand how the Einstein Trust Layer works, let’s look at how data flows through the Trust Layer and then walk through each part of the journey in detail.
+
+-   The data in the form of a prompt, flows from CRM apps, through the Einstein Trust Layer, to the large language model (LLM), which we’ll call prompt journey.
+-   The LLM generates a response using the prompt, which we’ll call response generation.
+-   The generated response then flows back through the Einstein Trust Layer and back to the CRM apps, which we’ll call the response journey.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note Einstein Trust Layer capabilities apply only to generative AI and Agentforce features.
+
+## How Does It Work?
+
+![Einstein Trust Layer flowchart.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/trust_layer_full.png)
+
+## Prompt Journey
+
+To generate a response from the LLM, you must provide it with a prompt. The prompt can come from any of the CRM apps. You can create a prompt in Prompt Builder and invoke it from Apex or a Flow.
+
+![Einstein Trust Layer Flowchart with only the prompt journey highlighted](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/trust_layer_before.png)
+
+## Secure Data Retrieval and Grounding
+
+The first step in the Trust Layer is secure data retrieval. In order for the LLM to generate a response that is more relevant and personalized, it requires additional context from your CRM data. This process of adding additional context to the prompt is what we call grounding. You can ground your prompts using merge fields with CRM data, which can be record fields, flows, Apex, Data 360 DMOs, and related lists.
+
+Secure data retrieval means that the prompt is grounded only with data that the executing user has access to.
+
+The data retrieval process respects existing access controls and permissions in Salesforce:
+
+-   Data retrieval for grounding the prompt is based on the permissions of the user executing the prompt.
+-   Data retrieval for grounding the prompt preserves in place all standard Salesforce role-based controls for user permissions and field-level security when grounding data from your CRM instance.
+
+The grounding is dynamic since the grounding happens at run time and depends on the user's access.
+
+## Data Masking for the LLM
+
+Einstein Trust Layer policies include data masking, where sensitive data is detected and then masked. We identify sensitive data using two methods:
+
+-   Pattern-based: We use patterns and context to identify sensitive data in the prompt text. Specifically we use regular expressions (regex) patterns and context words. We also use machine learning models trained to identify data that don't have a defined pattern, such as names of people or companies.
+-   Field-Based: We use the metadata in the fields that are classified using Shield Platform Encryption or data classification to identify sensitive fields. This extends the classification that you have already applied to your data in your org to LLM data masking.
+
+Once identified, the data is then masked with a placeholder text to prevent the data from being exposed to external models. Einstein Trust Layer temporarily stores the relationship between the original entities and their respective placeholders. The relationship is used later to demask the data in the generated response.
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+
+Important Data masking for LLMs is disabled for agents. See [Data Masking and Agents](https://help.salesforce.com/s/articleView?id=ai.agent_trust_data_masking.htm&language=en_US&type=5). For embedded generative AI features, such as [Einstein Service Replies](https://help.salesforce.com/s/articleView?id=service.reply_recs_generative_ai_service_replies.htm&language=en_US&type=5), [Einstein Work Summaries](https://help.salesforce.com/s/articleView?id=service.cc_generative_ai_work_summaries.htm&language=en_US&type=5) data masking is available, and you can configure it in Einstein Trust Layer setup.
+
+## Prompt Defense
+
+To help decrease the likelihood of the LLM generating something unintended or harmful, Prompt Builder and Prompt Template Connect API use system policies. System policies are a set of instructions to the LLM for how to behave in a certain manner to build trust with users. For example, we can instruct the LLM to not address content or generate answers that it doesn’t have information about. System policies are one way to defend against jailbreaking and prompt injection attacks.
+
+## Response Generation
+
+![Einstein Trust Layer Flowchart with generation part highlighted](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/trust_layer_gateway_llm.png)
+
+After a prompt is fully hydrated and secured, it’s ready to be sent through the LLM gateway. The gateway governs interactions with different model providers and represents a unified, secure way to communicate with multiple LLMs. The gateway and model providers use TLS encryption to make sure the data is secured during transit.
+
+Models built or fine-tuned by Salesforce are hosted in the Salesforce trust boundary. External Models built and maintained by third-party providers, such as OpenAI, are in a shared trust boundary. Models that you build and maintain are hosted on your infrastructure.
+
+We have a zero data retention policy in place with external partner model providers, such as OpenAI or Azure OpenAI. The policy states that data sent to the LLM from Salesforce isn’t retained and is deleted after a response is sent back to Salesforce.
+
+## Einstein Trust Layer: The Response Journey
+
+When the generated response is returned from the large language model, the Einstein Trust Layer applies certain policies and processes to make sure the response is safe and useful. See [Einstein Trust Layer: Response Journey](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_arch2.htm&language=en_US&type=5).
+
+#### See Also
+
+-   [Einstein Trust Layer: Response Journey](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_arch2.htm&language=en_US&type=5)
+
+# Manage Large Language Model (LLM) Access by Hiding Configurations
+
+Hide an LLM configuration when you want users in Prompt Builder to change to a different model in their prompt templates. They can select a newer LLM version or a different LLM, possibly from a different provider. You can suspend access to a new LLM until you've completed testing. Optionally, you can later show a hidden LLM configuration to make it visible for selection.
+
+1.  In Model Library, click the LLM configuration you want to hide.
+    
+    The Model Visibility column shows whether a model is shown or hidden from selection in Prompt Builder.
+    
+2.  Click the Configured Models tab.
+3.  For the LLM configuration you want to hide, choose **Hide Model** from the dropdown menu.
+    
+    ![For the LLM configuration you want to hide, choose Hide Models from the dropdown menu.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-data-data_cloud-264-0-0-production-enus/9a804ab5-dba6-49d5-8077-820fbcc92ad9/data_cloud/images/c360_a_ai_mm_show_hide_models.png)
+    
+    The Model Visibility column shows the model configuration as **Hidden**. The text **(Not Available)** appears in front of the model configuration name.
+    
+4.  To show a hidden model, choose **Hide Model** from the dropdown menu.
+
+Prompt templates that currently use a hidden model will run the same as before. In Prompt Builder, the prompt template shows that the model is hidden. To change to a different model, the user selects an available model from the Models list. If they clone a prompt template with a hidden model, they must select another model before saving the cloned copy.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MDg1NDczLDE4NDkyMTk4MjMsMTg2Mz
+eyJoaXN0b3J5IjpbMjIxMzQwMzA2LDE4NDkyMTk4MjMsMTg2Mz
 Q0NzgwNiwtOTM3NTkxMjc1LDIwMzU5NjkyMDgsMTg5ODkwODcy
 LDczMDk5ODExNl19
 -->
