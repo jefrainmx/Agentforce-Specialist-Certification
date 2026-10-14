@@ -195,7 +195,31 @@ When you connect unstructured data from your external blob stores to Data 360, y
 
 Data 360 doesn’t import unstructured data–the UDMOs reference it from the external blob store.
 
+# Create an Unstructured Data Lake Object from a Data Kit
+
+After you have deployed your data kit in Data 360, you can create an unstructured data lake object (UDLO). All fields are automatically mapped.
+
+1.  From App Launcher, select **Data Cloud**.
+2.  Click **Data Lake Objects** > **New**.
+3.  From the New Data Lake Object menu, select **Create from a Data Kit**, and click **Next**.
+4.  From your data kit, select one DLO, and click **Next**.
+5.  From the Select Connection dropdown list, select a connection. Data 360 auto-populates the source based on the connection that you select.
+6.  In the Directory field, point to a specific folder or an entire directory in your blob store. All folders and subfolders in a directory are included. Optionally, use wildcard characters to specify a file name pattern for multiple files.
+7.  To add more directories, click **More Files**. You can include up to 5 directories.
+8.  Click **Next**.
+9.  Add an Object Name and an Object API Name for the UDLO. See Data Lake Object Naming Standards.
+10.  From the Data Space dropdown list, select a data space in which to create the new unstructured data model object (UDMO) or a data space from which to select an existing UDMO.
+11.  Map the UDLO to a UDMO.
+     -   To create a new UDMO, click **New.**
+     -   To use an existing UDMO, click **Existing**, and select a UDMO from the list.
+12.  Optionally, leave the checkbox selected to create a search index configuration for the UDMO using system defaults that automatically selects text fields and a chunking strategy for each field.
+     
+     You can deselect the checkbox and create a search index configuration later if you choose not to do so now.
+     
+13.  Click **Next**, or if you created a search index configuration, review the details, and save your work.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNzIxMDI3NCwtMzU1OTI5NjE3XX0=
+eyJoaXN0b3J5IjpbLTMxMDI4MzQ4MSwtMzU1OTI5NjE3XX0=
 -->
