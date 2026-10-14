@@ -488,43 +488,12 @@ At the top you see the following: Subagent Evaluation Pass %, Action Evaluation 
 
 The Test Results section displays several columns. Let’s look at the first line in more detail. Your results might be different.
 
-| 
-**Utterance**
-
- | 
-
-Please update the email address for Ilsa Galgey to new\_email@example.com.
-
- |
+| **Utterance** | Please update the email address for Ilsa Galgey to new\_email@example.com.|
 | --- | --- |
-| 
-
-**Expected Subagent**
-
- | 
-
-MigrationDefaultTopic
-
- |
-| 
-
-**Expected Actions**
-
- | 
-
-\['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput', 'UpdateRecordFields'\]
-
- |
-| 
-
-**Expected Response**
-
- | 
-
-The email address for Ilsa Galgey has been updated to new\_email@example.com.
-
- |
-| 
+| **Expected Subagent**| MigrationDefaultTopic |
+|**Expected Actions**| \['IdentifyRecordByName', 'ExtractFieldsAndValuesFromUserInput', 'UpdateRecordFields'\]|
+|**Expected Response**| The email address for Ilsa Galgey has been updated to new\_email@example.com.|
+|
 
 **Agent Response**
 
@@ -641,5 +610,6 @@ You now have a better idea of what the Agentforce Testing can do for you and the
 
 -   [_Salesforce Help_: Batch Test with Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=release-notes.rn_einstein_copilot_testing_center.htm&release=254&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDgwMTg0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTY3NzQ5MDA2MCwyMTQ0ODAxODQsNzMwOT
+k4MTE2XX0=
 -->
