@@ -256,8 +256,265 @@ As you write your prompt template in the Prompt Template Workspace, you can use 
 -   [Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&language=en_US&type=5)
 -   [Troubleshoot Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_troubleshoot.htm&language=en_US&type=5)
 
+# Get Started with Prompt Builder
+
+## Learning Objectives
+
+In this project, you’ll:
+
+- Create and test a prompt template that includes merge fields.  
+    
+- Associate a prompt template with a text field for field generation.  
+    
+
+## Streamline Content Generation
+
+Prompt Builder gives your organization an easy way to tap into the power of generative AI. It helps you combine existing data with some well-crafted instructions to create prompt templates. In a nutshell, prompt templates are used to create prompts, the messages sent to large language models (LLMs) in order to generate content.
+
+Prompt templates are special because they include placeholders for specific details about customers, products, cases, and more. Each time a prompt template is used, it merges the data to create a unique, personalized prompt, which results in a personalized response. And since prompt templates are reusable, they’re a key part of a scalable AI implementation. For a more in-depth explanation of prompts and prompt templates, check out [Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals).
+
+In this project you get hands-on by creating a prompt template, and then use it to get actual generated responses from an LLM. Specifically, you’ll focus on a scenario everyone is familiar with: customer support cases. In an effort to boost productivity and customer satisfaction, you want to use generative AI to summarize the details of a case in about 100 words. This enables agents to get up to speed quickly and makes it easier to identify cases that deserve special attention.
+
+## Sign Up for a Trial Org with Agentforce
+
+To complete this project, you need a special, limited-time custom playground that contains Einstein AI and our sample data.
+
+1.  Click **Create Playground**.  
+    
+2.  Your new org is automatically attached to your Trailhead account!  
+    
+3.  Make note of your org's expiration date and complete this badge before then.  
+    
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+This custom playground is designed to work with the challenges in this badge and may not work for other badges. Always check that you’re using the Trailhead Playground or special org that we recommend.
+
+If you’re working on related Einstein AI content in Trailhead, you may also use this org for these projects:
+
+-   [Quick Start: Agentforce](https://trailhead.salesforce.com/content/learn/projects/quick-start-einstein-copilot)  
+    
+-   [Quick Start: Create a Prompt Builder Flex Template](https://trailhead.salesforce.com/content/learn/projects/quick-start-create-prompt-builder-flex-template)  
+    
+-   [Quick Start: Create a Sales Email Prompt Template](https://trailhead.salesforce.com/content/learn/modules/quick-start-create-a-sales-email-prompt-template)  
+    
+
+## Enable Agentforce Studio
+
+Now, let’s make sure Agentforce Studio is turned on in your org.
+
+1.  If you don’t already have your Agentforce-enabled trial org open, scroll down to the Challenge section and click **Launch** to open it.  
+    
+2.  Click ![setup](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/42c79cc86ee9a09de750283761cd9083_kix.l7nor34dxyii.png) and click **Setup**. The Setup page opens in a new tab.  
+    
+3.  In the Quick Find box, search for and select **Salesforce Go**.  
+    
+4.  In the Search features... textbox, enter and select **Agentforce Studio**.  
+    
+
+![](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/af144ad159b5d8d56e6590317516df4a_kix.btx6p2qpvkq9.png)\[alt text: The Salesforce Go page showing Agentforce Studio selected from the search features menu.\]
+
+5.  Click **Get Started**.  
+    
+6.  Click **Turn On**.  
+    
+7.  Click **Confirm**.  
+    
+8.  Wait just a moment until you see the Turn On button change to **On**, then refresh your browser.  
+    
+
+## Create a Field Generation Prompt Template
+
+In this project, you want a case summary to appear in a text field on the record. To save a little time, Team Trailhead has already created a field named Quick Summary and added it to the page layout. At this point there’s nothing special about it, but let’s change that!
+
+1.  Click ![App Launcher](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/915af7df5f41491f716e685cdb1aa123_kix.p6cm6f81ol7x.png) , then search for and select **Agentforce Studio**.  
+    
+2.  Click **Prompt Templates** to open Prompt Builder in Setup.  
+    
+3.  Click **New Prompt Template**.  
+    
+4.  For Prompt Template Type, select **Field Generation**.  
+    
+5.  For Prompt Template Name, enter `Quick SummaryCopy`.  
+    
+6.  Press the Tab key to populate the API Name field: `Quick_SummaryCopy`.  
+    
+7.  For Template Description, enter `A short summary of case detailsCopy`.  
+    
+8.  For Object, find and select **Case**.  
+    
+9.  For Object Field, find and select **Quick Summary**.  
+    
+10.  Click **Next**.  
+     
+
+Great, you now have the start of a prompt template. It’s time to build it by writing some clear instructions that describe what you want from the LLM. As you learn in the [Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals) badge, there are several things you can add to get better results. In this example you include the overall goal, size limits, and some guardrails.
+
+Writing a good prompt is somewhat of an art form, so for this project we give you a prompt that we know works well.
+
+1.  Paste the following text into the **Prompt** | **Insert Resource** field. `Summarize the concatenation of the contents of the comment bodies of COMMENTS along with the text from SUBJECT, the case priority which is PRIORITY, and the case type which is TYPE. Keep the response to a single short paragraph.Copy`
+2.  Click **Save**.  
+    
+3.  In the Models list, make sure **OpenAI** **GPT 4 Omni Mini** is selected. There are several models to choose from in your Agentforce-enabled org, and OpenAI GPT 4 Mini produces some great results.  
+    
+
+![The Template Properties pane displays a list of model types and a list of available models. OpenAI GPT 4 Omni Mini is selected.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/a6653900954e560fc1228c8f08c97b51_kix.hqe546v2plae.png)
+
+This sample text includes a few placeholders in all caps for things like case priority. Let’s replace those with actual merge fields so the LLM can create a tailored response for a variety of situations.
+
+1.  In the prompt sample text, place the mouse cursor in front of the word PRIORITY.  
+    
+
+![Prompt template workspace with pre-populated prompt text.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/5f7afc793bc86466d47e92cf1a0d766c_kix.r1u6fekj4mf9.png)
+
+2.  Click **+** **Insert Resource** to open the list of resources.  
+    
+
+![The Resources menu displays Current Organization, Current User, and Case resources.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/d9158d958c35ca6ffc290b311bf1fba8_kix.hyg1inelslrl.png)
+
+3.  Click **Case**, then click **Priority**.  
+    A merge field is inserted as blue text.  
+    
+4.  Delete PRIORITY to leave behind just the merge field. It should now look like this:  
+    …the case priority which is **Input:Case.Priority**, and the case type…  
+    
+
+Next, you repeat the process to replace the COMMENTS, SUBJECT, and TYPE text placeholders.
+
+1.  Place the mouse cursor in front of COMMENTS.  
+    
+2.  Click in the **Resource** box. Select **Case**, then click **CaseComments**.  
+    Note: Notice the colorful text, it indicates that this is a related list. (The text color may vary depending on your browser settings.)  
+    
+3.  Delete COMMENTS to leave behind just the merge field. It should now look like this:  
+    Summarize the concatenation of the contents of the comment bodies of **RelatedList: Case.CaseComments** along with the text…  
+    
+
+4.  Place the mouse cursor in front of SUBJECT.  
+    
+5.  Click in the **Resource** box. Select **Case**, then click **Subject**.  
+    
+6.  Delete SUBJECT to leave behind just the merge field.  
+    
+7.  And finally, place the mouse cursor in front of TYPE.  
+    
+8.  Click in the **Resource** box. Select **Case**, then click **Case Type**.  
+    
+9.  Delete TYPE to leave behind just the merge field.  
+    
+10.  Click **Save**.  
+     
+
+With merge fields in place, your prompt template should look like this:
+
+Summarize the concatenation of the contents of the comment bodies of **RelatedList: Case.CaseComments** along with the text from **Input:Case.Subject**, the case priority which is **Input:Case.Priority**, and the case type which is **Input:Case.Type**.
+
+Keep the response to a single short paragraph.
+
+It’s just that easy to ground your prompt in real data. Now that your prompt template includes merge fields and good instructions, it’s time to test it out. Prompt Builder makes it easy to preview your prompt template using actual data. All you need is a sample record to draw from.
+
+1.  Click **Preview**, then click **Inputs** to expand the Inputs box.  
+    
+2.  In the Related Record box, find and select case **00001002**.  
+    
+
+![Related record input box corresponding to the preceding step.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/5f3b50ada5d875a5016b410698d95a24_kix.gboo58kfg7et.png)
+
+3.  Click **Preview**.  
+    
+4.  Click **Activate**.  
+    
+
+This is the moment you’ve been waiting for! Your instructions have been sent to the LLM, and in response you get a generated summary of the case in just a few sentences in the Generated Response field. Yours may appear a little different than the examples in this project. That’s OK, it’s normal for LLMs to respond to the same prompt in more than one way.![The Prompt Builder template showing the generated response.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/22c05129ac6755569cc9f2d2bc8b90e8_kix.w9z7sb6cf2ph.png)
+
+## Enable Dynamic Forms for Cases
+
+Your prompt template is ready to go. The last step is to update the page layout so that your customer support team can use the new prompt template.
+
+1.  While still on the Prompt Builder page, verify that you’ve clicked **Activate**.  
+    
+2.  Close the Setup tab to return to the Sales app.  
+    
+3.  Click ![App Launcher](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/915af7df5f41491f716e685cdb1aa123_kix.ihgz6u47q9hk.png), then search for and select **Cases**.  
+    
+4.  Click the arrow next to Recently Viewed, and select **All Open Cases**.  
+    
+5.  Click case number **00001002**.  
+    
+6.  Click ![Setup](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/7044ccc1a277b34ac3da9638b8942c35_kix.xfyi1rs4rv3t.jpg) and click **Edit Page**.  
+    
+7.  In the Details section, click inside the record **Details** component \[1\].  
+    
+
+![Record Detail in the Details section](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/fd29036f3f1b7b0e9a761b626c5e926f_kix.uw7syr1z60gg.png)
+
+8.  In the properties pane to the right, click **Upgrade Now** to upgrade to Dynamic Forms. (If you don’t see the Upgrade Now button in the properties pane, click in the center of the Details panel.)  
+    
+9.  Click **Next**.  
+    
+10.  Select the **Case Layout** page layout.  
+     
+11.  Click **Finish**.  
+     
+12.  In the Case Information section, click the **Quick Summary** field.  
+     
+13.  For Prompt Template, find and select **Quick Summary**.  
+     
+
+![Prompt Template selection box corresponding to the preceding steps.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/9951ff72e1dc9925386fa1c31a874817_kix.1y10cm3bkyq.png)
+
+14.  Click **Save** and then **Activate**.  
+     
+15.  Click the **Assign as Org Default** button (you may need to scroll down a bit), then click **Next**.  
+     
+16.  On the Assign form factor screen, select **Desktop and phone**.  
+     
+17.  Click **Next** and then **Save**.  
+     
+18.  Click ![back](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/ba7568e9626b0b320824369985f2ea96_kix.xlohzgsso2ah.png) to leave Lightning App Builder.  
+     
+
+Excellent, the Quick Summary field is ready to use Einstein Generative AI. You can tell because the edit button has a little star next to the pencil now.
+
+Let’s try it out.
+
+1.  On the Case 00001002 record, in the Details pane, click ![Edit](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/1a2ac6759f6cbf54f3750c59b8a4d8bf_kix.na3e4j6uj0ei.png) on the Quick Summary field.  
+    
+
+![Screenshot of the Quick Summary field with Einstein-enabled icon.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/18b13b02e4d27708b97936e140db16c1_kix.9zl97sgldz4x.png)
+
+2.  Click ![Get Einstein’s help in creating this field value.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/c2acfb8d7a4feeb4d59ad5a69134b848_kix.5wmo2aiatic1.png) on the right of the field.  
+    This automatically opens up the Einstein overlay and uses your prompt template to start a new conversation. In a moment Einstein will suggest a case summary. Again, yours may be a little different than ours:  
+        
+    Here is what I came up with  
+    The comments regarding the case include the following actions: contacting engineering for a PDF of the wiring diagram, emailing the diagram to the customer while awaiting a reply, and noting that the generator was manufactured in 2019. This case, which has a low priority and pertains to electrical issues, seeks guidance on the electrical wiring installation for GC5060.  
+       
+    In the Einstein overlay panel, it looks like this:  
+    
+
+![Einstein overlay with a suggested case summary.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/7ac71b50eb01f4b87443c8fe9d297aa7_kix.xv3qljnumfin.png)
+
+This gives your users a chance to review the summary, and even continue the conversation with Einstein to work together on a revised version. For this example, you just accept the first suggestion.
+
+3.  Click **Use**. (There should be a Use button in the Einstein overlay. If there isn’t, just refresh the page and do steps 1 & 2 again.)  
+    
+4.  Click the **X** to close the Einstein overlay.  
+    Notice that the Quick Summary field is filled in.  
+    
+5.  Click **Save**.  
+    
+
+With just a few clicks, your users can access the power of Agentforce to quickly create useful content so that they can focus on more important things. The conversational nature of Agentforce lets your users refine the generated content in real time, and they can always tweak it after it’s placed into the field.
+
+Great job creating such a helpful prompt template. Have fun experimenting in the Prompt Builder to discover other ways to automate text generation for your organization.
+
+## Resources
+
+-   [_Trailhead_: Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals)
+-   [_Trailhead_: Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)
+-   [_Trailhead_: Generative AI Basics](https://trailhead.salesforce.com/content/learn/modules/generative-ai-basics)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NDEyNjY1NiwtOTM3NTkxMjc1LDIwMz
-U5NjkyMDgsMTg5ODkwODcyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTEzMjk2NjUwMDEsLTkzNzU5MTI3NSwyMD
+M1OTY5MjA4LDE4OTg5MDg3Miw3MzA5OTgxMTZdfQ==
 -->
