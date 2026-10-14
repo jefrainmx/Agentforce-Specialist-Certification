@@ -97,6 +97,40 @@ Built on the data foundation of [Agentforce Session Tracing](https://help.salesf
     Set up an alert to monitor a metric for a particular agent. You receive an email notification when a performance data breaches an alert threshold.
 -   **[Investigate Notifications](https://help.salesforce.com/s/articleView?id=ai.agent_monitor_health_notification.htm&language=en_US&type=5)**  
     Manage the notifications that you received from monitoring alerts that you created. The system sends a notification to your email inbox whenever agent data for a monitored metric breaches an alert threshold.
+# Legacy Agentforce Analytics
+
+Legacy Agentforce Analytics uses Data 360 to help you gain insights into how your agents are performing. The insights in your customizable dashboard and reports can help you determine whether you want to change anything to drive adoption or adjust subagents and actions to improve user satisfaction.
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+
+Important Starting June 17, 2025, Agentforce (Default) will not include new features or improvements and isn’t available in new Salesforce environments. We recommend migrating to Agentforce Employee agent for continued enhancements and support. If you plan to transition to Agentforce Employee agent or make related license changes, complete the migration of your existing Agentforce (Default) agents in advance to avoid potential disruption in agent availability. If you can't complete the migration in advance, you can create new agents after the transition, which can involve some downtime. See [Migrate from Agentforce (Default) to Agentforce Employee Agent](https://help.salesforce.com/s/articleView?id=ai.migrate_agentforce_default_to_aea.htm&language=en_US&type=5).
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note
+
+-   Agentforce Analytics is **scheduled for retirement** starting May 2026. We recommend using [Agent Analytics instead](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics.htm&language=en_US&type=5).
+-   Agentforce Analytics stores and processes data using Data 360. It consumes credits used for billing based on your usage of the feature. To stop processing Data 360 credits and unlock the Data 360 objects, turn off Agentforce Analytics in the Einstein Feedback and Monitoring Setup. You can then [remove the Data 360 objects](https://help.salesforce.com/s/articleView?id=data.c360_a_remove_data_lake_objects_from_data_spaces.htm&language=en_US&type=5).
+-   Some Agentforce Analytics features include user feedback. To use all the features, turn on Feedback in the Einstein Feedback and Monitoring Setup.
+-   Agentforce Analytics isn't available in **Data Cloud One companion orgs** or in **sandbox environments**.
+-   Agentforce Analytics is not supported in **Government Cloud organizations**.
+-   Make sure your org uses the [standard Salesforce CRM Connector](https://help.salesforce.com/s/articleView?id=data.c360_a_salesforce_crm_connector.htm&language=en_US&type=5) so Data 360 can ingest the data from your org.
+
+Found in the Agentforce (Default) folder in the Dashboard tab, the reports on the dashboard provide a variety of data points, including adoption, feedback, and usage analysis. You can click the charts or linked reports to drill deeper into the results. You can modify the reports and dashboards or create your own to suit your org’s needs. But be sure to clone the report and modify the clone, not the original, to avoid breaking the analytics processes.
+
+![Agentforce (Default) dashboard page with multiple charts displaying various agent analytics.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/agentforce_analytics_dashboard.png)
+
+-   **[Utterance Analysis](https://help.salesforce.com/s/articleView?id=ai.copilot_utterance_analysis.htm&language=en_US&type=5)**  
+    Utterance Analysis lets you quickly see how Agentforce (Default) users are using agents, what they’re requesting, and whether the agent was able to handle these requests. These customizable reports can help you refine your subagents and actions so that your agents respond more effectively and accurately.
+-   **[Agentforce Analytics Reports](https://help.salesforce.com/s/articleView?id=ai.copilot_reports_dashboards.htm&language=en_US&type=5)**  
+    Agentforce Analytics is based on Data 360 reports that can help you gain insight into the performance of your agents. The reports show you who’s using your agents, how successful they are, and what your adoption level is, among other things.
+-   **[Legacy Agentforce Analytics Data Cloud Objects](https://help.salesforce.com/s/articleView?id=ai.copilot_analytics_data_cloud_objects.htm&language=en_US&type=5)**  
+    Agentforce Analytics creates dashboards and reports built on Data Cloud objects.
+-   **[Legacy Agentforce Analytics Troubleshooting](https://help.salesforce.com/s/articleView?id=ai.copilot_analytics_troubleshooting.htm&language=en_US&type=5)**  
+    If you’re not seeing the information you expect in your reports and dashboards, check these possible solutions.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDEyNzQzMCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2MjM3NTAxNTMsNzMwOTk4MTE2XX0=
 -->
