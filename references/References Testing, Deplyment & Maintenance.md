@@ -77,27 +77,9 @@ You learn a bit more about testing agents later in the module, but first take a 
 | **Challenge** |**What this sounds like** |
 | --- | --- |
 | Gen AI is nondeterministic producing different outputs for the same input on different runs|“Gen AI is so nondeterministic that I don’t have the right answer to test against.”|
-|Manual testing is not scalable|“Given the subjective nature of Gen AI, I need to rely on manual testing that is not scalable.”
-
- |
-| 
-
-Safety and ethical concerns
-
- | 
-
-“Generative AI can produce harmful or unintended outputs.”
-
- |
-| 
-
-Lack of standards
-
- | 
-
-“Generative AI is still new, and there are no existing standards to follow.”
-
- |
+|Manual testing is not scalable|“Given the subjective nature of Gen AI, I need to rely on manual testing that is not scalable.”|
+|Safety and ethical concerns|“Generative AI can produce harmful or unintended outputs.”|
+|Lack of standards|“Generative AI is still new, and there are no existing standards to follow.”|
 
 If you start encountering these types of challenges, fear not. The Agentforce Testing Center is here to help.
 
@@ -160,5 +142,5 @@ Ready to take a closer look at testing and using test cases? Get hands-on practi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NjI0MDEwLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE5ODg3NzMwNjgsNzMwOTk4MTE2XX0=
 -->
