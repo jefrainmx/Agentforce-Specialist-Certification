@@ -25,10 +25,6 @@ Note If you’re working from a scratch org, add Prompt Builder to your definiti
 
 Learn the key concepts and vocabulary used throughout Prompt Builder.
 
-### Required Editions
-
-<table class="slds-table slds-table_bordered slds-m-bottom_small edition"><colgroup><col></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: Lightning Experience</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Available in: <strong>Enterprise</strong>, <strong>Performance</strong>, and <strong>Unlimited</strong> Editions with the Einstein for Platform, or Einstein or Agentforce for Sales or Service add-on, or Agentforce Foundations</td></tr></tbody></table>
-
 ## Prompts
 
 Generative language models are versatile and can create different types of responses. To produce a response, tell the LLM what you want in the form of a prompt. Prompts determine the quality and relevance of the LLM’s response, so it’s important to craft prompts that the model can understand and use.
@@ -135,11 +131,11 @@ Prompt Builder replaces the placeholders in your template with your real data. T
 
 Using prompt templates is ideal for B2C communications because they can generate consistent and data-driven output at scale. Templates that contain the same brand guidelines generate content with a unified voice and style. Each template is developed for a specific use case, and you can reuse it by tailoring the prompt with different data.
 
-#### See Also
+## See Also
 
 -   [Get to Know Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_get_to_know.htm&language=en_US&type=5)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzU5MTg1ODUsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTU0NTI0NTc0NSw3MzA5OTgxMTZdfQ==
 -->
