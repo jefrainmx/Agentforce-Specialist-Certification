@@ -514,9 +514,200 @@ Great job creating such a helpful prompt template. Have fun experimenting in the
 -   [_Trailhead_: Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)
 -   [_Trailhead_: Generative AI Basics](https://trailhead.salesforce.com/content/learn/modules/generative-ai-basics)
 
+# Create and Ground Prompt Templates
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Describe what grounding is.  
+    
+-   Use Prompt Builder to create a sales email prompt template.  
+    
+-   Add resources to a prompt template.  
+    
+-   Use an Apex class to provide data to a prompt template.  
+    
+
+## The Why and the How
+
+In the [Prompt Builder: Quick Look](https://trailhead.salesforce.com/content/learn/modules/prompt-studio-quick-look) module, Linda Rosenberg, a Salesforce admin, aimed to reduce her sales team's manual workload by automating tasks with prompt templates. In this module, we take a deeper dive and show you _why_ and _how_ she did it.
+
+## Build a Sales Email Prompt Template
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+To create a sales email prompt template, your org needs the Einstein for Sales, Einstein for Platform, or Einstein for Service add-on. You also need to enable Einstein for Sales in Setup.
+
+Linda needs to create a template that her sales team can use to generate emails. She wants to reduce the time that the team spends on creating invitations to customers for product events.
+
+To do this, Linda navigates to Prompt Builder in Salesforce Setup. When she navigates to Prompt Builder, the first page that’s shown is the Prompt Builder Explore page. Here you find:
+
+-   Guidance to help you learn more about the features of Prompt Builder.  
+    
+-   Access to prompt template walkthroughs and examples.  
+    
+-   A listing of all existing prompt templates with their type, category and status.  
+    
+-   Functionality to edit and delete existing prompt templates.  
+    
+
+![Prompt Builder Explore page.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/95a113dca83b776e558477bf481472e0_kix.xv4567lcneta.png)
+
+From the Explore page, Linda can also create a prompt template. She clicks the **New Prompt Template** button.
+
+![Template type setup.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/ac4c3c34c622de8aa010af1236a6e8b4_kix.dugeapct6kw.png)
+
+Linda starts to complete the fields in the template type setup screen.
+
+When you set up a prompt template, it’s important to have a clear goal. In this case, Linda must think about who her company’s customers are and what the sales team wants them to see in the email.
+
+Linda understands that her email may be sent to any Cloud Kicks contact. Therefore, Contact is the recipient object. She completes the template type setup by selecting:
+
+1.  Prompt Template Type: **Sales Email**  
+    
+2.  Prompt Template Name: `Invite Customer to Local Product EventCopy`
+3.  API Name: `Invite_Customer_to_Local_Product_EventCopy`
+4.  Template Description: `Email customer to invite to local product event.Copy`
+5.  Recipient: **Contact**  
+    
+6.  Related Object: **Account**  
+    
+
+## Ground Your Template
+
+Making templates _specific_ makes them effective. Another way of saying “specific” is to say your template is _grounded_.
+
+Once Linda has defined her template type, she begins drafting and grounding her prompt in the Prompt Template Workspace.
+
+![Prompt template workspace with prompt.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/e0ca687be16abb145c282e185a510b90_kix.mc50owi3ebch.png)
+
+Linda includes the customer name, who the email is from, their titles, and details about the event.
+
+| 
+You are a Salesforce admin and your name is Linda Rosenberg from the organization Cloud Kicks. Your prospect is Rob Hutchinson, a director from Acme Inc., and they are based in Toronto, Ontario.
+
+In the email, invite the prospect to attend the event “Floating on Clouds: Toronto Kickoff” on September 18, an event for customers of Cloud Kicks new and old to network and preview upcoming products, in no more than 70 words. Explain to the prospect the possible benefits of attending the event and mention that you would be happy to chat with them further at the event or online if they need more information.
+
+ |
+| --- |
+
+The prompt looks great. However, her first draft is hard-coded for only one specific sender and recipient. That would be okay if the prompt is going to be used once. But the concept of a prompt template is that it can be used for any sender and recipient. What she needs is a way to get her company’s CRM data into the template and ground it automatically.
+
+Happily, Linda knows that she can use merge fields, Apex, and Flow as resources to enable Prompt Builder to securely access Salesforce data.
+
+## Add Merge Fields to a Prompt Template
+
+Linda reviews her prompt and looks for areas where she can use merge fields to take her prompt from hardcoded for one-time use to reusable for any sender and recipient.
+
+| 
+You are a **Salesforce admin** and your name is **Linda Rosenberg** from the organization **Cloud Kicks**. Your prospect is **Rob Hutchinson**, a **director**. They are based in **Toronto,** **Ontario**.
+
+In the email, invite the prospect to attend the event **“Floating on Clouds: Toronto Kickoff” on September 18, an event for customers of Cloud Kicks new and old to network and preview upcoming products**, in no more than 70 words. Explain to the prospect the possible benefits of attending the event and mention that you would be happy to chat with them further at the event or online if they need more information.
+
+ |
+| --- |
+
+Within the Prompt Template Workspace, Linda uses the **Resources** picklist to choose the type of resource to use. She sees there are multiple options for sales email prompt templates. Current Organization, Sender, and Recipient are all available to use in her prompt template.
+
+![List of resources including Flows (None Available), Apex, Current Organization, Sender, Recipient, and Account.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/b242bbdf003e5428f24ad4827f37cee4_kix.ius19giuqzl4.png)
+
+In the Resources picklist, Linda selects **Sender** and **Recipient**, where she then selects specific information, like title, name, company, and so on to ground her prompt template. She saves her work.
+
+| 
+![Resource picker displays the sender merge fields available.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/c478e67264bddc8dad9d0f0b62cc6944_kix.y1ngy4xvdrnz.png)
+
+ | 
+
+![Resource picker displays the recipient merge fields available.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/5efc5aaac51723854424a46bbb499b21_kix.ulq42lzdaghv.png)
+
+ |
+| --- | --- |
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+In this module you see the syntax `{!$Resource}Copy` in the prompt templates. This special syntax helps you to easily copy and paste the text from this module into the Prompt Template Workspace. It ensures all of your resources stay where and how you expected them in your template.
+
+| 
+You are a `**{!$Input:Sender.Title}**Copy` and your name is `**{!$Input:Sender.Name}**Copy` from `**{!$Input:Sender.CompanyName}**Copy`. Your prospect is `**{!$Input:Recipient.Name}**Copy`, a `**{!$Input:Recipient.Title}**Copy`. They are based in `**{!$Input:Recipient.MailingCity}**Copy`.
+
+In the email, invite the prospect to attend the event "Floating on Clouds: Toronto Kickoff" on September 18, an event for customers of Cloud Kicks new and old to network and preview upcoming products, in no more than 70 words. Explain to the prospect the possible benefits of attending the event and mention that you would be happy to chat with them further at the event or online if they need more information.
+
+ |
+| --- |
+
+After she’s done, she notices there’s one piece of her prompt that needs an adjustment before it can display the correct response: "Floating on Clouds: Toronto Kickoff" on September 18.
+
+At Cloud Kicks, “Floating on Clouds” is a nationwide event that hosts local customers based on their city. Linda wants to make sure the sales email prompt template is as personalized as possible and generates emails that invite customers to local events.
+
+Linda understands that using only merge fields for this portion isn't enough. She needs logic incorporated into her prompt template. There are several approaches to accomplish this within Prompt Builder, including using Apex or Template-Triggered Prompt Flows. First, let’s explore how to use Apex in prompt templates.
+
+## Add Apex to a Prompt Template
+
+If you want to use data from a SOQL query or an external API in your prompt, consider Apex. Apex is also effective if you want to generate well-formatted JSON or do programmatic data filtering.
+
+In this case, Linda wants to create an Apex class that finds events that are close to a given contact and returns the name of the event, subject, location, and start time. Using the Developer Console she creates a class named `ContactEventsCopy` with a method annotated as `InvocableMethodCopy`. The `InvocableMethodCopy` must accept `List<Request>Copy` where the inputs defined in the `RequestCopy` class match the inputs within the prompt. Also, the `InvocableMethodCopy` must be labeled with the `CapabilityTypeCopy` that matches the template type.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+If you are interested in learning more about adding Apex classes to prompt templates or to see code samples, check out the [Salesforce Documentation](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_apex.htm&type=5).
+
+Once her class is created, Linda returns to the Prompt Template Workspace in Prompt Builder and notices that Apex is now a resource. She adds the Apex class by clicking **Resources** and selecting **Apex**.
+
+| 
+![List of resources including Flows (None Available), Apex, Current Organization, Sender, Recipient, and Account.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/acbc6dae34997c03588b488c9e2f14d2_kix.pa6h43kprsb9.png)
+
+ | 
+
+![Resource picker displays the Apex classes available.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/prompt-builder-basics/create-and-ground-prompt-templates/images/1858a82ae5ea6d4342f30518560bd72b_kix.totuorra1rsp.png)
+
+ |
+| --- | --- |
+
+| 
+You’re a `{!$Input:Sender.Title}Copy` and your name is `{!$Input:Sender.Name}Copy` from `{!$Input:Sender.CompanyName}Copy`. Your prospect is `{!$Input:Recipient.Name},Copy` a `{!$Input:Recipient.Title}Copy`. They are based in `{!$Input:Recipient.MailingCity}Copy`.
+
+In the email, invite the prospect to attend an event for customers of Cloud Kicks new and old to network and preview upcoming products, in no more than 70 words.Explain to the prospect the possible benefits of attending the event and mention that you would be happy to chat with them further at the event or online if they need more information.
+
+Add the following event information to the email: `{!$Apex:ContactEvents.Prompt}Copy`.
+
+ |
+| --- |
+
+Great! Now instead of referencing one single event. Linda can rely on her Apex class to return an event close to the specified contact.
+
+## Resources
+
+-   [_Salesforce Help_: Ground with Apex Merge Fields](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_apex.htm&type=5)
+-   [_Salesforce Help_: Set Up Sales Emails](https://help.salesforce.com/s/articleView?id=ai.einstein_sales_emails_setup.htm&type=5)
+-   [_Trailhead_: Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals)
+
+
+# Prompt Builder
+
+Simplify your users’ daily tasks by integrating generative-AI moments powered by prompt templates into their workflow. Create, test, revise, customize, and manage prompt templates that incorporate your CRM data from merge fields that reference record fields, flows, related lists, and Apex. Prompt Builder helps you to make effective prompts that safely connect you and your data with LLMs.
+
+Create different types of prompt templates in Prompt Builder.
+
+-   A Sales Email prompt template helps your sales team to draft personalized emails for a contact or a lead.
+-   A Field Generation prompt template brings generative AI-assisted workflows to fields within Lightning record pages. Enable your users to populate a field with a summary or description created by an LLM to facilitate more productive conversations with your customers.
+-   A Flex prompt template takes a variable number of inputs of different object types. This flexibility opens up a wide array of possibilities, such as generating a newsletter based on product and campaign objects.
+
+Call a prompt template through an invocable action anywhere on the Salesforce Platform or by using the Connect REST API or Connect in Apex.
+
+Assign the Prompt Template Manager permission set to Salesforce admins who create and manage prompt templates in Prompt Builder.
+
+#### See Also
+
+-   [Integrate Prompt Templates with Salesforce Features](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_integrate.htm&language=en_US&type=5)
+-   [_Trailhead_: Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals)
+-   [_Trailhead_: Prompt Builder: Quick Look](https://trailhead.salesforce.com/content/learn/modules/prompt-studio-quick-look)
+-   [_Trailhead_: Prompt Builder: Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)
+-   [_Video_: Get to Know Prompt Builder](https://salesforce.vidyard.com/watch/kJPBHFRvvTpjJZ51Y4hj3A)
+-   [_Video_: How to Build a Prompt Template](https://salesforce.vidyard.com/watch/V1G9tgorNbyeaD811SRamA)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE4OTAxODksLTkzNzU5MTI3NSwyMD
-M1OTY5MjA4LDE4OTg5MDg3Miw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTg2MzQ0NzgwNiwtOTM3NTkxMjc1LDIwMz
+U5NjkyMDgsMTg5ODkwODcyLDczMDk5ODExNl19
 -->
