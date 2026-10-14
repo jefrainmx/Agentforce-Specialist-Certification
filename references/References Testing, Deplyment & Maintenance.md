@@ -661,12 +661,73 @@ Related Articles
 -   [How to Deploy Agent Script (AiAuthoringBundle) metadata](https://docs.gearset.com/en/articles/13452227-how-to-deploy-agent-script-aiauthoringbundle-metadata)
 -   [How to deploy Agentforce Agents](https://docs.gearset.com/en/articles/13700779-how-to-deploy-agentforce-agents)
 
+# Deploy change sets from sandbox to production
+
+Publish Date: Jun 25, 2026
+
+Description
+
+  
+A change set in Salesforce is a collection of components and customizations — such as Apex classes, Apex Triggers, and page layouts — that can be deployed between connected Salesforce orgs. This article describes how to deploy a change set from a sandbox environment to a production organization.
+
+**Note:** An administrator must first connect the source and target organizations before deployment is possible.
+
+Resolution
+
+Follow these two stages to deploy a change set: first upload it from your sandbox, then deploy it in your production org.
+
+### **Create and upload a change set in your source sandbox organization**
+
+1.  Log in to your sandbox.
+2.  Navigate to **Setup** and enter c_hange set_ into the Quick Find box.
+3.  Click **Outbound Change Set**
+4.  Click **New**.
+5.  Enter the new Change Set name and description, then click **Save**.
+6.  From the "Change Set Components" related list, click **Add**.
+7.  Add profiles to the Change Set for the Users you'd like to grant access.
+8.  Select the "Component Type" for the component you want to deploy (for example, Apex class, Apex Trigger).
+9.  Select the specific class or trigger name, then click **Add to Change Set**.
+10.  From the "Change Set Detail" related list, click **Upload**, then select the target organization as **Production**.
+11.  Click **Upload**.
+
+After your upload has completed, you'll receive an email to confirm completion of your Change Set upload.To complete the migration, an inbound change administrator can deploy the Change Set in the destination production organization.  
+ 
+
+### **Complete the deployment in your target production organization**
+
+1.  Login to the target organization.
+2.  Navigate to **Setup** and enter _Change Set_ into the Quick Find box.
+3.  Click **Inbound Change Sets**.
+4.  Under "Change Sets Awaiting Deployment," click your Change Set's name.
+5.  Click **Validate** to validate the components. 
+6.  Click **Deploy**.
+
+Once you have a successful validation, repeat the above steps and choose **Deploy** on step 5 to complete the deployment of your Change Set. 
+
+### Code Coverage Requirement
+
+For a successful deployment, your Apex code must have at least 75% test coverage. Run Validate before deploying to confirm code coverage requirements are met. If coverage is below 75%, update your Apex test classes before proceeding.
+
+Additional Resources
+
+  
+[Change Sets Implementation Tips](https://help.salesforce.com/s/articleView?id=platform.changesets_implementation_notes.htm&type=5&language=en_US)   
+[Monitor Deployments](https://help.salesforce.com/s/articleView?id=platform.deploy_monitoring.htm&type=5&language=en_US)   
+[Components Available in Change Sets](https://help.salesforce.com/s/articleView?id=platform.changesets_about_components.htm&type=5&language=en_US)  
+[Deploy profiles via change sets](https://help.salesforce.com/s/articleView?id=000386377&type=1&language=en_US)  
+[**Connect Organizations for Deployment**](https://help.salesforce.com/s/articleView?id=platform.deploy_connection_parent.htm&type=5&language=en_US)  
+  
+**Video guide to deploy change sets**  
+[Release Management: Deploying Changes Using Change Sets](https://www.youtube.com/watch?v=Ix_LFFdck-E)  
+[How to Add Components to a Change Set and Upload](https://youtu.be/AFezX6KWaFg)  
+[How to Create a Deployment Connection for a Change Set](https://www.youtube.com/watch?v=vJm3rsFts8U)
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3Mzc3MDcwOCwyMTQ0ODAxODQsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbMTg5MjgwOTIxLDIxNDQ4MDE4NCw3MzA5OT
+gxMTZdfQ==
 -->
