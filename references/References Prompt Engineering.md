@@ -1747,6 +1747,8 @@ Note If a request fails to process in the designated region(s), Salesforce-Manag
 This table lists the Salesforce-managed models that are available for embedded features, such as Prompt Builder. For Agentforce, see the Agentforce Models section.
 See [Agentforce Models section](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&type=5)
 
+
+
 ![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
 
 Note All the Salesforce-managed models might not be available in your org.
@@ -1872,7 +1874,7 @@ New model announcements and model deprecation announcements are part of the mont
 -   [Bring Your Own Large Language Model](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_foundation_models.htm&language=en_US&type=5)
 -   [Select Agentforce Model Option](https://help.salesforce.com/s/articleView?id=ai.agent_setup_select_model_provider.htm&language=en_US&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MzI2NTA1OSwtODg4MDUxMjc2LDE4ND
-kyMTk4MjMsMTg2MzQ0NzgwNiwtOTM3NTkxMjc1LDIwMzU5Njky
-MDgsMTg5ODkwODcyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTQ3MzA3MTM3LC04ODgwNTEyNzYsMTg0OT
+IxOTgyMywxODYzNDQ3ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIw
+OCwxODk4OTA4NzIsNzMwOTk4MTE2XX0=
 -->
