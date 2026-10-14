@@ -129,8 +129,29 @@ Found in the Agentforce (Default) folder in the Dashboard tab, the reports on th
 -   **[Legacy Agentforce Analytics Troubleshooting](https://help.salesforce.com/s/articleView?id=ai.copilot_analytics_troubleshooting.htm&language=en_US&type=5)**  
     If you’re not seeing the information you expect in your reports and dashboards, check these possible solutions.
 
+# Monitor Your Voice-Enabled Agent
+
+To boost service quality, supervisors can monitor the voice-enabled agents on active calls by using Omni Supervisor. They can also monitor agent performance over time by using agent analytics reports and dashboards.
+
+## Monitor Agents with Omni Supervisor
+
+To make sure that your voice-enabled agent consistently delivers high-quality service to customers over the phone, supervisors can monitor the call transcripts in the Agentforce tab of Omni Supervisor. The Agentforce tab shows a list of agents on active calls. If you’re using a supervisor configuration, confirm that the Agentforce tab and the Agentforce Service agents are visible in Omni Supervisor.
+
+![The Agentforce tab shows an agent on a call and the transcript](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/agentforce_voice_omni_supervisor.png)
+
+See [Monitor Agentforce Service Agents](https://help.salesforce.com/s/articleView?id=service.omnichannel_monitor_service_agents.htm&language=en_US&type=5).
+
+## Monitor Agent Performance with Agentforce Analytics
+
+Agent Analytics: Seeing the overall picture
+
+The Agent Analytics tool records every step of an AI conversation from start to finish. It gathers all the details from your agent's sessions into one place so you can see exactly how they’re performing over time. By looking at these records, you can spot general trends and use the data to make sure that your agents stay helpful and efficient. See [Get Insights with Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_use.htm&language=en_US&type=5).
+
+Agent Optimization: Fixing specific problems
+
+The Agent optimization tool helps you improve how the agent talks to your customers. You can listen to the recordings of the voice calls, dive into the details of conversations, and review quality scores. You can find knowledge gaps where the AI didn't have the right answer. Review specific examples and quality scores to get insights for optimizing your voice-enabled agent. See [Use Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_use.htm&language=en_US&type=5).
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjM3NTAxNTMsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEwNDkxMDc0NzAsNzMwOTk4MTE2XX0=
 -->
