@@ -335,19 +335,9 @@ This table provides some examples of useful metadata fields.
 
 | Type | Metadata Field Examples |
 | --- | --- |
-| DMO (Knowledge Articles) | 
--   Title
--   Product Name
-
- |
+| DMO (Knowledge Articles) | -   Title <br>-   Product Name|
 | UDMO (External blob store connectors) | File Path |
-| UDMO (Webcrawler or Sitemap connectors) | 
-
--   Labels
--   Title
--   URL
-
- |
+| UDMO (Webcrawler or Sitemap connectors) | -   Labels<br>-   Title<br>-   URL|
 
 Configure fields to prepend to chunks from DMOs or UDMOs in the search index advanced setup for vector or hybrid search.
 
@@ -367,5 +357,5 @@ By using code extension, deploy a custom function and select it as the chunking 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDM1NDc2MDgsLTM1NTkyOTYxN119
+eyJoaXN0b3J5IjpbLTExMjY3MjM4MzQsLTM1NTkyOTYxN119
 -->
