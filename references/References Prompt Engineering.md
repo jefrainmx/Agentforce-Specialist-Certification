@@ -485,10 +485,10 @@ Let’s try it out.
 
 2.  Click ![Get Einstein’s help in creating this field value.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/projects/quick-start-prompt-builder/get-started-with-prompt-builder/images/c2acfb8d7a4feeb4d59ad5a69134b848_kix.5wmo2aiatic1.png) on the right of the field.  
     This automatically opens up the Einstein overlay and uses your prompt template to start a new conversation. In a moment Einstein will suggest a case summary. Again, yours may be a little different than ours:  
-        
+        
     Here is what I came up with  
     The comments regarding the case include the following actions: contacting engineering for a PDF of the wiring diagram, emailing the diagram to the customer while awaiting a reply, and noting that the generator was manufactured in 2019. This case, which has a low priority and pertains to electrical issues, seeks guidance on the electrical wiring installation for GC5060.  
-       
+       
     In the Einstein overlay panel, it looks like this:  
     
 
@@ -514,7 +514,9 @@ Great job creating such a helpful prompt template. Have fun experimenting in the
 -   [_Trailhead_: Prompt Builder Basics](https://trailhead.salesforce.com/content/learn/modules/prompt-builder-basics)
 -   [_Trailhead_: Generative AI Basics](https://trailhead.salesforce.com/content/learn/modules/generative-ai-basics)
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjk2NjUwMDEsLTkzNzU5MTI3NSwyMD
+eyJoaXN0b3J5IjpbLTE3MTE4OTAxODksLTkzNzU5MTI3NSwyMD
 M1OTY5MjA4LDE4OTg5MDg3Miw3MzA5OTgxMTZdfQ==
 -->
