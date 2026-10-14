@@ -506,6 +506,8 @@ When you build the search index, Data 360 creates a hybrid search index for the 
 -   [_Salesforce Help_: Manage Search Index](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_manage.htm&language=en_US&type=5)
 -   [_Salesforce Help_: Ground with Retriever Augmented Generation (RAG)](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag.htm&language=en_US&type=5)
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTc1ODg1MjAsLTM1NTkyOTYxN119
+eyJoaXN0b3J5IjpbNjMyNzIxNTg4LC0zNTU5Mjk2MTddfQ==
 -->
