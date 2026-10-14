@@ -983,12 +983,30 @@ To reference more than one file, use Flow or Apex to select the file before the 
 -   [Prompt Builder Limits](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limits.htm&language=en_US&type=5)
 -   [Troubleshoot Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_troubleshoot.htm&language=en_US&type=5)
 
+# Activate and Deactivate Prompt Templates
+
+Use activation and deactivation of prompt templates to finely control which version your users can access.
+
+During the process of crafting a prompt template, you typically create a few versions to test which template body, grounding data, and LLM combination yields the most satisfying response. Because of this iterative drafting process, prompt templates aren’t available to your users by default. You must activate them first.
+
+When you activate a prompt template, you’re making a specific version of the prompt template available to your users. Only one version of a template can be active at a time, and if no versions are active the template becomes unavailable to your users. Activating and deactivating versions gives you the control to make available only the version of a template you want to share.
+
+1.  Begin in the Prompt Template Workspace of Prompt Builder. See [Create a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_build_template.htm&language=en_US&type=5).
+2.  Begin drafting your prompt in the Prompt section. When you’re ready to save your work, click **Save**. This prompt is now Version 1 of your prompt template, as denoted by the version number shown at the top of the Prompt Template Workspace.
+3.  When you’re ready to activate a template and make it available to your users, click **Activate**.
+    
+    ![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+    
+    Important Activating a template version makes it immutable. Even if deactivated, any version that was ever active remains immutable. To edit such a template, save it as a new version. See [Use Multiple Versions of a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_use_multiple_versions.htm&language=en_US&type=5).
+    
+4.  To deactivate an active template version, click **Deactivate**.
+
 
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3Mzg0NzQwNiwxODA4NzQ1MDczLDIxND
+eyJoaXN0b3J5IjpbLTUzODUzOTk3OCwxODA4NzQ1MDczLDIxND
 Q4MDE4NCw3MzA5OTgxMTZdfQ==
 -->
