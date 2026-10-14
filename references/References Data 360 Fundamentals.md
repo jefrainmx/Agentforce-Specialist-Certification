@@ -355,7 +355,24 @@ By using code extension, deploy a custom function and select it as the chunking 
 -   [_Salesforce Developer_: Code Extension in Data 360](https://developer.salesforce.com/docs/data/data-cloud-code-ext/guide/use-custom-code.html)
 -   [_Salesforce Help_: Govern Content for AI Consumption](https://help.salesforce.com/s/articleView?id=005460254&language=en_US&type=1)
 
+# Rebuild a Search Index Configuration
 
+If a Data 360 search index doesn't process properly, you can trigger a full rebuild of the index from the list page or the object record view.
+
+The volume of data determines the time that it takes to rebuild a search index. The rebuild time can differ from the initial build because the amount of data in the data model object may have changed. This action reprocesses all data in the search index and can potentially consume a significant number of credits. Search indexes update continuously, so you don't have to rebuild them manually. If Data 360 dosen't process new content automatically, contact Salesforce Customer Support before rebuilding.
+
+1.  From app Launcher, select **Data Cloud**.
+2.  Click the search index configuration that you want to rebuild.
+3.  On the details page, select **Rebuild**.
+    
+    The rebuild process happens in the background. You can continue to query the search index during this time without any interruptions. After a new version of the index is successfully built, the current version of the index is seamlessly replaced. See [View Search Index Status and Process History](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_view_search_index.htm&language=en_US&type=5) for an explanation of statuses.
+    
+    ![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-data-data_cloud-264-0-0-production-enus/9a804ab5-dba6-49d5-8077-820fbcc92ad9/images/icon_note.png)
+    
+    Note
+    
+    The Rebuild action isn't available for search indexes created by Agentforce Data Library (ADL) for file uploads. It's available only for search indexes created by Agentforce Data Library (ADL) for knowledge articles.
+    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY3MjM4MzQsLTM1NTkyOTYxN119
+eyJoaXN0b3J5IjpbMTYwMzI3MTU4OSwtMzU1OTI5NjE3XX0=
 -->
