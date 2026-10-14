@@ -148,7 +148,54 @@ Use [Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=ai.
 -   [_Trailhead_: Retrieval Augmented Generation: Quick Look](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look)
 -   [Using Retrieval Augmented Generation](https://help.salesforce.com/s/articleView?id=data.c360_a_rag_overview.htm&language=en_US&type=5)
 
+# Get Started with Unstructured Data in Data 360
+
+## Learning Objectives
+
+After this step, you’ll be able to:
+
+-   Define unstructured data in Data 360.  
+    
+-   Explain how unstructured data enhances your AI and automation strategies.  
+    
+-   Describe how to connect data from an external blob store (‌such as Amazon S3).  
+    
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+As of October 14, 2025, Data Cloud has been rebranded to Data 360. During this transition, you may see references to Data Cloud in our application and documentation. While the name is new, the functionality and content remains unchanged.
+
+## What’s Unstructured Data?
+
+The data your organization gathers generally takes three forms—structured, semistructured, and unstructured. Organizations collect an increasingly large portion of unstructured data, yet they effectively harness only a very small portion of it. Large amounts of data can be challenging to effectively integrate into workstreams, especially for search and retrieval purposes. With support for unstructured data in Data 360, it’s time to change that.
+
+Unstructured data is data that doesn’t have a specific, consistent format and can’t be easily stored in a typical relational database. Its lack of structure makes it particularly challenging to search or analyze. However, AI technologies, such as large language models (LLMs), can process unstructured data effectively. This capability has many enterprises incorporating their increasingly vast reams of unstructured data into their data-driven strategies.
+
+Common forms of unstructured data include chat transcripts, audio and video files, emails, legal documents, and other large texts, such as books. In Salesforce, examples of unstructured data are data from Knowledge articles or sales call transcripts.
+
+## Use Unstructured Data to Enhance Your AI and Automation Strategies
+
+When you connect your unstructured data in Data 360, you can create customer-centric results in yourgenerative AI (Prompt Builder and Agentforce); automation (Flow Builder); and analytics (Tableau and CRM Analytics) applications. For example, you can enhance service reply recommendations by generating responses to customers using Knowledge article data or create prompt templates that use prior emails to generate personalized messages. Or you can use Flow Builder and Agentforce to show service agents similar case data to help in case resolution or when they log new cases.
+
+## Connect Unstructured Data from External Blob Stores
+
+Data 360 can reference unstructured data in formats such as HTML, TXT, and PDF formats. For more information see, [Unstructured Data File Formats and Connectors](https://help.salesforce.com/s/articleView?id=data.c360_a_unstructured_data_connect.htm&type=5). And since Data 360 already supports connections from Amazon S3, Azure Blob Storage, and Google Cloud Storage, it takes just a few configuration clicks to bring in your unstructured data if you’ve already set up those connections.
+
+After you create a connection between your external blob store and Data 360, you can reference unstructured data in Data 360 by creating an unstructured data lake object (UDLO) and mapping it to an unstructured data model object (UDMO).
+
+Data 360 automatically creates ‌field level mappings between UDLOs and UDMOs because the schemas across the two objects are identical. You can read more about their schemas in [Salesforce Help](https://help.salesforce.com/s/articleView?id=data.c360_a_unstructured_data_about.htm&type=5).
+
+The relationship between UDLOs and UDMOs can be 1:1 or N:1. This means, each UDLO can be mapped to at most one UDMO, while multiple UDLOs can be mapped to a single UDMO. Let’s look at an example.
+
+Consider that you’re referencing case-recording data from multiple external blob stores. Three different UDLOs reference data from these three sources: CaseRecordingsFromAWSBucket1, CaseRecordingsFromAWSBucket2, and CaseRecordingsfromGCS. Because these sources are logically the same object, the individual UDLOs are mapped to one UDMO: CaseRecordings.
+
+When you connect unstructured data from your external blob stores to Data 360, you give your admins and users more relevant content to help them resolve issues, manage cases, and build effective prompts for Einstein generative AI applications.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+Data 360 doesn’t import unstructured data–the UDMOs reference it from the external blob store.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTkyOTYxN119
+eyJoaXN0b3J5IjpbLTYxNzIxMDI3NCwtMzU1OTI5NjE3XX0=
 -->
