@@ -1044,8 +1044,41 @@ See [the Prompt Builder section](https://developer.salesforce.com/docs/ai/agentf
 -   [_Agentforce Developer Guide_: Prompt Builder](https://developer.salesforce.com/docs/ai/agentforce/guide/get-started-prompt-builder.html)
 -   [How Users Work with a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_how_users_work_with_templates.htm&language=en_US&type=5)
 
+# Change LLM Configurations in Prompt Templates
+
+Select and optionally modify an LLM configuration for generating outputs in Prompt Builder.
+
+One of the most powerful features of Prompt Builder is the ability to change the LLM configuration with only a few clicks.
+
+## Standard and Customer LLM Configurations
+
+LLM configurations in Prompt Builder are classified as either standard or custom. Standard configurations come included with Prompt Builder. Custom configurations are brought in via BYO-LLM. Additionally, if you modify a standard configuration, the changed configuration is saved as a custom configuration.
+
+## Versions and LLM Configurations
+
+Each version of a prompt template can contain a different model configuration. Only the configuration model in the activated version is used.
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+
+Important Activating a template version makes it immutable. Even if deactivated, any version that was ever active remains immutable. To edit such a template, save it as a new version. See [Use Multiple Versions of a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_use_multiple_versions.htm&language=en_US&type=5).
+
+## View a Model
+
+The **View this model** link in the Model section of the Template Settings panel opens the AI Models (formerly Einstein Studio) model page for the selected model. On this page, make any changes to the model before continuing to draft your prompt template in Prompt Builder.
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+
+Important Users need the Data Cloud Admin permissions to see and use the **View this model** link in the Template Settings panel. Without these permissions, users can’t access Model Configuration within AI Models.
+
+## Replace a Hidden Model
+
+An LLM configuration can be hidden in AI Models. A prompt template that uses a hidden model continues to run as before. However, it’s recommended that you replace the hidden model with an available one. If you open a prompt template that uses an unavailable model, Prompt Builder has you select a different model in the Models field before you can save your changes as a new version.
+
+## See Also
+
+-   [Large Language Model Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&language=en_US&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyOTE0NDkyMCwxODA4NzQ1MDczLDIxND
-Q4MDE4NCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbOTY1MTQ2NTY3LDE4MDg3NDUwNzMsMjE0ND
+gwMTg0LDczMDk5ODExNl19
 -->
