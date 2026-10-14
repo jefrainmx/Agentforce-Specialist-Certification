@@ -240,7 +240,9 @@ Consider these points when grounding your prompts with Record Snapshots.
 -   [Assign Page Layouts to Profiles or Record Types](https://help.salesforce.com/s/articleView?id=platform.layouts_assigning.htm&language=en_US&type=5)
 -   [Page Layout Considerations](https://help.salesforce.com/s/articleView?id=platform.layouts_considerations.htm&language=en_US&type=5)
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzE3MDIzNDMsMjAzNTk2OTIwOCwxOD
-k4OTA4NzIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTkzNzU5MTI3NSwyMDM1OTY5MjA4LDE4OT
+g5MDg3Miw3MzA5OTgxMTZdfQ==
 -->
