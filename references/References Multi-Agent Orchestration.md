@@ -408,8 +408,60 @@ AI agents can interoperate in a variety of ways - from dedicated integrations, t
 
 Interoperability allows AI agents to take advantage of external tools, systems, and data to improve the performance and reliability of that agent. Interoperability also means less work for development teams to configure bespoke integrations between agents and other systems.
 
+# What Is MCP? A Simple Guide to Model Context Protocol for Salesforce Admins
+
+_Editor’s note: This article was updated on May 6, 2026, with the latest information and resources._
+
+One of the challenges of the AI revolution is simply keeping up. Technology evolves quickly: Interfaces get updated, models change in terms of performance, precision, and sometimes even tone and personality. Completely new functionality is being added to agents at a breakneck speed. For Salesforce Admins, keeping up with new concepts and terminology can definitely be a challenge, especially when new ideas are defined with acronyms or by unfamiliar technological terms.
+
+A great example is Model Context Protocol, or MCP, a new standard designed to let agents connect with tools, services, and external applications to access data, actions and prompts. Let’s break down what that term means, how the technology works, and what it will mean for admins and their Agentforce implementations.
+
+## MCP: A new solution to an old problem
+
+MCP is a protocol drafted by Anthropic and has emerged as the de facto standard for describing how an agent should access tools, data sources and systems. For Salesforce, this will allow Agentforce to easily access services like databases and enterprise tools. Currently this requires custom application development, but in the future it should surface in custom and standard Salesforce functionality.
+
+Ever since computing adopted the client-server model with two very different things trying to talk to each other securely and consistently, the problem of how to make that connection work has existed. How do clients authenticate themselves? How do servers deliver information to the right location? How does the client know what kind of data to expect and respond to it correctly? Now take those questions and realize if someone creates a different kind of server or client, you have to ask them all over again and design an integration that handles different answers.
+
+The Internet Age is full of novel ideas and protocols that solve these kinds of problems. Many application programming interfaces (APIs) include some kind of means of asking for answers to these questions directly, and even import them into client applications.
+
+MCP provides a singular, agreed-upon way for an agent to ask a server about its functionality. With MCP, Agentforce has a universal connector to external data sources and tools.
+
+## Context is king
+
+Sound familiar? It should if you’ve been working with any kind of AI. Artificial intelligence will always, always, always be bad at its job if it lacks context. My classic example is the phrase “I need a ticket.” On its own, it lacks the detail needed to complete a task or generate a meaningful response, especially compared to something like “I need a plane ticket from Chicago to San Francisco for Dreamforce 2025.” 
+
+For an agent to work with an external tool, it needs to understand the context of the functionality in a way that fits into its system of topics, prompts and instructions. MCP provides a universal standard for a client to engage with an external server to receive the context needed to deliver accurate, effective results.
+
+The working parts of MCP include:
+
+-   **Host:** The agentic platform (e.g., Agentforce)  
+    
+-   **Client:** Acts within the host to communicate with MCP servers  
+    
+-   **Server:** Exposes data, prompts, and actions  
+    
+-   **Actions:** Enable the agent to take actions via your server
+-   **Resources:** Provide structured data and content access  
+    
+-   **Prompts:** Define reusable workflows and prompt templates
+
+A common way to think of MCP working with clients is adding new skills to the client. So when Agentforce Vibes needs to work against the Salesforce Platform, it takes your prompt, determines what actions are required to make that happen, contacts the MCP server (in this case hosted by Salesforce) and receives a response in the form of predictable structured data and resources.
+
+## Where can I see it in action?
+
+MCP is the power behind the [AgentExchange](https://agentexchange.salesforce.com/), which allows you to browse and try new skills, agents and solutions for Slack and Salesforce. These offerings extend Slack and Salesforce functionality across the enterprise ecosystem by allowing access to skills and functionality from a wide variety of partners.
+
+For a more visual overview, check out this video:
+
+## Learn more from these resources
+
+-   Salesforce Developers Blog: [Introducing MCP Support Across Salesforce](https://developer.salesforce.com/blogs/2025/06/introducing-mcp-support-across-salesforce)
+-   Salesforce site: [Agentforce MCP Support](https://www.salesforce.com/agentforce/mcp-support/)
+-   Salesforce site: [Salesforce Launches Agentforce 3 to Solve the Biggest Blockers to Scaling AI Agents: Visibility and Control](https://www.salesforce.com/news/press-releases/2025/06/23/agentforce-3-announcement/)
+-   Salesforce Admins Blog: [A Test-Driven Approach to Building Better Agents](https://admin.salesforce.com/blog/2025/a-test-driven-approach-to-building-better-agents)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE3MTk3NTcsLTExNTc4ODcwNzIsLT
-U1OTgwMDM2NCw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTQxNTU3ODk3NSwtMTE1Nzg4NzA3MiwtNT
+U5ODAwMzY0LDczMDk5ODExNl19
 -->
