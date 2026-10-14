@@ -582,7 +582,84 @@ Note Beginning in April 2026, agent topics are now called subagents. There are n
     Event logs capture the events and user messages in an agent session to help you test and troubleshoot your agent. In supported agent types, enable enhanced event logs to store conversation data and view all session activity in one place. When enhanced event logs aren't enabled, events associated with agent and user messages (such as Message sent: and User response:) are logged, but the messages themselves aren't included in the event.
 
 
+# How to deploy Agentforce AI Planner metadata
 
+A walkthrough on how to deploy Agentforce AI Planner metadata via GenAiPlannerBundle (API v 64 and above) or GenAiPlanner (API v 60 to 63)
+
+Written by Vincent Maltby
+
+September 10, 2026
+
+Table of contents
+
+[Prerequisites](#h_06af2dbc19)
+
+[What metadata is needed in the filter?](#h_0da9f5301d)
+
+[How to deploy GenAiPlannerBundle metadata with Gearset?](#h_5a4c92f97c)
+
+**Important to note:** _GenAiPlanner_ components are available in API versions 60 to 63. In API version 64.0 and later, _GenAiPlanner_ is deprecated and replaced entirely by _GenAiPlannerBundle_.
+
+Gearset's [Agentforce metadata deployment solution](https://gearset.com/solutions/agentforce/) streamlines the process of deploying AI-powered configurations in Salesforce, including the Agent Planner metadata (_[GenAiPlanner](https://GenAiPlanner)_ & _[GenAiPlannerBundle](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/meta_genaiplannerbundle.htm)_).
+
+Agentforce **AI Agents** engage customers autonomously across channels in natural language.
+
+This guide will explain how to successfully deploy **Agent Planner** metadata with Gearset.
+
+## Prerequisites
+
+Make sure to use at least API version 60 for the comparison. Read the prerequisite section of the [How to deploy GenAi metadata](https://docs.gearset.com/en/articles/10406855-how-to-deploy-genai-metadata-types) guide to find out how to do this.
+
+The `Einstein bot` and `botVersion` associated to the Agent that you want to deploy must exist on the target org — otherwise the agent will not be visible.
+
+## What metadata is needed in the filter?
+
+You'll need to include `Einstein bot`, `botVersion` & `GenAiPlanner` (for API versions 60-63) or `GenAiPlannerBundle` (for API version 64 and above) in your metadata filter.  
+​
+
+[![](https://downloads.intercomcdn.com/i/o/h0kayiwv/1350276782/d86bc87463f41bd2906e56a4569c/image.png?expires=1792019700&signature=18f19ec39c39d0bdb34dfecee3346be6c218ae3323ed61dca7fa4dcee156091e&req=dSMiFst5m4ZXW%2FMW1HO4zd29j9s3odp98hjsfZFhSepjkw3mFXjQgWdk%2BLY3%0A66F9vtWNVnzrc3E2sl8%3D%0A)](https://downloads.intercomcdn.com/i/o/h0kayiwv/1350276782/d86bc87463f41bd2906e56a4569c/image.png?expires=1792019700&signature=18f19ec39c39d0bdb34dfecee3346be6c218ae3323ed61dca7fa4dcee156091e&req=dSMiFst5m4ZXW%2FMW1HO4zd29j9s3odp98hjsfZFhSepjkw3mFXjQgWdk%2BLY3%0A66F9vtWNVnzrc3E2sl8%3D%0A)
+
+## How to deploy GenAiPlannerBundle metadata with Gearset?
+
+If the agent was created using the **Agent Script** editor, you need to select the `Agent Script (AiAuthoringBundle)` metadata type in the filter. Check out this [document](https://docs.gearset.com/en/articles/13452227-how-to-deploy-agent-scripts-aiauthoringbundle-metadata) on how to deploy Agent Scripts.
+
+To deploy the `GenAiPlannerBundle` metadata type, you need to make sure that all the `GenAiFunction` and `GenAiPlugin` dependencies exist on the target environment. If they don't, then you'll need to deploy them alongside the `GenAiPlannerBundle` for the validation/deployment to be successful.
+
+**Note:** If the `GenAiPlanner` is `New` (in the source), then the associated `Einstein bot` and `botVersion` will also need to be deployed to the target org. Otherwise the deployed `GenAiPlanner` will not be visible on the target org. It's recommended to always deploy any changes to the `Einstein bot` and `botVersion` alongside the `GenAiPlanner` (or alongside `GenAiPlannerBundle` if deploying via APi version 64 and above).
+
+Example:
+
+[![](https://downloads.intercomcdn.com/i/o/h0kayiwv/1336798680/7a8523e491ee375a56dbdde08355/image.png?expires=1792019700&signature=2c086e14eabb1a897b6130389cec9f72c213c73d85e024415fb898fb62b90f38&req=dSMkEM53lYdXWfMW1HO4zd1CYh7vb4OV94OCT8tQjD8fqxJji01tjcYwVaZV%0AcSSW6SpPY7ani%2BGKGS0%3D%0A)](https://downloads.intercomcdn.com/i/o/h0kayiwv/1336798680/7a8523e491ee375a56dbdde08355/image.png?expires=1792019700&signature=2c086e14eabb1a897b6130389cec9f72c213c73d85e024415fb898fb62b90f38&req=dSMkEM53lYdXWfMW1HO4zd1CYh7vb4OV94OCT8tQjD8fqxJji01tjcYwVaZV%0AcSSW6SpPY7ani%2BGKGS0%3D%0A)
+
+This `GenAiPlannerBundle` is dependent on the following `GenAiFunction`:
+
+-   EmployeeCopilot\_AnswerQuestionsWithKnowledge
+    
+
+It's also dependent on the following `GenAiPlugins`:
+
+-   EmployeeCopilot\_GeneralCRM
+    
+-   SvcCopilotTmpl\_OrderInquiries
+    
+-   SvcCopilotTmpl\_GeneralFAQ
+    
+-   Customer\_Service\_Assistant
+    
+
+If any of these `GenAiFunctions` or `GenAiPlugins` aren't already in the org, or being deployed to the org alongsidethe `GenAiPlannerBundle`, then the validation/deployment will fail.  
+​  
+We will be adding more problem analyzers over time to help highlight any missing `GenAiFunction` or `GenAiPlugin` dependencies before you validate or deploy your Agentforce agents.
+
+* * *
+
+Related Articles
+
+-   [How to deploy Agentforce (GenAi & Ai) metadata types](https://docs.gearset.com/en/articles/10406855-how-to-deploy-agentforce-genai-ai-metadata-types)
+-   [How to deploy Agentforce Subagent AKA Topic (GenAiPlugin) metadata](https://docs.gearset.com/en/articles/10406889-how-to-deploy-agentforce-subagent-aka-topic-genaiplugin-metadata)
+-   ["Default Agentforce comparison" metadata filter](https://docs.gearset.com/en/articles/10572042-default-agentforce-comparison-metadata-filter)
+-   [How to Deploy Agent Script (AiAuthoringBundle) metadata](https://docs.gearset.com/en/articles/13452227-how-to-deploy-agent-script-aiauthoringbundle-metadata)
+-   [How to deploy Agentforce Agents](https://docs.gearset.com/en/articles/13700779-how-to-deploy-agentforce-agents)
 
 
 
@@ -590,6 +667,6 @@ Note Beginning in April 2026, agent topics are now called subagents. There are n
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4Mjg2MDUwMywyMTQ0ODAxODQsNzMwOT
+eyJoaXN0b3J5IjpbMTU3Mzc3MDcwOCwyMTQ0ODAxODQsNzMwOT
 k4MTE2XX0=
 -->
