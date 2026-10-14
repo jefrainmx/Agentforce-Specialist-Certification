@@ -296,40 +296,9 @@ CSV files are one of the most common ways to store tabular data. Each value is s
 
 Here’s a closer look at the first example from the testing\_template.csv file.
 
-| 
-**Utterance**
-
- | 
-
-**Expected Subagent**
-
- | 
-
-**Expected Actions**
-
- | 
-
-**Expected Response**
-
- |
+| **Utterance** |**Expected Subagent**|**Expected Actions** |**Expected Response**|
 | --- | --- | --- | --- |
-| 
-
-Summarize account Acme
-
- | 
-
-OOTBSingleRecordSummary
-
- | 
-
-\['IdentifyRecordByName', 'SummarizeRecord'\]
-
- | 
-
-summary of Account details are shown
-
- |
+|Summarize account Acme| OOTBSingleRecordSummary| \['IdentifyRecordByName', 'SummarizeRecord'\] |summary of Account details are shown|
 
 The _utterance_ is “Summarize account Acme” and is looking for the _expected subagent_ to be OOTBSingleRecordSummary. Notice that the subagent is the API name and not the Label for the subagent. Utterances are the questions or inquiries that the agent can get. Since an agent can have multiple subagents, the Expected Subagent is the subagent that the utterance should trigger to run.
 
@@ -339,8 +308,7 @@ The last column is for the _expected response_ to the actions and is set as a de
 
 Now let’s look at another example from the testing template file. The last line is similar to the first, but covers more data since it is looking for all open cases and activities of the Acme account in a certain data range.
 
-| 
-**Utterance**
+| **Utterance**
 
  | 
 
@@ -432,5 +400,5 @@ Make sure to click **Check Challenge to Earn 500 Points** before moving on to th
 -   [_Salesforce Help_: Agentforce Testing Center Create a Test](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center_create.htm&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk4NTE2NDY1LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTkzMTM4ODgzMyw3MzA5OTgxMTZdfQ==
 -->
