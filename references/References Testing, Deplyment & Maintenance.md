@@ -308,39 +308,9 @@ The last column is for the _expected response_ to the actions and is set as a de
 
 Now let’s look at another example from the testing template file. The last line is similar to the first, but covers more data since it is looking for all open cases and activities of the Acme account in a certain data range.
 
-| **Utterance**
-
- | 
-
-**Expected Subagent**
-
- | 
-
-**Expected Actions**
-
- | 
-
-**Expected Response**
-
- |
+| **Utterance** | **Expected Subagent**| **Expected Actions**| **Expected Response**|
 | --- | --- | --- | --- |
-| 
-
-Summarize the open cases and Activities of Acme from sep to nov 2024
-
- | 
-
-GeneralCRM
-
- | 
-
-\['IdentifyRecordByName','QueryRecords','GetActivitiesTimeline'\]
-
- | 
-
-summary of open cases and activities associated with timeline
-
- |
+| Summarize the open cases and Activities of Acme from sep to nov 2024| GeneralCRM| \['IdentifyRecordByName','QueryRecords','GetActivitiesTimeline'\]|summary of open cases and activities associated with timeline |
 
 ![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
 
@@ -399,6 +369,7 @@ Make sure to click **Check Challenge to Earn 500 Points** before moving on to th
 -   [_Trailhead_: The Einstein Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer)
 -   [_Salesforce Help_: Agentforce Testing Center Create a Test](https://help.salesforce.com/s/articleView?id=ai.agent_testing_center_create.htm&type=5)
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMTM4ODgzMyw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMjg5NzgzNTQ1LDczMDk5ODExNl19
 -->
