@@ -135,7 +135,48 @@ Using prompt templates is ideal for B2C communications because they can generate
 
 -   [Get to Know Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_get_to_know.htm&language=en_US&type=5)
 
+# Prompt Builder Limits
+
+Learn the numerical limits of prompt templates.
+
+## Numerical Limits
+
+Prompt templates have these numerical limits.
+
+Numerical Limits
+| Limit Description | Limit |
+| --- | --- |
+| Maximum template size | 128,000 characters |
+| Maximum number of template versions | 50 |
+| Maximum number of merge fields | 50 |
+| Maximum number of flow merge fields | 5 |
+| Maximum number of Apex merge fields | 5 |
+| Maximum number of related list merge fields | 5 |
+| Maximum number of inputs in a Flex template | 5 |
+
+## File Upload Limits
+
+Most AI models support at least one file type for prompt templates.
+
+These file limits apply across all AI models.
+
+-   Maximum quantity: 10 files per request
+-   Total file size: 15 MB per request
+
+The 15 MB total applies to the files sent to the AI model. Files that convert to PDF count toward this total after conversion.
+
+![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+
+Important Some AI models have smaller limits than the ones listed here. Open **Details** for the selected AI model for per-type limits.
+
+Unsupported files, files that fail conversion, and files that exceed a limit are excluded from the request. The Resolution panel lists excluded files after processing.
+
+## See Also
+
+-   [Grounding with File Inputs](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_file.htm&language=en_US&type=5)
+-   [Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&language=en_US&type=5)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTI0NTc0NSw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTg5ODkwODcyLDczMDk5ODExNl19
 -->
