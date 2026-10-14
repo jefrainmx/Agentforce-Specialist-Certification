@@ -638,6 +638,36 @@ Key use cases for Data 360 search include:
 -   [_Salesforce Help_: Encrypt Data 360 with Customer-Managed Root Keys](https://help.salesforce.com/s/articleView?id=xcloud.security_pe_enable_pe_for_data_cloud.htm&language=en_US&type=5)
 -   [_Trailhead_: Get to Know Search Index Types in Data 360](https://trailhead.salesforce.com/content/learn/modules/search-index-types-data-cloud-quick-look)
 
+
+# Ground with Knowledge Using Retrieval Augmented Generation
+
+Retrieval augmented generation (RAG) in Data 360 improves the quality, accuracy, and relevance of your LLM-generated responses. Enhance your prompt templates using retrievers with Einstein Search. Add relevant knowledge from unstructured text sources into your LLM prompts. Retrieve knowledge from articles, emails, chat transcripts, and other sources.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note
+
+-   Einstein Search has recently been renamed to Retriever. In the Prompt Template Workspace, type **@** or click **Insert Resource** and click **Retrievers**.
+-   In the resource picker, retrievers don't show up automatically. To find an available retriever, click **Configure Retrievers +**, select and configure it, then apply changes and insert it.
+
+-   **[About Retrievers in Prompt Templates](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag_about.htm&language=en_US&type=5)**  
+    Use retrievers in prompt templates to search for and return relevant information from knowledge that's indexed in Data 360. Retrievers augment prompt templates by providing relevant, specialized grounding information for prompts. Retrievers are created in AI Models (formerly Einstein Studio).
+-   **[Add an Individual Retriever to a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_retriever_individual.htm&language=en_US&type=5)**  
+    Use individual retrievers in prompt templates to ground your LLM prompts with relevant knowledge. Individual retrievers include retrievers created in AI Models (formerly Einstein Studio) and legacy default retrievers created previously in Data 360.
+-   **[Add an Ensemble Retriever to a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_retriever_ensemble.htm&language=en_US&type=5)**  
+    Use ensemble retrievers in prompt templates to ground your LLM prompts with relevant knowledge. An ensemble retriever is a collection of individual retrievers. When you run an ensemble retriever, it executes the individual retrievers, combines their search results into a single list, reranks the list according to relevance to the search request, and returns just the most relevant information to the prompt or agent. Ensemble retrievers conduct searches from multiple sources in parallel.
+-   **[Add a Web Retriever to a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_retriever_web.htm&language=en_US&type=5)**  
+    Use web retrievers in prompt templates to ground your LLM prompts with relevant knowledge from web sites. Web retrievers are created when a data library that uses web search is created in Agentforce Data Library.
+-   **[Customize Retriever Output with Prefilters](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_prefilters.htm&language=en_US&type=5)**  
+    Get more relevant search results using prefilters in your prompt templates. Prefilters define the conditions that limit the scope of a retriever’s search so that only the most relevant information is returned. For example, you can use prefilters to retrieve content associated with only a particular country or product. The filter value, such as the country code or product Id, is specified in the prompt template at run time.
+-   **[Add Citations to Prompt Template Responses](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_retriever_citations.htm&language=en_US&type=5)**  
+    Add citations to your prompt templates so that your users can compare and verify the generated information with the source information. Sources include content used by agent actions, knowledge articles, and web pages.
+
+#### See Also
+
+-   [Add a Retriever to a Field Generation Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_add_retriever_field_gen.htm&language=en_US&type=5)
+-   [_Trailhead_: Retrieval Augmented Generation: Quick Look](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQyMzU3OTAsLTM1NTkyOTYxN119
+eyJoaXN0b3J5IjpbLTEzMjUyNjU2MzEsLTM1NTkyOTYxN119
 -->
