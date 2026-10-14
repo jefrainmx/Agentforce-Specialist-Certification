@@ -373,6 +373,139 @@ The volume of data determines the time that it takes to rebuild a search index. 
     
     The Rebuild action isn't available for search indexes created by Agentforce Data Library (ADL) for file uploads. It's available only for search indexes created by Agentforce Data Library (ADL) for knowledge articles.
     
+# Create a Hybrid Search Index with Advanced Setup
+
+Configure a hybrid search index for a data model object (DMO) or an unstructured data model object (UDMO) to provide relevant information to generative AI applications. Data 360 breaks up the referenced data into semantically related chunks and generates searchable vectors, and then generates a vector index and a keyword index.
+
+Before creating a search index, review the Unstructured Data and Search Index Guidelines and Limits in [Data 360 Limits and Guidelines](https://help.salesforce.com/s/articleView?id=data.c360_a_limits_and_guidelines.htm&language=en_US&type=5) and search index considerations in the [Search Reference.](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_reference.htm&language=en_US&type=5) Familiarize yourself with the concepts of chunking unstructured data, vectorization, and the chunk and index data model objects.
+
+## Enable Agentforce for Generative AI Capabilities (Optional)
+
+Some capabilities in search index, including image processing, enriched index, and LLM-based content processing and parsing require generative AI features available through Agentforce. If you want to use those capabilities, contact your admin to [enable Agentforce](https://help.salesforce.com/s/articleView?id=ai.agent_setup_enable.htm&language=en_US&type=5) in your org. Enable Amazon Bedrock Models (Amazon and Anthropic) in Einstein Setup to use enriched indexing.
+
+## Select a Search Type and Source Object
+
+To get started specify the type of search you want to perform and select a source DMO.
+
+1.  From App Launcher, select **Data Cloud**.
+2.  Click **Search Index** > **New**.
+3.  Click **Advanced Setup** > **Next**.
+4.  Select Hybrid Search for **Search Type**.
+5.  Select a data space and a source object.
+    
+    ![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-data-data_cloud-264-0-0-production-enus/9a804ab5-dba6-49d5-8077-820fbcc92ad9/images/icon_note.png)
+    
+    Note A DMO that has mappings from one or more external DLOs can only be used as the data source if caching is enabled for all those external DLOs. For more information see, [Caching in Data Federation](https://help.salesforce.com/s/articleView?id=data.c360_a_accelerated_data_lake_objects.htm&language=en_US&type=5).
+    
+6.  Click **Next**.
+
+## Set Up Parsing and Visual Data Preprocessing
+
+Next, extract and prepare text, metadata, tables, and images from unstructured documents for chunking.
+
+LLM-Parsing and preprocessing options are available for PDF, HTML, DOCX, and PPTX file types from UDMOs and files attached to DMO records. These options aren't available for use with DMO records.
+
+You cannot select both LLM-based parsing and LLM-based Visual Data Preprocessing options for a single search index. See [LLM-based parsing and preprocessing](https://help.salesforce.com/s/articleView?id=data.c360_a_llm_parsing_preprocessing.htm&language=en_US&type=5) for more information about these options.
+
+With LLM-based parsing and LLM-based Visual Data Preprocessing you can override the default GPT-4o model to use any supported LLM that best fits your business needs and your content. You can only select LLMs that are approved for use by your admin. If your org admin turns off a model that is currently in use, your previously processed content remains accessible. However, Search Index will fail to process any further content. For more more information supported models, see [Search Index Reference](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_reference.htm&language=en_US&type=5).
+
+1.  On the Parsing page, choose one of these options.
+    
+    <table class="slds-table slds-table_bordered slds-m-bottom_small"><tbody><tr class=""><th id="d15801e252" headers="d15801e248-option" style="vertical-align:top;">Default Parser</th><td headers="d15801e248-desc d15801e252" style="vertical-align:top;">Extract text with built-in settings.</td></tr><tr class=""><th id="d15801e261" headers="d15801e248-option" style="vertical-align:top;">LLM-based Parser</th><td headers="d15801e248-desc d15801e261" style="vertical-align:top;">Extract all text, images, and other visual elements using an LLM.</td></tr><tr class=""><th id="d15801e270" headers="d15801e248-option" style="vertical-align:top;">Docling Parser</th><td headers="d15801e248-desc d15801e270" style="vertical-align:top;">Extract text from tables, spreadsheets, slide decks. Understand document layouts using Docling Parser.</td></tr></tbody></table>
+    
+2.  If you choose Default Parser, click **Next.**
+3.  If you choose to parse your documents using an LLM, complete these steps.
+    1.  From the dropdown list, select the appropriate model.
+    2.  Use the default prompt as is, or edit it for your specific use case.
+        
+        It's highly recommended to customize the prompt for your use case and documents.
+        
+    3.  Click **Next**.
+4.  If you choose the Docling parser, click **Next**.
+    
+    By default, additional pre-processing is turned-off. Optionally, enable image processing when you set up chunking strategies to parse images and complex tables.
+    
+5.  If you chose the default parser, on the Preprocessing page, choose one of these options.
+    
+    <table class="slds-table slds-table_bordered slds-m-bottom_small"><tbody><tr class=""><th id="d15801e342" headers="d15801e338-option" style="vertical-align:top;">No Preprocessing</th><td headers="d15801e338-desc d15801e342" style="vertical-align:top;">Use parsed text and visual data as is.</td></tr><tr class=""><th id="d15801e351" headers="d15801e338-option" style="vertical-align:top;">LLM-based Visual Data Preprocessing</th><td headers="d15801e338-desc d15801e351" style="vertical-align:top;">Capture context from visual data using an LLM. (Available only if you selected the default parser in the previous step.)</td></tr></tbody></table>
+    
+6.  If you choose No pre-processing, click **Next**.
+7.  If you choose to pre-process your documents using an LLM, complete these steps.
+    1.  From the dropdown list, select the appropriate model.
+    2.  Use the default prompt as is, or edit it for your specific use case.
+        
+        It's highly recommended to customize the prompt for your use case and documents.
+        
+    3.  Click **Next**.
+
+## Set Up Chunking and Vectorization
+
+Next, set up chunking for your data and select an embedding model to create searchable vectors for each chunk.
+
+1.  If your search index is on a DMO, on the Chunking page, select fields to chunk and the [chunking strategy](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_supported_chunking_strategies.htm&language=en_US&type=5).
+    1.  To add or remove fields, click **Manage Fields** and save your work.
+        
+        Search Indexes don't support date and datetime fields for chunking. Only numerical and text fields are available for chunking data.
+        
+    2.  (Optional) Update the chunking strategy and modify the settings.
+    3.  If your search index is on a DMO of a Salesforce object with file attachments that you want to include, click **Include Attachments** and select the ContentDocumentVersion UDMO.
+    4.  Add a file extension or set a chunking strategy based on the file type. To add a file extension for a new file type, click **Add File Extension**, and then optionally update the chunking strategy and modify the settings for an existing file type.
+    5.  (Optional) To add additional fields to a chunk, select the **Prepend fields to each chunk** toggle and select a field from the list. You can add a maximum of two fields.
+    6.  To enrich generated chunks with additional metadata, turn on the **Enrich Content Chunks** toggle.
+    7.  Click **Next**.
+2.  If your search index is on a UDMO, add a file extension or set a [chunking strategy](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_supported_chunking_strategies.htm&language=en_US&type=5) based on the file type.
+    1.  To add a file extension for a new file type, click **Add File Extension**. If you have images to process, add the JPEG, JPG, and PNG file extensions.
+    2.  (Optional) Update the chunking strategy and modify the settings for an existing file type.
+        
+        For image files with extensions, such as JPEG, JPG, or PNG, image processing is enabled by default. To include image processing for PDF files, turn on image processing.
+        
+        If you selected LLM-based parsing or LLM-based visual data preprocessing in previous steps, image processing doesn't apply even if you turn it on.
+        
+    3.  (Optional) To add additional fields to a chunk, select the **Prepend fields to each chunk** toggle and select a field from the list. You can add a maximum of two fields.
+    4.  To enrich generated chunks with additional metadata, turn on the **Enrich Content Chunks** toggle.
+    5.  When you select the Docling parser, optionally, turn-on LLM-based image processing to parse images and complex tables using an LLM. For better data extraction with tables, select Section-Aware chunking. Section-Aware chunking processes tables optimally such as retaining the header information across table chunks. For more information on supported file formats see, [Docling Parser](https://help.salesforce.com/s/articleView?id=data.c360_a_docling_parser.htm&language=en_US&type=5).
+3.  If you have audio or video files to transcribe, click **Configure**, and in the transcription window, select the following:
+    1.  Select the default transcription model from the dropdown.
+    2.  To add a timestamp to each speaker entry, select **Include timestamp**.
+4.  Click **Next**.
+5.  On the Vectorization page, from the dropdown list, select an embedding model. If your search index includes images to process, select the [appropriate embedding model (beta)](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_reference.htm&language=en_US&type=5#c360_a_search_index_reference__section_o34_jqz_wcc).
+    
+    The model determines how Data 360 measures your unstructured data objects for semantic relevance when building search results.
+    
+6.  Click **Next**.
+
+## Configure Fields for Filtering and Ranking Factors
+
+To enhance the precision and relevance of search results, specify fields that users can use to filter their searches.
+
+1.  On the Fields for Filtering page, optionally add fields from the Source object or related objects to provide more ways to filter a search. You can select up to ten filter fields.
+    
+    Data 360 picks up the pre-filter fields when you generate vector embeddings. If you change the values in those pre-filter fields, Data 360 picks them up when you generate or refresh those vector embeddings. The cardinality of object relationship between the source object and the related object must be either 1:1 or N:1.
+    
+    For example, if the indexed unstructured data includes case conversation transcripts, filtering on the Status field in the Case object can improve the relevance of semantic search results when searching the conversation transcripts.
+    
+2.  Click **Next**.
+3.  (Optional) To better rank the hybrid search results, click **Add Ranking Factor**.
+    
+    For example, you can select **RECENCY** as the ranking factor and choose the **LastModifiedDate** field in the DMO to rank the search results. For the object contributing to the ranking factor, you can select the object that the search index is built on or a related object. If you select a related object, select the field for the relationship.
+    
+    You can add up to two ranking factors, recency of records and popularity of records.
+    
+
+## Review and Build the Index
+
+1.  Review the configuration and the target data model objects.
+2.  Click **Save**.
+
+When you build the search index, Data 360 creates a hybrid search index for the data. Next, create a Retriever in the **AI Models** tab. Agentforce agents can use the search index with Retrievers in prompt templates.
+
+#### See Also
+
+-   [_Salesforce Help_: Search Index Considerations](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_reference.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Search Index Grounding](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_grounding.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Manage Search Index](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_manage.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Ground with Retriever Augmented Generation (RAG)](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag.htm&language=en_US&type=5)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMzI3MTU4OSwtMzU1OTI5NjE3XX0=
+eyJoaXN0b3J5IjpbLTExMTc1ODg1MjAsLTM1NTkyOTYxN119
 -->
