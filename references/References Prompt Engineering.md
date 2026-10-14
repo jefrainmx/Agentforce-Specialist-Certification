@@ -1769,23 +1769,7 @@ This table lists the Salesforce-managed models that are available for embedded f
 | OpenAI and Azure OpenAI | GPT-4.1 | gpt-4.1-2025-04-14 | Standard Prompts | OpenAI: United States Azure OpenAI: Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Singapore, Sweden, United Kingdom, United States| See [Geo-Aware Routing for OpenAI and Azure OpenAI](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_openai.htm&language=en_US&type=5). |
 | OpenAI and Azure OpenAI | GPT-4.1 Mini | gpt-4.1-mini-2025-04-14 | Basic Prompts |OpenAI: United States Azure OpenAI: Australia, Canada, India, Japan, United Kingdom, United States| OpenAI and Azure OpenAI | GPT-5 | gpt-5-2025-08-07 | Standard Prompts |OpenAI: United States Azure OpenAI: Sweden, United States
 | OpenAI and Azure OpenAI | GPT-5 Mini | gpt-5-mini-2025-08-07 | Basic Prompts |OpenAI: United States Azure OpenAI: Sweden, United States
-
- |   |
-| OpenAI and Azure OpenAI | GPT 5.1 | gpt-5.1-2025-11-13 | Standard Prompts | 
-
-OpenAI: United States
-
-Azure OpenAI: France, India, Sweden, United States
-
- |   |
-| OpenAI and Azure OpenAI | GPT 5.2 | gpt-5.2-2025-12-11 | Standard Prompts | 
-
-OpenAI: United States
-
-Azure OpenAI: United States
-
- |   |
-| OpenAI and Azure OpenAI | GPT 5.4 | gpt-5.4-2026-03-05 | Standard Prompts | 
+| OpenAI and Azure OpenAI | GPT 5.1 | gpt-5.1-2025-11-13 | Standard Prompts | OpenAI: United States Azure OpenAI: France, India, Sweden, United States| OpenAI and Azure OpenAI | GPT 5.2 | gpt-5.2-2025-12-11 | Standard Prompts | OpenAI: United States Azure OpenAI: United States| OpenAI and Azure OpenAI | GPT 5.4 | gpt-5.4-2026-03-05 | Standard Prompts | 
 
 OpenAI: United States
 
@@ -1957,7 +1941,7 @@ New model announcements and model deprecation announcements are part of the mont
 -   [Bring Your Own Large Language Model](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_foundation_models.htm&language=en_US&type=5)
 -   [Select Agentforce Model Option](https://help.salesforce.com/s/articleView?id=ai.agent_setup_select_model_provider.htm&language=en_US&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTA3NjM1MCwtODg4MDUxMjc2LDE4ND
-kyMTk4MjMsMTg2MzQ0NzgwNiwtOTM3NTkxMjc1LDIwMzU5Njky
-MDgsMTg5ODkwODcyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMzE2NTIwMTA0LC04ODgwNTEyNzYsMTg0OT
+IxOTgyMywxODYzNDQ3ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIw
+OCwxODk4OTA4NzIsNzMwOTk4MTE2XX0=
 -->
