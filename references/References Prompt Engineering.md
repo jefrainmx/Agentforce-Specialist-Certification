@@ -1724,9 +1724,270 @@ Publisher versions remain managed by the package and continue to receive updates
 -   [Automate Tasks with Flows](https://help.salesforce.com/s/articleView?id=platform.flow.htm&language=en_US&type=5)
 
 
+# Large Language Model Support
 
+Understand supported large language models (LLMs) from multiple providers for embedded features, such as Prompt Builder. Identify the Salesforce-managed models that are available out of the box. Learn how you can bring your own model (BYOLLM) by using AI Models (formerly Einstein Studio).
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note Changing the model can affect your usage, see [Einstein Usage](https://help.salesforce.com/s/articleView?id=ai.generative_ai_usage.htm&language=en_US&type=5).
+
+## Agentforce Models
+
+This page focuses on supported LLMs for embedded features, such as Prompt Builder. For model options in Agentforce, see [Select Agentforce Model Option](https://help.salesforce.com/s/articleView?id=ai.agent_setup_select_model_provider.htm&language=en_US&type=5).
+
+## Salesforce-Managed Models
+
+Quickly get started with generative AI features by choosing a Salesforce-managed model. Features like Prompt Builder and the Models API allow you to customize AI implementations with different models and use them in your apps. Salesforce-managed models are enabled by default to speed up the configuration process.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note If a request fails to process in the designated region(s), Salesforce-Managed Models eventually re-route to a US region to avoid returning an error. You can disable this behavior for some models by turning on "Enable In-Region Model Requests Only" from Einstein Setup. See [Geo-Aware LLM Request Routing on the Einstein Generative AI Platform](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing.htm&language=en_US&type=5) for more info.
+
+This table lists the Salesforce-managed models that are available for embedded features, such as Prompt Builder. For Agentforce, see the Agentforce Models section.
+
+| **Model Provider** | **Model Family** | **Version** | **Usage Type** | **Model Regions** | **Notes** |
+| --- | --- | --- | --- | --- | --- |
+| Bedrock (Amazon) | Nova Lite | nova-lite-2024-12-04 | Basic Prompts | Inference profiles: apac.amazon.nova-lite-v1:0, ca.amazon.nova-lite-v1:0, eu.amazon.nova-lite-v1:0, us.amazon.nova-lite-v1:0 |   |
+| Bedrock (Amazon) | Nova Pro | nova-pro-2024-12-04 | Standard Prompts | Inference profiles: apac.amazon.nova-pro-v1:0, eu.amazon.nova-pro-v1:0, us.amazon.nova-pro-v1:0 |   |
+| Bedrock (Amazon) | Nova 2 Lite | nova-2-lite-v1:0-2025-12-02 | Standard Prompts | Inference profiles: us.amazon.nova-2-lite-v1:0, eu.amazon.nova-2-lite-v1:0, jp.amazon.nova-2-lite-v1:0 |   |
+| Bedrock (Anthropic) | Claude Haiku 4.5 | claude-haiku-4-5-20251001 | Standard Prompts | Inference profiles: au.anthropic.claude-haiku-4-5-20251001-v1:0, eu.anthropic.claude-haiku-4-5-20251001-v1:0, jp.anthropic.claude-haiku-4-5-20251001-v1:0, us.anthropic.claude-haiku-4-5-20251001-v1:0 | See [Geo-Aware Routing for Anthropic](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_anthropic.htm&language=en_US&type=5). |
+| Bedrock (Anthropic) | Claude Opus 4.5 | claude-opus-4-5-20251101 | Advanced Prompts | United States |   |
+| Bedrock (Anthropic) | Claude Opus 4.6 | claude-opus-4-6-2026-02-05 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-4-6-v1, eu.anthropic.claude-opus-4-6-v1, us.anthropic.claude-opus-4-6-v1 |   |
+| Bedrock (Anthropic) | Claude Opus 4.7 | claude-opus-4-7-2026-04-16 | Advanced Prompts | Inference profiles: eu.anthropic.claude-opus-4-7, jp.anthropic.claude-opus-4-7, us.anthropic.claude-opus-4-7 |   |
+| Bedrock (Anthropic) | Claude Opus 4.8 | claude-opus-4-8-2026-05-28 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-4-8, eu.anthropic.claude-opus-4-8, jp.anthropic.claude-opus-4-8, us.anthropic.claude-opus-4-8 |   |
+| Bedrock (Anthropic) | Claude Opus 5 | claude-opus-5-2026-07-24 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-5, eu.anthropic.claude-opus-5, in.anthropic.claude-opus-5, us.anthropic.claude-opus-5 |   |
+| Bedrock (Anthropic) | Claude Opus 5.5 | claude-opus-5-5-2026-09-22 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-5-5, eu.anthropic.claude-opus-5-5, jp.anthropic.claude-opus-5-5, us.anthropic.claude-opus-5-5 |   |
+| Bedrock (Anthropic) | Claude Sonnet 4.5 | claude-sonnet-4-5-20250929 | Standard Prompts | Inference profiles: au.anthropic.claude-sonnet-4-5-20250929-v1:0, eu.anthropic.claude-sonnet-4-5-20250929-v1:0, jp.anthropic.claude-sonnet-4-5-20250929-v1:0, us.anthropic.claude-sonnet-4-5-20250929-v1:0 |   |
+| Bedrock (Anthropic) | Claude Sonnet 4.6 | claude-sonnet-4-6-2026-02-17 | Standard Prompts | Inference profiles: au.anthropic.claude-sonnet-4-6, eu.anthropic.claude-sonnet-4-6, jp.anthropic.claude-sonnet-4-6, us.anthropic.claude-sonnet-4-6 |   |
+| Bedrock (Anthropic) | Claude Sonnet 5 | anthropic.claude-sonnet-5-2026-06-30 | Standard Prompts | Inference profiles: au.anthropic.claude-sonnet-5, eu.anthropic.claude-sonnet-5, us.anthropic.claude-sonnet-5 |   |
+| Bedrock (NVIDIA) | Nemotron 3 Nano 30B (Beta) | nvidia.nemotron-nano-3-30b | Basic Prompts | Brazil, India, Italy, Japan, United Kingdom, United States |   |
+| Bedrock (NVIDIA) | Nemotron 3 Super 120B (Beta) | nvidia.nemotron-super-3-120b-2026-03-11 | Standard Prompts | Australia, Brazil, India, Italy, Japan, United Kingdom, United States |   |
+| OpenAI and Azure OpenAI | GPT-4o (GPT 4 Omni) | gpt-4o-2024-11-20 | Standard Prompts | 
+OpenAI: United StatesAzure OpenAI: Australia, Brazil, Canada, France, Germany, India, Japan, Sweden, Switzerland, United Kingdom, United States |   |
+| OpenAI | GPT-4o Mini | gpt-4o-mini-2024-07-18 | Basic Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT-4o-mini (GPT 4 Omni Mini) | gpt-4o-mini-2024-07-18 | Basic Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: France, Germany, Japan, Sweden, United Kingdom, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT-4.1 | gpt-4.1-2025-04-14 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: Australia, Brazil, Canada, France, Germany, India, Italy, Japan, Singapore, Sweden, United Kingdom, United States
+
+ | See [Geo-Aware Routing for OpenAI and Azure OpenAI](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_openai.htm&language=en_US&type=5). |
+| OpenAI and Azure OpenAI | GPT-4.1 Mini | gpt-4.1-mini-2025-04-14 | Basic Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: Australia, Canada, India, Japan, United Kingdom, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT-5 | gpt-5-2025-08-07 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: Sweden, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT-5 Mini | gpt-5-mini-2025-08-07 | Basic Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: Sweden, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT 5.1 | gpt-5.1-2025-11-13 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: France, India, Sweden, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT 5.2 | gpt-5.2-2025-12-11 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT 5.4 | gpt-5.4-2026-03-05 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: France, Germany, Japan, Sweden, Switzerland, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT 5.4 Mini | gpt-5.4-mini-2026-03-17 | Basic Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT 5.5 | gpt-5.5-2026-04-24 | Advanced Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: France, Germany, Sweden, Switzerland, United States
+
+ |   |
+| OpenAI and Azure OpenAI | GPT 5.6 Luna | gpt-5.6-luna-2026-07-09 | Basic Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT 5.6 Terra | gpt-5.6-terra-2026-07-09 | Standard Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT 5.6 Sol | gpt-5.6-sol-2026-07-09 | Advanced Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT 6 Sol | gpt-6-sol-2026-09-22 | Advanced Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT 6 Luna | gpt-6-luna-2026-09-22 | Basic Prompts | United States |   |
+| OpenAI and Azure OpenAI | GPT 6 Astra | gpt-6-astra-2026-09-03 | Advanced Prompts | United States |   |
+| OpenAI and Azure OpenAI | O3 | o3-2025-04-16 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: France, Germany, Sweden, United States
+
+ |   |
+| OpenAI and Azure OpenAI | O4 Mini | o4-mini-2025-04-16 | Standard Prompts | 
+
+OpenAI: United States
+
+Azure OpenAI: France, Germany, Sweden, United States
+
+ |   |
+| Vertex AI (Google) | Gemini 2.5 Flash | gemini-2.5-flash-2025-06-17 | Basic Prompts | Australia, Canada, India, Japan, Netherlands, Singapore, South Korea, United Kingdom, United States |   |
+| Vertex AI (Google) | Gemini 2.5 Flash Lite | gemini-2.5-flash-lite-2025-07-22 | Basic Prompts | Netherlands, United States |   |
+| Vertex AI (Google) | Gemini 2.5 Pro | gemini-2.5-pro-2025-06-17 | Standard Prompts | Netherlands, United States |   |
+| Vertex AI (Google) | Gemini 3 Flash (Beta) | gemini-3-flash-preview-2025-12-17 | Basic Prompts | United States |   |
+| Vertex AI (Google) | Gemini 3 Pro (Beta) | gemini-3-pro-preview-2025-11-18 | Standard Prompts | United States | Retired on April 23, 2026. |
+| Vertex AI (Google) | Gemini 3.1 Flash Lite | gemini-3.1-flash-lite-2026-05-07 | Basic Prompts | United States |   |
+| Vertex AI (Google) | Gemini 3.1 Pro (Beta) | gemini-3.1-pro-preview-2026-02-19 | Standard Prompts | United States |   |
+| Vertex AI (Google) | Gemini 3.5 Flash | gemini-3.5-flash-2026-05-19 | Basic Prompts | India, Japan, Netherlands, Singapore, United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5). |
+| Vertex AI (Google) | Gemini 3.6 Flash | gemini-3.6-flash-2026-07-21 | Basic Prompts | European Union (EU), United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5). |
+| Vertex AI (Google) | Gemini 3.7 Flash | gemini-3.7-flash-2026-08-13 | Basic Prompts | European Union (EU), United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5). |
+| Vertex AI (Google) | Gemini 3.8 Flash | gemini-3.8-flash-2026-09-02 | Basic Prompts | European Union (EU), United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5). |
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note All the Salesforce-managed models might not be available in your org.
+
+-   In Setup, a Salesforce admin can disable a model provider. See [Manage Model Provider Access](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&language=en_US&type=5).
+-   In AI Models, a Salesforce admin can hide an LLM configuration from being selected in Prompt Builder. See [Manage Large Language Model (LLM) Access by Hiding Configurations](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_mm_show_hide_models.htm&language=en_US&type=5).
+
+For more details about these supported models, see [Supported Models](https://developer.salesforce.com/docs/ai/agentforce/guide/supported-models.html) in the Agentforce Developer Guide.
+
+## Usage Types
+
+Each model has an assigned usage type, which factors into billing for model usage.
+
+For more details about Usage Type, see [Agentforce and Generative AI Usage and Billing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_usage.htm&language=en_US&type=5).
+
+## Inference Profiles
+
+Some Anthropic models are accessible in particular AWS Regions only as a cross-region inference profile. Cross-region inference requests are kept within the AWS regions that are part of the geography where the request originates. For example, a request made within the United States to Claude Sonnet 4 is kept within the AWS Regions in the United States. A request made in Japan can be serviced by any of the destinations in the apac.anthropic.claude-sonnet-4-20250514-v1:0 inference profile.
+
+For more information, see Amazon Bedrock documentation:
+
+-   [Models at a glance](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html)
+-   [Supported Regions and models for inference profiles](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html)
+
+For routing for each Salesforce org region for Claude Sonnet 4, see [Geo-Aware Routing for Anthropic](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_anthropic.htm&language=en_US&type=5).
+
+## Model Limits
+
+For information about limits per model, such as requests per minute (RPM) and token limits, see [Large Language Model Limits](https://help.salesforce.com/s/articleView?id=ai.generative_ai_llm_limits.htm&language=en_US&type=5).
+
+## Model Multimodal Support
+
+For information about multimodel support (JPG, PNG, or PDF) per model, see [Large Language Model Multimodal Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_llm_multimodal_support.htm&language=en_US&type=5).
+
+## Beta Models
+
+Beta models are new models from model providers that Salesforce is beta testing. Beta models typically have lower rate limits and may not be available in all regions. A beta model has (Beta) appended to its name. If beta models aren't turned on, they appear as (Disabled) in AI Models.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note This feature is a pilot or beta service that is subject to the Beta Services Terms at [Agreements - Salesforce.com](https://www.salesforce.com/company/legal/agreements/) or a written Unified Pilot Agreement if executed by Customer, and applicable terms in the [Product Terms Directory](https://ptd.salesforce.com/). Use of this pilot or beta service is at the Customer's sole discretion.
+
+Before you can turn on beta generative AI models, you must turn on Data 360. Data 360 is automatically provisioned as soon as a Data Cloud license is added to your Salesforce org. See [Turn On Data 360](https://help.salesforce.com/s/articleView?id=data.c360_a_setup_provision.htm&language=en_US&type=5).
+
+To turn on beta generative AI models, go to Einstein Setup. After beta models are enabled, you can see them in AI Models and use them just like any Salesforce-managed model.
+
+We recommend that you enable beta models in sandbox or development orgs only.
+
+## Bring Your Own Large Language Model (BYOLLM)
+
+The Einstein platform allows you to customize your AI experience by bringing in your own models to Salesforce. You can bring in your own model by using AI Models and write a prompt template in Prompt Builder, which you can then integrate into your own apps or an agent. Some common reasons companies want to use different models with Einstein include:
+
+-   Your company has an LLM fine-tuned to your data.
+-   You can use your Azure, Bedrock, OpenAI, or Vertex account.
+
+BYOLLM supports many of the Salesforce-managed models and these additional models:
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small"><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Model Provider</strong></td><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Model Family</strong></td><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Notes</strong></td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Bedrock (Anthropic)</td><td style="vertical-align:top;" class="slds-cell-wrap">Claude 3 Opus</td><td style="vertical-align:top;" class="slds-cell-wrap">Retired by Bedrock</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Bedrock (Anthropic)</td><td style="vertical-align:top;" class="slds-cell-wrap">Claude 3 Sonnet</td><td style="vertical-align:top;" class="slds-cell-wrap">Retired by Bedrock</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Bedrock (Anthropic)</td><td style="vertical-align:top;" class="slds-cell-wrap">Claude 3.5 Sonnet</td><td style="vertical-align:top;" class="slds-cell-wrap">Retired by Bedrock</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Vertex AI (Google)</td><td style="vertical-align:top;" class="slds-cell-wrap">Gemini 1.5 Pro</td><td style="vertical-align:top;" class="slds-cell-wrap">Retired by Vertex AI</td></tr></tbody></table>
+
+To use models and providers not listed on this page, see the [LLM Open Connector](https://opensource.salesforce.com/einstein-platform/about).
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note For BYOLLM and LLM Open Connector, Salesforce uses a set of IP addresses to communicate with an LLM that you host yourself. If your security policy requires a strict network Access Control List (ACL), make sure to add to your allowlists the IP addresses in the BYO Models and Open Connector IP Addresses section of [Salesforce Core Services - IP Addresses and Domains to Allow](https://help.salesforce.com/s/articleView?id=000384438&language=en_US&type=1).
+
+## Develop LLM Solutions with the Models API
+
+Developers can use Models API to code custom solutions. See the [Models API Developer Guide](https://developer.salesforce.com/docs/ai/agentforce/guide/models-api.html).
+
+## Sustainability
+
+Sustainability is a core value at Salesforce. Selecting the appropriate model is one of the most effective ways to reduce energy consumption, water usage, and carbon emissions. Compare the environmental impact of these models by using the relative Sustainability Score in the bottom-right section of the [Agentic Benchmark](https://www.salesforceairesearch.com/crm-benchmark) page on the AI Research site. For more details on Salesforce's approach to AI sustainability, see [Sustainability at Salesforce](https://www.salesforce.com/company/sustainability/).
+
+## Deprecated Models
+
+Model deprecation is the process by which a model provider gradually phases out a model, usually in favor of a new and improved model. A deprecated model may reroute to a preferred model to ensure continuity of service. To learn more, see [Prepare for Model Deprecation and Rerouting](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_deprecation_rerouting.htm&language=en_US&type=5).
+
+We recommend that you start migrating your applications as soon as the deprecation is announced. During migration, update and test each part of your application with the replacement model that we recommend.
+
+These models are deprecated or rerouted.
+
+<table class="slds-table slds-table_bordered slds-m-bottom_small"><colgroup><col style="width:25%"><col style="width:25%"><col style="width:25%"><col style="width:25%"></colgroup><tbody><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Deprecated Model</strong></td><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Recommended Replacement</strong></td><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Deprecated Date</strong></td><td style="vertical-align:top;" class="slds-cell-wrap"><strong>Reroute Date</strong></td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Bedrock (Anthropic) Claude 4 Sonnet</td><td style="vertical-align:top;" class="slds-cell-wrap">Claude Sonnet 4.6</td><td style="vertical-align:top;" class="slds-cell-wrap">May 4, 2026</td><td style="vertical-align:top;" class="slds-cell-wrap">May 26, 2026</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Vertex AI (Google) Gemini 3 Pro (Beta)</td><td style="vertical-align:top;" class="slds-cell-wrap">Gemini 3.1 Pro (Beta)</td><td style="vertical-align:top;" class="slds-cell-wrap">Mar 23, 2026</td><td style="vertical-align:top;" class="slds-cell-wrap">N/A. Retired on Apr 23, 2026.</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Bedrock (Anthropic) Claude 3.7 Sonnet</td><td style="vertical-align:top;" class="slds-cell-wrap">Claude Sonnet 4.5</td><td style="vertical-align:top;" class="slds-cell-wrap">Jan 6, 2026</td><td style="vertical-align:top;" class="slds-cell-wrap">Feb 26, 2026</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Bedrock (Anthropic) Claude 3 Haiku</td><td style="vertical-align:top;" class="slds-cell-wrap">Claude Haiku 4.5</td><td style="vertical-align:top;" class="slds-cell-wrap">Jan 6, 2026</td><td style="vertical-align:top;" class="slds-cell-wrap">Feb 26, 2026</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Vertex AI (Google) Gemini 2.0 Flash</td><td style="vertical-align:top;" class="slds-cell-wrap">Gemini 2.5 Flash</td><td style="vertical-align:top;" class="slds-cell-wrap">Jan 20, 2026</td><td style="vertical-align:top;" class="slds-cell-wrap">Feb 20, 2026</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Vertex AI (Google) Gemini 2.0 Flash</td><td style="vertical-align:top;" class="slds-cell-wrap">Gemini 2.5 Flash Lite</td><td style="vertical-align:top;" class="slds-cell-wrap">Jan 20, 2026</td><td style="vertical-align:top;" class="slds-cell-wrap">Feb 20, 2026</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Azure OpenAI GPT 3.5 Turbo</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 4 Omni</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 16, 2025</td><td style="vertical-align:top;" class="slds-cell-wrap">Jul 16, 2025</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">OpenAI GPT 3.5 Turbo</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 4 Omni Mini</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 16, 2025</td><td style="vertical-align:top;" class="slds-cell-wrap">Jul 16, 2025</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">OpenAI GPT 4</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 4 Omni</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 2, 2025</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 30, 2025</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">OpenAI GPT 4 Turbo</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 4 Omni</td><td style="vertical-align:top;" class="slds-cell-wrap">May 6, 2025</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 30, 2025</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">OpenAI GPT 4 32k</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 4 Omni</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 6, 2024</td><td style="vertical-align:top;" class="slds-cell-wrap">Jun 6, 2025</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Azure OpenAI GPT 4 Turbo</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 4 Omni</td><td style="vertical-align:top;" class="slds-cell-wrap">April 7, 2025</td><td style="vertical-align:top;" class="slds-cell-wrap">May 1, 2025</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">Azure OpenAI GPT 3.5 Turbo 16k</td><td style="vertical-align:top;" class="slds-cell-wrap">Azure OpenAI GPT 3.5 Turbo</td><td style="vertical-align:top;" class="slds-cell-wrap">Nov 6, 2023</td><td style="vertical-align:top;" class="slds-cell-wrap">Nov 13, 2024</td></tr><tr class=""><td style="vertical-align:top;" class="slds-cell-wrap">OpenAI GPT 3.5 Turbo 16k</td><td style="vertical-align:top;" class="slds-cell-wrap">GPT 3.5 Turbo</td><td style="vertical-align:top;" class="slds-cell-wrap">Nov 6, 2023</td><td style="vertical-align:top;" class="slds-cell-wrap">Sep 13, 2024</td></tr></tbody></table>
+
+## Rerouted Models
+
+These models are rerouted.
+
+| **Model Provider** | **Model Family** | **Version** | **Rerouted To** |
+| --- | --- | --- | --- |
+| Azure OpenAI | GPT-3.5 Turbo | gpt-3.5-turbo-0613 | GPT 4 Omni Mini |
+| Azure OpenAI | GPT-3.5 Turbo 16K | gpt-35-turbo-16k-0613 | GPT 4 Omni Mini |
+| Azure OpenAI | GPT-4 Turbo | gpt-4-1106-Preview | GPT 4 Omni |
+| Bedrock (Anthropic) | Claude 3 Haiku | claude-3-haiku-20240307 | Claude Haiku 4.5 |
+| Bedrock (Anthropic) | Claude 3.7 Sonnet | claude-3-7-sonnet-20250219 | Claude Sonnet 4.5 |
+| Bedrock (Anthropic) | Claude Sonnet 4 | claude-sonnet-4-20250514 | Claude Sonnet 4.6 |
+| OpenAI | GPT-3.5 Turbo | gpt-3.5-turbo-0125 | OpenAI GPT 4 Omni Mini |
+| OpenAI | GPT-3.5 Turbo 16K | gpt-3.5-turbo-16k | OpenAI GPT 4 Omni Mini |
+| OpenAI | GPT-4 | gpt-4-0613 | GPT 4 Omni |
+| OpenAI | GPT-4 32K | gpt-4-32k-0613 | GPT 4 Omni |
+| OpenAI | GPT-4 Turbo | gpt-4-0125-preview | GPT 4 Omni |
+| Vertex AI (Google) | Gemini 2.0 Flash | gemini-2.0-flash-001 | Gemini 2.5 Flash |
+| Vertex AI (Google) | Gemini 2.0 Flash Lite | gemini-2.0-flash-lite-001 | Gemini 2.5 Flash Lite |
+
+## Announcing New and Deprecated Models
+
+New model announcements and model deprecation announcements are part of the monthly [Einstein Platform release notes](https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm&language=en_US&type=5).
+
+-   **[Manage Model Provider Access](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_provider.htm&language=en_US&type=5)**  
+    Choose which Large Language Model (LLM) providers to allow or not allow in your organization. When access to a model provider is turned on, you can use its language learning models (LLMs) in agents, prompt templates, APIs, and other features in generative AI solutions. Turn off a model provider to block access to its models in your org.
+-   **[Prepare for Model Deprecation and Rerouting](https://help.salesforce.com/s/articleView?id=ai.generative_ai_model_deprecation_rerouting.htm&language=en_US&type=5)**  
+    This document provides guidance on retesting Salesforce AI implementations during model deprecation and rerouting. Deprecation and rerouting are considered temporary. If your model is in one of these states, consider switching to a new model.
+-   **[Large Language Model Multimodal Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_llm_multimodal_support.htm&language=en_US&type=5)**  
+    Salesforce-managed models have different levels of support and limits for including JPG, PNG, or PDF files in a model request.
+-   **[Large Language Model Limits](https://help.salesforce.com/s/articleView?id=ai.generative_ai_llm_limits.htm&language=en_US&type=5)**  
+    Understand limits for supported large language models (LLMs) from multiple providers for embedded features, such as Prompt Builder. Limits for each model include requests per minute and token limits.
+-   **[Salesforce-Owned Models](https://help.salesforce.com/s/articleView?id=ai.generative_ai_llm_salesforce_owned.htm&language=en_US&type=5)**  
+    Salesforce AI Research creates, trains, and fine tunes models to address specific Salesforce use cases. These models are hosted on AWS within the Salesforce Trust Boundary.
+-   **[Batch Models](https://help.salesforce.com/s/articleView?id=ai.generative_ai_batch_models.htm&language=en_US&type=5)**  
+    Use Prompt Template Batch Processing to generate large quantities of responses for prompt templates asynchronously.
+
+#### See Also
+
+-   [Bring Your Own Large Language Model](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_foundation_models.htm&language=en_US&type=5)
+-   [Select Agentforce Model Option](https://help.salesforce.com/s/articleView?id=ai.agent_setup_select_model_provider.htm&language=en_US&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY0ODk4NTc5LC04ODgwNTEyNzYsMTg0OT
+eyJoaXN0b3J5IjpbMTUyODA3MzA0LC04ODgwNTEyNzYsMTg0OT
 IxOTgyMywxODYzNDQ3ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIw
 OCwxODk4OTA4NzIsNzMwOTk4MTE2XX0=
 -->
