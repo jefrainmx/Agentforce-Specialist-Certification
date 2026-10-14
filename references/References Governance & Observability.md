@@ -266,7 +266,141 @@ Use `Code` with these fields on the same record:
 | `RATE_LIMIT_EXCEEDED` | The session exceeded an allowed request rate. | WARNING | Reduce request volume. |
 | `UNEXPECTED_ERROR` | An unclassified internal error occurred. | ERROR | Try again. Contact Support with the session ID if it recurs. |
 
+# Get Started with Agent Monitoring
 
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Explain how you can use agent activity observations and measurements to improve agent outcomes.  
+    
+-   Describe the range of agent metrics you can use to quantify agent activity.  
+    
+
+## Before You Start
+
+Before you start this module, consider completing this recommended content.
+
+-   [Introduction to Agentforce Builder](https://trailhead.salesforce.com/content/learn/modules/introduction-to-agent-builder)  
+    
+-   [Agentforce Testing Tools and Strategies](https://trailhead.salesforce.com/content/learn/modules/agentforce-testing-tools-and-strategies)  
+    
+
+## Measure and Improve Outcomes with Agent Monitoring
+
+Agentforce Monitoring is the suite of tools that gives you deep visibility into AI agent interactions.
+
+-   **Agent Analytics:** A broad view of agent sessions with insights into how the agent is behaving in production. Agent Analytics reveals agent performance by showing you interaction latency, usage patterns, and performance metrics such as overall quality scores and success rates. Analytics helps answer questions like, “Is my agent working as expected?” and “Where and how can I improve it?”  
+    
+-   **Sessions & Intents:** Intent-level details for closer inspection. An LLM groups similar user goals across sessions into intents. Move beyond whole-session summaries and find cases where the agent was inaccurate, misleading, or off-topic, or where configured actions did not run as expected.  
+    
+
+When your agents are active, comprehensive information is collected about what they’re doing and how well they’re doing it. Use these tools with this data to:
+
+-   Spot agent trends and patterns.  
+    
+-   Filter and drill into sessions, including sessions that led to underperforming outcomes.  
+    
+-   Audit and debug agents’ behavior.  
+    
+-   Uncover and classify reasons for underperforming outcomes.  
+    
+-   Identify action items to address underlying causes.  
+    
+
+After you implement and test your improvements, you deploy and monitor an improved version of your agent that delivers better outcomes with higher user satisfaction.
+
+## Monitoring in the Agent Development Lifecycle (ADLC)
+
+The ADLC moves through the Ideate, Build, Test, Deploy, and Monitor phases in an iterative cycle of continuous agent improvement.
+
+![Agent Development Life Cycle (ADLC).](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agent-analytics-and-monitoring/get-started-with-agent-monitoring/images/41825d57e487591f6f6a7e64d0691448_kix.htlep7mn96wv.png)
+
+A successful AI solution starts in the Ideate phase with establishing measurable, outcome-based goals (also known as KPIs) by which to measure success. For example, for a service agent, your business goals could be to maximize case deflections (exceed 80%), minimize escalations to humans (below 25%), and minimize abandonment (users giving up on the agent, below 5%). Your business goals inform all phases in the ADLC: how you design and build your AI solution, what and how you test it before deployment, and how you monitor it after it’s launched.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+For an end-to-end walkthrough of the steps to design and implement an agent according to the ADLC framework, see the [Agentforce Implementation Guide for Customer-Facing Agents](https://help.salesforce.com/s/articleView?id=ai.agent_resources.htm&type=5).
+
+## Agent Observability Drives Continuous Improvement
+
+Observability is the practice of measuring and understanding your agent’s behavior in action. Observability particularly applies in the Test and Monitor phases. In both phases you:
+
+-   Observe your agent in action.  
+    
+-   Measure outcomes as defined by your goals.  
+    
+-   Compare the results with your goals.  
+    
+-   Take action to improve the agent as needed.  
+    
+
+These phases differ in important ways.
+
+-   Testing helps you observe your agent in the lab. You subject it to well-designed test cases and test data. You preview and bulk test it at scale so that you can detect, diagnose, and fix issues before you release it to production. For more information, check out [Agentforce Testing Tools and Strategies](https://trailhead.salesforce.com/content/learn/modules/agentforce-testing-tools-and-strategies).  
+    
+-   Monitoring exposes your agent to real-world conditions that can exercise it in diverse and unexpected ways. You observe your agent over time to detect trends and meaningful patterns. The insights you gain from monitoring your agent in the field can show you where to make your agent more resilient, reliable, and effective in producing the results you want.  
+    
+
+## Measurement Categories in the Monitor Phase
+
+In the Monitor phase, agent activity is observed, measured, and calculated across many dimensions, including:
+
+-   **Effectiveness**, such as rates (%) of case deflections  
+    
+-   **Usage**, such as the number of unique sessions  
+    
+-   **Quality**, such as knowledge retrieval scores  
+    
+-   **Health**, such as error rates  
+    
+-   **Trust**, such as instruction adherence rates  
+    
+-   **User satisfaction**, such as thumbs up/down (Employee Agent only)  
+    
+-   **Voice**, such as interruption rates  
+    
+
+## How Agent Data Is Collected and Stored
+
+Data collection begins when you turn on Agentforce Session Tracing, Audit and Feedback, and Knowledge/RAG Quality Data and Metrics in your org. You also need to install analytics apps for individual agent types. For prerequisites and instructions, review [Set Up Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics_setup.htm&type=5).
+
+Activity logs are captured for every turn and event across all your agent sessions. Measurements and scoring data are collected, calculated, and aggregated in a unified Data 360 data model. Analytics data flows from multiple sources:
+
+-   **Session tracing**, which captures a step-by-step view of what happened during a conversation—inputs, decisions, actions taken, and outputs. These details show you why your agent behaved a certain way.  
+    
+-   **Audit and feedback data**, such as knowledge retrieval scores.  
+    
+-   **Trust Layer scores**, such as toxicity and instruction adherence.  
+    
+
+## Improve Customer Service for Excursion Bookings
+
+Like many boutique resorts, Coral Cloud Resorts offers a full range of excursions for guests who want to explore fun activities during their stay. Water activities like snorkeling and scuba diving are the most popular, along with land-based adventures like cycle and culture tours. Excursions at Coral Cloud Resorts have proven to be so popular—and profitable—that the excursion staff is swamped and unable to keep up with demand.
+
+Director of Business Intelligence at Coral Cloud Resorts, Alex Wu, helped drive the decision to add agents to his company. Using the agent development lifecycle (ADLC) framework, Alex planned, designed, built, tested, and deployed a new Excursion Booking agent to help improve and scale customer service for excursions. The agent handles information requests and manages reservations.
+
+In the planning phase, Alex established the top goals for evaluating the new agent.
+
+-   Deflect information inquiries and booking requests by 50%.  
+    
+-   Reduce the escalation rate from 100% (no agent) to 50%.  
+    
+
+By providing an easy-to-use system with a conversational interface, Alex hopes to deliver better outcomes for guests and increase bookings for the resort. Now that it’s running in production, he’s eager to monitor how well the agent performs with users. We follow Alex to see how he uses analytics to monitor his agent and combine that information with other tools to improve agent performance.
+
+## Up Next
+
+In the next unit, you explore the Agent Analytics dashboards and learn how to filter sessions, drill into quality scores, spot trends, and identify where your agent needs improvement.
+
+## Resources
+
+-   [_Salesforce Help_: Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics.htm&type=5)
+-   [_Salesforce Help_: Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Agentforce Session Tracing](https://help.salesforce.com/s/articleView?id=ai.generative_ai_session_trace.htm&type=5)
+-   [_Salesforce Help_: Einstein Audit and Feedback Data](https://help.salesforce.com/s/articleView?id=ai.generative_ai_feedback.htm&type=5)
+-   [_Salesforce Help_: Einstein Trust Layer: Designed for Trust](https://help.salesforce.com/s/articleView?id=ai.generative_ai_trust_arch.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNTEwOTkxLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTYxNTg5MzU4OSw4ODE1MTA5OTEsNzMwOT
+k4MTE2XX0=
 -->
