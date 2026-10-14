@@ -826,6 +826,162 @@ Pager
 
 [Next pageExercise 4 (Optional): Extending a Service Agent with Heroku](https://developer.salesforce.com/workshops/agentforce-workshop/service-agents/4-extend-service-agent-with-heroku)
 
+# Packaging Considerations for Prompt Templates
+
+Include a prompt template in managed, unmanaged, or unlocked packages. Before you create, update, or deploy a package that contains a prompt template, understand the limitations and behaviors of packages.
+
+## Create Packages
+
+-   Prompt templates that include a flow with a custom object input may cause package installation to fail, as packaging for prompt flows with custom objects isn't supported.
+-   Include only published versions. Draft versions can be added to the package, but they aren’t installed in customer orgs for managed packages.
+-   Any future changes to a published version are skipped during upgrade without error.
+-   If a published version is active and it’s different from the current version, it’s auto-activated in the customer’s organization.
+-   If no versions are published, don’t package the template. If you package a template without a published version, any installation or upgrade fails because of an empty template.
+-   Prompt templates with custom models can’t be packaged.
+-   If you include an Apex class in a prompt template and package it, the class must be global.
+-   For unmanaged, unlocked, or managed packages, avoid packaging templates that override any out-of-the-box (OOTB) template. Packaged templates can optionally be configured as overridable, which allows subscribers to create local versions of the template.
+-   Retrievers like Data Search and Data Graphs aren’t included in packages. Instead, they’re part of a data kit in Data 360. Salesforce Independent Software Vendors (ISVs) are encouraged to provide retrievers to the customer, or the installation fails because of missing metadata.
+-   New versions can be added to an existing template, but previously published versions can’t be modified or deleted. For overridable templates, subscribers can create additional override versions that customize the packaged template.
+-   New versions can be activated, and old versions can be deactivated. If a subscriber activates an override version, that version takes precedence over the publisher’s active version.
+-   Customers can’t edit packaged templates directly.However, if the publisher enables overridable templates, customers can create a new version that overrides the packaged template. Customers can also clone the template to create an independent custom template.
+-   A template with no active version can be delivered, but customers can't use it until a version is activated. Customers can clone the template to create an independent custom template, or if the template is configured as overridable they can create a local override version.
+-   ManagePromptTemplates permission must be assigned while creating second-generation (2GP) package versions. This snippet can be used in `sfdx-project.json` to specify the permission to assign to the build user while creating the org and building the package.
+    
+    ```
+    {
+                            "packageDirectories": [{
+                            "versionName": "ver 0.2",
+                            "versionNumber": "0.2.0.NEXT",        
+                            "path": "force-app",
+                            "default": true,
+                            "package": "Prompt Template 2GP Pkg",
+                            "versionDescription": "",
+                            "definitionFile": "config/project-scratch-def.json",
+                            "packageMetadataAccess": {
+                            "permissionSets": [
+                            "EinsteinGPTPromptTemplateManager"
+                            ]
+                            }
+                            }],
+                            "name": "managed",
+                            "namespace": "NAMESPACE",
+                            "sfdcLoginUrl": "https://login.salesforce.com",
+                            "sourceApiVersion": "63.0"
+                            }          
+    ```
+    
+
+## Install and Upgrade Installed Prompt Templates
+
+-   In Einstein Setup, if Add or Require Inputs After Activation isn’t enabled and you change inputs between template versions, the package installation fails with the error: 'This app can't be upgraded.'
+-   Before installing or upgrading a package in production, test installation or upgrade in sandbox and test.
+-   Customers can't deactivate a version after installation or upgrade.
+-   You can’t overwrite a published prompt template version.
+-   If the prompt template model is hidden, the existing template works as intended. However, if the template is cloned, the model won’t be available for use.
+-   For active versions, auto-activate them in the customer organization. Always test changes in sandboxes before installing or upgrading a package.
+-   Einstein Generative AI must be activated for installation of packages with Prompt templates otherwise installation fails.
+-   Flows aren't auto-activated when a package is installed. Flows follow the standard activation process for managed packages that's established.
+-   Partners can deactivate a template. However, if that template is in use for the customer, the upgrade fails. To upgrade the package, customers must remove that template from use.
+-   If you package a template with a custom LLM model configuration, verify your customer org has a model with the same name, otherwise installation or upgrade fails.
+-   Custom fields on Dynamic Forms-enabled Lightning pages can reference prompt templates. If you install a managed package containing a prompt template that is referenced by a custom field on a Dynamic Forms-enabled Lightning page, and that prompt template references a custom field with a namespace that is different from the Lightning page's namespace, package installation can fail.
+
+## Delete Installed Prompt Templates
+
+-   Versions can't be deleted from a managed template.
+-   A managed template can be deleted from a 2GP package, but it isn't deleted on the customer's org. Customers see the deprecated templates and have the option to delete them.
+
+## Overridable Prompt Templates
+
+Publishers can configure packaged prompt templates to be overridable. When a template is overridable, subscribers can create local versions of the template and customize the prompt text or configuration. Although these custom versions are linked to the template, they remain separate. Any update to the published version doesn’t impact the custom versions.
+
+Subscriber override versions appear in the version picker alongside publisher-managed versions. If a subscriber activates an override version, that version becomes the active version in the subscriber organization. However, activating the override does not deactivate the packaged version, the package version is automatically activated. This behavior preserves flows, especially packaged ones, which can depend on this template being active.
+
+Publisher versions remain managed by the package and continue to receive updates through package upgrades.
+
+## Considerations For Partners
+
+-   To allow a template to be overridable, use `<overridable>true</overridable>`.
+-   Once a template’s overridable setting is true and installed in the customer org, the setting cannot be undone. The upgrade fails with an error.
+-   Deleting a packaged template from a package marks it as deletable in the customer org. If a customer deletes that template, and the template isn’t being used, their customer overrides are also deleted.
+-   Subscribers can use the **Save as a new version** option to override the template.
+-   If custom version is active and the template is being used, then it cannot be deleted.
+-   If custom version is active, the template is being used, but there is an active managed package version then deactivating custom version will fall back to that version.
+-   If custom version is active, the template is being used, but there is no active managed package version then deactivation will fail.
+-   The Template Overrides option in Prompt Builder appears only in orgs with a namespace.
+-   When you clone an overridable template, the cloned template isn't overridable. Explicitly set the new template as overridable.
+
+## See Also
+
+-   [Data Kits](https://help.salesforce.com/s/articleView?id=data.c360_a_data_package_kits.htm&language=en_US&type=5)
+-   [Automate Tasks with Flows](https://help.salesforce.com/s/articleView?id=platform.flow.htm&language=en_US&type=5)
+
+# Prompt Builder Limitations
+
+Learn about the functional limitations of prompt templates that affect certain behaviors and outcomes.
+
+## Audit Trail Isn’t Supported
+
+Creating or updating a prompt template isn’t tracked in the Setup Audit Trail.
+
+## New Custom Objects and Custom Fields Aren’t Immediately Available After Creation
+
+When you create a custom object or custom field, it isn’t available for use in Prompt Builder immediately. To use a new custom object or field immediately, log out and log back in.
+
+## Records Without a Name Don’t Display in the Record Selector
+
+Prompt templates with encrypted or missing name fields can’t be previewed. Their records are unavailable in the test record selector.
+
+## Supported Object Types
+
+Salesforce supports many object or field suffixes to represent different types of data. Prompt Builder supports only these types of objects and fields as resources.
+
+-   UI API-supported objects. For a full list, see [All Supported Objects](https://developer.salesforce.com/docs/atlas.en-us.248.0.uiapi.meta/uiapi/ui_api_all_supported_objects.htm).
+    
+    ![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+    
+    Important The KnowledgeArticleVersion object is supported only for Flex Template types.
+    
+-   Standard objects (no suffix)
+-   Standard fields (no suffix)
+-   Custom objects (`__c`)
+-   Custom fields (`__c`)
+-   Histories (`__history`)
+-   Related lists (`__r`)
+
+## Object Preview Limitations
+
+You can’t preview objects with no Name field or objects whose Name field is encrypted.
+
+## Limitations for Field Generation Templates
+
+You can’t use Field Generation prompt templates for rich text areas in knowledge entities (`__kav`). To populate a knowledge entity’s rich text area with a Prompt Builder template, use a Flex prompt template, Flow, or Apex.
+
+## Limitations for Flex Templates
+
+You can’t import or export metadata from flex templates, including metadata related to flex templates. For example:
+
+-   Apex classes that reference flex templates
+-   Flows that reference flex templates
+-   Change sets to move flex-related artifacts between orgs
+
+To delete flex templates that use flows or Apex classes, first remove any flows and Apex resources in all versions of the template. Second, delete any flows and Apex classes that reference the prompt template. Then delete the flex template.
+
+## Limitations for Einstein Search
+
+If a prompt uses an Einstein Search retriever, the change sets don’t include the retriever or search index metadata. You must manually create the retriever in the destination org before deploying the retriever. This rule applies to change sets and Metadata API deployments.
+
+## Limitations for Conditional Logic
+
+Conditional blocks evaluate a single related record. They don’t iterate over a collection, such as multiple files related to a case.
+
+To reference more than one file, use Flow or Apex to select the file before the prompt template runs, or concatenate file names or a file count into a text field and ground the prompt template on that field.
+
+#### See Also
+
+-   [Ground Prompt Templates with Salesforce Resources](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_template.htm&language=en_US&type=5)
+-   [Monitor Setup Changes with Setup Audit Trail](https://help.salesforce.com/s/articleView?id=xcloud.admin_monitorsetup.htm&language=en_US&type=5)
+-   [Prompt Builder Limits](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limits.htm&language=en_US&type=5)
+-   [Troubleshoot Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_troubleshoot.htm&language=en_US&type=5)
 
 
 
@@ -833,6 +989,6 @@ Pager
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODc0NTA3MywyMTQ0ODAxODQsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTk3Mzg0NzQwNiwxODA4NzQ1MDczLDIxND
+Q4MDE4NCw3MzA5OTgxMTZdfQ==
 -->
