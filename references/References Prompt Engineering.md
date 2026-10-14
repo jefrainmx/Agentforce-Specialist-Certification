@@ -706,8 +706,83 @@ Assign the Prompt Template Manager permission set to Salesforce admins who creat
 -   [_Video_: Get to Know Prompt Builder](https://salesforce.vidyard.com/watch/kJPBHFRvvTpjJZ51Y4hj3A)
 -   [_Video_: How to Build a Prompt Template](https://salesforce.vidyard.com/watch/V1G9tgorNbyeaD811SRamA)
 
+# Get Started with the Drive Productivity with Salesforce AI Trail
+
+## Learning Objectives
+
+After completing this module, you’ll be able to:
+
+-   Navigate through the Drive Productivity with Salesforce AI trail.  
+    
+-   Describe Salesforce AI products, their capabilities, use cases, and implementation considerations.  
+    
+-   List the three current waves of the AI revolution.  
+    
+
+## Begin Your Salesforce AI Journey
+
+Hello! Welcome to the [Drive Productivity with Salesforce AI](https://trailhead.salesforce.com/einstein-ai-trail) trail. This trail is aimed at Salesforce administrators, sales and service professionals, data professionals, and anyone interested in learning how Salesforce AI features can transform their business and customer experiences.
+
+The content in this trail is designed to help you skill up on Salesforce AI products and features while setting you up for success, whether your goal is to apply what you learn to your job, obtain the Salesforce [Agentforce Specialist certification](https://trailhead.salesforce.com/en/credentials/aispecialist), or both.
+
+The trail consists of six sections.
+
+1.  Protect Generative AI data with the Einstein Trust Layer  
+    
+2.  Use Generative AI in CRM  
+    
+3.  Create Generative AI Experiences Using Prompt Builder  
+    
+4.  Set Up and Use Agentforce as a Conversational AI Assistant  
+    
+5.  Configure Custom AI Models with Model Builder  
+    
+6.  Get Certification Ready  
+    
+
+Each section includes a mix of Trailhead badges–many with hands-on learning experiences–along with videos and demos presented by a Salesforce instructor, and Salesforce Help articles that provide additional details.
+
+## Practice with Salesforce AI Tools
+
+As you move through this trail, you get to try out Salesforce AI tools and features. To complete the exercises and hands-on challenges, you use custom Trailhead Playgrounds with Salesforce AI enabled. You set up your first Playground when you get to the Create Generative AI Experiences Using Prompt Builder section of this trail. Each Playground is available for a limited time, so be sure to complete each project within the time specified on each Playground.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+A regular Trailhead Playground won’t work for the hands-on challenges in this trail because Salesforce AI features are not enabled in regular Playgrounds.
+
+## What Is Salesforce AI?
+
+You just learned about the trail and the orgs you use, now let’s dig into Salesforce AI. This 7-minute video explains how Salesforce AI enhances your business productivity with predictive and generative AI tools that help your organization work smarter and connect more deeply with customers. Be sure to watch the video so you can pass the quiz at the end of this module.
+
+## What’s Next?
+
+Now that you know the basics of Salesforce AI, take the quiz below and continue on with the [Drive Productivity with Salesforce AI](https://trailhead.salesforce.com/einstein-ai-trail) trail. We recommend that you consume the content in the order presented to get the most out of your learning and to be able to complete each hands-on challenge.
+
+We included documentation in the Resources section of each Trailhead badge to supplement your learning. These resources are meant to enhance your understanding of Salesforce AI and act as helpful study material for the Salesforce [Agentforce Specialist](https://trailhead.salesforce.com/en/credentials/aispecialist) exam.
+
+## Resources
+
+-   [_Salesforce Help_: Einstein Generative AI Glossary of Terms](https://help.salesforce.com/s/articleView?id=ai.generative_ai_glossary.htm&type=5)
+-   [_Salesforce Help_: Data 360 Glossary of Terms](https://help.salesforce.com/s/articleView?id=data.c360_a_glossary_guide.htm&type=5)
+
+# Best Practices for Building Prompt Templates
+
+Learn the best practices for building effective prompt templates.
+
+-   Make sure that your prompt templates are concise and easy to understand. Avoid using industry jargon or technical terms. Instead, use natural language and [conversation design best practices](https://help.salesforce.com/s/articleView?id=service.bots_service_best_practice.htm&language=en_US&type=5).
+-   To give the LLM more contextual information, ask it to role play as a character, such as a sales or support representative. Then define the character’s goal. For example, include language such as, “You are a marketing executive who wants to invite major customers to a live event.”
+-   Iterate on your prompt templates. Try achieving the same goal using different templates to see how the parts impact the model’s response. Get end-user feedback to see how well your prompt templates generate the desired response.
+-   Choose a style, and stick to it. When you use a consistent writing style in your prompt templates, the LLM generates consistent responses. Your writing style is shaped by your word choice, intensifiers, emojis, and punctuation.
+-   To help the LLM differentiate between context and instructions, create an instructions section in your prompt template. On a separate line, enter Instructions:, then surround your instructions with triple quotes (""").
+-   Include direct instructions for the LLM to only generate the expected type of content. For example, if you want the LLM to draft an email, add instructions such as, “Follow these instructions strictly to generate only the message to be sent to the customer.” These instructions prevent the LLM from generating a response about the process of creating content, instead of just generating the content that you want.
+-   Start with one of the templates in the [Example Prompt Template Library](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_example_library.htm&language=en_US&type=5), and customize it to fit your specific needs. Study the language that the templates use, especially the text related to writing style. You can use similar phrasing in your own templates.
+
+#### See Also
+
+-   [Ingredients of a Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_template_ingredients.htm&language=en_US&type=5)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MzQ0NzgwNiwtOTM3NTkxMjc1LDIwMz
-U5NjkyMDgsMTg5ODkwODcyLDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbMTEyNTUxNzc3NywxODYzNDQ3ODA2LC05Mz
+c1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2
+XX0=
 -->
