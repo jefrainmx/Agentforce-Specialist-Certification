@@ -506,8 +506,138 @@ When you build the search index, Data 360 creates a hybrid search index for the 
 -   [_Salesforce Help_: Manage Search Index](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_manage.htm&language=en_US&type=5)
 -   [_Salesforce Help_: Ground with Retriever Augmented Generation (RAG)](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag.htm&language=en_US&type=5)
 
+# Retrieve Data
 
+Use a retriever to search and return relevant data from a search index. Create and customize retrievers in AI Models (formerly Einstein Studio) for Retrieval Augmented Generation (RAG) in Data 360. Retrievers augment prompt templates by providing relevant, specialized grounding information for prompts.
+
+## Data Preparation
+
+Data preparation for retrieval from a search index involves loading, chunking, vectorizing, and storing content in a search-optimized way. Data 360 uses a vector data store for unstructured data, such as documents and conversation histories. A search index stores chunked and vectorized data that can be searched and retrieved from other applications. You can create and manage search indexes in Data 360. They’re defined in a data space and associated with a data model object (DMO).
+
+With advanced document processing and indexing capabilities in Data 360, retrievers can retrieve and ground agent responses by processing both text and images. Turn on image processing for the unstructured data model object search indexes to process documents with images and other visuals, such as tables and flow charts. For more information on advanced setup for search indexes, see [Use Search for AI, Automation, and Analytics](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_ground_ai.htm&language=en_US&type=5).
+
+## Search and Retriever Configuration
+
+Search indexes are often designed for general usage, such as indexing an entire knowledge base. You use retrievers to conduct specialized searches on search indexes and provide relevant results to agents, prompt templates, flows, and other features. Individual retrievers for search indexes apply the multi-purpose search index to a particular use case. For example, retrievers can return content that’s filtered based on a category of articles, the most recent information (such as the last 90 days), or geographical region.
+
+You build retrievers in AI Models and then activate it to make it available to Prompt Builder users. In Prompt Builder, you ground a prompt template with knowledge by inserting and configuring a retriever. At run time, the retriever provides the LLM with accurate, current, and pertinent information to improve the relevance, accuracy, and value of LLM responses.
+
+Retrievers adhere to the data governance policies set up for your data. Row-level access checks make sure that users have access to the data and knowledge returned by the retriever.
+
+## Retrievers in Data Cloud One Configurations
+
+When you create a retriever in a Data 360 home org, you can view it in the companion org and use it within Prompt Builder and Flow. You can also create and manage retrievers locally in a companion org. For more information see, [Retriever Support in Data Cloud One](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever_data_cloud_one.htm&language=en_US&type=5) and [Data Cloud One Companion Connections](https://help.salesforce.com/s/articleView?id=data.c360_a_companion_connections.htm&language=en_US&type=5).
+
+## Individual Retrievers
+
+Use individual retrievers to retrieve data from from a search index. To create an individual retriever in AI Models, you select its search index, define filters, and specify what information it returns. Filters narrow the search focus to more relevant data. The search index defines the fields that you can use for filtering. You also configure the data returned to the prompt, including the fields of data to return and the number of results. Each time you edit and save an individual retriever, another version is created in AI Models. Only one version of a retriever can be active.
+
+Data 360 no longer creates default Retrievers automatically when you create a search index. Previously, when you created a search index in Data 360, a default retriever was created automatically. You can use existing default retrievers in apps, such as Prompt Builder or flow.
+
+## Custom SQL Retrievers
+
+Define, validate, and create retrievers with SQL queries directly in the retriever user interface (UI) without switching between the Query Editor, Apex, and Prompt Builder. Use parameterized queries to build reusable retrievers. Developers get a dedicated UI experience to programmatically build retrievers before deploying them in agents. You can also query other Data 360 objects such as data model objects (DMO), data lake objects (DLO), and calculated insights in the Custom SQL retriever UI.
+
+## Ensemble Retrievers
+
+An ensemble retriever is a collection of individual retrievers. When you run an ensemble retriever, it executes the individual retrievers, combines their results into a single list, reranks the list according to relevance to the search request, and returns just the most relevant information to apps.
+
+Considerations for ensemble retrievers:
+
+-   Ensemble retrievers don't support retrievers of type Code.
+-   Individual retrievers with dynamic filters can’t be part of an ensemble retriever.
+-   In the Retriever Playground, test and validate pre-filter conditions for individual retrievers only when you configure them separately. You can't edit or test individual retrievers directly within an ensemble retriever.
+-   Ensemble retrievers with custom SQL retrievers can’t be tested in the playground.
+
+## Dynamic Retrievers
+
+Dynamic retrievers use placeholders that accept at run time values from prompt templates. A dynamic retriever has a placeholder for a value specified at runtime based on the needs of the prompt template.
+
+-   **[Get Trusted AI Responses with Retriever Citations](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_citations_retriever.htm&language=en_US&type=5)**  
+    Citations link AI-generated responses to the source content relevant to each response. Citations allow users to compare the LLM response with the source data to verify the validity of the response and identify any potential inaccuracies or hallucinations. Enable citations in AI Models (formerly Einstein Studio) at the individual retriever level to give access to citations to solution components that call the retriever, such as a prompt template.
+-   **[Manage Retrievers](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever_version.htm&language=en_US&type=5)**  
+    Create and customize retrievers for Retrieval Augmented Generation (RAG) in Data 360. To see the list of retrievers, navigate to the Retrievers tab in AI Models (formerly Einstein Studio). To learn about a retriever, select View Details from the dropdown menu. Each time you edit a custom retriever and save the changes, a new version is created. You can create multiple versions, but you can have only one version active at a time.
+-   **[Customize, Test, and Validate Retrievers with Retriever Playground](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever_test.htm&language=en_US&type=5)**  
+    Fine-tune and validate retrieval logic for retrieval-augmented generation (RAG) systems by using retriever playground, reducing deployment risks, and verifying accurate AI outputs. Use AI Models (formerly Einstein Studio) retriever playground to configure pre-filters, select test data, and adjust result parameters to customize retrieval logic for domain-specific use cases, such as retrieving complaince documents or knowledge articles.
+-   **[Retriever Filters Reference](https://help.salesforce.com/s/articleView?id=data.c360_a_retriever_filter_reference.htm&language=en_US&type=5)**  
+    Configure filter conditions for retrieval accuracy when you create or test retrievers in AI Models (formerly Einstein Studio). Use filter conditions to filter records retrieved for search queries. You can configure up to ten filter conditions for an individual retriever.
+-   **[Retriever Support in Data Cloud One](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever_data_cloud_one.htm&language=en_US&type=5)**  
+    Learn about retriever capabilities and limitations when you work with Data Cloud One home and companion orgs.
+
+#### See Also
+
+-   [_Salesforce Help_: Retrieval Augmented Generation (RAG)](https://help.salesforce.com/s/articleView?id=ai.generative_ai_rag.htm&language=en_US&type=5)
+-   [_Salesforce Help_:Ground with Knowledge Using Retrieval Augmented Generation](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_ground_rag.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Search for AI, Automation, and Analytics](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_ground_ai.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Retriever Support in Data Cloud One](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_retriever_data_cloud_one.htm&language=en_US&type=5)
+-   [_Trailhead_: Retrieval Augmented Generation: Quick Look](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look)
+-   [_Rag Best Practices White Paper_: Agentforce and RAG: Best Practices for Better Agents](https://view.salesforce.com/viewer/da54a79f51b5c2aa4002845258559687#1)
+-   [_Salesforce Developer:_ Salesforce Data 360 Connect REST API: Retrievers Reference](https://developer.salesforce.com/docs/data/connectapi/references/spec#tag/Machine-Learning)
+
+# Use Search for AI, Automation, and Analytics
+
+Grounding Data 360 search on unstructured and structured data enhances your use of generative AI, analytics, and automation tools across Salesforce. Grounding brings customer-specific data, including diverse forms of unstructured data (such as text documents, multimedia files, social media content, web content, chat logs, sensor data, and customer feedback), into applications like Agentforce, Tableau, and Flow Builder. This alignment results in more accurate and relevant AI-generated content, deeper insights from analytics, and more efficient automation workflows for your teams and customers.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-data-data_cloud-264-0-0-production-enus/9a804ab5-dba6-49d5-8077-820fbcc92ad9/images/icon_note.png)
+
+Note
+
+As of October 14, 2025, Data Cloud has been rebranded to Data 360. During this transition, you may see references to Data Cloud in our application and documentation. While the name is new, the functionality and content remains unchanged.
+
+In Data 360, you can create vector or hybrid search indexes depending on data and query needs.
+
+## Vector Search
+
+In Data 360, you can create searchable vector embeddings from your unstructured and structured data. A vector embedding is a numerical representation of a unit of text (an article or a passage from a larger document) that captures its semantic meaning. Large language models (LLMs) group embeddings with similar semantic meanings so that generative AI applications can effectively interpret their relationships and contextual relevance.
+
+Use vector search when your data source and search queries benefit more from semantically aware matches within a large dataset. For example, if you send a query such as “What is Acme famous for?”, the LLM retrieves chunks that have the highest vector search score that relates to the closest semantic match with the search query.
+
+Before you create a vector search index, unstructured data stored in data model objects (DMOs) or unstructured data model objects (UDMOs) are chunked into manageable, semantically meaningful units. These units are stored in [two objects](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_chunk_index_dmo.htm&language=en_US&type=5): a chunk data model object (CDMO) and an index data model object (IDMO). The CDMO is a Data 360 object that stores the actual content chunks, and the IDMO stores the vector embedding.
+
+You can perform vector searches on that data from apps such as Prompt Builder, AI agents, or Tableau.
+
+## Hybrid Search
+
+To deliver relevant and accurate responses in generative AI applications, Large Language Models (LLMs) often require both vector and keyword search. While vector search excels at grasping semantic similarities, it can lack precision with specific domain vocabulary. Conversely, keyword search is excellent for lexical matches but doesn't understand semantic similarity. In Data 360, hybrid search combines these methods, using semantically aware vector search for contextual understanding and keyword search for precise lexical matching.
+
+When your data source and search queries benefit from both semantically aware vector search and the precision of a keyword search, use hybrid search. For example, in the query “Does Acme motor XYZ123 use hydraulic pumps?” the addition of keyword search promotes higher-ranking positions for more relevant content, thus providing the results with better grounding.
+
+After you create a hybrid search index on your DMOs or UDMOs, Data 360 generates content chunks and vector embeddings for a vector search index and a keyword search index. Hybrid search queries the vector search index to retrieve information based on semantic similarity, and it queries the keyword search index to retrieve information based on lexical similarity. Hybrid search then merges and ranks the results provided by both types of searches to generate the best response. You can also configure additional ranking factors, such as recency or popularity of records, to influence the search results returned.
+
+## Key Use Cases for Data 360 Search
+
+Key use cases for Data 360 search include:
+
+-   In Retrieval Augmented Generation (RAG): Data 360 search is fundamental to RAG, grounding AI responses in relevant unstructured data. This directly leads to more accurate and contextually appropriate AI outputs that are based on your specific knowledge base.
+-   In Service Cloud: AI agents use search to query for precise information within knowledge articles, emails, support tickets, and chat logs. This enables them to provide more accurate answers, craft better responses, and even proactively suggest solutions to customer issues.
+-   In Sales Cloud: AI agents can query unstructured sales data—like emails, call transcripts, and notes—to generate highly relevant meeting briefings and summaries. This insight also fuels personalized content and customer-specific recommendations for new emails, significantly boosting customer engagement and sales team productivity.
+-   In automation flows: AI agents can automatically identify semantically similar records, such as Cases, based on their descriptions. This capability is crucial for flagging duplicates, accelerating resolution times, and accurately classifying records by finding similar historical examples.
+-   In analytics: Within Tableau, Data 360 search facilitates gaining deeper insights from unstructured data, notably through advanced topic classification. This enhances data analysis by revealing patterns and themes that traditional methods sometimes miss.
+
+-   **[Chunk Data](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_grounding.htm&language=en_US&type=5)**  
+    To add your data to Data 360’s search index, you must first chunk it. Chunking break your data into meaningful chunks, and Data 360 turns those chunks into machine-readable vector embeddings.
+-   **[Vector Search](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_vector_index.htm&language=en_US&type=5)**  
+    In Data 360, you can create searchable semantic vector embeddings from your unstructured and structured data. Vector search helps your generative AI, automation, and analytics applications understand semantic similarities and context between embeddings.
+-   **[Hybrid Search](https://help.salesforce.com/s/articleView?id=data.c360_a_hybridsearch_index.htm&language=en_US&type=5)**  
+    To provide relevant information to an LLM with gen AI applications and generate the correct response, requires both vector search and keyword search. Vector search understands semantic similarities and context, but lacks specific domain vocabulary. Keyword search excels at lexical similarity but not at semantic similarity. In Data 360, hybrid search combines the strengths of semantically aware vector search with the precision and speed of keyword search.
+-   **[Manage Search Indexes](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_manage.htm&language=en_US&type=5)**  
+    Create, view, edit, and delete search index configurations.
+-   **[Optimizing Search Indexes: Field Selection and Chunking](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_optimize.htm&language=en_US&type=5)**  
+    When you create a search index in the advanced builder, you can optimize your search index to deliver more accurate results by paying attention to the field selection and chunking strategies you use.
+-   **[Search Index Reference](https://help.salesforce.com/s/articleView?id=data.c360_a_search_index_reference.htm&language=en_US&type=5)**  
+    Data 360 search supports many different file formats with unstructured data, embedding models, and pre-filter operations on search results.
+-   **[Using Retrieval Augmented Generation](https://help.salesforce.com/s/articleView?id=data.c360_a_rag_overview.htm&language=en_US&type=5)**  
+    Retrieval Augmented Generation (RAG) in Data 360 is a framework for grounding large language model (LLM) prompts. By augmenting the prompt with accurate, current, and pertinent information, RAG improves the relevance and value of LLM responses for users.
+-   **[Billing Considerations for Unstructured Data and Search Index](https://help.salesforce.com/s/articleView?id=data.c360_a_unstructured_data_billing_considerations.htm&language=en_US&type=5)**  
+    When you use unstructured data and search index configurations, your data is stored and processed in Data 360. Use of unstructured data and search index in Data 360 impacts the consumption of credits in the following usage types.
+
+#### See Also
+
+-   [_Salesforce Help_: About Unstructured Data](https://help.salesforce.com/s/articleView?id=data.c360_a_unstructured_data_about.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Data 360 Limits and Guidelines](https://help.salesforce.com/s/articleView?id=data.c360_a_limits_and_guidelines.htm&language=en_US&type=5)
+-   [_Salesforce Help_: Encrypt Data 360 with Customer-Managed Root Keys](https://help.salesforce.com/s/articleView?id=xcloud.security_pe_enable_pe_for_data_cloud.htm&language=en_US&type=5)
+-   [_Trailhead_: Get to Know Search Index Types in Data 360](https://trailhead.salesforce.com/content/learn/modules/search-index-types-data-cloud-quick-look)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyNzIxNTg4LC0zNTU5Mjk2MTddfQ==
+eyJoaXN0b3J5IjpbOTQyMzU3OTAsLTM1NTkyOTYxN119
 -->
