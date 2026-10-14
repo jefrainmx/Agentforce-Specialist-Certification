@@ -451,7 +451,7 @@ A common way to think of MCP working with clients is adding new skills to the cl
 
 MCP is the power behind the [AgentExchange](https://agentexchange.salesforce.com/), which allows you to browse and try new skills, agents and solutions for Slack and Salesforce. These offerings extend Slack and Salesforce functionality across the enterprise ecosystem by allowing access to skills and functionality from a wide variety of partners.
 
-For a more visual overview, check out this video:
+[For a more visual overview, check out this video:](https://youtu.be/PxcPTDBNsrY?si=Pln19DMBc-pVk00e)
 
 ## Learn more from these resources
 
@@ -462,6 +462,6 @@ For a more visual overview, check out this video:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNTU3ODk3NSwtMTE1Nzg4NzA3MiwtNT
-U5ODAwMzY0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbNDU5NTE4OTYxLC00MTU1Nzg5NzUsLTExNT
+c4ODcwNzIsLTU1OTgwMDM2NCw3MzA5OTgxMTZdfQ==
 -->
