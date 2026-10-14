@@ -1557,9 +1557,48 @@ An LLM configuration can be hidden in AI Models. A prompt template that uses a h
 
 -   [Large Language Model Support](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&language=en_US&type=5)
 
+# Manage Model Provider Access
 
+Choose which Large Language Model (LLM) providers to allow or not allow in your organization. When access to a model provider is turned on, you can use its language learning models (LLMs) in agents, prompt templates, APIs, and other features in generative AI solutions. Turn off a model provider to block access to its models in your org.
+
+![Warning](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_warning.png)
+
+Warning Turning off a model provider can stop Agentforce agents, prompt templates, and other generative AI features that use its models from running. Be sure to test and verify AI-enabled functionality in a sandbox org before you deploy it into production. Affected components can include (but aren’t limited to):
+
+-   Agentforce Agents
+-   Agent Actions
+-   Agentforce Testing Center
+-   Prompt templates
+-   APIs
+-   Email Summaries
+-   Knowledge Generation
+-   Service Replies
+-   Generative Campaigns
+-   Sales Summaries
+-   Agentforce API
+-   Agentforce Vibes Extension
+-   Salesforce features that access LLMs
+
+To manage model provider access:
+
+1.  From Setup, in the Quick Find box, enter Einstein Setup.
+2.  Turn on Einstein if it’s not already turned on.
+3.  Scroll down to **Configure Model Providers**.
+    
+    ![List of model providers to turn on or off.](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/generative_ai/images/generative_ai_model_provider.png)
+    
+4.  Selectively turn on or off model providers.
+    
+    Usually, model providers are enabled by default. For Amazon Bedrock, currently only Anthropic and Amazon models are affected.
+    
+5.  If you turn off access for a model provider, you’re warned that disabling access stops affected components from running. Confirm your selection.
+    
+    ![Important](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_important.png)
+    
+    Important It can take up to ten (10) minutes for model provider disablement to take effect.
+    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjM5NjcxNDEsMTg0OTIxOTgyMywxOD
-YzNDQ3ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4
-NzIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTg4ODA1MTI3NiwxODQ5MjE5ODIzLDE4Nj
+M0NDc4MDYsLTkzNzU5MTI3NSwyMDM1OTY5MjA4LDE4OTg5MDg3
+Miw3MzA5OTgxMTZdfQ==
 -->
