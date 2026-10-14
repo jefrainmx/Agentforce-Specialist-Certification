@@ -668,6 +668,54 @@ Note
 -   [Add a Retriever to a Field Generation Prompt Template](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_add_retriever_field_gen.htm&language=en_US&type=5)
 -   [_Trailhead_: Retrieval Augmented Generation: Quick Look](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look)
 
+
+# Add a Retriever to a Field Generation Prompt Template
+
+Add a retriever to a field generation prompt template by selecting it from the Resource field.
+
+This topic walks through the steps to create and preview a prompt template that uses an Einstein Search retriever to create an account description. You must create a retriever in AI Models (formerly Einstein Studio) before you can use it in a prompt template. See [Use a Custom Retriever](https://help.salesforce.com/s/articleView?id=ai.data_library_custom_retriever.htm&language=en_US&type=5) for more information. This example uses a custom retriever named ESearchAccountDescription to search through an internal knowledge store of account description information stored as unstructured data.
+
+1.  In Prompt Builder, create a prompt template and select **Field Generation** from the Prompt Template Type dropdown.
+2.  Enter a Prompt Template Name and Description.
+3.  Define a resource. In this example, we select **Account** for the Object, and **Account Description** for the Object Field.
+4.  Click **Next** to go to the Prompt Template Workspace.
+5.  In the [Example Prompt Template Library](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_use_example_library.htm&language=en_US&type=5), find the Field Generation prompt template Draft an Account Description. Copy and paste this template into the Prompt Template Workspace.
+    
+    In the instructions, add the text, Use the following information that’s related to the account:
+    
+6.  In the Prompt section, type **@** or click **Insert Resource**, click **Retrievers**, and click **Configure Retrievers +**.
+7.  Select the retriever you want to add to the prompt template.
+8.  Optionally, change retriever settings in the Template Settings side panel.
+    1.  **Descriptors**: Change the **Label** and **Description** for this retriever in your prompt template.
+    2.  **Search Text**: Focus your search by specifying additional criteria. Select a resource or specify search text.
+    3.  **Output Fields**: If available for the selected retriever, select one or more returned fields of data to ground your prompt.
+    4.  **Number of Results**: If available for the selected retriever, specify the maximum number of retrieved results.
+9.  Click **Apply and Insert**.
+    
+    After adding the retriever to the prompt template, you can customize the search parameters in the Preview Settings panel.
+    
+10.  In the Preview Settings panel, click the Search Text field and type or select your query.
+     
+     In this example, we type `account name:` in the search text. Next, we find and select the Account Name resource in the search field. Then, we type `account industry:` in the search text and find and select Account Industry in the search field.
+     
+     Our final Search Text looks like this:
+     
+     account name: Input.Account.Name
+     
+     account industry: Input.Account.Industry
+     
+11.  Select the Number of Results. We use 10 for this example.
+12.  Click **Save**.
+13.  Run the prompt template and see the LLM-generated description.
+     1.  Click the Preview Settings button.
+     2.  Under Inputs, search for and select an account in the Accounts search bar.
+     3.  In the Configure Response and Display sections, verify that Generate Response, Display Prompt, and Display Resolution are selected or deselected based on what you want to test.
+     4.  Click **Preview**. Review the response.
+
+#### See Also
+
+-   [_Trailhead_: Retrieval Augmented Generation: Quick Look](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjUyNjU2MzEsLTM1NTkyOTYxN119
+eyJoaXN0b3J5IjpbMTE0MTMxMjMwNywtMzU1OTI5NjE3XX0=
 -->
