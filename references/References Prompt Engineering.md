@@ -1747,6 +1747,54 @@ Note If a request fails to process in the designated region(s), Salesforce-Manag
 This table lists the Salesforce-managed models that are available for embedded features, such as Prompt Builder. For Agentforce, see the Agentforce Models section.
 See [Agentforce Models section](https://help.salesforce.com/s/articleView?id=ai.generative_ai_large_language_model_support.htm&type=5)
 
+| **Model Provider** | **Model Family** | **Version** | **Usage Type** | **Model Regions** | **Notes** |
+| --- | --- | --- | --- | --- | --- |
+| Bedrock (Amazon) | Nova Lite | nova-lite-2024-12-04 | Basic Prompts | Inference profiles: apac.amazon.nova-lite-v1:0, ca.amazon.nova-lite-v1:0,<br> eu.amazon.nova-lite-v1:0, us.amazon.nova-lite-v1:0 |  |
+| Bedrock (Amazon) | Nova Pro | nova-pro-2024-12-04 | Standard Prompts | Inference profiles: apac.amazon.nova-pro-v1:0, eu.amazon.nova-pro-v1:0,<br> us.amazon.nova-pro-v1:0 |  |
+| Bedrock (Amazon) | Nova 2 Lite | nova-2-lite-v1:0-2025-12-02 | Standard Prompts | Inference profiles: us.amazon.nova-2-lite-v1:0, eu.amazon.nova-2-lite-v1:0, jp.amazon.nova-2-lite-v1:0 |  |
+| Bedrock (Anthropic) | Claude Haiku 4.5 | claude-haiku-4-5-20251001 | Standard Prompts | Inference profiles: au.anthropic.claude-haiku-4-5-20251001-v1:0,<br> eu.anthropic.claude-haiku-4-5-20251001-v1:0,<br> jp.anthropic.claude-haiku-4-5-20251001-v1:0,<br> us.anthropic.claude-haiku-4-5-20251001-v1:0 | See [Geo-Aware Routing for Anthropic](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_anthropic.htm&language=en_US&type=5 "LLM requests for Anthropic on AWS Bedrock are routed to the nearest AWS data center where a model endpoint is available."). |
+| Bedrock (Anthropic) | Claude Opus 4.5 | claude-opus-4-5-20251101 | Advanced Prompts | United States |  |
+| Bedrock (Anthropic) | Claude Opus 4.6 | claude-opus-4-6-2026-02-05 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-4-6-v1,<br> eu.anthropic.claude-opus-4-6-v1, us.anthropic.claude-opus-4-6-v1 |  |
+| Bedrock (Anthropic) | Claude Opus 4.7 | claude-opus-4-7-2026-04-16 | Advanced Prompts | Inference profiles: eu.anthropic.claude-opus-4-7, jp.anthropic.claude-opus-4-7,<br> us.anthropic.claude-opus-4-7 |  |
+| Bedrock (Anthropic) | Claude Opus 4.8 | claude-opus-4-8-2026-05-28 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-4-8, eu.anthropic.claude-opus-4-8,<br> jp.anthropic.claude-opus-4-8, us.anthropic.claude-opus-4-8 |  |
+| Bedrock (Anthropic) | Claude Opus 5 | claude-opus-5-2026-07-24 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-5, eu.anthropic.claude-opus-5,<br> in.anthropic.claude-opus-5, us.anthropic.claude-opus-5 |  |
+| Bedrock (Anthropic) | Claude Opus 5.5 | claude-opus-5-5-2026-09-22 | Advanced Prompts | Inference profiles: au.anthropic.claude-opus-5-5, eu.anthropic.claude-opus-5-5,<br> jp.anthropic.claude-opus-5-5, us.anthropic.claude-opus-5-5 |  |
+| Bedrock (Anthropic) | Claude Sonnet 4.5 | claude-sonnet-4-5-20250929 | Standard Prompts | Inference profiles: au.anthropic.claude-sonnet-4-5-20250929-v1:0,<br> eu.anthropic.claude-sonnet-4-5-20250929-v1:0,<br> jp.anthropic.claude-sonnet-4-5-20250929-v1:0,<br> us.anthropic.claude-sonnet-4-5-20250929-v1:0 |  |
+| Bedrock (Anthropic) | Claude Sonnet 4.6 | claude-sonnet-4-6-2026-02-17 | Standard Prompts | Inference profiles: au.anthropic.claude-sonnet-4-6,<br> eu.anthropic.claude-sonnet-4-6, jp.anthropic.claude-sonnet-4-6,<br> us.anthropic.claude-sonnet-4-6 |  |
+| Bedrock (Anthropic) | Claude Sonnet 5 | anthropic.claude-sonnet-5-2026-06-30 | Standard Prompts | Inference profiles: au.anthropic.claude-sonnet-5, eu.anthropic.claude-sonnet-5,<br> us.anthropic.claude-sonnet-5 |  |
+| Bedrock (NVIDIA) | Nemotron 3 Nano 30B (Beta) | nvidia.nemotron-nano-3-30b | Basic Prompts | Brazil, India, Italy, Japan, United Kingdom, United States |  |
+| Bedrock (NVIDIA) | Nemotron 3 Super 120B (Beta) | nvidia.nemotron-super-3-120b-2026-03-11 | Standard Prompts | Australia, Brazil, India, Italy, Japan, United Kingdom, United States |  |
+| OpenAI and Azure OpenAI | GPT-4o (GPT 4 Omni) | gpt-4o-2024-11-20 | Standard Prompts | OpenAI: United States <br>Azure OpenAI: Australia, Brazil, Canada, France,<br>Germany, India, Japan, Sweden, Switzerland, United Kingdom, United<br>States |  |
+| OpenAI | GPT-4o Mini | gpt-4o-mini-2024-07-18 | Basic Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT-4o-mini (GPT 4 Omni Mini) | gpt-4o-mini-2024-07-18 | Basic Prompts | OpenAI: United States <br>Azure OpenAI: France, Germany, Japan, Sweden, United<br>Kingdom, United States |  |
+| OpenAI and Azure OpenAI | GPT-4.1 | gpt-4.1-2025-04-14 | Standard Prompts | OpenAI: United States <br>Azure OpenAI: Australia, Brazil, Canada, France,<br>Germany, India, Italy, Japan, Singapore, Sweden, United Kingdom, United<br>States | See [Geo-Aware Routing for OpenAI and Azure OpenAI](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_openai.htm&language=en_US&type=5 "A geo-aware model, such as GPT 4.1, uses OpenAI or Azure OpenAI to service LLM requests. The same underlying model is used by OpenAI and Azure OpenAI."). |
+| OpenAI and Azure OpenAI | GPT-4.1 Mini | gpt-4.1-mini-2025-04-14 | Basic Prompts | OpenAI: United States <br>Azure OpenAI: Australia, Canada, India, Japan, United<br>Kingdom, United States |  |
+| OpenAI and Azure OpenAI | GPT-5 | gpt-5-2025-08-07 | Standard Prompts | OpenAI: United States<br>Azure OpenAI: Sweden, United States |  |
+| OpenAI and Azure OpenAI | GPT-5 Mini | gpt-5-mini-2025-08-07 | Basic Prompts | OpenAI: United States<br>Azure OpenAI: Sweden, United States |  |
+| OpenAI and Azure OpenAI | GPT 5.1 | gpt-5.1-2025-11-13 | Standard Prompts | OpenAI: United States<br>Azure OpenAI: France, India, Sweden, United<br>States |  |
+| OpenAI and Azure OpenAI | GPT 5.2 | gpt-5.2-2025-12-11 | Standard Prompts | OpenAI: United States<br>Azure OpenAI: United States |  |
+| OpenAI and Azure OpenAI | GPT 5.4 | gpt-5.4-2026-03-05 | Standard Prompts | OpenAI: United States<br>Azure OpenAI: France, Germany, Japan, Sweden,<br>Switzerland, United States |  |
+| OpenAI and Azure OpenAI | GPT 5.4 Mini | gpt-5.4-mini-2026-03-17 | Basic Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT 5.5 | gpt-5.5-2026-04-24 | Advanced Prompts | OpenAI: United States<br>Azure OpenAI: France, Germany, Sweden, Switzerland,<br>United States |  |
+| OpenAI and Azure OpenAI | GPT 5.6 Luna | gpt-5.6-luna-2026-07-09 | Basic Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT 5.6 Terra | gpt-5.6-terra-2026-07-09 | Standard Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT 5.6 Sol | gpt-5.6-sol-2026-07-09 | Advanced Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT 6 Sol | gpt-6-sol-2026-09-22 | Advanced Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT 6 Luna | gpt-6-luna-2026-09-22 | Basic Prompts | United States |  |
+| OpenAI and Azure OpenAI | GPT 6 Astra | gpt-6-astra-2026-09-03 | Advanced Prompts | United States |  |
+| OpenAI and Azure OpenAI | O3 | o3-2025-04-16 | Standard Prompts | OpenAI: United States<br>Azure OpenAI: France, Germany, Sweden, United<br>States |  |
+| OpenAI and Azure OpenAI | O4 Mini | o4-mini-2025-04-16 | Standard Prompts | OpenAI: United States<br>Azure OpenAI: France, Germany, Sweden, United<br>States |  |
+| Vertex AI (Google) | Gemini 2.5 Flash | gemini-2.5-flash-2025-06-17 | Basic Prompts | Australia, Canada, India, Japan, Netherlands, Singapore, South Korea, United<br> Kingdom, United States |  |
+| Vertex AI (Google) | Gemini 2.5 Flash Lite | gemini-2.5-flash-lite-2025-07-22 | Basic Prompts | Netherlands, United States |  |
+| Vertex AI (Google) | Gemini 2.5 Pro | gemini-2.5-pro-2025-06-17 | Standard Prompts | Netherlands, United States |  |
+| Vertex AI (Google) | Gemini 3 Flash (Beta) | gemini-3-flash-preview-2025-12-17 | Basic Prompts | United States |  |
+| Vertex AI (Google) | Gemini 3 Pro (Beta) | gemini-3-pro-preview-2025-11-18 | Standard Prompts | United States | Retired on April 23, 2026. |
+| Vertex AI (Google) | Gemini 3.1 Flash Lite | gemini-3.1-flash-lite-2026-05-07 | Basic Prompts | United States |  |
+| Vertex AI (Google) | Gemini 3.1 Pro (Beta) | gemini-3.1-pro-preview-2026-02-19 | Standard Prompts | United States |  |
+| Vertex AI (Google) | Gemini 3.5 Flash | gemini-3.5-flash-2026-05-19 | Basic Prompts | India, Japan, Netherlands, Singapore, United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5 "LLM requests for Gemini are routed to a Vertex AI (Google) model endpoint."). |
+| Vertex AI (Google) | Gemini 3.6 Flash | gemini-3.6-flash-2026-07-21 | Basic Prompts | European Union (EU), United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5 "LLM requests for Gemini are routed to a Vertex AI (Google) model endpoint."). |
+| Vertex AI (Google) | Gemini 3.7 Flash | gemini-3.7-flash-2026-08-13 | Basic Prompts | European Union (EU), United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5 "LLM requests for Gemini are routed to a Vertex AI (Google) model endpoint."). |
+| Vertex AI (Google) | Gemini 3.8 Flash | gemini-3.8-flash-2026-09-02 | Basic Prompts | European Union (EU), United States | See [Geo-Aware Routing for Gemini](https://help.salesforce.com/s/articleView?id=ai.generative_ai_platform_geo_aware_routing_gemini.htm&language=en_US&type=5 "LLM requests for Gemini are routed to a Vertex AI (Google) model endpoint."). |
 
 ![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
 
@@ -1873,7 +1921,8 @@ New model announcements and model deprecation announcements are part of the mont
 -   [Bring Your Own Large Language Model](https://help.salesforce.com/s/articleView?id=data.c360_a_ai_foundation_models.htm&language=en_US&type=5)
 -   [Select Agentforce Model Option](https://help.salesforce.com/s/articleView?id=ai.agent_setup_select_model_provider.htm&language=en_US&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTcyNDg0MDEsMTQ3MzA3MTM3LC04OD
-gwNTEyNzYsMTg0OTIxOTgyMywxODYzNDQ3ODA2LC05Mzc1OTEy
-NzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNzI0NjU5NTgsLTEwMTcyNDg0MDEsMT
+Q3MzA3MTM3LC04ODgwNTEyNzYsMTg0OTIxOTgyMywxODYzNDQ3
+ODA2LC05Mzc1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNz
+MwOTk4MTE2XX0=
 -->
