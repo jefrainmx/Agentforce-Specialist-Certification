@@ -201,7 +201,46 @@ Consider these points when grounding your prompt templates with related lists in
 -   Related lists such as **Notes & Attachments** and **Combined Attachments** can include Salesforce Files and classic Attachment records. Prompt Builder uses only the Salesforce Files in that list.
 -   Convert existing classic Attachment records to Salesforce Files before you use them for grounding. If a related-list file is missing from the resolved prompt, then convert it to a Salesforce File and preview again. File size and system limits aren’t the cause.
 
+
+# Grounding Prompts with Record Snapshots
+
+Ground your prompt templates with Record Snapshots for a more convenient and powerful prompt authoring experience.
+
+For the most part, grounding your prompts with different types of Salesforce data has the same basic process. Start by crafting a prompt that incorporates Salesforce data. Then populate your prompt with grounding resources from the resources field in the Preview section. And then Prompt Builder resolves the grounding resources with real data when generating the response.
+
+Record Snapshots brings a new way to ground your prompts, by automatically including data available on the user's page layout for an object with one resource. Instead of individually selecting multiple fields and related lists for an object, you can include relevant data for grounding with one click.
+
+The data that Record Snapshots uses to ground your prompt depends on the page layout of the user. Page layouts are configurable, and the configuration impacts which data is used by Record Snapshots. In other words, when a prompt runs with Record Snapshots, the data used in the snapshot resolution reflects the data visible to that user. You can still select individual fields and resources in addition to Record Snapshot for an object.
+
+![Note](https://sf-zdocs-cdn-prod.zoominsoftware.com/tdta-ai-generative_ai-264-0-0-production-enus/fc2f2f57-79fe-4598-a5e0-089f9b72c638/images/icon_note.png)
+
+Note The account record snapshot output includes additional grounding data, such as key account fields, products, top opportunities, statistics on open cases, and past activities. The additional grounding data is always included independent of the page layout when it’s available.
+
+## Considerations and Limitations
+
+Consider these points when grounding your prompts with Record Snapshots.
+- Dynamic Forms aren’t used in Record Snapshots. However, if Dynamic Forms are activated for an object used by Record Snapshots, the underlying page layout is still used.
+- Prompt Builder restricts the quantity of data received from each source to avoid overflowing the prompt token limits.
+- “Empty” data (fields without values, sections without limits, and so on) are filtered out.
+- Prompt Builder imposes these limitations on each data source used with Record Snapshots.
+    
+    | Data Source | Limit | Criteria |
+    | --- | --- | --- |
+    | Page layout | None for the number of fields returned. |   |
+    | Compact page layout | None for the number of fields returned. |   |
+    | Related Lists | The first 6 related lists from the page layout are used, and up to 5 records are used per related list. |   |
+    | Tasks | The next 5 upcoming tasks are used. | Tasks are selected based on ActivityDate (ascending order), Priority (descending order), and ModifiedDate (descending order). |
+    | Events | The next 5 upcoming events are used. | Events are selected based on start date (ascending order). |
+    | Emails | The 5 most recent emails are used. |   |
+    
+
+#### See Also
+
+-   [Review, Revise, and Repeat: Ensure That a Prompt Template Is Effective](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_review_revise.htm&language=en_US&type=5)
+-   [Assign Page Layouts to Profiles or Record Types](https://help.salesforce.com/s/articleView?id=platform.layouts_assigning.htm&language=en_US&type=5)
+-   [Page Layout Considerations](https://help.salesforce.com/s/articleView?id=platform.layouts_considerations.htm&language=en_US&type=5)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTE1NzE3MDIzNDMsMjAzNTk2OTIwOCwxOD
+k4OTA4NzIsNzMwOTk4MTE2XX0=
 -->
