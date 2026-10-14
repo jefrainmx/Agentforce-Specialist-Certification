@@ -240,9 +240,24 @@ Consider these points when grounding your prompts with Record Snapshots.
 -   [Assign Page Layouts to Profiles or Record Types](https://help.salesforce.com/s/articleView?id=platform.layouts_assigning.htm&language=en_US&type=5)
 -   [Page Layout Considerations](https://help.salesforce.com/s/articleView?id=platform.layouts_considerations.htm&language=en_US&type=5)
 
+# Ground Prompt Templates with Salesforce Resources
+
+With Prompt Builder, you can dynamically ground prompt templates with CRM data using merge fields.
+
+The zero-retention agreement in the Einstein Trust Layer ensures that anything shared with the LLM isn’t stored or used for training. For more information, see [The Einstein Trust Layer](https://trailhead.salesforce.com/content/learn/modules/the-einstein-trust-layer) Trailhead module.
+
+When you create a prompt template in Prompt Builder, you first choose an object, such as an account or contact, to associate with your template. For a field generation template, you also select the field that you want Einstein to help users complete.
+
+As you write your prompt template in the Prompt Template Workspace, you can use the **Insert Resource** button to add merge fields that reference record fields, flows, Apex, Data 360 DMOs, and related lists. When you create a prompt template, it works with Apex or flows whose required inputs are a subset of the prompt template inputs. For flows, all inputs are considered required and must be present in the prompt template. For Apex, inputs are optional unless annotated as required. Optional Apex inputs don’t have to be present in the prompt template. Apex and flows with no parameters work with all prompt templates.
+
+#### See Also
+
+-   [Prompt Builder Limits](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limits.htm&language=en_US&type=5)
+-   [Prompt Builder Limitations](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_limitations.htm&language=en_US&type=5)
+-   [Troubleshoot Prompt Builder](https://help.salesforce.com/s/articleView?id=ai.prompt_builder_troubleshoot.htm&language=en_US&type=5)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNzU5MTI3NSwyMDM1OTY5MjA4LDE4OT
-g5MDg3Miw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTI3NDEyNjY1NiwtOTM3NTkxMjc1LDIwMz
+U5NjkyMDgsMTg5ODkwODcyLDczMDk5ODExNl19
 -->
