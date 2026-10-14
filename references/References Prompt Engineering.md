@@ -829,9 +829,87 @@ If the response doesn’t meet your standards or your company’s business needs
 
 - *Salesforce Research*: [Trusted AI](https://www.salesforceairesearch.com/trusted-ai)
 
+# Meet the Agentforce Trust Layer
 
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Discuss the #1 Salesforce value, Trust.  
+    
+-   Describe concerns related to trust and generative AI.  
+    
+-   Explain why Salesforce created the Einstein Trust Layer.  
+    
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+This module includes some beta features of the Einstein Trust Layer. Customers should make their purchase decisions based upon features that are currently generally available.
+
+## Before You Begin
+
+We know you’re eager to learn how Salesforce protects your company and customer data as we roll out new generative artificial intelligence (AI) tools. But, before you begin, you should be familiar with the concepts and terminology covered in these badges.
+
+-   [Generative AI Basics](https://trailhead.salesforce.com/content/learn/modules/generative-ai-basics)  
+    
+-   [Natural Language Processing Basics](https://trailhead.salesforce.com/content/learn/modules/natural-language-processing-basics)  
+    
+-   [Large Language Models](https://trailhead.salesforce.com/content/learn/modules/large-language-models)  
+    
+-   [Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals)  
+    
+
+The [Agentforce Glossary of Terms](https://help.salesforce.com/s/articleView?id=ai.copilot_glossary.htm&type=5) also covers many of the terms used in this badge, such as LLMs, prompts, grounding, hallucinations, toxic language, and more.
+
+## Generative AI, Salesforce, and Trust
+
+Everyone is excited about generative AI because it unleashes their creativity in whole new ways. Working with generative AI can be really fun—for instance, using Midjourney to create images of your pets as superheroes or using ChatGPT to create a poem written by a pirate. Companies are excited about generative AI because of the productivity gains. [According to Salesforce research](https://www.salesforce.com/news/stories/generative-ai-for-marketing-research/), employees estimate that generative AI will save them an average of 5 hours per week. For full-time employees, that adds up to a whole month per year!
+
+But for all this excitement, you probably have questions, like:
+
+-   How do I take advantage of generative AI tools and keep my data and my customers’ data safe?  
+    
+-   How do I know what data different generative AI providers are collecting and how it will be used?  
+    
+-   How can I be sure that I’m not accidentally handing over personal or company data to train AI models?  
+    
+-   How do I verify that AI-generated responses are accurate, unbiased, and trustworthy?  
+    
+
+### Salesforce and Trust
+
+At Salesforce, we’ve been asking the same questions about artificial intelligence and security. In fact, we’ve been all-in on AI for almost a decade. In 2016, we launched the Einstein platform, bringing predictive AI to our clouds. Shortly thereafter, in 2018, we started investing in large language models (LLMs).
+
+We’ve been hard at work building generative AI solutions to help customers use their data more efficiently and help make companies, employees, and customers more productive and efficient. And because Trust is our #1 value, we believe it’s not enough to deliver only the technological capabilities of generative AI. We believe we have a duty to be responsible, accountable, transparent, empowering, and inclusive. That’s why, as Salesforce builds generative AI tools, we carry our value of Trust right along with us.
+
+That’s where the Trust Layer comes in. We built the Trust Layer to help you and your colleagues use generative AI at your organization safely and securely. Let’s take a look at what Salesforce is doing to make its generative AI the most secure in the industry.
+
+## What Is the Einstein Trust Layer?
+
+The Einstein Trust Layer elevates the security of generative AI through data and privacy controls that are seamlessly integrated into the end-user experience. These controls enable Einstein to deliver AI that’s securely grounded in your customer and company data, without introducing potential security risks. In its simplest form, the Trust Layer is a sequence of gateways and retrieval mechanisms that together enable trusted and open generative AI.
+
+![The Einstein Trust Layer process.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/the-einstein-trust-layer/meet-the-einstein-trust-layer/images/b7e7e25de679f0a6b881906d59a9cf00_kix.u0bgnhwtkwm3.png)
+
+The Einstein Trust Layer lets customers get the benefit of generative AI without compromising their data security and privacy controls. It includes a toolbox of features that protect your data—like secure data retrieval, dynamic grounding, data masking, and zero data retention—so you don’t have to worry about where your data might end up. Toxic language detection scans prompts and responses for accuracy and to assure they are appropriate. And for additional accountability, an audit trail tracks a prompt through each step of its journey. You learn more about each of these features in the next units.
+
+Data masking for LLMs is currently disabled for agents. For embedded generative AI features, such as Einstein Service Replies, Einstein Work Summaries data masking is available, and you can configure it in Einstein Trust Layer setup.
+
+We designed our open model ecosystem so you have secure access to many large language models (LLMs), both inside and outside of Salesforce. The Trust Layer sits between an LLM and your employees and customers to keep your data safe while you use generative AI for all your business use cases, including sales emails, work summaries, and service replies in your contact center.
+
+In the next units, dive into the prompt and response journeys to learn how the Einstein Trust Layer protects your data.
+
+## Resources
+
+-   [_Documentation_: Einstein Generative AI Glossary of Terms](https://help.salesforce.com/s/articleView?id=ai.generative_ai_glossary.htm&type=5)
+-   [_Blog_: Meet Salesforce’s Trusted AI Principles](https://blog.salesforceairesearch.com/meet-salesforces-trusted-ai-principles/)
+-   [_Blog_: Generative AI: 5 Guidelines for Responsible Development](https://blog.salesforceairesearch.com/generative-ai-5-guidelines-for-responsible-development/)
+-   [_Trailhead_: Responsible Creation of Artificial Intelligence](https://trailhead.salesforce.com/content/learn/modules/responsible-creation-of-artificial-intelligence)
+-   [_Trailhead_: Generative AI Basics](https://trailhead.salesforce.com/content/learn/modules/generative-ai-basics)
+-   [_Trailhead_: Natural Language Processing](https://trailhead.salesforce.com/content/learn/modules/natural-language-processing-basics)
+-   [_Trailhead_: Large Language Models](https://trailhead.salesforce.com/content/learn/modules/large-language-models)
+-   [_Trailhead_: Prompt Fundamentals](https://trailhead.salesforce.com/content/learn/modules/prompt-fundamentals)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTczOTQzNDgsMTg2MzQ0NzgwNiwtOT
-M3NTkxMjc1LDIwMzU5NjkyMDgsMTg5ODkwODcyLDczMDk5ODEx
-Nl19
+eyJoaXN0b3J5IjpbMTUzNjU0MDQ4OCwxODYzNDQ3ODA2LC05Mz
+c1OTEyNzUsMjAzNTk2OTIwOCwxODk4OTA4NzIsNzMwOTk4MTE2
+XX0=
 -->
