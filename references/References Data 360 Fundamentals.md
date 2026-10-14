@@ -121,6 +121,34 @@ Agentforce Data Library and RAG in Data 360 are integrated with the Einstein gen
 -   [_Trailhead_: Hybrid Search for RAG: Quick Look](https://trailhead.salesforce.com/content/learn/modules/hybrid-search-for-rag-quick-look)
 -   [_Salesforce Blog_: RAG – The Hottest 3 Letters in Generative AI Right Now](https://www.salesforce.com/blog/what-is-retrieval-augmented-generation/)
 -   [_Salesforce Blog_: Agentforce and RAG: Best Practices for Better Agents](https://www.salesforce.com/content/dam/web/en_us/www/documents/article/agentforce_and_rag_best_practices_for_better_agents.pdf)
+
+# Use the Answer Questions with Knowledge Action
+
+Connect your agent to a data library for structured, citation-rich responses grounded in your indexed content.
+
+To use Agentforce Data Libraries, you must have Data 360 [set up](https://help.salesforce.com/s/articleView?id=data.c360_a_setup_provision.htm&language=en_US&type=5). Data libraries consume Data 360 credits.
+
+Before you begin, make sure your agent has the Answer Questions with Knowledge action assigned and your data library status is Ready.
+
+When you create and configure a data library, the Agentforce Data Library indexes your selected knowledge articles and uploaded files in Data 360. Data 360 creates a search index and retriever for your library that your agent can use via the Answer Questions with Knowledge action.
+
+1.  Under Apps, open **Agentforce Studio** and select your target agent.
+2.  Under the **Data** tab, use the dropdown menu to select an existing library. To create a new one, click **Go to Agentforce Data Library**. Ensure the library status is Ready.
+    
+    If you select or create a library, you can configure the [knowledge fields](https://help.salesforce.com/s/articleView?id=ai.data_library_select_fields.htm&language=en_US&type=5) or [file uploads](https://help.salesforce.com/s/articleView?id=ai.data_library_file_upload.htm&language=en_US&type=5) for your data library to index. If you create a library, it can take a few minutes for the preview conversation to update.
+    
+3.  To include citations in the agent's output, select **Show Sources**.
+4.  Save your changes. To test out your changes, restart the preview conversation and then chat with your agent.
+
+Use [Agentforce Testing Center](https://help.salesforce.com/s/articleView?id=ai.agent_studio_testing_center_knowledge_sources.htm&language=en_US&type=5) to generate and run tests from your knowledge sources at scale.
+
+#### See Also
+
+-   [Agentforce Platform | Answer Questions with Knowledge](https://help.salesforce.com/s/articleView?id=ai.copilot_actions_ref_answer_questions_with_knowledge.htm&language=en_US&type=5)
+-   [_Trailhead_: Retrieval Augmented Generation: Quick Look](https://trailhead.salesforce.com/content/learn/modules/retrieval-augmented-generation-quick-look)
+-   [Using Retrieval Augmented Generation](https://help.salesforce.com/s/articleView?id=data.c360_a_rag_overview.htm&language=en_US&type=5)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODM3NzQ2NTBdfQ==
+eyJoaXN0b3J5IjpbLTM1NTkyOTYxN119
 -->
