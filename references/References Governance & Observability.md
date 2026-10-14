@@ -671,7 +671,361 @@ What if the numbers underperform his goals? Alex can drill deeper into the data.
 ## Resources
 
 -   [_Salesforce Help_: Agent Analytics](https://help.salesforce.com/s/articleView?id=ai.generative_ai_agent_analytics.htm&type=5)
+
+# Investigate Agent Sessions and Intents
+
+## Learning Objectives
+
+After completing this unit, you’ll be able to:
+
+-   Navigate the Sessions & Intents page.  
+    
+-   Distinguish between processed and unprocessed sessions.  
+    
+-   Explain the intent pipeline process.  
+    
+-   Filter and analyze individual agent-user conversations using session metadata.  
+    
+-   Interpret session details.  
+    
+-   Use the Session Page trace to debug agent behavior step by step.  
+    
+
+## Launch Sessions & Intents
+
+In Sessions & Intents, you drill down into individual sessions and agent-user interactions at the intent level.
+
+1.  From the App Launcher, find and select **Agentforce Studio**.  
+    
+2.  Select **Agents**.  
+    
+3.  In the Explorer, under Observe & Optimize, select **Sessions & Intents**.  
+    
+
+![The Session & Intents page shows processed and unprocessed sessions.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agent-analytics-and-monitoring/investigate-agent-sessions-and-intents/images/006117c7be6358acb42749b4a8e84fbf_kix.i4ksiylsg20s.png)
+
+## Filter the Session & Intents Page
+
+Just as you learned in Agent Analytics, use the filter bar to scope the data you see on the Session & Intents page.
+
+![Filter Bar to Focus Data on the Session & Intents Page](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agent-analytics-and-monitoring/investigate-agent-sessions-and-intents/images/7b502ff052595ebcdbca784413377c07_kix.frruk6f7rv7r.png)
+
+## Navigate Processed and Unprocessed Sessions
+
+The Sessions & Intents page has two tabs: Processed Sessions and Unprocessed Sessions.
+
+### Processed Sessions
+
+Sessions that the system has completely processed using two sequential pipelines:
+
+-   **Intent Pipeline**: Analyzes closed sessions and extracts intents—what the user was trying to accomplish within a set of turns. Intent generation typically takes 4–5 hours after a session closes.  
+    
+-   **Clustering Pipeline**: Groups similar intents across sessions, assigns cluster tags, and makes tagged intents visible in the session trace. Clustering runs weekly. New intent tags for a new topic area won't appear until the weekly clustering run.  
+    
+
+Processed sessions are ready for analysis. The system has extracted user intents, assigned cluster tags, and calculated quality scores. Click on any intent in the trace to open its Interaction Summary with performance metrics, triggered subagents and actions, and Quality Score Reasoning.
+
+**Note:** Some intents don’t get tagged. The clustering pipeline creates a cluster tag only when it finds at least 10 semantically similar intents.
+
+### Unprocessed Sessions
+
+These are sessions that are still active, recently closed, or haven’t been completely processed. A blue banner indicates when session processing is in progress. Use the Trace tab to investigate a session immediately without waiting for processing to complete.
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+If you can’t find a session in Processed Sessions, check Unprocessed Sessions—it may still be processing.
+
+## Explore the Sessions Table
+
+The Session table shows information about agent-user sessions. Each row represents an individual session.
+
+![Sessions table for processed and unprocessed user sessions.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agent-analytics-and-monitoring/investigate-agent-sessions-and-intents/images/d89a250cff1921be055fcb6b6a9752fb_kix.gpvjraqr367s.png)
+
+-   **Session ID / Timestamp:** Unique identifier and time the session started.  
+    
+-   **Session Duration:** Total session duration.  
+    
+-   **Session Outcome:** Outcome of the session.  
+    
+-   **Custom Scorers** (Beta): Custom scorer labels and scores associated with the session.  
+    
+-   **Intent Summary:** LLM-generated summary of what the user was trying to accomplish.  
+    
+-   **Response Summary:** Summary of how the agent responded to the user’s request.  
+    
+-   **Subagents:** Which subagents were invoked during the session.  
+    
+-   **Actions:** Specific actions the agent ran (for example, Retrieve Knowledge, Get User, Authenticate User).  
+    
+-   **Intent Tag:** Cluster tag assigned to the intent (for example, Cancellation Request, Order Status); only tagged intents appear here. Untagged intents are blank.  
+    
+-   **Quality Score:** Color-coded score (High / Medium / Low) with a numeric value.  
+    
+
+![Note](https://res.cloudinary.com/hy4kyit2a/image/upload/doc/trailhead/en-usb473bb5ea1b7e61dfb07e6a7e547de6b.gif)
+
+Sessions created via email in real time are not reflected in the Sessions & Intents table
+
+### Duration Metrics (Chat Only)
+
+For Chat sessions only, the log shows:
+
+-   Total session duration at the top of the transcript  
+    
+-   Per-response duration for each agent reply  
+    
+-   Processing time breakdown—time spent reasoning (understanding intent, planning next steps) versus taking actions (executing configured actions)  
+    
+
+## Explore Individual Conversations
+
+Click the Session ID of the conversation you want to investigate.
+
+![The Session Details page shows the chat session log on the left and the session overview on the right.](https://res.cloudinary.com/hy4kyit2a/f_auto/fl_lossy/q_70/learn/modules/agent-analytics-and-monitoring/investigate-agent-sessions-and-intents/images/b58aa9a1f70e6f5c4f7cf43a272fd068_kix.n6wm34g63tlc.png)
+
+The top of the session page includes the session start timestamp, the unique Session ID, and a download transcript button.
+
+### Explore the Chat Session Log (Left Panel)
+
+The left panel shows the full conversation log between user and agent, with:
+
+-   Timestamps on every message  
+    
+-   Color-coded bubbles—user messages on the right, agent messages on the left  
+    
+-   Quality badge on agent responses once processed (for example, Quality: High or Quality: Low in color)  
+    
+-   Agent completion time for each response (for example, Agent (Complete: 1 sec))  
+    
+
+For voice sessions, the left panel shows the voice session transcript alongside an integrated audio player with playback controls. Click play to listen to the recorded conversation while reading the transcript.
+
+### Explore the Interaction Summary and Trace Tabs (Right Panel)
+
+The right panel has two tabs: Interaction Summary and Trace.
+
+The Interaction Summary provides a structured breakdown of what happened in a selected intent (moment).
+
+-   **Agent Name:** The agent that handled this interaction.  
+    
+-   **Average Agent Latency:** Average response time for this intent (in milliseconds).  
+    
+-   **Total Interactions:** Number of turns in this intent.  
+    
+-   **Intent Duration:** How long this intent lasted (example: “1 min, 12 sec”).  
+    
+-   **Topics Triggered:** Subagents invoked (color-coded icons, example: “Order Management”).  
+    
+-   **Intent Tag:** Cluster tag for this intent (example: “Cancellation Request”).  
+    
+-   **Actions Triggered:** Specific actions executed (example: “Retrieve Knowledge”).  
+    
+-   **Quality Score:** Score badge—color-coded High/Medium/Low.  
+    
+-   **Quality Score Reasoning:** LLM explanation of why the score was assigned. For example: “The agent did not provide the user a detailed response about the Cancellation Policy.” This is the most actionable field for knowing exactly what to fix.  
+    
+
+The Trace tab shows a time-ordered record of every processing step the agent took, with the duration for each step. Use the trace to:
+
+-   Follow the exact sequence of steps from user input to final response.  
+    
+-   See where time was spent (intent recognition, subagent routing, retrievals, variable updates, action execution).  
+    
+-   Identify where behavior diverged from what you configured in Agentforce Builder.  
+    
+-   Expand nested trace steps to drill into subagent delegation.  
+    
+
+Steps visible in the trace include:
+
+-   Topic (subagent) identification  
+    
+-   Actions (labeled with action type and icon)  
+    
+-   Agent routing steps  
+    
+-   Variable updates  
+    
+-   Retrieval steps  
+    
+-   Response generation  
+    
+
+Each step shows a status indicator (green check=success) and timing.
+
+## Alex Drills Deeper Into Agent Performance with Sessions & Intents
+
+At Coral Cloud Resorts, Alex received feedback from guest services that visitors are confused by the agent’s cancellation policy answers.
+
+### What Agent Analytics Reveals
+
+Agent Analytics shows the Cancellation & Rescheduling subagent has a quality score of 2.8/5 and a 67% escalation rate across 423 sessions—the highest escalation rate of any subagent.
+
+Alex navigates to the **Overview** | **Quality** dimension:
+
+-   Overall Average Quality Score: 3.4/5  
+    
+-   Cancellation & Rescheduling: 2.8/5 (lowest)  
+    
+
+**Performance Insights** | **Subagents** (Escalation Rate metric):
+
+-   Cancellation & Rescheduling: 67%  
+    
+-   Other subagents: 28–42% range  
+    
+
+**Quality sub-scores for Cancellation & Rescheduling:**
+
+-   Answer Faithfulness: 0.54  
+    
+-   Answer Relevance: 0.68  
+    
+-   Context Relevance: 0.71  
+    
+
+The low Answer Faithfulness (0.54) suggests the agent is providing information that doesn't align with the actual knowledge base content.
+
+### Deep Dive with Sessions & Intents
+
+Alex navigates to **Sessions & Intents** and filters:
+
+-   **Subagent:** Cancellation & Rescheduling  
+    
+-   **Session Outcome:** Escalated  
+    
+-   **Quality Score:** Low (1.0–3.0)  
+    
+
+He opens the top 10 escalated sessions.
+
+#### Session #1—Quality Score: 2.2
+
+**Chat Session Log:**
+
+-   **User:** “If there's a hurricane warning, can I cancel my excursion?”  
+    
+-   **Agent:** “Our cancellation policy allows for free cancellation up to 48 hours before your scheduled excursion. After that, a 50% fee applies.”  
+    
+-   **User:** “But what about weather emergencies?”  
+    
+-   **Agent:** “You can reschedule your excursion up to 24 hours in advance for a $25 fee.”  
+    
+-   **User:** “That doesn’t answer my question about hurricanes.”  
+    
+-   **Agent:** “Let me connect you with our guest services team who can help with your specific situation.”  
+    
+
+**Interaction Summary tab:**
+
+-   Answer Faithfulness: 0.42  
+    
+-   Quality score reasoning: _“_Agent provided generic policy information that did not address the weather emergency exception. The responses about 48-hour and 24-hour windows appear inconsistent.”  
+    
+
+**Trace tab shows:**
+
+-   Action Retrieve Knowledge → Retrieved article: Excursion Cancellation Policy  
+    
+-   Agent generated response about 48-hour policy  
+    
+-   Action Retrieve Knowledge → Retrieved article: Rescheduling Guidelines  
+    
+-   Agent generated response about 24-hour rescheduling  
+    
+-   Agent escalated to a support representative  
+    
+
+**Session #2**—**Quality Score: 1.9**
+
+Chat shows:
+
+1.  User asks about canceling due to illness.  
+    
+2.  Agent provides the standard 48-hour cancellation policy.  
+    
+3.  User asks if there’s an exception for medical reasons.  
+    
+4.  Agent repeats the same policy.  
+    
+5.  User requests a support representative.  
+    
+
+The Trace tab shows the agent only retrieved the basic Excursion Cancellation Policy article and never searched for medical exception information.
+
+**Session #3**—**Quality Score: 2.5**
+
+-   User purchased travel insurance and wants to know how it affects cancellations.  
+    
+-   Agent describes the standard cancellation fees.  
+    
+-   User frustrated that insurance wasn't considered.  
+    
+-   Escalated.  
+    
+
+### Investigating the Knowledge Base
+
+Alex clicks through to read the actual knowledge articles referenced in the traces. He notices there are two separate articles, but neither adequately covers:
+
+-   What happens if there’s a hurricane warning but the resort hasn’t officially canceled.  
+    
+-   Medical emergency cancellations.  
+    
+-   How travel insurance affects cancellations (only mentioned for rescheduling).  
+    
+
+The knowledge base has fragmented and incomplete information.
+
+-   **Multiple overlapping articles** create confusion (cancellation versus rescheduling policies separated).  
+    
+-   **Missing exception scenarios** (guest illness, family emergencies, travel insurance coverage for cancellations).  
+    
+-   **Ambiguous weather policy** (only covers resort-initiated cancellations, not guest-initiated due to weather concerns).  
+    
+
+The agent’s low Answer Faithfulness score (0.54) occurs because it's synthesizing responses from multiple incomplete articles, creating inconsistent answers.
+
+### Implementing the Fixes
+
+Alex works with the legal and guest services teams to create a single, comprehensive article: Complete Excursion Cancellation & Rescheduling Policy that addresses the issues in the knowledge base. Alex archives the old fragmented articles to ensure the agent retrieves only the new comprehensive article, preventing conflicting information.
+
+He also updates the Cancellation & Rescheduling subagent instructions to ask users about travel insurance, their reason for canceling, and to ground answers in the complete policy document. He tests a new version of the agent in Agentforce Testing Center and deploys it into production. Three weeks later, Alex checks the metrics.
+
+**Agent Analytics–Cancellation & Rescheduling**
+
+-   Quality Score: 4.3/5 (up from 2.8)  
+    
+-   Answer Faithfulness: 0.91 (up from 0.54)  
+    
+-   Escalation Rate: 28% (down from 67%)  
+    
+-   423 sessions in previous 30 days → 447 sessions (volume increased as users trust the agent more)  
+    
+
+**Sessions & Intents Validation**
+
+Alex samples 15 recent cancellation sessions and finds:
+
+-   The Trace tab shows consistent retrieval of the single comprehensive article.  
+    
+-   Weather-related questions are answered correctly with specific policy details.  
+    
+-   Medical and insurance questions are handled appropriately.  
+    
+-   Quality score reasoning notes: Agent provided accurate, complete information directly addressing the user's specific cancellation scenario.  
+    
+
+The consolidated knowledge base eliminated contradictions and filled coverage gaps, dramatically improving both deflection rates and quality.
+
+## Wrap It Up
+
+You learned how to use Agentforce Monitoring tools—including Agent Analytics dashboards and Sessions & Intents—to observe, measure, and understand your agents' real-world performance across multiple dimensions like effectiveness, quality, and health. You explored how to filter data, interpret metrics, investigate individual sessions, and trace agent behavior step-by-step to identify underperforming areas. Now you can apply these monitoring skills to detect trends, uncover root causes of issues, and continuously improve your agents to deliver better outcomes aligned with your business goals.
+
+## Resources
+
+-   [_Salesforce Help_: Analyze Data with Agent Optimization](https://help.salesforce.com/s/articleView?id=ai.generative_ai_optimize_use.htm&type=5)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMTA5NzQzMCw4ODE1MTA5OTEsNzMwOT
-k4MTE2XX0=
+eyJoaXN0b3J5IjpbLTIwNTg5NjU2MTQsODgxNTEwOTkxLDczMD
+k5ODExNl19
 -->
