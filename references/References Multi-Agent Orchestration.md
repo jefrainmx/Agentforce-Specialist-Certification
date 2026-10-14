@@ -682,10 +682,14 @@ MCP servers can provide three main types of capabilities:
 
 This tutorial will primarily focus on tools.
 
+# Unleashing the Power of Connected Agents with the Newly Expanded AgentExchange.
+With support for MCP and A2A protocols as part of Agentforce 3, AI agents will now be able to integrate with tools, systems, and other agents securely and at scale.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYzNTMzNzUyLC0xODY2ODkzNDI1LC0xOD
-Y2ODkzNDI1LC0xNjM4NjY4OTk4LC02OTYwMzE5MzksLTQxNTU3
-ODk3NSwtMTE1Nzg4NzA3MiwtNTU5ODAwMzY0LDczMDk5ODExNl
-19
+eyJoaXN0b3J5IjpbLTIxMzU5MDU3OTAsLTE4NjY4OTM0MjUsLT
+E4NjY4OTM0MjUsLTE2Mzg2Njg5OTgsLTY5NjAzMTkzOSwtNDE1
+NTc4OTc1LC0xMTU3ODg3MDcyLC01NTk4MDAzNjQsNzMwOTk4MT
+E2XX0=
 -->
