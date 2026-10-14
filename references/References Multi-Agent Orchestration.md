@@ -665,7 +665,7 @@ In this tutorial, we'll build a simple MCP weather server and connect it to a ho
 We'll build a server that exposes two tools: `get_alerts` and `get_forecast`. Then we'll connect the server to an MCP host (in this case, Claude for Desktop):
 
 <Frame>
-  <img src="https://mintcdn.com/mcp/4ZXF1PrDkEaJvXpn/images/current-weather.png?fit=max&auto=format&n=4ZXF1PrDkEaJvXpn&q=85&s=dce7b2f8a06c20ba358e4bd2e75fa4c7" width="2780" height="1849" data-path="images/current-weather.png" />
+  <img src="https://mintcdn.com/mcp/4ZXF1PrDkEaJvXpn/images/current-weather.png?fit=max&auto=format&n=4ZXF1PrDkEaJvXpn&q=85&s=dce7b2f8a06c20ba358e4bd2e75fa4c7" data-path="images/current-weather.png" />
 </Frame>
 
 <Note>
@@ -684,8 +684,8 @@ This tutorial will primarily focus on tools.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzgyMjEzNTQsLTE4NjY4OTM0MjUsLT
-E4NjY4OTM0MjUsLTE2Mzg2Njg5OTgsLTY5NjAzMTkzOSwtNDE1
-NTc4OTc1LC0xMTU3ODg3MDcyLC01NTk4MDAzNjQsNzMwOTk4MT
-E2XX0=
+eyJoaXN0b3J5IjpbODYzNTMzNzUyLC0xODY2ODkzNDI1LC0xOD
+Y2ODkzNDI1LC0xNjM4NjY4OTk4LC02OTYwMzE5MzksLTQxNTU3
+ODk3NSwtMTE1Nzg4NzA3MiwtNTU5ODAwMzY0LDczMDk5ODExNl
+19
 -->
