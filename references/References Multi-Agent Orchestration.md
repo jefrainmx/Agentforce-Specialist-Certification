@@ -378,8 +378,38 @@ In Short:
 
 Connect Agentforce to new tools and resources with secure, open interoperability through verified MCP server support from AgentExchange partners.
 
+## Agentforce Frequently Asked Questions
+
+### What is Model Context Protocol (MCP)?
+
+Model Context Protocol is an open standard originally developed by Anthropic that dictates how AI models can connect with external tools, systems, and data.
+
+### What are the benefits of MCP?
+
+Model Context Protocol significantly reduces integration effort and complexity by creating a universal integration standard while enforcing consistent enterprise-grade trust, security, and compliance across all agent interactions. This means your agent's responses can be grounded in your business context, no matter where you store your data.
+
+### How do I connect my AI Agents to MCP servers?
+
+You can discover new, trusted MCP servers through the expanded [AgentExchange](https://agentexchange.salesforce.com/?_ga=2.211377429.1697583485.1749488575-557564680.1747677039). AgentExchange offers a curated catalog of vetted services that are ready for deployment without extensive integration overhead. Once you’ve selected your desired MCP server, you can deploy using [AgentBuilder](https://www.salesforce.com/agentforce/agent-builder/) with no code required.
+
+### What MCP partners does Agentforce support?
+
+Agentforce has a rapidly growing list of Agentforce MCP Partners that you can find the complete list on [AgentExchange](https://appexchange.salesforce.com/collections/agentforce-mcp?_ga=2.79945619.543994904.1750693270-557564680.1747677039).
+
+### What is Agentforce Interoperability?
+
+Agentforce Interoperability refers to the systems and tools that Agentforce can connect with and utilize - improving the functionality and results of your [AI agents](https://www.salesforce.com/agentforce/ai-agents/).
+
+### How does AI agent interoperability work?
+
+AI agents can interoperate in a variety of ways - from dedicated integrations, to APIs, to MCP. Typically, each new functionality added to an AI agent required a bespoke integration.
+
+### What are the benefits of interoperability?
+
+Interoperability allows AI agents to take advantage of external tools, systems, and data to improve the performance and reliability of that agent. Interoperability also means less work for development teams to configure bespoke integrations between agents and other systems.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzE2MDcwMywtMTE1Nzg4NzA3MiwtNT
-U5ODAwMzY0LDczMDk5ODExNl19
+eyJoaXN0b3J5IjpbLTE3OTE3MTk3NTcsLTExNTc4ODcwNzIsLT
+U1OTgwMDM2NCw3MzA5OTgxMTZdfQ==
 -->
