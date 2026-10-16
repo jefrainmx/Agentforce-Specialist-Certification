@@ -621,7 +621,7 @@ An Agentforce Employee Agent can be made available in Lightning Experience and t
 ### Connecting an Agent to Slack
 The diagram below illustrates how an Agentforce Employee agent can be connected to Slack.
 
-![Connecting an Agent to Slack](https://raw.githubusercontent.com/jefrainmx/Agentforce-Specialist-Certification/98091e55c3501e05fab28c960f30ce521b03c12e/images/Screenshot%202026-09-22%20113402.png)
+![Connecting an Agent to Slack](/images/Screenshot%202026-09-22%20113402.png)
 
 ### Connecting an Agent to Email
 The diagram below illustrates how an Agentforce Service agent can be connected to Email, allowing it to autonomously respond to customer email inquiries.
@@ -915,11 +915,11 @@ The Agentforce Specialist should recommend using the Agent API to enable program
 
 [Agent API: Quick Look](https://trailhead.salesforce.com/content/learn/modules/agent-api-quick-look)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzU3NjE5OCwtMTEzNTgwMjExNywtMj
-A4NzY0NTY5LC0xNDM2MDcyMzUwLC0xNDgzNDExOTM1LC00MTc3
-MDcxMzgsLTY4ODU0NTIxNiwtMTAzOTQ1ODcyNiwxNTc1MTY4OT
-Y1LC0yODg0NTc2OTksLTI0MDc0NjYxMywtMjI4NDg1NzE1LDE4
-NTM0NzIxMDMsMzAzMzQ4NzE5LDM1Mzg3MjI2MSwtMTcwNzQ1OT
-Y3MSwtMTExNzA5NjE2NCwtMTQ3NDI1MDg5MCwtNzgyNTU4ODIs
-MTQ3MTA2NTY0XX0=
+eyJoaXN0b3J5IjpbNDQ4OTc5NzkwLDE4MDc1NzYxOTgsLTExMz
+U4MDIxMTcsLTIwODc2NDU2OSwtMTQzNjA3MjM1MCwtMTQ4MzQx
+MTkzNSwtNDE3NzA3MTM4LC02ODg1NDUyMTYsLTEwMzk0NTg3Mj
+YsMTU3NTE2ODk2NSwtMjg4NDU3Njk5LC0yNDA3NDY2MTMsLTIy
+ODQ4NTcxNSwxODUzNDcyMTAzLDMwMzM0ODcxOSwzNTM4NzIyNj
+EsLTE3MDc0NTk2NzEsLTExMTcwOTYxNjQsLTE0NzQyNTA4OTAs
+LTc4MjU1ODgyXX0=
 -->
