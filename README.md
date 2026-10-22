@@ -7,7 +7,7 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 ### **Prompt Engineering: 20%**
 [Prompt Engineering MD](Prompt%20Engineering.md)
-
+[Prompt Engineering References MD](References%20Prompt%20Engineering.md)
 -   Given business requirements, identify when it's appropriate to use Prompt Builder.
 -   Identify access controls governing prompt templates.
 -   Identify the considerations for using a prompt template type such as field generation and flex types.
@@ -19,6 +19,7 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 ### **Data 360 Fundamentals: 20%**
 [Data 360 Fundamentals MD](Data%20360%20Fundamentals.md)
+[Data 360 Fundamentals References MD](References%20Data%20360%20Fundamentals.md)
 -   Explain the considerations of Agentforce Data Library and its concepts.
 -   Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
@@ -52,6 +53,6 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5MjI4OTk4OCwtNzMxMTE4NzQ5LDEwNz
-UyNTA2OV19
+eyJoaXN0b3J5IjpbLTE0MTgxMTUzMTcsLTczMTExODc0OSwxMD
+c1MjUwNjldfQ==
 -->
