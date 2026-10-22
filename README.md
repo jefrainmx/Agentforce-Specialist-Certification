@@ -55,8 +55,10 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 -   Given a scenario, determine whether a Multi Agent architecture is appropriate for scalability and control.
 -   Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A.
 
-
+### **Other References**
+[Agent API v1.0.0](AgentAPI%20v1.0.0.md)</br>
+[Glossary](Agentforce%20Glossary%20of%20Terms.md)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI0NzY0NTAsLTEzOTQ1OTYyNDAsLT
-czMTExODc0OSwxMDc1MjUwNjldfQ==
+eyJoaXN0b3J5IjpbLTI3ODQzNzkwNiwtMTM5NDU5NjI0MCwtNz
+MxMTE4NzQ5LDEwNzUyNTA2OV19
 -->
