@@ -6,7 +6,7 @@ Agentforce Specialist Certification
 The Salesforce Certified Agentforce Specialist Exam measures a candidate’s knowledge and skills related to the following objectives.
 
 ### **Prompt Engineering: 20%**
-[Prompt Engineering](Prompt%20Engineering.md)
+[Prompt Engineering MD](Prompt%20Engineering.md)
 
 -   Given business requirements, identify when it's appropriate to use Prompt Builder.
 -   Identify access controls governing prompt templates.
@@ -18,7 +18,7 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 -   Explain how to manage and prevent specific models from being accessed.
 
 ### **Data 360 Fundamentals: 20%**
-
+[Data 360 Fundamentals MD](Data%20360%20Fundamentals.md)
 -   Explain the considerations of Agentforce Data Library and its concepts.
 -   Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
@@ -52,6 +52,6 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzA5MjkwMTYsLTczMTExODc0OSwxMD
-c1MjUwNjldfQ==
+eyJoaXN0b3J5IjpbMTE5MjI4OTk4OCwtNzMxMTE4NzQ5LDEwNz
+UyNTA2OV19
 -->
