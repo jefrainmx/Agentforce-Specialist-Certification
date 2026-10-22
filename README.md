@@ -36,7 +36,8 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 -   Given a scenario, identify when it's appropriate to use Agent API.
 
 ### **Testing, Deployment, and Maintenance: 10%**
-
+[Testing, Deployment and Maintenance MD](Testing,%20Deployment,%20&%20Maintenance.md)
+[Testing, Deployment and Maintenance References MD](References%20Testing,%20Deplyment%20&%20Maintenance.md)
 -   Given a scenario, test an agent using Testing Center.
 -   Explain how Testing Center evaluations work.
 -   Identify the considerations for deploying an agent from sandbox to production.
@@ -54,6 +55,6 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTEzMTY0MzMsLTczMTExODc0OSwxMD
-c1MjUwNjldfQ==
+eyJoaXN0b3J5IjpbNjE3ODQyNDE1LC03MzExMTg3NDksMTA3NT
+I1MDY5XX0=
 -->
