@@ -24,7 +24,8 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 -   Explain foundational concepts of Data 360 such as chunking, indexing, and retrievers.
 
 ### **AI Agents: 35%**
-
+[AI Agents MD](AI%20Agents.md)
+[AI Agents References MD](References%20AI%20Agent.md)
 -   Explain how an agent works and its basic building blocks of agent script.
 -   Explain the components and benefits of hybrid reasoning, including how Agent Script functions in Canvas and Script View.
 -   Given a use case, manage deterministic behavior for the agent using mechanisms like filters, variables, and template expressions.
@@ -53,6 +54,6 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTgxMTUzMTcsLTczMTExODc0OSwxMD
+eyJoaXN0b3J5IjpbLTE3NTEzMTY0MzMsLTczMTExODc0OSwxMD
 c1MjUwNjldfQ==
 -->
