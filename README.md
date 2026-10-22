@@ -44,17 +44,19 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 -   Identify the considerations for deploying a template from sandbox to production.
 
 ### **Governance and Observability: 10%**
-
+[Governance and Observability MD](Governance%20&%20Observability.md)
+[Governance and Observability References MD](References%20Governance%20&%20Observability.md)
 -   Explain the process for managing and monitoring agents.
 -   Explain agent analytics and agent optimization.
 
 ### **Multi-Agent Orchestration: 5%**
+[Multi-Agent Orchestration](Multi-Agent%20Orchestration.md)
 
 -   Given a scenario, determine whether a Multi Agent architecture is appropriate for scalability and control.
 -   Explain the purpose of existing open standard multi-agent protocols such as MCP and A2A.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3ODQyNDE1LC03MzExMTg3NDksMTA3NT
-I1MDY5XX0=
+eyJoaXN0b3J5IjpbLTQzOTcwMDMyNywtNzMxMTE4NzQ5LDEwNz
+UyNTA2OV19
 -->
