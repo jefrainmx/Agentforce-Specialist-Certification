@@ -6,7 +6,7 @@ Agentforce Specialist Certification
 The Salesforce Certified Agentforce Specialist Exam measures a candidate’s knowledge and skills related to the following objectives.
 
 ### **Prompt Engineering: 20%**
-[Prompt Engineering]([Prompt Engineering.md](Prompt%20Engineering.md))
+[Prompt Engineering](Prompt%20Engineering.md)
 
 -   Given business requirements, identify when it's appropriate to use Prompt Builder.
 -   Identify access controls governing prompt templates.
@@ -52,6 +52,6 @@ The Salesforce Certified Agentforce Specialist Exam measures a candidate’s kno
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzExNTY2MTcxLC03MzExMTg3NDksMTA3NT
-I1MDY5XX0=
+eyJoaXN0b3J5IjpbLTEyMzA5MjkwMTYsLTczMTExODc0OSwxMD
+c1MjUwNjldfQ==
 -->
